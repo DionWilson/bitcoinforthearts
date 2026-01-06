@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+
+/* Hide scrollbars for mobile carousels (still scrollable). */
+.snap-carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.snap-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  /* Neutrals */
+  --background: #ffffff; /* neutral white */
+  --foreground: #333333; /* dark gray text */
+  --muted: rgba(51, 51, 51, 0.72);
+  --surface: #f8f9fa; /* light gray surface */
+
+  /* Brand colors (Grok palette) */
+  --primary: #7e57c2; /* creativity / renaissance purple */
+  --accent: #f7931a; /* Bitcoin orange */
+  --success: #26a69a; /* teal growth / endowment */
+
+  --border: rgba(51, 51, 51, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Optional dark mode */
+    --background: #4a148c; /* deep purple background */
+    --foreground: #ffffff;
+    --muted: rgba(255, 255, 255, 0.78);
+    --surface: rgba(255, 255, 255, 0.08);
+
+    --primary: #7e57c2;
+    --accent: #f7931a;
+    --success: #26a69a;
+
+    --border: rgba(255, 255, 255, 0.18);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+
+  --color-border: var(--border);
+  --font-sans: "Roboto", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-display: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+/* Default hidden: enabled by body.mobile-vibrant on mobile. */
+.mobile-vibrant-sunset {
+  display: none;
+}
+
+/* Mobile-only “pop” cards (adds subtle brand gradient).
+   Enabled when <body> has class "mobile-vibrant". */
+body.mobile-vibrant .mobile-pop-card {
+  background: linear-gradient(
+    135deg,
+    rgba(126, 87, 194, 0.16),
+    rgba(247, 147, 26, 0.14),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+@media (min-width: 640px) {
+  body.mobile-vibrant .mobile-pop-card {
+    background: var(--background);
+  }
+}
+
+/* Mobile-only “sunset” wash (white → orange → purple) */
+body.mobile-vibrant .mobile-vibrant-sunset {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  body.mobile-vibrant .mobile-vibrant-sunset {
+    display: none;
+  }
+}
