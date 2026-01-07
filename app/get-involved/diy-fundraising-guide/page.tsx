@@ -67,8 +67,8 @@ export default function DiyFundraisingGuidePage() {
       title: 'Peer-to-Peer Campaign',
       description:
         'Ask your friends to join you: “Fund 5 artists with me.” Keep it simple, personal, and share progress.',
-      imageSrc: '/event-background.jpg',
-      imageAlt: 'A crowd at an event representing community fundraising.',
+      imageSrc: '/bitcoin%20artist%20park.JPG',
+      imageAlt: 'Artists and community gathering outdoors, representing peer-to-peer fundraising.',
     },
     {
       title: 'Corporate Match Day',
