@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import logoImage from '../app/asset/BITCOIN-ARTS-LOGO-Gold.png';
 
 type NavItem = {
@@ -18,11 +18,6 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [openMobileSection, setOpenMobileSection] = useState<string | null>(null);
   const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
-
-  useEffect(() => {
-    // If we navigate via a dropdown item, close the dropdown immediately.
-    setOpenDesktopDropdown(null);
-  }, [pathname]);
 
   const navItems: NavItem[] = useMemo(
     () => [
@@ -97,7 +92,35 @@ export default function Navigation() {
             });
           }}
         >
-          Menu
+          <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
+          {isOpen ? (
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <path d="M6 6l12 12" />
+              <path d="M18 6l-12 12" />
+            </svg>
+          ) : (
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <path d="M4 7h16" />
+              <path d="M4 12h16" />
+              <path d="M4 17h16" />
+            </svg>
+          )}
         </button>
 
         <div className="hidden items-center gap-2 sm:flex">
