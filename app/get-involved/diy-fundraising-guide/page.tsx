@@ -74,7 +74,7 @@ export default function DiyFundraisingGuidePage() {
       title: 'Corporate Match Day',
       description:
         'Ask your employer to match donations. A match turns a small campaign into a meaningful pool of support.',
-      imageSrc: '/match%20day.JPG',
+      imageSrc: '/corp%20match.JPG',
       imageAlt:
         'A behind-the-scenes performance moment representing opportunity and support.',
     },
