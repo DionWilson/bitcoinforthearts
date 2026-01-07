@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import logoImage from '@/app/asset/BITCOIN-ARTS-LOGO-Gold.png';
 
@@ -24,6 +24,15 @@ export default function AutoDonatePopup() {
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
 
   const amounts = useMemo(() => [10, 25, 50, 100], []);
+  const dismiss = useCallback(() => {
+    setOpen(false);
+    try {
+      window.sessionStorage.setItem(STORAGE_KEY, '1');
+    } catch {
+      // ignore
+    }
+  }, []);
+
   const popupImageSrc = useMemo(() => {
     const src =
       process.env.NEXT_PUBLIC_DONATE_POPUP_IMAGE ||
@@ -66,26 +75,26 @@ export default function AutoDonatePopup() {
     }
 
     let cleanupTimer: (() => void) | null = null;
-    const onFirstScroll = () => {
+    const onFirstScroll: EventListener = () => {
       try {
         window.sessionStorage.setItem(HOME_SCROLL_KEY, '1');
       } catch {
         // ignore
       }
       window.removeEventListener('scroll', onFirstScroll);
-      window.removeEventListener('wheel', onFirstScroll as any);
-      window.removeEventListener('touchmove', onFirstScroll as any);
+      window.removeEventListener('wheel', onFirstScroll);
+      window.removeEventListener('touchmove', onFirstScroll);
       cleanupTimer = startTimer();
     };
 
     window.addEventListener('scroll', onFirstScroll, { passive: true });
-    window.addEventListener('wheel', onFirstScroll as any, { passive: true });
-    window.addEventListener('touchmove', onFirstScroll as any, { passive: true });
+    window.addEventListener('wheel', onFirstScroll, { passive: true });
+    window.addEventListener('touchmove', onFirstScroll, { passive: true });
 
     return () => {
       window.removeEventListener('scroll', onFirstScroll);
-      window.removeEventListener('wheel', onFirstScroll as any);
-      window.removeEventListener('touchmove', onFirstScroll as any);
+      window.removeEventListener('wheel', onFirstScroll);
+      window.removeEventListener('touchmove', onFirstScroll);
       cleanupTimer?.();
     };
   }, [enabled, pathname, homeHasIntro]);
@@ -103,17 +112,7 @@ export default function AutoDonatePopup() {
 
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open]);
-
-  const dismiss = () => {
-    setOpen(false);
-    try {
-      window.sessionStorage.setItem(STORAGE_KEY, '1');
-    } catch {
-      // ignore
-    }
-  };
+  }, [dismiss, open]);
 
   if (!enabled) return null;
   if (!open) return null;

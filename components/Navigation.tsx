@@ -17,6 +17,7 @@ export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [openMobileSection, setOpenMobileSection] = useState<string | null>(null);
+  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<string | null>(null);
 
   const navItems: NavItem[] = useMemo(
     () => [
@@ -91,7 +92,35 @@ export default function Navigation() {
             });
           }}
         >
-          Menu
+          <span className="sr-only">{isOpen ? 'Close menu' : 'Open menu'}</span>
+          {isOpen ? (
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <path d="M6 6l12 12" />
+              <path d="M18 6l-12 12" />
+            </svg>
+          ) : (
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            >
+              <path d="M4 7h16" />
+              <path d="M4 12h16" />
+              <path d="M4 17h16" />
+            </svg>
+          )}
         </button>
 
         <div className="hidden items-center gap-2 sm:flex">
@@ -128,10 +157,26 @@ export default function Navigation() {
               );
             }
 
+            const isDropdownOpen = openDesktopDropdown === item.href;
+
             return (
-              <div key={item.href} className="relative group">
+              <div
+                key={item.href}
+                className="relative"
+                onMouseEnter={() => setOpenDesktopDropdown(item.href)}
+                onMouseLeave={() => setOpenDesktopDropdown(null)}
+                onBlurCapture={(e) => {
+                  if (!e.currentTarget.contains(e.relatedTarget as Node | null)) {
+                    setOpenDesktopDropdown(null);
+                  }
+                }}
+              >
                 <Link
                   href={item.href}
+                  aria-haspopup="menu"
+                  aria-expanded={isDropdownOpen}
+                  onFocus={() => setOpenDesktopDropdown(item.href)}
+                  onClick={() => setOpenDesktopDropdown(null)}
                   className={[
                     'whitespace-nowrap rounded-md px-3 py-2 text-xs font-medium tracking-wide transition-colors uppercase inline-flex items-center gap-1',
                     isActive ? 'bg-white/15 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white',
@@ -144,7 +189,12 @@ export default function Navigation() {
                 </Link>
 
                 {/* Dropdown */}
-                <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity absolute left-0 top-full pt-2 z-50">
+                <div
+                  className={[
+                    'transition-opacity absolute left-0 top-full pt-2 z-50',
+                    isDropdownOpen ? 'visible opacity-100' : 'invisible opacity-0',
+                  ].join(' ')}
+                >
                   <div className="min-w-52 rounded-md border border-border bg-background text-foreground shadow-lg p-1">
                     {item.children?.map((child) => {
                       const isChildActive =
@@ -155,6 +205,7 @@ export default function Navigation() {
                         <Link
                           key={child.href}
                           href={child.href}
+                          onClick={() => setOpenDesktopDropdown(null)}
                           className={[
                             'block rounded-md px-3 py-2 text-sm font-semibold transition-colors',
                             isChildActive ? 'bg-surface' : 'hover:bg-surface',

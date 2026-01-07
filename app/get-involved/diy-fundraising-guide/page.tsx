@@ -67,14 +67,14 @@ export default function DiyFundraisingGuidePage() {
       title: 'Peer-to-Peer Campaign',
       description:
         'Ask your friends to join you: “Fund 5 artists with me.” Keep it simple, personal, and share progress.',
-      imageSrc: '/event-background.jpg',
-      imageAlt: 'A crowd at an event representing community fundraising.',
+      imageSrc: '/bitcoin%20artist%20park.JPG',
+      imageAlt: 'Artists and community gathering outdoors, representing peer-to-peer fundraising.',
     },
     {
       title: 'Corporate Match Day',
       description:
         'Ask your employer to match donations. A match turns a small campaign into a meaningful pool of support.',
-      imageSrc: '/audition.jpg',
+      imageSrc: '/corp%20match.JPG',
       imageAlt:
         'A behind-the-scenes performance moment representing opportunity and support.',
     },
@@ -214,7 +214,12 @@ export default function DiyFundraisingGuidePage() {
               </p>
  
               <div className="mt-6 -mx-6 px-6">
-                <MobileCarousel ariaLabel="DIY fundraising ideas" dotsClassName="lg:hidden">
+                <MobileCarousel
+                  ariaLabel="DIY fundraising ideas"
+                  dotsClassName="lg:hidden"
+                  showArrows
+                  arrowsClassName="hidden lg:flex"
+                >
                   {ideaCards.map((card) => (
                     <div
                       key={card.title}
