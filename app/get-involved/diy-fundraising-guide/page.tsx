@@ -214,7 +214,12 @@ export default function DiyFundraisingGuidePage() {
               </p>
  
               <div className="mt-6 -mx-6 px-6">
-                <MobileCarousel ariaLabel="DIY fundraising ideas" dotsClassName="lg:hidden">
+                <MobileCarousel
+                  ariaLabel="DIY fundraising ideas"
+                  dotsClassName="lg:hidden"
+                  showArrows
+                  arrowsClassName="hidden lg:flex"
+                >
                   {ideaCards.map((card) => (
                     <div
                       key={card.title}

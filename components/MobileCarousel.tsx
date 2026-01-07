@@ -8,6 +8,8 @@ type Props = {
   className?: string;
   showDots?: boolean;
   dotsClassName?: string;
+  showArrows?: boolean;
+  arrowsClassName?: string;
 };
 
 function clamp(n: number, min: number, max: number) {
@@ -20,6 +22,8 @@ export default function MobileCarousel({
   className = '',
   showDots = true,
   dotsClassName = '',
+  showArrows = false,
+  arrowsClassName = '',
 }: Props) {
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const itemCount = useMemo(() => Children.count(children), [children]);
@@ -47,6 +51,13 @@ export default function MobileCarousel({
     return () => ro.disconnect();
   }, [children]);
 
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el || !stepPx) return;
+    const idx = clamp(Math.round(el.scrollLeft / stepPx), 0, Math.max(0, itemCount - 1));
+    setActiveIndex(idx);
+  }, [itemCount, stepPx]);
+
   const onScroll = () => {
     const el = scrollerRef.current;
     if (!el || !stepPx) return;
@@ -62,7 +73,28 @@ export default function MobileCarousel({
     el.scrollTo({ left: target.offsetLeft, behavior: 'smooth' });
   };
 
+  const scrollByStep = (dir: -1 | 1) => {
+    const el = scrollerRef.current;
+    if (!el || !stepPx) return;
+    const nextIdx = clamp(activeIndex + dir, 0, Math.max(0, itemCount - 1));
+    scrollToIndex(nextIdx);
+  };
+
+  const onKeyDown: React.KeyboardEventHandler<HTMLDivElement> = (e) => {
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      scrollByStep(-1);
+    }
+    if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      scrollByStep(1);
+    }
+  };
+
   if (itemCount <= 0) return null;
+
+  const canPrev = itemCount > 1 && activeIndex > 0;
+  const canNext = itemCount > 1 && activeIndex < itemCount - 1;
 
   return (
     <div className="relative">
@@ -70,10 +102,53 @@ export default function MobileCarousel({
       <div className="pointer-events-none absolute inset-y-0 left-0 w-8 bg-gradient-to-r from-background to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-background to-transparent" />
 
+      {showArrows && itemCount > 1 ? (
+        <div
+          className={[
+            'pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between',
+            arrowsClassName,
+          ].join(' ')}
+        >
+          <button
+            type="button"
+            onClick={() => scrollByStep(-1)}
+            disabled={!canPrev}
+            aria-label="Previous slide"
+            className={[
+              'pointer-events-auto ml-2 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/90 shadow-sm backdrop-blur',
+              'transition-opacity',
+              canPrev ? 'opacity-100 hover:bg-surface' : 'opacity-40 cursor-not-allowed',
+            ].join(' ')}
+          >
+            <span aria-hidden="true" className="text-lg leading-none">
+              ‹
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollByStep(1)}
+            disabled={!canNext}
+            aria-label="Next slide"
+            className={[
+              'pointer-events-auto mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background/90 shadow-sm backdrop-blur',
+              'transition-opacity',
+              canNext ? 'opacity-100 hover:bg-surface' : 'opacity-40 cursor-not-allowed',
+            ].join(' ')}
+          >
+            <span aria-hidden="true" className="text-lg leading-none">
+              ›
+            </span>
+          </button>
+        </div>
+      ) : null}
+
       <div
         ref={scrollerRef}
+        role="region"
         aria-label={ariaLabel}
         onScroll={onScroll}
+        onKeyDown={onKeyDown}
+        tabIndex={0}
         className={[
           'snap-carousel flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth',
           className,
