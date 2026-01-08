@@ -49,14 +49,36 @@ export default function GrantApplicationForm() {
     topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, [step]);
 
+  const validateCurrentStepOnly = (targetStep: number) => {
+    const form = formRef.current;
+    if (!form) return false;
+
+    const fieldset = form.querySelector<HTMLFieldSetElement>(
+      `fieldset[data-step="${targetStep}"]`,
+    );
+    if (!fieldset) return true;
+
+    const controls = Array.from(
+      fieldset.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+        'input, textarea, select',
+      ),
+    );
+
+    for (const el of controls) {
+      if (el.disabled) continue;
+      if (!el.checkValidity()) {
+        el.reportValidity();
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   const validateStep = (targetStep: number) => {
     const form = formRef.current;
     if (!form) return false;
-    // Only validate currently-enabled inputs (we disable non-active sections).
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return false;
-    }
+    if (!validateCurrentStepOnly(targetStep)) return false;
 
     if (targetStep === 1) {
       const selected = form.querySelectorAll<HTMLInputElement>(
@@ -71,10 +93,7 @@ export default function GrantApplicationForm() {
         return false;
       }
       if (submitState.status === 'error') setSubmitState({ status: 'idle' });
-    }
 
-    // Extra validation: BTC address pattern (native pattern errors can be hard to read).
-    if (targetStep >= 2) {
       const btc = form.elements.namedItem('btcAddress') as HTMLInputElement | null;
       if (btc && btc.value && !BTC_ADDRESS_REGEX.test(btc.value.trim())) {
         btc.setCustomValidity('Please enter a valid Bitcoin address (bc1..., 1..., or 3...).');
@@ -297,7 +316,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 1 */}
       <fieldset
-        disabled={sectionDisabled(1) || isSubmitting}
+        data-step="1"
+        disabled={isSubmitting}
         hidden={sectionDisabled(1)}
         className="mt-8"
       >
@@ -410,7 +430,7 @@ export default function GrantApplicationForm() {
               <input
                 name="nonprofitOrSponsor"
                 required={isOrg}
-                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                disabled={!isOrg || isSubmitting}
                 className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
                 placeholder="Example: 501(c)(3) status, or sponsor name + relationship"
               />
@@ -428,7 +448,7 @@ export default function GrantApplicationForm() {
                 type="file"
                 accept="application/pdf"
                 required={false}
-                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                disabled={!isOrg || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
@@ -447,7 +467,7 @@ export default function GrantApplicationForm() {
               <textarea
                 name="fiscalSponsorAgreementLink"
                 rows={2}
-                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                disabled={!isOrg || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-2"
                 placeholder="Link to the agreement (Drive, website, etc.)"
               />
@@ -507,7 +527,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 2 */}
       <fieldset
-        disabled={sectionDisabled(2) || isSubmitting}
+        data-step="2"
+        disabled={isSubmitting}
         hidden={sectionDisabled(2)}
         className="mt-10"
       >
@@ -604,7 +625,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 3 */}
       <fieldset
-        disabled={sectionDisabled(3) || isSubmitting}
+        data-step="3"
+        disabled={isSubmitting}
         hidden={sectionDisabled(3)}
         className="mt-10"
       >
@@ -659,7 +681,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 4 */}
       <fieldset
-        disabled={sectionDisabled(4) || isSubmitting}
+        data-step="4"
+        disabled={isSubmitting}
         hidden={sectionDisabled(4)}
         className="mt-10"
       >
@@ -736,7 +759,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 5 */}
       <fieldset
-        disabled={sectionDisabled(5) || isSubmitting}
+        data-step="5"
+        disabled={isSubmitting}
         hidden={sectionDisabled(5)}
         className="mt-10"
       >
@@ -779,7 +803,8 @@ export default function GrantApplicationForm() {
 
       {/* Section 6 */}
       <fieldset
-        disabled={sectionDisabled(6) || isSubmitting}
+        data-step="6"
+        disabled={isSubmitting}
         hidden={sectionDisabled(6)}
         className="mt-10"
       >
