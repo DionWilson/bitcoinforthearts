@@ -10,10 +10,8 @@ type ApplicationDoc = {
   status?: string;
   adminNotes?: string | null;
   links?: {
-    portfolio?: string | null;
     fiscalSponsorAgreement?: string | null;
     artSamples?: string | null;
-    supportMaterials?: string | null;
   };
   applicant?: {
     legalName?: string;
@@ -156,28 +154,12 @@ export default async function AdminApplicationsPage() {
                 )}
               </div>
 
-              {(d.links?.portfolio ||
-                d.links?.fiscalSponsorAgreement ||
-                d.links?.artSamples ||
-                d.links?.supportMaterials) && (
+              {(d.links?.fiscalSponsorAgreement || d.links?.artSamples) && (
                 <div className="mt-4">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                     Links
                   </div>
                   <div className="mt-2 space-y-2 text-sm">
-                    {d.links?.portfolio ? (
-                      <div>
-                        <span className="font-semibold">Portfolio:</span>{' '}
-                        <a
-                          className="underline underline-offset-4"
-                          href={d.links.portfolio}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {d.links.portfolio}
-                        </a>
-                      </div>
-                    ) : null}
                     {d.links?.fiscalSponsorAgreement ? (
                       <div>
                         <span className="font-semibold">Sponsor agreement:</span>{' '}
@@ -196,14 +178,6 @@ export default async function AdminApplicationsPage() {
                         <span className="font-semibold">Samples:</span>
                         <pre className="mt-1 whitespace-pre-wrap rounded-md border border-border bg-surface p-3 text-xs text-muted">
                           {d.links.artSamples}
-                        </pre>
-                      </div>
-                    ) : null}
-                    {d.links?.supportMaterials ? (
-                      <div>
-                        <span className="font-semibold">Support materials:</span>
-                        <pre className="mt-1 whitespace-pre-wrap rounded-md border border-border bg-surface p-3 text-xs text-muted">
-                          {d.links.supportMaterials}
                         </pre>
                       </div>
                     ) : null}

@@ -376,16 +376,7 @@ export async function POST(req: NextRequest) {
     const reportingPlan = requireString(fields, 'reportingPlan', 'Post-Grant Reporting Plan');
     if (reportingPlan.length > 1500) throw new Error('Reporting Plan exceeds 1500 characters.');
 
-    const portfolioLink = (fields.portfolioLink ?? '').trim();
-    const hasPortfolio = uploads.some((u) => u.fieldName === 'portfolioResume');
-    if (!hasPortfolio && !portfolioLink) {
-      throw new Error(
-        'Portfolio/Resume is required (upload a PDF under 3MB, or provide a link).',
-      );
-    }
-
     const artSamplesLinks = (fields.artSamplesLinks ?? '').trim();
-    const supportMaterialsLinks = (fields.supportMaterialsLinks ?? '').trim();
 
     const applicationId = new ObjectId();
     const now = new Date();
@@ -441,12 +432,10 @@ export async function POST(req: NextRequest) {
         size: u.size,
       })),
       links: {
-        portfolio: portfolioLink || null,
         fiscalSponsorAgreement: isOrg
           ? (fields.fiscalSponsorAgreementLink ?? '').trim() || null
           : null,
         artSamples: artSamplesLinks || null,
-        supportMaterials: supportMaterialsLinks || null,
       },
       meta: {
         ip,
@@ -466,12 +455,10 @@ export async function POST(req: NextRequest) {
       .join('\n');
 
     const linkBlock = [
-      portfolioLink ? `portfolioLink: ${portfolioLink}` : null,
       isOrg && (fields.fiscalSponsorAgreementLink ?? '').trim()
         ? `fiscalSponsorAgreementLink: ${(fields.fiscalSponsorAgreementLink ?? '').trim()}`
         : null,
       artSamplesLinks ? `artSamplesLinks:\n${artSamplesLinks}` : null,
-      supportMaterialsLinks ? `supportMaterialsLinks:\n${supportMaterialsLinks}` : null,
     ]
       .filter(Boolean)
       .join('\n\n');
