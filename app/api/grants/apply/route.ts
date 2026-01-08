@@ -11,6 +11,10 @@ export const dynamic = 'force-dynamic';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 
+// Vercel/Next deployments commonly enforce a small max request body size.
+// Keep uploads conservative to avoid HTTP 413 (Payload Too Large).
+const MAX_REQUEST_FILE_BYTES = 3 * 1024 * 1024; // 3MB per file (safe default)
+
 function getEnv(name: string) {
   const value = process.env[name];
   return value && value.trim().length > 0 ? value.trim() : undefined;
@@ -167,11 +171,12 @@ export async function POST(req: NextRequest) {
   const disciplines: string[] = [];
   const uploads: UploadedFile[] = [];
   const errors: string[] = [];
+  let hitLimit = false;
 
   const limits = {
     // Keep this conservative for serverless.
-    fileSize: 25 * 1024 * 1024, // 25MB (portfolio PDFs can be big; samples have their own checks)
-    files: 25,
+    fileSize: MAX_REQUEST_FILE_BYTES,
+    files: 10,
     fields: 200,
   };
 
@@ -237,13 +242,17 @@ export async function POST(req: NextRequest) {
     let size = 0;
     file.on('data', (chunk: Buffer) => {
       size += chunk.length;
-      // Enforce 5MB per artistic sample.
-      if (fieldName === 'artSamples' && size > 5 * 1024 * 1024) {
-        errors.push(`artSamples: ${filename} exceeds 5MB limit.`);
-        file.unpipe(uploadStream);
-        uploadStream.destroy(new Error('File too large'));
-        file.resume();
-      }
+    });
+    file.on('limit', () => {
+      hitLimit = true;
+      errors.push(
+        `Upload too large. Please keep each file under ${Math.floor(
+          MAX_REQUEST_FILE_BYTES / (1024 * 1024),
+        )}MB.`,
+      );
+      file.unpipe(uploadStream);
+      uploadStream.destroy(new Error('File too large'));
+      file.resume();
     });
 
     const p = new Promise<void>((resolve) => {
@@ -299,7 +308,7 @@ export async function POST(req: NextRequest) {
     await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
     return NextResponse.json(
       { ok: false, error: errors.slice(0, 3).join(' ') },
-      { status: 400 },
+      { status: hitLimit ? 413 : 400 },
     );
   }
 

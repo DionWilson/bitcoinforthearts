@@ -3,6 +3,8 @@
 import { useMemo, useRef, useState } from 'react';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
+const MAX_FILE_MB = 3;
+const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 
 type SubmitState =
   | { status: 'idle' }
@@ -78,8 +80,36 @@ export default function GrantApplicationForm() {
     return true;
   };
 
+  const validateFiles = () => {
+    const form = formRef.current;
+    if (!form) return true;
+
+    const fileInputs = [
+      form.elements.namedItem('portfolioResume') as HTMLInputElement | null,
+      form.elements.namedItem('fiscalSponsorAgreement') as HTMLInputElement | null,
+      form.elements.namedItem('artSamples') as HTMLInputElement | null,
+      form.elements.namedItem('supportMaterials') as HTMLInputElement | null,
+    ].filter(Boolean) as HTMLInputElement[];
+
+    for (const input of fileInputs) {
+      const files = Array.from(input.files ?? []);
+      for (const f of files) {
+        if (f.size > MAX_FILE_BYTES) {
+          setSubmitState({
+            status: 'error',
+            message: `“${f.name}” is too large. Please keep each file under ${MAX_FILE_MB}MB to avoid upload errors.`,
+          });
+          return false;
+        }
+      }
+    }
+
+    return true;
+  };
+
   const goNext = () => {
     if (!validateStep(step)) return;
+    if (step === steps.length && !validateFiles()) return;
     setStep((s) => Math.min(steps.length, s + 1));
   };
 
@@ -88,6 +118,7 @@ export default function GrantApplicationForm() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateStep(step)) return;
+    if (!validateFiles()) return;
     if (step !== steps.length) {
       setStep(steps.length);
       return;
@@ -628,6 +659,10 @@ export default function GrantApplicationForm() {
       {/* Section 6 */}
       <fieldset disabled={sectionDisabled(6) || isSubmitting} className="mt-10">
         <legend className="text-lg font-semibold tracking-tight">Section 6: Attachments</legend>
+        <p className="mt-2 text-xs text-muted">
+          Upload limit: keep each file under <span className="font-semibold text-foreground">{MAX_FILE_MB}MB</span>.
+          (Large files can be rejected by the hosting platform.)
+        </p>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
             <span className="text-sm font-semibold">
@@ -638,6 +673,10 @@ export default function GrantApplicationForm() {
               type="file"
               required
               accept="application/pdf"
+              onChange={() => {
+                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+                validateFiles();
+              }}
               className="rounded-md border border-border bg-background px-3 py-3"
             />
           </label>
@@ -649,6 +688,10 @@ export default function GrantApplicationForm() {
               type="file"
               multiple
               accept="image/*,video/*"
+              onChange={() => {
+                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+                validateFiles();
+              }}
               className="rounded-md border border-border bg-background px-3 py-3"
             />
           </label>
@@ -660,6 +703,10 @@ export default function GrantApplicationForm() {
               type="file"
               multiple
               accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"
+              onChange={() => {
+                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+                validateFiles();
+              }}
               className="rounded-md border border-border bg-background px-3 py-3"
             />
           </label>
