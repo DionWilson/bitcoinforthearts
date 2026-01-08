@@ -175,8 +175,22 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const db = await getMongoDb();
-  const bucket = new GridFSBucket(db, { bucketName: 'grantUploads' });
+  let db: Awaited<ReturnType<typeof getMongoDb>>;
+  let bucket: GridFSBucket;
+  try {
+    db = await getMongoDb();
+    bucket = new GridFSBucket(db, { bucketName: 'grantUploads' });
+  } catch (err) {
+    console.error('[grants] database connection failed', err);
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          'Grant applications are temporarily unavailable (database not configured or unreachable). Please try again later or email grants@bitcoinforthearts.org.',
+      },
+      { status: 503 },
+    );
+  }
 
   const fields: Record<string, string> = {};
   const disciplines: string[] = [];
@@ -521,5 +535,36 @@ export async function POST(req: NextRequest) {
       { status: 400 },
     );
   }
+}
+
+// Safe config status endpoint (no secrets).
+export async function GET() {
+  const smtpUser = getEnv('GRANTS_SMTP_USER') ?? getEnv('CONTACT_SMTP_USER');
+  const smtpPass = getEnv('GRANTS_SMTP_PASS') ?? getEnv('CONTACT_SMTP_PASS');
+  const fromEmail =
+    getEnv('GRANTS_FROM_EMAIL') ?? getEnv('CONTACT_FROM_EMAIL') ?? getEnv('RESEND_FROM_EMAIL');
+
+  let mongoOk = false;
+  try {
+    await getMongoDb();
+    mongoOk = true;
+  } catch {
+    mongoOk = false;
+  }
+
+  return NextResponse.json(
+    {
+      ok: true,
+      configured: {
+        mongo: mongoOk,
+        email: Boolean(smtpUser) && Boolean(smtpPass) && Boolean(fromEmail),
+      },
+      vercel: {
+        env: process.env.VERCEL_ENV ?? null,
+        url: process.env.VERCEL_URL ?? null,
+      },
+    },
+    { status: 200 },
+  );
 }
 
