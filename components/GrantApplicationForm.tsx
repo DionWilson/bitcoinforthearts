@@ -87,8 +87,6 @@ export default function GrantApplicationForm() {
     const fileInputs = [
       form.elements.namedItem('portfolioResume') as HTMLInputElement | null,
       form.elements.namedItem('fiscalSponsorAgreement') as HTMLInputElement | null,
-      form.elements.namedItem('artSamples') as HTMLInputElement | null,
-      form.elements.namedItem('supportMaterials') as HTMLInputElement | null,
     ].filter(Boolean) as HTMLInputElement[];
 
     for (const input of fileInputs) {
@@ -107,6 +105,47 @@ export default function GrantApplicationForm() {
     return true;
   };
 
+  const validateLinkOrFileRequirements = () => {
+    const form = formRef.current;
+    if (!form) return false;
+
+    const portfolioFile = form.elements.namedItem('portfolioResume') as HTMLInputElement | null;
+    const portfolioLink = form.elements.namedItem('portfolioLink') as HTMLTextAreaElement | null;
+    const portfolioHasFile = Boolean(portfolioFile?.files?.length);
+    const portfolioHasLink = Boolean(portfolioLink?.value?.trim());
+
+    if (!portfolioHasFile && !portfolioHasLink) {
+      setSubmitState({
+        status: 'error',
+        message:
+          'Please provide either a Portfolio/Resume PDF (under 3MB) or a portfolio link.',
+      });
+      return false;
+    }
+
+    if (isOrg) {
+      const sponsorFile = form.elements.namedItem(
+        'fiscalSponsorAgreement',
+      ) as HTMLInputElement | null;
+      const sponsorLink = form.elements.namedItem(
+        'fiscalSponsorAgreementLink',
+      ) as HTMLTextAreaElement | null;
+      const sponsorHasFile = Boolean(sponsorFile?.files?.length);
+      const sponsorHasLink = Boolean(sponsorLink?.value?.trim());
+
+      if (!sponsorHasFile && !sponsorHasLink) {
+        setSubmitState({
+          status: 'error',
+          message:
+            'For organizations/collectives, please provide either the Fiscal Sponsor Agreement PDF (under 3MB) or a link to the agreement.',
+        });
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   const goNext = () => {
     if (!validateStep(step)) return;
     if (step === steps.length && !validateFiles()) return;
@@ -119,6 +158,7 @@ export default function GrantApplicationForm() {
     e.preventDefault();
     if (!validateStep(step)) return;
     if (!validateFiles()) return;
+    if (!validateLinkOrFileRequirements()) return;
     if (step !== steps.length) {
       setStep(steps.length);
       return;
@@ -372,13 +412,27 @@ export default function GrantApplicationForm() {
                 name="fiscalSponsorAgreement"
                 type="file"
                 accept="application/pdf"
-                required={isOrg}
+                required={false}
                 disabled={!isOrg || sectionDisabled(1) || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
-                Required for organizations/collectives if using a sponsor.
+                If the PDF is larger than {MAX_FILE_MB}MB, paste a link below instead.
               </span>
+            </label>
+
+            <label className="flex flex-col gap-2 sm:col-span-2">
+              <span className="text-sm font-semibold">
+                Fiscal Sponsor Agreement Link (if not uploading)
+                {isOrg ? <span className="text-accent"> *</span> : null}
+              </span>
+              <textarea
+                name="fiscalSponsorAgreementLink"
+                rows={2}
+                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                className="rounded-md border border-border bg-background px-3 py-2"
+                placeholder="Link to the agreement (Drive, website, etc.)"
+              />
             </label>
           </div>
         </div>
@@ -666,12 +720,12 @@ export default function GrantApplicationForm() {
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
             <span className="text-sm font-semibold">
-              Upload Portfolio/Resume (PDF) <span className="text-accent">*</span>
+              Upload Portfolio/Resume (PDF) (optional, under {MAX_FILE_MB}MB)
             </span>
             <input
               name="portfolioResume"
               type="file"
-              required
+              required={false}
               accept="application/pdf"
               onChange={() => {
                 if (submitState.status === 'error') setSubmitState({ status: 'idle' });
@@ -682,32 +736,34 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">Upload Artistic Samples (optional, up to 5MB each)</span>
-            <input
-              name="artSamples"
-              type="file"
-              multiple
-              accept="image/*,video/*"
-              onChange={() => {
-                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
-                validateFiles();
-              }}
-              className="rounded-md border border-border bg-background px-3 py-3"
+            <span className="text-sm font-semibold">
+              Portfolio/Resume Link <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="portfolioLink"
+              rows={2}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Link to your portfolio/resume (preferred for large files)"
             />
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">Optional Support Materials (PDF/DOCX)</span>
-            <input
-              name="supportMaterials"
-              type="file"
-              multiple
-              accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"
-              onChange={() => {
-                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
-                validateFiles();
-              }}
-              className="rounded-md border border-border bg-background px-3 py-3"
+            <span className="text-sm font-semibold">Artistic Samples (links)</span>
+            <textarea
+              name="artSamplesLinks"
+              rows={4}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Paste links to images/videos (YouTube, Vimeo, website, Drive, etc.). One per line is great."
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">Optional Support Materials (links)</span>
+            <textarea
+              name="supportMaterialsLinks"
+              rows={3}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Paste links to any additional PDFs/docs."
             />
           </label>
 
