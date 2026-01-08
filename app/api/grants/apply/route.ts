@@ -62,8 +62,8 @@ function isAllowedOrigin(req: NextRequest) {
 }
 
 // Best-effort in-memory rate limit (resets per server instance).
-const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
-const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX = 12;
 const rateLimit = new Map<string, number[]>();
 function rateLimitOk(ip: string) {
   const now = Date.now();
