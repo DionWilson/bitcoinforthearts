@@ -1,8 +1,11 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import InfoTip from '@/components/InfoTip';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
+const MAX_FILE_MB = 3;
+const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 
 type SubmitState =
   | { status: 'idle' }
@@ -20,6 +23,7 @@ function getFirstErrorMessage(err: unknown) {
 
 export default function GrantApplicationForm() {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const topRef = useRef<HTMLDivElement | null>(null);
   const [step, setStep] = useState(1);
   const [submitState, setSubmitState] = useState<SubmitState>({ status: 'idle' });
   const [applicantType, setApplicantType] = useState<'individual' | 'organization'>(
@@ -39,6 +43,11 @@ export default function GrantApplicationForm() {
   );
 
   const progressPct = Math.round((step / steps.length) * 100);
+
+  useEffect(() => {
+    // When advancing steps, bring the current section into view.
+    topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [step]);
 
   const validateStep = (targetStep: number) => {
     const form = formRef.current;
@@ -78,8 +87,75 @@ export default function GrantApplicationForm() {
     return true;
   };
 
+  const validateFiles = () => {
+    const form = formRef.current;
+    if (!form) return true;
+
+    const fileInputs = [
+      form.elements.namedItem('portfolioResume') as HTMLInputElement | null,
+      form.elements.namedItem('fiscalSponsorAgreement') as HTMLInputElement | null,
+    ].filter(Boolean) as HTMLInputElement[];
+
+    for (const input of fileInputs) {
+      const files = Array.from(input.files ?? []);
+      for (const f of files) {
+        if (f.size > MAX_FILE_BYTES) {
+          setSubmitState({
+            status: 'error',
+            message: `“${f.name}” is too large. Please keep each file under ${MAX_FILE_MB}MB to avoid upload errors.`,
+          });
+          return false;
+        }
+      }
+    }
+
+    return true;
+  };
+
+  const validateLinkOrFileRequirements = () => {
+    const form = formRef.current;
+    if (!form) return false;
+
+    const portfolioFile = form.elements.namedItem('portfolioResume') as HTMLInputElement | null;
+    const portfolioLink = form.elements.namedItem('portfolioLink') as HTMLTextAreaElement | null;
+    const portfolioHasFile = Boolean(portfolioFile?.files?.length);
+    const portfolioHasLink = Boolean(portfolioLink?.value?.trim());
+
+    if (!portfolioHasFile && !portfolioHasLink) {
+      setSubmitState({
+        status: 'error',
+        message:
+          'Please provide either a Portfolio/Resume PDF (under 3MB) or a portfolio link.',
+      });
+      return false;
+    }
+
+    if (isOrg) {
+      const sponsorFile = form.elements.namedItem(
+        'fiscalSponsorAgreement',
+      ) as HTMLInputElement | null;
+      const sponsorLink = form.elements.namedItem(
+        'fiscalSponsorAgreementLink',
+      ) as HTMLTextAreaElement | null;
+      const sponsorHasFile = Boolean(sponsorFile?.files?.length);
+      const sponsorHasLink = Boolean(sponsorLink?.value?.trim());
+
+      if (!sponsorHasFile && !sponsorHasLink) {
+        setSubmitState({
+          status: 'error',
+          message:
+            'For organizations/collectives, please provide either the Fiscal Sponsor Agreement PDF (under 3MB) or a link to the agreement.',
+        });
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   const goNext = () => {
     if (!validateStep(step)) return;
+    if (step === steps.length && !validateFiles()) return;
     setStep((s) => Math.min(steps.length, s + 1));
   };
 
@@ -88,6 +164,8 @@ export default function GrantApplicationForm() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateStep(step)) return;
+    if (!validateFiles()) return;
+    if (!validateLinkOrFileRequirements()) return;
     if (step !== steps.length) {
       setStep(steps.length);
       return;
@@ -163,6 +241,7 @@ export default function GrantApplicationForm() {
       onSubmit={onSubmit}
       className="rounded-3xl border border-border bg-background p-6 sm:p-8"
     >
+      <div ref={topRef} />
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
@@ -259,8 +338,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2 sm:col-span-2">
-            <span className="text-sm font-semibold">
-              Mailing Address <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Mailing Address <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Include street/city/region/postal code (or the best stable mailing address you can receive correspondence at)." />
             </span>
             <textarea
               name="mailingAddress"
@@ -271,8 +353,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2 sm:col-span-2">
-            <span className="text-sm font-semibold">
-              Website/Portfolio/Social Media Links <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Website/Portfolio/Social Media Links <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Paste links that help us verify your work: website/portfolio, X/Instagram/Nostr, videos, press, etc. Include usernames/handles if helpful." />
             </span>
             <textarea
               name="links"
@@ -334,20 +419,40 @@ export default function GrantApplicationForm() {
             </label>
 
             <label className="flex flex-col gap-2 sm:col-span-2">
-              <span className="text-sm font-semibold">
-                Upload Fiscal Sponsor Agreement (PDF) <span className="text-accent">*</span>
+              <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+                <span>
+                  Upload Fiscal Sponsor Agreement (PDF) <span className="text-accent">*</span>
+                </span>
+                <InfoTip text="If you’re an org/collective using a fiscal sponsor, upload the agreement if it’s small. If it’s large, paste a link in the next field." />
               </span>
               <input
                 name="fiscalSponsorAgreement"
                 type="file"
                 accept="application/pdf"
-                required={isOrg}
+                required={false}
                 disabled={!isOrg || sectionDisabled(1) || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
-                Required for organizations/collectives if using a sponsor.
+                If the PDF is larger than {MAX_FILE_MB}MB, paste a link below instead.
               </span>
+            </label>
+
+            <label className="flex flex-col gap-2 sm:col-span-2">
+              <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+                <span>
+                  Fiscal Sponsor Agreement Link (if not uploading)
+                  {isOrg ? <span className="text-accent"> *</span> : null}
+                </span>
+                <InfoTip text="Use a share link that can be opened by the grants team (Drive/Dropbox/website). Avoid expiring links." />
+              </span>
+              <textarea
+                name="fiscalSponsorAgreementLink"
+                rows={2}
+                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                className="rounded-md border border-border bg-background px-3 py-2"
+                placeholder="Link to the agreement (Drive, website, etc.)"
+              />
             </label>
           </div>
         </div>
@@ -418,8 +523,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Project Summary (500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Project Summary (500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="One tight paragraph: what you’re making, where/when it happens, and why it matters." />
             </span>
             <textarea
               name="projectSummary"
@@ -431,8 +539,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Detailed Description (2000 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Detailed Description (2000 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Explain what you’ll do, how you’ll do it, and how Bitcoin/decentralization fits (payments, proof-of-support, on-chain artifacts, Lightning tips, censorship resistance, etc.)." />
             </span>
             <textarea
               name="projectDescription"
@@ -445,8 +556,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Timeline: Start/end dates, milestones <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Timeline: Start/end dates, milestones <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="List key milestones with dates (or ranges): prep, production, launch/exhibit, and wrap-up. Keep it realistic." />
             </span>
             <textarea
               name="timeline"
@@ -468,8 +582,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Target Audience and Expected Impact (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Target Audience and Expected Impact (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Who is this for, how will you reach them, and what change/outcome do you expect? Include equity/inclusion considerations where relevant." />
             </span>
             <textarea
               name="impact"
@@ -502,8 +619,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2 sm:col-span-2">
-            <span className="text-sm font-semibold">
-              Total Project Budget Breakdown <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Total Project Budget Breakdown <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="List line items with estimated costs (materials, venue, travel, collaborators, etc.). Totals can be rough but should add up." />
             </span>
             <textarea
               name="budgetBreakdown"
@@ -514,8 +634,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2 sm:col-span-2">
-            <span className="text-sm font-semibold">
-              How Will BFTA Funds Be Used? (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                How Will BFTA Funds Be Used? (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Be specific about what BFTA’s portion pays for. Prefer concrete line items over general statements." />
             </span>
             <textarea
               name="fundUse"
@@ -535,8 +658,11 @@ export default function GrantApplicationForm() {
         </legend>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Mission Statement or Bio (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Mission Statement or Bio (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Who are you/your organization? What do you make, and what’s your artistic focus? Include a sentence on how Bitcoin values show up in your work (if applicable)." />
             </span>
             <textarea
               name="bio"
@@ -548,8 +674,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              History and Key Accomplishments (2000 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                History and Key Accomplishments (2000 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="List notable exhibitions/performances, releases, awards, collaborations, press, and anything that demonstrates follow-through." />
             </span>
             <textarea
               name="accomplishments"
@@ -561,8 +690,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Equity and Inclusion Statement (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Equity and Inclusion Statement (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Describe how your project considers access, representation, and inclusion (e.g., pricing, venue accessibility, language, community partnerships)." />
             </span>
             <textarea
               name="equityInclusion"
@@ -574,8 +706,11 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Evaluation Plan (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Evaluation Plan (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="How will you measure success? Examples: attendance, workshop outcomes, feedback, on-chain proofs, distribution metrics, deliverables shipped." />
             </span>
             <textarea
               name="evaluationPlan"
@@ -596,8 +731,11 @@ export default function GrantApplicationForm() {
         </legend>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Post-Grant Reporting Plan (1500 chars max) <span className="text-accent">*</span>
+            <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+              <span>
+                Post-Grant Reporting Plan (1500 chars max) <span className="text-accent">*</span>
+              </span>
+              <InfoTip text="Explain what you’ll provide at 6 months and at project end: brief narrative update + budget reconciliation, plus receipts/proofs if requested." />
             </span>
             <textarea
               name="reportingPlan"
@@ -628,39 +766,57 @@ export default function GrantApplicationForm() {
       {/* Section 6 */}
       <fieldset disabled={sectionDisabled(6) || isSubmitting} className="mt-10">
         <legend className="text-lg font-semibold tracking-tight">Section 6: Attachments</legend>
+        <p className="mt-2 text-xs text-muted">
+          Upload limit: keep each file under <span className="font-semibold text-foreground">{MAX_FILE_MB}MB</span>.
+          (Large files can be rejected by the hosting platform.)
+        </p>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
             <span className="text-sm font-semibold">
-              Upload Portfolio/Resume (PDF) <span className="text-accent">*</span>
+              Upload Portfolio/Resume (PDF) (optional, under {MAX_FILE_MB}MB)
             </span>
             <input
               name="portfolioResume"
               type="file"
-              required
+              required={false}
               accept="application/pdf"
+              onChange={() => {
+                if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+                validateFiles();
+              }}
               className="rounded-md border border-border bg-background px-3 py-3"
             />
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">Upload Artistic Samples (optional, up to 5MB each)</span>
-            <input
-              name="artSamples"
-              type="file"
-              multiple
-              accept="image/*,video/*"
-              className="rounded-md border border-border bg-background px-3 py-3"
+            <span className="text-sm font-semibold">
+              Portfolio/Resume Link <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="portfolioLink"
+              rows={2}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Link to your portfolio/resume (preferred for large files)"
             />
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">Optional Support Materials (PDF/DOCX)</span>
-            <input
-              name="supportMaterials"
-              type="file"
-              multiple
-              accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"
-              className="rounded-md border border-border bg-background px-3 py-3"
+            <span className="text-sm font-semibold">Artistic Samples (links)</span>
+            <textarea
+              name="artSamplesLinks"
+              rows={4}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Paste links to images/videos (YouTube, Vimeo, website, Drive, etc.). One per line is great."
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">Optional Support Materials (links)</span>
+            <textarea
+              name="supportMaterialsLinks"
+              rows={3}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Paste links to any additional PDFs/docs."
             />
           </label>
 
@@ -697,8 +853,9 @@ export default function GrantApplicationForm() {
         </div>
       ) : null}
 
-      {/* Navigation */}
-      <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+      {/* Navigation (sticky so you can always advance without scrolling) */}
+      <div className="mt-8 sticky bottom-0 bg-background/95 backdrop-blur border-t border-border pt-4">
+        <div className="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="button"
           onClick={goBack}
@@ -732,6 +889,7 @@ export default function GrantApplicationForm() {
             {isSubmitting ? 'Submitting…' : 'Submit application'}
           </button>
         )}
+        </div>
       </div>
     </form>
   );

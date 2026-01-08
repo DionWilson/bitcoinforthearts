@@ -11,6 +11,10 @@ export const dynamic = 'force-dynamic';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 
+// Vercel/Next deployments commonly enforce a small max request body size.
+// Keep uploads conservative to avoid HTTP 413 (Payload Too Large).
+const MAX_REQUEST_FILE_BYTES = 3 * 1024 * 1024; // 3MB per file (safe default)
+
 function getEnv(name: string) {
   const value = process.env[name];
   return value && value.trim().length > 0 ? value.trim() : undefined;
@@ -167,11 +171,12 @@ export async function POST(req: NextRequest) {
   const disciplines: string[] = [];
   const uploads: UploadedFile[] = [];
   const errors: string[] = [];
+  let hitLimit = false;
 
   const limits = {
     // Keep this conservative for serverless.
-    fileSize: 25 * 1024 * 1024, // 25MB (portfolio PDFs can be big; samples have their own checks)
-    files: 25,
+    fileSize: MAX_REQUEST_FILE_BYTES,
+    files: 10,
     fields: 200,
   };
 
@@ -194,32 +199,18 @@ export async function POST(req: NextRequest) {
 
     // Basic allowlist per field.
     const isPdf = mimeType === 'application/pdf';
-    const isDocx =
-      mimeType ===
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
-    const isDoc = mimeType === 'application/msword';
-    const isImage = mimeType.startsWith('image/');
-    const isVideo = mimeType.startsWith('video/');
+    const allowedField =
+      fieldName === 'portfolioResume' || fieldName === 'fiscalSponsorAgreement';
+
+    if (!allowedField) {
+      errors.push('Only PDF uploads are accepted. Please use links for large samples.');
+      file.resume();
+      return;
+    }
 
     if (fieldName === 'portfolioResume' || fieldName === 'fiscalSponsorAgreement') {
       if (!isPdf) {
         errors.push(`${fieldName}: must be a PDF.`);
-        file.resume();
-        return;
-      }
-    }
-
-    if (fieldName === 'supportMaterials') {
-      if (!(isPdf || isDocx || isDoc)) {
-        errors.push('supportMaterials: must be PDF or DOC/DOCX.');
-        file.resume();
-        return;
-      }
-    }
-
-    if (fieldName === 'artSamples') {
-      if (!(isImage || isVideo)) {
-        errors.push('artSamples: must be image or video.');
         file.resume();
         return;
       }
@@ -237,13 +228,17 @@ export async function POST(req: NextRequest) {
     let size = 0;
     file.on('data', (chunk: Buffer) => {
       size += chunk.length;
-      // Enforce 5MB per artistic sample.
-      if (fieldName === 'artSamples' && size > 5 * 1024 * 1024) {
-        errors.push(`artSamples: ${filename} exceeds 5MB limit.`);
-        file.unpipe(uploadStream);
-        uploadStream.destroy(new Error('File too large'));
-        file.resume();
-      }
+    });
+    file.on('limit', () => {
+      hitLimit = true;
+      errors.push(
+        `Upload too large. Please keep each file under ${Math.floor(
+          MAX_REQUEST_FILE_BYTES / (1024 * 1024),
+        )}MB.`,
+      );
+      file.unpipe(uploadStream);
+      uploadStream.destroy(new Error('File too large'));
+      file.resume();
     });
 
     const p = new Promise<void>((resolve) => {
@@ -299,7 +294,7 @@ export async function POST(req: NextRequest) {
     await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
     return NextResponse.json(
       { ok: false, error: errors.slice(0, 3).join(' ') },
-      { status: 400 },
+      { status: hitLimit ? 413 : 400 },
     );
   }
 
@@ -324,7 +319,12 @@ export async function POST(req: NextRequest) {
     if (isOrg) {
       requireString(fields, 'nonprofitOrSponsor', 'Nonprofit Status or Fiscal Sponsor');
       const hasSponsorPdf = uploads.some((u) => u.fieldName === 'fiscalSponsorAgreement');
-      if (!hasSponsorPdf) throw new Error('Fiscal Sponsor Agreement (PDF) is required for organizations.');
+      const sponsorLink = (fields.fiscalSponsorAgreementLink ?? '').trim();
+      if (!hasSponsorPdf && !sponsorLink) {
+        throw new Error(
+          'Fiscal Sponsor Agreement is required for organizations (upload a PDF under 3MB, or provide a link).',
+        );
+      }
     }
 
     requireCheckbox(fields, 'missionAligned', 'Mission alignment');
@@ -365,8 +365,16 @@ export async function POST(req: NextRequest) {
     const reportingPlan = requireString(fields, 'reportingPlan', 'Post-Grant Reporting Plan');
     if (reportingPlan.length > 1500) throw new Error('Reporting Plan exceeds 1500 characters.');
 
+    const portfolioLink = (fields.portfolioLink ?? '').trim();
     const hasPortfolio = uploads.some((u) => u.fieldName === 'portfolioResume');
-    if (!hasPortfolio) throw new Error('Portfolio/Resume (PDF) is required.');
+    if (!hasPortfolio && !portfolioLink) {
+      throw new Error(
+        'Portfolio/Resume is required (upload a PDF under 3MB, or provide a link).',
+      );
+    }
+
+    const artSamplesLinks = (fields.artSamplesLinks ?? '').trim();
+    const supportMaterialsLinks = (fields.supportMaterialsLinks ?? '').trim();
 
     const applicationId = new ObjectId();
     const now = new Date();
@@ -421,6 +429,14 @@ export async function POST(req: NextRequest) {
         mimeType: u.mimeType,
         size: u.size,
       })),
+      links: {
+        portfolio: portfolioLink || null,
+        fiscalSponsorAgreement: isOrg
+          ? (fields.fiscalSponsorAgreementLink ?? '').trim() || null
+          : null,
+        artSamples: artSamplesLinks || null,
+        supportMaterials: supportMaterialsLinks || null,
+      },
       meta: {
         ip,
         userAgent: req.headers.get('user-agent') ?? null,
@@ -432,8 +448,22 @@ export async function POST(req: NextRequest) {
     const to = getEnv('GRANTS_TO_EMAIL') ?? 'grants@bitcoinforthearts.org';
     const baseUrl = (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined) ?? 'https://bitcoinforthearts.org';
     const downloadLinks = uploads
-      .map((u) => `${u.fieldName}: ${baseUrl}/api/grants/files/${u.fileId.toString()} (${u.filename})`)
+      .map(
+        (u) =>
+          `${u.fieldName}: ${baseUrl}/api/grants/files/${u.fileId.toString()} (${u.filename})`,
+      )
       .join('\n');
+
+    const linkBlock = [
+      portfolioLink ? `portfolioLink: ${portfolioLink}` : null,
+      isOrg && (fields.fiscalSponsorAgreementLink ?? '').trim()
+        ? `fiscalSponsorAgreementLink: ${(fields.fiscalSponsorAgreementLink ?? '').trim()}`
+        : null,
+      artSamplesLinks ? `artSamplesLinks:\n${artSamplesLinks}` : null,
+      supportMaterialsLinks ? `supportMaterialsLinks:\n${supportMaterialsLinks}` : null,
+    ]
+      .filter(Boolean)
+      .join('\n\n');
 
     const subject = `New grant application: ${legalName}`.slice(0, 200);
     const text = [
@@ -449,6 +479,9 @@ export async function POST(req: NextRequest) {
       '',
       'Uploads:',
       downloadLinks || '(none)',
+      '',
+      'Links:',
+      linkBlock || '(none)',
       '',
       `IP: ${ip}`,
     ].join('\n');
@@ -466,6 +499,10 @@ export async function POST(req: NextRequest) {
         <h3 style="margin: 16px 0 8px;">Uploads</h3>
         <pre style="white-space: pre-wrap; background: #f6f6f6; padding: 12px; border-radius: 8px;">${escapeHtml(
           downloadLinks || '(none)',
+        )}</pre>
+        <h3 style="margin: 16px 0 8px;">Links</h3>
+        <pre style="white-space: pre-wrap; background: #f6f6f6; padding: 12px; border-radius: 8px;">${escapeHtml(
+          linkBlock || '(none)',
         )}</pre>
         <p style="margin: 16px 0 0; color: #666; font-size: 12px;">IP: ${escapeHtml(ip)}</p>
       </div>
