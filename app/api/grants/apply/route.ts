@@ -29,6 +29,7 @@ function getClientIp(req: NextRequest) {
 function isAllowedOrigin(req: NextRequest) {
   const origin = req.headers.get('origin') ?? '';
   const referer = req.headers.get('referer') ?? '';
+  const host = req.headers.get('host') ?? '';
 
   // Allow local dev.
   const allowLocal =
@@ -39,13 +40,23 @@ function isAllowedOrigin(req: NextRequest) {
   if (allowLocal) return true;
 
   const primary = 'https://bitcoinforthearts.org';
+  const primaryWww = 'https://www.bitcoinforthearts.org';
   const vercel =
     process.env.VERCEL_URL && process.env.VERCEL_URL.trim()
       ? `https://${process.env.VERCEL_URL.trim()}`
       : null;
 
-  const allowed = [primary, vercel].filter(Boolean) as string[];
+  const fromHost = host ? `https://${host}` : null;
+  const allowed = [primary, primaryWww, vercel, fromHost].filter(Boolean) as string[];
   if (!origin && !referer) return true; // Some clients omit these; don't hard-fail.
+
+  // Also allow Vercel preview domains for this project (when host is *.vercel.app).
+  const allowVercelPreview =
+    (host.endsWith('.vercel.app') && (origin.startsWith(`https://${host}`) || referer.startsWith(`https://${host}`))) ||
+    origin.endsWith('.vercel.app') ||
+    referer.includes('.vercel.app');
+
+  if (allowVercelPreview) return true;
 
   return allowed.some((a) => origin.startsWith(a) || referer.startsWith(a));
 }
