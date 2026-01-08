@@ -178,7 +178,12 @@ export default function GrantApplicationForm() {
 
       if (!res.ok || !data || !('ok' in data) || data.ok !== true) {
         const msg = data && 'error' in data && typeof data.error === 'string' ? data.error : '';
-        throw new Error(msg || `Submission failed (HTTP ${res.status}).`);
+        if (msg) throw new Error(msg);
+        throw new Error(
+          res.status >= 500
+            ? 'Server error while submitting. Please try again in a minute, or email grants@bitcoinforthearts.org.'
+            : `Submission failed (HTTP ${res.status}).`,
+        );
       }
 
       setSubmitState({ status: 'success', applicationId: data.applicationId });
