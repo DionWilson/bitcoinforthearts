@@ -99,6 +99,37 @@ Optional:
 
 ---
 
+### **Grants Application (First-Party / No Google Forms)**
+
+- **Apply:** `/grants/apply`
+- **Admin list:** `/admin/applications` (Basic Auth)
+
+#### Database (required)
+- `MONGODB_URI` (MongoDB connection string)
+- `MONGODB_DB` (optional; defaults to `bitcoinforthearts`)
+
+Uploads are stored in **MongoDB GridFS** (bucket: `grantUploads`).
+
+#### Email notifications (optional but recommended)
+If email is not configured, applications will still be stored in MongoDB.
+
+Preferred grant env vars (falls back to the contact SMTP vars above if present):
+- `GRANTS_TO_EMAIL` (defaults to `grants@bitcoinforthearts.org`)
+- `GRANTS_FROM_EMAIL`
+- `GRANTS_SMTP_USER`
+- `GRANTS_SMTP_PASS`
+
+Optional:
+- `GRANTS_SMTP_HOST` (default `smtp.zoho.com`)
+- `GRANTS_SMTP_PORT` (default `465`)
+- `GRANTS_SMTP_SECURE` (default `true`)
+
+#### Admin (Basic Auth)
+- `ADMIN_USER`
+- `ADMIN_PASS`
+
+If `ADMIN_USER`/`ADMIN_PASS` are not set, `/admin/*` returns 404.
+
 > **“The NEA of the Bitcoin Era.”**  
 > **First. Transparent. Unstoppable.**
 

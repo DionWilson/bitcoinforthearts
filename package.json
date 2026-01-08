@@ -13,7 +13,9 @@
   "dependencies": {
     "@fontsource/playfair-display": "^5.2.8",
     "@fontsource/roboto": "^5.2.9",
+    "busboy": "^1.6.0",
     "heic-convert": "^2.1.0",
+    "mongodb": "^7.0.0",
     "next": "^16.1.1",
     "nodemailer": "^7.0.12",
     "qrcode": "^1.5.4",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/busboy": "^1.5.4",
     "@types/node": "^20",
     "@types/nodemailer": "^7.0.4",
     "@types/qrcode": "^1.5.6",
