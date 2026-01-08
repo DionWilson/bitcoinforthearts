@@ -1,0 +1,739 @@
+'use client';
+
+import { useMemo, useRef, useState } from 'react';
+
+const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
+
+type SubmitState =
+  | { status: 'idle' }
+  | { status: 'submitting' }
+  | { status: 'success'; applicationId: string }
+  | { status: 'error'; message: string };
+
+function getFirstErrorMessage(err: unknown) {
+  if (err && typeof err === 'object' && 'message' in err) {
+    const msg = (err as { message?: unknown }).message;
+    if (typeof msg === 'string' && msg.trim()) return msg.trim();
+  }
+  return 'Something went wrong. Please try again.';
+}
+
+export default function GrantApplicationForm() {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const [step, setStep] = useState(1);
+  const [submitState, setSubmitState] = useState<SubmitState>({ status: 'idle' });
+  const [applicantType, setApplicantType] = useState<'individual' | 'organization'>(
+    'individual',
+  );
+
+  const steps = useMemo(
+    () => [
+      { id: 1, title: 'Applicant information' },
+      { id: 2, title: 'Project description' },
+      { id: 3, title: 'Funding & budget' },
+      { id: 4, title: 'Background & evaluation' },
+      { id: 5, title: 'Oversight & reporting' },
+      { id: 6, title: 'Attachments' },
+    ],
+    [],
+  );
+
+  const progressPct = Math.round((step / steps.length) * 100);
+
+  const validateStep = (targetStep: number) => {
+    const form = formRef.current;
+    if (!form) return false;
+    // Only validate currently-enabled inputs (we disable non-active sections).
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return false;
+    }
+
+    if (targetStep === 1) {
+      const selected = form.querySelectorAll<HTMLInputElement>(
+        'input[name="discipline[]"]:checked',
+      );
+      if (selected.length < 1) {
+        // Provide a clear message near the discipline block.
+        setSubmitState({
+          status: 'error',
+          message: 'Please select at least one artistic discipline.',
+        });
+        return false;
+      }
+      if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+    }
+
+    // Extra validation: BTC address pattern (native pattern errors can be hard to read).
+    if (targetStep >= 2) {
+      const btc = form.elements.namedItem('btcAddress') as HTMLInputElement | null;
+      if (btc && btc.value && !BTC_ADDRESS_REGEX.test(btc.value.trim())) {
+        btc.setCustomValidity('Please enter a valid Bitcoin address (bc1..., 1..., or 3...).');
+        btc.reportValidity();
+        btc.setCustomValidity('');
+        return false;
+      }
+    }
+
+    return true;
+  };
+
+  const goNext = () => {
+    if (!validateStep(step)) return;
+    setStep((s) => Math.min(steps.length, s + 1));
+  };
+
+  const goBack = () => setStep((s) => Math.max(1, s - 1));
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!validateStep(step)) return;
+    if (step !== steps.length) {
+      setStep(steps.length);
+      return;
+    }
+
+    const form = formRef.current;
+    if (!form) return;
+
+    setSubmitState({ status: 'submitting' });
+    try {
+      const body = new FormData(form);
+      const res = await fetch('/api/grants/apply', {
+        method: 'POST',
+        body,
+      });
+
+      const data = (await res.json().catch(() => null)) as
+        | { ok: true; applicationId: string }
+        | { ok: false; error?: string }
+        | null;
+
+      if (!res.ok || !data || !('ok' in data) || data.ok !== true) {
+        const msg = data && 'error' in data && typeof data.error === 'string' ? data.error : '';
+        throw new Error(msg || `Submission failed (HTTP ${res.status}).`);
+      }
+
+      setSubmitState({ status: 'success', applicationId: data.applicationId });
+      form.reset();
+      setApplicantType('individual');
+      setStep(1);
+    } catch (err) {
+      setSubmitState({ status: 'error', message: getFirstErrorMessage(err) });
+    }
+  };
+
+  const isOrg = applicantType === 'organization';
+  const isSubmitting = submitState.status === 'submitting';
+
+  const sectionDisabled = (section: number) => step !== section;
+
+  if (submitState.status === 'success') {
+    return (
+      <div className="rounded-2xl border border-border bg-background p-6">
+        <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+          Application received
+        </div>
+        <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+          Thanks — your grant application has been submitted.
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
+          We review applications quarterly. Processing begins in <span className="font-semibold text-foreground">Q3 2026</span>.
+        </p>
+        <div className="mt-4 rounded-xl border border-border bg-surface p-4 text-sm">
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            Confirmation ID
+          </div>
+          <div className="mt-1 font-semibold">{submitState.applicationId}</div>
+        </div>
+        <button
+          type="button"
+          onClick={() => setSubmitState({ status: 'idle' })}
+          className="mt-6 inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90"
+        >
+          Submit another application
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <form
+      ref={formRef}
+      onSubmit={onSubmit}
+      className="rounded-3xl border border-border bg-background p-6 sm:p-8"
+    >
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            BFTA Grant Application
+          </div>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+            Apply for a Bitcoin-native micro-grant
+          </h2>
+        </div>
+        <div className="text-sm text-muted">
+          Step <span className="font-semibold text-foreground">{step}</span> of{' '}
+          <span className="font-semibold text-foreground">{steps.length}</span>
+        </div>
+      </div>
+
+      <p className="mt-4 text-sm leading-relaxed text-muted">
+        BFTA funds Bitcoin-aligned arts projects. Grants are disbursed in BTC. Reviewed quarterly;
+        processing starts <span className="font-semibold text-foreground">Q3 2026</span>. Applicants must commit to
+        post-grant reporting for radical transparency.
+      </p>
+
+      {/* Progress */}
+      <div className="mt-5">
+        <div className="h-2 w-full rounded-full bg-surface">
+          <div
+            className="h-2 rounded-full bg-accent transition-all"
+            style={{ width: `${progressPct}%` }}
+            aria-hidden="true"
+          />
+        </div>
+        <div className="mt-2 flex flex-wrap gap-2 text-xs text-muted">
+          {steps.map((s) => (
+            <button
+              key={s.id}
+              type="button"
+              onClick={() => {
+                if (s.id === step) return;
+                if (s.id < step || validateStep(step)) setStep(s.id);
+              }}
+              className={[
+                'rounded-full border border-border px-3 py-1 transition-colors',
+                s.id === step ? 'bg-surface text-foreground' : 'bg-background hover:bg-surface',
+              ].join(' ')}
+              aria-current={s.id === step ? 'step' : undefined}
+            >
+              {s.id}. {s.title}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Honeypot */}
+      <div className="hidden" aria-hidden="true">
+        <label>
+          Company
+          <input type="text" name="company" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
+
+      {/* Section 1 */}
+      <fieldset disabled={sectionDisabled(1) || isSubmitting} className="mt-8">
+        <legend className="text-lg font-semibold tracking-tight">Section 1: Applicant Information</legend>
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Legal Name or DBA <span className="text-accent">*</span>
+            </span>
+            <input
+              name="legalName"
+              required
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Email <span className="text-accent">*</span>
+            </span>
+            <input
+              name="email"
+              type="email"
+              required
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">Phone</span>
+            <input
+              name="phone"
+              type="tel"
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2 sm:col-span-2">
+            <span className="text-sm font-semibold">
+              Mailing Address <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="mailingAddress"
+              required
+              rows={3}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2 sm:col-span-2">
+            <span className="text-sm font-semibold">
+              Website/Portfolio/Social Media Links <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="links"
+              required
+              rows={3}
+              placeholder="Example: https://yourportfolio.com, https://x.com/yourhandle"
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Applicant Type <span className="text-accent">*</span>
+            </span>
+            <select
+              name="applicantType"
+              required
+              value={applicantType}
+              onChange={(e) =>
+                setApplicantType(
+                  e.target.value === 'organization' ? 'organization' : 'individual',
+                )
+              }
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            >
+              <option value="individual">Individual Artist</option>
+              <option value="organization">Organization/Collective</option>
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Bitcoin Wallet Address for Disbursement <span className="text-accent">*</span>
+            </span>
+            <input
+              name="btcAddress"
+              required
+              pattern={BTC_ADDRESS_REGEX.source}
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+              placeholder="bc1..., 1..., or 3..."
+            />
+          </label>
+        </div>
+
+        {/* Org-only */}
+        <div className={['mt-4', isOrg ? '' : 'hidden'].join(' ')}>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <label className="flex flex-col gap-2 sm:col-span-2">
+              <span className="text-sm font-semibold">
+                Nonprofit Status or Fiscal Sponsor <span className="text-accent">*</span>
+              </span>
+              <input
+                name="nonprofitOrSponsor"
+                required={isOrg}
+                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+                placeholder="Example: 501(c)(3) status, or sponsor name + relationship"
+              />
+            </label>
+
+            <label className="flex flex-col gap-2 sm:col-span-2">
+              <span className="text-sm font-semibold">
+                Upload Fiscal Sponsor Agreement (PDF) <span className="text-accent">*</span>
+              </span>
+              <input
+                name="fiscalSponsorAgreement"
+                type="file"
+                accept="application/pdf"
+                required={isOrg}
+                disabled={!isOrg || sectionDisabled(1) || isSubmitting}
+                className="rounded-md border border-border bg-background px-3 py-3"
+              />
+              <span className="text-xs text-muted">
+                Required for organizations/collectives if using a sponsor.
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div className="mt-4 rounded-2xl border border-border bg-surface p-4">
+          <div className="text-sm font-semibold">
+            Primary Artistic Discipline <span className="text-accent">*</span>
+          </div>
+          <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+            {[
+              'Visual Arts',
+              'Theater',
+              'Dance',
+              'Music',
+              'Writing/Storytelling',
+              'Film',
+              'Digital/Ordinals-based',
+              'Other',
+            ].map((d) => (
+              <label key={d} className="flex items-center gap-3 text-sm">
+                <input
+                  type="checkbox"
+                  name="discipline[]"
+                  value={d}
+                  required={false}
+                  className="h-4 w-4"
+                />
+                <span>{d}</span>
+              </label>
+            ))}
+          </div>
+          <p className="mt-2 text-xs text-muted">
+            Select all that apply (required: choose at least one).
+          </p>
+          <input
+            type="text"
+            name="disciplineRequiredHack"
+            className="hidden"
+            aria-hidden="true"
+            tabIndex={-1}
+            // This is a small trick: we validate “at least one discipline” in JS on next.
+          />
+        </div>
+
+        <label className="mt-4 flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 text-sm">
+          <input name="missionAligned" type="checkbox" required className="mt-1 h-4 w-4" />
+          <span>
+            I confirm my project aligns with BFTA’s mission: radical transparency, low time preference,
+            censorship-resistant innovation, no gatekeepers, and a sustainable reserve model (55% grants,
+            30% programs, 10% ops, 5% HODL vault). <span className="text-accent">*</span>
+          </span>
+        </label>
+      </fieldset>
+
+      {/* Section 2 */}
+      <fieldset disabled={sectionDisabled(2) || isSubmitting} className="mt-10">
+        <legend className="text-lg font-semibold tracking-tight">Section 2: Project Description</legend>
+        <div className="mt-4 grid grid-cols-1 gap-4">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Project Title <span className="text-accent">*</span>
+            </span>
+            <input
+              name="projectTitle"
+              required
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Project Summary (500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="projectSummary"
+              required
+              maxLength={500}
+              rows={4}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Detailed Description (2000 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="projectDescription"
+              required
+              maxLength={2000}
+              rows={6}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="What, why, how Bitcoin/decentralization integrates..."
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Timeline: Start/end dates, milestones <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="timeline"
+              required
+              rows={4}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Venue/Platform <span className="text-accent">*</span>
+            </span>
+            <input
+              name="venuePlatform"
+              required
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Target Audience and Expected Impact (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="impact"
+              required
+              maxLength={1500}
+              rows={5}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="Include equity/inclusion considerations."
+            />
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Section 3 */}
+      <fieldset disabled={sectionDisabled(3) || isSubmitting} className="mt-10">
+        <legend className="text-lg font-semibold tracking-tight">Section 3: Funding and Budget</legend>
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Requested Grant Amount (USD or sats) <span className="text-accent">*</span>
+            </span>
+            <input
+              name="requestedAmount"
+              required
+              type="number"
+              min={0}
+              step="any"
+              className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2 sm:col-span-2">
+            <span className="text-sm font-semibold">
+              Total Project Budget Breakdown <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="budgetBreakdown"
+              required
+              rows={4}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2 sm:col-span-2">
+            <span className="text-sm font-semibold">
+              How Will BFTA Funds Be Used? (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="fundUse"
+              required
+              maxLength={1500}
+              rows={5}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Section 4 */}
+      <fieldset disabled={sectionDisabled(4) || isSubmitting} className="mt-10">
+        <legend className="text-lg font-semibold tracking-tight">
+          Section 4: Artist/Organization Background and Evaluation
+        </legend>
+        <div className="mt-4 grid grid-cols-1 gap-4">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Mission Statement or Bio (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="bio"
+              required
+              maxLength={1500}
+              rows={5}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              History and Key Accomplishments (2000 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="accomplishments"
+              required
+              maxLength={2000}
+              rows={6}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Equity and Inclusion Statement (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="equityInclusion"
+              required
+              maxLength={1500}
+              rows={5}
+              className="rounded-md border border-border bg-background px-3 py-2"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Evaluation Plan (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="evaluationPlan"
+              required
+              maxLength={1500}
+              rows={5}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="How will you measure success (attendance, feedback, on-chain metrics, etc.)?"
+            />
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Section 5 */}
+      <fieldset disabled={sectionDisabled(5) || isSubmitting} className="mt-10">
+        <legend className="text-lg font-semibold tracking-tight">
+          Section 5: Oversight and Reporting Commitments
+        </legend>
+        <div className="mt-4 grid grid-cols-1 gap-4">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Post-Grant Reporting Plan (1500 chars max) <span className="text-accent">*</span>
+            </span>
+            <textarea
+              name="reportingPlan"
+              required
+              maxLength={1500}
+              rows={6}
+              className="rounded-md border border-border bg-background px-3 py-2"
+              placeholder="How will you track and report fund usage at 6 months and project end?"
+            />
+          </label>
+
+          <label className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 text-sm">
+            <input
+              name="agreeOversight"
+              type="checkbox"
+              required
+              className="mt-1 h-4 w-4"
+            />
+            <span>
+              I agree to oversight: I will submit a simple report within 6 months of grant receipt and at project end,
+              and allow BFTA to request evidence that funds were used as described.{' '}
+              <span className="text-accent">*</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      {/* Section 6 */}
+      <fieldset disabled={sectionDisabled(6) || isSubmitting} className="mt-10">
+        <legend className="text-lg font-semibold tracking-tight">Section 6: Attachments</legend>
+        <div className="mt-4 grid grid-cols-1 gap-4">
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">
+              Upload Portfolio/Resume (PDF) <span className="text-accent">*</span>
+            </span>
+            <input
+              name="portfolioResume"
+              type="file"
+              required
+              accept="application/pdf"
+              className="rounded-md border border-border bg-background px-3 py-3"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">Upload Artistic Samples (optional, up to 5MB each)</span>
+            <input
+              name="artSamples"
+              type="file"
+              multiple
+              accept="image/*,video/*"
+              className="rounded-md border border-border bg-background px-3 py-3"
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="text-sm font-semibold">Optional Support Materials (PDF/DOCX)</span>
+            <input
+              name="supportMaterials"
+              type="file"
+              multiple
+              accept="application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword"
+              className="rounded-md border border-border bg-background px-3 py-3"
+            />
+          </label>
+
+          <div className="rounded-2xl border border-border bg-surface p-4 text-sm">
+            <div className="font-semibold">
+              Certification <span className="text-accent">*</span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-muted">
+              By submitting, you agree to the grant terms (including the oversight and reporting requirements described
+              in this application).
+            </p>
+            <label className="mt-3 flex items-start gap-3">
+              <input name="agreeTerms" type="checkbox" required className="mt-1 h-4 w-4" />
+              <span>
+                I agree to the{' '}
+                <a
+                  href="/resources/grants/grant-terms.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold underline underline-offset-4"
+                >
+                  grant terms
+                </a>
+                . <span className="text-accent">*</span>
+              </span>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      {submitState.status === 'error' ? (
+        <div className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800">
+          {submitState.message}
+        </div>
+      ) : null}
+
+      {/* Navigation */}
+      <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <button
+          type="button"
+          onClick={goBack}
+          disabled={step === 1 || isSubmitting}
+          className={[
+            'inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors',
+            step === 1 || isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-surface',
+          ].join(' ')}
+        >
+          Back
+        </button>
+
+        {step < steps.length ? (
+          <button
+            type="button"
+            onClick={goNext}
+            disabled={isSubmitting}
+            className="inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90 border border-accent/60"
+          >
+            Next
+          </button>
+        ) : (
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={[
+              'inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors',
+              isSubmitting ? 'opacity-70 cursor-wait' : 'hover:opacity-90',
+            ].join(' ')}
+          >
+            {isSubmitting ? 'Submitting…' : 'Submit application'}
+          </button>
+        )}
+      </div>
+    </form>
+  );
+}
+

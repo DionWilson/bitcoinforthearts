@@ -10,9 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function GrantsPage() {
-  const applyForm =
-    'https://docs.google.com/forms/d/e/1FAIpQLScErzhYqHskUF90oZegSW-Zlw82_P-khCpxzlgPFL_n6Y6FKw/viewform?usp=header';
-
   const infoCards = [
     {
       title: 'What We Fund',
@@ -161,14 +158,12 @@ export default function GrantsPage() {
                 applications are reviewed quarterly.
               </div>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={applyForm}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/grants/apply"
                   className="inline-flex min-h-12 items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90 border border-accent/60"
                 >
-                  Open the application form
-                </a>
+                  Apply online
+                </Link>
                 <a
                   href="/resources/grants/grant-application.pdf"
                   className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
