@@ -29,6 +29,7 @@ function getClientIp(req: NextRequest) {
 function isAllowedOrigin(req: NextRequest) {
   const origin = req.headers.get('origin') ?? '';
   const referer = req.headers.get('referer') ?? '';
+  const host = req.headers.get('host') ?? '';
 
   // Allow local dev.
   const allowLocal =
@@ -39,13 +40,23 @@ function isAllowedOrigin(req: NextRequest) {
   if (allowLocal) return true;
 
   const primary = 'https://bitcoinforthearts.org';
+  const primaryWww = 'https://www.bitcoinforthearts.org';
   const vercel =
     process.env.VERCEL_URL && process.env.VERCEL_URL.trim()
       ? `https://${process.env.VERCEL_URL.trim()}`
       : null;
 
-  const allowed = [primary, vercel].filter(Boolean) as string[];
+  const fromHost = host ? `https://${host}` : null;
+  const allowed = [primary, primaryWww, vercel, fromHost].filter(Boolean) as string[];
   if (!origin && !referer) return true; // Some clients omit these; don't hard-fail.
+
+  // Also allow Vercel preview domains for this project (when host is *.vercel.app).
+  const allowVercelPreview =
+    (host.endsWith('.vercel.app') && (origin.startsWith(`https://${host}`) || referer.startsWith(`https://${host}`))) ||
+    origin.endsWith('.vercel.app') ||
+    referer.includes('.vercel.app');
+
+  if (allowVercelPreview) return true;
 
   return allowed.some((a) => origin.startsWith(a) || referer.startsWith(a));
 }
@@ -365,16 +376,7 @@ export async function POST(req: NextRequest) {
     const reportingPlan = requireString(fields, 'reportingPlan', 'Post-Grant Reporting Plan');
     if (reportingPlan.length > 1500) throw new Error('Reporting Plan exceeds 1500 characters.');
 
-    const portfolioLink = (fields.portfolioLink ?? '').trim();
-    const hasPortfolio = uploads.some((u) => u.fieldName === 'portfolioResume');
-    if (!hasPortfolio && !portfolioLink) {
-      throw new Error(
-        'Portfolio/Resume is required (upload a PDF under 3MB, or provide a link).',
-      );
-    }
-
     const artSamplesLinks = (fields.artSamplesLinks ?? '').trim();
-    const supportMaterialsLinks = (fields.supportMaterialsLinks ?? '').trim();
 
     const applicationId = new ObjectId();
     const now = new Date();
@@ -430,12 +432,10 @@ export async function POST(req: NextRequest) {
         size: u.size,
       })),
       links: {
-        portfolio: portfolioLink || null,
         fiscalSponsorAgreement: isOrg
           ? (fields.fiscalSponsorAgreementLink ?? '').trim() || null
           : null,
         artSamples: artSamplesLinks || null,
-        supportMaterials: supportMaterialsLinks || null,
       },
       meta: {
         ip,
@@ -455,12 +455,10 @@ export async function POST(req: NextRequest) {
       .join('\n');
 
     const linkBlock = [
-      portfolioLink ? `portfolioLink: ${portfolioLink}` : null,
       isOrg && (fields.fiscalSponsorAgreementLink ?? '').trim()
         ? `fiscalSponsorAgreementLink: ${(fields.fiscalSponsorAgreementLink ?? '').trim()}`
         : null,
       artSamplesLinks ? `artSamplesLinks:\n${artSamplesLinks}` : null,
-      supportMaterialsLinks ? `supportMaterialsLinks:\n${supportMaterialsLinks}` : null,
     ]
       .filter(Boolean)
       .join('\n\n');

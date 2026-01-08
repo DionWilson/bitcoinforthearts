@@ -116,19 +116,8 @@ export default function GrantApplicationForm() {
     const form = formRef.current;
     if (!form) return false;
 
-    const portfolioFile = form.elements.namedItem('portfolioResume') as HTMLInputElement | null;
-    const portfolioLink = form.elements.namedItem('portfolioLink') as HTMLTextAreaElement | null;
-    const portfolioHasFile = Boolean(portfolioFile?.files?.length);
-    const portfolioHasLink = Boolean(portfolioLink?.value?.trim());
-
-    if (!portfolioHasFile && !portfolioHasLink) {
-      setSubmitState({
-        status: 'error',
-        message:
-          'Please provide either a Portfolio/Resume PDF (under 3MB) or a portfolio link.',
-      });
-      return false;
-    }
+    // Portfolio links are already required in Section 1 via the "links" field.
+    // We only enforce the file size if they choose to upload a PDF.
 
     if (isOrg) {
       const sponsorFile = form.elements.namedItem(
@@ -239,7 +228,7 @@ export default function GrantApplicationForm() {
     <form
       ref={formRef}
       onSubmit={onSubmit}
-      className="rounded-3xl border border-border bg-background p-6 sm:p-8"
+      className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
       <div ref={topRef} />
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -302,7 +291,11 @@ export default function GrantApplicationForm() {
       </div>
 
       {/* Section 1 */}
-      <fieldset disabled={sectionDisabled(1) || isSubmitting} className="mt-8">
+      <fieldset
+        disabled={sectionDisabled(1) || isSubmitting}
+        hidden={sectionDisabled(1)}
+        className="mt-8"
+      >
         <legend className="text-lg font-semibold tracking-tight">Section 1: Applicant Information</legend>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="flex flex-col gap-2">
@@ -508,7 +501,11 @@ export default function GrantApplicationForm() {
       </fieldset>
 
       {/* Section 2 */}
-      <fieldset disabled={sectionDisabled(2) || isSubmitting} className="mt-10">
+      <fieldset
+        disabled={sectionDisabled(2) || isSubmitting}
+        hidden={sectionDisabled(2)}
+        className="mt-10"
+      >
         <legend className="text-lg font-semibold tracking-tight">Section 2: Project Description</legend>
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
@@ -601,7 +598,11 @@ export default function GrantApplicationForm() {
       </fieldset>
 
       {/* Section 3 */}
-      <fieldset disabled={sectionDisabled(3) || isSubmitting} className="mt-10">
+      <fieldset
+        disabled={sectionDisabled(3) || isSubmitting}
+        hidden={sectionDisabled(3)}
+        className="mt-10"
+      >
         <legend className="text-lg font-semibold tracking-tight">Section 3: Funding and Budget</legend>
         <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="flex flex-col gap-2">
@@ -652,7 +653,11 @@ export default function GrantApplicationForm() {
       </fieldset>
 
       {/* Section 4 */}
-      <fieldset disabled={sectionDisabled(4) || isSubmitting} className="mt-10">
+      <fieldset
+        disabled={sectionDisabled(4) || isSubmitting}
+        hidden={sectionDisabled(4)}
+        className="mt-10"
+      >
         <legend className="text-lg font-semibold tracking-tight">
           Section 4: Artist/Organization Background and Evaluation
         </legend>
@@ -725,7 +730,11 @@ export default function GrantApplicationForm() {
       </fieldset>
 
       {/* Section 5 */}
-      <fieldset disabled={sectionDisabled(5) || isSubmitting} className="mt-10">
+      <fieldset
+        disabled={sectionDisabled(5) || isSubmitting}
+        hidden={sectionDisabled(5)}
+        className="mt-10"
+      >
         <legend className="text-lg font-semibold tracking-tight">
           Section 5: Oversight and Reporting Commitments
         </legend>
@@ -764,7 +773,11 @@ export default function GrantApplicationForm() {
       </fieldset>
 
       {/* Section 6 */}
-      <fieldset disabled={sectionDisabled(6) || isSubmitting} className="mt-10">
+      <fieldset
+        disabled={sectionDisabled(6) || isSubmitting}
+        hidden={sectionDisabled(6)}
+        className="mt-10"
+      >
         <legend className="text-lg font-semibold tracking-tight">Section 6: Attachments</legend>
         <p className="mt-2 text-xs text-muted">
           Upload limit: keep each file under <span className="font-semibold text-foreground">{MAX_FILE_MB}MB</span>.
@@ -789,34 +802,12 @@ export default function GrantApplicationForm() {
           </label>
 
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">
-              Portfolio/Resume Link <span className="text-accent">*</span>
-            </span>
-            <textarea
-              name="portfolioLink"
-              rows={2}
-              className="rounded-md border border-border bg-background px-3 py-2"
-              placeholder="Link to your portfolio/resume (preferred for large files)"
-            />
-          </label>
-
-          <label className="flex flex-col gap-2">
             <span className="text-sm font-semibold">Artistic Samples (links)</span>
             <textarea
               name="artSamplesLinks"
               rows={4}
               className="rounded-md border border-border bg-background px-3 py-2"
               placeholder="Paste links to images/videos (YouTube, Vimeo, website, Drive, etc.). One per line is great."
-            />
-          </label>
-
-          <label className="flex flex-col gap-2">
-            <span className="text-sm font-semibold">Optional Support Materials (links)</span>
-            <textarea
-              name="supportMaterialsLinks"
-              rows={3}
-              className="rounded-md border border-border bg-background px-3 py-2"
-              placeholder="Paste links to any additional PDFs/docs."
             />
           </label>
 
@@ -853,8 +844,9 @@ export default function GrantApplicationForm() {
         </div>
       ) : null}
 
-      {/* Navigation (sticky so you can always advance without scrolling) */}
-      <div className="mt-8 sticky bottom-0 bg-background/95 backdrop-blur border-t border-border pt-4">
+      {/* Navigation (fixed so you can always advance without scrolling) */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-background/95 backdrop-blur">
+        <div className="mx-auto max-w-6xl px-6 py-4">
         <div className="flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="button"
@@ -889,6 +881,7 @@ export default function GrantApplicationForm() {
             {isSubmitting ? 'Submitting…' : 'Submit application'}
           </button>
         )}
+        </div>
         </div>
       </div>
     </form>
