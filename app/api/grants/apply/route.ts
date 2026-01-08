@@ -22,6 +22,30 @@ function getClientIp(req: NextRequest) {
   return req.headers.get('x-real-ip') ?? 'unknown';
 }
 
+function isAllowedOrigin(req: NextRequest) {
+  const origin = req.headers.get('origin') ?? '';
+  const referer = req.headers.get('referer') ?? '';
+
+  // Allow local dev.
+  const allowLocal =
+    origin.startsWith('http://localhost') ||
+    origin.startsWith('http://127.0.0.1') ||
+    referer.startsWith('http://localhost') ||
+    referer.startsWith('http://127.0.0.1');
+  if (allowLocal) return true;
+
+  const primary = 'https://bitcoinforthearts.org';
+  const vercel =
+    process.env.VERCEL_URL && process.env.VERCEL_URL.trim()
+      ? `https://${process.env.VERCEL_URL.trim()}`
+      : null;
+
+  const allowed = [primary, vercel].filter(Boolean) as string[];
+  if (!origin && !referer) return true; // Some clients omit these; don't hard-fail.
+
+  return allowed.some((a) => origin.startsWith(a) || referer.startsWith(a));
+}
+
 // Best-effort in-memory rate limit (resets per server instance).
 const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 const RATE_LIMIT_MAX = 3;
@@ -118,6 +142,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       { ok: false, error: 'Too many requests. Please try again later.' },
       { status: 429 },
+    );
+  }
+
+  if (!isAllowedOrigin(req)) {
+    return NextResponse.json(
+      { ok: false, error: 'Invalid origin.' },
+      { status: 403 },
     );
   }
 
@@ -264,6 +295,8 @@ export async function POST(req: NextRequest) {
   }
 
   if (errors.length) {
+    // Cleanup orphaned uploads
+    await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
     return NextResponse.json(
       { ok: false, error: errors.slice(0, 3).join(' ') },
       { status: 400 },
@@ -446,6 +479,8 @@ export async function POST(req: NextRequest) {
     );
   } catch (err) {
     console.error('[grants] validation/storage failed', err);
+    // Cleanup orphaned uploads if we failed after upload
+    await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
     return NextResponse.json(
       { ok: false, error: err instanceof Error ? err.message : 'Invalid submission.' },
       { status: 400 },

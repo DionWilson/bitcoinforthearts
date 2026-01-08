@@ -1,5 +1,6 @@
 import { getMongoDb } from '@/lib/mongodb';
 import Link from 'next/link';
+import AdminApplicationRow from '@/components/AdminApplicationRow';
 
 export const dynamic = 'force-dynamic';
 
@@ -7,6 +8,7 @@ type ApplicationDoc = {
   _id: unknown;
   createdAt?: Date;
   status?: string;
+  adminNotes?: string | null;
   applicant?: {
     legalName?: string;
     email?: string;
@@ -16,6 +18,10 @@ type ApplicationDoc = {
   };
   funding?: {
     requestedAmount?: number;
+  };
+  oversight?: {
+    reportDueAt?: Date | null;
+    reportReceivedAt?: Date | null;
   };
   uploads?: Array<{
     fileId: unknown;
@@ -64,79 +70,88 @@ export default async function AdminApplicationsPage() {
         </Link>
       </div>
 
-      <div className="mt-8 overflow-x-auto rounded-2xl border border-border bg-background">
-        <table className="w-full min-w-[900px] border-collapse text-left text-sm">
-          <thead className="bg-surface">
-            <tr className="border-b border-border">
-              <th className="p-3">Submitted</th>
-              <th className="p-3">Applicant</th>
-              <th className="p-3">Email</th>
-              <th className="p-3">Project</th>
-              <th className="p-3">Amount</th>
-              <th className="p-3">Status</th>
-              <th className="p-3">Files</th>
-            </tr>
-          </thead>
-          <tbody>
-            {docs.map((d) => {
-              const id = String(d._id ?? '');
-              const files = d.uploads ?? [];
-              return (
-                <tr key={id} className="border-b border-border last:border-b-0">
-                  <td className="p-3 whitespace-nowrap text-muted">
-                    {fmtDate(d.createdAt)}
-                  </td>
-                  <td className="p-3 font-semibold">
+      <div className="mt-8 space-y-4">
+        {docs.map((d) => {
+          const id = String(d._id ?? '');
+          const files = d.uploads ?? [];
+          return (
+            <div
+              key={id}
+              className="rounded-2xl border border-border bg-background p-5"
+            >
+              <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                <div className="min-w-0">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                    Submitted {fmtDate(d.createdAt)}
+                  </div>
+                  <div className="mt-1 text-lg font-semibold tracking-tight">
                     {d.applicant?.legalName ?? ''}
-                  </td>
-                  <td className="p-3">
-                    {d.applicant?.email ? (
+                  </div>
+                  <div className="mt-1 text-sm text-muted">
+                    {d.project?.title ?? ''}
+                    {typeof d.funding?.requestedAmount === 'number' ? (
+                      <span>
+                        {' '}
+                        • <span className="font-semibold text-foreground">Amount:</span>{' '}
+                        {d.funding.requestedAmount}
+                      </span>
+                    ) : null}
+                  </div>
+                  {d.applicant?.email ? (
+                    <div className="mt-2 text-sm">
                       <a
                         href={`mailto:${d.applicant.email}`}
-                        className="underline underline-offset-4"
+                        className="font-semibold underline underline-offset-4"
                       >
                         {d.applicant.email}
                       </a>
-                    ) : (
-                      ''
-                    )}
-                  </td>
-                  <td className="p-3">{d.project?.title ?? ''}</td>
-                  <td className="p-3">
-                    {typeof d.funding?.requestedAmount === 'number'
-                      ? d.funding.requestedAmount
-                      : ''}
-                  </td>
-                  <td className="p-3">
-                    <span className="rounded-full border border-border bg-surface px-2 py-1 text-xs font-semibold">
-                      {d.status ?? 'unknown'}
-                    </span>
-                  </td>
-                  <td className="p-3">
-                    {files.length ? (
-                      <ul className="space-y-1">
-                        {files.map((f, idx) => (
-                          <li key={`${id}-${idx}`}>
-                            <a
-                              className="font-semibold underline underline-offset-4"
-                              href={`/api/grants/files/${String(f.fileId)}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {f.fieldName}: {f.filename}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <span className="text-muted">—</span>
-                    )}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="w-full md:max-w-md">
+                  <AdminApplicationRow
+                    data={{
+                      id,
+                      status: d.status ?? 'submitted',
+                      reportDueAt: d.oversight?.reportDueAt
+                        ? new Date(d.oversight.reportDueAt).toISOString()
+                        : null,
+                      reportReceivedAt: d.oversight?.reportReceivedAt
+                        ? new Date(d.oversight.reportReceivedAt).toISOString()
+                        : null,
+                      adminNotes: d.adminNotes ?? '',
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Files
+                </div>
+                {files.length ? (
+                  <ul className="mt-2 space-y-1 text-sm">
+                    {files.map((f, idx) => (
+                      <li key={`${id}-${idx}`}>
+                        <a
+                          className="font-semibold underline underline-offset-4"
+                          href={`/api/grants/files/${String(f.fileId)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {f.fieldName}: {f.filename}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <div className="mt-2 text-sm text-muted">—</div>
+                )}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </main>
   );

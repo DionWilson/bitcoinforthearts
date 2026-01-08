@@ -15,7 +15,11 @@ function unauthorized() {
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  if (!pathname.startsWith('/admin')) return NextResponse.next();
+  const needsAuth =
+    pathname.startsWith('/admin') ||
+    pathname.startsWith('/api/admin') ||
+    pathname.startsWith('/api/grants/files');
+  if (!needsAuth) return NextResponse.next();
 
   const user = getEnv('ADMIN_USER');
   const pass = getEnv('ADMIN_PASS');
@@ -45,6 +49,6 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: ['/admin/:path*', '/api/admin/:path*', '/api/grants/files/:path*'],
 };
 
