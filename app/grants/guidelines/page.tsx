@@ -172,7 +172,11 @@ export default function GrantGuidelinesPage() {
             <div className="mt-6 print:hidden">
               {/* Mobile: carousel for clean uniform layout */}
               <div className="md:hidden -mx-6 px-6">
-                <MobileCarousel ariaLabel="Grant guidelines table of contents" className="">
+                <MobileCarousel
+                  ariaLabel="Grant guidelines table of contents"
+                  showDots={false}
+                  showArrows
+                >
                   {TOC_ITEMS.map((it) => (
                     <div
                       key={it.href}
