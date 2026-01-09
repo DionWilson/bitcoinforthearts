@@ -520,7 +520,25 @@ export async function POST(req: NextRequest) {
       </div>
     `.trim();
 
-    await sendEmailNotification({ to, subject, text, html, replyTo: email });
+    try {
+      await sendEmailNotification({ to, subject, text, html, replyTo: email });
+    } catch (emailErr) {
+      // Don't block submissions if SMTP is misconfigured.
+      console.error('[grants] email notification failed', emailErr);
+      await db.collection('applications').updateOne(
+        { _id: applicationId },
+        {
+          $set: {
+            emailNotification: {
+              ok: false,
+              failedAt: new Date(),
+              error:
+                emailErr instanceof Error ? emailErr.message : 'Unknown email error',
+            },
+          },
+        },
+      );
+    }
 
     return NextResponse.json(
       { ok: true, applicationId: applicationId.toString() },
