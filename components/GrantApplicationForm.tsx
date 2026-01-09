@@ -1521,11 +1521,12 @@ export default function GrantApplicationForm() {
         <div className="mt-4 grid grid-cols-1 gap-4">
           <label className="flex flex-col gap-2">
             <span className="text-sm font-semibold">
-              Upload Portfolio/Resume (PDF) (optional, under {MAX_FILE_MB}MB)
+              Upload resume and/or portfolio (PDFs) (optional, under {MAX_FILE_MB}MB each)
             </span>
             <input
               name="portfolioResume"
               type="file"
+              multiple
               required={false}
               accept="application/pdf"
               onChange={() => {
@@ -1534,6 +1535,9 @@ export default function GrantApplicationForm() {
               }}
               className="rounded-md border border-border bg-background px-3 py-3"
             />
+            <span className="text-xs text-muted">
+              You can select multiple PDFs. Keep each file under {MAX_FILE_MB}MB.
+            </span>
           </label>
 
           <label className="flex flex-col gap-2">
