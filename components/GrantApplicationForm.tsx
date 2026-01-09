@@ -8,6 +8,18 @@ const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
 
+const CHAR_LIMITS: Record<string, number> = {
+  projectSummary: 500,
+  projectDescription: 2000,
+  impact: 1500,
+  fundUse: 1500,
+  bio: 1500,
+  accomplishments: 2000,
+  equityInclusion: 1500,
+  evaluationPlan: 1500,
+  reportingPlan: 1500,
+};
+
 type DraftPayloadV1 = {
   version: 1;
   savedAt: string;
@@ -35,6 +47,7 @@ export default function GrantApplicationForm() {
   const topRef = useRef<HTMLDivElement | null>(null);
   const [step, setStep] = useState(1);
   const [submitState, setSubmitState] = useState<SubmitState>({ status: 'idle' });
+  const [charCounts, setCharCounts] = useState<Record<string, number>>({});
   const [applicantType, setApplicantType] = useState<'individual' | 'organization'>(
     'individual',
   );
@@ -62,6 +75,31 @@ export default function GrantApplicationForm() {
     // When advancing steps, bring the current section into view.
     topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, [step]);
+
+  useEffect(() => {
+    // When showing an error, ensure the message is visible.
+    if (submitState.status === 'error') {
+      topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [submitState.status]);
+
+  const refreshCharCounts = useCallback(() => {
+    const form = formRef.current;
+    if (!form) return;
+    const next: Record<string, number> = {};
+    for (const [name, max] of Object.entries(CHAR_LIMITS)) {
+      const el = form.elements.namedItem(name) as HTMLTextAreaElement | HTMLInputElement | null;
+      if (!el) continue;
+      const v = typeof el.value === 'string' ? el.value : '';
+      next[name] = Math.min(max, v.length);
+    }
+    setCharCounts(next);
+  }, []);
+
+  useEffect(() => {
+    // Initialize counters once.
+    refreshCharCounts();
+  }, [refreshCharCounts]);
 
   const collectDraftValues = useCallback((form: HTMLFormElement) => {
     const controls = Array.from(form.elements).filter(
@@ -252,12 +290,13 @@ export default function GrantApplicationForm() {
       // Wait a tick so conditional org-only fields exist/enabled as needed.
       window.setTimeout(() => {
         restoreDraftIntoForm(parsed);
+        refreshCharCounts();
         setDraftNotice({ savedAt: parsed.savedAt, loaded: true });
       }, 0);
     } catch {
       // ignore parse errors
     }
-  }, [restoreDraftIntoForm, steps.length]);
+  }, [refreshCharCounts, restoreDraftIntoForm, steps.length]);
 
   const validateCurrentStepOnly = (targetStep: number) => {
     const form = formRef.current;
@@ -458,6 +497,7 @@ export default function GrantApplicationForm() {
       setApplicantType('individual');
       setStep(1);
       clearDraft();
+      refreshCharCounts();
     } catch (err) {
       setSubmitState({ status: 'error', message: getFirstErrorMessage(err) });
     }
@@ -531,6 +571,20 @@ export default function GrantApplicationForm() {
         }
         // Auto-save draft on changes (debounced).
         scheduleDraftSave();
+        if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) {
+          const max = typeof target.maxLength === 'number' ? target.maxLength : -1;
+          if (
+            max > 0 &&
+            target.name &&
+            Object.prototype.hasOwnProperty.call(CHAR_LIMITS, target.name)
+          ) {
+            const maxAllowed = CHAR_LIMITS[target.name] ?? max;
+            setCharCounts((prev) => ({
+              ...prev,
+              [target.name]: Math.min(maxAllowed, target.value.length),
+            }));
+          }
+        }
       }}
       className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
@@ -599,6 +653,16 @@ export default function GrantApplicationForm() {
               .
             </span>
           )}
+        </div>
+      ) : null}
+
+      {submitState.status === 'error' ? (
+        <div
+          role="alert"
+          aria-live="polite"
+          className="mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800"
+        >
+          {submitState.message}
         </div>
       ) : null}
 
@@ -908,6 +972,9 @@ export default function GrantApplicationForm() {
               rows={4}
               className="rounded-md border border-border bg-background px-3 py-2"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.projectSummary ?? 0)}/{CHAR_LIMITS.projectSummary}
+            </div>
           </label>
 
           <label className="flex flex-col gap-2">
@@ -925,6 +992,9 @@ export default function GrantApplicationForm() {
               className="rounded-md border border-border bg-background px-3 py-2"
               placeholder="What, why, how Bitcoin/decentralization integrates..."
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.projectDescription ?? 0)}/{CHAR_LIMITS.projectDescription}
+            </div>
           </label>
 
           <label className="flex flex-col gap-2">
@@ -968,6 +1038,9 @@ export default function GrantApplicationForm() {
               className="rounded-md border border-border bg-background px-3 py-2"
               placeholder="Include equity/inclusion considerations."
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.impact ?? 0)}/{CHAR_LIMITS.impact}
+            </div>
           </label>
         </div>
       </fieldset>
@@ -1024,6 +1097,9 @@ export default function GrantApplicationForm() {
               rows={5}
               className="rounded-md border border-border bg-background px-3 py-2"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.fundUse ?? 0)}/{CHAR_LIMITS.fundUse}
+            </div>
           </label>
         </div>
       </fieldset>
@@ -1053,6 +1129,9 @@ export default function GrantApplicationForm() {
               rows={5}
               className="rounded-md border border-border bg-background px-3 py-2"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.bio ?? 0)}/{CHAR_LIMITS.bio}
+            </div>
           </label>
 
           <label className="flex flex-col gap-2">
@@ -1069,6 +1148,9 @@ export default function GrantApplicationForm() {
               rows={6}
               className="rounded-md border border-border bg-background px-3 py-2"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.accomplishments ?? 0)}/{CHAR_LIMITS.accomplishments}
+            </div>
           </label>
 
           <label className="flex flex-col gap-2">
@@ -1085,6 +1167,9 @@ export default function GrantApplicationForm() {
               rows={5}
               className="rounded-md border border-border bg-background px-3 py-2"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.equityInclusion ?? 0)}/{CHAR_LIMITS.equityInclusion}
+            </div>
           </label>
 
           <label className="flex flex-col gap-2">
@@ -1102,6 +1187,9 @@ export default function GrantApplicationForm() {
               className="rounded-md border border-border bg-background px-3 py-2"
               placeholder="How will you measure success (attendance, feedback, on-chain metrics, etc.)?"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.evaluationPlan ?? 0)}/{CHAR_LIMITS.evaluationPlan}
+            </div>
           </label>
         </div>
       </fieldset>
@@ -1132,6 +1220,9 @@ export default function GrantApplicationForm() {
               className="rounded-md border border-border bg-background px-3 py-2"
               placeholder="How will you track and report fund usage at 6 months and project end?"
             />
+            <div className="text-xs text-muted text-right">
+              {(charCounts.reportingPlan ?? 0)}/{CHAR_LIMITS.reportingPlan}
+            </div>
           </label>
 
           <label className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 text-sm">
@@ -1216,12 +1307,6 @@ export default function GrantApplicationForm() {
           </div>
         </div>
       </fieldset>
-
-      {submitState.status === 'error' ? (
-        <div className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800">
-          {submitState.message}
-        </div>
-      ) : null}
 
       {/* Navigation (fixed so you can always advance without scrolling) */}
       <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-border bg-background/95 backdrop-blur">
