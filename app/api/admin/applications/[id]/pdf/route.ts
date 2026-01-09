@@ -84,6 +84,15 @@ export async function GET(
   writeField(pdf, 'Name/DBA', (doc as any).applicant?.legalName ?? '');
   writeField(pdf, 'Email', (doc as any).applicant?.email ?? '');
   writeField(pdf, 'Phone', (doc as any).applicant?.phone ?? '');
+  writeField(
+    pdf,
+    'US-based activities (eligibility)',
+    (doc as any).eligibility?.usProjectOnly === true
+      ? 'Yes'
+      : (doc as any).eligibility?.usProjectOnly === false
+        ? 'No'
+        : '—',
+  );
   writeField(pdf, 'Applicant type', (doc as any).applicant?.applicantType ?? '');
   writeField(pdf, 'EIN', (doc as any).applicant?.ein ?? '');
   writeField(pdf, 'Nonprofit/Sponsor', (doc as any).applicant?.nonprofitOrSponsor ?? '');

@@ -22,6 +22,9 @@ type ApplicationDoc = {
   status?: string;
   adminNotes?: string | null;
   awardedAt?: Date | null;
+  eligibility?: {
+    usProjectOnly?: boolean;
+  };
   reviews?: Array<{
     reviewer?: string | null;
     createdAt?: Date | null;
@@ -306,6 +309,14 @@ export default async function AdminApplicationDetailsPage({
           <div className="mt-4 grid grid-cols-1 gap-4">
             {textBlock('Mailing address', doc.applicant?.mailingAddress ?? '')}
             {linksBlock('Links', doc.applicant?.links ?? '')}
+            {textBlock(
+              'US-based activities (eligibility)',
+              doc.eligibility?.usProjectOnly === true
+                ? 'Yes'
+                : doc.eligibility?.usProjectOnly === false
+                  ? 'No'
+                  : '',
+            )}
             {textBlock('Applicant type', doc.applicant?.applicantType ?? '')}
             {textBlock('EIN', doc.applicant?.ein ?? '')}
             {textBlock('Nonprofit or sponsor', doc.applicant?.nonprofitOrSponsor ?? '')}

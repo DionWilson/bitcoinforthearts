@@ -371,6 +371,7 @@ export async function POST(req: NextRequest) {
     }
 
     requireCheckbox(fields, 'missionAligned', 'Mission alignment');
+    requireCheckbox(fields, 'usProjectOnly', 'US-based activities');
     requireCheckbox(fields, 'agreeOversight', 'Oversight agreement');
     requireCheckbox(fields, 'agreeTerms', 'Terms agreement');
     requireCheckbox(fields, 'agreeLegal', 'Legal assurances');
@@ -425,6 +426,9 @@ export async function POST(req: NextRequest) {
       createdAt: now,
       updatedAt: now,
       status: 'submitted',
+      eligibility: {
+        usProjectOnly: true,
+      },
       applicant: {
         legalName,
         email,
@@ -517,6 +521,7 @@ export async function POST(req: NextRequest) {
       `Application ID: ${applicationId.toString()}`,
       `Name/DBA: ${legalName}`,
       `Applicant type: ${applicantType}`,
+      `US-based activities: yes`,
       isOrg ? `EIN: ${normalizeEin(fields.ein ?? '') ?? ''}` : null,
       `Email: ${email}`,
       `Disciplines: ${disciplines.join(', ')}`,
@@ -540,6 +545,7 @@ export async function POST(req: NextRequest) {
         <p style="margin: 0 0 6px;"><strong>Application ID:</strong> ${escapeHtml(applicationId.toString())}</p>
         <p style="margin: 0 0 6px;"><strong>Name/DBA:</strong> ${escapeHtml(legalName)}</p>
         <p style="margin: 0 0 6px;"><strong>Applicant type:</strong> ${escapeHtml(applicantType)}</p>
+        <p style="margin: 0 0 6px;"><strong>US-based activities:</strong> yes</p>
         <p style="margin: 0 0 6px;"><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p style="margin: 0 0 6px;"><strong>Disciplines:</strong> ${escapeHtml(disciplines.join(', '))}</p>
         <p style="margin: 0 0 6px;"><strong>Project title:</strong> ${escapeHtml(projectTitle)}</p>
