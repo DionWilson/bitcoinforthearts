@@ -7,6 +7,7 @@ const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
+const LEGAL_ASSURANCES_VERSION = 1;
 
 const CHAR_LIMITS: Record<string, number> = {
   projectSummary: 500,
@@ -28,10 +29,60 @@ type DraftPayloadV1 = {
   values: Record<string, unknown>;
 };
 
+type Receipt = {
+  createdAtIso: string;
+  applicant: {
+    legalName: string;
+    email: string;
+    phone?: string;
+    mailingAddress: string;
+    links: string;
+    applicantType: string;
+    ein?: string;
+    nonprofitOrSponsor?: string;
+    disciplines: string[];
+    btcAddress: string;
+  };
+  project: {
+    title: string;
+    summary: string;
+    description: string;
+    timeline: string;
+    venuePlatform: string;
+    impact: string;
+  };
+  funding: {
+    requestedAmount: string;
+    budgetBreakdown: string;
+    fundUse: string;
+  };
+  background: {
+    bio: string;
+    accomplishments: string;
+    equityInclusion: string;
+    evaluationPlan: string;
+  };
+  oversight: {
+    reportingPlan: string;
+  };
+  attachments: {
+    fiscalSponsorAgreementLink?: string;
+    artSamplesLinks?: string;
+    uploadedFileNames: string[];
+  };
+  certification: {
+    agreeTerms: boolean;
+    agreeLegal: boolean;
+    legalSignatureName: string;
+    legalSignatureDate: string;
+    legalAssurancesVersion: number;
+  };
+};
+
 type SubmitState =
   | { status: 'idle' }
   | { status: 'submitting' }
-  | { status: 'success'; applicationId: string }
+  | { status: 'success'; applicationId: string; receipt: Receipt }
   | { status: 'error'; message: string };
 
 function getFirstErrorMessage(err: unknown) {
@@ -51,6 +102,93 @@ export default function GrantApplicationForm() {
   const [applicantType, setApplicantType] = useState<'individual' | 'organization'>(
     'individual',
   );
+  const legalSignedOn = useMemo(() => new Date().toISOString().slice(0, 10), []);
+
+  const buildReceiptFromForm = useCallback((): Receipt | null => {
+    const form = formRef.current;
+    if (!form) return null;
+
+    const getInputValue = (name: string) => {
+      const el = form.elements.namedItem(name) as
+        | HTMLInputElement
+        | HTMLTextAreaElement
+        | HTMLSelectElement
+        | null;
+      if (!el) return '';
+      if (el instanceof HTMLInputElement && el.type === 'checkbox') return el.checked ? 'true' : '';
+      return (el.value ?? '').toString();
+    };
+
+    const disciplines = Array.from(
+      form.querySelectorAll<HTMLInputElement>('input[name="discipline[]"]:checked'),
+    )
+      .map((i) => i.value)
+      .filter(Boolean);
+
+    const uploadedFileNames: string[] = [];
+    const portfolio = form.elements.namedItem('portfolioResume') as HTMLInputElement | null;
+    const sponsor = form.elements.namedItem('fiscalSponsorAgreement') as HTMLInputElement | null;
+    for (const input of [portfolio, sponsor].filter(Boolean) as HTMLInputElement[]) {
+      for (const f of Array.from(input.files ?? [])) {
+        uploadedFileNames.push(f.name);
+      }
+    }
+
+    const legalAssurancesVersionRaw = getInputValue('legalAssurancesVersion');
+    const legalAssurancesVersion = Number.isFinite(Number(legalAssurancesVersionRaw))
+      ? Number(legalAssurancesVersionRaw)
+      : LEGAL_ASSURANCES_VERSION;
+
+    return {
+      createdAtIso: new Date().toISOString(),
+      applicant: {
+        legalName: getInputValue('legalName').trim(),
+        email: getInputValue('email').trim(),
+        phone: getInputValue('phone').trim() || undefined,
+        mailingAddress: getInputValue('mailingAddress').trim(),
+        links: getInputValue('links').trim(),
+        applicantType: getInputValue('applicantType').trim(),
+        ein: getInputValue('ein').trim() || undefined,
+        nonprofitOrSponsor: getInputValue('nonprofitOrSponsor').trim() || undefined,
+        disciplines,
+        btcAddress: getInputValue('btcAddress').trim(),
+      },
+      project: {
+        title: getInputValue('projectTitle').trim(),
+        summary: getInputValue('projectSummary').trim(),
+        description: getInputValue('projectDescription').trim(),
+        timeline: getInputValue('timeline').trim(),
+        venuePlatform: getInputValue('venuePlatform').trim(),
+        impact: getInputValue('impact').trim(),
+      },
+      funding: {
+        requestedAmount: getInputValue('requestedAmount').trim(),
+        budgetBreakdown: getInputValue('budgetBreakdown').trim(),
+        fundUse: getInputValue('fundUse').trim(),
+      },
+      background: {
+        bio: getInputValue('bio').trim(),
+        accomplishments: getInputValue('accomplishments').trim(),
+        equityInclusion: getInputValue('equityInclusion').trim(),
+        evaluationPlan: getInputValue('evaluationPlan').trim(),
+      },
+      oversight: {
+        reportingPlan: getInputValue('reportingPlan').trim(),
+      },
+      attachments: {
+        fiscalSponsorAgreementLink: getInputValue('fiscalSponsorAgreementLink').trim() || undefined,
+        artSamplesLinks: getInputValue('artSamplesLinks').trim() || undefined,
+        uploadedFileNames,
+      },
+      certification: {
+        agreeTerms: Boolean(getInputValue('agreeTerms')),
+        agreeLegal: Boolean(getInputValue('agreeLegal')),
+        legalSignatureName: getInputValue('legalSignatureName').trim(),
+        legalSignatureDate: getInputValue('legalSignatureDate').trim(),
+        legalAssurancesVersion,
+      },
+    };
+  }, []);
 
   const steps = useMemo(
     () => [
@@ -469,6 +607,12 @@ export default function GrantApplicationForm() {
     const form = formRef.current;
     if (!form) return;
 
+    const receipt = buildReceiptFromForm();
+    if (!receipt) {
+      setSubmitState({ status: 'error', message: 'Unable to prepare receipt. Please try again.' });
+      return;
+    }
+
     setSubmitState({ status: 'submitting' });
     try {
       const body = new FormData(form);
@@ -492,7 +636,7 @@ export default function GrantApplicationForm() {
         );
       }
 
-      setSubmitState({ status: 'success', applicationId: data.applicationId });
+      setSubmitState({ status: 'success', applicationId: data.applicationId, receipt });
       form.reset();
       setApplicantType('individual');
       setStep(1);
@@ -511,28 +655,130 @@ export default function GrantApplicationForm() {
   if (submitState.status === 'success') {
     return (
       <div className="rounded-2xl border border-border bg-background p-6">
-        <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-          Application received
+        <div className="print:hidden">
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            Application received
+          </div>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+            Thanks — your grant application has been submitted.
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted">
+            We review applications quarterly. Processing begins in{' '}
+            <span className="font-semibold text-foreground">Q3 2026</span>.
+          </p>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => window.print()}
+              className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+            >
+              Print / Save as PDF
+            </button>
+            <button
+              type="button"
+              onClick={() => setSubmitState({ status: 'idle' })}
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90"
+            >
+              Submit another application
+            </button>
+          </div>
         </div>
-        <h2 className="mt-3 text-2xl font-semibold tracking-tight">
-          Thanks — your grant application has been submitted.
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-muted">
-          We review applications quarterly. Processing begins in <span className="font-semibold text-foreground">Q3 2026</span>.
-        </p>
-        <div className="mt-4 rounded-xl border border-border bg-surface p-4 text-sm">
+
+        <div className="mt-6 rounded-xl border border-border bg-surface p-4 text-sm">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
             Confirmation ID
           </div>
           <div className="mt-1 font-semibold">{submitState.applicationId}</div>
+          <div className="mt-2 text-xs text-muted">
+            Receipt generated: {new Date(submitState.receipt.createdAtIso).toLocaleString()}
+          </div>
         </div>
-        <button
-          type="button"
-          onClick={() => setSubmitState({ status: 'idle' })}
-          className="mt-6 inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90"
-        >
-          Submit another application
-        </button>
+
+        {/* Printable receipt */}
+        <div className="mt-6 print:mt-0">
+          <div className="hidden print:block">
+            <div className="text-sm font-semibold">Bitcoin For The Arts — Grant Application Receipt</div>
+            <div className="mt-1 text-xs text-muted">
+              Confirmation ID: {submitState.applicationId}
+            </div>
+            <div className="mt-1 text-xs text-muted">
+              Receipt generated: {new Date(submitState.receipt.createdAtIso).toLocaleString()}
+            </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-1 gap-4">
+            <div className="rounded-xl border border-border bg-background p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">Applicant</div>
+              <div className="mt-2 text-sm">
+                <div><span className="font-semibold">Name:</span> {submitState.receipt.applicant.legalName || '—'}</div>
+                <div><span className="font-semibold">Email:</span> {submitState.receipt.applicant.email || '—'}</div>
+                {submitState.receipt.applicant.phone ? (
+                  <div><span className="font-semibold">Phone:</span> {submitState.receipt.applicant.phone}</div>
+                ) : null}
+                <div><span className="font-semibold">Applicant type:</span> {submitState.receipt.applicant.applicantType || '—'}</div>
+                {submitState.receipt.applicant.ein ? (
+                  <div><span className="font-semibold">EIN:</span> {submitState.receipt.applicant.ein}</div>
+                ) : null}
+                {submitState.receipt.applicant.nonprofitOrSponsor ? (
+                  <div><span className="font-semibold">Nonprofit/Sponsor:</span> {submitState.receipt.applicant.nonprofitOrSponsor}</div>
+                ) : null}
+                <div><span className="font-semibold">Disciplines:</span> {submitState.receipt.applicant.disciplines.join(', ') || '—'}</div>
+                <div><span className="font-semibold">BTC address:</span> {submitState.receipt.applicant.btcAddress || '—'}</div>
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-border bg-background p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">Project</div>
+              <div className="mt-2 text-sm">
+                <div><span className="font-semibold">Title:</span> {submitState.receipt.project.title || '—'}</div>
+                <div className="mt-2"><span className="font-semibold">Summary:</span></div>
+                <pre className="mt-1 whitespace-pre-wrap text-sm">{submitState.receipt.project.summary || '—'}</pre>
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-border bg-background p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">Attachments (references)</div>
+              <div className="mt-2 text-sm">
+                {submitState.receipt.attachments.fiscalSponsorAgreementLink ? (
+                  <div><span className="font-semibold">Sponsor agreement link:</span> {submitState.receipt.attachments.fiscalSponsorAgreementLink}</div>
+                ) : null}
+                {submitState.receipt.attachments.artSamplesLinks ? (
+                  <div className="mt-2">
+                    <div className="font-semibold">Samples links:</div>
+                    <pre className="mt-1 whitespace-pre-wrap text-sm">{submitState.receipt.attachments.artSamplesLinks}</pre>
+                  </div>
+                ) : null}
+                {submitState.receipt.attachments.uploadedFileNames.length ? (
+                  <div className="mt-2">
+                    <div className="font-semibold">Uploaded filenames:</div>
+                    <ul className="mt-1 list-disc pl-5">
+                      {submitState.receipt.attachments.uploadedFileNames.map((n) => (
+                        <li key={n}>{n}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <div className="mt-2 text-muted">—</div>
+                )}
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-border bg-background p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">Certification</div>
+              <div className="mt-2 text-sm">
+                <div><span className="font-semibold">Agreed to terms:</span> {submitState.receipt.certification.agreeTerms ? 'Yes' : 'No'}</div>
+                <div><span className="font-semibold">Agreed to legal assurances:</span> {submitState.receipt.certification.agreeLegal ? 'Yes' : 'No'}</div>
+                <div><span className="font-semibold">Signature:</span> {submitState.receipt.certification.legalSignatureName || '—'}</div>
+                <div><span className="font-semibold">Date:</span> {submitState.receipt.certification.legalSignatureDate || '—'}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 text-xs text-muted print:mt-4">
+            This receipt is for your records. If you need to update your application, email grants@bitcoinforthearts.org and include your confirmation ID.
+          </div>
+        </div>
       </div>
     );
   }
@@ -1304,6 +1550,103 @@ export default function GrantApplicationForm() {
                 . <span className="text-accent">*</span>
               </span>
             </label>
+
+            <div className="mt-5 border-t border-border pt-4">
+              <div className="flex items-center justify-between gap-3">
+                <div className="font-semibold">
+                  Legal assurances <span className="text-accent">*</span>
+                </div>
+                <InfoTip text="This is NEA-style compliance language to protect applicants and BFTA. It does not require you to submit KYC; it confirms you will follow applicable laws and use funds as described." />
+              </div>
+
+              <div className="mt-3 max-h-64 overflow-auto rounded-xl border border-border bg-background p-4 text-xs leading-relaxed text-muted">
+                <div className="font-semibold text-foreground">
+                  Assurance of Compliance and Legal Certifications
+                </div>
+                <p className="mt-2">
+                  By submitting this application, the applicant certifies and assures Bitcoin For The Arts (BFTA) that:
+                </p>
+                <ol className="mt-2 list-decimal space-y-2 pl-5">
+                  <li>
+                    <span className="font-semibold text-foreground">Compliance with applicable laws:</span> You will comply with
+                    relevant laws and regulations, and funds will not be used for unlawful purposes.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Nondiscrimination & accessibility:</span> You will not discriminate
+                    in project execution. Projects should be accessible where feasible (e.g., digital accessibility).
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Use of funds:</span> BTC grant funds will be used only for the described
+                    arts project, not for lobbying/political activity or unrelated personal expenses. You acknowledge BTC volatility risks.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Tax & reporting obligations:</span> You are responsible for applicable tax
+                    reporting related to receiving BTC grants.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">IP & originality:</span> You own or have rights to the work and will not
+                    infringe third-party rights.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Record-keeping:</span> You will maintain records for at least three (3) years
+                    and provide them to BFTA upon request for audit/verification.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Ethical standards:</span> You commit to ethical practices and avoiding conflicts
+                    of interest.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Consequences:</span> For non-compliance, BFTA may withhold funds, terminate the
+                    grant, request repayment, or take other actions.
+                  </li>
+                </ol>
+                <p className="mt-3">
+                  <span className="font-semibold text-foreground">Applicant certification:</span> I certify the above statements are true and agree
+                  to these terms.
+                </p>
+              </div>
+
+              <label className="mt-4 flex items-start gap-3">
+                <input
+                  name="agreeLegal"
+                  type="checkbox"
+                  required
+                  className="mt-1 h-4 w-4"
+                />
+                <span>
+                  I agree to the above legal assurances. <span className="text-accent">*</span>
+                </span>
+              </label>
+
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <label className="flex flex-col gap-2">
+                  <span className="text-sm font-semibold">
+                    Digital signature (type full name) <span className="text-accent">*</span>
+                  </span>
+                  <input
+                    name="legalSignatureName"
+                    required
+                    className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+                    placeholder="Your full legal name"
+                    autoComplete="name"
+                  />
+                </label>
+                <label className="flex flex-col gap-2">
+                  <span className="text-sm font-semibold">Date</span>
+                  <input
+                    name="legalSignatureDate"
+                    value={legalSignedOn}
+                    readOnly
+                    className="min-h-12 rounded-md border border-border bg-background px-3 py-2 text-muted"
+                  />
+                </label>
+              </div>
+              <input
+                type="hidden"
+                name="legalAssurancesVersion"
+                value={String(LEGAL_ASSURANCES_VERSION)}
+              />
+            </div>
           </div>
         </div>
       </fieldset>

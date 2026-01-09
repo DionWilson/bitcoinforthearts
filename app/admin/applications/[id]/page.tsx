@@ -74,6 +74,13 @@ type ApplicationDoc = {
   };
   certification?: {
     agreeTerms?: boolean;
+    legal?: {
+      agreed?: boolean;
+      version?: number;
+      signatureName?: string;
+      signedAt?: Date | null;
+      clientDate?: string | null;
+    };
   };
   links?: {
     fiscalSponsorAgreement?: string | null;
@@ -262,6 +269,17 @@ export default async function AdminApplicationDetailsPage({
         ) : null}
       </div>
 
+      <div className="mt-4 flex flex-wrap gap-2">
+        <a
+          href={`/api/admin/applications/${String(doc._id)}/pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-5 py-2 text-sm font-semibold transition-colors hover:bg-surface"
+        >
+          Download PDF (admin)
+        </a>
+      </div>
+
       <div className="mt-4">
         <ShareForReview applicationId={String(doc._id)} />
       </div>
@@ -427,6 +445,53 @@ export default async function AdminApplicationDetailsPage({
               ) : (
                 <div className="mt-2 text-sm text-muted">—</div>
               )}
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-2xl border border-border bg-background p-6">
+          {sectionTitle('Certification')}
+          <div className="mt-4 grid grid-cols-1 gap-4 text-sm">
+            <div className="rounded-xl border border-border bg-surface p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Terms agreement
+              </div>
+              <div className="mt-2 font-semibold">
+                {doc.certification?.agreeTerms ? 'Agreed' : '—'}
+              </div>
+            </div>
+            <div className="rounded-xl border border-border bg-surface p-4">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Legal assurances
+              </div>
+              <div className="mt-2">
+                <div className="font-semibold">
+                  {doc.certification?.legal?.agreed ? 'Agreed' : '—'}
+                </div>
+                {doc.certification?.legal?.signatureName ? (
+                  <div className="mt-1 text-sm text-muted">
+                    <span className="font-semibold text-foreground">Signature:</span>{' '}
+                    {doc.certification.legal.signatureName}
+                  </div>
+                ) : null}
+                {doc.certification?.legal?.signedAt ? (
+                  <div className="mt-1 text-sm text-muted">
+                    <span className="font-semibold text-foreground">Signed at:</span>{' '}
+                    {fmtDate(doc.certification.legal.signedAt)}
+                  </div>
+                ) : null}
+                {doc.certification?.legal?.clientDate ? (
+                  <div className="mt-1 text-sm text-muted">
+                    <span className="font-semibold text-foreground">Client date:</span>{' '}
+                    {doc.certification.legal.clientDate}
+                  </div>
+                ) : null}
+                {typeof doc.certification?.legal?.version === 'number' ? (
+                  <div className="mt-1 text-xs text-muted">
+                    Version: {doc.certification.legal.version}
+                  </div>
+                ) : null}
+              </div>
             </div>
           </div>
         </section>
