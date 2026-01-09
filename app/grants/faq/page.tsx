@@ -175,7 +175,7 @@ export default function GrantsFaqPage() {
                   Review the Grant Terms & Conditions before applying.
                 </p>
                 <a
-                  href="/resources/grants/grant-terms.pdf"
+                  href="/resources/grants/grant-terms.pdf?v=20260109"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold transition-colors hover:opacity-90"

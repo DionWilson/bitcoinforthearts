@@ -7,7 +7,7 @@ const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
-const LEGAL_ASSURANCES_VERSION = 1;
+const LEGAL_ASSURANCES_VERSION = 2;
 
 const CHAR_LIMITS: Record<string, number> = {
   projectSummary: 500,
@@ -1559,7 +1559,7 @@ export default function GrantApplicationForm() {
               <span>
                 I agree to the{' '}
                 <a
-                  href="/resources/grants/grant-terms.pdf"
+                  href="/resources/grants/grant-terms.pdf?v=20260109"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold underline underline-offset-4"
@@ -1589,6 +1589,10 @@ export default function GrantApplicationForm() {
                   <li>
                     <span className="font-semibold text-foreground">Compliance with applicable laws:</span> You will comply with
                     relevant laws and regulations, and funds will not be used for unlawful purposes.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">US-based project activities:</span> You certify the activities funded by
+                    this grant will be performed in the United States, as required for eligibility.
                   </li>
                   <li>
                     <span className="font-semibold text-foreground">Nondiscrimination & accessibility:</span> You will not discriminate
