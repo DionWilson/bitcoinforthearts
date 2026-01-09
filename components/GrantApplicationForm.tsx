@@ -252,6 +252,13 @@ export default function GrantApplicationForm() {
     <form
       ref={formRef}
       onSubmit={onSubmit}
+      onInputCapture={() => {
+        // Ensure paste/autofill clears any previous submission error.
+        if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+      }}
+      onPasteCapture={() => {
+        if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+      }}
       className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
       <div ref={topRef} />
@@ -439,9 +446,26 @@ export default function GrantApplicationForm() {
             <label className="flex flex-col gap-2 sm:col-span-2">
               <span className="flex items-center justify-between gap-3 text-sm font-semibold">
                 <span>
-                  Upload Fiscal Sponsor Agreement (PDF) <span className="text-accent">*</span>
+                  EIN <span className="text-accent">*</span>
                 </span>
-                <InfoTip text="If you’re an org/collective using a fiscal sponsor, upload the agreement if it’s small. If it’s large, paste a link in the next field." />
+                <InfoTip text="For organizations/collectives: provide your EIN (format 12-3456789). If you have a fiscal sponsor, use the sponsor EIN." />
+              </span>
+              <input
+                name="ein"
+                required={isOrg}
+                disabled={!isOrg || isSubmitting}
+                className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+                placeholder="12-3456789"
+                inputMode="numeric"
+              />
+            </label>
+
+            <label className="flex flex-col gap-2 sm:col-span-2">
+              <span className="flex items-center justify-between gap-3 text-sm font-semibold">
+                <span>
+                  Fiscal Sponsor Agreement (PDF or link) <span className="text-accent">*</span>
+                </span>
+                <InfoTip text="Provide either a PDF under 3MB OR a share link (Drive/Dropbox/website). One of the two is required for organizations/collectives." />
               </span>
               <input
                 name="fiscalSponsorAgreement"
@@ -452,7 +476,7 @@ export default function GrantApplicationForm() {
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
-                If the PDF is larger than {MAX_FILE_MB}MB, paste a link below instead.
+                Upload if under {MAX_FILE_MB}MB. Otherwise paste a link below.
               </span>
             </label>
 
@@ -460,7 +484,6 @@ export default function GrantApplicationForm() {
               <span className="flex items-center justify-between gap-3 text-sm font-semibold">
                 <span>
                   Fiscal Sponsor Agreement Link (if not uploading)
-                  {isOrg ? <span className="text-accent"> *</span> : null}
                 </span>
                 <InfoTip text="Use a share link that can be opened by the grants team (Drive/Dropbox/website). Avoid expiring links." />
               </span>
@@ -487,7 +510,7 @@ export default function GrantApplicationForm() {
               'Music',
               'Writing/Storytelling',
               'Film',
-              'Digital/Ordinals-based',
+              'Digital',
               'Other',
             ].map((d) => (
               <label key={d} className="flex items-center gap-3 text-sm">

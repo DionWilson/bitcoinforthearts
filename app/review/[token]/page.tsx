@@ -19,6 +19,7 @@ type ApplicationDoc = {
     email?: string;
     links?: string;
     applicantType?: string;
+    ein?: string | null;
     disciplines?: string[];
     btcAddress?: string;
   };
@@ -137,6 +138,7 @@ export default async function ReviewPage({
               {textBlock('Email', doc.applicant?.email ?? '')}
               {textBlock('Links', doc.applicant?.links ?? '')}
               {textBlock('Applicant type', doc.applicant?.applicantType ?? '')}
+              {textBlock('EIN', doc.applicant?.ein ?? '')}
               {doc.applicant?.disciplines?.length ? (
                 <div className="text-sm">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">

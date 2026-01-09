@@ -28,6 +28,7 @@ type ApplicationDoc = {
     mailingAddress?: string;
     links?: string;
     applicantType?: string;
+    ein?: string | null;
     nonprofitOrSponsor?: string | null;
     disciplines?: string[];
     btcAddress?: string;
@@ -219,6 +220,7 @@ export default async function AdminApplicationDetailsPage({
             {textBlock('Mailing address', doc.applicant?.mailingAddress ?? '')}
             {textBlock('Links', doc.applicant?.links ?? '')}
             {textBlock('Applicant type', doc.applicant?.applicantType ?? '')}
+            {textBlock('EIN', doc.applicant?.ein ?? '')}
             {textBlock('Nonprofit or sponsor', doc.applicant?.nonprofitOrSponsor ?? '')}
             {doc.applicant?.disciplines?.length ? (
               <div className="text-sm">
