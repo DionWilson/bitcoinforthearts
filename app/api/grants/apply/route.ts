@@ -10,7 +10,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
-const LEGAL_ASSURANCES_VERSION = 1;
+const LEGAL_ASSURANCES_VERSION = 2;
 
 // Vercel/Next deployments commonly enforce a small max request body size.
 // Keep uploads conservative to avoid HTTP 413 (Payload Too Large).

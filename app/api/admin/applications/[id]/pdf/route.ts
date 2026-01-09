@@ -181,7 +181,11 @@ export async function GET(
 
   // Certification
   writeSection(pdf, 'Certification');
-  writeField(pdf, 'Agreed to grant terms', Boolean((doc as any).certification?.agreeTerms));
+  writeField(
+    pdf,
+    'Agreed to Grant Terms & Conditions',
+    Boolean((doc as any).certification?.agreeTerms),
+  );
   writeField(pdf, 'Agreed to legal assurances', Boolean((doc as any).certification?.legal?.agreed));
   writeField(pdf, 'Legal signature name', (doc as any).certification?.legal?.signatureName ?? '');
   writeField(pdf, 'Legal signed at', fmtIso((doc as any).certification?.legal?.signedAt));

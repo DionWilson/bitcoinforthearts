@@ -169,18 +169,18 @@ export default function GrantsFaqPage() {
 
               <div className="rounded-2xl border border-border bg-background p-6">
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-                  Terms
+                  Grant Terms & Conditions
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  For more details, review our grant terms and agreement.
+                  Review the Grant Terms & Conditions before applying.
                 </p>
                 <a
-                  href="/resources/grants/grant-terms.pdf"
+                  href="/resources/grants/grant-terms.pdf?v=20260109"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold transition-colors hover:opacity-90"
                 >
-                  View terms & agreement
+                  View Grant Terms & Conditions (PDF)
                 </a>
               </div>
             </aside>
