@@ -14,6 +14,13 @@ function getEnv(name: string) {
   return value && value.trim().length > 0 ? value.trim() : undefined;
 }
 
+function getBaseUrl(req: NextRequest) {
+  const proto = req.headers.get('x-forwarded-proto') ?? 'https';
+  const host = req.headers.get('host');
+  if (host) return `${proto}://${host}`;
+  return 'https://bitcoinforthearts.org';
+}
+
 function maskEmail(value?: string) {
   if (!value) return null;
   const at = value.indexOf('@');
@@ -162,9 +169,7 @@ export async function POST(
       return NextResponse.json({ ok: false, error: 'Not found.' }, { status: 404 });
     }
 
-    const baseUrl =
-      (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined) ??
-      'https://bitcoinforthearts.org';
+    const baseUrl = getBaseUrl(req);
     const reviewUrl = `${baseUrl}/review/${token}`;
 
     const update: UpdateFilter<Document> = {

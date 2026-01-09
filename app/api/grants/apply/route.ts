@@ -26,6 +26,13 @@ function getClientIp(req: NextRequest) {
   return req.headers.get('x-real-ip') ?? 'unknown';
 }
 
+function getBaseUrl(req: NextRequest) {
+  const proto = req.headers.get('x-forwarded-proto') ?? 'https';
+  const host = req.headers.get('host');
+  if (host) return `${proto}://${host}`;
+  return 'https://bitcoinforthearts.org';
+}
+
 function isAllowedOrigin(req: NextRequest) {
   const origin = req.headers.get('origin') ?? '';
   const referer = req.headers.get('referer') ?? '';
@@ -460,7 +467,7 @@ export async function POST(req: NextRequest) {
 
     // Email summary (safe: no file contents, but include download URLs by id).
     const to = getEnv('GRANTS_TO_EMAIL') ?? 'grants@bitcoinforthearts.org';
-    const baseUrl = (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined) ?? 'https://bitcoinforthearts.org';
+    const baseUrl = getBaseUrl(req);
     const downloadLinks = uploads
       .map(
         (u) =>
