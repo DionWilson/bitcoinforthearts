@@ -64,21 +64,22 @@ function parseLinks(value: string) {
 export default async function AdminApplicationsPage({
   searchParams,
 }: {
-  searchParams?: {
+  searchParams?: Promise<{
     q?: string | string[];
     status?: string | string[];
     applicantType?: string | string[];
     discipline?: string | string[];
     due?: string | string[];
     report?: string | string[];
-  };
+  }>;
 }) {
-  const q = (firstParam(searchParams?.q) ?? '').trim();
-  const status = (firstParam(searchParams?.status) ?? '').trim();
-  const applicantType = (firstParam(searchParams?.applicantType) ?? '').trim();
-  const discipline = (firstParam(searchParams?.discipline) ?? '').trim();
-  const due = (firstParam(searchParams?.due) ?? '').trim(); // "7" | "14" | "30"
-  const report = (firstParam(searchParams?.report) ?? '').trim(); // "missing" | "received"
+  const sp = (await searchParams) ?? {};
+  const q = (firstParam(sp.q) ?? '').trim();
+  const status = (firstParam(sp.status) ?? '').trim();
+  const applicantType = (firstParam(sp.applicantType) ?? '').trim();
+  const discipline = (firstParam(sp.discipline) ?? '').trim();
+  const due = (firstParam(sp.due) ?? '').trim(); // "7" | "14" | "30"
+  const report = (firstParam(sp.report) ?? '').trim(); // "missing" | "received"
 
   const query: Record<string, unknown> = {};
   if (status) query.status = status;
