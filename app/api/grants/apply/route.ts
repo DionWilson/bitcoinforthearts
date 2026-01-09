@@ -10,6 +10,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
+const LEGAL_ASSURANCES_VERSION = 1;
 
 // Vercel/Next deployments commonly enforce a small max request body size.
 // Keep uploads conservative to avoid HTTP 413 (Payload Too Large).
@@ -372,6 +373,13 @@ export async function POST(req: NextRequest) {
     requireCheckbox(fields, 'missionAligned', 'Mission alignment');
     requireCheckbox(fields, 'agreeOversight', 'Oversight agreement');
     requireCheckbox(fields, 'agreeTerms', 'Terms agreement');
+    requireCheckbox(fields, 'agreeLegal', 'Legal assurances');
+    const legalSignatureName = requireString(fields, 'legalSignatureName', 'Legal signature');
+    const legalAssurancesVersionRaw = (fields.legalAssurancesVersion ?? '').trim();
+    const legalAssurancesVersion =
+      legalAssurancesVersionRaw && Number.isFinite(Number(legalAssurancesVersionRaw))
+        ? Number(legalAssurancesVersionRaw)
+        : LEGAL_ASSURANCES_VERSION;
 
     const projectTitle = requireString(fields, 'projectTitle', 'Project Title');
     const projectSummary = requireString(fields, 'projectSummary', 'Project Summary');
@@ -455,6 +463,13 @@ export async function POST(req: NextRequest) {
       },
       certification: {
         agreeTerms: true,
+        legal: {
+          agreed: true,
+          version: legalAssurancesVersion,
+          signatureName: legalSignatureName.slice(0, 200),
+          signedAt: now,
+          clientDate: (fields.legalSignatureDate ?? '').trim() || null,
+        },
       },
       uploads: uploads.map((u) => ({
         fileId: u.fileId,

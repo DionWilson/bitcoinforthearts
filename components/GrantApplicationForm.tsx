@@ -7,6 +7,7 @@ const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
+const LEGAL_ASSURANCES_VERSION = 1;
 
 const CHAR_LIMITS: Record<string, number> = {
   projectSummary: 500,
@@ -51,6 +52,7 @@ export default function GrantApplicationForm() {
   const [applicantType, setApplicantType] = useState<'individual' | 'organization'>(
     'individual',
   );
+  const legalSignedOn = useMemo(() => new Date().toISOString().slice(0, 10), []);
 
   const steps = useMemo(
     () => [
@@ -1304,6 +1306,103 @@ export default function GrantApplicationForm() {
                 . <span className="text-accent">*</span>
               </span>
             </label>
+
+            <div className="mt-5 border-t border-border pt-4">
+              <div className="flex items-center justify-between gap-3">
+                <div className="font-semibold">
+                  Legal assurances <span className="text-accent">*</span>
+                </div>
+                <InfoTip text="This is NEA-style compliance language to protect applicants and BFTA. It does not require you to submit KYC; it confirms you will follow applicable laws and use funds as described." />
+              </div>
+
+              <div className="mt-3 max-h-64 overflow-auto rounded-xl border border-border bg-background p-4 text-xs leading-relaxed text-muted">
+                <div className="font-semibold text-foreground">
+                  Assurance of Compliance and Legal Certifications
+                </div>
+                <p className="mt-2">
+                  By submitting this application, the applicant certifies and assures Bitcoin For The Arts (BFTA) that:
+                </p>
+                <ol className="mt-2 list-decimal space-y-2 pl-5">
+                  <li>
+                    <span className="font-semibold text-foreground">Compliance with applicable laws:</span> You will comply with
+                    relevant laws and regulations, and funds will not be used for unlawful purposes.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Nondiscrimination & accessibility:</span> You will not discriminate
+                    in project execution. Projects should be accessible where feasible (e.g., digital accessibility).
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Use of funds:</span> BTC grant funds will be used only for the described
+                    arts project, not for lobbying/political activity or unrelated personal expenses. You acknowledge BTC volatility risks.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Tax & reporting obligations:</span> You are responsible for applicable tax
+                    reporting related to receiving BTC grants.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">IP & originality:</span> You own or have rights to the work and will not
+                    infringe third-party rights.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Record-keeping:</span> You will maintain records for at least three (3) years
+                    and provide them to BFTA upon request for audit/verification.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Ethical standards:</span> You commit to ethical practices and avoiding conflicts
+                    of interest.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">Consequences:</span> For non-compliance, BFTA may withhold funds, terminate the
+                    grant, request repayment, or take other actions.
+                  </li>
+                </ol>
+                <p className="mt-3">
+                  <span className="font-semibold text-foreground">Applicant certification:</span> I certify the above statements are true and agree
+                  to these terms.
+                </p>
+              </div>
+
+              <label className="mt-4 flex items-start gap-3">
+                <input
+                  name="agreeLegal"
+                  type="checkbox"
+                  required
+                  className="mt-1 h-4 w-4"
+                />
+                <span>
+                  I agree to the above legal assurances. <span className="text-accent">*</span>
+                </span>
+              </label>
+
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <label className="flex flex-col gap-2">
+                  <span className="text-sm font-semibold">
+                    Digital signature (type full name) <span className="text-accent">*</span>
+                  </span>
+                  <input
+                    name="legalSignatureName"
+                    required
+                    className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
+                    placeholder="Your full legal name"
+                    autoComplete="name"
+                  />
+                </label>
+                <label className="flex flex-col gap-2">
+                  <span className="text-sm font-semibold">Date</span>
+                  <input
+                    name="legalSignatureDate"
+                    value={legalSignedOn}
+                    readOnly
+                    className="min-h-12 rounded-md border border-border bg-background px-3 py-2 text-muted"
+                  />
+                </label>
+              </div>
+              <input
+                type="hidden"
+                name="legalAssurancesVersion"
+                value={String(LEGAL_ASSURANCES_VERSION)}
+              />
+            </div>
           </div>
         </div>
       </fieldset>
