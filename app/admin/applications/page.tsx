@@ -89,10 +89,24 @@ export default async function AdminApplicationsPage() {
                     Submitted {fmtDate(d.createdAt)}
                   </div>
                   <div className="mt-1 text-lg font-semibold tracking-tight">
-                    {d.applicant?.legalName ?? ''}
+                    <Link
+                      href={`/admin/applications/${id}`}
+                      className="underline underline-offset-4"
+                    >
+                      {d.applicant?.legalName ?? id}
+                    </Link>
                   </div>
                   <div className="mt-1 text-sm text-muted">
-                    {d.project?.title ?? ''}
+                    {d.project?.title ? (
+                      <Link
+                        href={`/admin/applications/${id}`}
+                        className="hover:underline"
+                      >
+                        {d.project.title}
+                      </Link>
+                    ) : (
+                      ''
+                    )}
                     {typeof d.funding?.requestedAmount === 'number' ? (
                       <span>
                         {' '}
