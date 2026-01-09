@@ -9,7 +9,7 @@ export default function ShareForReview({ applicationId }: { applicationId: strin
   const [status, setStatus] = useState<
     | { state: 'idle' }
     | { state: 'sending' }
-    | { state: 'sent'; url: string; expiresAt: string }
+    | { state: 'sent'; url: string; expiresAt: string; emailSent: boolean; emailError?: string }
     | { state: 'error'; message: string }
   >({ state: 'idle' });
 
@@ -22,13 +22,19 @@ export default function ShareForReview({ applicationId }: { applicationId: strin
         body: JSON.stringify({ emails, message, expiresDays }),
       });
       const data = (await res.json().catch(() => null)) as
-        | { ok: true; reviewUrl: string; expiresAt: string }
+        | { ok: true; reviewUrl: string; expiresAt: string; emailSent?: boolean; emailError?: string }
         | { ok: false; error?: string }
         | null;
       if (!res.ok || !data || !('ok' in data) || data.ok !== true) {
         throw new Error((data && 'error' in data && data.error) || `Failed (HTTP ${res.status}).`);
       }
-      setStatus({ state: 'sent', url: data.reviewUrl, expiresAt: data.expiresAt });
+      setStatus({
+        state: 'sent',
+        url: data.reviewUrl,
+        expiresAt: data.expiresAt,
+        emailSent: Boolean(data.emailSent),
+        emailError: data.emailError,
+      });
     } catch (e) {
       setStatus({ state: 'error', message: e instanceof Error ? e.message : 'Failed to send.' });
     }
@@ -102,6 +108,16 @@ export default function ShareForReview({ applicationId }: { applicationId: strin
               {status.url}
             </a>
             <div className="mt-2 text-xs text-muted">Expires: {status.expiresAt}</div>
+            {status.emailSent ? (
+              <div className="mt-2 text-xs text-muted">
+                Email sent to reviewers.
+              </div>
+            ) : (
+              <div className="mt-2 rounded-md border border-amber-200 bg-amber-50 p-2 text-xs text-amber-900">
+                Email failed to send from Zoho. You can still copy/paste the link above.
+                {status.emailError ? <div className="mt-1">{status.emailError}</div> : null}
+              </div>
+            )}
           </div>
         ) : null}
 
