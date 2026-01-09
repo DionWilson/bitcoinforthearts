@@ -112,7 +112,7 @@ function parseNumberOrThrow(value: string, label: string) {
 }
 
 async function sendEmailNotification(args: {
-  to: string;
+  to: string | string[];
   subject: string;
   text: string;
   html: string;
@@ -534,6 +534,74 @@ export async function POST(req: NextRequest) {
               failedAt: new Date(),
               error:
                 emailErr instanceof Error ? emailErr.message : 'Unknown email error',
+            },
+          },
+        },
+      );
+    }
+
+    // Applicant confirmation email (non-blocking).
+    const applicantSubject = 'BFTA grant application received';
+    const applicantText = [
+      'Bitcoin For The Arts — application received',
+      '',
+      `Confirmation ID: ${applicationId.toString()}`,
+      '',
+      'Thanks for applying to Bitcoin For The Arts (BFTA). We fund Bitcoin-aligned arts projects and disburse grants in BTC.',
+      '',
+      'What happens next:',
+      '- Applications are reviewed quarterly.',
+      '- Processing begins in Q3 2026.',
+      '- If selected, you’ll be asked for simple post-grant reporting (6 months + project end) for transparency.',
+      '',
+      'If you need to update your application, reply to this email and include your confirmation ID.',
+      '',
+      'Bitcoin For The Arts',
+      'https://bitcoinforthearts.org',
+    ].join('\n');
+
+    const applicantHtml = `
+      <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5;">
+        <h2 style="margin: 0 0 12px;">Application received</h2>
+        <p style="margin: 0 0 8px;">Thanks for applying to <strong>Bitcoin For The Arts (BFTA)</strong>.</p>
+        <p style="margin: 0 0 8px;"><strong>Confirmation ID:</strong> ${escapeHtml(
+          applicationId.toString(),
+        )}</p>
+        <p style="margin: 16px 0 8px;"><strong>What happens next</strong></p>
+        <ul style="margin: 0 0 0 18px; padding: 0;">
+          <li>Applications are reviewed quarterly.</li>
+          <li>Processing begins in <strong>Q3 2026</strong>.</li>
+          <li>If selected, you’ll submit a simple post-grant report (6 months + project end) to support radical transparency.</li>
+        </ul>
+        <p style="margin: 16px 0 0;">If you need to update your application, reply to this email and include your confirmation ID.</p>
+        <p style="margin: 14px 0 0; color: #666; font-size: 12px;">
+          Sent from <a href="https://bitcoinforthearts.org">bitcoinforthearts.org</a>
+        </p>
+      </div>
+    `.trim();
+
+    try {
+      await sendEmailNotification({
+        to: email,
+        subject: applicantSubject,
+        text: applicantText,
+        html: applicantHtml,
+        replyTo: to,
+      });
+      await db.collection('applications').updateOne(
+        { _id: applicationId },
+        { $set: { applicantConfirmation: { ok: true, sentAt: new Date() } } },
+      );
+    } catch (emailErr) {
+      console.error('[grants] applicant confirmation email failed', emailErr);
+      await db.collection('applications').updateOne(
+        { _id: applicationId },
+        {
+          $set: {
+            applicantConfirmation: {
+              ok: false,
+              failedAt: new Date(),
+              error: emailErr instanceof Error ? emailErr.message : 'Unknown email error',
             },
           },
         },

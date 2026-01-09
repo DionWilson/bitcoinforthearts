@@ -1,5 +1,6 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
+import type { Document, UpdateFilter } from 'mongodb';
 import { ObjectId } from 'mongodb';
 import nodemailer from 'nodemailer';
 import { getMongoDb } from '@/lib/mongodb';
@@ -100,7 +101,10 @@ export async function POST(
   const db = await getMongoDb();
   const appId = new ObjectId(id);
 
-  const doc = (await db.collection('applications').findOne({ _id: appId })) as any;
+  const doc = (await db.collection('applications').findOne({ _id: appId })) as {
+    applicant?: { legalName?: string };
+    project?: { title?: string };
+  } | null;
   if (!doc) {
     return NextResponse.json({ ok: false, error: 'Not found.' }, { status: 404 });
   }
@@ -110,21 +114,21 @@ export async function POST(
     'https://bitcoinforthearts.org';
   const reviewUrl = `${baseUrl}/review/${token}`;
 
-  await db.collection('applications').updateOne(
-    { _id: appId },
-    {
-      $set: { updatedAt: new Date() },
-      $push: {
-        reviewShares: {
-          tokenHash,
-          createdAt: new Date(),
-          expiresAt,
-          sentTo: emails,
-          message: (body.message ?? '').toString().slice(0, 2000) || null,
-        },
+  const update: UpdateFilter<Document> = {
+    $set: { updatedAt: new Date() },
+    // Typed loosely since the collection schema is application-specific.
+    $push: {
+      reviewShares: {
+        tokenHash,
+        createdAt: new Date(),
+        expiresAt,
+        sentTo: emails,
+        message: (body.message ?? '').toString().slice(0, 2000) || null,
       },
-    },
-  );
+    } as unknown as Document,
+  };
+
+  await db.collection('applications').updateOne({ _id: appId }, update);
 
   const subject = `BFTA grant application for review: ${doc?.applicant?.legalName ?? doc?.project?.title ?? id}`.slice(
     0,

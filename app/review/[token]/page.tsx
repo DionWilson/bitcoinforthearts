@@ -1,7 +1,6 @@
 import { getMongoDb } from '@/lib/mongodb';
 import { hashReviewToken } from '@/lib/reviewLinks';
 import Link from 'next/link';
-import { GridFSBucket, ObjectId } from 'mongodb';
 
 export const dynamic = 'force-dynamic';
 
