@@ -12,6 +12,22 @@ function safeFilename(name: string) {
   return name.replaceAll('"', '');
 }
 
+async function findInBuckets(db: Awaited<ReturnType<typeof getMongoDb>>, fileId: ObjectId) {
+  // Current bucket name is `grantUploads`, but older deployments may have used the default (`fs`).
+  const candidates: Array<{ name: string; bucket: GridFSBucket }> = [
+    { name: 'grantUploads', bucket: new GridFSBucket(db, { bucketName: 'grantUploads' }) },
+    { name: 'fs', bucket: new GridFSBucket(db) },
+  ];
+
+  for (const c of candidates) {
+    const files = await c.bucket.find({ _id: fileId }).limit(1).toArray();
+    const file = files[0];
+    if (file) return { bucketName: c.name, bucket: c.bucket, file };
+  }
+
+  return null;
+}
+
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ token: string; fileId: string }> },
@@ -36,14 +52,13 @@ export async function GET(
     return NextResponse.json({ ok: false, error: 'Not found.' }, { status: 404 });
   }
 
-  const bucket = new GridFSBucket(db, { bucketName: 'grantUploads' });
   const id = new ObjectId(fileId);
-  const files = await bucket.find({ _id: id }).limit(1).toArray();
-  const file = files[0];
-  if (!file) {
+  const found = await findInBuckets(db, id);
+  if (!found) {
     return NextResponse.json({ ok: false, error: 'File not found.' }, { status: 404 });
   }
 
+  const { bucket, file } = found;
   const nodeStream = bucket.openDownloadStream(id);
   const webStream = Readable.toWeb(nodeStream) as unknown as ReadableStream;
 
