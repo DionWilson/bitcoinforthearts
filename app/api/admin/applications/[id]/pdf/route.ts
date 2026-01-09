@@ -1,8 +1,7 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { ObjectId } from 'mongodb';
-import PDFDocumentImport from 'pdfkit';
-import { PassThrough } from 'node:stream';
+import { PDFDocument, StandardFonts, rgb } from 'pdf-lib';
 import { getMongoDb } from '@/lib/mongodb';
 
 export const runtime = 'nodejs';
@@ -19,16 +18,14 @@ function fmtIso(d?: unknown) {
   }
 }
 
-function writeSection(doc: PDFKit.PDFDocument, title: string) {
-  doc.moveDown(0.8);
-  doc.fontSize(13).fillColor('#111111').text(title, { underline: true });
-  doc.moveDown(0.4);
+function truthy(value: unknown) {
+  return value === true || value === 'true' || value === 1;
 }
 
-function writeField(doc: PDFKit.PDFDocument, label: string, value: unknown) {
-  const v = value === null || value === undefined ? '' : String(value);
-  doc.fontSize(10).fillColor('#444444').text(`${label}:`, { continued: true });
-  doc.fillColor('#111111').text(` ${v || '—'}`);
+function asText(value: unknown) {
+  if (value === null || value === undefined) return '—';
+  const s = String(value);
+  return s.trim() ? s : '—';
 }
 
 export async function GET(
@@ -47,58 +44,82 @@ export async function GET(
       return NextResponse.json({ ok: false, error: 'Not found.' }, { status: 404 });
     }
 
-    const PDFDocumentCtor =
-      ((PDFDocumentImport as unknown as { default?: unknown }).default as any) ??
-      (PDFDocumentImport as any);
+    const pdfDoc = await PDFDocument.create();
+    pdfDoc.setTitle(`BFTA Grant Application ${id}`);
+    pdfDoc.setAuthor('Bitcoin For The Arts');
 
-    const pdf = new PDFDocumentCtor({
-      size: 'LETTER',
-      margin: 48,
-      info: {
-        Title: `BFTA Grant Application ${id}`,
-        Author: 'Bitcoin For The Arts',
-      },
-    }) as PDFKit.PDFDocument;
+    const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
+    const fontBold = await pdfDoc.embedFont(StandardFonts.HelveticaBold);
 
-    // Buffer output (more reliable than streaming on serverless).
-    const pass = new PassThrough();
-    const chunks: Buffer[] = [];
-    pass.on('data', (c: Buffer) => chunks.push(c));
-    const finished = new Promise<Buffer>((resolve, reject) => {
-      pass.on('end', () => resolve(Buffer.concat(chunks)));
-      pass.on('error', reject);
-      pdf.on('error', reject);
-    });
+    // LETTER size in points
+    const pageWidth = 612;
+    const pageHeight = 792;
+    const margin = 48;
+    const maxWidth = pageWidth - margin * 2;
+    const lineHeight = 14;
 
-    pdf.pipe(pass);
+    let page = pdfDoc.addPage([pageWidth, pageHeight]);
+    let y = pageHeight - margin;
+
+    const drawText = (text: string, opts?: { bold?: boolean; size?: number; color?: { r: number; g: number; b: number } }) => {
+      const size = opts?.size ?? 11;
+      const useFont = opts?.bold ? fontBold : font;
+      const c = opts?.color ?? { r: 0.07, g: 0.07, b: 0.07 };
+      page.drawText(text, { x: margin, y, size, font: useFont, color: rgb(c.r, c.g, c.b) });
+      y -= lineHeight;
+    };
+
+    const wrapLines = (text: string, size = 11) => {
+      const words = text.replace(/\r/g, '').split(/\s+/g);
+      const lines: string[] = [];
+      let line = '';
+      for (const w of words) {
+        const next = line ? `${line} ${w}` : w;
+        const width = font.widthOfTextAtSize(next, size);
+        if (width <= maxWidth) {
+          line = next;
+        } else {
+          if (line) lines.push(line);
+          line = w;
+        }
+      }
+      if (line) lines.push(line);
+      return lines;
+    };
+
+    const ensureSpace = (neededLines = 1) => {
+      if (y - neededLines * lineHeight < margin) {
+        page = pdfDoc.addPage([pageWidth, pageHeight]);
+        y = pageHeight - margin;
+      }
+    };
+
+    const section = (title: string) => {
+      ensureSpace(2);
+      y -= 6;
+      drawText(title, { bold: true, size: 13 });
+      y -= 2;
+    };
+
+    const field = (label: string, value: unknown) => {
+      ensureSpace(1);
+      drawText(`${label}: ${asText(value)}`, { size: 11, color: { r: 0.12, g: 0.12, b: 0.12 } });
+    };
 
     // Header
-    pdf.fontSize(18).fillColor('#111111').text('Bitcoin For The Arts — Grant Application');
-    pdf.moveDown(0.5);
-    pdf.fontSize(10).fillColor('#444444').text('Admin Record Only', { continued: true });
-    pdf.fillColor('#999999').text(' • Confidential');
-    pdf.moveDown(0.4);
-    writeField(pdf, 'Application ID', id);
-    writeField(pdf, 'Submitted', fmtIso((doc as any).createdAt));
-    writeField(pdf, 'Status', (doc as any).status ?? '');
-
-    // Watermark (light)
-    try {
-      pdf.save();
-      pdf.rotate(35, { origin: [250, 350] });
-      pdf.fontSize(48).fillColor('#f2f2f2').text('BFTA', 130, 300);
-      pdf.restore();
-    } catch {
-      // ignore
-    }
+    drawText('Bitcoin For The Arts — Grant Application', { bold: true, size: 16 });
+    drawText('Admin Record Only • Confidential', { size: 10, color: { r: 0.35, g: 0.35, b: 0.35 } });
+    y -= 4;
+    field('Application ID', id);
+    field('Submitted', fmtIso((doc as any).createdAt));
+    field('Status', (doc as any).status ?? '');
 
     // Applicant
-    writeSection(pdf, 'Applicant information');
-    writeField(pdf, 'Name/DBA', (doc as any).applicant?.legalName ?? '');
-    writeField(pdf, 'Email', (doc as any).applicant?.email ?? '');
-    writeField(pdf, 'Phone', (doc as any).applicant?.phone ?? '');
-    writeField(
-      pdf,
+    section('Applicant information');
+    field('Name/DBA', (doc as any).applicant?.legalName ?? '');
+    field('Email', (doc as any).applicant?.email ?? '');
+    field('Phone', (doc as any).applicant?.phone ?? '');
+    field(
       'US-based activities (eligibility)',
       (doc as any).eligibility?.usProjectOnly === true
         ? 'Yes'
@@ -106,119 +127,93 @@ export async function GET(
           ? 'No'
           : '—',
     );
-    writeField(pdf, 'Applicant type', (doc as any).applicant?.applicantType ?? '');
-    writeField(pdf, 'EIN', (doc as any).applicant?.ein ?? '');
-    writeField(pdf, 'Nonprofit/Sponsor', (doc as any).applicant?.nonprofitOrSponsor ?? '');
-    writeField(
-      pdf,
+    field('Applicant type', (doc as any).applicant?.applicantType ?? '');
+    field('EIN', (doc as any).applicant?.ein ?? '');
+    field('Nonprofit/Sponsor', (doc as any).applicant?.nonprofitOrSponsor ?? '');
+    field(
       'Disciplines',
       Array.isArray((doc as any).applicant?.disciplines)
         ? (doc as any).applicant.disciplines.join(', ')
         : '',
     );
-    writeField(pdf, 'BTC address', (doc as any).applicant?.btcAddress ?? '');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Mailing address:');
-    pdf.fillColor('#111111').fontSize(10).text((doc as any).applicant?.mailingAddress ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Links:');
-    pdf.fillColor('#111111').fontSize(10).text((doc as any).applicant?.links ?? '—');
+    field('BTC address', (doc as any).applicant?.btcAddress ?? '');
+
+    // Multi-line blocks
+    const block = (label: string, text: unknown) => {
+      const t = asText(text);
+      section(label);
+      const lines = wrapLines(t, 11);
+      for (const ln of lines) {
+        ensureSpace(1);
+        drawText(ln, { size: 11, color: { r: 0.12, g: 0.12, b: 0.12 } });
+      }
+    };
+
+    block('Mailing address', (doc as any).applicant?.mailingAddress ?? '');
+    block('Links', (doc as any).applicant?.links ?? '');
 
     // Project
-    writeSection(pdf, 'Project description');
-    writeField(pdf, 'Project title', (doc as any).project?.title ?? '');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Project summary:');
-    pdf.fillColor('#111111').text((doc as any).project?.summary ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Detailed description:');
-    pdf.fillColor('#111111').text((doc as any).project?.description ?? '—');
-    pdf.moveDown(0.2);
-    writeField(pdf, 'Timeline', (doc as any).project?.timeline ?? '');
-    writeField(pdf, 'Venue/platform', (doc as any).project?.venuePlatform ?? '');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Audience & impact:');
-    pdf.fillColor('#111111').text((doc as any).project?.impact ?? '—');
+    section('Project description');
+    field('Project title', (doc as any).project?.title ?? '');
+    block('Project summary', (doc as any).project?.summary ?? '');
+    block('Detailed description', (doc as any).project?.description ?? '');
+    field('Timeline', (doc as any).project?.timeline ?? '');
+    field('Venue/platform', (doc as any).project?.venuePlatform ?? '');
+    block('Audience & impact', (doc as any).project?.impact ?? '');
 
     // Funding
-    writeSection(pdf, 'Funding & budget');
-    writeField(pdf, 'Requested amount', (doc as any).funding?.requestedAmount ?? '');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Budget breakdown:');
-    pdf.fillColor('#111111').text((doc as any).funding?.budgetBreakdown ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('How BFTA funds will be used:');
-    pdf.fillColor('#111111').text((doc as any).funding?.fundUse ?? '—');
+    section('Funding & budget');
+    field('Requested amount', (doc as any).funding?.requestedAmount ?? '');
+    block('Budget breakdown', (doc as any).funding?.budgetBreakdown ?? '');
+    block('How BFTA funds will be used', (doc as any).funding?.fundUse ?? '');
 
     // Background
-    writeSection(pdf, 'Background & evaluation');
-    pdf.fontSize(10).fillColor('#444444').text('Bio / mission:');
-    pdf.fillColor('#111111').text((doc as any).background?.bio ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Accomplishments:');
-    pdf.fillColor('#111111').text((doc as any).background?.accomplishments ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Equity & inclusion:');
-    pdf.fillColor('#111111').text((doc as any).background?.equityInclusion ?? '—');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Evaluation plan:');
-    pdf.fillColor('#111111').text((doc as any).background?.evaluationPlan ?? '—');
+    section('Background & evaluation');
+    block('Bio / mission', (doc as any).background?.bio ?? '');
+    block('Accomplishments', (doc as any).background?.accomplishments ?? '');
+    block('Equity & inclusion', (doc as any).background?.equityInclusion ?? '');
+    block('Evaluation plan', (doc as any).background?.evaluationPlan ?? '');
 
     // Oversight
-    writeSection(pdf, 'Oversight & reporting');
-    pdf.fontSize(10).fillColor('#444444').text('Reporting plan:');
-    pdf.fillColor('#111111').text((doc as any).oversight?.reportingPlan ?? '—');
-    writeField(pdf, 'Awarded at', fmtIso((doc as any).awardedAt));
-    writeField(pdf, 'Report due', fmtIso((doc as any).oversight?.reportDueAt));
-    writeField(pdf, 'Report received', fmtIso((doc as any).oversight?.reportReceivedAt));
+    section('Oversight & reporting');
+    block('Reporting plan', (doc as any).oversight?.reportingPlan ?? '');
+    field('Awarded at', fmtIso((doc as any).awardedAt));
+    field('Report due', fmtIso((doc as any).oversight?.reportDueAt));
+    field('Report received', fmtIso((doc as any).oversight?.reportReceivedAt));
 
     // Attachments
-    writeSection(pdf, 'Attachments');
-    writeField(pdf, 'Sponsor agreement link', (doc as any).links?.fiscalSponsorAgreement ?? '');
-    pdf.moveDown(0.2);
-    pdf.fontSize(10).fillColor('#444444').text('Samples (links):');
-    pdf.fillColor('#111111').text((doc as any).links?.artSamples ?? '—');
-    pdf.moveDown(0.2);
+    section('Attachments');
+    field('Sponsor agreement link', (doc as any).links?.fiscalSponsorAgreement ?? '');
+    block('Samples (links)', (doc as any).links?.artSamples ?? '');
     const uploads = Array.isArray((doc as any).uploads) ? ((doc as any).uploads as any[]) : [];
-    pdf.fontSize(10).fillColor('#444444').text('Uploaded files:');
     if (uploads.length) {
-      uploads.forEach((u) => {
-        pdf
-          .fillColor('#111111')
-          .fontSize(10)
-          .text(`- ${u.fieldName ?? 'file'}: ${u.filename ?? ''} (${u.fileId ?? ''})`);
-      });
+      const list = uploads
+        .map((u) => `- ${u.fieldName ?? 'file'}: ${u.filename ?? ''} (${u.fileId ?? ''})`)
+        .join('\n');
+      block('Uploaded files', list);
     } else {
-      pdf.fillColor('#111111').fontSize(10).text('—');
+      field('Uploaded files', '—');
     }
 
     // Certification
-    writeSection(pdf, 'Certification');
-    writeField(
-      pdf,
-      'Agreed to Grant Terms & Conditions',
-      Boolean((doc as any).certification?.agreeTerms),
-    );
-    writeField(pdf, 'Agreed to legal assurances', Boolean((doc as any).certification?.legal?.agreed));
-    writeField(pdf, 'Legal signature name', (doc as any).certification?.legal?.signatureName ?? '');
-    writeField(pdf, 'Legal signed at', fmtIso((doc as any).certification?.legal?.signedAt));
-    writeField(pdf, 'Legal version', (doc as any).certification?.legal?.version ?? '');
+    section('Certification');
+    field('Agreed to Grant Terms & Conditions', truthy((doc as any).certification?.agreeTerms) ? 'Yes' : 'No');
+    field('Agreed to legal assurances', truthy((doc as any).certification?.legal?.agreed) ? 'Yes' : 'No');
+    field('Legal signature name', (doc as any).certification?.legal?.signatureName ?? '');
+    field('Legal signed at', fmtIso((doc as any).certification?.legal?.signedAt));
+    field('Legal version', (doc as any).certification?.legal?.version ?? '');
 
     // Footer
-    pdf.moveDown(1.2);
-    pdf
-      .fontSize(9)
-      .fillColor('#777777')
-      .text(
-        `Generated: ${new Date().toISOString()} • ${
-          req.headers.get('host') ?? 'bitcoinforthearts.org'
-        }`,
-      );
+    ensureSpace(2);
+    y -= 8;
+    drawText(`Generated: ${new Date().toISOString()} • ${req.headers.get('host') ?? 'bitcoinforthearts.org'}`, {
+      size: 9,
+      color: { r: 0.45, g: 0.45, b: 0.45 },
+    });
 
-    pdf.end();
-
-    const buffer = await finished;
-    const body = new Uint8Array(buffer);
+    const bytes = await pdfDoc.save();
+    // Coerce to a plain Uint8Array so NextResponse typing accepts it.
+    const body = new Uint8Array(bytes);
     return new NextResponse(body, {
       status: 200,
       headers: {
