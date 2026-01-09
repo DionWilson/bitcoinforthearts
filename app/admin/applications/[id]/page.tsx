@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ObjectId } from 'mongodb';
 import AdminApplicationRow from '@/components/AdminApplicationRow';
 import ShareForReview from '@/components/ShareForReview';
+import AdminReviewPanel from '@/components/AdminReviewPanel';
 
 export const dynamic = 'force-dynamic';
 
@@ -21,6 +22,18 @@ type ApplicationDoc = {
   status?: string;
   adminNotes?: string | null;
   awardedAt?: Date | null;
+  reviews?: Array<{
+    reviewer?: string | null;
+    createdAt?: Date | null;
+    scores?: {
+      overall?: number;
+      impact?: number;
+      feasibility?: number;
+      bitcoinAlignment?: number;
+      transparency?: number;
+    } | null;
+    notes?: string | null;
+  }> | null;
   applicant?: {
     legalName?: string;
     email?: string;
@@ -207,6 +220,18 @@ export default async function AdminApplicationDetailsPage({
 
       <div className="mt-4">
         <ShareForReview applicationId={String(doc._id)} />
+      </div>
+
+      <div className="mt-4">
+        <AdminReviewPanel
+          applicationId={String(doc._id)}
+          reviews={(doc.reviews ?? []).map((r) => ({
+            reviewer: r.reviewer ?? null,
+            createdAt: r.createdAt ? new Date(r.createdAt).toISOString() : null,
+            scores: r.scores ?? null,
+            notes: r.notes ?? null,
+          }))}
+        />
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-4">
