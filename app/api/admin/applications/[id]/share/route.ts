@@ -14,6 +14,13 @@ function getEnv(name: string) {
   return value && value.trim().length > 0 ? value.trim() : undefined;
 }
 
+function maskEmail(value?: string) {
+  if (!value) return null;
+  const at = value.indexOf('@');
+  if (at <= 1) return '***';
+  return `${value.slice(0, 2)}***${value.slice(at)}`;
+}
+
 function parseEmails(value: string) {
   return value
     .split(/[,\s]+/g)
@@ -66,6 +73,42 @@ function escapeHtml(input: string) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+}
+
+// Safe config status endpoint (no secrets).
+export async function GET() {
+  const smtpUser = getEnv('GRANTS_SMTP_USER') ?? getEnv('CONTACT_SMTP_USER');
+  const smtpPass = getEnv('GRANTS_SMTP_PASS') ?? getEnv('CONTACT_SMTP_PASS');
+  const smtpHost =
+    getEnv('GRANTS_SMTP_HOST') ?? getEnv('CONTACT_SMTP_HOST') ?? 'smtppro.zoho.com';
+  const smtpPort = Number(getEnv('GRANTS_SMTP_PORT') ?? getEnv('CONTACT_SMTP_PORT') ?? '465');
+  const smtpSecure =
+    (getEnv('GRANTS_SMTP_SECURE') ?? getEnv('CONTACT_SMTP_SECURE') ?? 'true').toLowerCase() !==
+    'false';
+  const fromEmail =
+    getEnv('GRANTS_FROM_EMAIL') ?? getEnv('CONTACT_FROM_EMAIL') ?? getEnv('RESEND_FROM_EMAIL');
+
+  return NextResponse.json(
+    {
+      ok: true,
+      configured: {
+        email: Boolean(smtpUser) && Boolean(smtpPass) && Boolean(fromEmail),
+      },
+      smtp: {
+        host: smtpHost,
+        port: smtpPort,
+        secure: smtpSecure,
+        user: maskEmail(smtpUser),
+        from: maskEmail(fromEmail),
+        hasPass: Boolean(smtpPass),
+      },
+      vercel: {
+        env: process.env.VERCEL_ENV ?? null,
+        url: process.env.VERCEL_URL ?? null,
+      },
+    },
+    { status: 200 },
+  );
 }
 
 export async function POST(
