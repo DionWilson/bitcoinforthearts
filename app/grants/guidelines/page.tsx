@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PrintSavePdfButton from '@/components/PrintSavePdfButton';
+import MobileCarousel from '@/components/MobileCarousel';
 
 export const metadata: Metadata = {
   title: 'Grant Guidelines',
@@ -10,6 +11,17 @@ export const metadata: Metadata = {
 
 const VERSION = '1.1';
 const EFFECTIVE_DATE = 'January 09, 2026';
+const TOC_ITEMS = [
+  { href: '#program', label: '1. Program' },
+  { href: '#eligibility', label: '2. Eligibility' },
+  { href: '#requirements', label: '3. What to submit' },
+  { href: '#tips', label: '4. Do’s & don’ts' },
+  { href: '#rubric', label: '5. Review rubric' },
+  { href: '#award', label: '6. Award info' },
+  { href: '#reporting', label: '7. Reporting' },
+  { href: '#legal', label: '8. Legal assurances' },
+  { href: '#faqs', label: '9. FAQs' },
+] as const;
 
 function TocLink({ href, label }: { href: string; label: string }) {
   return (
@@ -157,16 +169,28 @@ export default function GrantGuidelinesPage() {
               </div>
             </div>
 
-            <div className="mt-6 flex flex-wrap gap-2 print:hidden">
-              <TocLink href="#program" label="1. Program" />
-              <TocLink href="#eligibility" label="2. Eligibility" />
-              <TocLink href="#requirements" label="3. What to submit" />
-              <TocLink href="#tips" label="4. Do’s & don’ts" />
-              <TocLink href="#rubric" label="5. Review rubric" />
-              <TocLink href="#award" label="6. Award info" />
-              <TocLink href="#reporting" label="7. Reporting" />
-              <TocLink href="#legal" label="8. Legal assurances" />
-              <TocLink href="#faqs" label="9. FAQs" />
+            <div className="mt-6 print:hidden">
+              {/* Mobile: carousel for clean uniform layout */}
+              <div className="md:hidden -mx-6 px-6">
+                <MobileCarousel ariaLabel="Grant guidelines table of contents" className="">
+                  {TOC_ITEMS.map((it) => (
+                    <div
+                      key={it.href}
+                      data-carousel-item="true"
+                      className="snap-start shrink-0 w-[86%] pr-4"
+                    >
+                      <TocLink href={it.href} label={it.label} />
+                    </div>
+                  ))}
+                </MobileCarousel>
+              </div>
+
+              {/* Desktop/tablet: tidy wrap */}
+              <div className="hidden md:flex flex-wrap gap-2">
+                {TOC_ITEMS.map((it) => (
+                  <TocLink key={it.href} href={it.href} label={it.label} />
+                ))}
+              </div>
             </div>
           </div>
 
