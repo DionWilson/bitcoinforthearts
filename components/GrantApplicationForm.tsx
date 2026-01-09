@@ -1116,13 +1116,14 @@ export default function GrantApplicationForm() {
               <input
                 name="fiscalSponsorAgreement"
                 type="file"
+                multiple
                 accept="application/pdf"
                 required={false}
                 disabled={!isOrg || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
-                Upload if under {MAX_FILE_MB}MB. Otherwise paste a link below.
+                You can select multiple PDFs. Keep each file under {MAX_FILE_MB}MB. Otherwise paste a link below.
               </span>
             </label>
 
