@@ -124,6 +124,40 @@ export default function AdminReviewPanel({
         </p>
       </div>
 
+      <details className="mt-4 rounded-xl border border-border bg-surface p-4">
+        <summary className="cursor-pointer text-sm font-semibold">
+          NEA-style rubric (guidance)
+        </summary>
+        <div className="mt-3 text-sm text-muted">
+          Use this as a consistent standard across reviewers:
+          <ul className="mt-2 list-disc space-y-2 pl-5">
+            <li>
+              <span className="font-semibold text-foreground">Impact</span>: audience reach, cultural value,
+              community benefit, and clarity of outcomes.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">Feasibility</span>: realistic timeline,
+              credible budget, capable team, and risk management.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">Bitcoin alignment</span>: Bitcoin-native execution
+              (BTC/Lightning rails, censorship resistance, open networks), and values fit.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">Transparency</span>: willingness/ability to report,
+              document outcomes, and maintain audit-ready records.
+            </li>
+            <li>
+              <span className="font-semibold text-foreground">Overall</span>: a holistic judgement weighing the above;
+              note any eligibility/compliance concerns.
+            </li>
+          </ul>
+          <div className="mt-3 text-xs text-muted">
+            Suggested scale: 1 = not competitive, 3 = competitive, 5 = exceptional.
+          </div>
+        </div>
+      </details>
+
       <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
         <div className="rounded-xl border border-border bg-surface p-4 text-sm">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">

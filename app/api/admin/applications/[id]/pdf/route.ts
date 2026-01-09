@@ -72,7 +72,8 @@ export async function GET(
   try {
     pdf.save();
     pdf.rotate(35, { origin: [250, 350] });
-    pdf.fontSize(48).fillColor('#f0f0f0').text('BFTA', 130, 300, { opacity: 0.25 });
+    // Keep watermark very light; avoid unsupported text options in types.
+    pdf.fontSize(48).fillColor('#f2f2f2').text('BFTA', 130, 300);
     pdf.restore();
   } catch {
     // ignore
