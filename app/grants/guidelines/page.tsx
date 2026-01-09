@@ -176,12 +176,13 @@ export default function GrantGuidelinesPage() {
                   ariaLabel="Grant guidelines table of contents"
                   showDots={false}
                   showArrows
+                  className="px-14 scroll-px-14"
                 >
                   {TOC_ITEMS.map((it) => (
                     <div
                       key={it.href}
                       data-carousel-item="true"
-                      className="snap-start shrink-0 w-[86%] pr-4"
+                      className="snap-start shrink-0 w-[82%] pr-4"
                     >
                       <TocLink href={it.href} label={it.label} />
                     </div>
