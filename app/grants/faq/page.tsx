@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     q: 'Who can apply for a grant?',
-    a: 'Individual artists or small artist collectives who are legal US residents. We fund a wide range of disciplines, including visual arts, performing arts, music, literature, film/media, crafts, and multidisciplinary projects. Large organizations, commercial ventures, political activities, or non-artistic projects are not eligible.',
+    a: 'Applicants are open worldwide (individuals, collectives, and organizations). The key requirement is that the project activities funded by the grant must be performed in the United States. We fund a wide range of disciplines, including visual arts, performing arts, music, writing/storytelling, film/media, and interdisciplinary projects.',
   },
   {
     q: 'How much funding can I request?',
-    a: 'Grants range from $500 to $5,000 USD equivalent in Bitcoin (BTC). The amount is disbursed based on your project’s needs and our review.',
+    a: 'Grant sizes vary based on program capacity and reserves. Grants are disbursed in BTC to the wallet address you provide. We prioritize clear budgets, realistic timelines, and strong Bitcoin alignment.',
   },
   {
     q: 'What types of projects do you fund?',
@@ -30,15 +30,15 @@ const faqs = [
   },
   {
     q: 'When are applications reviewed?',
-    a: 'We review applications quarterly. Submit anytime; we’ll notify selected applicants via email after each review cycle.',
+    a: 'We review applications quarterly. We are collecting applications now, but processing begins in Q3 2026.',
   },
   {
     q: 'What if I’m selected?',
-    a: 'We’ll send the grant directly to your provided Bitcoin wallet address at the current market rate. No further action needed from you—enjoy creating!',
+    a: 'If selected, grants are paid in BTC to your provided wallet address. You’ll also commit to post-grant reporting (6 months + project end) to support radical transparency.',
   },
   {
     q: 'Do I need to report on how I use the grant?',
-    a: 'For current micro-grants ($500–$5,000), no reporting is required. However, if we introduce larger grants in the future, basic reporting on project outcomes may be needed—we’ll update applicants accordingly.',
+    a: 'Yes. Awardees commit to post-grant reporting for radical transparency. This includes a simple report at 6 months and at project completion, and maintaining records for audit/verification upon request.',
   },
   {
     q: 'Why pay grants in Bitcoin?',
@@ -150,6 +150,21 @@ export default function GrantsFaqPage() {
                   </a>
                   .
                 </div>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-background p-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Guidelines
+                </div>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Want the full eligibility details, do’s & don’ts, and evaluation rubric?
+                </p>
+                <Link
+                  href="/grants/guidelines"
+                  className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold transition-colors hover:opacity-90"
+                >
+                  Read grant guidelines
+                </Link>
               </div>
 
               <div className="rounded-2xl border border-border bg-background p-6">
