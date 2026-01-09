@@ -130,6 +130,11 @@ Optional:
 
 If `ADMIN_USER`/`ADMIN_PASS` are not set, `/admin/*` returns 404.
 
+#### Reviewer share links (read-only)
+To email applications to reviewers **without giving them admin credentials**:
+
+- `REVIEW_LINK_SECRET` (required; any long random string)
+
 > **“The NEA of the Bitcoin Era.”**  
 > **First. Transparent. Unstoppable.**
 
