@@ -2,6 +2,7 @@ import { getMongoDb } from '@/lib/mongodb';
 import Link from 'next/link';
 import { ObjectId } from 'mongodb';
 import AdminApplicationRow from '@/components/AdminApplicationRow';
+import ShareForReview from '@/components/ShareForReview';
 
 export const dynamic = 'force-dynamic';
 
@@ -201,6 +202,10 @@ export default async function AdminApplicationDetailsPage({
             <div className="mt-2">{doc.emailNotification.error ?? 'Unknown error'}</div>
           </div>
         ) : null}
+      </div>
+
+      <div className="mt-4">
+        <ShareForReview applicationId={String(doc._id)} />
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-4">
