@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'How do I apply?',
-    a: 'Submit our online application form (preferred) or download the printable PDF form and email it to grants@bitcoinforthearts.org along with your personal details, Bitcoin wallet address (required), links to your work, project description, and budget breakdown. Applications are simple—no lengthy proposals required.',
+    a: 'Submit our online application form. Applications are simple—no lengthy proposals required. If you have questions, email grants@bitcoinforthearts.org.',
   },
   {
     q: 'When are applications reviewed?',
@@ -57,9 +57,6 @@ const faqs = [
     a: 'Through donations in Bitcoin. Our treasury is transparent.',
   },
 ] as const;
-
-const APPLY_FORM =
-  'https://docs.google.com/forms/d/e/1FAIpQLScErzhYqHskUF90oZegSW-Zlw82_P-khCpxzlgPFL_n6Y6FKw/viewform?usp=header';
 
 export default function GrantsFaqPage() {
   return (
@@ -137,22 +134,14 @@ export default function GrantsFaqPage() {
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                   Apply
                 </div>
-                <a
-                  href={APPLY_FORM}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/grants/apply"
                   className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90 border border-accent/60"
                 >
-                  Apply via Google Form
-                </a>
-                <a
-                  href="/resources/grants/grant-application.pdf"
-                  className="mt-3 inline-flex min-h-12 w-full items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-                >
-                  Download PDF application
-                </a>
+                  Apply online
+                </Link>
                 <div className="mt-4 text-xs leading-relaxed text-muted">
-                  Prefer email? Send your completed PDF to{' '}
+                  Questions? Email{' '}
                   <a
                     href="mailto:grants@bitcoinforthearts.org"
                     className="font-semibold underline underline-offset-4"

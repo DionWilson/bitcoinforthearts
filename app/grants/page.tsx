@@ -144,7 +144,7 @@ export default function GrantsPage() {
             <div className="md:col-span-8">
               <h2 className="text-xl font-semibold tracking-tight">How to apply</h2>
               <p className="mt-2 text-sm leading-relaxed text-muted">
-                Submit our online form (preferred) or download the PDF and email it to{' '}
+                Submit our online form. If you have questions, email{' '}
                 <a
                   href="mailto:grants@bitcoinforthearts.org"
                   className="font-semibold underline underline-offset-4"
@@ -164,12 +164,6 @@ export default function GrantsPage() {
                 >
                   Apply online
                 </Link>
-                <a
-                  href="/resources/grants/grant-application.pdf"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-                >
-                  Download the PDF
-                </a>
               </div>
             </div>
             <div className="md:col-span-4">
