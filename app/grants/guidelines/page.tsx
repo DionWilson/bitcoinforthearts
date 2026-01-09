@@ -142,7 +142,7 @@ export default function GrantGuidelinesPage() {
                   .
                 </Callout>
                 <Callout title="Grant terms">
-                  The guidelines explain how to apply; the legal agreement lives in the grant terms.
+                  The guidelines explain how to apply; the legal agreement lives in the Grant Terms & Conditions.
                   <div className="mt-3">
                     <a
                       href="/resources/grants/grant-terms.pdf"
@@ -150,7 +150,7 @@ export default function GrantGuidelinesPage() {
                       rel="noopener noreferrer"
                       className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-5 py-2 text-sm font-semibold transition-colors hover:bg-surface"
                     >
-                      View grant terms (PDF)
+                      View Grant Terms & Conditions (PDF)
                     </a>
                   </div>
                 </Callout>

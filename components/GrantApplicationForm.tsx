@@ -1551,8 +1551,8 @@ export default function GrantApplicationForm() {
               Certification <span className="text-accent">*</span>
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              By submitting, you agree to the grant terms (including the oversight and reporting requirements described
-              in this application).
+              By submitting, you agree to the Grant Terms & Conditions (including the oversight and reporting requirements
+              described in this application).
             </p>
             <label className="mt-3 flex items-start gap-3">
               <input name="agreeTerms" type="checkbox" required className="mt-1 h-4 w-4" />
@@ -1564,7 +1564,7 @@ export default function GrantApplicationForm() {
                   rel="noopener noreferrer"
                   className="font-semibold underline underline-offset-4"
                 >
-                  grant terms
+                  Grant Terms & Conditions
                 </a>
                 . <span className="text-accent">*</span>
               </span>
