@@ -31,6 +31,9 @@ type DraftPayloadV1 = {
 
 type Receipt = {
   createdAtIso: string;
+  eligibility: {
+    usProjectOnly: boolean;
+  };
   applicant: {
     legalName: string;
     email: string;
@@ -141,6 +144,9 @@ export default function GrantApplicationForm() {
 
     return {
       createdAtIso: new Date().toISOString(),
+      eligibility: {
+        usProjectOnly: Boolean(getInputValue('usProjectOnly')),
+      },
       applicant: {
         legalName: getInputValue('legalName').trim(),
         email: getInputValue('email').trim(),
@@ -716,6 +722,10 @@ export default function GrantApplicationForm() {
                 {submitState.receipt.applicant.phone ? (
                   <div><span className="font-semibold">Phone:</span> {submitState.receipt.applicant.phone}</div>
                 ) : null}
+                <div>
+                  <span className="font-semibold">US-based activities:</span>{' '}
+                  {submitState.receipt.eligibility.usProjectOnly ? 'Yes' : 'No'}
+                </div>
                 <div><span className="font-semibold">Applicant type:</span> {submitState.receipt.applicant.applicantType || '—'}</div>
                 {submitState.receipt.applicant.ein ? (
                   <div><span className="font-semibold">EIN:</span> {submitState.receipt.applicant.ein}</div>
@@ -1173,6 +1183,15 @@ export default function GrantApplicationForm() {
             // This is a small trick: we validate “at least one discipline” in JS on next.
           />
         </div>
+
+        <label className="mt-4 flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 text-sm">
+          <input name="usProjectOnly" type="checkbox" required className="mt-1 h-4 w-4" />
+          <span>
+            I confirm the activities funded by this BFTA grant will be performed in the{' '}
+            <span className="font-semibold text-foreground">United States</span>. The artist/applicant does not need
+            to be a U.S. resident. <span className="text-accent">*</span>
+          </span>
+        </label>
 
         <label className="mt-4 flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 text-sm">
           <input name="missionAligned" type="checkbox" required className="mt-1 h-4 w-4" />

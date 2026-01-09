@@ -14,6 +14,9 @@ type Upload = {
 type ApplicationDoc = {
   _id: unknown;
   createdAt?: Date;
+  eligibility?: {
+    usProjectOnly?: boolean;
+  };
   applicant?: {
     legalName?: string;
     email?: string;
@@ -137,6 +140,14 @@ export default async function ReviewPage({
             <div className="mt-4 grid grid-cols-1 gap-4">
               {textBlock('Email', doc.applicant?.email ?? '')}
               {textBlock('Links', doc.applicant?.links ?? '')}
+              {textBlock(
+                'US-based activities (eligibility)',
+                doc.eligibility?.usProjectOnly === true
+                  ? 'Yes'
+                  : doc.eligibility?.usProjectOnly === false
+                    ? 'No'
+                    : '',
+              )}
               {textBlock('Applicant type', doc.applicant?.applicantType ?? '')}
               {textBlock('EIN', doc.applicant?.ein ?? '')}
               {doc.applicant?.disciplines?.length ? (

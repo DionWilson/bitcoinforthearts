@@ -75,6 +75,7 @@ export async function GET(req: NextRequest) {
     'id',
     'submittedAt',
     'status',
+    'usProjectOnly',
     'applicantName',
     'applicantEmail',
     'applicantType',
@@ -101,6 +102,11 @@ export async function GET(req: NextRequest) {
       String((d as any)._id ?? ''),
       (d as any).createdAt ? new Date((d as any).createdAt).toISOString() : '',
       String((d as any).status ?? ''),
+      (d as any).eligibility?.usProjectOnly === true
+        ? 'yes'
+        : (d as any).eligibility?.usProjectOnly === false
+          ? 'no'
+          : '',
       String((d as any).applicant?.legalName ?? ''),
       String((d as any).applicant?.email ?? ''),
       String((d as any).applicant?.applicantType ?? ''),

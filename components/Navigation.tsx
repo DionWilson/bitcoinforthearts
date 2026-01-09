@@ -36,6 +36,7 @@ export default function Navigation() {
         children: [
           { label: 'Why Bitcoin', href: '/artists/why-bitcoin' },
           { label: 'Research', href: '/artists/research' },
+          { label: 'Guidelines', href: '/grants/guidelines' },
           { label: 'FAQ', href: '/grants/faq' },
         ],
       },
