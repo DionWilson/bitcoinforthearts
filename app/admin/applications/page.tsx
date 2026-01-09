@@ -51,6 +51,16 @@ function escapeRegExp(input: string) {
   return input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+function parseLinks(value: string) {
+  const lines = value
+    .split(/\r?\n/g)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const urls = lines.filter((l) => /^https?:\/\/\S+$/i.test(l));
+  const other = lines.filter((l) => !/^https?:\/\/\S+$/i.test(l));
+  return { urls, other };
+}
+
 export default async function AdminApplicationsPage({
   searchParams,
 }: {
@@ -390,9 +400,39 @@ export default async function AdminApplicationsPage({
                     {d.links?.artSamples ? (
                       <div>
                         <span className="font-semibold">Samples:</span>
-                        <pre className="mt-1 whitespace-pre-wrap rounded-md border border-border bg-surface p-3 text-xs text-muted">
-                          {d.links.artSamples}
-                        </pre>
+                        {(() => {
+                          const { urls, other } = parseLinks(d.links.artSamples);
+                          if (!urls.length) {
+                            return (
+                              <pre className="mt-1 whitespace-pre-wrap rounded-md border border-border bg-surface p-3 text-xs text-muted">
+                                {d.links.artSamples}
+                              </pre>
+                            );
+                          }
+                          return (
+                            <div className="mt-2 rounded-md border border-border bg-surface p-3">
+                              <ul className="space-y-1 text-sm">
+                                {urls.map((u) => (
+                                  <li key={u} className="break-words">
+                                    <a
+                                      href={u}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="font-semibold underline underline-offset-4"
+                                    >
+                                      {u}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                              {other.length ? (
+                                <pre className="mt-2 whitespace-pre-wrap rounded-md border border-border bg-background p-3 text-xs text-muted">
+                                  {other.join('\n')}
+                                </pre>
+                              ) : null}
+                            </div>
+                          );
+                        })()}
                       </div>
                     ) : null}
                   </div>

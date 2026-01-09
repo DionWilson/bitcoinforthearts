@@ -119,6 +119,50 @@ function textBlock(label: string, value?: string | null) {
   );
 }
 
+function parseLinks(value: string) {
+  const lines = value
+    .split(/\r?\n/g)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const urls = lines.filter((l) => /^https?:\/\/\S+$/i.test(l));
+  const other = lines.filter((l) => !/^https?:\/\/\S+$/i.test(l));
+  return { urls, other };
+}
+
+function linksBlock(label: string, value?: string | null) {
+  if (!value || !value.trim()) return null;
+  const { urls, other } = parseLinks(value);
+  if (!urls.length) return textBlock(label, value);
+  return (
+    <div>
+      <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+        {label}
+      </div>
+      <ul className="mt-2 space-y-2 rounded-xl border border-border bg-surface p-4 text-sm">
+        {urls.map((u) => (
+          <li key={u} className="break-words">
+            <a
+              href={u}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-4"
+            >
+              {u}
+            </a>
+          </li>
+        ))}
+        {other.length ? (
+          <li className="pt-2">
+            <pre className="whitespace-pre-wrap rounded-md border border-border bg-background p-3 text-xs text-muted">
+              {other.join('\n')}
+            </pre>
+          </li>
+        ) : null}
+      </ul>
+    </div>
+  );
+}
+
 export default async function AdminApplicationDetailsPage({
   params,
 }: {
@@ -243,7 +287,7 @@ export default async function AdminApplicationDetailsPage({
           </div>
           <div className="mt-4 grid grid-cols-1 gap-4">
             {textBlock('Mailing address', doc.applicant?.mailingAddress ?? '')}
-            {textBlock('Links', doc.applicant?.links ?? '')}
+            {linksBlock('Links', doc.applicant?.links ?? '')}
             {textBlock('Applicant type', doc.applicant?.applicantType ?? '')}
             {textBlock('EIN', doc.applicant?.ein ?? '')}
             {textBlock('Nonprofit or sponsor', doc.applicant?.nonprofitOrSponsor ?? '')}
@@ -353,16 +397,7 @@ export default async function AdminApplicationDetailsPage({
                 </a>
               </div>
             ) : null}
-            {doc.links?.artSamples ? (
-              <div>
-                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-                  Samples (links)
-                </div>
-                <pre className="mt-2 whitespace-pre-wrap rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-foreground/90">
-                  {doc.links.artSamples}
-                </pre>
-              </div>
-            ) : null}
+            {linksBlock('Samples (links)', doc.links?.artSamples ?? '')}
 
             <div>
               <div className="text-xs font-semibold uppercase tracking-wide text-muted">
