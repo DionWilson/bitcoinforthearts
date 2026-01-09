@@ -118,6 +118,12 @@ function parseNumberOrThrow(value: string, label: string) {
   return n;
 }
 
+function normalizeEin(input: string) {
+  const digits = input.replace(/\D/g, '');
+  if (digits.length !== 9) return null;
+  return `${digits.slice(0, 2)}-${digits.slice(2)}`;
+}
+
 async function sendEmailNotification(args: {
   to: string | string[];
   subject: string;
@@ -350,6 +356,10 @@ export async function POST(req: NextRequest) {
 
     if (isOrg) {
       requireString(fields, 'nonprofitOrSponsor', 'Nonprofit Status or Fiscal Sponsor');
+      const einRaw = requireString(fields, 'ein', 'EIN');
+      const ein = normalizeEin(einRaw);
+      if (!ein) throw new Error('EIN must be 9 digits (format 12-3456789).');
+
       const hasSponsorPdf = uploads.some((u) => u.fieldName === 'fiscalSponsorAgreement');
       const sponsorLink = (fields.fiscalSponsorAgreementLink ?? '').trim();
       if (!hasSponsorPdf && !sponsorLink) {
@@ -414,6 +424,7 @@ export async function POST(req: NextRequest) {
         mailingAddress,
         links,
         applicantType,
+        ein: isOrg ? normalizeEin(fields.ein ?? '') : null,
         nonprofitOrSponsor: isOrg ? (fields.nonprofitOrSponsor ?? '').trim() : null,
         disciplines,
         btcAddress,
@@ -491,6 +502,7 @@ export async function POST(req: NextRequest) {
       `Application ID: ${applicationId.toString()}`,
       `Name/DBA: ${legalName}`,
       `Applicant type: ${applicantType}`,
+      isOrg ? `EIN: ${normalizeEin(fields.ein ?? '') ?? ''}` : null,
       `Email: ${email}`,
       `Disciplines: ${disciplines.join(', ')}`,
       `Project title: ${projectTitle}`,
@@ -503,7 +515,9 @@ export async function POST(req: NextRequest) {
       linkBlock || '(none)',
       '',
       `IP: ${ip}`,
-    ].join('\n');
+    ]
+      .filter((x) => x !== null)
+      .join('\n');
 
     const html = `
       <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5;">
