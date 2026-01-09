@@ -442,7 +442,7 @@ export default function GrantApplicationForm() {
     }
   }, [refreshCharCounts, restoreDraftIntoForm, steps.length]);
 
-  const validateCurrentStepOnly = (targetStep: number) => {
+  const validateCurrentStepOnly = (targetStep: number, opts?: { report?: boolean }) => {
     const form = formRef.current;
     if (!form) return false;
 
@@ -460,7 +460,7 @@ export default function GrantApplicationForm() {
     for (const el of controls) {
       if (el.disabled) continue;
       if (!el.checkValidity()) {
-        el.reportValidity();
+        if (opts?.report !== false) el.reportValidity();
         return false;
       }
     }
@@ -468,13 +468,43 @@ export default function GrantApplicationForm() {
     return true;
   };
 
+  const focusFirstInvalidInStep = (targetStep: number) => {
+    const form = formRef.current;
+    if (!form) return;
+    const fieldset = form.querySelector<HTMLFieldSetElement>(`fieldset[data-step="${targetStep}"]`);
+    if (!fieldset) return;
+
+    // After switching steps, the invalid control becomes visible and can display its message.
+    const firstInvalid = fieldset.querySelector<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >('input:invalid, textarea:invalid, select:invalid');
+    if (!firstInvalid) return;
+
+    try {
+      firstInvalid.focus({ preventScroll: false });
+    } catch {
+      // ignore
+    }
+    try {
+      firstInvalid.reportValidity();
+    } catch {
+      // ignore
+    }
+  };
+
   const validateAllSteps = () => {
     const form = formRef.current;
     if (!form) return false;
 
     for (let s = 1; s <= steps.length; s += 1) {
-      if (!validateCurrentStepOnly(s)) {
+      if (!validateCurrentStepOnly(s, { report: false })) {
         setStep(s);
+        setSubmitState({
+          status: 'error',
+          message: `Please complete all required fields in Section ${s}: ${steps[s - 1]?.title ?? ''}.`,
+        });
+        // Let React render the section, then focus/show the exact missing field.
+        setTimeout(() => focusFirstInvalidInStep(s), 0);
         return false;
       }
 
@@ -509,7 +539,7 @@ export default function GrantApplicationForm() {
   const validateStep = (targetStep: number) => {
     const form = formRef.current;
     if (!form) return false;
-    if (!validateCurrentStepOnly(targetStep)) return false;
+    if (!validateCurrentStepOnly(targetStep, { report: true })) return false;
 
     if (targetStep === 1) {
       const selected = form.querySelectorAll<HTMLInputElement>(
@@ -1116,13 +1146,14 @@ export default function GrantApplicationForm() {
               <input
                 name="fiscalSponsorAgreement"
                 type="file"
+                multiple
                 accept="application/pdf"
                 required={false}
                 disabled={!isOrg || isSubmitting}
                 className="rounded-md border border-border bg-background px-3 py-3"
               />
               <span className="text-xs text-muted">
-                Upload if under {MAX_FILE_MB}MB. Otherwise paste a link below.
+                You can select multiple PDFs. Keep each file under {MAX_FILE_MB}MB. Otherwise paste a link below.
               </span>
             </label>
 
