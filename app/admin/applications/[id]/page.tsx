@@ -4,6 +4,7 @@ import { ObjectId } from 'mongodb';
 import AdminApplicationRow from '@/components/AdminApplicationRow';
 import ShareForReview from '@/components/ShareForReview';
 import AdminReviewPanel from '@/components/AdminReviewPanel';
+import AdminDownloadPdfButton from '@/components/AdminDownloadPdfButton';
 
 export const dynamic = 'force-dynamic';
 
@@ -273,14 +274,7 @@ export default async function AdminApplicationDetailsPage({
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <a
-          href={`/api/admin/applications/${String(doc._id)}/pdf`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-5 py-2 text-sm font-semibold transition-colors hover:bg-surface"
-        >
-          Download PDF (admin)
-        </a>
+        <AdminDownloadPdfButton applicationId={String(doc._id)} />
       </div>
 
       <div className="mt-4">
