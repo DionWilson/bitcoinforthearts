@@ -177,6 +177,8 @@ export async function POST(
           expiresAt,
           sentTo: emails,
           message: (body.message ?? '').toString().slice(0, 2000) || null,
+          emailSent: false,
+          emailError: null,
         },
       } as unknown as Document,
     };
@@ -224,12 +226,40 @@ export async function POST(
       </div>
     `.trim();
 
-    await sendMail({ to: emails, subject, text, html });
-
-    return NextResponse.json(
-      { ok: true, reviewUrl, expiresAt: expiresAt.toISOString() },
-      { status: 200 },
-    );
+    try {
+      await sendMail({ to: emails, subject, text, html });
+      await db.collection('applications').updateOne(
+        { _id: appId, 'reviewShares.tokenHash': tokenHash },
+        {
+          $set: {
+            'reviewShares.$.emailSent': true,
+            'reviewShares.$.emailSentAt': new Date(),
+            'reviewShares.$.emailError': null,
+          },
+        },
+      );
+      return NextResponse.json(
+        { ok: true, reviewUrl, expiresAt: expiresAt.toISOString(), emailSent: true },
+        { status: 200 },
+      );
+    } catch (emailErr) {
+      const errMsg = emailErr instanceof Error ? emailErr.message : 'Unknown email error';
+      console.error('[review-share] email send failed', emailErr);
+      await db.collection('applications').updateOne(
+        { _id: appId, 'reviewShares.tokenHash': tokenHash },
+        {
+          $set: {
+            'reviewShares.$.emailSent': false,
+            'reviewShares.$.emailError': errMsg,
+          },
+        },
+      );
+      // Still return the link so you can share it manually.
+      return NextResponse.json(
+        { ok: true, reviewUrl, expiresAt: expiresAt.toISOString(), emailSent: false, emailError: errMsg },
+        { status: 200 },
+      );
+    }
   } catch (err) {
     const msg = err instanceof Error ? err.message : 'Server error.';
     console.error('[review-share] failed', err);
