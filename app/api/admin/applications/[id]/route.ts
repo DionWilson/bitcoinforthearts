@@ -22,12 +22,30 @@ type PatchBody = {
   adminNotes?: string;
   reportReceived?: boolean;
   awardedAt?: string; // ISO
+  addReview?: {
+    reviewer?: string;
+    notes?: string;
+    scores?: {
+      overall?: number;
+      impact?: number;
+      feasibility?: number;
+      bitcoinAlignment?: number;
+      transparency?: number;
+    };
+  };
 };
 
 function addMonths(date: Date, months: number) {
   const d = new Date(date);
   d.setMonth(d.getMonth() + months);
   return d;
+}
+
+function clampScore(v: unknown) {
+  const n = typeof v === 'number' ? v : Number(v);
+  if (!Number.isFinite(n)) return undefined;
+  const rounded = Math.round(n);
+  return Math.min(5, Math.max(1, rounded));
 }
 
 export async function PATCH(
@@ -47,6 +65,7 @@ export async function PATCH(
   }
 
   const update: Record<string, unknown> = { updatedAt: new Date() };
+  const push: Record<string, unknown> = {};
 
   if (typeof body.status === 'string') {
     if (!ALLOWED_STATUSES.includes(body.status)) {
@@ -69,14 +88,40 @@ export async function PATCH(
     update['oversight.reportReceivedAt'] = body.reportReceived ? new Date() : null;
   }
 
+  if (body.addReview && typeof body.addReview === 'object') {
+    const reviewer =
+      typeof body.addReview.reviewer === 'string' && body.addReview.reviewer.trim()
+        ? body.addReview.reviewer.trim().slice(0, 120)
+        : 'Admin';
+    const notes =
+      typeof body.addReview.notes === 'string' ? body.addReview.notes.slice(0, 20000) : '';
+
+    const s = body.addReview.scores ?? {};
+    const review = {
+      reviewer,
+      createdAt: new Date(),
+      scores: {
+        overall: clampScore(s.overall),
+        impact: clampScore(s.impact),
+        feasibility: clampScore(s.feasibility),
+        bitcoinAlignment: clampScore(s.bitcoinAlignment),
+        transparency: clampScore(s.transparency),
+      },
+      notes,
+    };
+
+    push.reviews = review;
+  }
+
   const db = await getMongoDb();
   const appId = new ObjectId(id);
 
-  const res = await db.collection('applications').findOneAndUpdate(
-    { _id: appId },
-    { $set: update },
-    { returnDocument: 'after' },
-  );
+  const updateDoc: Record<string, unknown> = { $set: update };
+  if (Object.keys(push).length) updateDoc.$push = push;
+
+  const res = await db.collection('applications').findOneAndUpdate({ _id: appId }, updateDoc, {
+    returnDocument: 'after',
+  });
 
   if (!res) {
     return NextResponse.json({ ok: false, error: 'Not found.' }, { status: 404 });

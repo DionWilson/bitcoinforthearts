@@ -1,11 +1,20 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import InfoTip from '@/components/InfoTip';
 
 const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
+const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
+
+type DraftPayloadV1 = {
+  version: 1;
+  savedAt: string;
+  step: number;
+  applicantType: 'individual' | 'organization';
+  values: Record<string, unknown>;
+};
 
 type SubmitState =
   | { status: 'idle' }
@@ -44,10 +53,211 @@ export default function GrantApplicationForm() {
 
   const progressPct = Math.round((step / steps.length) * 100);
 
+  const [draftNotice, setDraftNotice] = useState<null | { savedAt: string; loaded?: boolean }>(
+    null,
+  );
+  const saveDraftTimerRef = useRef<number | null>(null);
+
   useEffect(() => {
     // When advancing steps, bring the current section into view.
     topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, [step]);
+
+  const collectDraftValues = useCallback((form: HTMLFormElement) => {
+    const controls = Array.from(form.elements).filter(
+      (el): el is HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement =>
+        el instanceof HTMLInputElement ||
+        el instanceof HTMLTextAreaElement ||
+        el instanceof HTMLSelectElement,
+    );
+
+    const values: Record<string, unknown> = {};
+    const seen = new Set<string>();
+
+    for (const el of controls) {
+      const name = el.name;
+      if (!name) continue;
+      if (seen.has(name)) continue;
+
+      // Skip known non-data fields.
+      if (name === 'disciplineRequiredHack') {
+        seen.add(name);
+        continue;
+      }
+
+      // Skip file inputs (can’t be restored from localStorage).
+      if (el instanceof HTMLInputElement && el.type === 'file') {
+        seen.add(name);
+        continue;
+      }
+
+      const item = (form.elements as unknown as { namedItem: (n: string) => unknown }).namedItem(
+        name,
+      );
+
+      // Radio groups and checkbox groups are exposed as RadioNodeList by namedItem().
+      if (typeof RadioNodeList !== 'undefined' && item instanceof RadioNodeList) {
+        const nodes = Array.from(item).filter((n): n is HTMLInputElement => n instanceof HTMLInputElement);
+        const hasCheckbox = nodes.some((n) => n.type === 'checkbox');
+        const hasRadio = nodes.some((n) => n.type === 'radio');
+
+        if (hasCheckbox) {
+          values[name] = nodes.filter((n) => n.checked).map((n) => n.value);
+        } else if (hasRadio) {
+          const picked = nodes.find((n) => n.checked);
+          values[name] = picked ? picked.value : '';
+        } else {
+          values[name] = item.value ?? '';
+        }
+
+        seen.add(name);
+        continue;
+      }
+
+      if (el instanceof HTMLInputElement && el.type === 'checkbox') {
+        values[name] = Boolean(el.checked);
+        seen.add(name);
+        continue;
+      }
+
+      if (el instanceof HTMLSelectElement && el.multiple) {
+        values[name] = Array.from(el.selectedOptions).map((o) => o.value);
+        seen.add(name);
+        continue;
+      }
+
+      values[name] = el.value ?? '';
+      seen.add(name);
+    }
+
+    return values;
+  }, []);
+
+  const saveDraftNow = useCallback(() => {
+    const form = formRef.current;
+    if (!form) return;
+    try {
+      const payload: DraftPayloadV1 = {
+        version: 1,
+        savedAt: new Date().toISOString(),
+        step,
+        applicantType,
+        values: collectDraftValues(form),
+      };
+      window.localStorage.setItem(DRAFT_STORAGE_KEY, JSON.stringify(payload));
+      setDraftNotice({ savedAt: payload.savedAt });
+    } catch {
+      // Ignore quota/serialization errors.
+    }
+  }, [applicantType, collectDraftValues, step]);
+
+  const scheduleDraftSave = useCallback(() => {
+    if (saveDraftTimerRef.current) window.clearTimeout(saveDraftTimerRef.current);
+    saveDraftTimerRef.current = window.setTimeout(() => {
+      saveDraftNow();
+    }, 600);
+  }, [saveDraftNow]);
+
+  const clearDraft = useCallback(() => {
+    try {
+      window.localStorage.removeItem(DRAFT_STORAGE_KEY);
+    } catch {
+      // ignore
+    }
+    setDraftNotice(null);
+  }, []);
+
+  const restoreDraftIntoForm = useCallback(
+    (payload: DraftPayloadV1) => {
+      const form = formRef.current;
+      if (!form) return;
+
+      const values = payload.values ?? {};
+      for (const [name, raw] of Object.entries(values)) {
+        if (!name) continue;
+
+        // Skip file fields (can’t be restored) + known hacks.
+        if (name === 'portfolioResume' || name === 'fiscalSponsorAgreement') continue;
+        if (name === 'disciplineRequiredHack') continue;
+
+        const item = (form.elements as unknown as { namedItem: (n: string) => unknown }).namedItem(
+          name,
+        );
+        if (!item) continue;
+
+        if (typeof RadioNodeList !== 'undefined' && item instanceof RadioNodeList) {
+          const nodes = Array.from(item).filter((n): n is HTMLInputElement => n instanceof HTMLInputElement);
+          const hasCheckbox = nodes.some((n) => n.type === 'checkbox');
+          const hasRadio = nodes.some((n) => n.type === 'radio');
+
+          if (hasCheckbox) {
+            const wanted = Array.isArray(raw) ? raw.map(String) : [];
+            for (const n of nodes) n.checked = wanted.includes(n.value);
+          } else if (hasRadio) {
+            const wanted = typeof raw === 'string' ? raw : String(raw ?? '');
+            for (const n of nodes) n.checked = n.value === wanted;
+          } else if (typeof item.value === 'string') {
+            item.value = typeof raw === 'string' ? raw : String(raw ?? '');
+          }
+
+          continue;
+        }
+
+        if (item instanceof HTMLInputElement) {
+          if (item.type === 'checkbox') {
+            item.checked = Boolean(raw);
+            continue;
+          }
+          item.value = typeof raw === 'string' ? raw : String(raw ?? '');
+          continue;
+        }
+
+        if (item instanceof HTMLTextAreaElement) {
+          item.value = typeof raw === 'string' ? raw : String(raw ?? '');
+          continue;
+        }
+
+        if (item instanceof HTMLSelectElement) {
+          if (item.multiple && Array.isArray(raw)) {
+            const wanted = raw.map(String);
+            for (const opt of Array.from(item.options)) opt.selected = wanted.includes(opt.value);
+          } else {
+            item.value = typeof raw === 'string' ? raw : String(raw ?? '');
+          }
+        }
+      }
+    },
+    [],
+  );
+
+  useEffect(() => {
+    // Attempt to restore a saved draft (if present).
+    const form = formRef.current;
+    if (!form) return;
+    try {
+      const raw = window.localStorage.getItem(DRAFT_STORAGE_KEY);
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as DraftPayloadV1;
+      if (!parsed || parsed.version !== 1 || typeof parsed.values !== 'object') return;
+
+      const nextType =
+        parsed.applicantType === 'organization' ? 'organization' : ('individual' as const);
+      setApplicantType(nextType);
+      setStep(
+        typeof parsed.step === 'number' && Number.isFinite(parsed.step)
+          ? Math.min(steps.length, Math.max(1, Math.floor(parsed.step)))
+          : 1,
+      );
+
+      // Wait a tick so conditional org-only fields exist/enabled as needed.
+      window.setTimeout(() => {
+        restoreDraftIntoForm(parsed);
+        setDraftNotice({ savedAt: parsed.savedAt, loaded: true });
+      }, 0);
+    } catch {
+      // ignore parse errors
+    }
+  }, [restoreDraftIntoForm, steps.length]);
 
   const validateCurrentStepOnly = (targetStep: number) => {
     const form = formRef.current;
@@ -247,6 +457,7 @@ export default function GrantApplicationForm() {
       form.reset();
       setApplicantType('individual');
       setStep(1);
+      clearDraft();
     } catch (err) {
       setSubmitState({ status: 'error', message: getFirstErrorMessage(err) });
     }
@@ -318,6 +529,8 @@ export default function GrantApplicationForm() {
           // Update validity state without forcing a popup.
           target.checkValidity();
         }
+        // Auto-save draft on changes (debounced).
+        scheduleDraftSave();
       }}
       className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
@@ -336,6 +549,58 @@ export default function GrantApplicationForm() {
           <span className="font-semibold text-foreground">{steps.length}</span>
         </div>
       </div>
+
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="text-xs text-muted">
+          Drafts are saved locally in your browser (no uploads). You’ll need to reattach any PDFs before submitting.
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={saveDraftNow}
+            disabled={isSubmitting}
+            className={[
+              'inline-flex min-h-10 items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-xs font-semibold transition-colors',
+              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-surface',
+            ].join(' ')}
+          >
+            Save draft
+          </button>
+          <button
+            type="button"
+            onClick={clearDraft}
+            disabled={isSubmitting}
+            className={[
+              'inline-flex min-h-10 items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-xs font-semibold transition-colors',
+              isSubmitting ? 'opacity-50 cursor-not-allowed' : 'hover:bg-surface',
+            ].join(' ')}
+          >
+            Clear draft
+          </button>
+        </div>
+      </div>
+
+      {draftNotice ? (
+        <div className="mt-4 rounded-xl border border-border bg-surface p-4 text-xs text-muted">
+          {draftNotice.loaded ? (
+            <span>
+              Draft restored from{' '}
+              <span className="font-semibold text-foreground">
+                {new Date(draftNotice.savedAt).toLocaleString()}
+              </span>
+              .
+            </span>
+          ) : (
+            <span>
+              Draft saved at{' '}
+              <span className="font-semibold text-foreground">
+                {new Date(draftNotice.savedAt).toLocaleString()}
+              </span>
+              .
+            </span>
+          )}
+        </div>
+      ) : null}
 
       <p className="mt-4 text-sm leading-relaxed text-muted">
         BFTA funds Bitcoin-aligned arts projects. Grants are disbursed in BTC. Reviewed quarterly;
