@@ -347,19 +347,16 @@ export default function GrantGuidelinesPage() {
             </Section>
 
             <Section id="faqs" title="9. FAQs">
-              <div className="space-y-3">
-                <details className="rounded-2xl border border-border bg-surface p-4">
-                  <summary className="cursor-pointer text-sm font-semibold">Can international artists apply?</summary>
-                  <div className="mt-3 text-sm text-muted">
-                    Yes. Applicants are open worldwide. The project activities funded by the grant must be performed in the United States.
-                  </div>
-                </details>
-                <details className="rounded-2xl border border-border bg-surface p-4">
-                  <summary className="cursor-pointer text-sm font-semibold">Do you offer this as a PDF?</summary>
-                  <div className="mt-3 text-sm text-muted">
-                    We keep the website version as the source of truth. Use the “Print / Save as PDF” button at the top of this page.
-                  </div>
-                </details>
+              <p>
+                Visit the Grants FAQ for quick answers:
+              </p>
+              <div className="print:hidden">
+                <Link
+                  href="/grants/faq"
+                  className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-surface px-5 py-2 text-sm font-semibold transition-colors hover:opacity-90"
+                >
+                  Go to Grants FAQ
+                </Link>
               </div>
             </Section>
           </div>

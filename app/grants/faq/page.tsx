@@ -33,6 +33,10 @@ const faqs = [
     a: 'We review applications quarterly. We are collecting applications now, but processing begins in Q3 2026.',
   },
   {
+    q: 'Can international artists apply?',
+    a: 'Yes. Applicants are open worldwide. The key requirement is that the project activities funded by the grant must be performed in the United States.',
+  },
+  {
     q: 'What if I’m selected?',
     a: 'If selected, grants are paid in BTC to your provided wallet address. You’ll also commit to post-grant reporting (6 months + project end) to support radical transparency.',
   },
@@ -51,6 +55,10 @@ const faqs = [
   {
     q: 'Can I apply more than once?',
     a: 'Yes, but only one active application per quarter. If not selected, feel free to reapply with updates.',
+  },
+  {
+    q: 'Do you offer the guidelines as a PDF?',
+    a: 'We keep the website version of the guidelines as the source of truth. You can use your browser’s print dialog (“Print / Save as PDF”) from the guidelines page.',
   },
   {
     q: 'How is the program funded?',
