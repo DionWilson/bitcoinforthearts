@@ -75,6 +75,44 @@ export default function GrantApplicationForm() {
     return true;
   };
 
+  const validateAllSteps = () => {
+    const form = formRef.current;
+    if (!form) return false;
+
+    for (let s = 1; s <= steps.length; s += 1) {
+      if (!validateCurrentStepOnly(s)) {
+        setStep(s);
+        return false;
+      }
+
+      // Step-specific checks.
+      if (s === 1) {
+        const selected = form.querySelectorAll<HTMLInputElement>(
+          'input[name="discipline[]"]:checked',
+        );
+        if (selected.length < 1) {
+          setStep(1);
+          setSubmitState({
+            status: 'error',
+            message: 'Please select at least one artistic discipline.',
+          });
+          return false;
+        }
+
+        const btc = form.elements.namedItem('btcAddress') as HTMLInputElement | null;
+        if (btc && btc.value && !BTC_ADDRESS_REGEX.test(btc.value.trim())) {
+          setStep(1);
+          btc.setCustomValidity('Please enter a valid Bitcoin address (bc1..., 1..., or 3...).');
+          btc.reportValidity();
+          btc.setCustomValidity('');
+          return false;
+        }
+      }
+    }
+
+    return true;
+  };
+
   const validateStep = (targetStep: number) => {
     const form = formRef.current;
     if (!form) return false;
@@ -171,7 +209,7 @@ export default function GrantApplicationForm() {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validateStep(step)) return;
+    if (!validateAllSteps()) return;
     if (!validateFiles()) return;
     if (!validateLinkOrFileRequirements()) return;
     if (step !== steps.length) {
@@ -256,8 +294,30 @@ export default function GrantApplicationForm() {
         // Ensure paste/autofill clears any previous submission error.
         if (submitState.status === 'error') setSubmitState({ status: 'idle' });
       }}
-      onPasteCapture={() => {
+      onPasteCapture={(e) => {
         if (submitState.status === 'error') setSubmitState({ status: 'idle' });
+        const target = e.target;
+        // Pasting fires before the value is committed; re-check validity right after.
+        if (
+          target instanceof HTMLInputElement ||
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLSelectElement
+        ) {
+          setTimeout(() => target.checkValidity(), 0);
+        }
+      }}
+      onInput={(e) => {
+        // Clear the browser "invalid" highlight as soon as text is entered/pasted.
+        const target = e.target;
+        if (
+          target instanceof HTMLInputElement ||
+          target instanceof HTMLTextAreaElement ||
+          target instanceof HTMLSelectElement
+        ) {
+          target.setCustomValidity('');
+          // Update validity state without forcing a popup.
+          target.checkValidity();
+        }
       }}
       className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
@@ -299,7 +359,8 @@ export default function GrantApplicationForm() {
               type="button"
               onClick={() => {
                 if (s.id === step) return;
-                if (s.id < step || validateStep(step)) setStep(s.id);
+                // Allow viewing any section without completing prior sections.
+                setStep(s.id);
               }}
               className={[
                 'rounded-full border border-border px-3 py-1 transition-colors',
