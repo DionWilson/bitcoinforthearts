@@ -57,6 +57,7 @@ export default function Navigation() {
         label: 'Programming',
         href: '/programming',
         children: [
+          { label: 'Education', href: '/education' },
           { label: 'Events', href: '/events' },
         ],
       },
