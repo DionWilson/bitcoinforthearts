@@ -31,7 +31,7 @@ export default function VolunteerPage() {
     <main className="bg-background relative overflow-hidden min-h-screen">
       <div className="pointer-events-none absolute inset-0">
         <Image
-          src="/support artist.JPG"
+          src="/volunteer-bg.JPG"
           alt=""
           fill
           priority={false}
@@ -95,8 +95,8 @@ export default function VolunteerPage() {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
                     <Image
-                      src="/donor-image.jpg"
-                      alt="Supporters gathering to help fund artists."
+                      src="/support%20artist.JPG"
+                      alt="Volunteers supporting artists and creative work."
                       fill
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 45vw, 240px"
@@ -115,8 +115,8 @@ export default function VolunteerPage() {
                   </div>
                   <div className="relative col-span-2 aspect-[16/9] overflow-hidden rounded-2xl border border-border">
                     <Image
-                      src="/knitting.jpg"
-                      alt="Creative work in progress, representing steady, low-time-preference craft."
+                      src="/volunteers.JPG"
+                      alt="BFTA volunteers meeting and collaborating to support artists."
                       fill
                       className="object-cover object-center"
                       sizes="(max-width: 768px) 92vw, 480px"
@@ -230,8 +230,8 @@ export default function VolunteerPage() {
                 </div>
                 <div className="relative aspect-square overflow-hidden rounded-2xl border border-border">
                   <Image
-                    src="/street%20fair.jpg"
-                    alt="A street fair, representing local community outreach and engagement."
+                    src="/BFTA-volunteers.JPG"
+                    alt="BFTA volunteers supporting the mission of Bitcoin For The Arts."
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 1024px) 28vw, 180px"
