@@ -118,12 +118,12 @@ export default function GetInvolvedPage() {
               </div>
             </div>
             <div className="mt-6">
-              <a
-                href="mailto:volunteer@bitcoinforthearts.org?subject=Volunteer%20interest&body=Name%3A%0AHow%20I%20can%20help%3A%0AAvailability%3A%0ALinks%20(optional)%3A%0A"
+              <Link
+                href="/get-involved/volunteer"
                 className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:opacity-90 border border-accent/60"
               >
-                Volunteer form (email)
-              </a>
+                Volunteer (details + signup)
+              </Link>
             </div>
           </section>
 
