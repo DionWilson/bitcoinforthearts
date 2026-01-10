@@ -1,13 +1,15 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import Script from 'next/script';
 import InfoTip from '@/components/InfoTip';
+import { BITCOIN_ADDRESS_PATTERN, isValidBitcoinOnchainAddress } from '@/lib/bitcoinAddress';
 
-const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const MAX_FILE_MB = 3;
 const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
 const LEGAL_ASSURANCES_VERSION = 2;
+const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
 
 const CHAR_LIMITS: Record<string, number> = {
   projectSummary: 500,
@@ -523,9 +525,11 @@ export default function GrantApplicationForm() {
         }
 
         const btc = form.elements.namedItem('btcAddress') as HTMLInputElement | null;
-        if (btc && btc.value && !BTC_ADDRESS_REGEX.test(btc.value.trim())) {
+        if (btc && btc.value && !isValidBitcoinOnchainAddress(btc.value)) {
           setStep(1);
-          btc.setCustomValidity('Please enter a valid Bitcoin address (bc1..., 1..., or 3...).');
+          btc.setCustomValidity(
+            'Please enter a valid Bitcoin on-chain address (legacy 1/3, segwit bc1q…, or taproot bc1p…).',
+          );
           btc.reportValidity();
           btc.setCustomValidity('');
           return false;
@@ -556,8 +560,10 @@ export default function GrantApplicationForm() {
       if (submitState.status === 'error') setSubmitState({ status: 'idle' });
 
       const btc = form.elements.namedItem('btcAddress') as HTMLInputElement | null;
-      if (btc && btc.value && !BTC_ADDRESS_REGEX.test(btc.value.trim())) {
-        btc.setCustomValidity('Please enter a valid Bitcoin address (bc1..., 1..., or 3...).');
+      if (btc && btc.value && !isValidBitcoinOnchainAddress(btc.value)) {
+        btc.setCustomValidity(
+          'Please enter a valid Bitcoin on-chain address (legacy 1/3, segwit bc1q…, or taproot bc1p…).',
+        );
         btc.reportValidity();
         btc.setCustomValidity('');
         return false;
@@ -652,6 +658,16 @@ export default function GrantApplicationForm() {
     setSubmitState({ status: 'submitting' });
     try {
       const body = new FormData(form);
+      if (TURNSTILE_SITE_KEY) {
+        const token = String(body.get('cf-turnstile-response') ?? '').trim();
+        if (!token) {
+          setSubmitState({
+            status: 'error',
+            message: 'Please complete the anti-spam verification (Turnstile) and try again.',
+          });
+          return;
+        }
+      }
       const res = await fetch('/api/grants/apply', {
         method: 'POST',
         body,
@@ -874,6 +890,12 @@ export default function GrantApplicationForm() {
       }}
       className="rounded-3xl border border-border bg-background p-6 pb-28 sm:p-8 sm:pb-28"
     >
+      {TURNSTILE_SITE_KEY ? (
+        <Script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+          strategy="afterInteractive"
+        />
+      ) : null}
       <div ref={topRef} />
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
@@ -1096,9 +1118,9 @@ export default function GrantApplicationForm() {
             <input
               name="btcAddress"
               required
-              pattern={BTC_ADDRESS_REGEX.source}
+              pattern={BITCOIN_ADDRESS_PATTERN}
               className="min-h-12 rounded-md border border-border bg-background px-3 py-2"
-              placeholder="bc1..., 1..., or 3..."
+              placeholder="bc1q…, bc1p…, 1…, or 3…"
             />
           </label>
         </div>
@@ -1704,6 +1726,26 @@ export default function GrantApplicationForm() {
                 name="legalAssurancesVersion"
                 value={String(LEGAL_ASSURANCES_VERSION)}
               />
+
+              {TURNSTILE_SITE_KEY ? (
+                <div className="mt-5 border-t border-border pt-4">
+                  <div className="font-semibold">
+                    Spam protection <span className="text-accent">*</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    Please complete the anti-spam verification to submit your application.
+                  </p>
+                  <div className="mt-3 flex justify-center">
+                    <div
+                      className="cf-turnstile"
+                      data-sitekey={TURNSTILE_SITE_KEY}
+                      data-theme="auto"
+                      data-size="flexible"
+                      data-action="grants_apply"
+                    />
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
