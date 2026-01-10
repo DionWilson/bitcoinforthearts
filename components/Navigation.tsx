@@ -26,8 +26,15 @@ export default function Navigation() {
         label: 'About',
         href: '/about',
         children: [
-          { label: 'Get Involved', href: '/get-involved' },
           { label: 'Leadership', href: '/about/leadership' },
+        ],
+      },
+      {
+        label: 'Get Involved',
+        href: '/get-involved',
+        children: [
+          { label: 'Volunteer', href: '/get-involved/volunteer' },
+          { label: 'DIY Fundraising Guide', href: '/get-involved/diy-fundraising-guide' },
         ],
       },
       {
@@ -46,8 +53,13 @@ export default function Navigation() {
         children: [
         ],
       },
-      { label: 'Programming', href: '/programming' },
-      { label: 'Events', href: '/events' },
+      {
+        label: 'Programming',
+        href: '/programming',
+        children: [
+          { label: 'Events', href: '/events' },
+        ],
+      },
       { label: 'Stories', href: '/stories' },
       { label: 'Contact', href: '/contact' },
       { label: 'Donate', href: '/donate', variant: 'cta' },
