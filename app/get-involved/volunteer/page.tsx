@@ -63,31 +63,101 @@ export default function VolunteerPage() {
               radical transparency and low time preference.
             </p>
 
-            <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
-              <Card title="Why volunteer?">
-                <ul className="list-disc space-y-2 pl-5">
-                  <li>
-                    <span className="font-semibold text-foreground">Direct impact:</span> support grants,
-                    workshops, residencies, and productions.
-                  </li>
-                  <li>
-                    <span className="font-semibold text-foreground">Build skills:</span> learn Bitcoin-native
-                    tools and connect with the ecosystem.
-                  </li>
-                  <li>
-                    <span className="font-semibold text-foreground">Flexible:</span> contribute on your schedule,
-                    with clear tasks and expectations.
-                  </li>
-                </ul>
-              </Card>
+            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-12 md:items-stretch">
+              <div className="md:col-span-7 grid grid-cols-1 gap-4">
+                <Card title="Why volunteer?">
+                  <ul className="list-disc space-y-2 pl-5">
+                    <li>
+                      <span className="font-semibold text-foreground">Direct impact:</span> support grants,
+                      workshops, residencies, and productions.
+                    </li>
+                    <li>
+                      <span className="font-semibold text-foreground">Build skills:</span> learn Bitcoin-native
+                      tools and connect with the ecosystem.
+                    </li>
+                    <li>
+                      <span className="font-semibold text-foreground">Flexible:</span> contribute on your schedule,
+                      with clear tasks and expectations.
+                    </li>
+                  </ul>
+                </Card>
 
-              <Card title="Volunteer spotlight (example)">
-                <p className="italic">
-                  “I helped review applications and discovered a musician building a Bitcoin
-                  soundscape project. Seeing artists get funded without red tape is the best part.”
+                <Card title="Volunteer spotlight (example)">
+                  <p className="italic">
+                    “I helped review applications and discovered a musician building a Bitcoin
+                    soundscape project. Seeing artists get funded without red tape is the best part.”
+                  </p>
+                  <div className="mt-3 text-xs text-muted">— Volunteer, community member</div>
+                </Card>
+              </div>
+
+              <div className="md:col-span-5">
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+                    <Image
+                      src="/donor-image.jpg"
+                      alt="Supporters gathering to help fund artists."
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 45vw, 240px"
+                    />
+                    <div className="absolute inset-0 bg-black/10" />
+                  </div>
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border">
+                    <Image
+                      src="/pottery.jpg"
+                      alt="Hands shaping clay, representing creative work and craft."
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 45vw, 240px"
+                    />
+                    <div className="absolute inset-0 bg-black/10" />
+                  </div>
+                  <div className="relative col-span-2 aspect-[16/9] overflow-hidden rounded-2xl border border-border">
+                    <Image
+                      src="/knitting.jpg"
+                      alt="Creative work in progress, representing steady, low-time-preference craft."
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 92vw, 480px"
+                    />
+                    <div className="absolute inset-0 bg-black/10" />
+                  </div>
+                </div>
+                <div className="mt-3 text-xs text-muted">
+                  Real-world support, real-world craft — volunteer work keeps the artist pipeline moving.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-border bg-background p-6">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Impact
+                </div>
+                <h2 className="mt-2 text-xl font-semibold tracking-tight">
+                  Small hours. Real outcomes.
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  The goal is simple: keep the work fair, transparent, and moving forward — without burning people out.
                 </p>
-                <div className="mt-3 text-xs text-muted">— Volunteer, community member</div>
-              </Card>
+              </div>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                <div className="rounded-xl border border-border bg-surface p-4 text-sm">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-muted">Time</div>
+                  <div className="mt-1 font-semibold text-foreground">1–5 hrs / month</div>
+                </div>
+                <div className="rounded-xl border border-border bg-surface p-4 text-sm">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-muted">Style</div>
+                  <div className="mt-1 font-semibold text-foreground">Remote-friendly</div>
+                </div>
+                <div className="rounded-xl border border-border bg-surface p-4 text-sm">
+                  <div className="text-xs font-semibold uppercase tracking-wide text-muted">Values</div>
+                  <div className="mt-1 font-semibold text-foreground">Transparency-first</div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -139,6 +209,36 @@ export default function VolunteerPage() {
             </section>
 
             <aside className="lg:col-span-5 space-y-4">
+              <div className="grid grid-cols-3 gap-3">
+                <div className="relative aspect-square overflow-hidden rounded-2xl border border-border">
+                  <Image
+                    src="/art%20studio.jpg"
+                    alt="An artist studio, representing volunteer support for creators."
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 28vw, 180px"
+                  />
+                </div>
+                <div className="relative aspect-square overflow-hidden rounded-2xl border border-border">
+                  <Image
+                    src="/music%20fair.jpg"
+                    alt="A music fair scene, representing community events and programming."
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 28vw, 180px"
+                  />
+                </div>
+                <div className="relative aspect-square overflow-hidden rounded-2xl border border-border">
+                  <Image
+                    src="/street%20fair.jpg"
+                    alt="A street fair, representing local community outreach and engagement."
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 28vw, 180px"
+                  />
+                </div>
+              </div>
+
               <div className="rounded-2xl border border-border bg-surface p-6">
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                   Ready to volunteer?
