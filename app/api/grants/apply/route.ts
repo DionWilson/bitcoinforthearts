@@ -5,11 +5,11 @@ import { Readable } from 'node:stream';
 import { ObjectId, GridFSBucket } from 'mongodb';
 import nodemailer from 'nodemailer';
 import { getMongoDb } from '@/lib/mongodb';
+import { isValidBitcoinOnchainAddress } from '@/lib/bitcoinAddress';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const BTC_ADDRESS_REGEX = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
 const LEGAL_ASSURANCES_VERSION = 2;
 
 // Vercel/Next deployments commonly enforce a small max request body size.
@@ -125,6 +125,63 @@ function normalizeEin(input: string) {
   return `${digits.slice(0, 2)}-${digits.slice(2)}`;
 }
 
+async function verifyTurnstile(args: {
+  secret: string;
+  token: string;
+  ip: string;
+}) {
+  try {
+    const body = new URLSearchParams();
+    body.set('secret', args.secret);
+    body.set('response', args.token);
+    if (args.ip && args.ip !== 'unknown') body.set('remoteip', args.ip);
+
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'content-type': 'application/x-www-form-urlencoded' },
+      body,
+    });
+    const data = (await res.json().catch(() => null)) as
+      | {
+          success: boolean;
+          'error-codes'?: string[];
+          challenge_ts?: string;
+          hostname?: string;
+          action?: string;
+          cdata?: string;
+        }
+      | null;
+    if (!res.ok || !data) {
+      return {
+        ok: false as const,
+        errorCodes: ['turnstile_fetch_failed'],
+        hostname: null,
+        action: null,
+        cdata: null,
+        challengeTs: null,
+      };
+    }
+    return {
+      ok: Boolean(data.success),
+      errorCodes: Array.isArray(data['error-codes']) ? data['error-codes'].slice(0, 10) : [],
+      hostname: typeof data.hostname === 'string' ? data.hostname : null,
+      action: typeof data.action === 'string' ? data.action : null,
+      cdata: typeof data.cdata === 'string' ? data.cdata : null,
+      challengeTs: typeof data.challenge_ts === 'string' ? data.challenge_ts : null,
+    };
+  } catch (err) {
+    console.error('[grants] turnstile verify error', err);
+    return {
+      ok: false as const,
+      errorCodes: ['turnstile_exception'],
+      hostname: null,
+      action: null,
+      cdata: null,
+      challengeTs: null,
+    };
+  }
+}
+
 async function sendEmailNotification(args: {
   to: string | string[];
   subject: string;
@@ -180,6 +237,9 @@ export async function POST(req: NextRequest) {
       { status: 403 },
     );
   }
+
+  const turnstileSecret = getEnv('TURNSTILE_SECRET_KEY');
+  const turnstileSiteKey = getEnv('NEXT_PUBLIC_TURNSTILE_SITE_KEY');
 
   const contentType = req.headers.get('content-type') ?? '';
   if (!contentType.toLowerCase().includes('multipart/form-data')) {
@@ -328,6 +388,49 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: true, applicationId: 'suppressed' }, { status: 200 });
   }
 
+  let turnstileMeta:
+    | {
+        ok: boolean;
+        hostname: string | null;
+        action: string | null;
+        challengeTs: string | null;
+        errorCodes: string[];
+      }
+    | null = null;
+
+  if (turnstileSecret && turnstileSiteKey) {
+    const token = (fields['cf-turnstile-response'] ?? '').trim();
+    if (!token) {
+      await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
+      return NextResponse.json(
+        { ok: false, error: 'Please complete the anti-spam verification and try again.' },
+        { status: 400 },
+      );
+    }
+
+    const result = await verifyTurnstile({ secret: turnstileSecret, token, ip });
+    turnstileMeta = {
+      ok: result.ok,
+      hostname: result.hostname,
+      action: result.action,
+      challengeTs: result.challengeTs,
+      errorCodes: result.errorCodes,
+    };
+
+    if (!result.ok) {
+      await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
+      return NextResponse.json(
+        {
+          ok: false,
+          error: 'Anti-spam verification failed. Please reload the page and try again.',
+        },
+        { status: 403 },
+      );
+    }
+  } else if (turnstileSecret || turnstileSiteKey) {
+    console.warn('[grants] turnstile partially configured; skipping enforcement');
+  }
+
   if (errors.length) {
     // Cleanup orphaned uploads
     await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
@@ -347,8 +450,10 @@ export async function POST(req: NextRequest) {
     const mailingAddress = requireString(fields, 'mailingAddress', 'Mailing Address');
     const links = requireString(fields, 'links', 'Links');
     const btcAddress = requireString(fields, 'btcAddress', 'Bitcoin Address');
-    if (!BTC_ADDRESS_REGEX.test(btcAddress)) {
-      throw new Error('Bitcoin wallet address format looks invalid.');
+    if (!isValidBitcoinOnchainAddress(btcAddress)) {
+      throw new Error(
+        'Bitcoin wallet address format looks invalid. Please use an on-chain address (legacy 1/3, segwit bc1q…, or taproot bc1p…).',
+      );
     }
 
     if (disciplines.length < 1) {
@@ -492,6 +597,7 @@ export async function POST(req: NextRequest) {
         ip,
         userAgent: req.headers.get('user-agent') ?? null,
         vercelEnv: process.env.VERCEL_ENV ?? null,
+        turnstile: turnstileMeta,
       },
     });
 
@@ -671,6 +777,8 @@ export async function GET() {
   const smtpPass = getEnv('GRANTS_SMTP_PASS') ?? getEnv('CONTACT_SMTP_PASS');
   const fromEmail =
     getEnv('GRANTS_FROM_EMAIL') ?? getEnv('CONTACT_FROM_EMAIL') ?? getEnv('RESEND_FROM_EMAIL');
+  const turnstileSecret = getEnv('TURNSTILE_SECRET_KEY');
+  const turnstileSiteKey = getEnv('NEXT_PUBLIC_TURNSTILE_SITE_KEY');
 
   let mongoOk = false;
   try {
@@ -686,6 +794,7 @@ export async function GET() {
       configured: {
         mongo: mongoOk,
         email: Boolean(smtpUser) && Boolean(smtpPass) && Boolean(fromEmail),
+        turnstile: Boolean(turnstileSecret) && Boolean(turnstileSiteKey),
       },
       vercel: {
         env: process.env.VERCEL_ENV ?? null,

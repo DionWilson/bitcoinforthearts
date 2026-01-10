@@ -124,6 +124,13 @@ Optional:
 - `GRANTS_SMTP_PORT` (default `465`)
 - `GRANTS_SMTP_SECURE` (default `true`)
 
+#### Spam protection (optional): Cloudflare Turnstile
+To enable Turnstile on the grant application, set **both**:
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (public site key)
+- `TURNSTILE_SECRET_KEY` (secret key; server-side verification)
+
+If only one is set, the app will **not** enforce Turnstile (to avoid accidental lockouts).
+
 #### Admin (Basic Auth)
 - `ADMIN_USER`
 - `ADMIN_PASS`
