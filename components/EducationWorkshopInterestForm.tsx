@@ -31,11 +31,23 @@ export default function EducationWorkshopInterestForm() {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = (await res.json().catch(() => null)) as { ok?: boolean; error?: string } | null;
+      const data = (await res.json().catch(() => null)) as
+        | { ok?: boolean; error?: string; emailed?: boolean; emailTo?: string | null; emailSkipped?: boolean }
+        | null;
       if (!res.ok || !data?.ok) {
         throw new Error(data?.error || `Submission failed (HTTP ${res.status}).`);
       }
-      setState({ status: 'success' });
+      if (data && data.emailed === false) {
+        setState({
+          status: 'error',
+          message:
+            `You’re on the list, but our notification email didn’t send.` +
+            (data.emailTo ? ` (Configured inbox: ${data.emailTo})` : '') +
+            ' Please email education@bitcoinforthearts.org if time-sensitive.',
+        });
+      } else {
+        setState({ status: 'success' });
+      }
       form.reset();
     } catch (err) {
       const msg = err && typeof err === 'object' && 'message' in err ? String((err as any).message) : '';
