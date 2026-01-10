@@ -10,6 +10,7 @@ const MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024;
 const DRAFT_STORAGE_KEY = 'bfta_grant_application_draft_v1';
 const LEGAL_ASSURANCES_VERSION = 2;
 const TURNSTILE_SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
+const TURNSTILE_DEBUG = process.env.NEXT_PUBLIC_TURNSTILE_DEBUG?.trim() === '1';
 
 const CHAR_LIMITS: Record<string, number> = {
   projectSummary: 500,
@@ -675,16 +676,28 @@ export default function GrantApplicationForm() {
 
       const data = (await res.json().catch(() => null)) as
         | { ok: true; applicationId: string }
-        | { ok: false; error?: string }
+        | { ok: false; error?: string; turnstile?: { errorCodes?: string[]; hostname?: string | null } }
         | null;
 
       if (!res.ok || !data || !('ok' in data) || data.ok !== true) {
         const msg = data && 'error' in data && typeof data.error === 'string' ? data.error : '';
+        const turnstileCodes =
+          TURNSTILE_DEBUG &&
+          data &&
+          'turnstile' in data &&
+          data.turnstile &&
+          Array.isArray(data.turnstile.errorCodes)
+            ? data.turnstile.errorCodes
+            : null;
+        const turnstileSuffix =
+          turnstileCodes && turnstileCodes.length
+            ? ` (Turnstile: ${turnstileCodes.slice(0, 4).join(', ')})`
+            : '';
         if (msg) throw new Error(msg);
         throw new Error(
           res.status >= 500
             ? 'Server error while submitting. Please try again in a minute, or email grants@bitcoinforthearts.org.'
-            : `Submission failed (HTTP ${res.status}).`,
+            : `Submission failed (HTTP ${res.status}).${turnstileSuffix}`,
         );
       }
 
@@ -703,6 +716,20 @@ export default function GrantApplicationForm() {
   const isSubmitting = submitState.status === 'submitting';
 
   const sectionDisabled = (section: number) => step !== section;
+
+  useEffect(() => {
+    if (!TURNSTILE_SITE_KEY) return;
+    if (submitState.status !== 'error') return;
+    // If Turnstile failed (or token was used already), reset the widget so the user can retry.
+    const w = window as unknown as { turnstile?: { reset?: () => void } };
+    if (typeof w.turnstile?.reset === 'function') {
+      try {
+        w.turnstile.reset();
+      } catch {
+        // ignore
+      }
+    }
+  }, [submitState.status]);
 
   if (submitState.status === 'success') {
     return (

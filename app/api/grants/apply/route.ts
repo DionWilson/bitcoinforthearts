@@ -418,11 +418,30 @@ export async function POST(req: NextRequest) {
     };
 
     if (!result.ok) {
+      console.warn('[grants] turnstile failed', {
+        ip,
+        hostname: result.hostname,
+        action: result.action,
+        errorCodes: result.errorCodes,
+      });
       await Promise.allSettled(uploads.map((u) => bucket.delete(u.fileId)));
+      const debug =
+        (getEnv('TURNSTILE_DEBUG') ?? '').toLowerCase() === '1' ||
+        (getEnv('TURNSTILE_DEBUG') ?? '').toLowerCase() === 'true' ||
+        (process.env.VERCEL_ENV ?? '').toLowerCase() !== 'production';
       return NextResponse.json(
         {
           ok: false,
           error: 'Anti-spam verification failed. Please reload the page and try again.',
+          ...(debug
+            ? {
+                turnstile: {
+                  errorCodes: result.errorCodes,
+                  hostname: result.hostname,
+                  action: result.action,
+                },
+              }
+            : null),
         },
         { status: 403 },
       );

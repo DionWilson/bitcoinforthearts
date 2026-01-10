@@ -131,6 +131,10 @@ To enable Turnstile on the grant application, set **both**:
 
 If only one is set, the app will **not** enforce Turnstile (to avoid accidental lockouts).
 
+Optional debugging (shows Turnstile error codes in responses):
+- `TURNSTILE_DEBUG=1` (server-side)
+- `NEXT_PUBLIC_TURNSTILE_DEBUG=1` (client-side)
+
 #### Admin (Basic Auth)
 - `ADMIN_USER`
 - `ADMIN_PASS`
