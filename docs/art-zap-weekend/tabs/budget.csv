@@ -1,0 +1,47 @@
+Section,Line Item,Amount (USD),Notes
+STARTING CAPITAL,Cash on hand,10000,Working capital
+STARTING CAPITAL,Bitcoin reserve (HODL Vault),5000,Untouched - endowment principle
+STARTING CAPITAL,TOTAL STARTING,15000,
+,,,
+SPONSOR REVENUE TARGETS,Title Sponsor (1 slot),25000,Goal: 1 confirmed
+SPONSOR REVENUE TARGETS,Supporting Sponsor (3 slots),30000,Goal: 1-2 confirmed
+SPONSOR REVENUE TARGETS,Friend of the Arts (5 slots),25000,Goal: 2-3 confirmed
+SPONSOR REVENUE TARGETS,SPONSOR REVENUE TARGET (TOTAL CAP),80000,
+SPONSOR REVENUE TARGETS,REALISTIC TARGET (45K scenario),45000,
+SPONSOR REVENUE TARGETS,FLOOR TARGET (25K scenario),25000,
+,,,
+EVENT HARD COSTS,Pubkey NYC venue (if not in-kind),5000,Aim for in-kind
+EVENT HARD COSTS,StreamYard Pro - 1 month,50,
+EVENT HARD COSTS,Restream Pro - 1 month,50,
+EVENT HARD COSTS,Zap.Stream / Lightning fees,50,
+EVENT HARD COSTS,Photographer (if not in-kind),2000,Aim for in-kind
+EVENT HARD COSTS,Videographer + recap reel (if not in-kind),2500,Aim for in-kind
+EVENT HARD COSTS,Sound engineer at Pubkey (if not in-kind),1000,Aim for in-kind
+EVENT HARD COSTS,Print signage / step-and-repeat,800,
+EVENT HARD COSTS,Catering / drinks at finale (if not in-kind),2500,Aim for in-kind
+EVENT HARD COSTS,Live finale performer honoraria (3 artists),2250,3 x 750
+EVENT HARD COSTS,Travel for out-of-NYC artists,1500,Optional
+EVENT HARD COSTS,Promotional ad spend (X / Nostr),1000,Optional
+EVENT HARD COSTS,Contingency (15%),2000,
+EVENT HARD COSTS,TOTAL HARD COSTS (NO IN-KIND),20700,
+EVENT HARD COSTS,TOTAL HARD COSTS (FULL IN-KIND COVERAGE),6650,Software + signage + performer honoraria + contingency
+,,,
+ALLOCATION (per 55/30/10/5 model),Direct artist grants (55%),,Calculated from total raised
+ALLOCATION (per 55/30/10/5 model),Programs (30%) - includes event costs,,
+ALLOCATION (per 55/30/10/5 model),Operations (10%),,
+ALLOCATION (per 55/30/10/5 model),HODL Vault endowment (5%),,
+,,,
+SCENARIO - FLOOR ($25K raised),Artist grants (55%),13750,~$650 per artist
+SCENARIO - FLOOR ($25K raised),Programs (30%),7500,Covers event costs with full in-kind
+SCENARIO - FLOOR ($25K raised),Operations (10%),2500,
+SCENARIO - FLOOR ($25K raised),HODL Vault (5%),1250,
+,,,
+SCENARIO - TARGET ($45K raised),Artist grants (55%),24750,~$1180 per artist + 3 micro-grants
+SCENARIO - TARGET ($45K raised),Programs (30%),13500,
+SCENARIO - TARGET ($45K raised),Operations (10%),4500,
+SCENARIO - TARGET ($45K raised),HODL Vault (5%),2250,
+,,,
+SCENARIO - STRETCH ($80K raised),Artist grants (55%),44000,Full Q3 cycle funded
+SCENARIO - STRETCH ($80K raised),Programs (30%),24000,
+SCENARIO - STRETCH ($80K raised),Operations (10%),8000,
+SCENARIO - STRETCH ($80K raised),HODL Vault (5%),4000,
