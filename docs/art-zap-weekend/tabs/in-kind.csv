@@ -1,18 +1,20 @@
 Category,Specific Need,Estimated Cash Value (USD),Tier Credit,Target Vendor / Sponsor,Contact,Status,Notes
-Venue,Pubkey NYC - Sunday finale 6pm-12am,7500,Supporting,Pubkey NYC,[Events contact],Not contacted,Sunday Pubkey finale - prioritize this first
-Venue (Backup),NYC backup venue - same window,5000,Friend,House of Yes / Caveat / National Sawdust,,,Have one backup confirmed by Friday
-Beverage / Catering,Bar tab or beer/wine sponsor at finale,3000,Friend,Local NYC craft brewery (BTC accepting),,,
-A/V Production,On-site sound + lighting at Pubkey,3000,Friend,Local A/V house,,,
-Streaming Software,StreamYard Pro account 1 month,50,Listed sponsor,StreamYard,,,Discount or comp ask
-Streaming Software,Restream Pro 1 month,50,Listed sponsor,Restream,,,
-Lightning / Bitcoin,BTCPay hosting + LN routing capacity,2000,Listed sponsor,Voltage / LNBits provider,,,
-Photography,Photographer for Pubkey finale 4-5 hours,1500,Listed sponsor,NYC arts photographer,,,
-Videography,Videographer + edited recap reel,2500,Friend,NYC video team,,,
+NYC Venue,NYC venue for Monday finale 6pm-12am (alternative to Pubkey DC),7500,Supporting,NYC venue partner,,,High-value ask - one of the strongest in-kind opportunities
+Venue Backup,NYC backup venue - same window,5000,Friend,House of Yes / Caveat / National Sawdust,,,Have one backup confirmed by Friday
+Pubkey DC,Pubkey DC primary venue Monday night,5000,Supporting,Pubkey DC,,,Mission-aligned rates - prioritize this
+Beverage / Catering,Bar tab or beer/wine sponsor at finale,3000,Friend,Local craft brewery (BTC accepting),,,
+A/V Production,On-site sound + lighting at finale,3000,Friend,Local A/V house,,,
+Photography,Photographer for finale 4-5 hours,1500,Listed sponsor,Arts photographer,,,
+Videography,Videographer + edited recap reel,2500,Friend,Video team,,,
 Print / Signage,Step-and-repeat + posters + sponsor wall,800,Listed sponsor,Local print shop,,,
 Hardware Gifts,Hardware wallets for 21 featured artists,2000,Listed sponsor,Foundation Devices / Coinkite / Trezor,,,Major sponsorable item
-Travel / Hospitality,Hotel rooms for 1-2 out-of-NYC artists,2000,Friend,Boutique NYC hotel,,,
+Travel / Hospitality,Hotel rooms for out-of-area artists incl. Broadway headliner,2500,Friend,Boutique hotel,,,
+Travel / Hospitality,Flights for 1-2 out-of-area artists,1500,Friend,,,,Optional
+Streaming Software,StreamYard Pro account 1 month,50,Listed sponsor,StreamYard,,,Discount or comp ask
+Streaming Software,Restream Pro 1 month,50,Listed sponsor,Restream,,,
 Silent Auction Items,5-10 items - hardware wallets / art / experiences,Varies,Listed sponsor,Multiple,,,Each donor listed
 Silent Auction Items,,,,,,,
 Silent Auction Items,,,,,,,
 Silent Auction Items,,,,,,,
-TOTAL ESTIMATED IN-KIND VALUE,,24400,,,,,
+Silent Auction Items,,,,,,,
+TOTAL ESTIMATED IN-KIND VALUE,,30450,,,,,Excludes BTCPay/Lightning - BFTA already runs own infrastructure

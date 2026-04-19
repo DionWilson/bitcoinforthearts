@@ -10,38 +10,42 @@ SPONSOR REVENUE TARGETS,SPONSOR REVENUE TARGET (TOTAL CAP),80000,
 SPONSOR REVENUE TARGETS,REALISTIC TARGET (45K scenario),45000,
 SPONSOR REVENUE TARGETS,FLOOR TARGET (25K scenario),25000,
 ,,,
-EVENT HARD COSTS,Pubkey NYC venue (if not in-kind),5000,Aim for in-kind
+EVENT HARD COSTS,Venue (Pubkey DC or NYC alternative if not in-kind),5000,Aim for in-kind
 EVENT HARD COSTS,StreamYard Pro - 1 month,50,
 EVENT HARD COSTS,Restream Pro - 1 month,50,
 EVENT HARD COSTS,Zap.Stream / Lightning fees,50,
+EVENT HARD COSTS,Hired professional producer (Sat + Sun),3000,Activates at target funding - upgrade from solo
 EVENT HARD COSTS,Photographer (if not in-kind),2000,Aim for in-kind
 EVENT HARD COSTS,Videographer + recap reel (if not in-kind),2500,Aim for in-kind
-EVENT HARD COSTS,Sound engineer at Pubkey (if not in-kind),1000,Aim for in-kind
+EVENT HARD COSTS,Sound engineer at finale (if not in-kind),1000,Aim for in-kind
 EVENT HARD COSTS,Print signage / step-and-repeat,800,
 EVENT HARD COSTS,Catering / drinks at finale (if not in-kind),2500,Aim for in-kind
-EVENT HARD COSTS,Live finale performer honoraria (3 artists),2250,3 x 750
-EVENT HARD COSTS,Travel for out-of-NYC artists,1500,Optional
+EVENT HARD COSTS,Broadway-caliber headline performer honorarium,2500,Critical for finale draw
+EVENT HARD COSTS,Supporting finale performers (2-3 artists),1500,
+EVENT HARD COSTS,Travel for out-of-area artists,1500,Optional - sponsor-funded preferred
 EVENT HARD COSTS,Promotional ad spend (X / Nostr),1000,Optional
-EVENT HARD COSTS,Contingency (15%),2000,
-EVENT HARD COSTS,TOTAL HARD COSTS (NO IN-KIND),20700,
-EVENT HARD COSTS,TOTAL HARD COSTS (FULL IN-KIND COVERAGE),6650,Software + signage + performer honoraria + contingency
+EVENT HARD COSTS,Contingency (15%),3000,
+EVENT HARD COSTS,TOTAL HARD COSTS (NO IN-KIND),26450,
+EVENT HARD COSTS,TOTAL HARD COSTS (FULL IN-KIND COVERAGE),9000,Software + signage + producer + performers + contingency
 ,,,
-ALLOCATION (per 55/30/10/5 model),Direct artist grants (55%),,Calculated from total raised
-ALLOCATION (per 55/30/10/5 model),Programs (30%) - includes event costs,,
-ALLOCATION (per 55/30/10/5 model),Operations (10%),,
-ALLOCATION (per 55/30/10/5 model),HODL Vault endowment (5%),,
+ALLOCATION FRAMING,Treat event as Programs (30%) - matches published 55/30/10/5 model,,Recommended approach - no policy change needed
+ALLOCATION FRAMING,Sponsor language: "55% to artist grants (incl. 21 featured artists) / 30% to programs (incl. this event) / 10% ops / 5% HODL Vault",,Use this in pitch
 ,,,
 SCENARIO - FLOOR ($25K raised),Artist grants (55%),13750,~$650 per artist
-SCENARIO - FLOOR ($25K raised),Programs (30%),7500,Covers event costs with full in-kind
+SCENARIO - FLOOR ($25K raised),Programs (30%),7500,Covers event costs with full in-kind. Solo producer.
 SCENARIO - FLOOR ($25K raised),Operations (10%),2500,
 SCENARIO - FLOOR ($25K raised),HODL Vault (5%),1250,
 ,,,
-SCENARIO - TARGET ($45K raised),Artist grants (55%),24750,~$1180 per artist + 3 micro-grants
-SCENARIO - TARGET ($45K raised),Programs (30%),13500,
+SCENARIO - TARGET ($45K raised),Artist grants (55%),24750,~$1180 per artist + 3 micro-grants seeded
+SCENARIO - TARGET ($45K raised),Programs (30%),13500,Covers hired professional producer + venue + A/V + Broadway honorarium
 SCENARIO - TARGET ($45K raised),Operations (10%),4500,
 SCENARIO - TARGET ($45K raised),HODL Vault (5%),2250,
 ,,,
-SCENARIO - STRETCH ($80K raised),Artist grants (55%),44000,Full Q3 cycle funded
-SCENARIO - STRETCH ($80K raised),Programs (30%),24000,
+SCENARIO - STRETCH ($80K raised),Artist grants (55%),44000,Full Q3 grant cycle funded
+SCENARIO - STRETCH ($80K raised),Programs (30%),24000,Hired producer team + premium venue + full Broadway-headlined finale
 SCENARIO - STRETCH ($80K raised),Operations (10%),8000,
 SCENARIO - STRETCH ($80K raised),HODL Vault (5%),4000,
+,,,
+PRODUCER STAFFING TIERS,Floor ($25K) - solo producer (Dion or volunteer),0,Volunteer cost
+PRODUCER STAFFING TIERS,Target ($45K) - hired professional NYC producer + 1 volunteer,2500,$500-$1500/day x 2 days
+PRODUCER STAFFING TIERS,Stretch ($80K) - hired producer team (lead + technical director) + 1 volunteer,5000,$2500/day team rate x 2 days

@@ -7,7 +7,7 @@
 
 ## The One-Liner
 
-**Art + Zap Weekend is the first global, Bitcoin-native arts fundraiser — 21 artists, 2 days, 8 hours of live programming broadcast across YouTube, X, and Nostr, culminating in a live in-person finale at Pubkey NYC.**
+**Art + Zap Weekend is the first global, Bitcoin-native arts fundraiser — 21 artists, 2 days of live broadcast, and a Monday-night in-person finale headlined by a Broadway performer at Pubkey (DC primary, NYC alternative).**
 
 ---
 
@@ -25,15 +25,27 @@ We are not waiting for institutions to decide whether artists deserve funding. W
 
 | | |
 |---|---|
-| **Format** | 2-day weekend live stream + in-person finale |
-| **Dates** | Saturday + Sunday, [DATE TBD] |
-| **Live hours** | 4 hours per day, 8 hours total |
+| **Format** | 2-day weekend live stream + Monday-night in-person finale |
+| **Broadcast dates** | Saturday + Sunday, [DATE] |
+| **Finale date** | Monday, [DATE] (Broadway is dark — top NYC talent uniquely available) |
+| **Live broadcast hours** | 4 hours per day, 8 hours total |
 | **Time window** | 1:00 pm – 5:00 pm ET (6 pm – 10 pm UK / 7 pm – 11 pm CET) |
-| **Featured artists** | 21 total (10–11 per day) |
+| **Featured artists** | 21 total (10–11 per broadcast day) |
 | **Disciplines** | Music, visual art, dance, theater, film, writing, storytelling |
-| **Hosts** | Bitcoin podcasters, 2 per day (4 total across the weekend) |
-| **Live finale** | Sunday evening at **Pubkey NYC** — performances, silent art auction, sponsor reception |
-| **Broadcast** | YouTube, X (Twitter), Nostr (Zap.Stream), Fountain |
+| **Hosts** | 4 Bitcoin podcasters per broadcast day, 1–2 hours each |
+| **Live finale** | Monday evening, **Pubkey DC** (primary) or **Pubkey NYC / NYC alternative** — Broadway-headlined performances, silent art auction, sponsor reception |
+| **Broadcast platforms** | YouTube, X (Twitter), Nostr (Zap.Stream), Fountain |
+
+---
+
+## Why Pubkey (DC and NYC)
+
+**Pubkey** (https://www.pubkey.bar) is a Bitcoin-native venue with locations in **Washington DC** and **New York City**. They are known for offering mission-aligned rates to Bitcoin-native events.
+
+- **Primary venue: Pubkey DC.** We have outreach in motion and the venue understands the audience.
+- **Alternative venue: Pubkey NYC** (or another NYC venue donated in-kind by a sponsor). NYC offers proximity to Broadway and BFTA's existing arts network. **An NYC venue contributed in-kind is itself one of the highest-value sponsorship opportunities in this proposal** (see in-kind menu below).
+
+We will confirm the venue based on which option closes first and which best serves a Broadway-caliber performer for the headline slot.
 
 ---
 
@@ -62,12 +74,14 @@ All tiers are payable in **USD (card / wire / ACH)** or **Bitcoin (on-chain or L
 - Logo on the live donation/zap overlay (always visible)
 - Dedicated 5-minute branded segment Saturday and Sunday (founder spotlight, product demo, or message of choice)
 - Hosts mention sponsor at the top and bottom of every hour (16 mentions across the weekend)
-- Title billing on the Sunday in-person finale at Pubkey NYC (signage, step-and-repeat, host mentions)
-- 6 reserved seats / VIP table at the Sunday finale
-- 1 silent-auction lot named after sponsor
+- Title billing on the Monday in-person finale (signage, step-and-repeat, host mentions)
+- 6 reserved seats / VIP table at the Monday finale
+- **1 silent-auction lot named after sponsor** — see explainer below
 - Logo on event landing page, all email sends, and the post-event recap report
 - 6 dedicated co-promotion social posts (3 from BFTA, 3 from BFTA's host network) before, during, and after the event
 - Inclusion in the BFTA 2026 annual transparency report and a permanent listing on the BFTA Sponsors page
+
+> **What "named auction lot" means.** The Monday finale includes a silent auction of art donated by the 21 featured artists (typically 8–12 lots). The Title Sponsor's name is attached to one specific lot — usually the highest-value piece — as **"The [Sponsor Name] Lot."** The sponsor's brand appears on the lot's bid card, in the printed program, on the on-screen projector slide, and is announced by the MC when the winning bid is revealed. The sponsor + winning bidder are both named in the post-event recap report. Cost to BFTA: zero. Brand association: one specific high-touch moment of the night, in front of the room of attendees who came specifically for the art.
 
 ### Supporting Sponsor — $10,000 (3 available)
 
@@ -77,8 +91,8 @@ All tiers are payable in **USD (card / wire / ACH)** or **Bitcoin (on-chain or L
 - Logo on the live donation/zap overlay
 - Dedicated 2-minute branded segment, day of sponsor's choosing (Sat or Sun)
 - Hosts mention sponsor at the top of every hour during sponsor's chosen day (4 mentions)
-- Logo on signage at the Sunday Pubkey NYC finale
-- 3 reserved seats at the Sunday finale
+- Logo on signage at the Monday finale
+- 3 reserved seats at the Monday finale
 - Logo on event landing page, all email sends, and the post-event recap report
 - 3 dedicated co-promotion social posts before, during, and after the event
 - Inclusion in the BFTA 2026 annual transparency report and a listing on the BFTA Sponsors page
@@ -89,7 +103,7 @@ All tiers are payable in **USD (card / wire / ACH)** or **Bitcoin (on-chain or L
 
 - Logo on the rotating sponsor card shown between artist segments (10+ on-air appearances over the weekend)
 - Hosts read sponsor name in a thank-you scroll once per day
-- 1 reserved seat at the Sunday finale
+- 1 reserved seat at the Monday finale
 - Logo on event landing page and post-event recap report
 - 1 dedicated co-promotion social post during the event
 - Listing on the BFTA Sponsors page
@@ -104,26 +118,27 @@ In-kind support is treated as equivalent value to cash sponsorship at the corres
 
 | Category | Need | Approx. value | Tier credit |
 |---|---|---|---|
-| **Venue** | Pubkey NYC for Sunday finale, 6 pm – 12 am | $5,000–$10,000 | Friend → Supporting |
+| **NYC venue** | NYC venue for the Monday finale, 6 pm – 12 am (or partner Pubkey DC equivalent) | $5,000–$10,000 | Friend → Supporting |
 | **Beverage / catering** | Bar tab, beer/wine, or light food at finale | $2,000–$5,000 | Friend |
-| **A/V production** | On-site sound + lighting at Pubkey for finale | $2,000–$4,000 | Friend |
-| **Streaming infrastructure** | StreamYard / Restream Pro accounts, Zap.Stream support, CDN credits | $500–$2,000 | Listed sponsor |
-| **Lightning / Bitcoin services** | BTCPay hosting, Lightning routing capacity, custody/wallet sponsorship | $1,000–$5,000 | Friend |
-| **Photography / videography** | On-site photo + video at Pubkey finale, edited recap reel | $2,000–$4,000 | Friend |
-| **Artist gear / fulfillment** | Hardware wallets, sat cards, or merchandise for the 21 featured artists as gifts | $1,000–$3,000 | Listed sponsor |
+| **A/V production** | On-site sound + lighting at the finale venue | $2,000–$4,000 | Friend |
+| **Photography / videography** | On-site photo + video at finale, edited recap reel | $2,000–$4,000 | Friend |
+| **Artist gear / fulfillment** | Hardware wallets for the 21 featured artists as gifts | $1,000–$3,000 | Listed sponsor |
 | **Print / signage** | Step-and-repeat, posters, printed sponsor signage at finale | $500–$1,500 | Listed sponsor |
-| **Travel / hospitality** | Hotel rooms or flights for out-of-NYC artists performing at the finale | $1,500–$5,000 | Friend |
+| **Travel / hospitality** | Hotel rooms or flights for out-of-area artists performing at the finale (incl. potential Broadway headliner) | $1,500–$5,000 | Friend |
 | **Silent auction items** | Hardware wallets, art prints, services, experiences for the auction | Varies | Listed sponsor |
+| **Streaming software** | StreamYard / Restream Pro account credits | $50–$500 | Listed sponsor |
+
+> **Note on streaming infrastructure:** We do not list "BTCPay hosting / Lightning routing" as an in-kind opportunity because BFTA already operates its own BTCPay Server at `donate.bitcoinforthearts.org`. We have full custody of donation infrastructure end-to-end — a position we want sponsors to know about, not paper over.
 
 ---
 
 ## What We Bring to Sponsors
 
 - **A first-mover story.** This is the first event of its kind. Sponsors are written into the founding narrative.
-- **A nonprofit partner with public governance.** Every dollar follows our published 55/30/10/5 model. Board minutes, code of ethics, and financials are public.
+- **A nonprofit partner with public governance.** Every dollar follows our published 55/30/10/5 model. Board minutes, code of ethics, and financials are public. The Art + Zap Weekend is part of the 30% Programs allocation — sponsor dollars flow naturally through the model.
 - **Long-tail content.** 21 artist segments × multi-platform clips = months of content with sponsor branding visible.
-- **Direct artist access.** Sponsor representatives are invited to the artist green room and the Pubkey finale.
-- **Ethos alignment.** The first nonprofit paying artists exclusively in Bitcoin, hosting the first global Bitcoin-native arts fundraiser, at Bitcoin's flagship NYC venue. Every detail is on-mission.
+- **Direct artist access.** Sponsor representatives are invited to the artist green room and the Monday finale.
+- **Ethos alignment.** The first nonprofit paying artists exclusively in Bitcoin, hosting the first global Bitcoin-native arts fundraiser, with our own self-custodial Bitcoin infrastructure. Every detail is on-mission.
 
 ---
 
@@ -142,11 +157,11 @@ We are confirming the full sponsor roster by [DATE]. Today, we are asking for on
 **Founder & Director — Dion Wilson**
 Founding director of Bitcoin for the Arts, Inc. Member, Actors' Equity Association. Former member, American Guild of Musical Artists. Principal credits include the national tour of *The Lion King*, Dance Theatre of Harlem, and Alvin Ailey American Dance Theater.
 
-**Bitcoin For The Arts, Inc.** — 501(c)(3) tax-exempt nonprofit headquartered in New York City. The first nonprofit paying artists exclusively in Bitcoin. Allocation model: 55% direct artist grants / 30% programs / 10% operations / 5% permanent endowment reserve.
+**Bitcoin For The Arts, Inc.** — 501(c)(3) tax-exempt nonprofit headquartered in New York City. The first nonprofit paying artists exclusively in Bitcoin. Allocation model: 55% direct artist grants / 30% programs (Art + Zap Weekend included) / 10% operations / 5% permanent endowment reserve.
 
-**Production stack:** StreamYard (studio) → Restream.io (multistream) → YouTube + X + Zap.Stream + Fountain. Single-producer command center; tested and proven.
+**Production stack:** StreamYard (studio) → Restream.io (multistream) → YouTube + X + Zap.Stream + Fountain. Producer command center; tested and proven. With sponsor cash, we upgrade from a single producer to a hired professional producer + volunteer second seat for additional reliability.
 
-**Venue partner (in conversation):** Pubkey, NYC.
+**Venue partner (in conversation):** Pubkey DC (primary), Pubkey NYC and other NYC venues (alternatives).
 
 ---
 

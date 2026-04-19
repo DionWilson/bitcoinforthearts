@@ -1,12 +1,10 @@
 # Art + Zap Weekend — Sponsorship Tiers & Budget Logic
 
-This document explains *why* the tiers are priced where they are, given:
+This document explains *why* the tiers are priced where they are, and — critically — **how event funding is reconciled with BFTA's published 55/30/10/5 allocation model** so sponsors and trustees can be confident that the model is honored, not suspended.
 
 - Current cash on hand: **$10,000 USD**
-- Current Bitcoin reserve: **$5,000 in BTC**
+- Current Bitcoin reserve: **$5,000 in BTC** (untouched HODL Vault)
 - Total starting capital: **~$15,000**
-
-Use this to defend pricing in a sponsor meeting if anyone pushes back.
 
 ---
 
@@ -19,7 +17,7 @@ Use this to defend pricing in a sponsor meeting if anyone pushes back.
 | Friend of the Arts | $5,000 | 5 | $25,000 | 2 confirmed verbal |
 | **Total** | | **9 sponsors** | **$80,000** | **~$45,000** |
 
-The cap of 9 sponsors is intentional. Beyond that, on-air mentions and lower-third real estate become diluted and the experience for sponsors degrades. **Scarcity is part of the value.**
+Cap of 9 sponsors is intentional. Beyond that, on-air mentions and lower-third real estate become diluted and the experience for sponsors degrades. **Scarcity is part of the value.**
 
 ---
 
@@ -29,12 +27,12 @@ The cap of 9 sponsors is intentional. Beyond that, on-air mentions and lower-thi
 
 - You are a first-time event with no precedent metrics. Sponsors at $50K+ want case studies, prior-year numbers, and audited audience data — none of which you have yet.
 - $25K is the sweet spot where a Bitcoin-native company can write the check without a board meeting (CMO discretion at most BTC companies) but still feel meaningful enough to warrant naming rights.
-- After the pilot, you can raise the Title tier to $50K for a 2027 event with proven numbers.
+- After the pilot, the Title tier can scale to $50K for a 2027 event with proven numbers.
 
 ### Why $10K for Supporting
 
-- $10K is the standard "real but not bet-the-farm" sponsor check in the Bitcoin and arts spaces. It's the same range as a Bitcoin Park sponsorship slot or a small NYC arts gala table.
-- Three slots gives you flexibility: if Title doesn't close, three Supporting checks ($30K) actually *exceeds* one Title.
+- $10K is the standard "real but not bet-the-farm" sponsor check in the Bitcoin and arts spaces. Same range as a Bitcoin Park sponsorship slot or a small NYC arts gala table.
+- Three slots gives flexibility: if Title doesn't close, three Supporting checks ($30K) actually *exceeds* one Title.
 
 ### Why $5K for Friend
 
@@ -48,68 +46,114 @@ The cap of 9 sponsors is intentional. Beyond that, on-air mentions and lower-thi
 
 ---
 
-## Budget Logic — How the Money Gets Used
+## How Event Costs Reconcile With the 55/30/10/5 Model — Important
 
-Bitcoin For The Arts allocates per the public **55 / 30 / 10 / 5** model. Sponsorships flow through this model. Here is what the numbers look like at three plausible outcomes:
+You raised a real concern: how can BFTA fund a major event without breaking the published transparent allocation? **Three legal and ethical paths.** We recommend Option A and use B and C only as needed.
 
-### Floor scenario — $25K raised (1 Title or 1 Supporting + 3 Friend)
+### ✅ Option A — Treat the event as part of the 30% Programs bucket (recommended)
 
-| Allocation | % | $ |
-|---|---|---|
-| Direct artist grants (55%) | 55% | $13,750 |
-| Programs (30%) — venue, A/V, hosts, production | 30% | $7,500 |
-| Operations (10%) — software, fees, admin | 10% | $2,500 |
-| HODL Vault — endowment (5%) | 5% | $1,250 |
-| **Total** | **100%** | **$25,000** |
+The 30% Programs bucket in BFTA's published policy is *defined* as workshops, residencies, co-productions, and live productions. **The Art + Zap Weekend IS a program.** Event hard costs (production, A/V, performer honoraria, venue, finale) come naturally out of the 30% bucket. The 55% to direct artist grants includes the **21 featured-artist honoraria** as the first tranche of those grants.
 
-- 21 artists × ~$650 honorarium average — meaningful payment to every featured artist.
-- $7,500 programs budget covers Pubkey venue gap, A/V, streaming software, food/drinks at finale.
+Under this framing, no policy needs to change. The model is honored exactly as published, and sponsors can be told: **"55% of every sponsor dollar goes to direct artist grants — 21 artists this event get their share. 30% goes to programs — including the production of this event. 10% to operations. 5% to the HODL Vault endowment."**
 
-### Target scenario — $45K raised (1 Title + 1 Supporting + 2 Friend)
+This is the cleanest, most defensible position with sponsors, donors, board, and regulators.
 
-| Allocation | % | $ |
-|---|---|---|
-| Direct artist grants (55%) | 55% | $24,750 |
-| Programs (30%) | 30% | $13,500 |
-| Operations (10%) | 10% | $4,500 |
-| HODL Vault (5%) | 5% | $2,250 |
-| **Total** | **100%** | **$45,000** |
+### ⚙️ Option B — Restricted gifts (use selectively)
 
-- 21 artists × $1,000+ honorarium plus 3 micro-grants seeded for Q3 cycle.
+Sponsors can legally restrict their gift to a specific use ("This $10,000 is restricted to event production costs"). Restricted gifts don't flow through the standard allocation — they go straight to the restricted purpose. This is normal nonprofit practice. Use sparingly because too many restricted gifts breaks the unrestricted operating model and signals dependency on individual sponsor preferences.
 
-### Stretch scenario — $80K raised (full slate sold)
+**When to use:** if a sponsor specifically asks for their dollars to fund one specific thing (e.g., the venue, the Broadway performer's honorarium, hardware wallet gifts for artists). Document the restriction in the sponsor agreement. Don't volunteer it.
 
-| Allocation | % | $ |
-|---|---|---|
-| Direct artist grants (55%) | 55% | $44,000 |
-| Programs (30%) | 30% | $24,000 |
-| Operations (10%) | 10% | $8,000 |
-| HODL Vault (5%) | 5% | $4,000 |
-| **Total** | **100%** | **$80,000** |
+### ⚖️ Option C — Board resolution carving out event costs (only if A+B don't cover)
 
-- Funds the full Q3 grant cycle ($500–$2,000 grants × 20+) plus all artist honoraria for the event.
+The board can pass a one-time resolution: *"Sponsorship dollars from Art + Zap Weekend will first fund documented event hard costs, with remainder allocated per the standard 55/30/10/5 model."* Must be:
+
+- Disclosed to sponsors at the time of solicitation (in writing in the sponsor agreement)
+- Reflected in board minutes
+- Reported in the 2026 annual transparency report
+
+Legal but a credibility cost. Only use if Options A + B don't cover hard costs, which they should — see the budget scenarios below.
+
+### Recommended language for sponsor conversations
+
+> "Bitcoin For The Arts allocates every dollar through our public 55/30/10/5 model: 55% to direct artist grants, 30% to programs, 10% to operations, 5% to the HODL Vault. Art + Zap Weekend lives inside that 30% Programs allocation — production costs, venue, A/V, and event-related staffing. Your sponsorship feeds the same model as every other dollar BFTA receives, including direct payments to the 21 artists you'll see on the broadcast."
 
 ---
 
-## Event-Specific Hard Costs (Use of "Programs" Budget)
+## Budget Logic — Three Plausible Scenarios
+
+### Floor scenario — $25K raised (1 Title, or 1 Supporting + 3 Friend)
+
+| Allocation | % | $ | Notes |
+|---|---|---|---|
+| Direct artist grants (55%) | 55% | $13,750 | ~$650 honorarium per featured artist |
+| Programs (30%) — venue, A/V, hosts, production | 30% | $7,500 | Covers event hard costs *with* in-kind venue + A/V |
+| Operations (10%) | 10% | $2,500 | Software, banking fees, admin |
+| HODL Vault (5%) | 5% | $1,250 | Endowment |
+| **Total** | **100%** | **$25,000** | |
+
+**Producer staffing at floor:** solo producer (Dion or 1 trained volunteer).
+
+### Target scenario — $45K raised (1 Title + 1 Supporting + 2 Friend)
+
+| Allocation | % | $ | Notes |
+|---|---|---|---|
+| Direct artist grants (55%) | 55% | $24,750 | ~$1,180 per artist + 3 micro-grants seeded for Q3 |
+| Programs (30%) | 30% | $13,500 | Hired professional producer + venue + A/V + Broadway honorarium |
+| Operations (10%) | 10% | $4,500 | |
+| HODL Vault (5%) | 5% | $2,250 | |
+| **Total** | **100%** | **$45,000** | |
+
+**Producer staffing at target:** **hired professional NYC producer** + 1 volunteer second seat. Producer cost ~$1,500–$3,000 across both broadcast days.
+
+### Stretch scenario — $80K raised (full slate sold)
+
+| Allocation | % | $ | Notes |
+|---|---|---|---|
+| Direct artist grants (55%) | 55% | $44,000 | Funds the full Q3 grant cycle ($500–$2,000 grants × 20+) |
+| Programs (30%) | 30% | $24,000 | Hired producer team, premium venue, full Broadway-headlined finale |
+| Operations (10%) | 10% | $8,000 | |
+| HODL Vault (5%) | 5% | $4,000 | |
+| **Total** | **100%** | **$80,000** | |
+
+---
+
+## Producer Staffing — Solo vs Hired Professional
+
+You raised this as a real concern. Solo producers are doable but high-risk. Recommended thresholds:
+
+| Funding level | Producer setup | Cost |
+|---|---|---|
+| Floor ($25K) | Solo producer (Dion or 1 trained volunteer) | $0 (volunteer) |
+| Target ($45K) | **Hired professional NYC producer** + 1 volunteer second seat | ~$1,500–$3,000 |
+| Stretch ($80K) | Hired producer team (lead + technical director) + 1 volunteer | ~$3,000–$6,000 |
+
+NYC freelance live producers run $500–$1,500/day. For 2 broadcast days that's $1,000–$3,000 (plus optional rehearsal day). At the target funding level this is a no-brainer upgrade — significantly reduces single-point-of-failure risk and gives you a backup if anything goes wrong on day-of.
+
+---
+
+## Event-Specific Hard Costs (Use of Programs Budget)
 
 | Line item | Estimated cost | Notes |
 |---|---|---|
-| Pubkey NYC finale (venue + bar minimum) | $0 – $5,000 | Ask for in-kind / revenue share on bar |
-| StreamYard Pro (1 mo) | $50 | Cash |
-| Restream Pro (1 mo) | $50 | Cash |
-| Zap.Stream (Lightning fees) | ~$50 | Cash equivalent |
-| Photographer + videographer (finale) | $1,500 – $3,000 | Ask for in-kind first |
-| On-site sound engineer for finale | $500 – $1,500 | Ask for in-kind first |
-| Print signage / step-and-repeat | $300 – $800 | Cash |
-| Light catering / drinks at finale | $1,000 – $3,000 | Ask for in-kind / sponsor |
-| Live performers honoraria (3 artists at finale) | $1,500 – $3,000 | Cash |
-| Travel for 1–2 out-of-NYC artists | $0 – $1,500 | Optional, sponsor-funded |
-| Promotional ads (X, Nostr boosts) | $500 – $1,500 | Cash, optional |
-| Contingency (15%) | $1,000 – $3,000 | Cash |
-| **Total event hard costs** | **$6,500 – $22,400** | Wide range depending on in-kind |
+| Venue (Pubkey DC or NYC, Monday finale) | $0 – $5,000 | Aim for in-kind or revenue share on bar |
+| StreamYard Pro (1 mo) | $50 | |
+| Restream Pro (1 mo) | $50 | |
+| Zap.Stream / Lightning fees | ~$50 | |
+| Hired professional producer (Sat + Sun) | $1,500 – $3,000 | Activates at target funding |
+| Photographer + videographer (finale) | $1,500 – $3,000 | Aim for in-kind |
+| On-site sound engineer for finale | $500 – $1,500 | Aim for in-kind |
+| Print signage / step-and-repeat | $300 – $800 | |
+| Light catering / drinks at finale | $1,000 – $3,000 | Aim for in-kind / sponsor |
+| **Broadway-caliber headline performer honorarium** | $1,500 – $3,000 | Critical for finale draw |
+| Supporting finale performers (2–3 artists) | $1,000 – $2,000 | |
+| Travel for 1–2 out-of-area artists | $0 – $1,500 | Optional, sponsor-funded preferred |
+| Promotional ad spend (X, Nostr boosts) | $500 – $1,500 | Optional |
+| Contingency (15%) | $1,500 – $3,000 | |
+| **Total event hard costs (no in-kind)** | **$9,500 – $26,400** | |
+| **Total event hard costs (full in-kind coverage)** | **$5,000 – $9,000** | Software + signage + performers + producer + contingency |
 
-**Read of the numbers:** With aggressive in-kind asks (Pubkey venue, A/V, photo, catering all sponsored in-kind), the event can run on **~$5K–$7K in hard cash**. Without in-kind, you need ~$18K–$22K out of programs budget. **This is why the in-kind asks are not optional — they are the difference between a great event and a great event that also funds 21 artist grants.**
+**Read of the numbers:** with aggressive in-kind asks (venue, A/V, photo, catering all sponsored), the event runs on **~$5K–$9K in hard cash from the Programs budget**. That fits inside even the floor scenario's $7,500 Programs allocation.
 
 ---
 
@@ -117,20 +161,20 @@ Bitcoin For The Arts allocates per the public **55 / 30 / 10 / 5** model. Sponso
 
 | Bucket | $ | Use |
 |---|---|---|
-| Working capital — event hard costs | $5,000 (cash) | Cover any costs that can't be sponsored in-kind (software, signage, performer honoraria) |
+| Working capital — event hard costs | $5,000 (cash) | Cover any costs that can't be sponsored in-kind |
 | Reserve — operating runway | $5,000 (cash) | Do not touch unless emergency. Keep org healthy. |
 | HODL Vault | $5,000 (BTC) | Untouched. Endowment principle. |
 
-**Do not deplete the cash reserve to fund the event.** If you cannot get hard costs covered by sponsor cash + in-kind, scale the finale down. Keeping $5K cash on hand after the event keeps the org alive for the next quarter.
+**Do not deplete the cash reserve to fund the event.** If you cannot get hard costs covered by sponsor cash + in-kind, scale the finale down before touching reserves.
 
 ---
 
 ## Tuesday Pitch Math — What "Success" Looks Like
 
-When walking into Tuesday meetings, here is the framing:
+When walking into Tuesday meetings:
 
-- **Best case:** Sign 1 Title sponsor on the spot ($25K) + 1 in-kind venue commitment from Pubkey
+- **Best case:** Sign 1 Title sponsor on the spot ($25K) + 1 in-kind venue commitment
 - **Good case:** 1 Supporting verbal ($10K) + 2 in-kind commitments (venue + A/V)
 - **Acceptable:** Soft commitments + warm intros to 5+ additional sponsors
 
-You do **not** need to close everything Tuesday. You need to leave Tuesday with **two of these three:** (a) one signed or verbal sponsor, (b) a venue commitment from Pubkey or backup, (c) at least 3 warm intros to additional Bitcoin-native sponsors.
+You do **not** need to close everything Tuesday. You need to leave Tuesday with **two of these three:** (a) one signed or verbal sponsor, (b) a venue commitment from Pubkey DC, Pubkey NYC, or backup, (c) at least 3 warm intros to additional Bitcoin-native sponsors.

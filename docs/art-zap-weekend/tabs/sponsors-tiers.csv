@@ -1,5 +1,5 @@
-Tier,Price (USD),Slots Available,Slots Sold,Slots Remaining,Revenue If Sold Out,Revenue Confirmed,On-Air Mentions (Total Weekend),Logo on Lower-Third,Logo on Donation Overlay,Branded Segment,Hosts Read Top of Each Hour,Pubkey Finale Billing,Reserved Seats at Finale,Co-Promo Social Posts,Recap Report Listing
-Title Sponsor,25000,1,0,1,25000,0,16,Yes - Persistent,Yes,5 min Sat + 5 min Sun,Yes - both days (16 mentions),Title billing + step-and-repeat,6,6,Yes - Featured
-Supporting Sponsor,10000,3,0,3,30000,0,4,Yes - Rotating,Yes,2 min on chosen day,Yes - chosen day (4 mentions),Logo on signage,3,3,Yes - Standard
-Friend of the Arts,5000,5,0,5,25000,0,2,Sponsor card between segments (10+ appearances),No,No,1 thank-you scroll per day,Logo on sponsor wall,1,1,Yes - Standard
-TOTALS,,9,0,9,80000,0,,,,,,,,,
+Tier,Price (USD),Slots Available,Slots Sold,Slots Remaining,Revenue If Sold Out,Revenue Confirmed,On-Air Mentions (Total Weekend),Logo on Lower-Third,Logo on Donation Overlay,Branded Segment,Hosts Read Top of Each Hour,Monday Finale Billing,Reserved Seats at Finale,Co-Promo Social Posts,Recap Report Listing,Named Silent Auction Lot
+Title Sponsor,25000,1,0,1,25000,0,16,Yes - Persistent,Yes,5 min Sat + 5 min Sun,Yes - both days (16 mentions),Title billing + step-and-repeat,6,6,Yes - Featured,Yes - "The [Sponsor Name] Lot" - highest-value piece publicly named on bid card / program / projector / MC announcement
+Supporting Sponsor,10000,3,0,3,30000,0,4,Yes - Rotating,Yes,2 min on chosen day,Yes - chosen day (4 mentions),Logo on signage,3,3,Yes - Standard,No
+Friend of the Arts,5000,5,0,5,25000,0,2,Sponsor card between segments (10+ appearances),No,No,1 thank-you scroll per day,Logo on sponsor wall,1,1,Yes - Standard,No
+TOTALS,,9,0,9,80000,0,,,,,,,,,,
