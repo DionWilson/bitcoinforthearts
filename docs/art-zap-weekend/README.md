@@ -15,7 +15,11 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 | `02-sponsor-tiers-and-budget.md` | You need the **rationale** behind the tier pricing AND **how event funding reconciles with the 55/30/10/5 model**. |
 | `03-podcaster-host-plan.md` | You're recruiting **podcaster hosts** (4 per day × 1–2 hrs) — includes outreach script and IRS-compliant tax-receipt notes. |
 | `04-spreadsheet-update.md` | You need to **download / import the CSVs** — direct download links + Google Sheets import workflow. |
-| `05-podcaster-acknowledgment-letter-template.md` | You need to **document a donating podcaster's contribution** (NOT a tax receipt — see file for IRS rules). |
+| `05-podcaster-acknowledgment-letter-template.md` | You need the **rationale and IRS rules** behind acknowledging donated podcaster time. Read this once. |
+| `06-podcaster-acknowledgment-letter-fillable.md` | The **clean fillable letter** to send. Fill in `[brackets]`, sign, send. |
+| `07-artist-outreach.md` | You're recruiting the **21 broadcast artists** + Monday-finale performers. 5 format options + outreach + confirmation emails. |
+| `08-board-presentation-revised-plan.md` | You're presenting the **revised plan to the board** — slide-by-slide deck format, includes risk register and approval asks. |
+| `09-board-conference-pitch-runner.md` | For **Avi Burra and Kyle Knight** at the conference — 30-second pitch, 2-minute pitch, objection handling, log-it template. |
 | `tabs/sponsors-tiers.csv` | Sheet tab: tier definitions and slot tracker (incl. Title Sponsor named auction lot) |
 | `tabs/sponsors-pipeline.csv` | Sheet tab: sponsor outreach pipeline |
 | `tabs/in-kind.csv` | Sheet tab: in-kind ask tracker (NYC venue is high-value, BTCPay/Lightning removed) |
