@@ -53,7 +53,7 @@ You all are the perfect venue for this for reasons that go beyond geography. Pub
 We're hoping for a **partnership rather than a straight rental**. Specifically:
 
 - **In-kind venue contribution** for the Monday finale. We're targeting a Monday evening between **late August and early October 2026** — flexible on the specific date, and we'd love to know which Mondays in that window you have open. The evening would run roughly 6 PM setup → doors at 7 PM → performances 8:30–10 PM → auction → ~11 PM wrap.
-- **Revenue share on bar** rather than a flat F&B minimum, if that works for you — the BFTA crowd will drink, and a revenue share is a cleaner deal for both of us.
+- **No F&B minimum and no revenue split — Pubkey keeps 100% of bar and food revenue** from the night. We're bringing you a curated, Bitcoin-aligned crowd that will drink and eat, on a night the venue is otherwise quiet. You make your normal Monday revenue (or better) without losing the room.
 - **Pubkey-hosted segment** during one of our weekend broadcasts — your team gets airtime to talk about what Pubkey is building. We can shape that segment however you want.
 
 **What you'd get in exchange:**
