@@ -75,11 +75,17 @@ We treat every in-kind contribution exactly like a cash sponsorship — same rec
 
 Read Our Latest on Substack
 
-Two recent pieces we published — both worth your time, and both shareable with anyone who needs to understand why this work matters right now.
+Two pieces we published recently. Both worth your time. Both shareable with anyone who needs to understand why this work matters right now.
 
-Read the latest on Substack: https://substack.com/@bitcoinforthearts
+**The Lights Are Going Out. Bitcoin Is the Only Switch Left.**
 
-If they resonate, share them. The single highest-leverage thing any reader can do for us is forward our writing to one person who's never heard of Bitcoin For The Arts. That's how we grow.
+On April 15, San Diego Mayor Todd Gloria proposed cutting the city's arts funding from $13.8 million to under $2 million — an 86% reduction in a single budget cycle. The Organizational Support Program, the backbone of nonprofit arts funding in the city, would be eliminated entirely. And San Diego is not the outlier. State arts appropriations are projected to drop 7.7% nationally for FY2026; California is looking at a 40.8% drop, Missouri 59.7%, Minnesota 22%. The federal NEA was targeted for elimination twice in two consecutive budgets. The pattern is undeniable: institutional arts funding is in freefall, and the question every artist and arts organization needs to answer is what comes next. Read the full piece here: https://substack.com/@bitcoinforthearts/note/p-194313906
+
+**Is War Good for Bitcoin?**
+
+Wars throughout history have been funded by destroying the value of money. Rome debased the denarius. Britain entered WWI as the world's reserve currency and exited with an empire in decline. The U.S. financed WWI through 74.6% debt and 7% direct money creation, WWII through 46% debt and 10.1% money creation. The pattern is consistent and brutal: governments spend more than they have, inflate the difference, and the resulting cost falls on people who saved in the currency being debased — the soldier coming home, the artist whose grant buys less than it did, the family whose groceries cost more each month. Bitcoin's fixed supply of 21 million is the answer to that pattern. The full piece walks through what that means — not as a political argument, but as a mathematical one — and what it reveals about the money we already live under: https://substack.com/@bitcoinforthearts/note/p-194584210
+
+If either of these resonates, share it. The single highest-leverage thing any reader can do for us is forward one of these pieces to one person who's never heard of Bitcoin For The Arts. That's how we grow.
 
 
 ---
