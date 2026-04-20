@@ -54,6 +54,7 @@ Sincerely,
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
+27 West 60th Street, New York, NY 10023
 501(c)(3) | EIN: 41-2642260
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
@@ -63,9 +64,9 @@ donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ## Before you send — checklist
 
-- [ ] Verify EIN `41-2642260` is correct (you provided this — just sanity-check)
 - [ ] Generate the two PDF receipts from `01-receipt-feb-3-2026.md` and `02-receipt-april-19-2026.md` (each file has 3 PDF-export options at the bottom)
 - [ ] Attach both PDFs to the email
 - [ ] Send from `donate@bitcoinforthearts.org` (or your usual donor-comms address)
 - [ ] After sending, log Jesse in your donor database with both donations + receipt-sent date
+- [ ] Mail Jesse the welcome-kit sticker pack once he replies with his address
 - [ ] Note for separate followup: file a bug to fix the duplicate-webhook → duplicate-email issue (separate PR)

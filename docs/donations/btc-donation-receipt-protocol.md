@@ -56,7 +56,7 @@ Use the template in `docs/donations/donor-receipt-reply-template.md` for any don
 > Sincerely,
 > Dion Wilson
 > Founder & Director, Bitcoin For The Arts, Inc.
-> 501(c)(3) | EIN: [EIN]
+> 501(c)(3) | EIN: 41-2642260
 
 ### 6. File and log
 

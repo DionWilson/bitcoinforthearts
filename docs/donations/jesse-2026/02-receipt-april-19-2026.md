@@ -1,6 +1,8 @@
 # Receipt for Jesse — April 19, 2026 Hard Cap Heroes Yearly Membership — READY TO PDF
 
-**Status:** Filled in with confirmed BTCPay data and EIN. Just verify Jesse's mailing address (or leave that line blank), then export to PDF as `BFTA-Donation-Receipt-Jesse-2026-04-19.pdf`.
+**Status:** Fully filled in. Add today's date at the top, ask Jesse for his mailing address (welcome kit needs to ship), export to PDF as `BFTA-Donation-Receipt-Jesse-2026-04-19.pdf`.
+
+When you build the PDF, drop in the gold logo from the repo at `public/resources/logos/exports/bfta-logo-gold.svg` at the top.
 
 > **Note:** Jesse's recollection of the donation being $5 was a misreading. The actual amount was **$231.00** — this is his **Hard Cap Heroes Yearly Sovereign Circle membership**. The $5 figure he remembers is the FMV of the welcome-kit sticker pack that's part of the membership perks. Per IRS rules, the $5 FMV of goods received reduces the deductible portion to **$226**.
 
@@ -10,7 +12,13 @@
 
 ---
 
-[BFTA letterhead — logo, mailing address, EIN, website, phone]
+[Insert gold logo: `public/resources/logos/exports/bfta-logo-gold.svg`]
+
+**Bitcoin For The Arts, Inc.**
+27 West 60th Street
+New York, NY 10023
+EIN: 41-2642260
+bitcoinforthearts.org | donate@bitcoinforthearts.org
 
 ---
 
@@ -27,7 +35,7 @@ Email: jnm@jesseandjulie.com
 
 **Donee Organization:**
 **Bitcoin For The Arts, Inc.**
-[BFTA legal mailing address]
+27 West 60th Street, New York, NY 10023
 EIN: **41-2642260**
 501(c)(3) tax-exempt status confirmed by the IRS
 
@@ -100,6 +108,7 @@ ______________________________
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
+27 West 60th Street, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---

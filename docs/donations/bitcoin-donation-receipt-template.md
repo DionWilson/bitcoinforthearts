@@ -22,7 +22,13 @@ Print on Bitcoin For The Arts letterhead. Fill in every `[bracketed]` field. Sig
 
 ---
 
-[BFTA letterhead with logo, address, EIN, website, phone]
+[Insert gold logo: `public/resources/logos/exports/bfta-logo-gold.svg`]
+
+**Bitcoin For The Arts, Inc.**
+27 West 60th Street
+New York, NY 10023
+EIN: 41-2642260
+bitcoinforthearts.org | donate@bitcoinforthearts.org
 
 
 **CHARITABLE DONATION RECEIPT**
@@ -40,8 +46,8 @@ Print on Bitcoin For The Arts letterhead. Fill in every `[bracketed]` field. Sig
 
 **Donee Organization:**
 **Bitcoin For The Arts, Inc.**
-[Mailing address]
-EIN: **[EIN]**
+27 West 60th Street, New York, NY 10023
+EIN: **41-2642260**
 501(c)(3) tax-exempt status confirmed by the IRS
 
 ---
@@ -84,7 +90,7 @@ EIN: **[EIN]**
 
 ## Bitcoin For The Arts, Inc. — Charity Confirmation
 
-Bitcoin For The Arts, Inc. is a **501(c)(3) tax-exempt nonprofit corporation** organized under the laws of the State of [State of incorporation], with IRS Employer Identification Number (EIN) **[EIN]**. We are recognized as a publicly supported charity under section 170(b)(1)(A)(vi) of the Internal Revenue Code. **Donations are tax-deductible to the extent permitted by law.**
+Bitcoin For The Arts, Inc. is a **501(c)(3) tax-exempt nonprofit corporation** with IRS Employer Identification Number (EIN) **41-2642260**, headquartered at 27 West 60th Street, New York, NY 10023. We are recognized as a publicly supported charity under section 170(b)(1)(A)(vi) of the Internal Revenue Code. **Donations are tax-deductible to the extent permitted by law.**
 
 Our public allocation model commits **55% of every donation** to direct artist grants, **30%** to programs (workshops, residencies, productions), **10%** to operations, and **5%** to a permanent Bitcoin endowment reserve.
 
@@ -98,6 +104,7 @@ ______________________________
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
+27 West 60th Street, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---

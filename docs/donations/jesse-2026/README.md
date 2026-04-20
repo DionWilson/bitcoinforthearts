@@ -17,32 +17,32 @@ Everything you need to respond to Jesse's email and send him two tax receipts. *
 | `01-receipt-feb-3-2026.md` | Receipt for the **Feb 3** donation (BTCPay invoice `TfKwZfriMje17QzXPoJASr`) — fill in, export to PDF |
 | `02-receipt-april-19-2026.md` | Receipt for the **April 19** donation (BTCPay invoice `452LCoUipXQGFTdNpKxi2e`) — fill in, export to PDF |
 
-## What to do — in order (15 minutes total)
+## What to do — in order (10 minutes total)
 
-### Step 1 — Verify the two receipts and export each to PDF (10 min)
+### Step 1 — Export each receipt to PDF (6 min)
 
 Open each:
 
 - `01-receipt-feb-3-2026.md` (the $21 donation)
 - `02-receipt-april-19-2026.md` (the $231 Hard Cap Heroes Yearly membership)
 
-Each one is filled in with confirmed BTCPay data and EIN 41-2642260. Three things you may want to add or check before exporting to PDF:
+**Both files are fully filled in** — confirmed BTCPay data, EIN 41-2642260, BFTA legal address (27 West 60th Street, New York, NY 10023). Only thing left is to add **today's date** at the "Date receipt issued" line in each.
 
-1. **BFTA's legal mailing address** — there's a `[BFTA legal mailing address]` placeholder near the top. Add yours.
-2. **Jesse's mailing address** — leave blank if you don't have it on file. The April 19 receipt + welcome kit shipping makes it useful to ask Jesse for it (the email already does this).
-3. **Date receipt issued** — fill in today's date.
+Export each to PDF using whichever method you prefer (instructions at the bottom of each receipt file). Easiest:
+1. Open the receipt file → copy everything between the START / END markers
+2. Paste into Google Docs
+3. Drop in the gold logo at the top — it lives in the repo at `public/resources/logos/exports/bfta-logo-gold.svg`
+4. **File → Download → PDF Document**
 
-Then export each to PDF using whichever method you prefer (Google Docs / online tool / browser print — instructions are at the bottom of each receipt file).
-
-Final filenames should be:
+Final filenames:
 - `BFTA-Donation-Receipt-Jesse-2026-02-03.pdf`
 - `BFTA-Donation-Receipt-Jesse-2026-04-19.pdf`
 
 ### Step 2 — Send the email (3 min)
 
-Open `00-reply-email-to-jesse.md`. The email body is already filled in. Sanity-check the EIN line, copy the body into your email client (between the START / STOP markers), attach both PDFs, send to **jnm@jesseandjulie.com**.
+Open `00-reply-email-to-jesse.md`. The email body is fully filled in (EIN, BFTA address, all the corrected amounts). Just copy the body between the START / STOP markers, paste into your email client, attach both PDFs, send to **jnm@jesseandjulie.com**.
 
-### Step 3 — File and log (2 min)
+### Step 3 — File and log (1 min)
 
 - Save the signed PDFs in BFTA's records (`receipts/2026/Jesse-Markowitz-...`)
 - Add Jesse to your donor database with **both** donations

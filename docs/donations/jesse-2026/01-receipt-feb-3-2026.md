@@ -1,6 +1,8 @@
 # Receipt for Jesse — February 3, 2026 donation — READY TO PDF
 
-**Status:** Filled in with confirmed BTCPay data and EIN. Just verify Jesse's mailing address (or leave that line blank — most CPAs are fine with name + email for gifts under $250), then export to PDF as `BFTA-Donation-Receipt-Jesse-2026-02-03.pdf`.
+**Status:** Fully filled in. Add today's date at the top, optionally add Jesse's mailing address, export to PDF as `BFTA-Donation-Receipt-Jesse-2026-02-03.pdf`.
+
+When you build the PDF, drop in the gold logo from the repo at `public/resources/logos/exports/bfta-logo-gold.svg` at the top.
 
 ---
 
@@ -8,7 +10,13 @@
 
 ---
 
-[BFTA letterhead — logo, mailing address, EIN, website, phone]
+[Insert gold logo: `public/resources/logos/exports/bfta-logo-gold.svg`]
+
+**Bitcoin For The Arts, Inc.**
+27 West 60th Street
+New York, NY 10023
+EIN: 41-2642260
+bitcoinforthearts.org | donate@bitcoinforthearts.org
 
 ---
 
@@ -25,7 +33,7 @@ Email: jnm@jesseandjulie.com
 
 **Donee Organization:**
 **Bitcoin For The Arts, Inc.**
-[BFTA legal mailing address]
+27 West 60th Street, New York, NY 10023
 EIN: **41-2642260**
 501(c)(3) tax-exempt status confirmed by the IRS
 
@@ -82,6 +90,7 @@ ______________________________
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
+27 West 60th Street, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---

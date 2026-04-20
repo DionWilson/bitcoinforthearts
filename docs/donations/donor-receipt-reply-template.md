@@ -12,7 +12,7 @@ Hi [Donor First Name],
 
 Thank you again for your donation to Bitcoin For The Arts. The attached PDF is your tax receipt for the contribution made on **[Date]**.
 
-A quick note on what's documented: the receipt records the amount of Bitcoin we received and the fair market value at the moment of receipt as observed by our BTCPay Server. The IRS treats Bitcoin as property, so your charitable deduction is the FMV at time of donation. Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit (EIN: **[EIN]**); donations are deductible to the extent permitted by law. No goods or services were provided in exchange for this donation.
+A quick note on what's documented: the receipt records the amount of Bitcoin we received and the fair market value at the moment of receipt as observed by our BTCPay Server. The IRS treats Bitcoin as property, so your charitable deduction is the FMV at time of donation. Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit (EIN: **41-2642260**); donations are deductible to the extent permitted by law. No goods or services were provided in exchange for this donation.
 
 Please reach out if you need anything else for your tax return.
 
@@ -21,7 +21,7 @@ Sincerely,
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
-501(c)(3) | EIN: [EIN]
+501(c)(3) | EIN: 41-2642260
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---
@@ -48,7 +48,7 @@ Quick answers to your points:
 - The IRS rule is that **the donor (you), not the charity, is ultimately responsible for documenting the FMV** of donated property. We're confirming the sats we received and the FMV BTCPay observed at that moment, which most CPAs accept as sufficient for non-cash gifts under $5,000.
 - [If donation > $5,000:] Because this contribution exceeds $5,000, IRS rules require a qualified appraisal and we'll need to sign Form 8283 Section B Part IV. Send the form when you're ready.
 - [If donation ≤ $5,000:] Your donation is well under the $5,000 threshold that would require IRS Form 8283 Section B and a qualified appraisal — the attached receipt is sufficient documentation.
-- Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. Our EIN is **[EIN]**.
+- Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. Our EIN is **41-2642260**.
 - **No goods or services were provided** in exchange for [either / this / your] donation.
 
 [INCLUDE THIS SECTION ONLY IF the donor noted a discrepancy between what their wallet showed and what BFTA's email or receipt shows:]
@@ -64,7 +64,7 @@ Sincerely,
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
-501(c)(3) | EIN: [EIN]
+501(c)(3) | EIN: 41-2642260
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---
@@ -90,7 +90,7 @@ Sincerely,
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
-501(c)(3) | EIN: [EIN]
+501(c)(3) | EIN: 41-2642260
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---
