@@ -36,7 +36,7 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 
 ## Quick start for the Tuesday pitch
 
-1. Open `00-one-page-pitch.md` and fill in `[DATE]`, `[LN address]`, `[BTC address]`, `[npub]`, `[EIN]`. Print 5 copies.
+1. Open `00-one-page-pitch.md` and fill in `[DATE]` and `[BTC address]`. EIN, Lightning address, and Nostr npub are already filled in. Print 5 copies.
 2. Skim `02-sponsor-tiers-and-budget.md` so you can:
    - Defend the $5K – $25K range and the 9-slot cap
    - Explain how event costs flow through the 30% Programs bucket without breaking the published 55/30/10/5 model

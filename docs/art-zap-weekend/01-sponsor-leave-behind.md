@@ -174,8 +174,8 @@ Founding director of Bitcoin for the Arts, Inc. Member, Actors' Equity Associati
 **Email:** donate@bitcoinforthearts.org
 **Web:** bitcoinforthearts.org
 **Donate / sponsor:** bitcoinforthearts.org/donate
-**Lightning:** [LN address]
+**Lightning:** gifts@donations.bitcoinforthearts.org
 **On-chain BTC:** [BTC address]
-**Nostr:** [npub]
+**Nostr:** npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
 *Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. EIN: [EIN]. All sponsorships and donations are tax-deductible to the extent allowed by law. Receipts provided.*

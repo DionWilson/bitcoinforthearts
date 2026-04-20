@@ -87,14 +87,14 @@ Bitcoin For The Arts, Inc.
 501(c)(3) | EIN: 41-2642260
 27 West 60th Street, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
-Lightning: [LN address] | Nostr: [npub]
+Lightning: gifts@donations.bitcoinforthearts.org | Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
 ---
 
 ## Before sending — fill-in checklist
 
 - [ ] Replace `[target month / window]` with the actual range you have in mind for the Monday finale (e.g., "late September or October" — keep it as a 2–4 week window so they have flexibility)
-- [ ] Replace `[LN address]` and `[npub]` placeholders with your actual Lightning address and Nostr pubkey
+- [x] ~~Lightning address and Nostr pubkey~~ — already filled in (Lightning: gifts@donations.bitcoinforthearts.org / Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw)
 - [ ] Generate the PDF of `00-one-page-pitch.md` (Google Docs → File → Download → PDF Document) and rename to `Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf`
 - [ ] Attach the PDF
 - [ ] Confirm Thomas's, Michael's, and Katie's email addresses are spelled correctly

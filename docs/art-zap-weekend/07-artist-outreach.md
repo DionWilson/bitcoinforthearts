@@ -98,7 +98,7 @@ Looking forward,
 Founder & Director
 Bitcoin For The Arts, Inc.
 [email] | bitcoinforthearts.org
-Lightning: [LN address] | Nostr: [npub]
+Lightning: gifts@donations.bitcoinforthearts.org | Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
 *P.S. If you'd like to know more about how we operate before saying yes — our public governance, our 55/30/10/5 allocation, and why we pay artists in Bitcoin — everything is at bitcoinforthearts.org/about.*
 
