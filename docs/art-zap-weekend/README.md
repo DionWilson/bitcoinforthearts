@@ -23,6 +23,7 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 | `10-board-message-sharing-revised-plan.md` | The **email/Signal message** to send the board when you share the Slide 8 deck. Two versions (long email + short Signal/Slack). |
 | `11-vegas-coordination-email-avi-kyle.md` | **Vegas Apr 27–29 coordination** email/Signal message for Avi Burra and Kyle Knight. Shares the pitch runner deck + locks in daily check-ins + meals. |
 | `12-pubkey-dc-outreach-email-thomas.md` | **Pubkey DC venue partnership** outreach to Thomas (cc Michael, Katie). Includes strategy notes, fill-in checklist, and "what to do if they respond X" decision tree. |
+| `13-reply-to-julie-tech-feedback.md` | **Reply to board member Julie** on her tech-director / live-broadcast-mix feedback. Adopts her split-role suggestion + asks for cost intel and names. |
 | `tabs/sponsors-tiers.csv` | Sheet tab: tier definitions and slot tracker (incl. Title Sponsor named auction lot) |
 | `tabs/sponsors-pipeline.csv` | Sheet tab: sponsor outreach pipeline |
 | `tabs/in-kind.csv` | Sheet tab: in-kind ask tracker (NYC venue is high-value, BTCPay/Lightning removed) |
