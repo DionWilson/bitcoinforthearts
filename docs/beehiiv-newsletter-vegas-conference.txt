@@ -1,0 +1,172 @@
+BEEHIIV NEWSLETTER — Vegas Conference & Sovereign Sats
+
+
+=== SUBJECT LINE ===
+
+Vegas-bound. The HODL Vault is live. And we need 2 volunteers.
+
+
+=== PREVIEW TEXT ===
+
+We're heading to the Bitcoin conference to find Zap-a-Thon sponsors — and we just opened our first endowment position. Plus a shoutout to our first annual member.
+
+
+=== NEWSLETTER BODY ===
+
+
+Vegas, Here We Come.
+
+In a few weeks, our team is heading to the Bitcoin conference in Las Vegas — and we want to find you in the hallway.
+
+We're going for one reason: connection. Bitcoin For The Arts is the first 501(c)(3) paying artists exclusively in Bitcoin, and the people who care about that mission are the same people walking those conference halls. We want to meet them. We want to introduce them to what we're building. And we want to find sponsors for the biggest event we've ever attempted — the Art + Zap Weekend.
+
+If you're going to Vegas, hit reply and let us know. We'd love to grab a coffee or a beer. If you're not going but you know speakers, sponsors, or builders who'll be there — please send us their handles. Warm intros from someone they trust beat a thousand cold pitches.
+
+
+---
+
+
+The Art + Zap Weekend is Coming. We Need Sponsors and Volunteers.
+
+We're not ready to share every detail yet — the plan is still finalizing and we want to get it right before we say it loud. But here's the shape of it:
+
+Two days of live broadcast. 21 featured artists from across disciplines — music, dance, theater, visual art, film, writing, and storytelling. Bitcoin podcaster hosts on-air. A culminating in-person finale night with live performances and a silent art auction. All broadcast on YouTube, X, and Nostr (Zap.Stream), with audience zaps powering BFTA's mission of funding artists nationwide in Bitcoin.
+
+We are heading to Vegas to find the sponsors who will make this real.
+
+If you have connections in the Bitcoin world — wallet companies, exchanges, hardware vendors, podcast networks, NYC-area Bitcoin businesses, anyone who would love to put their name on the founding event of Bitcoin-native arts patronage — this is the moment to introduce us. Forward this email. Tag us. Send us the handle. We'll take it from there.
+
+
+---
+
+
+We Need 2 Volunteers Who Can Donate Their Time.
+
+Two specific roles, two specific people. If this is you, or if you know who it is, please reach out:
+
+1. A volunteer producer or technical director with live-streaming experience. Someone who has run a multi-camera broadcast, knows StreamYard or OBS, and can help us pull off two days of polished live programming. The ask is roughly two days of on-event time plus a few prep calls. You'd be the technical backbone of the entire weekend.
+
+2. A volunteer artist coordinator. Someone organized, communicative, and warm — comfortable scheduling tech checks with 21 different artists, sending them their stream links, and being their point of contact during the event. The ask is rolling outreach in the weeks before, plus on-call availability during the event weekend.
+
+Both roles are real, meaningful contributions to a 501(c)(3). Both come with public credit, a written acknowledgment of the FMV of your contributed services for your records, and our deep gratitude. If this sounds like you, reply directly to this email.
+
+
+---
+
+
+In-Kind Sponsorship — Where We Need Help Beyond Cash
+
+We're looking for in-kind contributions — they count just as much as cash to us, and they often unlock something we couldn't otherwise afford. The big asks:
+
+- A New York City venue for the in-person finale night. Pubkey is on our radar, and we're open to others. If you own, manage, or know someone who runs a great NYC space that fits an arts-and-Bitcoin crowd, please introduce us.
+- On-site A/V and sound engineering for the finale.
+- A photographer and videographer for the finale to capture the night and produce a recap reel.
+- Catering or a bar tab for the finale event.
+- Hardware wallets to gift our 21 featured artists — a perfect fit for any hardware vendor who wants to put their device in the hands of a working artist who'll talk about it.
+- Items for the silent art auction — hardware, art prints, services, experiences, anything Bitcoin-aligned.
+- Professional photography or videography of any artist segment.
+- Travel or hospitality for out-of-area artists performing at the finale.
+
+We treat every in-kind contribution exactly like a cash sponsorship — same recognition, same logo placement, same tier credit. If you can help with any of the above, reply.
+
+
+---
+
+
+Read Our Latest on Substack
+
+Two recent pieces we published — both worth your time, and both shareable with anyone who needs to understand why this work matters right now.
+
+Read the latest on Substack: https://substack.com/@bitcoinforthearts
+
+If they resonate, share them. The single highest-leverage thing any reader can do for us is forward our writing to one person who's never heard of Bitcoin For The Arts. That's how we grow.
+
+
+---
+
+
+Shoutout: Our First Annual Sovereign Circle Member
+
+This week we welcomed our first Hard Cap Heroes Yearly member to the Sovereign Circle — Jesse Markowitz. Last newsletter we celebrated our first monthly member; this week we get to celebrate our first annual.
+
+Annual memberships matter to us in a specific way: they let us plan grant cycles months in advance instead of quarter-to-quarter. They convert "we hope to fund this" into "we will fund this." Jesse's commitment will help us underwrite real artist work, in real Bitcoin, on a real schedule.
+
+Welcome, Jesse. And thank you.
+
+If you've been thinking about joining the Sovereign Circle, every level matters — $5/month, $11/month, $21/month, $51/month, $101/month, or any of the annual tiers. Membership levels and benefits: bitcoinforthearts.org/donate/monthly
+
+
+---
+
+
+The HODL Vault Is Now LIVE.
+
+A milestone we want to share openly: Bitcoin For The Arts has opened its first position in the HODL Vault.
+
+0.0691 BTC. Acquired at an average price of $71,714 per Bitcoin. Approximately 6.9 million sats. Approximately $4,955 in USD value at acquisition.
+
+This is the first deposit into our long-term Bitcoin endowment — the 5% of every donation that goes to a permanent reserve, untouched, designed to grow in purchasing power over decades. The HODL Vault is what makes BFTA different from every other arts nonprofit in the country: instead of running the endowment in dollars that inflate away, we run it in the only money that doesn't.
+
+Every dollar you give helps grow this position. Every Sovereign Circle membership compounds it. Every sponsor we land at the Art + Zap Weekend feeds it. The HODL Vault is the long game — the structural piece that, decades from now, will let BFTA fund artists no matter what's happening in Washington, in markets, or in the broader culture.
+
+It's small. It's a start. It's real.
+
+
+---
+
+
+How Our Model Works — A Reminder
+
+Bitcoin For The Arts is a 501(c)(3) nonprofit. We are the first organization paying artists exclusively in Bitcoin through micro-grants, workshops, and education. Every dollar follows our public allocation:
+
+- 55% direct artist grants
+- 30% programs (workshops, residencies, productions, this Art + Zap Weekend)
+- 10% operations
+- 5% HODL Vault — the permanent Bitcoin endowment we just opened
+
+We pursue federal funding where it's available, but we don't depend on it. We don't depend on any single institution. We are building from the community, for the community, on rails that no central authority can shut down. The artists who receive our grants get paid in Bitcoin — money they own, money they can move anywhere in the world without permission, money that keeps its value better than the dollar.
+
+Without you, we don't make it. That's not marketing language. That's the truth of how a small, self-funded nonprofit gets built. Every newsletter forward, every share on Nostr, every $5 monthly membership, every introduction to a potential sponsor — these are the things that decide whether we're still here in five years funding the next generation of sovereign artists.
+
+
+---
+
+
+How You Can Help This Week
+
+Five concrete things, all of which matter:
+
+1. Donate — In Bitcoin, by Lightning, or by card: bitcoinforthearts.org/donate
+
+2. Join the Sovereign Circle — Memberships from $5/month. Annual options too. Jesse just joined. So can you. bitcoinforthearts.org/donate/monthly
+
+3. Get involved — Volunteer, host a DIY fundraiser, help us spread the word: bitcoinforthearts.org/get-involved
+
+4. Apply for a grant — If you're an artist, apply. If you know an artist, send them: bitcoinforthearts.org/grants/apply
+
+5. Share your Bitcoin journey — We feature artists building sovereign creative careers. If that's you or someone you know: bitcoinforthearts.org/stories/share-your-story
+
+
+---
+
+
+We Want To Hear From You
+
+Reply to this email. Tell us what's working in the newsletter and what isn't. Tell us if you're in Vegas and want to meet up. Tell us if you know the right venue for the finale, the right podcaster for the broadcast, the right hardware vendor for the artist gifts. Tell us if you have an idea we haven't thought of. Tell us if something in this newsletter pissed you off — we want to hear that too.
+
+Comment on the Substack pieces. DM us on Nostr. Tag us on X. We read everything, and we respond to every serious message we get. The feedback loop with this community is genuinely how we figure out what to build next.
+
+Thank you for being here. See you in Vegas.
+
+— Dion Wilson and the BFTA team
+
+
+===
+
+Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. EIN: 41-2642260. Donations are tax-deductible to the extent permitted by law. Headquartered at 27 West 60th Street, New York, NY 10023.
+
+Web: bitcoinforthearts.org
+Donate: bitcoinforthearts.org/donate
+Sovereign Circle: bitcoinforthearts.org/donate/monthly
+Get Involved: bitcoinforthearts.org/get-involved
+Substack: substack.com/@bitcoinforthearts
