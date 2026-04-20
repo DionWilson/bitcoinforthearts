@@ -1,6 +1,13 @@
-# Jesse — Donation Receipt Package (Feb + April 2026)
+# Jesse — Donation Receipt Package (Feb + April 2026) — READY TO SEND
 
-Everything you need to respond to Jesse's email and send him two tax receipts.
+Everything you need to respond to Jesse's email and send him two tax receipts. **As of latest commit, the email body and both receipts are filled in with confirmed BTCPay data + EIN 41-2642260.** Just need to: verify mailing addresses, export receipts to PDF, attach, send.
+
+## Important findings from the BTCPay data
+
+- **Feb 3 donation = $21.00 / 27,674 sats.** Pure one-time donation, fully deductible. (Donor's wallet showed $21.23 / 28,384 — the difference is normal Lightning routing fees.)
+- **April 19 donation = $231.00 / 310,644 sats** — NOT $5 as Jesse remembered. This is his **Hard Cap Heroes Yearly Sovereign Circle membership**. The $5 figure he saw is the FMV of the welcome-kit sticker pack listed in the membership perks. **Deductible portion = $226** (the $5 sticker-pack FMV must be subtracted per IRS rules). Receipt explains this clearly.
+- **Jesse is your first paid Sovereign Circle member through the relaunched subscription system.** Plan checkout `plancheckout_5eZU2zZxMk6t2c73da` worked end-to-end. Worth acknowledging in the reply.
+- **Duplicate email cause confirmed:** BTCPay fires both `InvoiceSettled` AND `InvoicePaymentSettled` webhooks; your email handler is sending a confirmation for each. Real bug, knowable fix. Separate from Jesse's reply.
 
 ## Files in this folder
 
@@ -10,65 +17,34 @@ Everything you need to respond to Jesse's email and send him two tax receipts.
 | `01-receipt-feb-3-2026.md` | Receipt for the **Feb 3** donation (BTCPay invoice `TfKwZfriMje17QzXPoJASr`) — fill in, export to PDF |
 | `02-receipt-april-19-2026.md` | Receipt for the **April 19** donation (BTCPay invoice `452LCoUipXQGFTdNpKxi2e`) — fill in, export to PDF |
 
-## What to do — in order
+## What to do — in order (15 minutes total)
 
-### Step 1 — Pull the real numbers from BTCPay (5 min)
+### Step 1 — Verify the two receipts and export each to PDF (10 min)
 
-Log into BTCPay. Search Invoices for each ID. Write down for each:
+Open each:
 
-- Created date + UTC timestamp
-- Sats received
-- USD invoiced amount
-- Lightning payment hash
+- `01-receipt-feb-3-2026.md` (the $21 donation)
+- `02-receipt-april-19-2026.md` (the $231 Hard Cap Heroes Yearly membership)
 
-> ⚠️ The April 19 donation has a discrepancy — Jesse's email said $21.23 / 28,384 sats but his Strike app shows $233.56 / 312,263 sats. **Whatever BTCPay actually recorded is the truth.** Strike's UI overlays balance with transaction info and is easy to misread. Get the BTCPay number, that's the answer.
+Each one is filled in with confirmed BTCPay data and EIN 41-2642260. Three things you may want to add or check before exporting to PDF:
 
-### Step 2 — Fill in the receipts (5 min each)
+1. **BFTA's legal mailing address** — there's a `[BFTA legal mailing address]` placeholder near the top. Add yours.
+2. **Jesse's mailing address** — leave blank if you don't have it on file. The April 19 receipt + welcome kit shipping makes it useful to ask Jesse for it (the email already does this).
+3. **Date receipt issued** — fill in today's date.
 
-Open each receipt file. Replace every `[bracketed]` field with real data:
+Then export each to PDF using whichever method you prefer (Google Docs / online tool / browser print — instructions are at the bottom of each receipt file).
 
-- **From BTCPay:** date, sats, USD, payment hash
-- **About BFTA:** EIN, mailing address, today's date
-- **About Jesse:** his full legal name and mailing address (ask him in the reply if you don't have his address — most CPAs are fine with just the name on the receipt for gifts under $250)
-
-### Step 3 — Export each receipt to PDF (2 min each)
-
-Three options inside `01-receipt-feb-3-2026.md` and `02-receipt-april-19-2026.md`. Easiest = paste filled-in receipt into Google Docs → File → Download → PDF.
-
-Final filenames:
+Final filenames should be:
 - `BFTA-Donation-Receipt-Jesse-2026-02-03.pdf`
 - `BFTA-Donation-Receipt-Jesse-2026-04-19.pdf`
 
-### Step 4 — Send the reply email
+### Step 2 — Send the email (3 min)
 
-Open `00-reply-email-to-jesse.md`. Fill in Jesse's email address, your EIN (twice), and the actual confirmed amount for the April 19 donation discrepancy. Paste body into your email client, attach both PDFs, send.
+Open `00-reply-email-to-jesse.md`. The email body is already filled in. Sanity-check the EIN line, copy the body into your email client (between the START / STOP markers), attach both PDFs, send to **jnm@jesseandjulie.com**.
 
-### Step 5 — File for your records
+### Step 3 — File and log (2 min)
 
-- Save signed PDFs in BFTA's nonprofit records folder for 2026
-- Add Jesse to your donor database / spreadsheet with both donation entries
-
-## If you'd rather I do steps 2–3 for you
-
-Send me back:
-
-```
-Feb 3 donation (TfKwZfriMje17QzXPoJASr):
-  - BTCPay date + UTC time:
-  - Sats received:
-  - USD invoiced:
-  - Lightning payment hash:
-
-April 19 donation (452LCoUipXQGFTdNpKxi2e):
-  - BTCPay date + UTC time:
-  - Sats received:
-  - USD invoiced:
-  - Lightning payment hash:
-
-BFTA EIN:
-BFTA mailing address:
-Jesse's full legal name:
-Jesse's mailing address (or "ask him"):
-```
-
-I'll fill in everything and produce two complete, ready-to-print receipt files in the next message.
+- Save the signed PDFs in BFTA's records (`receipts/2026/Jesse-Markowitz-...`)
+- Add Jesse to your donor database with **both** donations
+- Mark him as your first Hard Cap Heroes Yearly Sovereign Circle member
+- Mail him the welcome-kit sticker pack once he confirms his address
