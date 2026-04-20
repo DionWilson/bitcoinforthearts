@@ -44,7 +44,7 @@ I'm Dion Wilson, founder of **Bitcoin For The Arts, Inc.**, the first 501(c)(3) 
 - **Monday evening, [DATE]** — in-person finale at **Pubkey [DC / NYC]** with a Broadway-headlined performance + silent art auction
 - **21 featured artists** across music, visual art, dance, theater, film, writing, and storytelling
 - Hosted by Bitcoin podcasters with combined audiences in the high tens of thousands
-- Every viewer can send you Bitcoin **directly during your segment** via Lightning zaps — no platform fees, no waiting
+- Up front: this event is a **fundraiser for Bitcoin For The Arts** — the on-screen donation QR will be BFTA's. During your segment, your personal Lightning address will also be shown as an optional tip jar so viewers can tip you directly if they choose. Direct tips to you are 100% yours.
 
 **What we're asking from you (pick whichever fits your schedule):**
 
@@ -56,13 +56,13 @@ I'm Dion Wilson, founder of **Bitcoin For The Arts, Inc.**, the first 501(c)(3) 
 
 **What you get:**
 
-- An honorarium paid in Bitcoin (amount confirmed once funding is finalized — targeting $650–$1,200+ per artist depending on event funding)
-- Direct Bitcoin zaps from the live audience to your own LN address — yours, in full, no fees taken
+- **A guaranteed $500 BTC honorarium** — paid to your Lightning address, no strings attached, no requirements, no reporting. Sent within 14 days of the event.
 - A clipped highlight reel of your segment (yours to use anywhere)
 - Your work permanently archived on YouTube and Nostr with full credit and links
+- Your personal Lightning address shown briefly on-screen during your segment as an optional tip jar — any direct tips that come in are 100% yours (not counted against BFTA)
 - Social posts before, during, and after the event from BFTA's channels and our podcaster hosts
 - An invitation to the Monday in-person finale at Pubkey
-- Optional inclusion in the silent art auction (you'd donate one piece; you keep proceeds split per a separate agreement, OR donate fully — your choice, no pressure)
+- Optional inclusion in the silent art auction (you'd donate one piece; auction proceeds support BFTA — you'd be credited as the donor and your name appears on the lot)
 
 **Two quick questions to figure out next steps:**
 
@@ -179,10 +179,23 @@ For the **Broadway-caliber Monday finale headliner**, lead with your AEA + Broad
 
 ---
 
-## Sensitive note: pay structure language
+## Pay structure language (use this consistently)
 
-When an artist asks "what's the honorarium?" — answer honestly with the range. **Do not** promise a specific number until sponsors are confirmed. Suggested language:
+When an artist asks "what's the honorarium?" — answer with the same number every time. The flat $500 policy makes this much simpler than a sliding scale.
 
-> "Honoraria depend on what we raise from sponsors. Floor scenario is around $650 per artist; target is $1,200+; stretch could go higher. I'll confirm your specific honorarium amount **2 weeks before the event** at the latest. On top of the BFTA honorarium, **100% of audience zaps during your segment go directly to your LN address — BFTA takes nothing from those.** That's typically where the upside is."
+> "Every featured artist gets a **flat $500 honorarium in Bitcoin**, paid to your Lightning address within 14 days of the event. No requirements, no reporting, no strings attached. We picked $500 because it's a real number for ~25 minutes on-air — and it lets us guarantee the same rate to all 21 artists at every funding level, rather than promising bigger numbers we can't deliver if sponsorships under-fill.
+>
+> On top of that, your personal Lightning address will be shown on-screen during your segment as a tip jar — any direct tips you receive are 100% yours. The main donation QR throughout the broadcast will be BFTA's, since this is a fundraiser FOR BFTA's mission."
 
-This is honest, anchors expectations correctly, and keeps the long-tail story (zaps as the upside) front and center.
+### Why this answer works for artists
+
+- **Immediate clarity** — they know exactly what they're getting paid before they say yes
+- **No bait-and-switch risk** — we never promised a higher number that funding might not support
+- **Honest framing of the event** — it's a BFTA fundraiser, the artist gets paid fairly for their time, and the tip jar is real but secondary
+- **Aligned with BFTA's $500–$2,000 micro-grant range** — $500 is the entry point of our standard grant scale, which is appropriate for the work involved
+
+### What to never say
+
+- ❌ "Most of the donations will go to you" — they won't
+- ❌ "We can probably go higher than $500 if sponsors come through" — opens you to negotiation, breaks parity across artists
+- ❌ "100% of zaps during your segment are yours" — false; only direct tips to *your* personal LN address are yours; the main QR is BFTA throughout

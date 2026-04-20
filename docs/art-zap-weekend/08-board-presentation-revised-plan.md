@@ -109,13 +109,27 @@ The 30% **Programs bucket** in our published policy is *defined* as workshops, r
 
 **No policy change required. No suspension of transparency.** Restricted gifts (Option B) and a board resolution (Option C) are available as fallbacks but should not be needed if in-kind asks land — see `02-sponsor-tiers-and-budget.md` for full rationale.
 
+### Artist honorarium policy (NEW — board direction)
+
+- **Flat $500 BTC honorarium** to each of the 21 broadcast artists, guaranteed at every funding scenario
+- Sized intentionally low + uniform: aligned with BFTA's standard $500–$2,000 micro-grant range; uniform = no negotiation, no parity disputes; **$500 is meaningful but doesn't crowd out the broader micro-grant pipeline**
+- Excess in the 55% Direct Artist Grants bucket flows to **Q3 nationwide micro-grants** for non-event artists
+- Broadway-caliber Monday finale headliner gets a separate $2,500 honorarium **paid from the 30% Programs bucket** (it's a venue-specific finale draw, not a broadcast slot)
+
 ### Three budget scenarios
 
-| Scenario | Sponsor revenue | Artist grants (55%) | Programs (30%) | Notes |
-|---|---|---|---|---|
-| **Floor** | $25,000 | $13,750 (~$650/artist) | $7,500 | Solo producer; full in-kind venue + A/V required |
-| **Target** | $45,000 | $24,750 (~$1,180/artist + 3 micro-grants) | $13,500 | **Hired professional producer** + venue + Broadway honorarium |
-| **Stretch** | $80,000 | $44,000 (full Q3 grant cycle funded) | $24,000 | Full producer team + premium production |
+| Scenario | Sponsor revenue | 55% Artist Grants | 21 honoraria ($500 ea) | Excess → Q3 micro-grants | 30% Programs |
+|---|---|---|---|---|---|
+| **Floor** | $25,000 | $13,750 | $10,500 | $3,250 (~5 micro-grants) | $7,500 (solo producer; needs full in-kind) |
+| **Target** | $45,000 | $24,750 | $10,500 | $14,250 (~25 micro-grants) | $13,500 (hired pro producer + Broadway) |
+| **Stretch** | $80,000 | $44,000 | $10,500 | $33,500 (full Q3 cycle funded) | $24,000 (full team + premium) |
+
+### Audience zap / donation policy (NEW — board direction)
+
+- **On-screen donation QR is BFTA's Lightning address for the entire 8 hours of broadcast.** All zaps default to BFTA's mission.
+- Each artist's personal Lightning address is shown briefly in a secondary lower-third labeled "Tip [Artist] Directly" during their ~25-min segment as an optional tip jar
+- Direct tips to the artist's personal LN address are 100% theirs (not counted against BFTA revenue)
+- This policy is **honest with both audiences:** donors see one default ("support BFTA") with an optional path ("tip the artist"); artists know upfront they get a guaranteed $500 + tips; sponsors know this is a real fundraiser FOR BFTA
 
 ---
 

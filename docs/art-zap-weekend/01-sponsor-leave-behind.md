@@ -7,7 +7,7 @@
 
 ## The One-Liner
 
-**Art + Zap Weekend is the first global, Bitcoin-native arts fundraiser — 21 artists, 2 days of live broadcast, and a Monday-night in-person finale headlined by a Broadway performer at Pubkey (DC primary, NYC alternative).**
+**Art + Zap Weekend is the first global, Bitcoin-native arts fundraiser for Bitcoin For The Arts — 21 featured artists, 2 days of live broadcast, and a Monday-night in-person finale headlined by a Broadway performer at Pubkey (DC primary, NYC alternative).** All audience donations default to BFTA's mission of paying artists in Bitcoin and growing the HODL Vault endowment.
 
 ---
 
@@ -35,6 +35,8 @@ We are not waiting for institutions to decide whether artists deserve funding. W
 | **Hosts** | 4 Bitcoin podcasters per broadcast day, 1–2 hours each |
 | **Live finale** | Monday evening, **Pubkey DC** (primary) or **Pubkey NYC / NYC alternative** — Broadway-headlined performances, silent art auction, sponsor reception |
 | **Broadcast platforms** | YouTube, X (Twitter), Nostr (Zap.Stream), Fountain |
+| **Audience donation flow** | On-screen donation QR is BFTA throughout. Each artist's personal LN address is shown briefly during their segment as an optional tip jar. **Default zap target = BFTA**, allocated through the public 55/30/10/5 model. |
+| **Artist honoraria** | $500 BTC per featured artist (21 × $500 = $10,500 total), funded from sponsor revenue, no strings attached |
 
 ---
 

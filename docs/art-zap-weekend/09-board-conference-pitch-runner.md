@@ -84,7 +84,7 @@ If the 30-second pitch lands and they want detail, here's the next layer. Have t
 
 ### "How do I know my money goes to artists?"
 
-> "BFTA publishes its allocation: 55% to direct artist grants, 30% to programs, 10% ops, 5% to a permanent Bitcoin reserve. Every dollar follows that model. The board minutes and financials are public. The Art + Zap Weekend itself is in the 30% Programs bucket — production costs flow through there. The 55% to artists includes the 21 featured-artist honoraria as the first tranche."
+> "BFTA publishes its allocation: 55% to direct artist grants, 30% to programs, 10% ops, 5% to a permanent Bitcoin reserve. Every dollar follows that model. Each of the 21 featured artists gets a flat $500 BTC honorarium directly from the 55% bucket — guaranteed regardless of funding level. Anything left over in the 55% bucket beyond honoraria seeds our Q3 nationwide micro-grant cycle. Production costs come from the 30% Programs bucket. So at our target funding, your sponsor dollar funds **21 featured artists plus roughly 25 additional micro-grants** for artists nationwide. Board minutes and financials are public."
 
 ### "Is this tax-deductible?"
 
@@ -140,10 +140,15 @@ A 24-hour follow-up turns a hallway "yes I'd be interested" into a real meeting.
 
 To keep this manageable:
 
-- ❌ **Don't quote specific honorarium numbers to artists** in passing — refer them to Dion
 - ❌ **Don't promise specific deliverables** beyond what's in the tier sheet — refer to Dion
 - ❌ **Don't accept a check or commitment in person** — the ask is to get them on a call with Dion. Cleaner paperwork that way.
 - ❌ **Don't worry about closing on the spot** — your job is intro + handoff, Dion's job is close
+
+## Things to KNOW so you can answer correctly
+
+- **Artist honoraria:** flat **$500 BTC per featured artist**, guaranteed at every funding scenario. The Broadway-caliber finale headliner is a separate $2,500 paid from Programs.
+- **Audience zaps default to BFTA.** The on-screen donation QR is BFTA's for all 8 broadcast hours. Each artist's personal LN address is shown briefly during their segment as an optional tip jar — direct tips to artists are 100% theirs and not counted against BFTA. **This is a fundraiser FOR BFTA, not a tip-jar event.**
+- **Allocation:** all sponsor dollars flow through the published 55/30/10/5 model. The 21 featured-artist honoraria come from the 55% Direct Artist Grants bucket; event production costs come from the 30% Programs bucket. **No policy change required.**
 
 ---
 
@@ -172,6 +177,8 @@ ART + ZAP WEEKEND
 Tiers: $25K Title (1) / $10K Supporting (3) / $5K Friend (5)
 In-kind: NYC venue, A/V, hardware wallets, catering, photo/video, auction items
 Format: Sat+Sun broadcast 1-5pm ET, Mon finale at Pubkey w/ Broadway headliner
+21 artists each get flat $500 BTC honorarium - guaranteed - from 55% bucket
+Audience zaps DEFAULT TO BFTA - artist tip jar shown briefly as secondary
 501(c)(3) - tax-deductible - EIN [EIN]
 
 THE ASK: "Open to a 30-min call with our founder Dion this week?"

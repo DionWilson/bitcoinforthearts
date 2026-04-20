@@ -10,7 +10,7 @@
 
 ## What
 
-**Art + Zap Weekend** is the first global Bitcoin-native arts fundraiser. **2 days of broadcast. 21 artists. Live in-person finale at Pubkey (DC or NYC).**
+**Art + Zap Weekend** is the first global Bitcoin-native arts fundraiser **for Bitcoin For The Arts**. **2 days of broadcast. 21 featured artists. Live in-person finale at Pubkey (DC or NYC).** All audience zaps default to BFTA's mission of funding artists in Bitcoin.
 
 ## When
 

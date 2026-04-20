@@ -53,6 +53,10 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 
 ## Important policy notes
 
-- **Donated podcaster time is NOT tax-deductible** to the donor (IRS Pub 526). BFTA issues a written **acknowledgment letter** documenting the FMV — see `05-podcaster-acknowledgment-letter-template.md`. Have your CPA approve the template before sending.
+- **This is a fundraiser FOR Bitcoin For The Arts.** The on-screen donation QR is BFTA's Lightning address for the entire 8 hours of broadcast. All audience zaps default to BFTA and flow through the 55/30/10/5 model.
+- **Each artist's personal Lightning address is shown briefly during their segment as an optional tip jar.** Direct tips to artists are 100% theirs and not counted against BFTA revenue. Honest framing for both donors and artists.
+- **Flat $500 BTC honorarium per featured artist** — guaranteed at every funding scenario, paid from the 55% Direct Artist Grants bucket, no requirements attached. Excess in that bucket seeds Q3 nationwide micro-grants.
+- **Broadway-caliber Monday finale headliner** receives a separate $2,500 honorarium paid from the 30% Programs bucket (it's a venue-specific finale draw).
+- **Donated podcaster time is NOT tax-deductible** to the donor (IRS Pub 526). BFTA issues a written **acknowledgment letter** documenting the FMV — see `05-podcaster-acknowledgment-letter-template.md` and the fillable version in `06`. Have your CPA approve the template before sending.
 - **Pubkey DC exists** at https://www.pubkey.bar/dc/home — primary venue option for this event.
 - **BTCPay / Lightning infrastructure** is **not** listed as an in-kind ask because BFTA already runs its own BTCPay Server. This is a strength to highlight, not a gap to fill.
