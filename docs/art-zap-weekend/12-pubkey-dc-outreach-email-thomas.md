@@ -38,7 +38,7 @@ I'm also a working artist — Actors' Equity, Dance Theatre of Harlem and Ailey 
 
 **What we're planning — the Art + Zap Weekend:**
 
-Our inaugural flagship event. Two days of live broadcast (Saturday + Sunday, ~1–5 PM ET each day) featuring 21 artists across music, dance, theater, visual art, film, writing, and storytelling. Hosted by Bitcoin podcasters and broadcast simultaneously to YouTube, X, and Nostr (Zap.Stream). Then a culminating **Monday-night in-person finale** with live performances, a silent art auction, and a Broadway-caliber headliner — Broadway is dark on Mondays, which makes top-tier NYC performance talent uniquely available.
+Our inaugural flagship Bitcoin-funded fundraiser. Proceeds route to BFTA and feed our next quarterly nationwide artist micro-grant cycle. Two days of live broadcast (Saturday + Sunday, ~1–5 PM ET each day) featuring 21 artists across music, dance, theater, visual art, film, writing, and storytelling. Hosted by Bitcoin podcasters and broadcast simultaneously to YouTube, X, and Nostr (Zap.Stream). Then a culminating **Monday-night in-person finale** with live performances, a silent art auction, and a Broadway-caliber headliner — Broadway is dark on Mondays, which makes top-tier NYC performance talent uniquely available.
 
 The full one-page overview is attached.
 
@@ -63,7 +63,7 @@ This is a real partnership, not just venue use. Specifically:
 - **Title billing on the Monday finale** — "Art + Zap Weekend Finale, hosted at Pubkey DC" on every piece of marketing, signage, and post-event content
 - **Logo / brand presence on the live broadcast** for both Saturday and Sunday (Pubkey shown as venue partner during the broadcast even though the broadcast itself is virtual)
 - **Co-promotion to BFTA's email list and Bitcoin community** — Substack, Beehiiv newsletter, Nostr, X
-- **Inclusion in our 2026 annual transparency report and a permanent listing on the BFTA Sponsors page** — long-tail brand association with the founding event of Bitcoin-native arts patronage
+- **Inclusion in our 2026 annual transparency report and a permanent listing on the BFTA Sponsors page** — long-tail brand association with the founding event of an arts-funding model built on Bitcoin rails
 - **First refusal on hosting future BFTA events** — we're planning to run this twice a year going forward
 - **A meaningful audience in your space** — Bitcoiners, NYC arts community, sponsors, and press. People who matter to you, in your room, on a night the venue is otherwise quiet.
 

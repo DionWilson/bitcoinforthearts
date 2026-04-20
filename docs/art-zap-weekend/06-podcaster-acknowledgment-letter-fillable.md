@@ -23,7 +23,7 @@ Print this on Bitcoin For The Arts letterhead. Replace every `[bracketed]` field
 
 Dear [Podcaster First Name],
 
-On behalf of **Bitcoin For The Arts, Inc.**, a 501(c)(3) tax-exempt nonprofit organization (EIN: **[EIN]**), I want to formally acknowledge with deep gratitude your contribution of professional podcast hosting services to **Art + Zap Weekend**, our flagship Bitcoin-native arts fundraiser broadcast on **[date(s) of broadcast]**.
+On behalf of **Bitcoin For The Arts, Inc.**, a 501(c)(3) tax-exempt nonprofit organization (EIN: **41-2642260**), I want to formally acknowledge with deep gratitude your contribution of professional podcast hosting services to **Art + Zap Weekend**, our flagship Bitcoin-funded fundraiser broadcast on **[date(s) of broadcast]** in support of our nationwide artist micro-grant program.
 
 Specifically, you contributed:
 

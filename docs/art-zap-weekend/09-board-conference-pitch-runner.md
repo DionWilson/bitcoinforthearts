@@ -30,7 +30,7 @@ Before you leave for the conference:
 
 When you have 30 seconds — at a coffee bar, in line for a panel, in an elevator:
 
-> "Hey [Name] — I'm on the board of **Bitcoin For The Arts**. We're the first 501(c)(3) paying artists exclusively in Bitcoin. We're putting together our flagship event **late August through early October 2026** — **Art + Zap Weekend** — two days of live broadcast, 21 artists, in-person finale at **Pubkey**, headlined by a **Broadway-caliber performer**. We're looking for **sponsors** at $5K, $10K, and $25K tiers. **Would you be open to a 30-minute call with our founder Dion this week to see if it's a fit for [their company]?**"
+> "Hey [Name] — I'm on the board of **Bitcoin For The Arts**. We're the first 501(c)(3) paying artists exclusively in Bitcoin — through quarterly micro-grants we fund nationwide. We're putting together our flagship Bitcoin-funded fundraiser **late August through early October 2026** — **Art + Zap Weekend** — two days of live broadcast, 21 artists, in-person finale at **Pubkey**, headlined by a **Broadway-caliber performer**. Proceeds go to BFTA and feed our next quarterly grant cycle. We're looking for **sponsors** at $5K, $10K, and $25K tiers. **Would you be open to a 30-minute call with our founder Dion this week to see if it's a fit for [their company]?**"
 
 **That's it.** If yes → exchange info, log it, move on. If no → "Totally — who *should* I be talking to?"
 
@@ -41,7 +41,7 @@ When you have 30 seconds — at a coffee bar, in line for a panel, in an elevato
 If the 30-second pitch lands and they want detail, here's the next layer. Have the printed leave-behind in hand and reference it as you go:
 
 ### What it is
-> "Two-day live broadcast on YouTube, X, and Nostr — 21 featured artists across music, dance, theater, visual art, film, writing. Hosted by 4 Bitcoin podcasters per day. Then a Monday-night in-person finale at Pubkey with live performances, a silent art auction, and a Broadway-caliber headliner."
+> "Our flagship **Bitcoin-funded fundraiser** — proceeds go to BFTA's nationwide quarterly micro-grant pool. Two-day live broadcast on YouTube, X, and Nostr — 21 featured artists across music, dance, theater, visual art, film, writing. Hosted by 4 Bitcoin podcasters per day. Then a Monday-night in-person finale at Pubkey with live performances, a silent art auction, and a Broadway-caliber headliner. Audience donations route to BFTA; artists also get personal Lightning tip jars during their segments."
 
 ### Who watches
 > "Small but high-signal — Bitcoin + arts overlap. High intent, deeply loyal to brands that show up early in the Bitcoin economy. Audiences across Americas, Europe, and Africa, all reachable in the broadcast window. Every clip lives forever on YouTube and Nostr with sponsor branding visible."

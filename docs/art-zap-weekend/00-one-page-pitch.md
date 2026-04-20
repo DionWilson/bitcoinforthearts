@@ -10,7 +10,7 @@
 
 ## What
 
-**Art + Zap Weekend** is the first global Bitcoin-native arts fundraiser **for Bitcoin For The Arts**. **2 days of broadcast. 21 featured artists giving their time as mission supporters. Live in-person finale at Pubkey (DC or NYC) with a Broadway-caliber headliner.** All audience zaps default to BFTA's mission of funding artists in Bitcoin nationwide. Every dollar raised seeds Q3 nationwide micro-grants.
+**Art + Zap Weekend is a Bitcoin-funded fundraiser for Bitcoin For The Arts**, our 501(c)(3) that funds artists nationwide through quarterly micro-grants. **2 days of broadcast. 21 featured artists giving their time as mission supporters. Live in-person finale at Pubkey DC with a Broadway-caliber headliner.** Audience donations route to BFTA and flow through our public 55/30/10/5 allocation. Featured artists also receive 100% of any optional direct tips sent to their personal Lightning addresses during their broadcast segments.
 
 ## When
 
@@ -32,7 +32,7 @@
 
 ## Why a sponsor cares
 
-- **First-mover story.** Sponsors are written into the founding narrative of Bitcoin-native arts patronage.
+- **First-mover story.** Sponsors are written into the founding narrative of an arts-funding model built on Bitcoin rails.
 - **Permanent, on-brand content.** Logos visible on every clip on YouTube and Nostr in perpetuity.
 - **Audience is small but high-signal.** Bitcoin + arts overlap = high-intent, high-NW, deeply loyal to early supporters.
 - **Tax-deductible** through a 501(c)(3) with public governance and on-chain transparency.

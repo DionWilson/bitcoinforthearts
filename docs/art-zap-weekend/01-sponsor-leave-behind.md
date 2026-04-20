@@ -7,7 +7,7 @@
 
 ## The One-Liner
 
-**Art + Zap Weekend is the first global, Bitcoin-native arts fundraiser for Bitcoin For The Arts — 21 featured artists, 2 days of live broadcast, and a Monday-night in-person finale headlined by a Broadway performer at Pubkey (DC primary, NYC alternative).** All audience donations default to BFTA's mission of paying artists in Bitcoin and growing the HODL Vault endowment.
+**Art + Zap Weekend is a Bitcoin-funded fundraiser for Bitcoin For The Arts**, our 501(c)(3) that funds artists nationwide through quarterly micro-grants. The event spans 21 featured artists, 2 days of live broadcast, and a Monday-night in-person finale headlined by a Broadway performer at Pubkey DC. Audience donations route to BFTA and flow through our public 55/30/10/5 allocation, which sends 55% directly to artist grants nationwide and 5% to the long-term HODL Vault endowment. Featured artists also receive 100% of any optional direct tips sent to their personal Lightning addresses during their broadcast segments.
 
 ---
 
@@ -141,7 +141,7 @@ In-kind support is treated as equivalent value to cash sponsorship at the corres
 - **An exceptionally efficient event model.** Featured artists participate as mission supporters — donating their time so that the entire 55% Direct Artist Grants bucket from this event can fund Q3 nationwide micro-grants. At our target funding scenario, sponsor dollars from this single event seed roughly **49 artist grants nationwide.**
 - **Long-tail content.** 21 artist segments × multi-platform clips = months of content with sponsor branding visible.
 - **Direct artist access.** Sponsor representatives are invited to the artist green room and the Monday finale.
-- **Ethos alignment.** The first nonprofit paying artists exclusively in Bitcoin, hosting the first global Bitcoin-native arts fundraiser, with our own self-custodial Bitcoin infrastructure. Every detail is on-mission.
+- **Ethos alignment.** The first nonprofit paying artists exclusively in Bitcoin, hosting our flagship fundraiser on Bitcoin rails, with our own self-custodial Bitcoin infrastructure. Every detail is on-mission.
 
 ---
 

@@ -58,6 +58,7 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 
 ## Important policy notes
 
+- **Positioning (per board input from Kenneth):** Art + Zap Weekend is a **Bitcoin-funded fundraiser for Bitcoin For The Arts**, our 501(c)(3) that funds artists nationwide through quarterly micro-grants. It is NOT a real-time direct-patronage event. Audience donations route to BFTA and flow through the 55/30/10/5 model. Featured artists also receive 100% of any optional direct tips sent to their personal Lightning addresses during their broadcast segments. **Use this framing consistently across all sponsor, artist, and audience-facing materials** — avoid "Bitcoin-native, direct-to-artist" or any phrasing that implies real-time fan-to-artist patronage. The model is sound; the framing must match the model.
 - **This is a fundraiser FOR Bitcoin For The Arts.** The on-screen donation QR is BFTA's Lightning address for the entire 8 hours of broadcast. All audience zaps default to BFTA and flow through the 55/30/10/5 model.
 - **Featured artists participate as mission supporters of BFTA's 501(c)(3) cause** — no honorarium, no fee, no quid pro quo. Donated time, like a volunteer.
 - **The entire 55% Direct Artist Grants bucket flows to Q3 nationwide micro-grants** since featured artists are uncompensated. At target $45K funding, that's ~49 micro-grants funded by this single event.

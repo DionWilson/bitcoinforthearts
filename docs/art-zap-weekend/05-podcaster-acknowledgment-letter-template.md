@@ -27,7 +27,7 @@ This letter is gold for the podcaster's own records, marketing one-sheet, sponso
 >
 > Dear [Podcaster Name],
 >
-> On behalf of **Bitcoin For The Arts, Inc.**, a 501(c)(3) tax-exempt nonprofit (EIN: **[EIN]**), I want to formally acknowledge with deep gratitude your contribution of professional podcast hosting services to **Art + Zap Weekend**, our flagship Bitcoin-native arts fundraiser broadcast on [date(s)].
+> On behalf of **Bitcoin For The Arts, Inc.**, a 501(c)(3) tax-exempt nonprofit (EIN: **41-2642260**), I want to formally acknowledge with deep gratitude your contribution of professional podcast hosting services to **Art + Zap Weekend**, our flagship Bitcoin-funded fundraiser broadcast on [date(s)] in support of our nationwide artist micro-grant program.
 >
 > Specifically, you contributed:
 >

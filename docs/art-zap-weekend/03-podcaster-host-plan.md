@@ -161,7 +161,7 @@ Send this via DM, Nostr, or email. Personalize the first line.
 
 > Hey [Name] — big fan of [show/episode reference].
 >
-> I'm Dion Wilson, founder of Bitcoin For The Arts, the first 501(c)(3) paying artists exclusively in BTC. On [date weekend], we're producing **Art + Zap Weekend** — 2 days of live Bitcoin-native arts programming featuring 21 artists, broadcast on YouTube + Zap.Stream + X, culminating in a Monday-night live finale at Pubkey [DC/NYC] headlined by a Broadway performer.
+> I'm Dion Wilson, founder of Bitcoin For The Arts, the first 501(c)(3) paying artists exclusively in BTC through quarterly micro-grants we fund nationwide. On [date weekend], we're producing **Art + Zap Weekend** — our flagship Bitcoin-funded fundraiser. 2 days of live programming featuring 21 artists, broadcast on YouTube + Zap.Stream + X, culminating in a Monday-night in-person finale at Pubkey DC headlined by a Broadway performer. Proceeds go to BFTA and feed our next quarterly grant cycle.
 >
 > I'd love to have you co-host one of the broadcast days. The ask is genuinely light:
 >

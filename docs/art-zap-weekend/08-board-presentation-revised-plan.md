@@ -42,6 +42,8 @@ The 7-day plan had real concerns the board raised:
 
 The revised plan addresses each of these without losing what made the original strong.
 
+A **second positioning concern** was raised separately by board input from Kenneth: the original framing as a "Bitcoin-native, direct-to-artist" event created an alignment gap with the actual donation flow (BFTA receives, then funds artists later via grants). Direct real-time patronage in a Bitcoin/Nostr v4v context implies sats flowing artist-to-fan in the moment — which is not what we are. The model is sound; the framing was off. The revised positioning now leads with: **"Art + Zap Weekend is a Bitcoin-funded fundraiser for Bitcoin For The Arts — our 501(c)(3) that funds artists nationwide through quarterly micro-grants."** This language is being propagated across all sponsor, artist, and audience-facing materials.
+
 ---
 
 ## Slide 3 — The Revised Format
@@ -248,4 +250,4 @@ Specific board members **Avi Burra** and **Kyle Knight** are also attending the 
 
 *Full sponsor materials, budget detail, schedules, and tracking spreadsheets are in `docs/art-zap-weekend/`. The single-page sponsor leave-behind is at `00-one-page-pitch.md`.*
 
-*Bitcoin For The Arts, Inc. — 501(c)(3). 100% on-chain. 100% open-source. The first nonprofit paying artists in Bitcoin.*
+*Bitcoin For The Arts, Inc. — 501(c)(3). 100% on-chain. 100% open-source. The first nonprofit paying artists in Bitcoin. Art + Zap Weekend is our flagship Bitcoin-funded fundraiser, with proceeds flowing to artists nationwide through quarterly micro-grants.*

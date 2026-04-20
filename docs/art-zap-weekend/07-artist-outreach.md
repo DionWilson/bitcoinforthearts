@@ -65,7 +65,13 @@ I'm Dion Wilson, founder of **Bitcoin For The Arts, Inc.**, the first 501(c)(3) 
 - **21 featured artists** across music, visual art, dance, theater, film, writing, and storytelling
 - Hosted by Bitcoin podcasters with combined audiences in the high tens of thousands
 
-**Honest framing up front:** This is a **fundraiser for Bitcoin For The Arts**, our 501(c)(3). Featured artists participate as **mission supporters** — donating their time so that the funds we raise can seed our Q3 grant cycle for artists nationwide. There is **no honorarium**, no fee, and no requirement to participate. We're asking you to give a small amount of your time so other artists can get funded. The on-screen donation QR is BFTA's. During your segment, your personal Lightning address is shown on-screen as a tip jar — any direct tips that come in are 100% yours.
+**Honest framing up front — please read carefully so the model is clear before you say yes:**
+
+This is a **Bitcoin-funded fundraiser for Bitcoin For The Arts**, our 501(c)(3) that funds artists nationwide through quarterly micro-grants. **It is not a real-time direct patronage event.** Audience donations route to BFTA and flow through our public 55/30/10/5 allocation — meaning the sats raised during this event go directly to BFTA's grant pool, which funds artists nationwide on a quarterly cycle. Your participation as a featured artist supports that mission.
+
+Featured artists participate as **mission supporters** — donating your time so that the funds raised can seed our Q3 grant cycle for artists nationwide. There is **no honorarium**, no fee, and no requirement to participate. We're asking you to give a small amount of your time so other artists can get funded.
+
+**The one direct piece for you:** during your broadcast segment, your personal Lightning address is shown on-screen as an optional tip jar. Any direct tips audience members send to your address are 100% yours, not counted against BFTA. The main on-screen donation QR throughout the broadcast is BFTA's, since this is our fundraiser.
 
 **What we're asking from you (pick whichever fits your schedule — all options are 25 min or less of actual on-air time):**
 
