@@ -25,6 +25,7 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 | `12-pubkey-dc-outreach-email-thomas.md` | **Pubkey DC venue partnership** outreach to Thomas (cc Michael, Katie). Includes strategy notes, fill-in checklist, and "what to do if they respond X" decision tree. |
 | `13-reply-to-julie-tech-feedback.md` | **Reply to board member Julie** on her tech-director / live-broadcast-mix feedback. Adopts her split-role suggestion + asks for cost intel and names. |
 | `14-reply-to-kenneth-positioning-feedback.md` | **Reply to board member Kenneth** on the "direct vs mediated" positioning gap. Proposes specific language tightening + asks the open question on whether to keep the "Art + Zap Weekend" name. |
+| `15-reply-to-julie-round-2-budget-and-intros.md` | **Round 2 reply to Julie** after she came back with $1,000 budget + Steven Ishuzu intro + Trey at BTC DC contact + Greg/Pubkey tech intel. Locks budget, accepts Steven intro, surfaces Trey-vs-Thomas timing question. |
 | `tabs/sponsors-tiers.csv` | Sheet tab: tier definitions and slot tracker (incl. Title Sponsor named auction lot) |
 | `tabs/sponsors-pipeline.csv` | Sheet tab: sponsor outreach pipeline |
 | `tabs/in-kind.csv` | Sheet tab: in-kind ask tracker (NYC venue is high-value, BTCPay/Lightning removed) |
