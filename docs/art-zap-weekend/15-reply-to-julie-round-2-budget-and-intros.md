@@ -32,18 +32,17 @@ The labor-only piece is a meaningful additional saving I hadn't fully internaliz
 
 Once he confirms interest and a ballpark date he could swing, please email-introduce us. The "low-footprint Bitcoiner, hard to get on the calendar" framing is exactly the profile I want — anyone with real chops and no marketing presence is going to be more reliable than someone who shows up with a polished website. I'll work around his communication preferences.
 
-**3. Trey from BTC DC — yes to connecting, but I want to coordinate the timing carefully.** Quick context: I emailed **Thomas at Pubkey directly** today (cc'd Michael as his assistant and Katie since she and I had a thread a few weeks ago) to open the venue partnership conversation. I asked Thomas for in-kind venue + zero F&B minimum (Pubkey keeps 100% of bar/food revenue) + a Pubkey-hosted segment during the broadcast.
+**3. Trey Musgrave — already on the calendar.** Beat you to it: I'm meeting **Trey Musgrave (President, Bitcoin District Initiative) tomorrow**, along with **Tim Smigelski**, the local DC Bitcoin arts contact who's joining us. Quick context on the timing — I emailed **Thomas at Pubkey directly** today (cc'd Michael and Katie) to open the corporate venue partnership conversation, and the meeting with Trey + Tim was already on the calendar separately. So we're now running the local DC track and the Pubkey corporate track in parallel.
 
-So my read is one of two paths, and I'd value your judgment on which:
+Anything specific you want me to ask Trey tomorrow given your prior work with him on Ainsley's show? Specifically:
 
-- **Option A:** Loop Trey in NOW. He has a block of dates and DC-local relationships. He could fast-track the date conversation from the local side while Thomas processes the corporate side. Risk: Thomas might feel like there are two conversations happening in parallel without his knowledge, which could read as us being disorganized.
-- **Option B:** Wait for Thomas's first response, then loop Trey in as the local execution partner. Cleaner sequencing — corporate yes first, then local logistics. Risk: we lose a week or two of Trey's date intel if Thomas takes time to reply.
+- Did Trey hold any Mondays in the late-August-to-early-October window you'd want me to flag?
+- Was there a specific operational thing during Ainsley's event that worked well or didn't, that I should bring up so we don't repeat the same friction?
+- Anything you'd want me to convey to him from you directly?
 
-My instinct is **Option B**, but you know Trey and the Pubkey team dynamic better than I do. If Trey and Thomas have a working relationship that makes the "parallel paths" thing fine, Option A is faster. If they don't really overlap operationally, Option B keeps the etiquette clean. What's your read?
+Anything else you want passed along, send it tonight or tomorrow morning and I'll fold it in.
 
-Either way: please send Trey's contact info (and any other Pubkey DC contacts you turn up) so I have them ready the moment we move.
-
-On Signal — yes, I'm on it. If Trey's a Signal-first person, that works for me. Send me his number when the time is right.
+On Signal — yes, I'm on it. If Trey or Tim are Signal-first people, send numbers and I'll add them.
 
 **4. Greg / Pubkey in-house tech.** Noted and useful. We'll lean on Greg for setup, monitoring, and the podcast-style stuff that's in his wheelhouse, with Steven (or whoever) layering in as the live broadcast mix professional specifically for Monday night. Frames the Pubkey ask cleaner too — we're not asking them to do anything outside what their setup already handles, we're bringing in our specialist for the part where their setup is admittedly stretched.
 
