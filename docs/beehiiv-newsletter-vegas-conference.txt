@@ -3,12 +3,12 @@ BEEHIIV NEWSLETTER — Vegas Conference & Sovereign Sats
 
 === SUBJECT LINE ===
 
-Vegas-bound. Our public wallet goes live. And we need 2 volunteers.
+Vegas-bound. 2 volunteers needed. Welcome our first annual member.
 
 
 === PREVIEW TEXT ===
 
-We're heading to the Bitcoin conference to find Zap-a-Thon sponsors. Plus our granting and funding wallet is now public, and a shoutout to our first annual member.
+We're heading to the Bitcoin conference to find Zap-a-Thon sponsors. Plus a shoutout to our first annual Sovereign Circle member, and on-chain transparency is coming.
 
 
 === NEWSLETTER BODY ===
@@ -99,17 +99,15 @@ If you've been thinking about joining the Sovereign Circle, every level matters 
 ---
 
 
-Our Granting and Funding Wallet Is Now Public.
+Coming Soon: On-Chain Transparency You Can Verify Yourself.
 
-A milestone in radical transparency: Bitcoin For The Arts has made the on-chain address for our **granting and funding wallet** publicly viewable. This is the wallet that artist grants are paid out from — and from this point forward, anyone in the world can see, on the Bitcoin blockchain, exactly what comes in and exactly what goes out to fund creators. No quarterly reports you have to take our word for. No accounting tricks. Just open math.
+A milestone we're getting ready to share: Bitcoin For The Arts is preparing to make our **granting and funding wallet** publicly viewable on-chain. This is the wallet that artist grants are paid out from — and once it goes live, anyone in the world will be able to see, on the Bitcoin blockchain, exactly what comes in and exactly what goes out to fund creators. No quarterly reports you have to take our word for. No accounting tricks. Just open math.
 
-This is something almost no traditional arts nonprofit can show you. We can. Because Bitcoin lets us.
+This is something almost no traditional arts nonprofit can show you. We will. Because Bitcoin lets us.
 
-A note on the HODL Vault: per our published policy, the address of the long-term endowment reserve (the 5% of every donation we earmark for a permanent Bitcoin position) is **kept private for security reasons**. We're currently in the process of moving the first position into that vault — not announcing the address itself, but you'll see it reflected in the aggregated on-chain reporting we'll publish each quarter. The HODL Vault is the long game: a permanent Bitcoin endowment that, over decades, will let BFTA fund artists no matter what's happening in Washington, in markets, or in the broader culture.
+A note on the HODL Vault — the 5% of every donation that goes to a permanent Bitcoin endowment reserve. Per our published policy, the HODL Vault address is **kept private for security reasons**. We're currently in the process of moving the first position into that vault. The endowment activity will be reflected in aggregated quarterly reporting on our website. The HODL Vault is the long game: a permanent Bitcoin endowment that, over decades, will let BFTA fund artists no matter what's happening in Washington, in markets, or in the broader culture.
 
-The granting wallet is what proves we mean what we say. Every dollar you give moves through it. Every Sovereign Circle membership compounds the inflow. Every sponsor we land at the Art + Zap Weekend feeds it. And every grant we pay out is on-chain, public, and verifiable.
-
-It's a start. And it's already further than most.
+We'll announce the public granting wallet address right here in this newsletter the moment it's live. Stay subscribed — you'll be among the first to see it.
 
 
 ---
