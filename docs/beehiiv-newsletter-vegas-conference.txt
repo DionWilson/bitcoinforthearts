@@ -3,12 +3,12 @@ BEEHIIV NEWSLETTER — Vegas Conference & Sovereign Sats
 
 === SUBJECT LINE ===
 
-Vegas-bound. The HODL Vault is live. And we need 2 volunteers.
+Vegas-bound. Our public wallet goes live. And we need 2 volunteers.
 
 
 === PREVIEW TEXT ===
 
-We're heading to the Bitcoin conference to find Zap-a-Thon sponsors — and we just opened our first endowment position. Plus a shoutout to our first annual member.
+We're heading to the Bitcoin conference to find Zap-a-Thon sponsors. Plus our granting and funding wallet is now public, and a shoutout to our first annual member.
 
 
 === NEWSLETTER BODY ===
@@ -99,17 +99,17 @@ If you've been thinking about joining the Sovereign Circle, every level matters 
 ---
 
 
-The HODL Vault Is Now LIVE.
+Our Granting and Funding Wallet Is Now Public.
 
-A milestone we want to share openly: Bitcoin For The Arts has opened its first position in the HODL Vault.
+A milestone in radical transparency: Bitcoin For The Arts has made the on-chain address for our **granting and funding wallet** publicly viewable. This is the wallet that artist grants are paid out from — and from this point forward, anyone in the world can see, on the Bitcoin blockchain, exactly what comes in and exactly what goes out to fund creators. No quarterly reports you have to take our word for. No accounting tricks. Just open math.
 
-0.0691 BTC. Acquired at an average price of $71,714 per Bitcoin. Approximately 6.9 million sats. Approximately $4,955 in USD value at acquisition.
+This is something almost no traditional arts nonprofit can show you. We can. Because Bitcoin lets us.
 
-This is the first deposit into our long-term Bitcoin endowment — the 5% of every donation that goes to a permanent reserve, untouched, designed to grow in purchasing power over decades. The HODL Vault is what makes BFTA different from every other arts nonprofit in the country: instead of running the endowment in dollars that inflate away, we run it in the only money that doesn't.
+A note on the HODL Vault: per our published policy, the address of the long-term endowment reserve (the 5% of every donation we earmark for a permanent Bitcoin position) is **kept private for security reasons**. We're currently in the process of moving the first position into that vault — not announcing the address itself, but you'll see it reflected in the aggregated on-chain reporting we'll publish each quarter. The HODL Vault is the long game: a permanent Bitcoin endowment that, over decades, will let BFTA fund artists no matter what's happening in Washington, in markets, or in the broader culture.
 
-Every dollar you give helps grow this position. Every Sovereign Circle membership compounds it. Every sponsor we land at the Art + Zap Weekend feeds it. The HODL Vault is the long game — the structural piece that, decades from now, will let BFTA fund artists no matter what's happening in Washington, in markets, or in the broader culture.
+The granting wallet is what proves we mean what we say. Every dollar you give moves through it. Every Sovereign Circle membership compounds the inflow. Every sponsor we land at the Art + Zap Weekend feeds it. And every grant we pay out is on-chain, public, and verifiable.
 
-It's small. It's a start. It's real.
+It's a start. And it's already further than most.
 
 
 ---
@@ -122,7 +122,7 @@ Bitcoin For The Arts is a 501(c)(3) nonprofit. We are the first organization pay
 - 55% direct artist grants
 - 30% programs (workshops, residencies, productions, this Art + Zap Weekend)
 - 10% operations
-- 5% HODL Vault — the permanent Bitcoin endowment we just opened
+- 5% HODL Vault — the permanent Bitcoin endowment (address kept private for security; first position currently being established)
 
 We pursue federal funding where it's available, but we don't depend on it. We don't depend on any single institution. We are building from the community, for the community, on rails that no central authority can shut down. The artists who receive our grants get paid in Bitcoin — money they own, money they can move anywhere in the world without permission, money that keeps its value better than the dollar.
 
