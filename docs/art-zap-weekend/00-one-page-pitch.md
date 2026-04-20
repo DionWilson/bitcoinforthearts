@@ -14,8 +14,8 @@
 
 ## When
 
-- **Saturday + Sunday, [DATE]** — 1:00 – 5:00 pm ET each day, broadcast live
-- **Monday evening, [DATE]** — in-person finale headlined by a Broadway performer (Broadway is dark on Mondays — top NYC talent is uniquely available)
+- **A weekend in late August through early October 2026** — Saturday + Sunday, 1:00 – 5:00 pm ET each day, broadcast live (specific weekend confirming with venue)
+- **Following Monday evening** — in-person finale headlined by a Broadway performer (Broadway is dark on Mondays — top NYC talent is uniquely available)
 
 ## Where
 

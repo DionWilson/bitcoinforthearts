@@ -208,14 +208,17 @@ Specific board members **Avi Burra** and **Kyle Knight** are also attending the 
 
 ## Slide 11 — Timeline
 
-| Date | Milestone |
+**Target event window: a Saturday + Sunday + Monday somewhere between late August 2026 and early October 2026.** Specific weekend confirms once Pubkey DC (or backup venue) commits to a date.
+
+| When | Milestone |
 |---|---|
-| **This week** | Tuesday sponsor pitches; Pubkey DC venue outreach; LunaNode/BTCPay sanity confirmed; CPA reviews acknowledgment letter template |
-| **Within 2 weeks** | 21 broadcast artists confirmed; Broadway headliner confirmed; 8 podcasters confirmed; first 3 sponsors closed |
-| **Week before event** | Tech checks for all artists; producer test stream; signage printed; final sponsor lineup locked |
+| **This week** | Pubkey DC venue outreach (Thomas, Michael, Katie); Vegas conference April 27–29 sponsor meetings; LunaNode/BTCPay sanity confirmed; CPA reviews acknowledgment letter template |
+| **By end of May 2026** | Specific event weekend locked with venue; first 1–2 sponsors closed verbal; Broadway headliner outreach in motion |
+| **By mid-July 2026** | 21 broadcast artists confirmed; Broadway headliner confirmed; 8 podcasters confirmed; full sponsor roster locked; artist + host roster CLOSED |
+| **2 weeks before event** | Tech checks for all artists; producer test stream; signage printed; final sponsor lineup locked |
 | **Event weekend** | Sat + Sun broadcast 1–5 pm ET |
 | **Event Monday** | In-person finale at Pubkey, ~7 pm – midnight |
-| **Within 30 days post-event** | Acknowledgment letters sent to donating podcasters; sponsor recap report; financial reconciliation against 55/30/10/5 |
+| **Within 30 days post-event** | Acknowledgment letters sent to donating podcasters and participating artists; sponsor recap report; financial reconciliation against 55/30/10/5; **board post-event review** to apply the surprise-gratitude-payment threshold formula |
 
 ---
 

@@ -52,7 +52,7 @@ You all are the perfect venue for this for reasons that go beyond geography. Pub
 
 We're hoping for a **partnership rather than a straight rental**. Specifically:
 
-- **In-kind venue contribution** for the Monday finale (we'd be flexible on the date — we're aiming for [target month / window], and we'd love to know what evenings you have open). The evening would run roughly 6 PM setup → doors at 7 PM → performances 8:30–10 PM → auction → ~11 PM wrap.
+- **In-kind venue contribution** for the Monday finale. We're targeting a Monday evening between **late August and early October 2026** — flexible on the specific date, and we'd love to know which Mondays in that window you have open. The evening would run roughly 6 PM setup → doors at 7 PM → performances 8:30–10 PM → auction → ~11 PM wrap.
 - **Revenue share on bar** rather than a flat F&B minimum, if that works for you — the BFTA crowd will drink, and a revenue share is a cleaner deal for both of us.
 - **Pubkey-hosted segment** during one of our weekend broadcasts — your team gets airtime to talk about what Pubkey is building. We can shape that segment however you want.
 
@@ -93,7 +93,7 @@ Lightning: gifts@donations.bitcoinforthearts.org | Nostr: npub15rnn220qfdyhpgv9a
 
 ## Before sending — fill-in checklist
 
-- [ ] Replace `[target month / window]` with the actual range you have in mind for the Monday finale (e.g., "late September or October" — keep it as a 2–4 week window so they have flexibility)
+- [x] ~~Date range~~ — already filled in (late August through early October 2026)
 - [x] ~~Lightning address and Nostr pubkey~~ — already filled in (Lightning: gifts@donations.bitcoinforthearts.org / Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw)
 - [ ] Generate the PDF of `00-one-page-pitch.md` (Google Docs → File → Download → PDF Document) and rename to `Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf`
 - [ ] Attach the PDF

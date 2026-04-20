@@ -26,8 +26,8 @@ We are not waiting for institutions to decide whether artists deserve funding. W
 | | |
 |---|---|
 | **Format** | 2-day weekend live stream + Monday-night in-person finale |
-| **Broadcast dates** | Saturday + Sunday, [DATE] |
-| **Finale date** | Monday, [DATE] (Broadway is dark — top NYC talent uniquely available) |
+| **Broadcast dates** | A Saturday + Sunday in **late August through early October 2026** (specific weekend confirming with venue) |
+| **Finale date** | Following Monday — Broadway is dark, which makes top NYC talent uniquely available |
 | **Live broadcast hours** | 4 hours per day, 8 hours total |
 | **Time window** | 1:00 pm – 5:00 pm ET (6 pm – 10 pm UK / 7 pm – 11 pm CET) |
 | **Featured artists** | 21 total (10–11 per broadcast day) |
@@ -147,7 +147,7 @@ In-kind support is treated as equivalent value to cash sponsorship at the corres
 
 ## The Ask
 
-We are confirming the full sponsor roster by [DATE]. Today, we are asking for one of three commitments:
+We are confirming the full sponsor roster by **mid-July 2026**. Today, we are asking for one of three commitments:
 
 1. **A signed sponsorship at Title, Supporting, or Friend tier** — or a combination of cash + in-kind
 2. **A specific in-kind contribution** from the list above

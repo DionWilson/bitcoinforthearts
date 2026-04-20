@@ -51,7 +51,7 @@ Send via email or DM. Personalize the first paragraph with something specific yo
 
 ---
 
-**Subject:** Invitation: Art + Zap Weekend — [Artist Name], [date]
+**Subject:** Invitation: Art + Zap Weekend — [Artist Name], late summer / early fall 2026
 
 Hi [Artist First Name],
 
@@ -60,8 +60,8 @@ Hi [Artist First Name],
 I'm Dion Wilson, founder of **Bitcoin For The Arts, Inc.**, the first 501(c)(3) nonprofit paying artists exclusively in Bitcoin. We're putting together our first global event — **Art + Zap Weekend** — and I want you to be one of our 21 featured artists.
 
 **The event:**
-- **Saturday + Sunday, [DATE]** — 2 days of live broadcast, 1–5 pm ET each day, on YouTube + X + Nostr (Zap.Stream) + Fountain
-- **Monday evening, [DATE]** — in-person finale at **Pubkey [DC / NYC]** with a headlined performance + silent art auction
+- **A weekend in late August through early October 2026** — Saturday + Sunday, 2 days of live broadcast, 1–5 pm ET each day, on YouTube + X + Nostr (Zap.Stream) + Fountain. We're confirming the specific weekend with our venue partner and will lock the date once that's set.
+- **Following Monday evening** — in-person finale at **Pubkey DC** (or NYC alternative) with a headlined performance + silent art auction
 - **21 featured artists** across music, visual art, dance, theater, film, writing, and storytelling
 - Hosted by Bitcoin podcasters with combined audiences in the high tens of thousands
 
@@ -108,7 +108,7 @@ Lightning: gifts@donations.bitcoinforthearts.org | Nostr: npub15rnn220qfdyhpgv9a
 
 When email is too long for the channel.
 
-> Hey [Name] — really love your [specific work]. I'm Dion at @BitcoinForArts (501c3 paying artists nationwide in BTC). We're doing **Art + Zap Weekend** [date] — 21 featured artists, 2 days live broadcast, Monday in-person finale at Pubkey. **This is a fundraiser for our org — featured artists participate as mission supporters, no honorarium**, but every sat raised funds Q3 micro-grants for artists nationwide.
+> Hey [Name] — really love your [specific work]. I'm Dion at @BitcoinForArts (501c3 paying artists nationwide in BTC). We're doing **Art + Zap Weekend** sometime late Aug–early Oct 2026 — 21 featured artists, 2 days live broadcast, Monday in-person finale at Pubkey. **This is a fundraiser for our org — featured artists participate as mission supporters, no honorarium**, but every sat raised funds Q3 micro-grants for artists nationwide.
 >
 > Want to be one of the 21? You can do live, pre-recorded + live chat, or just have your work shown on-screen — whatever fits. ~25-min slot. Your personal LN address is on-screen during your segment as a tip jar (tips = 100% yours).
 >
@@ -124,7 +124,7 @@ Hi [Artist First Name],
 
 Quick bump on the note below. I know inboxes are brutal — totally get it if this isn't a fit, but I wanted to make sure it didn't just get buried.
 
-We have a hard deadline of **[date]** to lock the artist roster, so if you're interested I'd love to know one way or the other. Even a "no, but try me for next one" is incredibly helpful.
+We have a hard deadline of **mid-July 2026** to lock the artist roster, so if you're interested I'd love to know one way or the other. Even a "no, but try me for next one" is incredibly helpful.
 
 If yes: pick any of the 5 formats and reply with what works. I'll set up a quick call.
 

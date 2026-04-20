@@ -30,7 +30,7 @@ Before you leave for the conference:
 
 When you have 30 seconds — at a coffee bar, in line for a panel, in an elevator:
 
-> "Hey [Name] — I'm on the board of **Bitcoin For The Arts**. We're the first 501(c)(3) paying artists exclusively in Bitcoin. We're putting together our flagship event this [season] — **Art + Zap Weekend** — two days of live broadcast, 21 artists, in-person finale at **Pubkey**, headlined by a **Broadway-caliber performer**. We're looking for **sponsors** at $5K, $10K, and $25K tiers. **Would you be open to a 30-minute call with our founder Dion this week to see if it's a fit for [their company]?**"
+> "Hey [Name] — I'm on the board of **Bitcoin For The Arts**. We're the first 501(c)(3) paying artists exclusively in Bitcoin. We're putting together our flagship event **late August through early October 2026** — **Art + Zap Weekend** — two days of live broadcast, 21 artists, in-person finale at **Pubkey**, headlined by a **Broadway-caliber performer**. We're looking for **sponsors** at $5K, $10K, and $25K tiers. **Would you be open to a 30-minute call with our founder Dion this week to see if it's a fit for [their company]?**"
 
 **That's it.** If yes → exchange info, log it, move on. If no → "Totally — who *should* I be talking to?"
 

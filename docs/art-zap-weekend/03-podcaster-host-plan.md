@@ -198,7 +198,7 @@ Send this via DM, Nostr, or email. Personalize the first line.
 
 ## Backup Plan
 
-If you cannot land 8 podcasters by [date]:
+If you cannot land 8 podcasters by **mid-July 2026** (target host-roster lock date):
 
 - **Plan B:** 4 podcasters (2 per day, 2 hours each) + 1 BFTA team member as co-host
 - **Plan C:** 2 podcasters (one per day) who serve as anchors + rotating artist co-hosts in the second chair (artists co-hosting each other's segments)
