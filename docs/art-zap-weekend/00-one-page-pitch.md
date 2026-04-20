@@ -64,6 +64,6 @@ We are asking for **one** of the following:
 **Contact**
 Dion Wilson — Founder & Director
 **donate@bitcoinforthearts.org** | bitcoinforthearts.org
-Lightning: gifts@donations.bitcoinforthearts.org | BTC: [BTC address] | Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+Lightning: gifts@donations.bitcoinforthearts.org | BTC: bc1qag0lkvdk4rxqzjuyl47k843gqhezqgjmjvfuuk | Nostr: npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
 *BFTA is a 501(c)(3) tax-exempt nonprofit. EIN: [EIN]. All sponsorships and donations are tax-deductible to the extent allowed by law.*
