@@ -10,10 +10,12 @@ SPONSOR REVENUE TARGETS,SPONSOR REVENUE TARGET (TOTAL CAP),80000,
 SPONSOR REVENUE TARGETS,REALISTIC TARGET (45K scenario),45000,
 SPONSOR REVENUE TARGETS,FLOOR TARGET (25K scenario),25000,
 ,,,
-ARTIST HONORARIA,21 broadcast artists x $500 BTC each,10500,Flat $500 - guaranteed at every funding scenario - paid from 55% bucket
-ARTIST HONORARIA,Broadway-caliber finale headliner,2500,Premium rate - paid from 30% Programs bucket as finale draw
-ARTIST HONORARIA,3 supporting finale performers x $500 (already counted in 21 broadcast),0,Same artists from weekend lineup - no double-pay
-ARTIST HONORARIA,TOTAL HONORARIA OUTLAY,13000,
+ARTIST PARTICIPATION POLICY,21 broadcast artists - mission supporters,0,No honorarium - participate as 501(c)(3) mission supporters
+ARTIST PARTICIPATION POLICY,3 supporting finale performers - mission supporters,0,Same model
+ARTIST PARTICIPATION POLICY,Broadway-caliber headliner (EXCEPTION),2500,Only paid performance role - paid from 30% Programs bucket as production cost
+ARTIST PARTICIPATION POLICY,TOTAL ARTIST OUTLAY,2500,Just the Broadway headliner
+,,,
+ARTIST PARTICIPATION POLICY,SURPRISE GRATITUDE PAYMENT (board-discretionary - INTERNAL ONLY),5250,21 artists x $250. Stretch scenario only ($80K cash + $15K surplus after Q3 commitments). Announced at Monday finale as surprise. Never promised to artists in advance.
 ,,,
 EVENT HARD COSTS,Venue (Pubkey DC or NYC alternative if not in-kind),5000,Aim for in-kind
 EVENT HARD COSTS,StreamYard Pro - 1 month,50,
@@ -25,36 +27,41 @@ EVENT HARD COSTS,Videographer + recap reel (if not in-kind),2500,Aim for in-kind
 EVENT HARD COSTS,Sound engineer at finale (if not in-kind),1000,Aim for in-kind
 EVENT HARD COSTS,Print signage / step-and-repeat,800,
 EVENT HARD COSTS,Catering / drinks at finale (if not in-kind),2500,Aim for in-kind
-EVENT HARD COSTS,Broadway headliner honorarium,2500,Paid from Programs bucket - critical finale draw
-EVENT HARD COSTS,Travel for out-of-area artists,1500,Optional - sponsor-funded preferred
+EVENT HARD COSTS,Broadway headliner honorarium,2500,Paid from Programs bucket - critical finale draw - only paid performance role
+EVENT HARD COSTS,Travel for Broadway headliner / out-of-area artists,1500,Optional - sponsor-funded preferred
 EVENT HARD COSTS,Promotional ad spend (X / Nostr),1000,Optional
 EVENT HARD COSTS,Contingency (15%),3000,
 EVENT HARD COSTS,TOTAL HARD COSTS (NO IN-KIND incl. Broadway honorarium),24950,
 EVENT HARD COSTS,TOTAL HARD COSTS (FULL IN-KIND COVERAGE),9000,Software + signage + producer + Broadway honorarium + contingency
 ,,,
-ALLOCATION FRAMING,Treat event production costs + Broadway honorarium as Programs (30%),,Recommended approach - matches published 55/30/10/5 model
-ALLOCATION FRAMING,21 broadcast artist honoraria ($500 ea = $10500) flow from Direct Artist Grants (55%),,Featured artists ARE direct artist grant recipients
-ALLOCATION FRAMING,Excess in 55% bucket beyond honoraria seeds Q3 nationwide micro-grants,,Strong sponsor story - "21 featured artists PLUS more grants"
-ALLOCATION FRAMING,Sponsor language: "55% to artist grants (21 featured + Q3 micro-grants nationwide) / 30% programs / 10% ops / 5% HODL Vault",,Use this in pitch
+ALLOCATION FRAMING,Treat event production costs + Broadway honorarium as Programs (30%),,Broadway honorarium = production cost not artist grant
+ALLOCATION FRAMING,Entire 55% Direct Artist Grants bucket flows to Q3 nationwide micro-grants,,Since broadcast artists are uncompensated mission supporters
+ALLOCATION FRAMING,Sponsor language: "55% to Q3 micro-grants nationwide / 30% programs incl. this event / 10% ops / 5% HODL Vault",,Use this in pitch
+ALLOCATION FRAMING,Stronger sponsor story than honorarium model: "21 artists give their time so 49 artists get funded",,At target $45K scenario: 55% bucket = $24750 = ~49 grants @ $500
 ,,,
-SCENARIO - FLOOR ($25K raised),Artist grants (55%),13750,$10500 to 21 honoraria + $3250 seeds Q3 micro-grants (~5 grants @ $500)
+SCENARIO - FLOOR ($25K raised),Artist grants (55%),13750,All seeds Q3 nationwide micro-grants (~27 grants @ $500 or 9 @ $1500). Surplus < $15K threshold - no gratitude payment.
 SCENARIO - FLOOR ($25K raised),Programs (30%) - includes Broadway honorarium and event production,7500,Broadway honorarium $2500 + producer + venue $5000 - requires full in-kind coverage to fit
 SCENARIO - FLOOR ($25K raised),Operations (10%),2500,
 SCENARIO - FLOOR ($25K raised),HODL Vault (5%),1250,
 ,,,
-SCENARIO - TARGET ($45K raised),Artist grants (55%),24750,$10500 to 21 honoraria + $14250 seeds Q3 micro-grants (~25 grants @ $500 or 9 @ $1500)
+SCENARIO - TARGET ($45K raised),Artist grants (55%),24750,All seeds Q3 nationwide micro-grants (~49 grants @ $500 or 16 @ $1500). Surplus < $15K threshold - no gratitude payment yet.
 SCENARIO - TARGET ($45K raised),Programs (30%) - includes Broadway honorarium hired producer and full event production,13500,Comfortable budget for hired professional producer + venue + Broadway honorarium + most event costs
 SCENARIO - TARGET ($45K raised),Operations (10%),4500,
 SCENARIO - TARGET ($45K raised),HODL Vault (5%),2250,
 ,,,
-SCENARIO - STRETCH ($80K raised),Artist grants (55%),44000,$10500 to 21 honoraria + $33500 funds full Q3 grant cycle (50+ micro-grants)
+SCENARIO - STRETCH ($80K raised),Artist grants (55%),44000,$5250 reserved for surprise gratitude payment IF board approves. Remaining $38750 = ~77 grants @ $500 or 26 @ $1500.
 SCENARIO - STRETCH ($80K raised),Programs (30%) - full producer team premium venue full event production,24000,
 SCENARIO - STRETCH ($80K raised),Operations (10%),8000,
 SCENARIO - STRETCH ($80K raised),HODL Vault (5%),4000,
+,,,
+GRATITUDE PAYMENT THRESHOLD FORMULA,Cash sponsorship revenue must exceed,50000,Stretch scenario only
+GRATITUDE PAYMENT THRESHOLD FORMULA,AND 55% bucket surplus after Q3 commitments must exceed,15000,Board may revisit per event
+GRATITUDE PAYMENT THRESHOLD FORMULA,Maximum payment per participating artist,250,21 artists x $250 = $5250
+GRATITUDE PAYMENT THRESHOLD FORMULA,Disclosure rule,NEVER mention to artists in advance,Surprise reveal at Monday finale or no reveal at all
 ,,,
 PRODUCER STAFFING TIERS,Floor ($25K) - solo producer (Dion or volunteer),0,Volunteer cost
 PRODUCER STAFFING TIERS,Target ($45K) - hired professional NYC producer + 1 volunteer,2500,$500-$1500/day x 2 days
 PRODUCER STAFFING TIERS,Stretch ($80K) - hired producer team (lead + technical director) + 1 volunteer,5000,$2500/day team rate x 2 days
 ,,,
 ZAP / DONATION POLICY,Default on-screen donation QR for all 8 broadcast hours,BFTA Lightning address,All audience zaps default to BFTA - allocated through 55/30/10/5
-ZAP / DONATION POLICY,Each artist's personal LN address shown briefly during their segment as optional tip jar,Artist's own LN address,Direct tips to artist = 100% theirs - not counted against BFTA revenue
+ZAP / DONATION POLICY,Each artist's personal LN address shown during their segment as tip jar,Artist's own LN address,Direct tips to artist = 100% theirs - not counted against BFTA revenue. More prominent given no honorarium.

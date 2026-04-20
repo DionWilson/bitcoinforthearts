@@ -1,26 +1,27 @@
-#,Artist Name,Discipline,City / Country,Email,Nostr (npub),Other Handle,Day,Slot Number,Slot Time (ET),Format (Live / Pre-Recorded / Visual),Honorarium (USD),Personal LN Address (Tip Jar),Status,Tech Check Date,Honorarium Sent?,Notes
-1,,Music,,,,,Sat,1,1:05-1:27 PM,,500,,Not contacted,,No,Honorarium = flat $500 BTC paid within 14 days post-event
-2,,Music,,,,,Sat,2,1:30-1:52 PM,,500,,Not contacted,,No,
-3,,Visual Art,,,,,Sat,3,1:55-2:17 PM,,500,,Not contacted,,No,
-4,,Dance,,,,,Sat,4,2:20-2:42 PM,,500,,Not contacted,,No,
-5,,Theater / Spoken Word,,,,,Sat,5,2:45-3:07 PM,,500,,Not contacted,,No,
-6,,Film,,,,,Sat,6,3:10-3:32 PM,,500,,Not contacted,,No,
-7,,Writing / Storytelling,,,,,Sat,7,3:35-3:57 PM,,500,,Not contacted,,No,
-8,,Music,,,,,Sat,8,4:00-4:22 PM,,500,,Not contacted,,No,
-9,,Visual Art,,,,,Sat,9,4:25-4:47 PM,,500,,Not contacted,,No,
-10,,Closing Showcase Artist,,,,,Sat,10,4:50-5:00 PM,,500,,Not contacted,,No,
-11,,Music,,,,,Sun,1,1:05-1:25 PM,,500,,Not contacted,,No,
-12,,Music,,,,,Sun,2,1:28-1:48 PM,,500,,Not contacted,,No,
-13,,Visual Art,,,,,Sun,3,1:51-2:11 PM,,500,,Not contacted,,No,
-14,,Dance,,,,,Sun,4,2:14-2:34 PM,,500,,Not contacted,,No,
-15,,Theater / Spoken Word,,,,,Sun,5,2:37-2:57 PM,,500,,Not contacted,,No,
-16,,Film,,,,,Sun,6,3:00-3:20 PM,,500,,Not contacted,,No,
-17,,Writing / Storytelling,,,,,Sun,7,3:23-3:43 PM,,500,,Not contacted,,No,
-18,,Music,,,,,Sun,8,3:46-4:06 PM,,500,,Not contacted,,No,
-19,,Visual Art,,,,,Sun,9,4:09-4:29 PM,,500,,Not contacted,,No,
-20,,Closing Featured Artist,,,,,Sun,10,4:32-4:50 PM,,500,,Not contacted,,No,
-21,,Broadway-caliber Headliner,,,,,Mon,Finale,~9:30 PM at Pubkey,,2500,,Not contacted,,No,Headliner gets premium honorarium - separate from $500 broadcast tier - paid from 30% Programs bucket
-22,,Supporting Finale Performer 1,,,,,Mon,Finale,~8:30 PM at Pubkey,,500,,Not contacted,,No,From the weekend's broadcast lineup - paid same $500
-23,,Supporting Finale Performer 2,,,,,Mon,Finale,~8:50 PM at Pubkey,,500,,Not contacted,,No,
-24,,Supporting Finale Performer 3,,,,,Mon,Finale,~9:10 PM at Pubkey,,500,,Not contacted,,No,
-TOTAL HONORARIA,,,,,,,,,,,12500,,,,,21 broadcast x $500 = $10500 + Broadway headliner $2500 = $12500. Broadway honorarium is from Programs bucket (30%) since it is a venue-specific finale draw.
+#,Artist Name,Discipline,City / Country,Email,Nostr (npub),Other Handle,Day,Slot Number,Slot Time (ET),Format (Live / Pre-Recorded / Visual),Honorarium (USD),Personal LN Address (Tip Jar),Status,Tech Check Date,Acknowledgment Letter Sent?,Notes
+1,,Music,,,,,Sat,1,1:05-1:27 PM,,0,,Not contacted,,No,Mission supporter - no honorarium - LN tip jar shown on-screen
+2,,Music,,,,,Sat,2,1:30-1:52 PM,,0,,Not contacted,,No,
+3,,Visual Art,,,,,Sat,3,1:55-2:17 PM,,0,,Not contacted,,No,
+4,,Dance,,,,,Sat,4,2:20-2:42 PM,,0,,Not contacted,,No,
+5,,Theater / Spoken Word,,,,,Sat,5,2:45-3:07 PM,,0,,Not contacted,,No,
+6,,Film,,,,,Sat,6,3:10-3:32 PM,,0,,Not contacted,,No,
+7,,Writing / Storytelling,,,,,Sat,7,3:35-3:57 PM,,0,,Not contacted,,No,
+8,,Music,,,,,Sat,8,4:00-4:22 PM,,0,,Not contacted,,No,
+9,,Visual Art,,,,,Sat,9,4:25-4:47 PM,,0,,Not contacted,,No,
+10,,Closing Showcase Artist,,,,,Sat,10,4:50-5:00 PM,,0,,Not contacted,,No,
+11,,Music,,,,,Sun,1,1:05-1:25 PM,,0,,Not contacted,,No,
+12,,Music,,,,,Sun,2,1:28-1:48 PM,,0,,Not contacted,,No,
+13,,Visual Art,,,,,Sun,3,1:51-2:11 PM,,0,,Not contacted,,No,
+14,,Dance,,,,,Sun,4,2:14-2:34 PM,,0,,Not contacted,,No,
+15,,Theater / Spoken Word,,,,,Sun,5,2:37-2:57 PM,,0,,Not contacted,,No,
+16,,Film,,,,,Sun,6,3:00-3:20 PM,,0,,Not contacted,,No,
+17,,Writing / Storytelling,,,,,Sun,7,3:23-3:43 PM,,0,,Not contacted,,No,
+18,,Music,,,,,Sun,8,3:46-4:06 PM,,0,,Not contacted,,No,
+19,,Visual Art,,,,,Sun,9,4:09-4:29 PM,,0,,Not contacted,,No,
+20,,Closing Featured Artist,,,,,Sun,10,4:32-4:50 PM,,0,,Not contacted,,No,
+21,,Broadway-caliber Headliner,,,,,Mon,Finale,~9:30 PM at Pubkey,,2500,,Not contacted,,No,EXCEPTION - paid honorarium from 30% Programs bucket - venue-specific finale draw - only paid performance role
+22,,Supporting Finale Performer 1,,,,,Mon,Finale,~8:30 PM at Pubkey,,0,,Not contacted,,No,Mission supporter - same as broadcast artists
+23,,Supporting Finale Performer 2,,,,,Mon,Finale,~8:50 PM at Pubkey,,0,,Not contacted,,No,
+24,,Supporting Finale Performer 3,,,,,Mon,Finale,~9:10 PM at Pubkey,,0,,Not contacted,,No,
+TOTAL HONORARIA OUTLAY,,,,,,,,,,,2500,,,,Only Broadway headliner is paid - 21 broadcast + 3 supporting finale performers participate as mission supporters
+SURPRISE GRATITUDE PAYMENT (board-discretionary - INTERNAL ONLY - never disclose to artists in advance),,,,,,,,,,,5250,,,,At stretch ($80K) scenario only. Up to $250 per participating artist (21 x $250). Announced at Monday finale as surprise. Paid within 30 days. NOT promised in advance.

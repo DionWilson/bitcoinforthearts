@@ -80,75 +80,117 @@ Legal but a credibility cost. Only use if Options A + B don't cover hard costs, 
 
 ---
 
-## Artist Honorarium Policy
+## Artist Participation Policy
 
-**Each featured artist receives a flat $500 BTC honorarium** — guaranteed at every funding scenario, no strings attached, no minimum reporting requirement.
+**Featured artists participate as mission-supporters of BFTA's 501(c)(3) cause — no honorarium, no fee, no quid pro quo.**
 
-- 21 broadcast artists × $500 = **$10,500 total honoraria**
-- Paid from the **55% Direct Artist Grants bucket** of sponsor revenue
-- Sized intentionally:
-  - **Meaningful** ($500 in BTC is real money for ~25 minutes on-air + 1 prep call)
-  - **Affordable at the floor scenario** (uses only $10,500 of the floor's $13,750 artist-grants bucket)
-  - **No requirements attached** — exactly what BFTA's micro-grant philosophy demands. Artist gets paid, end of obligation.
-- Excess in the 55% bucket beyond honoraria flows to **Q3 nationwide micro-grants** for non-event artists
+This is by board direction. The reasoning:
 
-> **Why $500 (not higher):** The job is one ~25-minute on-air segment + 1 prep call, not a multi-week residency. $500 is a strong rate for that work and aligns with BFTA's broader micro-grant range ($500–$2,000). Higher honoraria for the *same* work would crowd out the micro-grant pipeline and make the event look more like talent-buying than mission-funding.
+- **Removes any quid pro quo.** Artists are *not* being compensated for their participation. They are donating their time and creative work in support of a 501(c)(3) cause, exactly as a volunteer would. This eliminates legal ambiguity around tax-exempt org compensation rules.
+- **Reinforces grassroots ethos.** "Artists giving their time so other artists can be funded" is a stronger founding-event story than "artists paid to perform."
+- **Frees the entire 55% bucket to fund the Q3 nationwide micro-grant cycle.** Every dollar in the artist-grants bucket from this event seeds grants for *more* artists nationwide than just the 21 on the broadcast.
+- **Audience tips remain a real upside for artists.** Each artist's personal Lightning address is shown during their segment as a tip jar — direct tips are 100% theirs, outside BFTA's books.
+
+### What artists DO get
+
+- A clipped highlight reel of their segment (theirs to use anywhere)
+- Permanent archive on YouTube and Nostr with full credit and links
+- Personal LN address shown on-screen during their segment as an audience tip jar (100% of direct tips are theirs)
+- Social posts from BFTA's channels and partner podcaster networks
+- Invitation to the Monday in-person finale at Pubkey
+- A written acknowledgment of their contribution from BFTA (NOT a tax receipt — services aren't deductible per IRS Pub 526; same template as the podcaster acknowledgment letter)
+- Optional inclusion in the silent art auction (artist credited as donor)
+
+### Surprise post-event gratitude payment (board-discretionary)
+
+If the event is exceptionally successful, the board may — at its sole discretion, **after** the event closes — approve a one-time gratitude payment to participating artists as a thank-you. **This must remain a genuine surprise to artists in advance, or it stops being a surprise and becomes implicit compensation.**
+
+**Codified threshold formula** (board may revisit per event):
+
+> *If cash sponsorship revenue exceeds $50,000 AND the 55% Direct Artist Grants bucket has at least $15,000 of surplus after Q3 nationwide micro-grant commitments are funded, the board MAY (not shall) approve a one-time gratitude payment of up to $250 per participating artist, distributed within 30 days of the event.*
+
+**If approved:**
+- Announced live at the Monday finale as a surprise reveal (dramatic + photographable + builds artist loyalty)
+- Paid in BTC to each artist's confirmed Lightning address within 30 days
+- Documented as a post-event recognition expense, not a contracted honorarium
+- Artist acknowledgment letter updated to note any gratitude payment received
+
+**If NOT approved:**
+- No payment is made; no commitment was ever in place
+- Artists never knew there was a possibility, so no expectation is broken
+
+### Broadway headline performer — the one exception
+
+The Monday-night Broadway-caliber headliner receives an **honorarium of approximately $2,500 paid from the 30% Programs bucket.** This is the only paid performer.
+
+Why this exception:
+
+- A Broadway-caliber live in-person performance with potential travel is a fundamentally different ask than a remote 25-min broadcast slot
+- Asking a Broadway performer to do an in-person Monday-night show entirely for free would block the strongest finale draw
+- This is a **production cost** for the in-person finale event, not a participation fee — paid from Programs bucket, not Artist Grants bucket
+- Disclosed to all parties (sponsors, board, artists if asked) as the one paid performance role at the event
+
+If a Broadway-caliber performer in your network IS willing to do it for free as a mission contribution, the saved $2,500 flows back to the Programs bucket (or to the post-event gratitude fund if approved).
 
 ## Audience Donation / Zap Policy
 
 **The on-screen donation QR is BFTA's Lightning address (`donate@bitcoinforthearts.org`) for the full 8 hours of broadcast.** This is a fundraiser FOR Bitcoin For The Arts.
 
-During each artist's ~25-minute segment, that artist's personal Lightning address is shown briefly in a secondary on-screen lower-third labeled **"Tip [Artist] Directly"** as an optional tip jar. The main BFTA donation QR remains visible throughout. Direct tips to the artist's personal address are 100% theirs and not counted against BFTA's revenue.
+During each artist's ~25-minute segment, that artist's personal Lightning address is shown in a secondary on-screen lower-third labeled **"Tip [Artist] Directly"** as a tip jar — given that artists are not being paid an honorarium, the tip jar is shown more prominently and for the full duration of their segment. The main BFTA donation QR remains visible throughout. Direct tips to the artist's personal address are 100% theirs and not counted against BFTA's revenue.
 
-This policy is honest with both audiences:
+This policy is honest with all three audiences:
 
-- **Donors** see one clear default ("support BFTA") with an optional secondary path ("tip the artist") — no confusion about where their sats go
-- **Artists** know upfront they'll receive a guaranteed $500 honorarium plus any direct tips — no reliance on audience generosity for their pay
-- **Sponsors** know their event is a real fundraiser — donor flow defaults to BFTA, not redirected to individual artists
+- **Donors** see one clear default ("support BFTA") with a clear secondary path ("tip the artist") — no confusion about where their sats go
+- **Artists** know they're contributing as mission supporters and that any direct audience tips are their upside (no honorarium expectation)
+- **Sponsors** know their event is a real fundraiser — donor flow defaults to BFTA, and the 55% bucket is freed to fund Q3 nationwide micro-grants since participating artists are uncompensated
 
 ---
 
 ## Budget Logic — Three Plausible Scenarios
 
-All scenarios assume the **$10,500 in artist honoraria is paid from the 55% Direct Artist Grants bucket**. Excess in that bucket flows to Q3 nationwide micro-grants.
+Because participating broadcast artists are not paid honoraria, **the entire 55% Direct Artist Grants bucket flows to Q3 nationwide micro-grants** — meaning every sponsor dollar in this event funds *more* artists than just the 21 on the broadcast.
+
+The Broadway headliner's ~$2,500 honorarium is paid from the 30% Programs bucket as a production cost.
 
 ### Floor scenario — $25K raised (1 Title, or 1 Supporting + 3 Friend)
 
 | Allocation | % | $ | Notes |
 |---|---|---|---|
-| Direct artist grants (55%) | 55% | $13,750 | $10,500 to 21 featured-artist honoraria + **$3,250 to seed Q3 micro-grants** (~5 grants @ $500 or 2 @ $1,500) |
-| Programs (30%) — venue, A/V, hosts, production | 30% | $7,500 | Covers event hard costs *with* in-kind venue + A/V |
+| Direct artist grants (55%) | 55% | $13,750 | **All seeds Q3 micro-grants** (~27 grants @ $500 or 9 @ $1,500). Surplus < $15K → no surprise gratitude payment per board formula. |
+| Programs (30%) — venue, A/V, hosts, production, Broadway honorarium | 30% | $7,500 | Covers Broadway honorarium ($2.5K) + event hard costs *with* in-kind venue + A/V |
 | Operations (10%) | 10% | $2,500 | Software, banking fees, admin |
 | HODL Vault (5%) | 5% | $1,250 | Endowment |
 | **Total** | **100%** | **$25,000** | |
 
-**Producer staffing at floor:** solo producer (Dion or 1 trained volunteer).
+**Producer staffing at floor:** solo producer (Dion or 1 trained volunteer). **No surprise gratitude payment** at this scenario — the threshold ($50K cash + $15K surplus after Q3 commitments) is not met.
 
 ### Target scenario — $45K raised (1 Title + 1 Supporting + 2 Friend)
 
 | Allocation | % | $ | Notes |
 |---|---|---|---|
-| Direct artist grants (55%) | 55% | $24,750 | $10,500 to 21 featured-artist honoraria + **$14,250 to seed Q3 micro-grants** (~25 grants @ $500 or 9 @ $1,500) |
+| Direct artist grants (55%) | 55% | $24,750 | **All seeds Q3 micro-grants** (~49 grants @ $500 or 16 @ $1,500). Surplus < $15K threshold → no surprise gratitude payment yet. |
 | Programs (30%) | 30% | $13,500 | Hired professional producer + venue + A/V + Broadway honorarium |
 | Operations (10%) | 10% | $4,500 | |
 | HODL Vault (5%) | 5% | $2,250 | |
 | **Total** | **100%** | **$45,000** | |
 
-**Producer staffing at target:** **hired professional NYC producer** + 1 volunteer second seat. Producer cost ~$1,500–$3,000 across both broadcast days.
+**Producer staffing at target:** hired professional NYC producer + 1 volunteer second seat. **No surprise gratitude payment** — cash revenue threshold ($50K) not yet met.
 
 ### Stretch scenario — $80K raised (full slate sold)
 
 | Allocation | % | $ | Notes |
 |---|---|---|---|
-| Direct artist grants (55%) | 55% | $44,000 | $10,500 to 21 featured-artist honoraria + **$33,500 to fund full Q3 grant cycle** (50+ micro-grants) |
+| Direct artist grants (55%) | 55% | $44,000 | $5,250 reserved for surprise gratitude payment (21 × $250) **IF** board approves at post-event meeting. Remaining $38,750 funds Q3 nationwide grant cycle (~77 grants @ $500 or 26 @ $1,500). |
 | Programs (30%) | 30% | $24,000 | Hired producer team, premium venue, full Broadway-headlined finale |
 | Operations (10%) | 10% | $8,000 | |
 | HODL Vault (5%) | 5% | $4,000 | |
 | **Total** | **100%** | **$80,000** | |
 
+**Producer staffing at stretch:** full hired producer team. **Surprise gratitude payment threshold ($50K cash + $15K surplus) is met** — board may approve up to $250 per artist as a surprise post-event thank-you, announced at the Monday finale. Discretionary, not guaranteed.
+
 > **Sponsor-facing language for the artist-grant bucket:**
 >
-> "55% of every sponsor dollar goes to direct artist grants. The 21 featured artists at this event each receive $500 in Bitcoin — $10,500 total — and **the rest of the bucket seeds the next round of micro-grants for artists nationwide.** At the target scenario, that means 21 featured artists *plus* roughly 25 additional micro-grants from this single event."
+> "55% of every sponsor dollar goes to direct artist grants. The 21 featured artists at this event are participating as mission supporters — they're donating their time so that the entire 55% bucket can fund Q3 micro-grants for artists nationwide. At our target scenario, that's roughly **49 artist grants funded by this single event** — far more than the 21 on the broadcast."
 
 ---
 

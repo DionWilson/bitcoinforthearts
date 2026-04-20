@@ -35,8 +35,8 @@ We are not waiting for institutions to decide whether artists deserve funding. W
 | **Hosts** | 4 Bitcoin podcasters per broadcast day, 1–2 hours each |
 | **Live finale** | Monday evening, **Pubkey DC** (primary) or **Pubkey NYC / NYC alternative** — Broadway-headlined performances, silent art auction, sponsor reception |
 | **Broadcast platforms** | YouTube, X (Twitter), Nostr (Zap.Stream), Fountain |
-| **Audience donation flow** | On-screen donation QR is BFTA throughout. Each artist's personal LN address is shown briefly during their segment as an optional tip jar. **Default zap target = BFTA**, allocated through the public 55/30/10/5 model. |
-| **Artist honoraria** | $500 BTC per featured artist (21 × $500 = $10,500 total), funded from sponsor revenue, no strings attached |
+| **Audience donation flow** | On-screen donation QR is BFTA throughout. Each artist's personal LN address is shown during their segment as a tip jar. **Default zap target = BFTA**, allocated through the public 55/30/10/5 model. |
+| **Artist participation** | Featured artists participate as **mission-supporters of BFTA's 501(c)(3) cause** — no fee, no quid pro quo. Audience tips to artist personal LN addresses are 100% theirs. Broadway-caliber Monday finale headliner receives an honorarium from the Programs bucket as the only paid performance. |
 
 ---
 
@@ -137,7 +137,8 @@ In-kind support is treated as equivalent value to cash sponsorship at the corres
 ## What We Bring to Sponsors
 
 - **A first-mover story.** This is the first event of its kind. Sponsors are written into the founding narrative.
-- **A nonprofit partner with public governance.** Every dollar follows our published 55/30/10/5 model. Board minutes, code of ethics, and financials are public. The Art + Zap Weekend is part of the 30% Programs allocation — sponsor dollars flow naturally through the model.
+- **A nonprofit partner with public governance.** Every dollar follows our published 55/30/10/5 model. Board minutes, code of ethics, and financials are public.
+- **An exceptionally efficient event model.** Featured artists participate as mission supporters — donating their time so that the entire 55% Direct Artist Grants bucket from this event can fund Q3 nationwide micro-grants. At our target funding scenario, sponsor dollars from this single event seed roughly **49 artist grants nationwide.**
 - **Long-tail content.** 21 artist segments × multi-platform clips = months of content with sponsor branding visible.
 - **Direct artist access.** Sponsor representatives are invited to the artist green room and the Monday finale.
 - **Ethos alignment.** The first nonprofit paying artists exclusively in Bitcoin, hosting the first global Bitcoin-native arts fundraiser, with our own self-custodial Bitcoin infrastructure. Every detail is on-mission.

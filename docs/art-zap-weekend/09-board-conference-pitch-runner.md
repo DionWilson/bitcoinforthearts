@@ -84,7 +84,7 @@ If the 30-second pitch lands and they want detail, here's the next layer. Have t
 
 ### "How do I know my money goes to artists?"
 
-> "BFTA publishes its allocation: 55% to direct artist grants, 30% to programs, 10% ops, 5% to a permanent Bitcoin reserve. Every dollar follows that model. Each of the 21 featured artists gets a flat $500 BTC honorarium directly from the 55% bucket — guaranteed regardless of funding level. Anything left over in the 55% bucket beyond honoraria seeds our Q3 nationwide micro-grant cycle. Production costs come from the 30% Programs bucket. So at our target funding, your sponsor dollar funds **21 featured artists plus roughly 25 additional micro-grants** for artists nationwide. Board minutes and financials are public."
+> "BFTA publishes its allocation: 55% to direct artist grants, 30% to programs, 10% ops, 5% to a permanent Bitcoin reserve. Every dollar follows that model. The 21 featured artists at this event are participating as mission supporters — they're donating their time so that the entire 55% bucket can fund our Q3 nationwide micro-grant cycle. At our target $45K funding scenario, that's roughly **49 artist grants funded by this single event** — far more than the 21 on the broadcast. Production costs come from the 30% Programs bucket. Board minutes and financials are public."
 
 ### "Is this tax-deductible?"
 
@@ -146,9 +146,11 @@ To keep this manageable:
 
 ## Things to KNOW so you can answer correctly
 
-- **Artist honoraria:** flat **$500 BTC per featured artist**, guaranteed at every funding scenario. The Broadway-caliber finale headliner is a separate $2,500 paid from Programs.
-- **Audience zaps default to BFTA.** The on-screen donation QR is BFTA's for all 8 broadcast hours. Each artist's personal LN address is shown briefly during their segment as an optional tip jar — direct tips to artists are 100% theirs and not counted against BFTA. **This is a fundraiser FOR BFTA, not a tip-jar event.**
-- **Allocation:** all sponsor dollars flow through the published 55/30/10/5 model. The 21 featured-artist honoraria come from the 55% Direct Artist Grants bucket; event production costs come from the 30% Programs bucket. **No policy change required.**
+- **Artist participation: NO honorarium.** The 21 featured artists participate as **mission supporters** of BFTA's 501(c)(3) cause. They donate their time so that the funds raised can seed Q3 nationwide micro-grants — meaning sponsor dollars from this event fund *more* artists than just the 21 on the broadcast.
+- **One exception:** the Broadway-caliber Monday finale headliner is paid ~$2,500 from the 30% Programs bucket as a production cost (Broadway-caliber live in-person is fundamentally different from a remote broadcast slot).
+- **Audience zaps default to BFTA.** The on-screen donation QR is BFTA's for all 8 broadcast hours. Each artist's personal LN address is shown during their segment as a tip jar — direct tips to artists are 100% theirs and not counted against BFTA. This is a fundraiser FOR BFTA.
+- **Allocation:** entire 55% Direct Artist Grants bucket flows to Q3 nationwide micro-grants since featured artists are uncompensated. Event production costs come from 30% Programs.
+- **DO NOT mention** any post-event "surprise gratitude payment" to artists or sponsors. The board has reserved discretion to thank artists if the event exceeds $50K cash + $15K surplus, but this is **internal-only** and must never be hinted at externally — if anyone knows it might happen, it stops being a surprise and recreates the quid-pro-quo issue we're avoiding.
 
 ---
 
@@ -177,14 +179,17 @@ ART + ZAP WEEKEND
 Tiers: $25K Title (1) / $10K Supporting (3) / $5K Friend (5)
 In-kind: NYC venue, A/V, hardware wallets, catering, photo/video, auction items
 Format: Sat+Sun broadcast 1-5pm ET, Mon finale at Pubkey w/ Broadway headliner
-21 artists each get flat $500 BTC honorarium - guaranteed - from 55% bucket
-Audience zaps DEFAULT TO BFTA - artist tip jar shown briefly as secondary
+21 featured artists = MISSION SUPPORTERS, no honorarium. Broadway headliner only paid performer.
+Entire 55% bucket flows to Q3 micro-grants (~49 grants @ $500 at target funding)
+Audience zaps DEFAULT TO BFTA - artist tip jar shown during their segment (tips = 100% theirs)
 501(c)(3) - tax-deductible - EIN [EIN]
 
 THE ASK: "Open to a 30-min call with our founder Dion this week?"
 
 LOG IT: Company / Person / Tier / Objection / Contact / Probability
 SEND TO DION: Same night via Signal/email
+
+NEVER MENTION: Post-event surprise gratitude payment (internal-only)
 ```
 
 ---
