@@ -10,13 +10,11 @@
   }
 
   :root {
-    --gold: #c8a85a;
-    --gold-dark: #a0863f;
-    --cream: #f5ecd7;
-    --cream-light: #faf4e3;
-    --ink: #1a1a1a;
+    --ink: #000;
     --ink-soft: #444;
-    --rule: #d6c89e;
+    --rule: #d1d1d1;
+    --rule-strong: #000;
+    --bg-soft: #f5f5f5;
   }
 
   * { box-sizing: border-box; }
@@ -24,7 +22,7 @@
   html, body {
     margin: 0;
     padding: 0;
-    background: var(--cream);
+    background: white;
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     font-size: 9pt;
@@ -33,82 +31,105 @@
   }
 
   .page {
-    background: var(--cream);
+    background: white;
     padding: 0;
   }
 
-  /* ---- Header ---- */
+  /* ---- Masthead: lockup on black ---- */
   header.brand {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    border-bottom: 2px solid var(--gold);
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+    align-items: stretch;
+    border: 1px solid var(--rule-strong);
+    margin-bottom: 12px;
   }
-  header.brand img {
-    height: 60px;
-    width: 60px;
-    object-fit: contain;
+  header.brand .lockup {
+    background: black;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 110px;
+  }
+  header.brand .lockup img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   header.brand .titles {
     flex: 1;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  header.brand h1 {
+  header.brand .titles .org {
     font-family: Georgia, serif;
-    font-size: 16pt;
-    margin: 0 0 2px 0;
-    letter-spacing: 0.3px;
-    color: var(--gold-dark);
+    font-size: 13pt;
     font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.3px;
+    color: var(--ink);
   }
-  header.brand .tagline {
+  header.brand .titles .tagline {
     font-size: 8.5pt;
     color: var(--ink-soft);
     font-style: italic;
-    margin: 0;
+    margin: 2px 0 0 0;
   }
   header.brand .meta {
+    padding: 10px 14px;
     text-align: right;
     font-size: 8pt;
     color: var(--ink-soft);
-    line-height: 1.3;
+    line-height: 1.4;
+    border-left: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
   }
   header.brand .meta strong {
-    color: var(--gold-dark);
+    color: var(--ink);
   }
 
   /* ---- Event title strip ---- */
   .event-title {
     text-align: center;
-    margin: 2px 0 8px 0;
+    margin: 2px 0 10px 0;
+    padding: 6px 0;
+    border-top: 2px solid var(--ink);
+    border-bottom: 2px solid var(--ink);
   }
   .event-title h2 {
     font-family: Georgia, serif;
-    font-size: 17pt;
+    font-size: 18pt;
     margin: 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     color: var(--ink);
     font-weight: bold;
+    text-transform: uppercase;
   }
   .event-title .subtitle {
     font-size: 8.5pt;
-    color: var(--gold-dark);
-    margin-top: 2px;
+    color: var(--ink-soft);
+    margin-top: 3px;
     font-style: italic;
+    letter-spacing: 0.3px;
   }
 
-  /* ---- Sections ---- */
+  /* ---- Lead paragraph ---- */
   .what {
-    background: var(--cream-light);
-    border-left: 3px solid var(--gold);
-    padding: 7px 11px;
-    margin-bottom: 8px;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--ink);
+    padding: 8px 12px;
+    margin-bottom: 9px;
     font-size: 9pt;
-    line-height: 1.35;
+    line-height: 1.4;
   }
-  .what strong { color: var(--gold-dark); }
+  .what strong { color: var(--ink); }
 
+  /* ---- 3-col cards ---- */
   .grid-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,57 +137,60 @@
     margin-bottom: 8px;
   }
   .grid-3 .card {
-    background: #fffdf6;
+    background: white;
     border: 1px solid var(--rule);
     padding: 7px 9px;
-    border-radius: 3px;
   }
   .grid-3 .card h3 {
     font-size: 8.5pt;
-    margin: 0 0 3px 0;
-    color: var(--gold-dark);
+    margin: 0 0 4px 0;
+    color: var(--ink);
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.8px;
     font-family: Georgia, serif;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 3px;
   }
   .grid-3 .card ul {
     margin: 0;
     padding-left: 13px;
     font-size: 8pt;
-    line-height: 1.3;
+    line-height: 1.35;
   }
   .grid-3 .card li {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 
+  /* ---- 2-col cards ---- */
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
   .grid-2 .card {
-    background: #fffdf6;
+    background: white;
     border: 1px solid var(--rule);
     padding: 7px 9px;
-    border-radius: 3px;
   }
   .grid-2 .card h3 {
     font-size: 8.5pt;
-    margin: 0 0 3px 0;
-    color: var(--gold-dark);
+    margin: 0 0 4px 0;
+    color: var(--ink);
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.8px;
     font-family: Georgia, serif;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 3px;
   }
   .grid-2 .card ul {
     margin: 0;
     padding-left: 13px;
     font-size: 8pt;
-    line-height: 1.35;
+    line-height: 1.4;
   }
   .grid-2 .card li {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 
   /* ---- Sponsor Tiers Table ---- */
@@ -174,41 +198,46 @@
     margin: 4px 0 8px 0;
   }
   .tiers h3 {
-    font-size: 9.5pt;
-    color: var(--gold-dark);
-    margin: 0 0 4px 0;
+    font-size: 10pt;
+    color: var(--ink);
+    margin: 0 0 5px 0;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.2px;
     font-family: Georgia, serif;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 3px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 4px;
+    font-weight: bold;
   }
   table.tier-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 8pt;
-    background: #fffdf6;
+    background: white;
   }
   table.tier-table th {
-    background: var(--gold);
+    background: black;
     color: white;
-    padding: 4px 7px;
+    padding: 5px 8px;
     text-align: left;
     font-family: Georgia, serif;
     font-size: 8pt;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
   }
   table.tier-table td {
-    padding: 5px 7px;
+    padding: 6px 8px;
     border-bottom: 1px solid var(--rule);
     vertical-align: top;
-    line-height: 1.28;
+    line-height: 1.35;
   }
   table.tier-table tr:last-child td {
     border-bottom: none;
   }
+  table.tier-table tr:nth-child(even) td {
+    background: var(--bg-soft);
+  }
   table.tier-table .tier-name {
-    color: var(--gold-dark);
+    color: var(--ink);
     font-weight: bold;
     white-space: nowrap;
   }
@@ -220,31 +249,31 @@
   table.tier-table .tier-slots {
     text-align: center;
     color: var(--ink-soft);
+    font-weight: bold;
   }
 
   .in-kind-note {
-    background: var(--cream-light);
-    border-left: 3px solid var(--gold);
-    padding: 6px 10px;
+    background: var(--bg-soft);
+    border-left: 3px solid var(--ink);
+    padding: 7px 11px;
     font-size: 8pt;
-    margin: 6px 0 8px 0;
-    line-height: 1.35;
+    margin: 7px 0 9px 0;
+    line-height: 1.4;
   }
 
   /* ---- Contact / Footer ---- */
   .contact {
-    background: #fffdf6;
-    border: 1px solid var(--rule);
-    padding: 7px 11px;
+    background: white;
+    border: 2px solid var(--ink);
+    padding: 8px 12px;
     margin-bottom: 5px;
-    border-radius: 3px;
     font-size: 8pt;
-    line-height: 1.35;
+    line-height: 1.4;
   }
   .contact .name {
     font-weight: bold;
-    color: var(--gold-dark);
-    font-size: 9pt;
+    color: var(--ink);
+    font-size: 9.5pt;
   }
   .contact .email {
     color: var(--ink);
@@ -262,7 +291,7 @@
     font-size: 7pt;
     color: var(--ink-soft);
     font-style: italic;
-    line-height: 1.3;
+    line-height: 1.35;
   }
 </style>
 </head>
@@ -270,13 +299,15 @@
 <div class="page">
 
   <header class="brand">
-    <img src="logo.png" alt="Bitcoin For The Arts logo">
+    <div class="lockup">
+      <img src="lockup-bw.png" alt="Bitcoin For The Arts">
+    </div>
     <div class="titles">
-      <h1>Bitcoin For The Arts, Inc.</h1>
+      <p class="org">Bitcoin For The Arts, Inc.</p>
       <p class="tagline">501(c)(3) — The first nonprofit paying artists in Bitcoin.</p>
     </div>
     <div class="meta">
-      <strong>EIN 41-2642260</strong><br>
+      <strong>EIN 41-2642260</strong>
       27 West 60th Street<br>
       New York, NY 10023<br>
       bitcoinforthearts.org
