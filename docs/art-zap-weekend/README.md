@@ -27,6 +27,8 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 | `14-reply-to-kenneth-positioning-feedback.md` | **Reply to board member Kenneth** on the "direct vs mediated" positioning gap. Proposes specific language tightening + asks the open question on whether to keep the "Art + Zap Weekend" name. |
 | `15-reply-to-julie-round-2-budget-and-intros.md` | **Round 2 reply to Julie** after she came back with $1,000 budget + Steven Ishuzu intro + Trey at BTC DC contact + Greg/Pubkey tech intel. Locks budget, accepts Steven intro, tells Julie the Trey meeting is already booked for tomorrow, asks for last-minute intel to fold in. |
 | `16-meeting-brief-trey-musgrave-tim-smigelski.md` | **Meeting brief for tomorrow** — Trey Musgrave (President, Bitcoin District Initiative) + Tim Smigelski (DC local Bitcoin arts). Asks ranked by priority, talking points, specific questions for each, what to bring/not bring, decision tree. |
+| `17-volunteer-artist-outreach.md` | **Volunteer-facing artist outreach** — for anyone other than Dion reaching out to artists. Includes what volunteers CAN/CANNOT promise, when to escalate to Dion, handoff protocol. |
+| `18-volunteer-podcaster-outreach.md` | **Volunteer-facing podcaster outreach** — for anyone other than Dion reaching out to Bitcoin podcasters. Same structure as `17` adapted for podcast-host recruiting (1–2hr slots + 25-min drop-in option). |
 | `tabs/sponsors-tiers.csv` | Sheet tab: tier definitions and slot tracker (incl. Title Sponsor named auction lot) |
 | `tabs/sponsors-pipeline.csv` | Sheet tab: sponsor outreach pipeline |
 | `tabs/in-kind.csv` | Sheet tab: in-kind ask tracker (NYC venue is high-value, BTCPay/Lightning removed) |
