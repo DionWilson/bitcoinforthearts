@@ -34,11 +34,18 @@ type Level = {
 };
 
 const btcpayBase = (process.env.NEXT_PUBLIC_BTCPAY_URL ?? process.env.BTCPAY_URL ?? '').replace(/\/+$/, '');
+
+const subscriptionsDisabled =
+  (process.env.NEXT_PUBLIC_BTCPAY_SUBSCRIPTIONS_DISABLED ?? '').trim() === '1';
+
 function btcSubUrl(value: string) {
+  if (subscriptionsDisabled) return '';
   if (!value) return '';
   if (value.startsWith('http')) return value;
   if (!btcpayBase) return '';
-  return `${btcpayBase}/plan-checkout/${value}`;
+  const trimmed = value.trim();
+  if (!/^plancheckout_[A-Za-z0-9]+$/.test(trimmed)) return '';
+  return `${btcpayBase}/plan-checkout/${trimmed}`;
 }
 
 const levels: Level[] = [
