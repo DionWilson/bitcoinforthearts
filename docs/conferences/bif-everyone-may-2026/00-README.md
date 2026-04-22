@@ -17,7 +17,7 @@ This is the right kind of decentralized representation: a real artist showing up
 | File | Purpose |
 |---|---|
 | `00-README.md` | This file — overview |
-| `01-reply-to-eric-bif-everyone.md` | Dion's reply to Eric Blackstone confirming the booth + answering his 3 questions |
+| `01-reply-to-eric-bif-everyone.md` | **Beth's** reply to Eric Blackstone (continuing her existing thread) confirming the booth + answering his 3 questions, with Dion cc'd. BFTA pays the $300 direct. |
 | `02-beth-conference-runner.md` | Beth's tactical playbook for the weekend — talking points, lead capture, what to bring, what to give away |
 | `03-beth-coordination-and-compensation.md` | Direct message from Dion to Beth covering: compensation, travel coverage, what BFTA needs from her, what to expect |
 
