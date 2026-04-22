@@ -32,15 +32,14 @@ Dion confirms shipping logistics with Eric (timing, name to address it to, where
 
 | Item | Quantity | Notes |
 |---|---|---|
-| **BFTA branded table banner** (~6 ft, fits a standard 6 ft conference table) | 1 | Front of the table, full visual coverage |
-| **BFTA standing banner / retractable roll-up** | 1 (TBD — see open questions for Dion) | Behind/beside the booth if Eric's space allows |
-| **BFTA T-shirt for Beth to wear** | 1 (size confirmed with Beth in advance) | Beth can layer or pair with her own swag if she wants |
+| **BFTA branded table banner** (~6 ft, fits a standard 6 ft conference table) | 1 | Front of the table, full visual coverage. Dion ordering this week. |
+| **BFTA T-shirt for Beth to wear** | 1 (Beth's confirmed size) | One of three on hand. Beth can layer or pair with her own swag if she wants. |
 | **Printed Art + Zap Weekend one-pagers** | 25 copies | Color, on letter-size paper, single-sided. The PDF is `Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf` from `bitcoinforthearts.org`. |
 | **Printed BFTA general one-pagers** | 15 copies | Color, single-sided |
 | **Printed QR code cards (postcard size)** for table tents | 4 cards | (1) BFTA donation QR — Lightning: `gifts@donations.bitcoinforthearts.org` (2) BFTA website: `bitcoinforthearts.org` (3) Art + Zap Weekend: `bitcoinforthearts.org/art-zap-weekend` (4) Sovereign Circle membership: `bitcoinforthearts.org/donate/monthly` |
 | **Sign-up sheet on clipboard** | 1 clipboard, 5 sign-up sheets | Newsletter / Sovereign Circle interest / Sponsor inquiry — fillable rows |
 | **Pens** | 5 | For sign-up sheet + your own notebook backup |
-| **BFTA stickers** (if available) | 50–100 | Free giveaway — drives booth foot traffic |
+| **BFTA stickers** | 20 | Free giveaway — drives booth foot traffic. Limited inventory; conserve for highest-engagement visitors first. |
 
 ### What Beth brings personally
 

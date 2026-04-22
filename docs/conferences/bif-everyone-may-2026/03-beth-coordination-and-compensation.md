@@ -54,21 +54,20 @@ It's at `docs/conferences/bif-everyone-may-2026/02-beth-conference-runner.md` in
 
 **What BFTA is shipping straight to the venue (per your request — you don't carry any of this):**
 
-- **A BFTA T-shirt for you to wear** during the event — confirm your size and I'll have it included in the box. Wear it solo or layered with your own swag, totally your call.
-- **A BFTA branded table banner** (~6 ft, fits the standard conference table)
-- **A BFTA standing/retractable banner** (still confirming with the printer — see what arrives)
+- **A BFTA T-shirt** in your size — wear it solo or layer with your own swag, totally your call
+- **A BFTA branded table banner** (~6 ft, fits the standard conference table) — ordering this week
 - **Printed Art + Zap Weekend one-pagers** (25 copies)
 - **Printed BFTA general one-pagers** (15 copies)
 - **Printed QR code cards** (donation, website, Art + Zap, Sovereign Circle)
 - **Sign-up clipboard, sheets, pens**
-- **BFTA stickers** to give away (drives booth foot traffic)
+- **20 BFTA stickers** for giveaway (limited inventory — runner doc has notes on conserving for highest-engagement visitors first)
 
-I'll coordinate shipping logistics with Eric (timing, who at the venue receives it, where to hold). Box arrives 1–3 business days before the event. The runner doc has full backup procedures if anything goes sideways with the shipment.
+I'll ship the box from NYC the week after Vegas (back May 1). Coordinating shipping logistics with Eric — timing, receiving address at the venue, and hold-until date. Box arrives 1–3 business days before the event. The runner doc has full backup procedures if anything goes sideways with the shipment.
 
-**Three quick things to confirm with me this week:**
+**I'll Signal you separately to confirm:**
 
-1. **T-shirt size** — so I can order yours.
-2. **Travel plans** — are you driving or flying? If flying, when do you book? I can advance you the BFTA prepay if booking ahead is easier than reimbursement.
+1. **T-shirt size**
+2. **Travel plans** — driving or flying? If flying, when do you book? I can advance you the BFTA prepay if booking ahead is easier than reimbursement.
 3. **Art inventory** — what 4–6 pieces do you plan to bring? Helps me know what to highlight in the pre-conference newsletter feature.
 
 **Two things you do NOT need to do:**
