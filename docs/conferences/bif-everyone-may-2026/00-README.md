@@ -32,4 +32,4 @@ This is the right kind of decentralized representation: a real artist showing up
 - **BFTA ships all org materials directly to the conference venue** (per Beth's request) — table banner, T-shirt for Beth, printed one-pagers, QR cards, stickers, sign-up clipboard. Beth carries only her own art + personal items.
 - **Beth wears a BFTA T-shirt** during the event (Dion sends in advance after confirming her size via Signal). She can layer or pair with her own swag if she wants — they're complementary, not competing.
 - **Inventory on hand:** 3 BFTA T-shirts, 20 stickers. Table banner being ordered this week. **Additional 100 stickers being ordered from StickerMule** (~$50 + $9 ship, ~5-day production) so total = 120 stickers in the box. No standing banner.
-- **Shipping timing:** Dion ships the box from NYC the week after Vegas (back May 1) — arrives at the conference venue ~1 week before the May 22 event start.
+- **Shipping timing:** Dion ships the box from NYC to Portland on **May 11**. Arrives at the conference venue ~May 14–16, well before the May 22 event start.

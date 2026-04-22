@@ -62,7 +62,7 @@ It's at `docs/conferences/bif-everyone-may-2026/02-beth-conference-runner.md` in
 - **Sign-up clipboard, sheets, pens**
 - **120 BFTA stickers** for giveaway (20 on hand + 100 fresh from StickerMule)
 
-I'll ship the box from NYC the week after Vegas (back May 1). Coordinating shipping logistics with Eric — timing, receiving address at the venue, and hold-until date. Box arrives 1–3 business days before the event. The runner doc has full backup procedures if anything goes sideways with the shipment.
+I'll ship the box from NYC to Portland on **Monday, May 11** — should arrive at the conference venue around May 14–16, well before the May 22 event start. I'm confirming the venue receiving address and hold-until date with Eric this week. The runner doc has full backup procedures if anything goes sideways with the shipment.
 
 **I'll Signal you separately to confirm:**
 
