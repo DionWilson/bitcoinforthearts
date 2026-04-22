@@ -13,7 +13,7 @@ When you build the PDF, drop in the gold logo from the repo at `public/resources
 [Insert gold logo: `public/resources/logos/exports/bfta-logo-gold.svg`]
 
 **Bitcoin For The Arts, Inc.**
-27 West 60th Street
+27 West 60th Street, PO Box 20069
 New York, NY 10023
 EIN: 41-2642260
 bitcoinforthearts.org | donate@bitcoinforthearts.org
@@ -33,7 +33,7 @@ Email: jnm@jesseandjulie.com
 
 **Donee Organization:**
 **Bitcoin For The Arts, Inc.**
-27 West 60th Street, New York, NY 10023
+27 West 60th Street, PO Box 20069, New York, NY 10023
 EIN: **41-2642260**
 501(c)(3) tax-exempt status confirmed by the IRS
 
@@ -90,7 +90,7 @@ ______________________________
 **Dion Wilson**
 Founder & Director
 Bitcoin For The Arts, Inc.
-27 West 60th Street, New York, NY 10023
+27 West 60th Street, PO Box 20069, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---

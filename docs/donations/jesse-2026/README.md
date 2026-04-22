@@ -26,7 +26,7 @@ Open each:
 - `01-receipt-feb-3-2026.md` (the $21 donation)
 - `02-receipt-april-19-2026.md` (the $231 Hard Cap Heroes Yearly membership)
 
-**Both files are fully filled in** — confirmed BTCPay data, EIN 41-2642260, BFTA legal address (27 West 60th Street, New York, NY 10023). Only thing left is to add **today's date** at the "Date receipt issued" line in each.
+**Both files are fully filled in** — confirmed BTCPay data, EIN 41-2642260, BFTA legal address (27 West 60th Street, PO Box 20069, New York, NY 10023). Only thing left is to add **today's date** at the "Date receipt issued" line in each.
 
 Export each to PDF using whichever method you prefer (instructions at the bottom of each receipt file). Easiest:
 1. Open the receipt file → copy everything between the START / END markers
