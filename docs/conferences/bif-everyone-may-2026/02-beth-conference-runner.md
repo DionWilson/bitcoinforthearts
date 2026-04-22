@@ -39,7 +39,7 @@ Dion confirms shipping logistics with Eric (timing, name to address it to, where
 | **Printed QR code cards (postcard size)** for table tents | 4 cards | (1) BFTA donation QR — Lightning: `gifts@donations.bitcoinforthearts.org` (2) BFTA website: `bitcoinforthearts.org` (3) Art + Zap Weekend: `bitcoinforthearts.org/art-zap-weekend` (4) Sovereign Circle membership: `bitcoinforthearts.org/donate/monthly` |
 | **Sign-up sheet on clipboard** | 1 clipboard, 5 sign-up sheets | Newsletter / Sovereign Circle interest / Sponsor inquiry — fillable rows |
 | **Pens** | 5 | For sign-up sheet + your own notebook backup |
-| **BFTA stickers** | 20 | Free giveaway — drives booth foot traffic. Limited inventory; conserve for highest-engagement visitors first. |
+| **BFTA stickers** | 120 (20 on hand + 100 ordered from StickerMule) | Free giveaway — single highest-converting foot-traffic driver at a Bitcoin booth |
 
 ### What Beth brings personally
 

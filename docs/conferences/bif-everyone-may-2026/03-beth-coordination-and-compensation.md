@@ -60,7 +60,7 @@ It's at `docs/conferences/bif-everyone-may-2026/02-beth-conference-runner.md` in
 - **Printed BFTA general one-pagers** (15 copies)
 - **Printed QR code cards** (donation, website, Art + Zap, Sovereign Circle)
 - **Sign-up clipboard, sheets, pens**
-- **20 BFTA stickers** for giveaway (limited inventory — runner doc has notes on conserving for highest-engagement visitors first)
+- **120 BFTA stickers** for giveaway (20 on hand + 100 fresh from StickerMule)
 
 I'll ship the box from NYC the week after Vegas (back May 1). Coordinating shipping logistics with Eric — timing, receiving address at the venue, and hold-until date. Box arrives 1–3 business days before the event. The runner doc has full backup procedures if anything goes sideways with the shipment.
 
