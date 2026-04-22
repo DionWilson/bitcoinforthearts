@@ -1,6 +1,6 @@
-# Substack Notes — Coordinated Sequence Around the David Simon Article
+# Substack Notes — Coordinated Sequence Around the BSA → BFTA Article
 
-A 3-touch Notes sequence that wraps around the Wednesday May 6 publication of "The Blueprint David Simon Left Behind." Designed to:
+A 3-touch Notes sequence that wraps around the Wednesday May 6 publication of **"My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026."** Designed to:
 
 1. **Build anticipation** before the article (Monday teaser)
 2. **The article itself** publishes Wednesday 9am ET
@@ -40,7 +40,9 @@ Wednesday morning.
 
 ---
 
-New on the BFTA Substack: **The Blueprint David Simon Left Behind.**
+New on the BFTA Substack:
+
+**"My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026."**
 
 In 1979, the founders of the Baltimore School for the Arts solved a structural problem most people don't realize they solved — they built a 501(c)(3) foundation INTO a public school, and the foundation is what allowed the school to be excellent.
 

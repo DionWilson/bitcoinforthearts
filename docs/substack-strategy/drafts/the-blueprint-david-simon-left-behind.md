@@ -1,8 +1,8 @@
-# Substack Article Draft — "The Blueprint David Simon Left Behind"
+# Substack Article Draft — "My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026."
 
 **Status:** Draft for Dion's review.
-**Working title:** "The Blueprint David Simon Left Behind"
-**Subtitle:** What Bitcoin For The Arts owes to the founders of the Baltimore School for the Arts — and why I'm building the next chapter of the same story.
+**Title:** "My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026."
+**Subtitle:** From the Baltimore School for the Arts to Bitcoin For The Arts — same workaround, new rails.
 **Estimated read time:** 6–7 minutes (~1,200 words)
 **Pillar:** Mission storytelling + Bitcoin thesis (the strongest combination — personal narrative + structural argument)
 **Suggested publish date:** Wednesday, May 6, 2026 (Week 1 of the calendar in `01-publishing-cadence`)
@@ -12,9 +12,9 @@
 
 ## ↓↓↓ Article begins ↓↓↓
 
-# The Blueprint David Simon Left Behind
+# My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026.
 
-*What Bitcoin For The Arts owes to the founders of the Baltimore School for the Arts — and why I'm building the next chapter of the same story.*
+*From the Baltimore School for the Arts to Bitcoin For The Arts — same workaround, new rails.*
 
 In 1979, a group of Baltimore civic leaders did something almost no one had attempted before. New York City had already built public arts high schools — the High School of Music & Art back in 1936, then the High School of Performing Arts in 1948, both of which would eventually merge into LaGuardia. Public arts education at the secondary level was not a new idea. But what Baltimore did was structurally different. The Baltimore School for the Arts was built inside the public school system, but with a 501(c)(3) foundation built inside the school. The foundation was the load-bearing piece. Without it, BSA would have been just another underfunded city school with a couple of dance studios and a piano. With it, it became one of the best secondary arts conservatories in the United States — a school whose graduates dance with Alvin Ailey, perform on Broadway, exhibit at the Whitney, and play for the Baltimore Symphony.
 
@@ -95,7 +95,7 @@ We are taking the next page out of the playbook.
 - [ ] **Read the BMore Art article** (Dion linked it but the link timed out for me — Dion may want to incorporate one specific quote or detail from that piece for additional grounding)
 - [ ] **Personal voice pass** — Dion should read aloud and adjust any sentences that don't sound like him. The article is in Dion's voice but written by an outside hand, so 10–15 minutes of personal voice editing will make it feel more authentically his.
 - [ ] **Hyperlink check** — the BMore Art article link, the Sovereign Circle link, any others Dion wants to add
-- [ ] **Headline test** — is "The Blueprint David Simon Left Behind" the right headline? Alternatives: "What Baltimore School for the Arts Taught Me About Building Bitcoin For The Arts" / "I Owe David Simon My Career — And Now I'm Taking the Next Page From His Playbook" / "How a 1979 Baltimore Workaround Became the Blueprint for Bitcoin For The Arts"
+- [x] **Headline locked.** Per Dion: "My High School Built a 501(c)(3) Inside a Public School in 1979. I'm Building One on Bitcoin in 2026." with subtitle "From the Baltimore School for the Arts to Bitcoin For The Arts — same workaround, new rails." Long but specific — names the structural argument from the headline alone, the 1979 → 2026 date contrast creates curiosity, "501(c)(3) inside a public school" is unusual enough to stop the scroll.
 - [ ] **Image** — Substack articles convert better with a header image. Suggestion: a photo of the Alcazar building (BSA's home) from the BSA website / Wikimedia, OR a Dion photo from his BSA dance days (most powerful — but only if a non-cringey one exists), OR a contemporary shot of the school
 - [ ] **Cross-post the day-of:** Nostr + X with a strong pull quote ("The 501(c)(3) foundation inside the public school is what allowed the school to be excellent. The Bitcoin rails inside the 501(c)(3) is what will allow Bitcoin For The Arts to be sustainable at scale.")
 
