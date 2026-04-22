@@ -22,33 +22,48 @@ You don't have to hit all three with every conversation. Most attendees will eng
 
 ---
 
-## What's in your booth (single table, you're the only person)
+## What you're carrying vs what BFTA ships ahead
 
-**Art (the visual anchor that pulls people to the booth):**
-- 4–6 of your original Bitcoin-themed pieces — mix of paintings, prints, smaller works that travel well
-- Pricing tags on each (whatever you'd normally sell them for)
-- Your own LN address QR card next to each piece for direct purchase / tipping
+**Per Beth's request: BFTA ships all org materials directly to the conference venue so Beth doesn't have to carry anything except her art and personal items.**
 
-**BFTA collateral (printed material):**
-- 10 printed copies of the **Art + Zap Weekend one-page sponsor pitch** (PDF — Dion will email you the file to print, or you can pick them up from FedEx/Office Depot the day before)
-- 5 printed copies of the **BFTA general one-pager** about the org (Dion will send)
-- **A small clipboard sign-up sheet** for: Newsletter / Sovereign Circle interest / Sponsor inquiry
+### What BFTA ships to the venue (arrives before the event)
 
-**QR codes (printed at letter size, prominently displayed):**
-- BFTA's main donation QR — Lightning: `gifts@donations.bitcoinforthearts.org`
-- BFTA's website: `bitcoinforthearts.org`
-- BFTA's Art + Zap Weekend page: `bitcoinforthearts.org/art-zap-weekend`
-- **Your personal Lightning address QR** — same prominence as BFTA's
+Dion confirms shipping logistics with Eric (timing, name to address it to, where to hold) before sending. All ships flat-rate / parcel to arrive at the conference venue 1–3 business days before the event:
 
-**Tech (minimum viable):**
-- Phone with Lightning wallet open + signed in (Phoenix, Wallet of Satoshi, Strike — whichever you use)
-- Backup: small portable charger
-- Notebook + pen for capturing leads (more reliable than typing into your phone with people watching)
-- Power outlet at booth (Eric is providing if available; if not, charge phone the night before)
+| Item | Quantity | Notes |
+|---|---|---|
+| **BFTA branded table banner** (~6 ft, fits a standard 6 ft conference table) | 1 | Front of the table, full visual coverage |
+| **BFTA standing banner / retractable roll-up** | 1 (TBD — see open questions for Dion) | Behind/beside the booth if Eric's space allows |
+| **BFTA T-shirt for Beth to wear** | 1 (size confirmed with Beth in advance) | Beth can layer or pair with her own swag if she wants |
+| **Printed Art + Zap Weekend one-pagers** | 25 copies | Color, on letter-size paper, single-sided. The PDF is `Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf` from `bitcoinforthearts.org`. |
+| **Printed BFTA general one-pagers** | 15 copies | Color, single-sided |
+| **Printed QR code cards (postcard size)** for table tents | 4 cards | (1) BFTA donation QR — Lightning: `gifts@donations.bitcoinforthearts.org` (2) BFTA website: `bitcoinforthearts.org` (3) Art + Zap Weekend: `bitcoinforthearts.org/art-zap-weekend` (4) Sovereign Circle membership: `bitcoinforthearts.org/donate/monthly` |
+| **Sign-up sheet on clipboard** | 1 clipboard, 5 sign-up sheets | Newsletter / Sovereign Circle interest / Sponsor inquiry — fillable rows |
+| **Pens** | 5 | For sign-up sheet + your own notebook backup |
+| **BFTA stickers** (if available) | 50–100 | Free giveaway — drives booth foot traffic |
 
-**Your own swag (optional, but nice):**
-- Small business cards for your own art (`ladynakamoto.com`)
-- Stickers if you have them
+### What Beth brings personally
+
+- **4–6 of your original Bitcoin-themed pieces** — mix of paintings, prints, smaller works that travel well (your call on the mix)
+- **Pricing tags on each** (whatever you'd normally sell them for)
+- **Your own LN address QR card** to display next to your art (for direct purchase / tipping to your wallet)
+- **Your own business cards / stickers / swag** — wear or display alongside BFTA's; they're complementary, not competing
+- **Personal tech:** phone with Lightning wallet open + signed in (Phoenix, Wallet of Satoshi, Strike — whichever you use), small portable charger, your own notebook + pen for lead capture (the BFTA-shipped clipboard is for visitor sign-ups, your notebook is for your own running tracking)
+
+### Day-of attire
+
+- **Wear the BFTA T-shirt** Dion sends. Confirm size with him before he ships.
+- **Layer or pair with your own swag** if you want — your branding and BFTA's reinforce each other; one doesn't replace the other
+- Comfortable shoes (you'll be standing all day Saturday; Friday probably less so)
+
+### If the shipped box doesn't arrive at the venue
+
+Two backup paths in priority order:
+
+1. **Email Eric (eric@bitcoinisforeveryone.com) the morning of** — most venues have a front desk that can help track in-transit packages. Eric's team will know what to look for.
+2. **Worst case:** the QR codes work from your phone (just open them on-screen). Visitors can scan a QR off your screen as easily as off a printed card. The art + your physical presence + on-screen QRs is enough to run the booth even with zero printed materials. Don't let a missing box ruin the day.
+
+If the box doesn't show up by Friday afternoon: **text Dion immediately** so he can get a backup batch printed locally in Portland (FedEx Office on SE Hawthorne is closest to Revolution Hall — ~$30 for the full reprint).
 
 ---
 
@@ -194,6 +209,10 @@ mention surprise gratitude payment / book artists on spot
 LN BFTA: gifts@donations.bitcoinforthearts.org
 LN BETH: [your address]
 ART + ZAP: bitcoinforthearts.org/art-zap-weekend
+
+IF SHIPPED BOX MISSING: email eric@bitcoinisforeveryone.com,
+QR codes on phone screen work fine, text Dion if not found
+by Friday afternoon (FedEx Office SE Hawthorne for backup print)
 ```
 
 ---

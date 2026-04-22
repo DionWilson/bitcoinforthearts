@@ -52,10 +52,24 @@ I built you a tactical playbook for the weekend — same kind I'm using for our 
 
 It's at `docs/conferences/bif-everyone-may-2026/02-beth-conference-runner.md` in our shared docs (I can also email you a PDF version if that's easier — just say the word).
 
-**Two specific things to confirm with me this week:**
+**What BFTA is shipping straight to the venue (per your request — you don't carry any of this):**
 
-1. **Travel plans** — are you driving or flying? If flying, when do you book? I can advance you the BFTA prepay if booking ahead is easier than reimbursement.
-2. **Art inventory** — what 4–6 pieces do you plan to bring? Helps me know what to highlight in the pre-conference newsletter feature.
+- **A BFTA T-shirt for you to wear** during the event — confirm your size and I'll have it included in the box. Wear it solo or layered with your own swag, totally your call.
+- **A BFTA branded table banner** (~6 ft, fits the standard conference table)
+- **A BFTA standing/retractable banner** (still confirming with the printer — see what arrives)
+- **Printed Art + Zap Weekend one-pagers** (25 copies)
+- **Printed BFTA general one-pagers** (15 copies)
+- **Printed QR code cards** (donation, website, Art + Zap, Sovereign Circle)
+- **Sign-up clipboard, sheets, pens**
+- **BFTA stickers** to give away (drives booth foot traffic)
+
+I'll coordinate shipping logistics with Eric (timing, who at the venue receives it, where to hold). Box arrives 1–3 business days before the event. The runner doc has full backup procedures if anything goes sideways with the shipment.
+
+**Three quick things to confirm with me this week:**
+
+1. **T-shirt size** — so I can order yours.
+2. **Travel plans** — are you driving or flying? If flying, when do you book? I can advance you the BFTA prepay if booking ahead is easier than reimbursement.
+3. **Art inventory** — what 4–6 pieces do you plan to bring? Helps me know what to highlight in the pre-conference newsletter feature.
 
 **Two things you do NOT need to do:**
 

@@ -29,3 +29,5 @@ This is the right kind of decentralized representation: a real artist showing up
 - **Beth gets a written FMV acknowledgment letter** for her contributed services post-conference.
 - **One discount code from Eric** for Beth to share with the BFTA community via newsletter + social.
 - **No external Portland artist support** — Beth is solo. The runner accounts for this with simplified booth setup that one person can run.
+- **BFTA ships all org materials directly to the conference venue** (per Beth's request) — table banner, standing banner, T-shirt for Beth, printed one-pagers, QR cards, stickers, sign-up clipboard. Beth carries only her own art + personal items.
+- **Beth wears a BFTA T-shirt** during the event (Dion sends in advance after confirming her size). She can layer or pair with her own swag if she wants — they're complementary, not competing.
