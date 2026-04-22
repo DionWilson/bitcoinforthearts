@@ -58,7 +58,7 @@ Sincerely,
 Founder & Director
 Bitcoin For The Arts, Inc.
 501(c)(3) | EIN: 41-2642260
-27 West 60th Street, New York, NY 10023
+27 West 60th Street, PO Box 20069, New York, NY 10023
 donate@bitcoinforthearts.org | bitcoinforthearts.org
 
 ---
