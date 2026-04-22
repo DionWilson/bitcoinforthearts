@@ -29,7 +29,7 @@ held at Pubkey DC (primary) or Pubkey NYC / NYC alternative.**
 | `16-meeting-brief-trey-musgrave-tim-smigelski.md` | **Meeting brief for tomorrow** — Trey Musgrave (President, Bitcoin District Initiative) + Tim Smigelski (DC local Bitcoin arts). Asks ranked by priority, talking points, specific questions for each, what to bring/not bring, decision tree. |
 | `17-volunteer-artist-outreach.md` | **Volunteer-facing artist outreach** — for anyone other than Dion reaching out to artists. Includes what volunteers CAN/CANNOT promise, when to escalate to Dion, handoff protocol. |
 | `18-volunteer-podcaster-outreach.md` | **Volunteer-facing podcaster outreach** — for anyone other than Dion reaching out to Bitcoin podcasters. Same structure as `17` adapted for podcast-host recruiting (1–2hr slots + 25-min drop-in option). |
-| `19-trey-followup-and-sponsor-forward-template.md` | **Trey followup after the meeting** — Part A: email TO Trey w/ PDF attached + Part B: copy-paste forwarding template Trey sends to HIS sponsor contacts in third-party voice. CTA: `sponsor@bitcoinforthearts.org`. |
+| `19-trey-followup-and-sponsor-forward-template.md` | **Post-meeting follow-up to Trey** — Part A: email TO Trey w/ structured next-steps table, links to live landing page, PDF attached + Part B: copy-paste forwarding template Trey sends to HIS sponsor contacts and the 120-member DC Bitcoiners group chats. CTA: `sponsor@bitcoinforthearts.org`. |
 | `tabs/sponsors-tiers.csv` | Sheet tab: tier definitions and slot tracker (incl. Title Sponsor named auction lot) |
 | `tabs/sponsors-pipeline.csv` | Sheet tab: sponsor outreach pipeline |
 | `tabs/in-kind.csv` | Sheet tab: in-kind ask tracker (NYC venue is high-value, BTCPay/Lightning removed) |
