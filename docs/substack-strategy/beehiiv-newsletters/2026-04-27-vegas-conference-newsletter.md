@@ -43,9 +43,9 @@ Thank you for taking this on while I'm offline. I'll be reachable on Signal duri
 
 # PART 2 — The Draft Article (for Ahmed to edit + publish)
 
-**Subject line (Beehiiv):** From the Strip to the Stage — BFTA at Bitcoin Vegas + Art + Zap Weekend Update
+**Subject line (Beehiiv):** New brand. Vegas this week. Art + Zap Weekend coming.
 
-**Preview text (Beehiiv):** Bitcoin For The Arts is at the Bitcoin conference in Las Vegas this week looking for sponsors, artists, and partners for our flagship event in September. Plus a quick update on what's coming.
+**Preview text (Beehiiv):** Bitcoin For The Arts has a new visual identity, a refreshed website, and we're at Bitcoin Vegas this week looking for sponsors, artists, and partners for our September flagship event.
 
 ---
 
@@ -53,9 +53,17 @@ Thank you for taking this on while I'm offline. I'll be reachable on Signal duri
 
 Greetings from the BFTA team —
 
-This week, Bitcoin For The Arts is on the ground at the Bitcoin conference in Las Vegas. Our founder Dion Wilson is there along with two of our board members, walking the conference floor, having coffee with anyone who'll sit down, and quietly building the network we need for our biggest year yet.
+A lot to share this week. We have a new visual identity. We have a refreshed website. We're at the Bitcoin conference in Las Vegas. And our flagship event in September is coming together fast. Quick run through it all.
 
-We wanted to tell you why we're there, what we're looking for, and what to expect from us in the coming weeks.
+---
+
+### Our new brand is live
+
+Bitcoin For The Arts has a new visual identity — a clean, deliberately minimal lockup that combines a custom Bitcoin "B" with the BFTA wordmark, plus a full color system across cream, black, orange, and green variants designed to work on every surface from social profile pictures to silent-auction signage.
+
+Our refreshed website is live now at **bitcoinforthearts.org** — the new look is in place across the homepage, About, Donate, Sovereign Circle, and our flagship Art + Zap Weekend event page. Take a look.
+
+This isn't decoration. A serious nonprofit needs a serious visual identity, and we wanted ours to feel like the work — modern, deliberate, built to last.
 
 ---
 
@@ -127,6 +135,9 @@ So you can edit confidently, here's why specific things are written the way they
 | Choice | Why |
 |---|---|
 | Opens with "Greetings from the BFTA team" not "From Dion" | Lets you publish in your voice without weird bylines. Reads as a team newsletter, not a founder solo. |
+| **Brand reveal is FIRST**, not buried | Most newsworthy item leads the newsletter. The rebrand is a tangible thing readers can engage with TODAY (download the guide, visit the new site), unlike Vegas (in progress) or Art + Zap (months away). Always lead with the thing readers can act on right now. |
+| Brand section says "isn't decoration" + "feel like the work" | Frames the rebrand as a substance choice, not vanity. Pre-empts any reader who'd read this as a small-org wasting time on logos when there's mission work to do. |
+| **Brand Guidelines PDF NOT linked in article** | Per Dion: the Brand Guidelines PDF is internal-reference only — used to inform how we write about the brand publicly, not for public download via the newsletter. The newsletter just says "look at the new site." |
 | "Walking the floor. We're not exhibiting" | Honest framing — we're not over-selling our presence. Bitcoiners respect honest sizing. |
 | Specific Nostr npub in the body | Makes it actionable for any Bitcoin reader. Real call-to-action, not vague "follow us." |
 | "Bitcoin-funded fundraiser FOR Bitcoin For The Arts" | Locked positioning per board input from Kenneth — explicitly NOT "Bitcoin-native, direct-to-artist" framing. Kept consistent across all BFTA materials. |
