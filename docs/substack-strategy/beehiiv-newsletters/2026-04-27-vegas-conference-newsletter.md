@@ -59,9 +59,11 @@ A lot to share this week. We have a new visual identity. We have a refreshed web
 
 ### Our new brand is live
 
-Bitcoin For The Arts has a new visual identity — a clean, deliberately minimal lockup that combines a custom Bitcoin "B" with the BFTA wordmark, plus a full color system across cream, black, orange, and green variants designed to work on every surface from social profile pictures to silent-auction signage.
+Bitcoin For The Arts has a new visual identity. The logo is built from "Bitcoin for the" set in **Neue Haas Grotesk** — a modernist Swiss sans-serif chosen for its clarity and timeless balance — and "Arts" set in a modified script. The words are arranged to **form a frame**, alluding directly to the work the organization does: enabling patronage.
 
-Our refreshed website is live now at **bitcoinforthearts.org** — the new look is in place across the homepage, About, Donate, Sovereign Circle, and our flagship Art + Zap Weekend event page. Take a look.
+The color palette pairs **Bitcoin orange** with **neon green**, balanced by **cream** and **black** — saturated colors held in tension by neutrals, energetic but elegant. The system is built to come alive through bold layering, high-contrast combinations, and dynamic compositions where graphic elements overlap and interact.
+
+Our refreshed website is live now at **bitcoinforthearts.org** — the new identity is in place across the homepage, About, Donate, Sovereign Circle, and our flagship Art + Zap Weekend event page. Take a look.
 
 This isn't decoration. A serious nonprofit needs a serious visual identity, and we wanted ours to feel like the work — modern, deliberate, built to last.
 
