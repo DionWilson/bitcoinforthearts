@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bitcoin For The Arts — Impact + Trajectory</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.45in 0.5in;
+  }
+
+  :root {
+    --orange: #FF4F14;
+    --cream: #FFFAF0;
+    --green: #B3FF48;
+    --black: #000000;
+    --rule: rgba(0, 0, 0, 0.18);
+    --ink-soft: #2a2a2a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--cream);
+    color: var(--black);
+    font-family: "Helvetica Neue", Helvetica, Arial, "Neue Haas Grotesk", sans-serif;
+    font-size: 9pt;
+    line-height: 1.32;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    background: var(--cream);
+    padding: 0;
+  }
+
+  /* ---- Masthead ---- */
+  header.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-bottom: 3px solid var(--black);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+  }
+  header.brand .lockup {
+    flex-shrink: 0;
+    width: 90px;
+  }
+  header.brand .lockup img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  header.brand .titles {
+    flex: 1;
+  }
+  header.brand h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 22pt;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.05;
+    color: var(--black);
+  }
+  header.brand .one-liner {
+    margin-top: 4px;
+    font-size: 9pt;
+    font-weight: 600;
+    color: var(--black);
+    letter-spacing: 0.2px;
+  }
+  header.brand .meta {
+    text-align: right;
+    font-size: 7.5pt;
+    color: var(--ink-soft);
+    line-height: 1.4;
+  }
+
+  /* ---- Section headers ---- */
+  h2.section {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 10pt;
+    margin: 14px 0 6px 0;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid var(--orange);
+    color: var(--black);
+  }
+
+  /* ---- Body paragraph ---- */
+  p.intro {
+    font-size: 9pt;
+    line-height: 1.45;
+    margin: 0 0 8px 0;
+  }
+  p.intro strong {
+    color: var(--orange);
+  }
+
+  /* ---- Allocation table ---- */
+  .allocation {
+    background: white;
+    border: 1.5px solid var(--black);
+    margin: 6px 0 6px 0;
+  }
+  .allocation .row {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    border-bottom: 1px solid var(--rule);
+    padding: 5px 10px;
+    align-items: baseline;
+  }
+  .allocation .row:last-child {
+    border-bottom: none;
+  }
+  .allocation .pct {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 14pt;
+    line-height: 1;
+  }
+  .allocation .label strong {
+    font-size: 9pt;
+    color: var(--black);
+  }
+  .allocation .label .sub {
+    font-size: 8pt;
+    color: var(--ink-soft);
+    display: block;
+    margin-top: 1px;
+  }
+
+  .small-print {
+    font-size: 7.5pt;
+    color: var(--ink-soft);
+    margin: 4px 0 0 0;
+    line-height: 1.35;
+  }
+
+  /* ---- Trajectory bullets ---- */
+  ul.trajectory {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 8px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 14px;
+  }
+  ul.trajectory li {
+    font-size: 8pt;
+    line-height: 1.35;
+    padding-left: 14px;
+    position: relative;
+  }
+  ul.trajectory li::before {
+    content: "→";
+    color: var(--orange);
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+  }
+  ul.trajectory li strong {
+    color: var(--black);
+  }
+
+  /* ---- Artists ---- */
+  .artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 6px 0 8px 0;
+  }
+  .artist {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 0;
+    overflow: hidden;
+  }
+  .artist .photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid var(--orange);
+  }
+  .artist .body {
+    padding: 7px 9px 8px;
+  }
+  .artist .name {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+    color: var(--black);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .artist .role {
+    font-size: 7pt;
+    color: var(--orange);
+    margin: 2px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+  }
+  .artist .blurb {
+    font-size: 7.5pt;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .artist .url {
+    margin-top: 4px;
+    font-size: 7pt;
+    color: var(--orange);
+    font-weight: 600;
+    word-break: break-word;
+  }
+
+  .community-note {
+    font-size: 7.5pt;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0 0 6px 0;
+  }
+
+  /* ---- Why Bitcoin ---- */
+  .why-bitcoin {
+    background: var(--black);
+    color: var(--cream);
+    padding: 10px 14px;
+    margin: 8px 0 8px 0;
+  }
+  .why-bitcoin h2 {
+    color: var(--green);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 10pt;
+    margin: 0 0 5px 0;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid var(--green);
+  }
+  .why-bitcoin p {
+    font-size: 8pt;
+    line-height: 1.4;
+    margin: 4px 0;
+    color: var(--cream);
+  }
+  .why-bitcoin strong {
+    color: var(--green);
+  }
+  .why-bitcoin ul {
+    margin: 4px 0;
+    padding-left: 18px;
+    font-size: 8pt;
+    line-height: 1.4;
+  }
+  .why-bitcoin li {
+    margin-bottom: 2px;
+  }
+
+  /* ---- How to support ---- */
+  table.support {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    margin: 4px 0 6px 0;
+  }
+  table.support th {
+    background: var(--orange);
+    color: white;
+    padding: 5px 8px;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 8pt;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  table.support td {
+    padding: 5px 8px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+    background: white;
+  }
+  table.support tr:last-child td {
+    border-bottom: 1px solid var(--rule);
+  }
+  table.support .what {
+    font-weight: 600;
+    color: var(--black);
+    width: 38%;
+  }
+  table.support .how {
+    color: var(--ink-soft);
+    font-family: "Courier New", monospace;
+    font-size: 7.5pt;
+    word-break: break-word;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 6.5pt;
+    color: var(--ink-soft);
+    font-style: italic;
+    line-height: 1.35;
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid var(--rule);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="brand">
+    <div class="lockup">
+      <img src="lockup-cream-orange.png" alt="Bitcoin For The Arts">
+    </div>
+    <div class="titles">
+      <h1>Bitcoin For The Arts</h1>
+      <div class="one-liner">The first 501(c)(3) nonprofit paying artists exclusively in Bitcoin.</div>
+    </div>
+    <div class="meta">
+      <strong>EIN 41-2642260</strong><br>
+      27 West 60th Street<br>
+      PO Box 20069<br>
+      New York, NY 10023<br>
+      bitcoinforthearts.org
+    </div>
+  </header>
+
+  <h2 class="section">Our Mission</h2>
+  <p class="intro">Bitcoin For The Arts funds independent creators across visual arts, theater, music, dance, writing, film, and storytelling — through quarterly Bitcoin micro-grants, education, and live programming. We are building a parallel arts-funding system that doesn't depend on government grants, corporate sponsors with strings, or institutional donors with conditions. <strong>Sound money for sovereign creators.</strong></p>
+
+  <h2 class="section">How Every Dollar Moves</h2>
+  <div class="allocation">
+    <div class="row">
+      <div class="pct">55%</div>
+      <div class="label"><strong>Direct artist grants</strong><span class="sub">Quarterly Bitcoin micro-grants to working artists nationwide</span></div>
+    </div>
+    <div class="row">
+      <div class="pct">30%</div>
+      <div class="label"><strong>Programs</strong><span class="sub">Workshops, residencies, productions, our Art + Zap Weekend flagship event</span></div>
+    </div>
+    <div class="row">
+      <div class="pct">10%</div>
+      <div class="label"><strong>Operations</strong><span class="sub">Software, banking, admin</span></div>
+    </div>
+    <div class="row">
+      <div class="pct">5%</div>
+      <div class="label"><strong>HODL Vault</strong><span class="sub">Permanent Bitcoin endowment, designed to grow in purchasing power across decades</span></div>
+    </div>
+  </div>
+  <p class="small-print">100% on-chain. 100% open-source. Public governance, board minutes, and financial allocation: bitcoinforthearts.org/transparency</p>
+
+  <h2 class="section">Where We Are Today (Q2 2026)</h2>
+  <ul class="trajectory">
+    <li><strong>First Q3 micro-grant cycle launches summer 2026</strong> — $500–$2,000 BTC grants paid directly to artists' Lightning addresses, no application fee</li>
+    <li><strong>Sovereign Circle</strong> active across 5 tiers ($5/mo to $101/mo) — first annual member joined April 2026</li>
+    <li><strong>HODL Vault</strong> first endowment position currently being established, with on-chain transparency reporting to follow</li>
+    <li><strong>Granting & funding wallet</strong> going public on-chain — every donation in, every grant out, verifiable forever</li>
+    <li><strong>Art + Zap Weekend</strong> — September 2026 at Pubkey DC, 21 featured artists, 2-day live broadcast, Monday-night Broadway-headlined finale</li>
+    <li><strong>Editorial publication</strong> active on Substack — newsjacking the arts-funding crisis, telling the BFTA mission story week-over-week</li>
+  </ul>
+
+  <h2 class="section">Three Artists in the BFTA Community</h2>
+  <p class="community-note">These artists have shared their work and their Bitcoin journey through BFTA. They represent who BFTA exists to support.</p>
+  <div class="artists">
+    <div class="artist">
+      <img class="photo" src="artist-benjamin.jpg" alt="Benjamin Ella, former Royal Ballet Soloist">
+      <div class="body">
+        <p class="name">Benjamin Ella</p>
+        <p class="role">Dance · London</p>
+        <p class="blurb">17 seasons as Soloist of The Royal Ballet — with roles created for him by Wayne McGregor, Crystal Pite, and Hofesh Shechter. Discovered Bitcoin while serving as a dancer's union deputy. <em>"Proverbs 11:1 — The Lord detests dishonest weights and scales. That's what money printing is."</em></p>
+        <p class="url">bitcoinforthearts.org/stories/benjamin-ella</p>
+      </div>
+    </div>
+    <div class="artist">
+      <img class="photo" src="artist-kenneth.jpg" alt="Alone — oil on canvas by Kenneth Burris">
+      <div class="body">
+        <p class="name">Kenneth Burris</p>
+        <p class="role">Visual Art · NYC</p>
+        <p class="blurb">30+ years of studio mastery. His Post-Globalist Landscape series — industrial cooling towers looming amid misty wildernesses — provokes the question: <em>what endures when empires of code crumble?</em> A defiant sentinel of permanence in an age of digital ephemera.</p>
+        <p class="url">bitcoinforthearts.org/stories/kenneth-burris</p>
+      </div>
+    </div>
+    <div class="artist">
+      <img class="photo" src="artist-kweks.webp" alt="Man Like Kweks, Tanzanian musician">
+      <div class="body">
+        <p class="name">Man Like Kweks</p>
+        <p class="role">Music · Tanzania</p>
+        <p class="blurb">Tanzania's Bitcoin frontier sound. Musician, community educator, fusing Afrobeat rhythms with Lightning-fast zaps — sonic manifestos that make the case for Bitcoin as the soundtrack of African economic sovereignty. Latest: <em>Tokyo Citadel Remix</em> with reelrichard.</p>
+        <p class="url">bitcoinforthearts.org/stories/man-like-kweks</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-bitcoin">
+    <h2>Why Bitcoin</h2>
+    <p>Federal arts funding is collapsing. The NEA has been targeted for elimination in two consecutive federal budgets. State arts appropriations are projected to drop 7.7% nationally for FY2026. <strong>Institutional arts funding can no longer be relied on.</strong></p>
+    <p>Bitcoin and the Lightning Network make a non-state-dependent arts funding model possible for the first time:</p>
+    <ul>
+      <li><strong>Instant, global, peer-to-peer payments</strong> with no platform fees, no permission, no third party between donor and artist</li>
+      <li><strong>Fixed supply (21 million)</strong> — endowments denominated in Bitcoin do not lose purchasing power across decades the way fiat endowments do</li>
+      <li><strong>On-chain transparency</strong> — every donation in, every grant out, verifiable by anyone, forever</li>
+    </ul>
+    <p>We are not waiting for institutions to fix themselves. <strong>We are building the alternative.</strong></p>
+  </div>
+
+  <h2 class="section">How to Support Us</h2>
+  <table class="support">
+    <thead>
+      <tr><th>Want to</th><th>Do this</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="what">Sponsor Art + Zap Weekend ($5K / $10K / $25K, in-kind welcome)</td><td class="how">sponsor@bitcoinforthearts.org · bitcoinforthearts.org/art-zap-weekend</td></tr>
+      <tr><td class="what">Donate Bitcoin or USD</td><td class="how">bitcoinforthearts.org/donate · ⚡ gifts@donations.bitcoinforthearts.org</td></tr>
+      <tr><td class="what">Join the Sovereign Circle ($5–$101/mo, annual options)</td><td class="how">bitcoinforthearts.org/donate/monthly</td></tr>
+      <tr><td class="what">Apply for a grant (artists nationwide, no fee)</td><td class="how">bitcoinforthearts.org/grants</td></tr>
+      <tr><td class="what">Share your Bitcoin journey (we publish working-artist stories)</td><td class="how">bitcoinforthearts.org/stories/share-your-story</td></tr>
+      <tr><td class="what">Connect on Nostr</td><td class="how">npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw</td></tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. EIN: 41-2642260. All donations are tax-deductible to the extent allowed by law. Headquartered at 27 West 60th Street, PO Box 20069, New York, NY 10023.
+  </div>
+
+</div>
+</body>
+</html>
