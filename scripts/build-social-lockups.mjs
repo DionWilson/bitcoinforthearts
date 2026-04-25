@@ -68,6 +68,12 @@ const variants = [
     background: BLACK,
   },
   {
+    // Alt colorway: cream BITCOIN/FOR/THE + orange Arts on black.
+    label: 'black-orange-alt',
+    input: 'BFTA-main-lockup-black-orange-2.png',
+    background: BLACK,
+  },
+  {
     label: 'orange',
     input: 'BFTA-main-lockup-orange.png',
     background: ORANGE,
@@ -75,6 +81,12 @@ const variants = [
   {
     label: 'green',
     input: 'BFTA-main-lockup-green.png',
+    background: LIME,
+  },
+  {
+    // Alt colorway: black BITCOIN/FOR/THE + orange Arts on lime.
+    label: 'green-alt',
+    input: 'BFTA-main-lockup-green-2.png',
     background: LIME,
   },
 ];
@@ -105,8 +117,10 @@ const SIZES = [2160, 1080];
 // namespacing (`-inline-` family prefix).
 const profileVariants = [
   { label: 'green-main', input: 'BFTA-main-lockup-green.png', background: LIME },
+  { label: 'green-alt-main', input: 'BFTA-main-lockup-green-2.png', background: LIME },
   { label: 'orange-main', input: 'BFTA-main-lockup-orange.png', background: ORANGE },
   { label: 'black-orange-main', input: 'BFTA-main-lockup-black-orange.png', background: BLACK },
+  { label: 'black-orange-alt-main', input: 'BFTA-main-lockup-black-orange-2.png', background: BLACK },
   { label: 'black-cream-main', input: 'BFTA-main-lockup-black-cream.png', background: BLACK },
   { label: 'cream-orange-alt-main', input: 'BFTA-main-lockup-cream-orange-1.png', background: CREAM },
 ];
@@ -126,8 +140,10 @@ const circleSafeMainVariants = [
   { label: 'cream-black', input: 'BFTA-main-lockup-cream-black.png', background: CREAM },
   { label: 'black-cream', input: 'BFTA-main-lockup-black-cream.png', background: BLACK },
   { label: 'black-orange', input: 'BFTA-main-lockup-black-orange.png', background: BLACK },
+  { label: 'black-orange-alt', input: 'BFTA-main-lockup-black-orange-2.png', background: BLACK },
   { label: 'orange', input: 'BFTA-main-lockup-orange.png', background: ORANGE },
   { label: 'green', input: 'BFTA-main-lockup-green.png', background: LIME },
+  { label: 'green-alt', input: 'BFTA-main-lockup-green-2.png', background: LIME },
 ];
 
 // Square BFTA "bug" lockups (the 'BTA / FA' stacked square mark used as the
@@ -156,6 +172,8 @@ const inlineBugVariants = [
   { label: 'cream-white', input: 'BFTA-bug-inline-cream-white.png', background: CREAM },
   { label: 'black-cream', input: 'BFTA-bug-inline-black-cream (1).png', background: BLACK },
   { label: 'black-orange', input: 'BFTA-bug-inline-black-orange.png', background: BLACK },
+  // Alt: cream BFT + orange A on black (inverse of black-orange v1).
+  { label: 'black-orange-alt', input: 'BFTA-bug-inline-black-orange-2.png', background: BLACK },
   { label: 'orange', input: 'BFTA-bug-inline-orange (1).png', background: ORANGE },
   { label: 'green', input: 'BFTA-bug-inline-green-1.png', background: LIME },
   { label: 'green-alt', input: 'BFTA-bug-inline-green-2.png', background: LIME },
@@ -196,8 +214,14 @@ const bannerSizes = [
 
 const bannerVariants = [
   { label: 'green', input: 'BFTA-bug-inline-green-1.png', background: LIME },
+  // Alt: same lime field, inverse Arts-script color role (uses green-2 inline).
+  { label: 'green-alt', input: 'BFTA-bug-inline-green-2.png', background: LIME },
   { label: 'black-orange', input: 'BFTA-bug-inline-black-orange.png', background: BLACK },
+  // Alt: cream BFT + orange A on black (uses black-orange-2 inline).
+  { label: 'black-orange-alt', input: 'BFTA-bug-inline-black-orange-2.png', background: BLACK },
   { label: 'black-cream', input: 'BFTA-bug-inline-black-cream (1).png', background: BLACK },
+  // Alt: black BFT + orange A on cream (uses cream-orange-2 inline).
+  { label: 'cream-orange-alt', input: 'BFTA-bug-inline-cream-orange-2.png', background: CREAM },
   { label: 'cream-orange', input: 'BFTA-bug-inline-cream-orange-1.png', background: CREAM },
 ];
 
