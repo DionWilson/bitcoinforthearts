@@ -1,360 +1,252 @@
+<div align="center">
+
 <a href="https://bitcoinforthearts.org">
-  <img src="public/brand-kit/main-lockups/main-cream-orange.png" alt="Bitcoin for the Arts" width="480" />
+  <img src="public/brand-kit/main-lockups/main-cream-orange.png" alt="Bitcoin for the Arts" width="520" />
 </a>
 
-# Bitcoin for the Arts
+<br />
 
-**Bitcoin for the Arts, Inc. — 501(c)(3) Nonprofit**
+[![Website](https://img.shields.io/badge/bitcoinforthearts.org-FF4F14?style=for-the-badge&logo=bitcoin&logoColor=white)](https://bitcoinforthearts.org)
+[![Donate](https://img.shields.io/badge/Donate_Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=B3FF48)](https://bitcoinforthearts.org/donate)
+[![Apply for a Grant](https://img.shields.io/badge/Apply_for_a_Grant-FF4F14?style=for-the-badge)](https://bitcoinforthearts.org/grants/apply)
+[![Volunteer](https://img.shields.io/badge/Volunteer-000000?style=for-the-badge)](https://bitcoinforthearts.org/get-involved/volunteer)
+[![Follow on X](https://img.shields.io/badge/@Bitcoinfta-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Bitcoinfta)
+
+<br />
+
+**Bitcoin for the Arts, Inc. — 501(c)(3) Nonprofit · EIN 41-2642260**
+
 *The **first** nonprofit paying artists in Bitcoin.*
 *55/30/10/5 Rule · 100% On-Chain · 100% Open-Source*
 
-🌐 [bitcoinforthearts.org](https://bitcoinforthearts.org) ·
-💸 [Donate](https://bitcoinforthearts.org/donate) ·
-📝 [Apply for a grant](https://bitcoinforthearts.org/grants/apply) ·
-🤝 [Volunteer](https://bitcoinforthearts.org/get-involved/volunteer) ·
-🐦 [@Bitcoinfta](https://x.com/Bitcoinfta)
+</div>
 
 ---
 
-### **Our Mission**
-> **"In the sovereign spirit of Bitcoin—uncensorable money for uncensorable minds—we ignite a self-sustaining global renaissance in art.**
-> **Through Bitcoin micro-grants, performance workshops, and live + digital productions, we back sovereign creators across visual arts, theater, dance, music, writing, storytelling, and film. We favor low time preference work—timeless craft that resists censorship and celebrates financial freedom through Bitcoin-aligned innovation. Every donation fuels direct support to creators, powers exhibitions and residencies, and plants a seed in a permanent Bitcoin reserve—building an endowment for human creativity that no institution or inflation can touch."**
+## Our Mission
+
+> *"In the sovereign spirit of Bitcoin — uncensorable money for uncensorable minds — we ignite a self-sustaining global renaissance in art.*
+>
+> *Through Bitcoin micro-grants, performance workshops, and live + digital productions, we back sovereign creators across visual arts, theater, dance, music, writing, storytelling, and film. We favor low time preference work — timeless craft that resists censorship and celebrates financial freedom through Bitcoin-aligned innovation. Every donation fuels direct support to creators, powers exhibitions and residencies, and plants a seed in a permanent Bitcoin reserve — building an endowment for human creativity that no institution or inflation can touch."*
 
 ---
 
-### **What We Do**
-- **55%** → **artist grants** — direct BTC to working creators
-- **30%** → **workshops, residencies, co-productions** with BAM, Whitney, Carnegie
-- **10%** → **operations**
-- **5%** → **HODL Vault** (secure, non-public endowment reserve)
+## What We Do
+
+<table>
+<tr>
+  <td align="center" width="25%">
+    <img src="https://img.shields.io/badge/55%25-Artist_Grants-FF4F14?style=for-the-badge" /><br/>
+    <sub>Direct BTC to working creators</sub>
+  </td>
+  <td align="center" width="25%">
+    <img src="https://img.shields.io/badge/30%25-Programs-000000?style=for-the-badge" /><br/>
+    <sub>Workshops, residencies, co-productions</sub>
+  </td>
+  <td align="center" width="25%">
+    <img src="https://img.shields.io/badge/10%25-Operations-B3FF48?style=for-the-badge&logoColor=000" /><br/>
+    <sub>Compliance & operations</sub>
+  </td>
+  <td align="center" width="25%">
+    <img src="https://img.shields.io/badge/5%25-HODL_Vault-FFFAF0?style=for-the-badge&logoColor=000" /><br/>
+    <sub>Endowment reserve — 1 BTC by 2030</sub>
+  </td>
+</tr>
+</table>
 
 ---
 
-### **Reserve (HODL Vault)**
-- **HODL Vault**: secure multisig endowment reserve (**address not public** for safety)
-- **Transparency**: we share **aggregated reporting** and publish governance/policy documents on the website
+## Stacking Culture on Sound Money
 
-**Donate**: see [bitcoinforthearts.org/donate](https://bitcoinforthearts.org/donate)
+![No Fiat](https://img.shields.io/badge/No_Fiat-FF4F14?style=flat-square)
+![No VCs](https://img.shields.io/badge/No_VCs-FF4F14?style=flat-square)
+![No Inflation](https://img.shields.io/badge/No_Inflation-FF4F14?style=flat-square)
+![No Gatekeepers](https://img.shields.io/badge/No_Gatekeepers-FF4F14?style=flat-square)
 
----
-
-### **Press & Brand**
-
-For press, partners, and anyone needing to use the BFTA brand:
-
-- 📘 **[Brand Guidelines (PDF)](public/brand-kit/guidelines/BFTA-Brand-Guidelines.pdf)** — the official kit from our agency.
-- 🎨 **[Brand kit folder](public/brand-kit/)** — every lockup variant, BFTA bug, and source file. See its [README](public/brand-kit/README.md) for the directory and a "pick the right asset" cheat sheet.
-- 🖼️ **Most-requested files**:
-  - Main lockup, cream / orange — [`main-cream-orange.png`](public/brand-kit/main-lockups/main-cream-orange.png)
-  - Main lockup, black / orange — [`main-black-orange.png`](public/brand-kit/main-lockups/main-black-orange.png)
-  - BFTA bug, square — [`square-cream-orange-alt.png`](public/brand-kit/square-bugs/square-cream-orange-alt.png)
-  - Vector source files — [`source-files/`](public/brand-kit/source-files/)
-- 📩 **Press contact**: hello@bitcoinforthearts.org
+> **"The NEA of the Bitcoin Era." — First. Transparent. Unstoppable.**
 
 ---
 
-### **Featured Artists & Stories**
+## Featured Artists & Stories
 
-Read about the artists BFTA has funded and worked with:
-[bitcoinforthearts.org/stories](https://bitcoinforthearts.org/stories)
+Meet the artists BFTA has funded and worked with — musicians, painters, animators, dancers, filmmakers, and more:
 
----
-
-### **Leadership**
-
-For full bios, headshots, and the live source of truth, see
-[bitcoinforthearts.org/about/leadership](https://bitcoinforthearts.org/about/leadership).
-
-**Board Advisors**
-- Buttercup Roberts
-- Kyle Knight
-- Julie Costello
-- Camas Logue
-- Valerie Love
-- Kenneth Burris
+**[bitcoinforthearts.org/stories](https://bitcoinforthearts.org/stories)**
 
 ---
 
-### **Domain & DNS Configuration**
+## Leadership
 
-The site runs on the custom domain **bitcoinforthearts.org**, registered at
-**Hostinger** and served via **Vercel** (hosting). **Cloudflare** is used
-**only for Turnstile** (spam protection on forms) — DNS is managed at
-Hostinger, not Cloudflare.
+For full bios, headshots, and the live source of truth:
+**[bitcoinforthearts.org/about/leadership](https://bitcoinforthearts.org/about/leadership)**
 
-#### DNS records (managed in Hostinger)
-
-| Type  | Name               | Value / Target                         |
-|-------|--------------------|----------------------------------------|
-| CNAME | `www`              | Vercel DNS (e.g. `cname.vercel-dns.com`) |
-| MX    | `@`                | `mx.zoho.com` (pri 10)                |
-| MX    | `@`                | `mx2.zoho.com` (pri 20)               |
-| MX    | `@`                | `mx3.zoho.com` (pri 50)               |
-| TXT   | `@`                | `v=spf1 include:zohomail.com ~all`     |
-| TXT   | `@`                | Zoho domain verification TXT           |
-| TXT   | `_dmarc`           | DMARC policy record                    |
-
-#### Cloudflare "domain deleted" emails
-
-Cloudflare may send emails saying `bitcoinforthearts.org has been deleted`
-from your Cloudflare account. This happens because the domain was added to
-Cloudflare (required when creating a Turnstile site key) but the nameservers
-were **never pointed to Cloudflare** — DNS stays at Hostinger. After ~4 weeks
-on the free plan without Cloudflare nameservers, Cloudflare auto-removes the
-domain zone.
-
-**This does not affect the site or Turnstile.** Turnstile widgets and
-server-side verification (`challenges.cloudflare.com/turnstile/v0/siteverify`)
-are a standalone Cloudflare service tied to your API keys, not to DNS.
-
-If Cloudflare deletes the domain zone, you can safely ignore the email. If you
-ever need to regenerate Turnstile keys, just re-add the domain in the
-Cloudflare dashboard and create new keys.
+**Board Advisors:** Buttercup Roberts · Kyle Knight · Julie Costello · Camas Logue · Valerie Love · Kenneth Burris
 
 ---
 
-### **BTCPay Server (Donations)**
-The donation flow calls the BTCPay Server API. Configure these **deployment**
-environment variables (e.g., in Vercel or your hosting provider):
+## Press & Brand
 
-- `BTCPAY_URL` (public HTTPS URL of your cloud-hosted BTCPay instance)
-- `BTCPAY_API_KEY` (store API key from BTCPay Server)
-- `BTCPAY_STORE_ID` (store ID from BTCPay Server)
-- `BTCPAY_WEBHOOK_SECRET` (optional but recommended; used to verify BTCPay webhook signatures)
-
-Notes:
-- `.local` and `.onion` URLs will not work for a public website.
-- Restart/redeploy after updating env vars.
-- Vercel only deploys new commits automatically; if your Git link was reconnected, make a fresh deploy (or merge a small PR) to trigger a new production build.
+| Resource | Link |
+|---|---|
+| Brand Guidelines (PDF) | [`public/brand-kit/guidelines/`](public/brand-kit/guidelines/BFTA-Brand-Guidelines.pdf) |
+| Full Brand Kit | [`public/brand-kit/`](public/brand-kit/) — all lockups, bugs, social assets, source files |
+| Main lockup — cream/orange | [`main-cream-orange.png`](public/brand-kit/main-lockups/main-cream-orange.png) |
+| Main lockup — black/orange | [`main-black-orange.png`](public/brand-kit/main-lockups/main-black-orange.png) |
+| BFTA bug — square | [`square-cream-orange-alt.png`](public/brand-kit/square-bugs/square-cream-orange-alt.png) |
+| Press contact | hello@bitcoinforthearts.org |
 
 ---
 
-### **Stripe Webhooks (Card Donations / Apple Pay)**
-If you want to run automation after donations (e.g., log donations to MongoDB, send donor thank-you emails), configure a Stripe webhook endpoint.
+## Donor Perks
 
-- **Webhook URL**: `https://bitcoinforthearts.org/api/stripe/webhook`
-
-Environment variables:
-- `STRIPE_WEBHOOK_SECRET` (required; from Stripe Dashboard → Developers → Webhooks)
-- `STRIPE_SECRET_KEY` (optional; used by the Stripe SDK for future expansion)
-- `DONATION_THANKYOU_THRESHOLD_USD` (optional; default `50`)
-- `DONATIONS_FROM_EMAIL` (optional; defaults to `RESEND_FROM_EMAIL`)
-- `DONATIONS_REPLY_TO` (optional; defaults to `donate@bitcoinforthearts.org`)
-
-Notes:
-- The webhook stores paid `checkout.session.completed` events in MongoDB (`donations` collection).
-- Stripe still handles official receipts automatically.
+| Donation | Perk |
+|---|---|
+| Any amount | Publicly recognized on the [Transparency page](https://bitcoinforthearts.org/transparency) |
+| ≥ 0.01 BTC | Digital thank-you card |
+| ≥ 1 BTC | Name a grant + steel seed backup |
 
 ---
 
-### **Donor Perks**
-- **All donors:** publicly recognized on the [Transparency page](https://bitcoinforthearts.org/transparency)
-- **≥ 0.01 BTC:** Digital thank-you card
-- **≥ 1 BTC:** Name a grant + steel seed backup
+## Reserve (HODL Vault)
+
+- **HODL Vault**: secure multisig endowment reserve (**address not public** for security)
+- **Transparency**: aggregated reporting and governance documents published at [bitcoinforthearts.org/transparency](https://bitcoinforthearts.org/transparency)
 
 ---
 
-### **The 55/30/10/5 Rule**
-| **Use** | **%** | **Purpose** |
-|--------|------|------------|
-| Artist Grants | 55% | BTC to creators |
-| Programs | 30% | Workshops, residencies, co-productions |
-| Admin | 10% | Compliance & ops |
-| HODL Vault | 5% | 1 BTC by 2030 |
+## Tech Stack
+
+![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![BTCPay Server](https://img.shields.io/badge/BTCPay_Server-FF4F14?style=flat-square)
+![SvelteKit](https://img.shields.io/badge/SvelteKit_(Artist_Hub)-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 
 ---
 
-### **Stacking Culture on Sound Money**
-- **No fiat**  
-- **No VCs**  
-- **No inflation**  
-- **No gatekeepers**  
+## Contributing
+
+We welcome contributors! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+```bash
+git clone https://github.com/Bitcoin-For-The-Arts/Bitcoin-For-The-Arts.git
+cd Bitcoin-For-The-Arts
+npm install
+cp .env.example .env.local   # fill in your local values
+npm run dev
+```
+
+See [`.env.example`](.env.example) for the full list of environment variables.
 
 ---
 
-**X:** [@Bitcoinfta](https://x.com/Bitcoinfta)
-**Email:** hello@bitcoinforthearts.org
+<details>
+<summary><strong>⚙️ Infrastructure & Deployment</strong></summary>
+
+<br />
+
+### Domain & DNS
+
+The site runs on **bitcoinforthearts.org**, registered at **Hostinger**, hosted on **Vercel**. Cloudflare is used **only for Turnstile** (spam protection) — DNS is managed at Hostinger, not Cloudflare.
+
+| Type | Name | Value |
+|---|---|---|
+| CNAME | `www` | Vercel DNS (`cname.vercel-dns.com`) |
+| MX | `@` | `mx.zoho.com` (pri 10) |
+| MX | `@` | `mx2.zoho.com` (pri 20) |
+| MX | `@` | `mx3.zoho.com` (pri 50) |
+| TXT | `@` | `v=spf1 include:zohomail.com ~all` |
+| TXT | `_dmarc` | DMARC policy record |
+
+> **Cloudflare "domain deleted" emails** are expected and harmless — Cloudflare auto-removes domain zones that don't use Cloudflare nameservers after ~4 weeks. This does not affect the site or Turnstile.
 
 ---
 
-### **Homepage Intro Video (Easy Swap)**
-- **Turn it on/off (Vercel env var)**:
-  - default is **ON**
-  - `NEXT_PUBLIC_SHOW_HOME_INTRO=0` → disable the intro video
-- **Swap the video (no code changes)**:
-  - Upload/replace this file: `public/BFTA-home-page.MOV`
-  - Deploy (or run `npm run build`)
-  - The build will automatically convert it to: `public/BFTA-home-page.mp4` for browser playback
+### BTCPay Server
+
+| Variable | Description |
+|---|---|
+| `BTCPAY_URL` | Public HTTPS URL of your BTCPay instance |
+| `BTCPAY_API_KEY` | Store API key |
+| `BTCPAY_STORE_ID` | Store ID |
+| `BTCPAY_WEBHOOK_SECRET` | Webhook signature verification (recommended) |
 
 ---
 
-### **Webinar Promo (currently disabled on the public site)**
-The webinar signup promo component is kept in the codebase for future use, but it is
-**not mounted on public pages right now**.
+### Stripe (Card Donations / Apple Pay)
 
-If you want to prepare internal config for a future webinar, these env vars are still
-supported by the component:
+**Webhook URL:** `https://bitcoinforthearts.org/api/stripe/webhook`
 
-- `NEXT_PUBLIC_SHOW_WEBINAR_PROMO=1`
-- `NEXT_PUBLIC_WEBINAR_SIGNUP_URL=https://...` (**required**)
-- `NEXT_PUBLIC_WEBINAR_TITLE=Bitcoin for Artists — Live Webinar` (optional)
-- `NEXT_PUBLIC_WEBINAR_DATE_TEXT=Feb 8 • 12:00 PM ET` (optional)
-- `NEXT_PUBLIC_WEBINAR_BODY_TEXT=...` (optional)
-- `NEXT_PUBLIC_WEBINAR_FLYER_SRC=/path-to-flyer.png` (optional; defaults to `public/webinar-flyer.png`)
-
-If/when you want it live again, re-mount `HomeWebinarPromo` on the desired page(s).
+| Variable | Description |
+|---|---|
+| `STRIPE_WEBHOOK_SECRET` | From Stripe Dashboard → Developers → Webhooks |
+| `STRIPE_SECRET_KEY` | Stripe secret key |
+| `DONATION_THANKYOU_THRESHOLD_USD` | Minimum USD for thank-you email (default `50`) |
 
 ---
 
-### **Contact Form (Send Directly From the Website)**
-The Contact page now sends email directly (no “open your email app” prompt).
+### Contact Form
 
-#### Option A (recommended): Resend (no Zoho app password needed)
-Set these **Vercel environment variables**:
-- `RESEND_API_KEY`
-- `RESEND_FROM_EMAIL` (can start as `onboarding@resend.dev`, then switch to `hello@bitcoinforthearts.org` after you verify the domain in Resend)
-- `CONTACT_TO_EMAIL` (where you want submissions delivered, usually `hello@bitcoinforthearts.org`)
-- `CONTACT_FROM_EMAIL` (optional if you set `RESEND_FROM_EMAIL`)
+**Option A — Resend (recommended)**
 
-#### Option B: SMTP (Zoho, etc.)
-Set these **Vercel environment variables**:
-- `CONTACT_SMTP_USER` (example: `hello@bitcoinforthearts.org`)
-- `CONTACT_SMTP_PASS` (Zoho SMTP password or app password)
-- `CONTACT_TO_EMAIL` (where you want submissions delivered, usually `hello@bitcoinforthearts.org`)
-- `CONTACT_FROM_EMAIL` (usually same as `CONTACT_SMTP_USER`)
+| Variable | Description |
+|---|---|
+| `RESEND_API_KEY` | Resend API key |
+| `RESEND_FROM_EMAIL` | Sender address |
+| `CONTACT_TO_EMAIL` | Delivery address (usually `hello@bitcoinforthearts.org`) |
 
-Optional:
-- `CONTACT_SMTP_HOST` (default `smtp.zoho.com`)
-- `CONTACT_SMTP_PORT` (default `465`)
-- `CONTACT_SMTP_SECURE` (default `true`)
-- `CONTACT_SUBJECT_PREFIX` (default `Website contact`)
+**Option B — SMTP (Zoho, etc.)**
+
+| Variable | Description |
+|---|---|
+| `CONTACT_SMTP_USER` | SMTP username |
+| `CONTACT_SMTP_PASS` | SMTP password |
+| `CONTACT_TO_EMAIL` | Delivery address |
 
 ---
 
-### **Grants Application (First-Party / No Google Forms)**
+### Grants Application
 
 - **Apply:** `/grants/apply`
-- **Admin list:** `/admin/applications` (Basic Auth)
-
-#### Database (required)
-- `MONGODB_URI` (MongoDB connection string)
-- `MONGODB_DB` (optional; defaults to `bitcoinforthearts`)
-
-Uploads are stored in **MongoDB GridFS** (bucket: `grantUploads`).
-
-#### Email notifications (optional but recommended)
-If email is not configured, applications will still be stored in MongoDB.
-
-Preferred grant env vars (falls back to the contact SMTP vars above if present):
-- `GRANTS_TO_EMAIL` (defaults to `grants@bitcoinforthearts.org`)
-- `GRANTS_FROM_EMAIL`
-- `GRANTS_SMTP_USER`
-- `GRANTS_SMTP_PASS`
-
-Optional:
-- `GRANTS_SMTP_HOST` (default `smtp.zoho.com`)
-- `GRANTS_SMTP_PORT` (default `465`)
-- `GRANTS_SMTP_SECURE` (default `true`)
-
-#### Spam protection (optional): Cloudflare Turnstile
-To enable Turnstile on the grant application, set **both**:
-- `NEXT_PUBLIC_TURNSTILE_SITE_KEY` (public site key)
-- `TURNSTILE_SECRET_KEY` (secret key; server-side verification)
-
-If only one is set, the app will **not** enforce Turnstile (to avoid accidental lockouts).
-
-Optional debugging (shows Turnstile error codes in responses):
-- `TURNSTILE_DEBUG=1` (server-side)
-- `NEXT_PUBLIC_TURNSTILE_DEBUG=1` (client-side)
-
-#### Admin (Basic Auth)
-- `ADMIN_USER`
-- `ADMIN_PASS`
-
-If `ADMIN_USER`/`ADMIN_PASS` are not set, `/admin/*` returns 404.
+- **Admin:** `/admin/applications` (Basic Auth via `ADMIN_USER` / `ADMIN_PASS`)
+- **Database:** MongoDB (`MONGODB_URI`) — uploads stored in GridFS
 
 ---
 
-### **Volunteer Signup (Send Directly From the Website)**
-- **Page:** `/get-involved/volunteer`
-- **API:** `/api/volunteer-submit`
+### Homepage Intro Video
 
-Email settings (optional — submissions are still saved to MongoDB even if email fails):
-- `VOLUNTEER_TO_EMAIL` (defaults to `volunteers@bitcoinforthearts.org`)
-- `VOLUNTEER_FALLBACK_TO_EMAIL` (optional; if the primary recipient bounces, retry once to this inbox)
-
-SMTP settings (optional; falls back to grants/contact SMTP):
-- `VOLUNTEER_FROM_EMAIL`
-- `VOLUNTEER_SMTP_USER`
-- `VOLUNTEER_SMTP_PASS`
-- `VOLUNTEER_SMTP_HOST`
-- `VOLUNTEER_SMTP_PORT`
-- `VOLUNTEER_SMTP_SECURE`
+- Default: **ON**
+- Disable: set `NEXT_PUBLIC_SHOW_HOME_INTRO=0`
+- Swap: replace `public/BFTA-home-page.MOV` → `npm run build` auto-converts to `.mp4`
 
 ---
 
-### **Education Workshop Waitlist (Send Directly From the Website)**
-- **Page:** `/education`
-- **API:** `/api/education/workshop-interest`
+### Artist Hub (Nostr + Lightning)
 
-Email settings (optional — submissions are still saved to MongoDB even if email fails):
-- `EDU_TO_EMAIL` (defaults to `education@bitcoinforthearts.org`)
-- `EDU_FALLBACK_TO_EMAIL` (optional; if the primary recipient bounces, retry once to this inbox)
+Decentralized artist community hub built with SvelteKit, NDK, and WebLN. Lives in `artist-hub/`.
 
-SMTP settings (optional; falls back to grants/contact SMTP):
-- `EDU_FROM_EMAIL`
-- `EDU_SMTP_USER`
-- `EDU_SMTP_PASS`
-- `EDU_SMTP_HOST`
-- `EDU_SMTP_PORT`
-- `EDU_SMTP_SECURE`
+| Variable | Description |
+|---|---|
+| `PUBLIC_BFTA_RELAYS` | Comma-separated Nostr relay list |
+| `PUBLIC_BFTA_ADMIN_NPUB` | Admin npub for Featured Artists curation |
+
+</details>
 
 ---
 
-### **Governance Board Nominations (First-Party)**
-- **Page:** `/about/governance`
-- **API:** `/api/governance/board-nomination`
+<div align="center">
 
-Routing:
-- `GOVERNANCE_TO_EMAIL` (or `BOARD_NOMINATION_TO_EMAIL`; defaults to `hello@bitcoinforthearts.org`)
+**Bitcoin for the Arts, Inc. — New York, NY**
 
-Sender:
-- `GOVERNANCE_FROM_EMAIL` (optional; falls back to `RESEND_FROM_EMAIL`)
+[![Website](https://img.shields.io/badge/bitcoinforthearts.org-FF4F14?style=for-the-badge&logo=bitcoin&logoColor=white)](https://bitcoinforthearts.org)
+&nbsp;
+[![Email](https://img.shields.io/badge/hello@bitcoinforthearts.org-000000?style=for-the-badge&logo=mail.ru&logoColor=white)](mailto:hello@bitcoinforthearts.org)
+&nbsp;
+[![X / Twitter](https://img.shields.io/badge/@Bitcoinfta-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Bitcoinfta)
 
-Spam protection:
-- Uses the same Turnstile vars as the grant application:
-  - `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
-  - `TURNSTILE_SECRET_KEY`
+*501(c)(3) · EIN 41-2642260*
 
----
-
-### **Feedback Survey (First-Party)**
-- **Page:** `/get-involved/feedback`
-- **API:** `/api/feedback`
-
-Routing:
-- `FEEDBACK_TO_EMAIL` (defaults to `CONTACT_TO_EMAIL` / `hello@bitcoinforthearts.org`)
-
-Sender:
-- `FEEDBACK_FROM_EMAIL` (optional; falls back to `RESEND_FROM_EMAIL`)
-
-Spam protection:
-- Uses Turnstile when configured:
-  - `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
-  - `TURNSTILE_SECRET_KEY`
-
-#### Reviewer share links (read-only)
-To email applications to reviewers **without giving them admin credentials**:
-
-- `REVIEW_LINK_SECRET` (required; any long random string)
-
----
-
-> **"The NEA of the Bitcoin Era."**
-> **First. Transparent. Unstoppable.**
-
-🌐 [bitcoinforthearts.org](https://bitcoinforthearts.org) ·
-💸 [Donate](https://bitcoinforthearts.org/donate) ·
-📩 hello@bitcoinforthearts.org
-
-Bitcoin for the Arts, Inc. — New York, NY — 501(c)(3) — EIN 41-2642260
+</div>
