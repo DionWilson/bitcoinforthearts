@@ -26,7 +26,7 @@ The actual story is what Kim Córdova surfaced in her April 25 reporting for *Bo
 
 That money was always temporary. It expires at the end of 2026.
 
-When it does, the underlying truth gets exposed. According to a 2016 study by the Boston Foundation comparing per-capita government arts support across major American cities, Boston ranked dead last among ten cities — behind even Baltimore, which has fewer than half the number of arts organizations. *Even Baltimore.* The implication is unkind: Boston has, for decades, underinvested in its own cultural infrastructure relative to peer cities, and ARPA was the federal cash infusion that briefly disguised the gap.
+When it does, the underlying truth gets exposed. According to a 2016 study by the Boston Foundation comparing per-capita government arts support across major American cities, Boston ranked dead last among the ten cities studied — including peers with significantly smaller arts ecosystems. The implication is unkind: Boston has, for decades, underinvested in its own cultural infrastructure relative to comparable cities, and ARPA was the federal cash infusion that briefly disguised the gap.
 
 Now ARPA is winding down. Wu's proposed cuts come on top of that. Combined, they reveal an underinvestment problem that was always there and is now no longer paperable over.
 
@@ -161,7 +161,7 @@ If this article reached you, you have three concrete ways to be useful right now
 
 **Volunteer.** We are a small organization with several specific roles open right now — sponsorship outreach, donor follow-up, artist scouting. Time commitment is genuinely flexible, often 1-5 hours per month. → [bitcoinforthearts.org/get-involved/volunteer](https://bitcoinforthearts.org/get-involved/volunteer)
 
-**Visit.** Our governance, our board, our grant terms, our quarterly reports, and our brand kit are all public. The whole organization is built so that people can verify what we do without taking our word for it. → [bitcoinforthearts.org](https://bitcoinforthearts.org)
+**Visit.** Our governance, our board, our grant terms, and our quarterly reports are all public. The whole organization is built so that people can verify what we do without taking our word for it. → [bitcoinforthearts.org](https://bitcoinforthearts.org)
 
 We are an early-stage nonprofit. We are not pretending to be larger than we are. We are arguing that the structural funding crisis the ARPA cliff exposes is large, that it requires a structural response, and that the response should include — among other things — money that does not lose purchasing power while waiting to be deployed.
 
