@@ -3,8 +3,12 @@
 **A Bitcoin-funded fundraiser for Bitcoin For The Arts, Inc.**
 A 501(c)(3) nonprofit. EIN 41-2642260.
 
-One night of live performance at **Pubkey DC, Washington, DC.** September 2026.
-21 featured artists across music, dance, theater, visual art, film, writing, and storytelling — with live performance, a silent art auction, and a Broadway-caliber headliner.
+A 21-artist Bitcoin podcast livestream, leading into **one in-person night at Pubkey DC, Washington, DC.** September 2026.
+
+The event has two halves:
+
+1. **The livestream.** 21 featured artists across music, dance, theater, visual art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and Nostr.
+2. **The in-person night at Pubkey DC.** Live performance, a silent art auction, and a Broadway-caliber headliner. A handful of the stream's 21 artists also perform live at this night.
 
 ---
 
@@ -23,31 +27,32 @@ All tiers are payable in **USD (card / wire / ACH)** or **Bitcoin (on-chain or L
 ### Title Sponsor — $25,000 (1 slot)
 
 - Co-branding: *"Art + Zap Weekend, presented by [Sponsor]"*
-- Persistent on-screen and on-stage branding throughout the event
-- 5-minute branded moment / spoken segment from the stage
-- Stage banner placement and step-and-repeat presence
+- Persistent on-screen logo throughout the 21-artist livestream
+- 5-minute branded segment during the livestream
+- Title billing on the in-person night at Pubkey DC
+- Persistent on-stage branding + stage banner + step-and-repeat at the in-person night
 - Title billing on all event collateral (digital + print) and post-event recap
-- 6 reserved seats / VIP table
+- 6 reserved seats / VIP table at the in-person night
 - Named silent-auction lot (*"The [Sponsor Name] Lot"*)
 - 6 dedicated co-promotion social posts before, during, and after
 - Permanent listing in BFTA 2026 transparency report and Sponsors page
 
 ### Supporting Sponsor — $10,000 (3 slots)
 
-- Rotating logo / screen presence at the venue
-- Logo on the live donation / zap overlay
-- Brief on-stage thank-you with sponsor logo card
-- Logo on signage at the venue
-- 3 reserved seats
+- Rotating on-screen logo throughout the livestream
+- Logo on the live donation / zap overlay during the stream
+- Logo on signage at the in-person night
+- Brief on-stage thank-you with sponsor logo card at the in-person night
+- 3 reserved seats at the in-person night
 - 3 dedicated co-promotion social posts
 - Listing in BFTA 2026 transparency report
 
 ### Friend of the Arts — $5,000 (5 slots)
 
-- Logo on the rotating sponsor card on screen
-- Hosts read sponsor name in the on-stage thank-you scroll
-- Logo on signage at the venue
-- 1 reserved seat
+- Logo on the rotating sponsor card during the livestream
+- Hosts read sponsor name in a thank-you scroll during the stream
+- Logo on signage at the in-person night
+- 1 reserved seat at the in-person night
 - 1 dedicated co-promotion social post around the event
 - Listing on BFTA Sponsors page
 
@@ -59,19 +64,19 @@ In-kind contributions are **credited dollar-for-dollar at the corresponding tier
 
 | Need | Detail | Approx. value |
 | --- | --- | --- |
-| **A/V production** | On-site sound + lighting at Pubkey DC | $2,000–$4,000 |
-| **Photography & videography** | On-site coverage + edited recap reel | $2,000–$4,000 |
-| **Hardware wallets for artists** | Devices for working artists who will talk about them | $1,000–$3,000 |
-| **Catering & beverage** | Bar tab, beer/wine, or light food at the event | $2,000–$5,000 |
-| **Print & signage** | Step-and-repeat, posters, sponsor signage | $500–$1,500 |
-| **Travel & hospitality** | Hotel rooms or travel for performing artists | $1,500–$5,000 |
-| **Silent auction items** | Hardware wallets, art prints, services, experiences. Each donor publicly named. | — |
+| **A/V production** | On-site sound + lighting at the Pubkey DC in-person night | $2,000–$4,000 |
+| **Photography & videography** | Coverage of the livestream and the in-person night + edited recap reel | $2,000–$4,000 |
+| **Hardware wallets for artists** | Devices for working artists who will talk about them on the livestream | $1,000–$3,000 |
+| **Catering & beverage** | Bar tab, beer/wine, or light food at the in-person night | $2,000–$5,000 |
+| **Print & signage** | Step-and-repeat, posters, sponsor signage at the in-person night | $500–$1,500 |
+| **Travel & hospitality** | Hotel rooms or travel for performing artists at the in-person night | $1,500–$5,000 |
+| **Silent auction items** | Hardware wallets, art prints, services, experiences for the in-person auction. Each donor publicly named. | — |
 
 ---
 
 ## How donations flow
 
-This is a **fundraiser FOR Bitcoin For The Arts**, not a real-time direct-patronage event. Audience donations route to BFTA and feed our nationwide quarterly artist micro-grant cycle. Featured artists also receive 100% of any optional direct tips sent to their personal Lightning addresses during the event.
+This is a **fundraiser FOR Bitcoin For The Arts**, not a real-time direct-patronage event. Audience donations route to BFTA and feed our nationwide quarterly artist micro-grant cycle. Featured artists also receive 100% of any optional direct tips sent to their personal Lightning addresses during their livestream segments and at the in-person night.
 
 | % | Bucket | What it funds |
 | --- | --- | --- |
