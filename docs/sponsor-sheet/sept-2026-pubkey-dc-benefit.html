@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Art + Zap Weekend — Sponsor Sheet | Bitcoin For The Arts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  /*  Print-friendly sponsor sheet.
+      Open in any browser, then File → Print → Save as PDF (Letter, no headers/footers, default margins).
+      Layout is single-column and intentionally minimal so it survives email forwarding and Google Docs paste. */
+  :root {
+    --bfta-black: #000000;
+    --bfta-orange: #ff4f14;
+    --bfta-lime: #b3ff48;
+    --bfta-cream: #fffaf0;
+    --ink: #111111;
+    --muted: #5a5a5a;
+    --rule: #e5e1d6;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bfta-cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+  .page {
+    max-width: 7.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.6in;
+    background: var(--bfta-cream);
+  }
+  header.cover {
+    border-bottom: 2px solid var(--bfta-black);
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 9pt;
+    color: var(--bfta-orange);
+    font-weight: 700;
+  }
+  h1 {
+    margin: 6px 0 4px;
+    font-size: 22pt;
+    line-height: 1.15;
+    font-weight: 700;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin: 6px 0 0;
+    font-size: 11pt;
+  }
+  .lede {
+    margin: 14px 0 0;
+    font-size: 11pt;
+  }
+  .lede strong { color: var(--bfta-black); }
+
+  h2 {
+    font-size: 13pt;
+    margin: 22px 0 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 11.5pt;
+    margin: 14px 0 4px;
+    font-weight: 700;
+  }
+  p, li { margin: 4px 0; }
+  ul { padding-left: 18px; }
+  ul.tight li { margin: 2px 0; }
+
+  .tier {
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin: 10px 0;
+    page-break-inside: avoid;
+  }
+  .tier.title-tier {
+    border: 2px solid var(--bfta-orange);
+    background: #fff7f1;
+  }
+  .tier-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .tier-name {
+    font-weight: 700;
+    font-size: 12pt;
+  }
+  .tier-price {
+    font-weight: 700;
+    color: var(--bfta-orange);
+    font-size: 12pt;
+    white-space: nowrap;
+  }
+  .tier-slots {
+    color: var(--muted);
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0 0;
+    font-size: 10.5pt;
+  }
+  th, td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { font-weight: 700; }
+  td.value { white-space: nowrap; }
+
+  .pct-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .pct {
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+  }
+  .pct .num {
+    font-weight: 700;
+    font-size: 14pt;
+    color: var(--bfta-orange);
+  }
+  .pct .label {
+    font-size: 9.5pt;
+    margin-top: 2px;
+    font-weight: 700;
+  }
+  .pct .sub {
+    font-size: 8.5pt;
+    margin-top: 2px;
+    color: var(--muted);
+  }
+
+  .cta-box {
+    margin-top: 22px;
+    padding: 14px 16px;
+    background: var(--bfta-black);
+    color: var(--bfta-cream);
+    border-radius: 6px;
+  }
+  .cta-box a { color: var(--bfta-lime); text-decoration: none; font-weight: 700; }
+
+  footer.small {
+    margin-top: 24px;
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 0.4in 0.5in; }
+    a { color: inherit; text-decoration: none; }
+    .tier, h2 { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cover">
+  <div class="eyebrow">Sponsor Sheet · September 2026 · Pubkey DC</div>
+  <h1>Art + Zap Weekend</h1>
+  <div class="subtitle">A Bitcoin-funded fundraiser for Bitcoin For The Arts, Inc. · 501(c)(3) · EIN 41-2642260</div>
+  <p class="lede">
+    One night of live performance at <strong>Pubkey DC, Washington, DC.</strong> September 2026.
+    21 featured artists across music, dance, theater, visual art, film, writing, and storytelling — with live
+    performance, a silent art auction, and a Broadway-caliber headliner.
+  </p>
+</header>
+
+<h2>Why this matters</h2>
+<p>
+  Federal arts funding is collapsing. The NEA was targeted for elimination in two consecutive federal budgets.
+  State arts appropriations are projected to drop 7.7% nationally for FY2026. Artists are being told that the
+  institutional funding model they depend on is no longer reliable.
+</p>
+<p>
+  Bitcoin and the Lightning Network make a non-state-dependent arts funding model possible for the first time.
+  <strong>We are the first 501(c)(3) building it. Sponsors at this event are written into the founding narrative.</strong>
+</p>
+
+<h2>Sponsorship tiers</h2>
+<p style="margin-top:0; color: var(--muted); font-size: 10pt;">
+  All tiers payable in USD (card / wire / ACH) or Bitcoin (on-chain or Lightning). Tax-deductible to the extent
+  allowed by law.
+</p>
+
+<div class="tier title-tier">
+  <div class="tier-head">
+    <div>
+      <div class="tier-slots">1 slot</div>
+      <div class="tier-name">Title Sponsor</div>
+    </div>
+    <div class="tier-price">$25,000</div>
+  </div>
+  <ul class="tight">
+    <li>Co-branding: <em>"Art + Zap Weekend, presented by [Sponsor]"</em></li>
+    <li>Persistent on-screen and on-stage branding throughout the event</li>
+    <li>5-minute branded moment / spoken segment from the stage</li>
+    <li>Stage banner placement and step-and-repeat presence</li>
+    <li>Title billing on all event collateral (digital + print) and post-event recap</li>
+    <li>6 reserved seats / VIP table</li>
+    <li>Named silent-auction lot (<em>"The [Sponsor Name] Lot"</em>)</li>
+    <li>6 dedicated co-promotion social posts before, during, and after</li>
+    <li>Permanent listing in BFTA 2026 transparency report and Sponsors page</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <div>
+      <div class="tier-slots">3 slots</div>
+      <div class="tier-name">Supporting Sponsor</div>
+    </div>
+    <div class="tier-price">$10,000</div>
+  </div>
+  <ul class="tight">
+    <li>Rotating logo / screen presence at the venue</li>
+    <li>Logo on the live donation / zap overlay</li>
+    <li>Brief on-stage thank-you with sponsor logo card</li>
+    <li>Logo on signage at the venue</li>
+    <li>3 reserved seats</li>
+    <li>3 dedicated co-promotion social posts</li>
+    <li>Listing in BFTA 2026 transparency report</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <div>
+      <div class="tier-slots">5 slots</div>
+      <div class="tier-name">Friend of the Arts</div>
+    </div>
+    <div class="tier-price">$5,000</div>
+  </div>
+  <ul class="tight">
+    <li>Logo on the rotating sponsor card on screen</li>
+    <li>Hosts read sponsor name in the on-stage thank-you scroll</li>
+    <li>Logo on signage at the venue</li>
+    <li>1 reserved seat</li>
+    <li>1 dedicated co-promotion social post around the event</li>
+    <li>Listing on BFTA Sponsors page</li>
+  </ul>
+</div>
+
+<h2>In-kind sponsorship</h2>
+<p style="margin-top:0;">
+  In-kind contributions are <strong>credited dollar-for-dollar</strong> at the corresponding tier. Especially welcome
+  from Bitcoin-native businesses, hardware vendors, and creative-services providers.
+</p>
+<table>
+  <thead>
+    <tr><th style="width:34%">Need</th><th>Detail</th><th class="value" style="width:18%">Approx. value</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A/V production</td><td>On-site sound + lighting at Pubkey DC</td><td class="value">$2,000–$4,000</td></tr>
+    <tr><td>Photography & videography</td><td>On-site coverage + edited recap reel</td><td class="value">$2,000–$4,000</td></tr>
+    <tr><td>Hardware wallets for artists</td><td>Devices for working artists who will talk about them</td><td class="value">$1,000–$3,000</td></tr>
+    <tr><td>Catering & beverage</td><td>Bar tab, beer/wine, or light food</td><td class="value">$2,000–$5,000</td></tr>
+    <tr><td>Print & signage</td><td>Step-and-repeat, posters, sponsor signage</td><td class="value">$500–$1,500</td></tr>
+    <tr><td>Travel & hospitality</td><td>Hotel rooms or travel for performing artists</td><td class="value">$1,500–$5,000</td></tr>
+    <tr><td>Silent auction items</td><td>Hardware wallets, art prints, services, experiences. Each donor publicly named.</td><td class="value">—</td></tr>
+  </tbody>
+</table>
+
+<h2>How donations flow</h2>
+<p style="margin-top:0;">
+  This is a <strong>fundraiser FOR Bitcoin For The Arts</strong>, not a real-time direct-patronage event. Audience
+  donations route to BFTA and feed our nationwide quarterly artist micro-grant cycle. Featured artists also receive
+  100% of any optional direct tips sent to their personal Lightning addresses during the event.
+</p>
+<div class="pct-grid">
+  <div class="pct"><div class="num">55%</div><div class="label">Direct artist grants</div><div class="sub">Quarterly micro-grants nationwide</div></div>
+  <div class="pct"><div class="num">30%</div><div class="label">Programs</div><div class="sub">Workshops, residencies, this event</div></div>
+  <div class="pct"><div class="num">10%</div><div class="label">Operations</div><div class="sub">Software, banking, admin</div></div>
+  <div class="pct"><div class="num">5%</div><div class="label">HODL Vault</div><div class="sub">Long-term Bitcoin endowment</div></div>
+</div>
+
+<h2>Why sponsors care</h2>
+<ul class="tight">
+  <li><strong>First-mover story.</strong> Written into the founding narrative of an arts-funding model built on Bitcoin rails.</li>
+  <li><strong>Permanent on-brand content.</strong> Logos visible on every event clip and recap on YouTube, X, and Nostr — long after the event.</li>
+  <li><strong>High-signal audience.</strong> Bitcoin + arts overlap = high-intent, high-net-worth, deeply loyal to brands that show up early.</li>
+  <li><strong>Tax-deductible.</strong> 501(c)(3) with public governance, on-chain transparency, and EIN 41-2642260.</li>
+</ul>
+
+<div class="cta-box">
+  <div style="font-size:9pt; text-transform:uppercase; letter-spacing:0.08em; opacity:0.7;">Ready to talk?</div>
+  <div style="margin-top:6px; font-size:13pt; font-weight:700;">Sponsor Art + Zap Weekend.</div>
+  <div style="margin-top:6px; font-size:10.5pt;">
+    Email <a href="mailto:sponsor@bitcoinforthearts.org">sponsor@bitcoinforthearts.org</a> ·
+    Web <a href="https://bitcoinforthearts.org/art-zap-weekend">bitcoinforthearts.org/art-zap-weekend</a> ·
+    Donate <a href="https://bitcoinforthearts.org/donate">bitcoinforthearts.org/donate</a>
+  </div>
+  <div style="margin-top:8px; font-size:9.5pt; opacity:0.8;">
+    We respond within 24 hours. Payment in USD (card / wire / ACH) or Bitcoin (on-chain or Lightning).
+  </div>
+</div>
+
+<footer class="small">
+  Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit corporation, EIN 41-2642260, headquartered at
+  27 West 60th Street, PO Box 20069, New York, NY 10023. Donations and sponsorships are tax-deductible to the
+  extent permitted by law. Receipts are provided automatically. This document is informational and does not
+  constitute tax advice.
+</footer>
+
+</div>
+</body>
+</html>

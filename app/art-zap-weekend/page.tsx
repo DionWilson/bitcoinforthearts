@@ -5,11 +5,11 @@ import FullBleedHero from '@/components/FullBleedHero';
 export const metadata: Metadata = {
   title: 'Art + Zap Weekend',
   description:
-    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, 2 days of live broadcast, and a Monday-night in-person finale at Pubkey DC with a Broadway-caliber headliner. Sponsorship tiers, in-kind opportunities, and how to support the event.',
+    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, one night of live performance at Pubkey DC, Washington, DC — September 2026. Sponsorship tiers, in-kind opportunities, and how to support the first 501(c)(3) Bitcoin arts benefit.',
   openGraph: {
     title: 'Art + Zap Weekend — Bitcoin For The Arts',
     description:
-      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, 2 days of live broadcast, Monday in-person finale at Pubkey DC. Sponsor + support.',
+      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, one night at Pubkey DC, September 2026. Sponsor + support.',
     type: 'website',
   },
 };
@@ -18,7 +18,6 @@ export default function ArtZapWeekendPage() {
   const heroImage = '/21-artist.jpg';
   const sponsorEmail = 'sponsor@bitcoinforthearts.org';
   const ein = '41-2642260';
-  const onePagerUrl = '/Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf';
 
   const tiers = [
     {
@@ -28,11 +27,11 @@ export default function ArtZapWeekendPage() {
       featured: true,
       benefits: [
         'Co-branding: "Art + Zap Weekend, presented by [Sponsor]"',
-        'Persistent on-screen logo for the full 8 hours of broadcast',
-        '5-minute branded segment Saturday and Sunday',
-        '16 host mentions across the weekend',
-        'Title billing on the Monday in-person finale at Pubkey DC',
-        '6 reserved seats / VIP table at the finale',
+        'Persistent on-screen and on-stage branding throughout the event',
+        '5-minute branded moment / spoken segment from the stage',
+        'Stage banner placement and step-and-repeat presence',
+        'Title billing on all event collateral (digital + print) and post-event recap',
+        '6 reserved seats / VIP table',
         'Named silent-auction lot ("The [Sponsor Name] Lot")',
         '6 dedicated co-promotion social posts before, during, and after',
         'Permanent listing in BFTA 2026 transparency report and Sponsors page',
@@ -44,12 +43,11 @@ export default function ArtZapWeekendPage() {
       slots: '3 slots',
       featured: false,
       benefits: [
-        'Rotating on-screen logo throughout the broadcast',
-        'Logo on the live donation/zap overlay',
-        '2-minute branded segment, day of sponsor’s choosing',
-        '4 host mentions during sponsor’s chosen day',
-        'Logo on signage at the Monday finale',
-        '3 reserved seats at the finale',
+        'Rotating logo / screen presence at the venue',
+        'Logo on the live donation / zap overlay',
+        'Brief on-stage thank-you with sponsor logo card',
+        'Logo on signage at the venue',
+        '3 reserved seats',
         '3 dedicated co-promotion social posts',
         'Listing in BFTA 2026 transparency report',
       ],
@@ -60,11 +58,11 @@ export default function ArtZapWeekendPage() {
       slots: '5 slots',
       featured: false,
       benefits: [
-        'Logo on the rotating sponsor card (10+ on-air appearances over the weekend)',
-        'Hosts read sponsor name in a daily thank-you scroll',
-        'Logo at the Monday finale',
-        '1 reserved seat at the finale',
-        '1 dedicated co-promotion social post during the event',
+        'Logo on the rotating sponsor card on screen',
+        'Hosts read sponsor name in the on-stage thank-you scroll',
+        'Logo on signage at the venue',
+        '1 reserved seat',
+        '1 dedicated co-promotion social post around the event',
         'Listing on BFTA Sponsors page',
       ],
     },
@@ -74,12 +72,12 @@ export default function ArtZapWeekendPage() {
     {
       label: 'A/V production',
       detail:
-        'On-site sound + lighting at the Pubkey DC finale (~$2,000–$4,000 value).',
+        'On-site sound + lighting at Pubkey DC (~$2,000–$4,000 value).',
     },
     {
       label: 'Photography & videography',
       detail:
-        'On-site coverage of the finale + edited recap reel (~$2,000–$4,000 value).',
+        'On-site coverage of the event + edited recap reel (~$2,000–$4,000 value).',
     },
     {
       label: 'Hardware wallets for artists',
@@ -89,17 +87,17 @@ export default function ArtZapWeekendPage() {
     {
       label: 'Catering & beverage',
       detail:
-        'Bar tab, beer/wine, or light food at the finale (~$2,000–$5,000 value).',
+        'Bar tab, beer/wine, or light food at the event (~$2,000–$5,000 value).',
     },
     {
       label: 'Print & signage',
       detail:
-        'Step-and-repeat, posters, printed sponsor signage at the finale (~$500–$1,500 value).',
+        'Step-and-repeat, posters, printed sponsor signage at the venue (~$500–$1,500 value).',
     },
     {
       label: 'Travel & hospitality',
       detail:
-        'Hotel rooms or travel for performing artists at the finale (~$1,500–$5,000 value).',
+        'Hotel rooms or travel for performing artists (~$1,500–$5,000 value).',
     },
     {
       label: 'Silent auction items',
@@ -115,7 +113,7 @@ export default function ArtZapWeekendPage() {
         imageAlt="21 featured artists for Art + Zap Weekend."
         label="Art + Zap Weekend"
         title="A Bitcoin-funded fundraiser for the arts."
-        description="21 featured artists. 2 days of live broadcast. A Monday-night in-person finale at Pubkey DC with a Broadway-caliber headliner. September 2026 — date locking imminent."
+        description="21 featured artists. One night of live performance at Pubkey DC, Washington, DC. September 2026 — the first 501(c)(3) Bitcoin arts benefit."
         priority
       />
 
@@ -130,24 +128,24 @@ export default function ArtZapWeekendPage() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
             Art + Zap Weekend is a <strong className="text-foreground">Bitcoin-funded fundraiser for Bitcoin For The Arts</strong>,
-            our 501(c)(3) that funds artists nationwide through quarterly Bitcoin micro-grants. Two days of live broadcast featuring
-            21 artists across music, dance, theater, visual art, film, writing, and storytelling. Hosted by Bitcoin podcasters and
-            broadcast on YouTube, X, and Nostr. Then a Monday-night in-person finale at Pubkey DC with live performances, a silent
-            art auction, and a Broadway-caliber headliner.
+            our 501(c)(3) that funds artists nationwide through quarterly Bitcoin micro-grants. One night at
+            <strong className="text-foreground"> Pubkey DC in Washington, DC</strong> featuring 21 artists across music, dance,
+            theater, visual art, film, writing, and storytelling — with live performance, a silent art auction, and a
+            Broadway-caliber headliner.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Audience donations route to BFTA and flow through our public 55/30/10/5 allocation. Featured artists also receive 100%
-            of any optional direct tips sent to their personal Lightning addresses during their broadcast segments.
+            of any optional direct tips sent to their personal Lightning addresses during the event.
           </p>
         </section>
 
         {/* ── At-a-glance ──────────────────────────────── */}
         <section className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: 'When', value: 'Sept 2026', sub: 'Date locking imminent' },
+            { label: 'When', value: 'Sept 2026', sub: 'Date locking with venue' },
             { label: 'Featured artists', value: '21', sub: 'Mission supporters' },
-            { label: 'Live broadcast', value: '2 days', sub: 'Sat + Sun, 1–5 pm ET' },
-            { label: 'Finale venue', value: 'Pubkey DC', sub: 'Monday evening' },
+            { label: 'Format', value: 'One night', sub: 'Live performance + silent auction' },
+            { label: 'Venue', value: 'Pubkey DC', sub: 'Washington, DC' },
           ].map((item) => (
             <div
               key={item.label}
@@ -300,7 +298,7 @@ export default function ArtZapWeekendPage() {
             For The Arts</strong>, not a real-time direct-patronage event. Audience donations
             route to BFTA and feed our nationwide quarterly artist micro-grant cycle. Featured
             artists also receive 100% of any optional direct tips sent to their personal Lightning
-            addresses during their broadcast segments.
+            addresses during the event.
           </p>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-4">
             {[
@@ -332,7 +330,7 @@ export default function ArtZapWeekendPage() {
               },
               {
                 title: 'Permanent on-brand content',
-                body: 'Logos visible on every clip on YouTube and Nostr in perpetuity — long after the event.',
+                body: 'Logos visible on every event clip and recap on YouTube, X, and Nostr — long after the event.',
               },
               {
                 title: 'High-signal audience',
@@ -374,12 +372,12 @@ export default function ArtZapWeekendPage() {
                 Email {sponsorEmail}
               </a>
               <a
-                href={onePagerUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${sponsorEmail}?subject=${encodeURIComponent('Request: Art + Zap Weekend sponsor sheet')}&body=${encodeURIComponent(
+                  "Hi BFTA team,\n\nPlease send me the sponsor sheet for Art + Zap Weekend.\n\nMy company: \nMy role: \nBest contact: \n\n",
+                )}`}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
-                Download one-pager (PDF)
+                Request the sponsor sheet
               </a>
             </div>
           </div>
