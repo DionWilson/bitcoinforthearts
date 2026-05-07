@@ -5,11 +5,11 @@ import FullBleedHero from '@/components/FullBleedHero';
 export const metadata: Metadata = {
   title: 'Art + Zap Weekend',
   description:
-    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. A 21-artist Bitcoin podcast livestream leading into one in-person night at Pubkey DC, Washington, DC — September 2026. Sponsorship tiers, in-kind opportunities, and how to support the first 501(c)(3) Bitcoin arts benefit.',
+    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. A one-day, 4.5-hour, 21-artist Bitcoin podcast livestream leading into one in-person night at Pubkey DC, Washington, DC — September 2026. Sponsorship tiers, in-kind opportunities, and how to support the first 501(c)(3) Bitcoin arts benefit.',
   openGraph: {
     title: 'Art + Zap Weekend — Bitcoin For The Arts',
     description:
-      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21-artist livestream + one in-person night at Pubkey DC. September 2026. Sponsor + support.',
+      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 4.5-hour, 21-artist livestream + one in-person night at Pubkey DC. September 2026. Sponsor + support.',
     type: 'website',
   },
 };
@@ -27,7 +27,7 @@ export default function ArtZapWeekendPage() {
       featured: true,
       benefits: [
         'Co-branding: "Art + Zap Weekend, presented by [Sponsor]"',
-        'Persistent on-screen logo throughout the 21-artist livestream',
+        'Persistent on-screen logo throughout the 4.5-hour livestream',
         '5-minute branded segment during the livestream',
         'Title billing on the in-person night at Pubkey DC',
         'Persistent on-stage branding + stage banner + step-and-repeat at the in-person night',
@@ -114,7 +114,7 @@ export default function ArtZapWeekendPage() {
         imageAlt="21 featured artists for Art + Zap Weekend."
         label="Art + Zap Weekend"
         title="A Bitcoin-funded fundraiser for the arts."
-        description="A 21-artist Bitcoin podcast livestream, leading into one in-person night at Pubkey DC, Washington, DC. September 2026 — the first 501(c)(3) Bitcoin arts benefit."
+        description="A one-day, 4.5-hour Bitcoin podcast livestream featuring 21 artists, leading into one in-person night at Pubkey DC, Washington, DC. September 2026 — the first 501(c)(3) Bitcoin arts benefit."
         priority
       />
 
@@ -130,11 +130,11 @@ export default function ArtZapWeekendPage() {
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
             Art + Zap Weekend is a <strong className="text-foreground">Bitcoin-funded fundraiser for Bitcoin For The Arts</strong>,
             our 501(c)(3) that funds artists nationwide through quarterly Bitcoin micro-grants. The event has two halves:
-            a <strong className="text-foreground">livestream featuring 21 artists</strong> across music, dance, theater, visual
-            art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and Nostr — leading
-            into <strong className="text-foreground">one in-person night at Pubkey DC</strong> in Washington, DC with live
-            performance, a silent art auction, and a Broadway-caliber headliner. A handful of the stream&rsquo;s 21 artists also
-            perform live at the Pubkey night.
+            a <strong className="text-foreground">one-day, 4.5-hour livestream featuring 21 artists</strong> across music, dance,
+            theater, visual art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and
+            Nostr — leading into <strong className="text-foreground">one in-person night at Pubkey DC</strong> in Washington, DC
+            with live performance, a silent art auction, and a Broadway-caliber headliner. A handful of the stream&rsquo;s 21
+            artists also perform live at the Pubkey night.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Audience donations route to BFTA and flow through our public 55/30/10/5 allocation. Featured artists also receive 100%
@@ -147,9 +147,9 @@ export default function ArtZapWeekendPage() {
         <section className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
             { label: 'When', value: 'Sept 2026', sub: 'Date locking with venue' },
-            { label: 'Livestream artists', value: '21', sub: 'Across multiple disciplines' },
+            { label: 'Livestream', value: '4.5 hrs', sub: 'One-day broadcast, 21 artists' },
             { label: 'In-person night', value: 'Pubkey DC', sub: 'Washington, DC' },
-            { label: 'Headliner', value: 'Live + auction', sub: 'Broadway-caliber set' },
+            { label: 'Format', value: 'Live + auction', sub: 'Broadway-caliber headliner' },
           ].map((item) => (
             <div
               key={item.label}
