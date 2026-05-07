@@ -5,11 +5,11 @@ import FullBleedHero from '@/components/FullBleedHero';
 export const metadata: Metadata = {
   title: 'Art + Zap Weekend',
   description:
-    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, 2 days of live broadcast, and a Monday-night in-person finale at Pubkey DC with a Broadway-caliber headliner. Sponsorship tiers, in-kind opportunities, and how to support the event.',
+    'A Bitcoin-funded fundraiser for Bitcoin For The Arts. A 21-artist Bitcoin podcast livestream leading into one in-person night at Pubkey DC, Washington, DC — September 2026. Sponsorship tiers, in-kind opportunities, and how to support the first 501(c)(3) Bitcoin arts benefit.',
   openGraph: {
     title: 'Art + Zap Weekend — Bitcoin For The Arts',
     description:
-      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21 featured artists, 2 days of live broadcast, Monday in-person finale at Pubkey DC. Sponsor + support.',
+      'A Bitcoin-funded fundraiser for Bitcoin For The Arts. 21-artist livestream + one in-person night at Pubkey DC. September 2026. Sponsor + support.',
     type: 'website',
   },
 };
@@ -18,7 +18,6 @@ export default function ArtZapWeekendPage() {
   const heroImage = '/21-artist.jpg';
   const sponsorEmail = 'sponsor@bitcoinforthearts.org';
   const ein = '41-2642260';
-  const onePagerUrl = '/Bitcoin-For-The-Arts-Art-Zap-Weekend-One-Pager.pdf';
 
   const tiers = [
     {
@@ -28,11 +27,12 @@ export default function ArtZapWeekendPage() {
       featured: true,
       benefits: [
         'Co-branding: "Art + Zap Weekend, presented by [Sponsor]"',
-        'Persistent on-screen logo for the full 8 hours of broadcast',
-        '5-minute branded segment Saturday and Sunday',
-        '16 host mentions across the weekend',
-        'Title billing on the Monday in-person finale at Pubkey DC',
-        '6 reserved seats / VIP table at the finale',
+        'Persistent on-screen logo throughout the 21-artist livestream',
+        '5-minute branded segment during the livestream',
+        'Title billing on the in-person night at Pubkey DC',
+        'Persistent on-stage branding + stage banner + step-and-repeat at the in-person night',
+        'Title billing on all event collateral (digital + print) and post-event recap',
+        '6 reserved seats / VIP table at the in-person night',
         'Named silent-auction lot ("The [Sponsor Name] Lot")',
         '6 dedicated co-promotion social posts before, during, and after',
         'Permanent listing in BFTA 2026 transparency report and Sponsors page',
@@ -44,12 +44,11 @@ export default function ArtZapWeekendPage() {
       slots: '3 slots',
       featured: false,
       benefits: [
-        'Rotating on-screen logo throughout the broadcast',
-        'Logo on the live donation/zap overlay',
-        '2-minute branded segment, day of sponsor’s choosing',
-        '4 host mentions during sponsor’s chosen day',
-        'Logo on signage at the Monday finale',
-        '3 reserved seats at the finale',
+        'Rotating on-screen logo throughout the livestream',
+        'Logo on the live donation / zap overlay during the stream',
+        'Logo on signage at the in-person night',
+        'Brief on-stage thank-you with sponsor logo card at the in-person night',
+        '3 reserved seats at the in-person night',
         '3 dedicated co-promotion social posts',
         'Listing in BFTA 2026 transparency report',
       ],
@@ -60,11 +59,11 @@ export default function ArtZapWeekendPage() {
       slots: '5 slots',
       featured: false,
       benefits: [
-        'Logo on the rotating sponsor card (10+ on-air appearances over the weekend)',
-        'Hosts read sponsor name in a daily thank-you scroll',
-        'Logo at the Monday finale',
-        '1 reserved seat at the finale',
-        '1 dedicated co-promotion social post during the event',
+        'Logo on the rotating sponsor card during the livestream',
+        'Hosts read sponsor name in a thank-you scroll during the stream',
+        'Logo on signage at the in-person night',
+        '1 reserved seat at the in-person night',
+        '1 dedicated co-promotion social post around the event',
         'Listing on BFTA Sponsors page',
       ],
     },
@@ -74,37 +73,37 @@ export default function ArtZapWeekendPage() {
     {
       label: 'A/V production',
       detail:
-        'On-site sound + lighting at the Pubkey DC finale (~$2,000–$4,000 value).',
+        'On-site sound + lighting at the Pubkey DC in-person night (~$2,000–$4,000 value).',
     },
     {
       label: 'Photography & videography',
       detail:
-        'On-site coverage of the finale + edited recap reel (~$2,000–$4,000 value).',
+        'Coverage of the livestream and the in-person night + edited recap reel (~$2,000–$4,000 value).',
     },
     {
       label: 'Hardware wallets for artists',
       detail:
-        'A great fit for any hardware vendor who wants to put their device in the hands of working artists who will talk about it (~$1,000–$3,000 value).',
+        'A great fit for any hardware vendor who wants to put their device in the hands of working artists who will talk about it on the livestream (~$1,000–$3,000 value).',
     },
     {
       label: 'Catering & beverage',
       detail:
-        'Bar tab, beer/wine, or light food at the finale (~$2,000–$5,000 value).',
+        'Bar tab, beer/wine, or light food at the in-person night (~$2,000–$5,000 value).',
     },
     {
       label: 'Print & signage',
       detail:
-        'Step-and-repeat, posters, printed sponsor signage at the finale (~$500–$1,500 value).',
+        'Step-and-repeat, posters, printed sponsor signage for the in-person night (~$500–$1,500 value).',
     },
     {
       label: 'Travel & hospitality',
       detail:
-        'Hotel rooms or travel for performing artists at the finale (~$1,500–$5,000 value).',
+        'Hotel rooms or travel for performing artists at the in-person night (~$1,500–$5,000 value).',
     },
     {
       label: 'Silent auction items',
       detail:
-        'Hardware wallets, art prints, services, experiences for the auction. Each donor publicly named.',
+        'Hardware wallets, art prints, services, experiences for the in-person auction. Each donor publicly named.',
     },
   ];
 
@@ -115,7 +114,7 @@ export default function ArtZapWeekendPage() {
         imageAlt="21 featured artists for Art + Zap Weekend."
         label="Art + Zap Weekend"
         title="A Bitcoin-funded fundraiser for the arts."
-        description="21 featured artists. 2 days of live broadcast. A Monday-night in-person finale at Pubkey DC with a Broadway-caliber headliner. September 2026 — date locking imminent."
+        description="A 21-artist Bitcoin podcast livestream, leading into one in-person night at Pubkey DC, Washington, DC. September 2026 — the first 501(c)(3) Bitcoin arts benefit."
         priority
       />
 
@@ -130,24 +129,27 @@ export default function ArtZapWeekendPage() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
             Art + Zap Weekend is a <strong className="text-foreground">Bitcoin-funded fundraiser for Bitcoin For The Arts</strong>,
-            our 501(c)(3) that funds artists nationwide through quarterly Bitcoin micro-grants. Two days of live broadcast featuring
-            21 artists across music, dance, theater, visual art, film, writing, and storytelling. Hosted by Bitcoin podcasters and
-            broadcast on YouTube, X, and Nostr. Then a Monday-night in-person finale at Pubkey DC with live performances, a silent
-            art auction, and a Broadway-caliber headliner.
+            our 501(c)(3) that funds artists nationwide through quarterly Bitcoin micro-grants. The event has two halves:
+            a <strong className="text-foreground">livestream featuring 21 artists</strong> across music, dance, theater, visual
+            art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and Nostr — leading
+            into <strong className="text-foreground">one in-person night at Pubkey DC</strong> in Washington, DC with live
+            performance, a silent art auction, and a Broadway-caliber headliner. A handful of the stream&rsquo;s 21 artists also
+            perform live at the Pubkey night.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
             Audience donations route to BFTA and flow through our public 55/30/10/5 allocation. Featured artists also receive 100%
-            of any optional direct tips sent to their personal Lightning addresses during their broadcast segments.
+            of any optional direct tips sent to their personal Lightning addresses during their livestream segments and at the
+            in-person night.
           </p>
         </section>
 
         {/* ── At-a-glance ──────────────────────────────── */}
         <section className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { label: 'When', value: 'Sept 2026', sub: 'Date locking imminent' },
-            { label: 'Featured artists', value: '21', sub: 'Mission supporters' },
-            { label: 'Live broadcast', value: '2 days', sub: 'Sat + Sun, 1–5 pm ET' },
-            { label: 'Finale venue', value: 'Pubkey DC', sub: 'Monday evening' },
+            { label: 'When', value: 'Sept 2026', sub: 'Date locking with venue' },
+            { label: 'Livestream artists', value: '21', sub: 'Across multiple disciplines' },
+            { label: 'In-person night', value: 'Pubkey DC', sub: 'Washington, DC' },
+            { label: 'Headliner', value: 'Live + auction', sub: 'Broadway-caliber set' },
           ].map((item) => (
             <div
               key={item.label}
@@ -300,7 +302,7 @@ export default function ArtZapWeekendPage() {
             For The Arts</strong>, not a real-time direct-patronage event. Audience donations
             route to BFTA and feed our nationwide quarterly artist micro-grant cycle. Featured
             artists also receive 100% of any optional direct tips sent to their personal Lightning
-            addresses during their broadcast segments.
+            addresses during their livestream segments and at the in-person night.
           </p>
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-4">
             {[
@@ -332,7 +334,7 @@ export default function ArtZapWeekendPage() {
               },
               {
                 title: 'Permanent on-brand content',
-                body: 'Logos visible on every clip on YouTube and Nostr in perpetuity — long after the event.',
+                body: 'Logos visible on every event clip and recap on YouTube, X, and Nostr — long after the event.',
               },
               {
                 title: 'High-signal audience',
@@ -374,12 +376,12 @@ export default function ArtZapWeekendPage() {
                 Email {sponsorEmail}
               </a>
               <a
-                href={onePagerUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${sponsorEmail}?subject=${encodeURIComponent('Request: Art + Zap Weekend sponsor sheet')}&body=${encodeURIComponent(
+                  "Hi BFTA team,\n\nPlease send me the sponsor sheet for Art + Zap Weekend.\n\nMy company: \nMy role: \nBest contact: \n\n",
+                )}`}
                 className="inline-flex min-h-12 items-center justify-center rounded-md border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
-                Download one-pager (PDF)
+                Request the sponsor sheet
               </a>
             </div>
           </div>
