@@ -3,11 +3,11 @@
 **A Bitcoin-funded fundraiser for Bitcoin For The Arts, Inc.**
 A 501(c)(3) nonprofit. EIN 41-2642260.
 
-A 21-artist Bitcoin podcast livestream, leading into **one in-person night at Pubkey DC, Washington, DC.** September 2026.
+A one-day, 4.5-hour, 21-artist Bitcoin podcast livestream, leading into **one in-person night at Pubkey DC, Washington, DC.** September 2026.
 
 The event has two halves:
 
-1. **The livestream.** 21 featured artists across music, dance, theater, visual art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and Nostr.
+1. **The livestream — one day, 4.5 hours.** 21 featured artists across music, dance, theater, visual art, film, writing, and storytelling — hosted by Bitcoin podcasters and broadcast on YouTube, X, and Nostr.
 2. **The in-person night at Pubkey DC.** Live performance, a silent art auction, and a Broadway-caliber headliner. A handful of the stream's 21 artists also perform live at this night.
 
 ---
@@ -27,7 +27,7 @@ All tiers are payable in **USD (card / wire / ACH)** or **Bitcoin (on-chain or L
 ### Title Sponsor — $25,000 (1 slot)
 
 - Co-branding: *"Art + Zap Weekend, presented by [Sponsor]"*
-- Persistent on-screen logo throughout the 21-artist livestream
+- Persistent on-screen logo throughout the 4.5-hour livestream
 - 5-minute branded segment during the livestream
 - Title billing on the in-person night at Pubkey DC
 - Persistent on-stage branding + stage banner + step-and-repeat at the in-person night
