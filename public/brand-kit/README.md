@@ -64,6 +64,18 @@ brand-kit/
 │   ├── nostr-black-on-white.png
 │   └── nostr-purple-on-white.png
 │
+├── qr-codes/                         Branded scan-codes for the most-needed URLs
+│   │                                  (BFTA black on cream, square bug centered).
+│   │                                  Two sizes per URL — full file = 1024px (print
+│   │                                  master), `-512.png` = 512px (web/social).
+│   ├── donate.png + donate-512.png             /donate
+│   ├── art-zap-weekend.png + -512.png          /art-zap-weekend
+│   ├── home.png + home-512.png                 / (homepage)
+│   ├── volunteer.png + volunteer-512.png       /get-involved
+│   ├── grants.png + grants-512.png             /grants
+│   ├── x.png + x-512.png                       https://x.com/Bitcoinfta
+│   └── nostr.png + nostr-512.png               BFTA Nostr profile on Primal
+│
 └── source-files/                      Editable Adobe Illustrator originals
     ├── inline-bugs.ai
     └── square-bugs.ai
@@ -99,6 +111,29 @@ colorway of its sibling, and stays meaningful regardless of upload order.
 | Cover banner (X / LinkedIn / Facebook) | `social/BFTA-social-banner-*.png` family |
 | Print / merch / partner co-branding | Pull from `source-files/*.ai` for vector |
 | External brand co-marketing | Hand them the PDF in `guidelines/` |
+| Sponsor sheet / business card / flyer "scan to donate" | `qr-codes/donate.png` |
+| Sponsor deck or event flyer "scan to learn more" | `qr-codes/art-zap-weekend.png` |
+| Generic business card / signature scan-code | `qr-codes/home.png` |
+| Recruitment poster / table tent | `qr-codes/volunteer.png` |
+| Artist outreach / grants table | `qr-codes/grants.png` |
+| "Follow us on X / Nostr" CTAs | `qr-codes/x.png`, `qr-codes/nostr.png` |
+
+### QR code usage rules
+
+- The 1024px file is the print master. Use it for anything that will be
+  scaled up beyond a business card. The `-512.png` is for web/social only.
+- **Don't recolor** the QR or invert it. Most phone scanners assume dark
+  modules on a light background — flipping it can break scannability.
+- **Don't shrink below ~0.75 inch / 2 cm** when printed. Smaller than that
+  and most camera apps can't lock focus reliably.
+- **Don't crop** the white margin (the "quiet zone"). It's not decorative —
+  it's part of how scanners detect the code's edges.
+- Pair the QR with the destination URL printed in plain text underneath.
+  Scanners are good but plain-text fallback covers older phones and
+  accessibility needs.
+- All seven codes use error-correction level **H** (~30% redundancy), which
+  is why we can put the BFTA bug logo in the center without breaking them.
+  This has been verified by re-decoding each PNG end-to-end after generation.
 
 ## How derived assets get regenerated
 
@@ -106,6 +141,7 @@ colorway of its sibling, and stays meaningful regardless of upload order.
 node scripts/build-favicons.mjs                # all favicon + app icon sizes
 node scripts/build-transparent-main-lockup.mjs # /derived/*.png
 node scripts/build-social-lockups.mjs          # /public/social/* (~140 files)
+node scripts/build-brand-qr-codes.mjs          # /qr-codes/*.png (14 files: 7 URLs × 2 sizes)
 ```
 
 Each script reads from this folder and writes either back into `derived/`
