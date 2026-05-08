@@ -88,7 +88,7 @@ For full bios, headshots, and the live source of truth:
 
 | Resource | Link |
 |---|---|
-| Brand Guidelines (PDF) | [`public/brand-kit/guidelines/`](public/brand-kit/guidelines/BFTA-Brand-Guidelines.pdf) |
+| Brand Guidelines (PDF) | [**Download / View →**](https://bitcoinforthearts.org/brand-kit/guidelines/BFTA-Brand-Guidelines.pdf) |
 | Full Brand Kit | [`public/brand-kit/`](public/brand-kit/) — all lockups, bugs, social assets, source files |
 | Main lockup — cream/orange | [`main-cream-orange.png`](public/brand-kit/main-lockups/main-cream-orange.png) |
 | Main lockup — black/orange | [`main-black-orange.png`](public/brand-kit/main-lockups/main-black-orange.png) |

@@ -12,6 +12,7 @@ Google Docs, etc.).
 brand-kit/
 ├── guidelines/
 │   └── BFTA-Brand-Guidelines.pdf      Full brand guidelines from our agency
+│                                       → https://bitcoinforthearts.org/brand-kit/guidelines/BFTA-Brand-Guidelines.pdf
 │
 ├── main-lockups/                      "BITCOIN FOR THE / ARTS" wrap, ~1:1 square
 │   ├── main-cream-orange.png          Black wordmark + orange "Arts" on cream
