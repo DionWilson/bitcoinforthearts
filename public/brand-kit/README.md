@@ -65,6 +65,11 @@ brand-kit/
 │   ├── nostr-black-on-white.png
 │   └── nostr-purple-on-white.png
 │
+├── badges/                           Nostr (NIP-58) badges issued by BFTA
+│   │                                  via BadgeBox / similar. 1024×1024 PNG,
+│   │                                  circular crop, transparent corners.
+│   └── genesis-2026.png                       2026 Genesis Backer (Geyser launch)
+│
 ├── qr-codes/                         Branded scan-codes for the most-needed URLs
 │   │                                  (BFTA black on cream, square bug centered).
 │   │                                  Two sizes per URL — full file = 1024px (print
@@ -143,6 +148,7 @@ node scripts/build-favicons.mjs                # all favicon + app icon sizes
 node scripts/build-transparent-main-lockup.mjs # /derived/*.png
 node scripts/build-social-lockups.mjs          # /public/social/* (~140 files)
 node scripts/build-brand-qr-codes.mjs          # /qr-codes/*.png (14 files: 7 URLs × 2 sizes)
+node scripts/build-badge-genesis-2026.mjs      # /badges/genesis-2026.png (Nostr NIP-58)
 ```
 
 Each script reads from this folder and writes either back into `derived/`
