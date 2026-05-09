@@ -27,10 +27,12 @@ Re-upload this file whenever:
 
 ## Maintenance notes
 
-- **The `:root` block at the top is the safest part of this file.** It overrides BTCPay's documented CSS custom properties (`--btcpay-*` and `--bs-*` Bootstrap fallbacks). Even if BTCPay restructures markup in a future release, the palette swap will likely keep working.
-- **Element-level rules below `:root` are more brittle.** They target specific class names on the rendered page. If BTCPay changes a class name, that rule becomes a no-op. Symptom: parts of the page revert to default (white, blue) after a BTCPay upgrade. Fix: open the live page in DevTools, find the new class name, update the corresponding selector here.
+- **All overrides are scoped to public-facing page wrappers** (`.public-page-wrap`, `.checkout-template-base`, `.receipt-template-base`, `body.public-page`, `body[data-page="checkout"|"receipt"]`). The admin UI is intentionally untouched. **Do not move overrides back to `:root`** — that was v1's behavior and it caused admin-UI bleed (washed-out checkboxes, invisible tabs against the cream background).
+- **The variable-override block at the top is the safest layer.** It maps BTCPay's documented `--btcpay-*` hooks and their Bootstrap (`--bs-*`) fallbacks to the BFTA palette. Even if BTCPay restructures markup in a future release, the palette swap will likely keep working as long as one of the wrapper selectors still applies.
+- **Element-level rules are more brittle.** They target specific class names on the rendered page. If BTCPay changes a class name, that rule becomes a no-op. Symptom: parts of the public page revert to default styling after a BTCPay upgrade. Fix: open the live page in DevTools, find the new class name, add a new rule (keep the old one for older BTCPay deployments).
+- **Adding new selectors:** if you discover a public-page element that isn't being styled, ALWAYS prefix the new selector with one of the public-page wrappers. Never write a bare global selector.
 - **Do not hide "Powered by BTCPay"** — BTCPay Server's branding policy requires this attribution. The CSS retints it but keeps it visible.
-- **Test after each upgrade.** Make a $1 test invoice on BTCPay, walk through the donor flow yourself, eyeball every page (invoice, payment-pending, expired, settled receipt). Anything that looks default-Bootstrap is a selector that needs updating.
+- **Test after each upgrade.** Make a $1 test invoice on BTCPay, walk through the donor flow yourself, eyeball every public page (invoice, payment-pending, expired, settled receipt). And glance at the admin dashboard to confirm it's still untouched. Anything that looks default-Bootstrap on the public side is a selector that needs updating; anything that looks BFTA-branded on the admin side is a scoping leak that needs fixing.
 
 ## When to retire this file
 
