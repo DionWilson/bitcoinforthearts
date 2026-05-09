@@ -1,0 +1,431 @@
+/* =============================================================
+   Bitcoin For The Arts — BTCPay Server custom theme
+   =============================================================
+   Drop-in CSS for the BTCPay-hosted invoice / checkout / receipt
+   pages. Re-skins them to match bitcoinforthearts.org's brand kit
+   so the donation handoff (BFTA donate page → BTCPay checkout →
+   BFTA thank-you) feels like a single continuous experience instead
+   of three different sites.
+
+   Brand palette (from public/brand-kit/):
+     Cream   #FFFAF0   — body background, light surfaces
+     Black   #000000   — primary text, on-cream contrast
+     Orange  #FF4F14   — primary CTA, accents, links
+     Lime    #B3FF48   — secondary accent, success highlight
+
+   Where to upload:
+     BTCPay Server admin → Stores → [your store] → Settings →
+     "Customize the look" or "Theme" → Custom CSS file picker.
+     (Field labels vary slightly by BTCPay version. The field that
+     accepts a .css file upload is the right one.)
+
+   When BTCPay Server is upgraded, the CSS-variable overrides at the
+   top (:root block) should keep working since they're documented
+   theming hooks. The element-level selectors below are more brittle
+   and may need tweaks if BTCPay restructures markup. If parts of the
+   page revert to default styling after a BTCPay upgrade, that's a
+   selector mismatch — not a brand-palette issue. Re-inspect the
+   live page and update the selector here.
+   ============================================================= */
+
+:root {
+  /* ---------- BTCPay v2 theming hooks (palette swap) ---------- */
+  --btcpay-body-bg: #FFFAF0;
+  --btcpay-body-text: #000000;
+  --btcpay-body-text-muted: rgba(0, 0, 0, 0.62);
+  --btcpay-body-text-secondary: rgba(0, 0, 0, 0.7);
+
+  --btcpay-primary: #FF4F14;
+  --btcpay-primary-text: #FFFFFF;
+
+  --btcpay-secondary: #000000;
+  --btcpay-secondary-text: #FFFAF0;
+
+  --btcpay-link: #FF4F14;
+  --btcpay-link-accent: #FF4F14;
+  --btcpay-link-hover: #C72B0F;
+
+  --btcpay-success: #B3FF48;
+  --btcpay-success-text: #000000;
+
+  --btcpay-warning: #FF4F14;
+  --btcpay-danger: #C72B0F;
+  --btcpay-info: #000000;
+
+  --btcpay-neutral-50: #FFFFFF;
+  --btcpay-neutral-100: #FFFAF0;
+  --btcpay-neutral-200: #F5EFE0;
+  --btcpay-neutral-300: rgba(0, 0, 0, 0.16);
+  --btcpay-neutral-400: rgba(0, 0, 0, 0.4);
+  --btcpay-neutral-700: rgba(0, 0, 0, 0.7);
+  --btcpay-neutral-900: #000000;
+
+  /* ---------- Bootstrap fallbacks (BTCPay extends Bootstrap) ---------- */
+  --bs-primary: #FF4F14;
+  --bs-primary-rgb: 255, 79, 20;
+  --bs-secondary: #000000;
+  --bs-secondary-rgb: 0, 0, 0;
+  --bs-link-color: #FF4F14;
+  --bs-link-color-rgb: 255, 79, 20;
+  --bs-link-hover-color: #C72B0F;
+  --bs-body-bg: #FFFAF0;
+  --bs-body-color: #000000;
+  --bs-success: #B3FF48;
+  --bs-success-rgb: 179, 255, 72;
+  --bs-warning: #FF4F14;
+  --bs-warning-rgb: 255, 79, 20;
+  --bs-danger: #C72B0F;
+  --bs-danger-rgb: 199, 43, 15;
+
+  /* ---------- Typography ---------- */
+  --btcpay-font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bs-font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* =============================================================
+   Body + general layout
+   ============================================================= */
+
+html,
+body,
+.checkout-template-base,
+.public-page-wrap {
+  background: #FFFAF0 !important;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Store / page header */
+.store-header,
+.public-page-header,
+.checkout-template-base header {
+  background: #FFFAF0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================================
+   Cards / surfaces (the main invoice card the donor sees)
+   ============================================================= */
+
+.card,
+.card-block,
+.invoice-details,
+.checkout-template-base .container .card,
+.public-page-content .card {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* QR-code panel */
+.qr-container,
+.qrcode,
+.payment-qr {
+  background: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* =============================================================
+   Buttons
+   ============================================================= */
+
+.btn-primary,
+button.btn-primary,
+.checkout-template-base .btn-primary,
+.public-page-content .btn-primary {
+  background: #FF4F14;
+  border-color: #FF4F14;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #E64411;
+  border-color: #E64411;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+
+.btn-success {
+  background: #B3FF48;
+  border-color: #B3FF48;
+  color: #000000;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background: #9FE63D;
+  border-color: #9FE63D;
+  color: #000000;
+}
+
+/* Outline / secondary (e.g. "Copy address" buttons) */
+.btn-outline-primary,
+.btn-secondary,
+.btn-outline-secondary {
+  background: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-outline-primary:hover,
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFAF0;
+}
+
+.btn-link {
+  color: #FF4F14;
+}
+
+.btn-link:hover {
+  color: #C72B0F;
+}
+
+/* =============================================================
+   Links
+   ============================================================= */
+
+a,
+a:visited {
+  color: #FF4F14;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #C72B0F;
+  text-decoration: underline;
+}
+
+/* =============================================================
+   Status badges + alerts
+   ============================================================= */
+
+.badge.bg-success,
+.alert-success {
+  background: #B3FF48 !important;
+  color: #000000 !important;
+  border: 1px solid #000000;
+}
+
+.badge.bg-warning,
+.alert-warning {
+  background: rgba(255, 79, 20, 0.12);
+  color: #C72B0F;
+  border: 1px solid #FF4F14;
+}
+
+.badge.bg-danger,
+.alert-danger {
+  background: #C72B0F !important;
+  color: #FFFFFF !important;
+  border: 1px solid #C72B0F;
+}
+
+.badge.bg-info,
+.alert-info {
+  background: rgba(0, 0, 0, 0.06);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+/* =============================================================
+   Forms (rare in the checkout, but for receipt sign-up etc.)
+   ============================================================= */
+
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #000000;
+  border-radius: 6px;
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #FF4F14;
+  box-shadow: 0 0 0 3px rgba(255, 79, 20, 0.15);
+  outline: none;
+}
+
+.form-label {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+}
+
+/* =============================================================
+   Payment-method tabs (Lightning ↔ On-chain switcher)
+   ============================================================= */
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nav-tabs .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  padding: 10px 16px;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  color: #FF4F14;
+  border-bottom-color: #FF4F14;
+  background: transparent;
+}
+
+.nav-pills .nav-link.active {
+  background: #FF4F14;
+  color: #FFFFFF;
+}
+
+/* =============================================================
+   Invoice details / amount displays
+   ============================================================= */
+
+.invoice-amount,
+.payment-amount,
+.amount-display {
+  color: #000000;
+  font-weight: 700;
+}
+
+.invoice-amount .currency,
+.invoice-amount .symbol {
+  color: #FF4F14;
+}
+
+.timer,
+.expiration,
+.countdown {
+  color: rgba(0, 0, 0, 0.7);
+  font-variant-numeric: tabular-nums;
+}
+
+/* =============================================================
+   Receipt / thank-you page
+   ============================================================= */
+
+.invoice-receipt,
+.receipt-page,
+.public-page-content.receipt {
+  background: #FFFAF0;
+}
+
+.invoice-receipt h1,
+.invoice-receipt h2,
+.receipt-page h1,
+.receipt-page h2 {
+  color: #000000;
+}
+
+.invoice-receipt .receipt-amount,
+.receipt-amount {
+  color: #FF4F14;
+  font-weight: 700;
+}
+
+.receipt-status-success {
+  background: #B3FF48;
+  color: #000000;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* =============================================================
+   Footer + "powered by BTCPay" notice
+   =============================================================
+   Note: do NOT hide the "powered by BTCPay" link — that violates
+   BTCPay Server's branding requirements. Just retint it.
+   ============================================================= */
+
+.footer,
+.checkout-footer,
+.public-page-footer {
+  background: #FFFAF0;
+  color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer a,
+.checkout-footer a,
+.public-page-footer a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer a:hover,
+.checkout-footer a:hover,
+.public-page-footer a:hover {
+  color: #FF4F14;
+}
+
+/* =============================================================
+   Misc text utilities BTCPay sometimes uses
+   ============================================================= */
+
+.text-muted,
+.text-secondary {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.text-primary {
+  color: #FF4F14 !important;
+}
+
+.text-success {
+  color: #000000 !important;
+}
+
+.bg-light {
+  background: #FFFAF0 !important;
+}
+
+.bg-white {
+  background: #FFFFFF !important;
+}
+
+/* =============================================================
+   Crowdfund / pay-button apps (if BFTA ever launches one)
+   ============================================================= */
+
+.crowdfund-header,
+.app-header,
+.payment-button {
+  background: #FFFAF0;
+  color: #000000;
+}
+
+.crowdfund-progress-bar,
+.progress-bar {
+  background: #FF4F14;
+}
+
+.crowdfund-progress {
+  background: rgba(0, 0, 0, 0.08);
+}
