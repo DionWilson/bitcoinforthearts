@@ -86,7 +86,7 @@ type BtcPayPaymentMethod = {
 export async function GET() {
   const webhookSecret = Boolean(getEnv('BTCPAY_WEBHOOK_SECRET'));
   const btcpayConfigured = Boolean(getEnv('BTCPAY_URL')) && Boolean(getEnv('BTCPAY_API_KEY')) && Boolean(getEnv('BTCPAY_STORE_ID'));
-  const threshold = asNumber(getEnv('DONATION_THANKYOU_THRESHOLD_USD') ?? '50') ?? 50;
+  const threshold = asNumber(getEnv('DONATION_THANKYOU_THRESHOLD_USD') ?? '1') ?? 1;
 
   let mongoOk = false;
   try {
@@ -337,57 +337,92 @@ export async function POST(req: Request) {
             ? `Lightning payment id(s): ${lightningPaymentIds.join(', ')}`
             : 'Transaction id: (not available yet)';
 
-      const text = [
-        'Thank you for supporting Bitcoin for the Arts.',
-        '',
-        isMembership ? `Your Sovereign Circle membership payment has been received.` : `Donation: ${amountText}`,
-        `Amount: ${amountText}`,
-        `BTCPay invoice id: ${invoiceId}`,
-        txLine,
-        ...(qualifiesDisciplineChoice ? [
-          '',
-          'As a member at this level, you can direct your support toward a specific art discipline (visual arts, music, theater, dance, writing, or film). Just reply to this email or write to donate@bitcoinforthearts.org with your preference.',
-        ] : []),
-        '',
-        'With gratitude,',
-        'Bitcoin for the Arts',
-        'https://bitcoinforthearts.org',
-      ].join('\n');
+      const text = isMembership
+        ? [
+            'Welcome to the Sovereign Circle.',
+            '',
+            'Your monthly Bitcoin support sustains the artists, grants, and programs that make Bitcoin for the Arts possible. Thank you.',
+            '',
+            `Amount: ${amountText} (received via Bitcoin)`,
+            `BTCPay invoice id: ${invoiceId}`,
+            txLine,
+            '',
+            ...(qualifiesDisciplineChoice
+              ? [
+                  'At your tier, you can direct your support toward a specific art discipline — visual arts, music, theater, dance, writing, or film. Just reply to this email or write to donate@bitcoinforthearts.org with your preference.',
+                  '',
+                ]
+              : []),
+            'For full details on what each Circle tier includes, see https://www.bitcoinforthearts.org/donate/monthly',
+            '',
+            'This email is your receipt — please save it for your records. Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN 41-2642260.',
+            '',
+            'With gratitude,',
+            'Bitcoin for the Arts',
+            'https://bitcoinforthearts.org',
+          ].join('\n')
+        : [
+            'Thank you for supporting Bitcoin for the Arts.',
+            '',
+            `Donation: ${amountText} (received via Bitcoin)`,
+            `BTCPay invoice id: ${invoiceId}`,
+            txLine,
+            '',
+            'This email is your receipt — please save it for your records. Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN 41-2642260.',
+            '',
+            'Want to stay in the loop? Subscribe to our newsletter at https://www.bitcoinforthearts.org/get-involved for occasional updates on grants, programs, and the artists we support.',
+            '',
+            'With gratitude,',
+            'Bitcoin for the Arts',
+            'https://bitcoinforthearts.org',
+          ].join('\n');
+
+      const txHtml = onChainTxIds.length
+        ? `<p style="margin: 0 0 8px;"><strong>On-chain transaction id(s):</strong> <span style="font-family: ui-monospace, monospace; font-size: 12px;">${escapeHtml(onChainTxIds.join(', '))}</span></p>`
+        : lightningPaymentIds.length
+          ? `<p style="margin: 0 0 8px;"><strong>Lightning payment id(s):</strong> <span style="font-family: ui-monospace, monospace; font-size: 12px;">${escapeHtml(lightningPaymentIds.join(', '))}</span></p>`
+          : `<p style="margin: 0 0 8px;"><strong>Transaction id:</strong> (not available yet)</p>`;
 
       const html = `
-        <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5;">
-          <h2 style="margin: 0 0 12px;">${isMembership ? 'Welcome to the Sovereign Circle.' : 'Thank you for your donation.'}</h2>
-          <p style="margin: 0 0 8px;">
-            We appreciate your support for sovereign creators and Bitcoin-native arts.
-          </p>
+        <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5; color: #111111;">
           ${isMembership
-            ? `<p style="margin: 0 0 8px;"><strong>Your Sovereign Circle membership payment has been received.</strong></p>`
-            : ''}
-          <p style="margin: 0 0 8px;">
-            <strong>${isMembership ? 'Amount:' : 'Donation:'}</strong> ${escapeHtml(amountText)}
+            ? `
+              <h2 style="margin: 0 0 12px;">Welcome to the Sovereign Circle.</h2>
+              <p style="margin: 0 0 12px;">
+                Your monthly Bitcoin support sustains the artists, grants, and programs that make Bitcoin for the Arts possible. Thank you.
+              </p>
+              <p style="margin: 0 0 8px;"><strong>Amount:</strong> ${escapeHtml(amountText)} <span style="color: #777;">(received via Bitcoin)</span></p>
+              <p style="margin: 0 0 8px;"><strong>BTCPay invoice id:</strong> <span style="font-family: ui-monospace, monospace; font-size: 12px;">${escapeHtml(invoiceId)}</span></p>
+              ${txHtml}
+              ${qualifiesDisciplineChoice ? `
+              <p style="margin: 12px 0; padding: 10px 14px; background: #FFF7F1; border-left: 3px solid #FF4F14; border-radius: 4px; font-size: 13px;">
+                At your tier, you can direct your support toward a specific art discipline — visual arts, music, theater, dance, writing, or film. Just reply to this email or write to
+                <a href="mailto:donate@bitcoinforthearts.org" style="color: #FF4F14;">donate@bitcoinforthearts.org</a> with your preference.
+              </p>` : ''}
+              <p style="margin: 16px 0 8px;">
+                For full details on what each Circle tier includes, see
+                <a href="https://www.bitcoinforthearts.org/donate/monthly" style="color: #FF4F14;">bitcoinforthearts.org/donate/monthly</a>.
+              </p>
+            `
+            : `
+              <h2 style="margin: 0 0 12px;">Thank you for your donation.</h2>
+              <p style="margin: 0 0 8px;">
+                We appreciate your support for sovereign creators and Bitcoin-native arts.
+              </p>
+              <p style="margin: 0 0 8px;"><strong>Donation:</strong> ${escapeHtml(amountText)} <span style="color: #777;">(received via Bitcoin)</span></p>
+              <p style="margin: 0 0 8px;"><strong>BTCPay invoice id:</strong> <span style="font-family: ui-monospace, monospace; font-size: 12px;">${escapeHtml(invoiceId)}</span></p>
+              ${txHtml}
+              <p style="margin: 12px 0; padding: 10px 14px; background: #FFF7F1; border-left: 3px solid #FF4F14; border-radius: 4px; font-size: 13px;">
+                Want to stay in the loop? Subscribe to our newsletter at
+                <a href="https://www.bitcoinforthearts.org/get-involved" style="color: #FF4F14;">bitcoinforthearts.org/get-involved</a>
+                for occasional updates on grants, programs, and the artists we support.
+              </p>
+            `}
+          <p style="margin: 20px 0 8px; padding-top: 12px; border-top: 1px solid #E5E1D6; color: #555555; font-size: 12px;">
+            This email is your receipt — please save it for your records. Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN 41-2642260. No goods or services were provided in exchange for your contribution.
           </p>
-          <p style="margin: 0 0 8px;">
-            <strong>BTCPay invoice id:</strong> ${escapeHtml(invoiceId)}
-          </p>
-          ${
-            onChainTxIds.length
-              ? `<p style="margin: 0 0 8px;"><strong>On-chain transaction id(s):</strong> ${escapeHtml(
-                  onChainTxIds.join(', '),
-                )}</p>`
-              : lightningPaymentIds.length
-                ? `<p style="margin: 0 0 8px;"><strong>Lightning payment id(s):</strong> ${escapeHtml(
-                    lightningPaymentIds.join(', '),
-                  )}</p>`
-                : `<p style="margin: 0 0 8px;"><strong>Transaction id:</strong> (not available yet)</p>`
-          }
-          ${qualifiesDisciplineChoice ? `
-          <p style="margin: 12px 0 8px; padding: 10px 14px; background: #f8f4ff; border-left: 3px solid #7e57c2; border-radius: 4px; font-size: 13px;">
-            As a member at this level, you can direct your support toward a specific art discipline
-            (visual arts, music, theater, dance, writing, or film). Just reply to this email or write to
-            <a href="mailto:donate@bitcoinforthearts.org">donate@bitcoinforthearts.org</a> with your preference.
-          </p>` : ''}
-          <p style="margin: 16px 0 0; color: #666; font-size: 12px;">
-            Sent from <a href="https://bitcoinforthearts.org">bitcoinforthearts.org</a>
+          <p style="margin: 8px 0 0; color: #999; font-size: 12px;">
+            Sent from <a href="https://bitcoinforthearts.org" style="color: #999;">bitcoinforthearts.org</a>
           </p>
         </div>
       `.trim();
