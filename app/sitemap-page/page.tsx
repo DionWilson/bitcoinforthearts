@@ -72,6 +72,8 @@ const sections: SitemapSection[] = [
         href: "/research/sound-money-for-the-arts",
         label: "Sound Money for the Arts",
       },
+      { href: "/research/methodology", label: "Research Methodology" },
+      { href: "/research/glossary", label: "Research Glossary" },
     ],
   },
   {

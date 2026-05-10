@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/research/state-of-arts-funding-2026',
     '/research/the-arpa-cliff',
     '/research/sound-money-for-the-arts',
+    '/research/methodology',
+    '/research/glossary',
     '/stories',
     '/stories/kenneth-burris',
     '/stories/man-like-kweks',

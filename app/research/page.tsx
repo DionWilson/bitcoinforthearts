@@ -203,15 +203,54 @@ export default function ResearchPortalPage() {
         </section>
 
         <section className="mt-14 rounded-2xl border border-border bg-surface p-6">
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Methodology
-          </h2>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
-            Each published report will include its own references and a clear
-            explanation of how BFTA selected, interpreted, and updated the data.
-            Claims without a source will either be removed or labeled as
-            estimates with explicit assumptions.
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
+                Phase 5
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+                Methodology and glossary
+              </h2>
+            </div>
+          </div>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
+            BFTA Research is built on primary sources first, no hype, no
+            unsourced statistics, and clear correction pathways. The methodology
+            and glossary pages document how we select sources, update reports,
+            define terms, and handle professional disclaimers.
           </p>
+          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+            <Link
+              href="/research/methodology"
+              className="rounded-xl border border-border bg-background p-5 transition-colors hover:border-accent/60"
+            >
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Standards
+              </div>
+              <h3 className="mt-2 text-xl font-semibold tracking-tight">
+                Research methodology
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Source hierarchy, update cadence, corrections, AI usage,
+                disclaimers, and institutional byline policy.
+              </p>
+            </Link>
+            <Link
+              href="/research/glossary"
+              className="rounded-xl border border-border bg-background p-5 transition-colors hover:border-accent/60"
+            >
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Definitions
+              </div>
+              <h3 className="mt-2 text-xl font-semibold tracking-tight">
+                Research glossary
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Plain-language definitions for arts funding, public finance,
+                monetary economics, nonprofit finance, and Bitcoin terms.
+              </p>
+            </Link>
+          </div>
         </section>
       </div>
     </main>
