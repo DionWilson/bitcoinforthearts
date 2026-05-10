@@ -1,0 +1,339 @@
+SOCIAL MEDIA POSTS — Vegas Conference + Newsletter Drop
+
+
+Companion to: docs/beehiiv-newsletter-vegas-conference.txt
+Goal: drive newsletter signups + sponsor intros + 2 volunteer leads
+Window: Day before newsletter through end of conference (April 27–29)
+
+
+===============================================================
+NOSTR POSTS — primary platform, post 1 per day across the week
+===============================================================
+
+
+--- POST 1: Newsletter drop announcement (publish day) ---
+
+New BFTA newsletter just hit inboxes 🟧
+
+We're heading to the Bitcoin conference in Vegas next week (Apr 27–29) to find sponsors for our biggest event yet. We need 2 volunteers. We've got our first annual Sovereign Circle member to celebrate. And on-chain transparency is coming.
+
+If you're going to Vegas — reply, let's meet up.
+If you're not — forward this to one person who is.
+
+Read + subscribe: bitcoinforthearts.org
+
+#bitcoin #nostr #arts #zaps
+
+
+--- POST 2: Vegas hallway hunt (Apr 26 or morning of Apr 27) ---
+
+Heading to Vegas tomorrow for the Bitcoin conference (Apr 27–29).
+
+If you'll be there and you care about funding artists in Bitcoin — find us, or reply to this note and we'll find you.
+
+We're looking for sponsors for the Art + Zap Weekend, our first major fundraiser. Cash, in-kind, and warm intros all welcome.
+
+Even a 5-minute hallway intro is gold.
+
+⚡ donate@bitcoinforthearts.org
+
+
+--- POST 3: Sovereign Circle shoutout (mid-week) ---
+
+This week BFTA welcomed our first annual Sovereign Circle member 🎉
+
+Annual memberships matter to us in a specific way: they let us plan grant cycles months in advance instead of quarter-to-quarter. They convert "we hope to fund this" into "we will fund this."
+
+If a sovereign artist economy is something you want to exist, the Sovereign Circle is the simplest way to build it.
+
+bitcoinforthearts.org/donate/monthly
+
+
+--- POST 4: Vol ask (mid-week) ---
+
+We need 2 volunteers for the Art + Zap Weekend (our first major fundraiser):
+
+1. A live-streaming producer / TD with multi-camera experience
+2. An artist coordinator who can run tech checks and stream-link logistics for 21 artists
+
+Both come with public credit and an FMV-of-services acknowledgment letter for your records.
+
+If this is you — or if you know who it is — DM us.
+
+
+--- POST 5: Article share — funding crisis (mid-week) ---
+
+San Diego Mayor just proposed cutting the city's arts funding from $13.8M to under $2M.
+
+86% reduction. One budget cycle.
+
+State arts appropriations down 7.7% nationally. California -40.8%. Missouri -59.7%.
+
+The federal NEA was targeted for elimination twice in two consecutive budgets.
+
+The old funding model is dying. We wrote about what comes next:
+
+https://substack.com/@bitcoinforthearts/note/p-194313906
+
+
+--- POST 6: Article share — war/inflation (mid-week, alt) ---
+
+Throughout history, war has been funded by destroying the value of money.
+
+Rome. Britain. The U.S. through WWI, WWII, Vietnam, Iraq.
+
+The pattern is identical: governments spend more than they have, inflate the difference, and the cost falls on people who saved in the currency being debased.
+
+Bitcoin's fixed supply is the answer to that pattern.
+
+Not as a political argument — as a mathematical one:
+
+https://substack.com/@bitcoinforthearts/note/p-194584210
+
+
+--- POST 7: Conference recap (post-event, Apr 30) ---
+
+Vegas: done. Coffee count lost. Sponsor leads: real.
+
+Thank you to everyone who said hi in the hallway, dropped sats in our LN address, or pulled out a phone to introduce us to someone we needed to meet.
+
+Next: turning those conversations into signed sponsor agreements for the Art + Zap Weekend.
+
+If we said "I'll follow up on Monday" — Monday is here. Check your DMs.
+
+
+
+===============================================================
+X / TWITTER POSTS — same beats, tighter character count
+===============================================================
+
+
+--- TWEET 1: Newsletter drop announcement ---
+
+New BFTA newsletter just hit inboxes.
+
+→ Vegas Bitcoin conference next week (Apr 27–29)
+→ 2 volunteer roles open
+→ Welcoming our first annual Sovereign Circle member
+→ On-chain transparency is coming
+
+Subscribe: bitcoinforthearts.org
+
+
+--- TWEET 2: Vegas hallway hunt ---
+
+Heading to the Bitcoin conference in Vegas next week (Apr 27–29).
+
+If you'll be there and you care about funding artists in Bitcoin — DM, let's grab a coffee.
+
+If you're not going but you know speakers, sponsors, or builders who'll be there — please intro us.
+
+⚡ #BTCVegas
+
+
+--- TWEET 3: Sovereign Circle shoutout ---
+
+We just welcomed our first annual Sovereign Circle member. 🎉
+
+Annual memberships let us plan grant cycles months in advance.
+
+If you want to help fund a sovereign artist economy — every level matters:
+
+bitcoinforthearts.org/donate/monthly
+
+
+--- TWEET 4: Volunteer ask ---
+
+We need 2 volunteers for our biggest event yet:
+
+1. Live-streaming producer / TD
+2. Artist coordinator (tech checks + stream links for 21 artists)
+
+Both come with public credit + FMV acknowledgment letter for your records.
+
+This is you? Or you know who it is? DM us.
+
+
+--- TWEET 5: Funding crisis thread (1/3) ---
+
+🧵
+
+The arts funding model in America is in freefall.
+
+San Diego just proposed cutting arts funding 86% — from $13.8M to under $2M — in a single budget.
+
+San Diego is not the outlier. It's the leading edge.
+
+
+--- TWEET 5 (2/3) ---
+
+State-level arts appropriations are projected to drop 7.7% nationally for FY2026.
+
+California: -40.8%
+Missouri: -59.7%
+Minnesota: -22%
+
+The federal NEA was targeted for elimination twice in two consecutive budgets.
+
+Institutional arts funding is dying.
+
+
+--- TWEET 5 (3/3) ---
+
+We wrote about what comes next — and why Bitcoin is the only switch left for an arts funding model that doesn't depend on Washington, central banks, or any institution.
+
+Read it: https://substack.com/@bitcoinforthearts/note/p-194313906
+
+
+--- TWEET 6: War/inflation article ---
+
+Wars are funded by destroying the value of money.
+
+Rome. Britain. WWI, WWII, Vietnam, Iraq.
+
+The pattern is identical — and the cost always falls on the people who saved in the debased currency.
+
+What does that mean for Bitcoin? A non-political read:
+
+https://substack.com/@bitcoinforthearts/note/p-194584210
+
+
+--- TWEET 7: Conference recap (Apr 30) ---
+
+Vegas wrap.
+
+Thank you to everyone who said hi, zapped us, or made an intro to someone we needed to meet.
+
+Now we turn those hallway conversations into signed Art + Zap Weekend sponsors.
+
+Said you'd follow up Monday? Monday is here. Check your DMs.
+
+
+
+===============================================================
+INSTAGRAM POST — newsletter drop day
+===============================================================
+
+
+CAPTION:
+
+Vegas. Volunteers. Vault. 🟧
+
+This week's BFTA newsletter is live and there's a lot in it:
+
+→ We're heading to the Bitcoin conference in Vegas next week (April 27–29) to find sponsors for the biggest event we've ever planned. If you're going, let's meet up. If you know someone who'll be there — please intro us.
+
+→ We need 2 volunteers: a live-streaming producer with multi-camera experience, and an artist coordinator to manage 21 artist tech checks. Both come with public credit + a written acknowledgment of your contributed services.
+
+→ This week we welcomed our first annual Sovereign Circle member. (Last newsletter we celebrated our first monthly. Now an annual.) Annual memberships let us plan grant cycles with confidence instead of quarter-to-quarter scrambling.
+
+→ Two new pieces on Substack — one on the collapse of institutional arts funding, one on what war reveals about money. Both worth your time. Links in the newsletter.
+
+→ On-chain transparency is coming: our public granting and funding wallet goes live very soon, and you'll see the address right here in this newsletter the moment it does.
+
+Without you, we don't make it. Forward the newsletter to one person who's never heard of us. Hit reply with feedback, ideas, or warm intros. Drop a comment below and tell us what you want to see more of.
+
+bitcoinforthearts.org/donate (link in bio)
+
+#Bitcoin #BitcoinArt #Nostr #SovereignCreators #ArtsFunding #BTCVegas #Lightning #501c3
+
+
+
+===============================================================
+LINKEDIN POST — newsletter drop day, more professional tone
+===============================================================
+
+
+Bitcoin For The Arts is heading to the Bitcoin conference in Las Vegas next week (April 27–29), and our latest newsletter — out today — explains why we're going and what we're looking for.
+
+We are the first 501(c)(3) nonprofit paying artists exclusively in Bitcoin. We're going to Vegas to find sponsors for our flagship event, the Art + Zap Weekend — a multi-day broadcast featuring 21 artists across disciplines, culminating in a live in-person finale. Sponsorship is available at $5K, $10K, and $25K tiers, plus a robust in-kind menu including NYC venue contributions, A/V production, hardware wallets for participating artists, photography, and silent-auction items.
+
+Three specific asks for our LinkedIn community:
+
+1. If you'll be at the Bitcoin conference, please reach out — we'd value 5 minutes in the hallway.
+
+2. If you have a network connection to a Bitcoin company, an NYC venue, or a hardware vendor who might consider sponsorship or in-kind partnership, a warm introduction would be deeply appreciated.
+
+3. We're recruiting 2 volunteer roles: a live-streaming producer / technical director with multi-camera experience, and an artist coordinator to manage tech checks and logistics for 21 featured artists. Both roles come with public credit and a written acknowledgment of contributed services for the volunteer's records.
+
+Federal arts funding is in freefall — the NEA has been targeted for elimination in two consecutive federal budgets, and state-level appropriations are projected to drop 7.7% nationally for FY2026. We are building a parallel funding system on rails that no central authority can shut down. Every dollar follows our published 55/30/10/5 allocation: 55% to direct artist grants, 30% to programs, 10% to operations, 5% to a permanent Bitcoin endowment reserve.
+
+This week we also welcomed our first annual Sovereign Circle member — a milestone that lets us begin planning grant cycles with the predictability we've been building toward. Two new long-form pieces on our Substack address the broader funding crisis and the relationship between war, inflation, and sound money. Links in the newsletter.
+
+Read and subscribe: https://bitcoinforthearts.org
+
+EIN: 41-2642260 | Bitcoin For The Arts, Inc. | 27 West 60th Street, New York, NY 10023
+
+
+
+===============================================================
+SUBSTACK NOTE — quick promo for the newsletter from your Substack
+===============================================================
+
+
+New BFTA newsletter is live. This issue:
+
+→ Heading to the Bitcoin conference in Vegas next week (April 27–29) — looking for sponsors and warm intros for our flagship Art + Zap Weekend event.
+
+→ 2 volunteer roles open: live-streaming producer + artist coordinator.
+
+→ Welcoming our first annual Sovereign Circle member (last newsletter was the first monthly).
+
+→ On-chain transparency milestone coming: our public granting wallet goes live very soon.
+
+If you're not subscribed to the BFTA Beehiiv newsletter yet, that's where the full update is. Reading the Substack pieces? The newsletter is the daily-operations companion to them.
+
+Subscribe: bitcoinforthearts.org
+
+
+
+===============================================================
+POSTING SCHEDULE RECOMMENDATION
+===============================================================
+
+
+Day 1 (newsletter drop day):
+- Send Beehiiv newsletter
+- Post Nostr POST 1 (newsletter drop)
+- Post X TWEET 1 (newsletter drop)
+- Post Instagram caption
+- Post LinkedIn post
+- Post Substack note
+
+Day 2 (mid-week, before Vegas):
+- Nostr POST 5 (funding crisis article share)
+- X TWEET 5 (3-tweet thread on funding crisis)
+
+Day 3 (mid-week):
+- Nostr POST 4 (volunteer ask)
+- X TWEET 4 (volunteer ask)
+
+Day 4 (Apr 26, day before Vegas):
+- Nostr POST 2 (Vegas hallway hunt)
+- X TWEET 2 (Vegas hallway hunt)
+
+Day 5 (Apr 27, Vegas Day 1):
+- Repost Vegas hallway hunt with photo from conference floor
+
+Day 6 (Apr 28-29, during Vegas):
+- Live posts as conversations happen — quote-zaps of speakers you meet, photos of the BFTA hallway crew, stories about meaningful intros
+- These don't need to be pre-written; let them be authentic
+
+Day 7 (Apr 30, post-conference):
+- Nostr POST 7 (conference recap)
+- X TWEET 7 (conference recap)
+- Send follow-up DMs to every "I'll follow up Monday" intro from the conference floor
+
+
+===============================================================
+TONE NOTES
+===============================================================
+
+
+- Lead with the ask, not the throat-clearing. "We need" beats "We are pleased to announce".
+- Specific numbers beat vague qualifiers. "$13.8M to under $2M" beats "huge cuts".
+- The Vegas dates (April 27-29) should appear in every Vegas-related post — short subject lines tend to get truncated and the dates need to be above the fold.
+- For Nostr specifically, lean into the V4V ethos: receiving zaps on these posts is itself a small fundraising action. Don't overthink the call to action.
+- For LinkedIn, slightly more professional but still direct - LinkedIn is where the corporate sponsors and their decision-makers actually read.
+- For Instagram, the caption can be longer because IG users actually read captions; visual is the hook (suggest a photo of you packing for Vegas, the conference logo, or a pre-made graphic with the key dates and asks).
+- "We don't make it without you" is a true statement, not a marketing line. Use it sparingly so it lands.
