@@ -1,5 +1,6 @@
 import reportsJson from '@/data/research/reports.json';
 import stateOfArtsFunding2026Json from '@/data/research/state-of-arts-funding-2026.json';
+import theArpaCliffJson from '@/data/research/the-arpa-cliff.json';
 
 export type ResearchReportSummary = {
   slug: string;
@@ -57,8 +58,13 @@ export const researchReports = reportsJson as ResearchReportSummary[];
 export const stateOfArtsFunding2026 =
   stateOfArtsFunding2026Json as ResearchDataSet;
 
+export const theArpaCliff = theArpaCliffJson as ResearchDataSet;
+
 export const researchSourcesById = new Map(
-  stateOfArtsFunding2026.sources.map((source) => [source.id, source]),
+  [...stateOfArtsFunding2026.sources, ...theArpaCliff.sources].map((source) => [
+    source.id,
+    source,
+  ]),
 );
 
 export function getResearchReportBySlug(slug: string) {

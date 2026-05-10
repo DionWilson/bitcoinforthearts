@@ -4,10 +4,14 @@ import ResearchReportShell from '@/components/research/ResearchReportShell';
 import StateOfArtsFunding2026Report, {
   stateOfArtsFundingSections,
 } from '@/components/research/StateOfArtsFunding2026Report';
+import TheArpaCliffReport, {
+  theArpaCliffSections,
+} from '@/components/research/TheArpaCliffReport';
 import {
   getResearchReportBySlug,
   researchReports,
   stateOfArtsFunding2026,
+  theArpaCliff,
 } from '@/lib/research';
 
 type PageProps = {
@@ -42,7 +46,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: report.href,
     },
     robots:
-      report.slug === stateOfArtsFunding2026.slug
+      report.slug === stateOfArtsFunding2026.slug || report.slug === theArpaCliff.slug
         ? undefined
         : {
             index: false,
@@ -69,6 +73,22 @@ export default async function ResearchReportPage({ params }: PageProps) {
         sources={stateOfArtsFunding2026.sources}
       >
         <StateOfArtsFunding2026Report />
+      </ResearchReportShell>
+    );
+  }
+
+  if (report.slug === theArpaCliff.slug) {
+    return (
+      <ResearchReportShell
+        title={report.title}
+        dek={report.dek}
+        kicker={report.kicker}
+        status="Version 1.0"
+        lastReviewed={theArpaCliff.lastReviewed}
+        sections={theArpaCliffSections}
+        sources={theArpaCliff.sources}
+      >
+        <TheArpaCliffReport />
       </ResearchReportShell>
     );
   }

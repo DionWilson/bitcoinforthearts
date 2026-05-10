@@ -1,0 +1,161 @@
+{
+  "slug": "the-arpa-cliff",
+  "title": "The ARPA Cliff",
+  "byline": "Bitcoin for the Arts Research",
+  "lastReviewed": "2026-05-10",
+  "heroStats": [
+    {
+      "label": "NEA ARP allocation",
+      "value": "$135M",
+      "context": "American Rescue Plan funding allocated to the National Endowment for the Arts for arts-sector recovery.",
+      "sourceIds": ["nea-arp-overview"]
+    },
+    {
+      "label": "State/local recovery fund",
+      "value": "$350B",
+      "context": "Coronavirus State and Local Fiscal Recovery Funds made available to state, local, territorial, and Tribal governments.",
+      "sourceIds": ["treasury-slfrf"]
+    },
+    {
+      "label": "Direct NEA org grants",
+      "value": "567",
+      "context": "Arts organizations recommended for direct NEA American Rescue Plan grants totaling $57.75M.",
+      "sourceIds": ["nea-arp-organizations"]
+    },
+    {
+      "label": "SLFRF spend deadline",
+      "value": "2026",
+      "context": "Municipalities had until December 2026 to spend obligated SLFRF dollars.",
+      "sourceIds": ["nlc-2026-deadline"]
+    }
+  ],
+  "charts": [
+    {
+      "id": "nea-arp-distribution",
+      "title": "NEA American Rescue Plan arts funding moved through three channels",
+      "description": "The $135M NEA allocation included state/regional regranting, local arts agency subgranting, and direct grants to arts organizations.",
+      "type": "bar",
+      "valuePrefix": "$",
+      "valueSuffix": "M",
+      "sourceIds": ["nea-arp-overview", "nea-arp-state-regional", "nea-arp-local-arts-agencies", "nea-arp-organizations"],
+      "data": [
+        {
+          "label": "State/regional",
+          "value": 52
+        },
+        {
+          "label": "Local arts agencies",
+          "value": 20.2
+        },
+        {
+          "label": "Direct org grants",
+          "value": 57.75
+        }
+      ]
+    },
+    {
+      "id": "local-arpa-arts-examples",
+      "title": "Selected local and state ARPA arts interventions varied widely in scale",
+      "description": "Examples show how flexible recovery dollars were adapted to different local arts ecosystems.",
+      "type": "bar",
+      "valuePrefix": "$",
+      "valueSuffix": "M",
+      "sourceIds": ["nlc-arpa-arts", "pa-pacr", "cuyahoga-arpa-arts", "baltimore-civic-fund"],
+      "data": [
+        {
+          "label": "St. Louis arts",
+          "value": 10.6
+        },
+        {
+          "label": "Cuyahoga County",
+          "value": 3.3
+        },
+        {
+          "label": "Baltimore artist fund",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "fy2026-state-transition",
+      "title": "Post-relief state arts appropriations entered FY2026 below FY2025",
+      "description": "Arts Midwest's summary of NASAA FY2026 data reports national state arts agency appropriations falling from $694.3M to $646.0M.",
+      "type": "bar",
+      "valuePrefix": "$",
+      "valueSuffix": "M",
+      "sourceIds": ["arts-midwest-2026"],
+      "data": [
+        {
+          "label": "FY2025",
+          "value": 694.3
+        },
+        {
+          "label": "FY2026",
+          "value": 646
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nea-arp-overview",
+      "label": "National Endowment for the Arts, The American Rescue Plan",
+      "href": "https://www.arts.gov/COVID-19/the-american-rescue-plan"
+    },
+    {
+      "id": "nea-arp-state-regional",
+      "label": "National Endowment for the Arts, First Phase of American Rescue Plan Funding",
+      "href": "https://www.arts.gov/news/press-releases/2021/first-phase-american-rescue-plan-funding-national-endowment-arts-announced"
+    },
+    {
+      "id": "nea-arp-local-arts-agencies",
+      "label": "National Endowment for the Arts, American Rescue Plan Grants to Local Arts Agencies",
+      "href": "https://www.arts.gov/news/press-releases/2021/american-rescue-plan-grants-local-arts-agencies"
+    },
+    {
+      "id": "nea-arp-organizations",
+      "label": "National Endowment for the Arts, American Rescue Plan Grants to Arts Organizations",
+      "href": "https://www.arts.gov/news/press-releases/2022/nea-announces-american-rescue-plan-grants-arts-organizations"
+    },
+    {
+      "id": "treasury-slfrf",
+      "label": "U.S. Department of the Treasury, State and Local Fiscal Recovery Funds",
+      "href": "https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/state-and-local-fiscal-recovery-funds"
+    },
+    {
+      "id": "nlc-2026-deadline",
+      "label": "National League of Cities, Cities and Towns Navigate the 2026 SLFRF Spending Deadline",
+      "href": "https://www.nlc.org/article/2025/03/13/cities-and-towns-navigate-the-2026-slfrf-spending-deadline/"
+    },
+    {
+      "id": "nlc-arpa-arts",
+      "label": "National League of Cities, Ways that Cities Are Directing ARPA Dollars Toward the Arts",
+      "href": "https://www.nlc.org/article/2023/03/13/ways-that-cities-are-directing-arpa-dollars-toward-the-arts/"
+    },
+    {
+      "id": "pa-pacr",
+      "label": "Pennsylvania Department of Community & Economic Development, COVID-19 ARPA PA Arts and Culture Recovery Program",
+      "href": "https://dced.pa.gov/programs/covid-19-arpa-pa-arts-and-culture-recovery-program-pacr/"
+    },
+    {
+      "id": "cuyahoga-arpa-arts",
+      "label": "Assembly for the Arts, Cuyahoga County ARPA funds for arts nonprofits and creative workers",
+      "href": "https://assemblycle.org/cuyahoga-county-to-award-3-3-million-in-american-rescue-plan-act-funds-to-cuyahoga-arts-culture-and-assembly-for-the-arts/"
+    },
+    {
+      "id": "baltimore-civic-fund",
+      "label": "Baltimore Civic Fund, 2025 ARPA Artist Grant Fund",
+      "href": "https://www.baltimorecivicfund.org/2025-arpa-artist-grant-fund-1"
+    },
+    {
+      "id": "baltimore-arpa-arts",
+      "label": "Baltimore City, ARPA Insight Stories: Revitalizing the Arts in Baltimore",
+      "href": "https://www.baltimorecity.gov/morp/news/arpa-insight-stories-revitalizing-the-arts-in-baltimore"
+    },
+    {
+      "id": "arts-midwest-2026",
+      "label": "Arts Midwest, Public Funding for the Arts in the Midwest: 2026 by the Numbers",
+      "href": "https://artsmidwest.org/resources/research-data/public-funding-for-the-arts-in-the-midwest-2026-by-the-numbers/"
+    }
+  ]
+}
