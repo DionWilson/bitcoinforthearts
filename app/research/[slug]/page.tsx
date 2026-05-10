@@ -1,9 +1,13 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import ResearchReportShell from '@/components/research/ResearchReportShell';
+import StateOfArtsFunding2026Report, {
+  stateOfArtsFundingSections,
+} from '@/components/research/StateOfArtsFunding2026Report';
 import {
   getResearchReportBySlug,
   researchReports,
+  stateOfArtsFunding2026,
 } from '@/lib/research';
 
 type PageProps = {
@@ -36,10 +40,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
     alternates: {
       canonical: report.href,
     },
-    robots: {
-      index: false,
-      follow: false,
-    },
+    robots:
+      report.slug === stateOfArtsFunding2026.slug
+        ? undefined
+        : {
+            index: false,
+            follow: false,
+          },
   };
 }
 
@@ -47,6 +54,22 @@ export default function ResearchReportPage({ params }: PageProps) {
   const report = getResearchReportBySlug(params.slug);
 
   if (!report) notFound();
+
+  if (report.slug === stateOfArtsFunding2026.slug) {
+    return (
+      <ResearchReportShell
+        title={report.title}
+        dek={report.dek}
+        kicker={report.kicker}
+        status="Version 1.0"
+        lastReviewed={stateOfArtsFunding2026.lastReviewed}
+        sections={stateOfArtsFundingSections}
+        sources={stateOfArtsFunding2026.sources}
+      >
+        <StateOfArtsFunding2026Report />
+      </ResearchReportShell>
+    );
+  }
 
   const sections = report.expectedSections.map((label) => ({
     id: sectionId(label),

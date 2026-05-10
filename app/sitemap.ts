@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/artists',
     '/events',
     '/research',
+    '/research/state-of-arts-funding-2026',
     '/stories',
     '/stories/kenneth-burris',
     '/stories/man-like-kweks',

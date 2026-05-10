@@ -139,30 +139,52 @@ export default function ResearchPortalPage() {
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-3">
-            {researchReports.map((report) => (
-              <article
-                key={report.slug}
-                className="rounded-2xl border border-border bg-surface p-6"
-              >
-                <div className="flex items-center justify-between gap-3">
-                  <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-                    {report.kicker}
+            {researchReports.map((report) => {
+              const isPublished = report.status.toLowerCase().includes('published');
+
+              const cardContent = (
+                <>
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                      {report.kicker}
+                    </div>
+                    <div className="rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted">
+                      {report.phase}
+                    </div>
                   </div>
-                  <div className="rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted">
-                    {report.phase}
-                  </div>
-                </div>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight">
-                  {report.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">
-                  {report.dek}
-                </p>
-                <p className="mt-5 text-sm font-semibold text-accent">
-                  Report in production
-                </p>
-              </article>
-            ))}
+                  <h3 className="mt-4 text-2xl font-semibold tracking-tight">
+                    {report.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted">
+                    {report.dek}
+                  </p>
+                  <p className="mt-5 text-sm font-semibold text-accent">
+                    {isPublished ? 'Read the report' : 'Report in production'}
+                  </p>
+                </>
+              );
+
+              if (isPublished) {
+                return (
+                  <Link
+                    key={report.slug}
+                    href={report.href}
+                    className="rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/60"
+                  >
+                    {cardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <article
+                  key={report.slug}
+                  className="rounded-2xl border border-border bg-surface p-6"
+                >
+                  {cardContent}
+                </article>
+              );
+            })}
           </div>
         </section>
 

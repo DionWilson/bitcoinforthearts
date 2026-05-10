@@ -5,27 +5,27 @@
   "lastReviewed": "2026-05-10",
   "heroStats": [
     {
-      "label": "Arts sector growth",
+      "label": "Arts GDP growth",
       "value": "6.6%",
-      "context": "Compared with 2.5% overall U.S. economy growth in the current research baseline.",
-      "sourceIds": ["bea-acpsa"]
+      "context": "Real arts and cultural economic activity growth in 2023, compared with 2.9% real GDP growth for the broader U.S. economy.",
+      "sourceIds": ["bea-acpsa-2023"]
     },
     {
       "label": "GDP contribution",
       "value": "$1.17T",
-      "context": "Arts and culture value added to U.S. GDP in the current research baseline.",
-      "sourceIds": ["bea-acpsa"]
+      "context": "Arts and cultural economic activity accounted for 4.2% of U.S. GDP in 2023.",
+      "sourceIds": ["bea-acpsa-2023"]
     },
     {
       "label": "Arts employment",
-      "value": "5.2M",
-      "context": "Jobs supported by arts and culture in the current research baseline.",
-      "sourceIds": ["bea-acpsa"]
+      "value": "5.4M",
+      "context": "Arts and cultural employment nationwide in 2023.",
+      "sourceIds": ["bea-acpsa-2023"]
     },
     {
-      "label": "Projected state funding drop",
-      "value": "7.7%",
-      "context": "Projected national drop in state arts appropriations for FY2026 cited in BFTA source drafts.",
+      "label": "State arts funding",
+      "value": "-7.7%",
+      "context": "Projected FY2026 decline in total state and jurisdictional arts agency appropriations.",
       "sourceIds": ["nasaa-fy2026-preview"]
     }
   ],
@@ -33,66 +33,117 @@
     {
       "id": "arts-growth-vs-economy",
       "title": "Arts sector growth compared with the broader U.S. economy",
-      "description": "Baseline chart data migrated out of the legacy /artists/research page so report charts can render from versioned JSON.",
+      "description": "Real 2023 growth: arts and cultural economic activity grew more than twice as fast as real GDP.",
       "type": "bar",
-      "sourceIds": ["bea-acpsa"],
+      "valueSuffix": "%",
+      "sourceIds": ["bea-acpsa-2023"],
       "data": [
         {
-          "label": "Arts sector",
+          "label": "Arts and culture",
           "value": 6.6
         },
         {
-          "label": "Overall U.S. economy",
-          "value": 2.5
+          "label": "Total U.S. GDP",
+          "value": 2.9
         }
       ]
     },
     {
-      "id": "funding-pressure-watchlist",
-      "title": "Funding pressure watchlist for the 2026 report",
-      "description": "A Phase 1 scaffold for the major funding rails the flagship report will track as source tables are assembled.",
+      "id": "state-arts-appropriations",
+      "title": "State arts agency appropriations are projected to decline in FY2026",
+      "description": "NASAA's preliminary FY2026 preview shows total state and jurisdictional arts agency appropriations falling from roughly $704.2M to $650.2M.",
       "type": "bar",
-      "sourceIds": ["nea-research", "nasaa-fy2026-preview", "candid-foundation-center"],
+      "valuePrefix": "$",
+      "valueSuffix": "M",
+      "sourceIds": ["nasaa-fy2026-preview"],
       "data": [
         {
-          "label": "Federal",
-          "value": 3
+          "label": "FY2025",
+          "value": 704.2
         },
         {
-          "label": "State",
-          "value": 4
+          "label": "FY2026 projected",
+          "value": 650.2
+        }
+      ]
+    },
+    {
+      "id": "arts-giving-real-dollars",
+      "title": "Private giving to arts, culture, and humanities recovered in 2024",
+      "description": "Giving USA reported inflation-adjusted giving to arts, culture, and humanities at $25.13B in 2024, an all-time high for the subsector.",
+      "type": "bar",
+      "valuePrefix": "$",
+      "valueSuffix": "B",
+      "sourceIds": ["giving-usa-2025"],
+      "data": [
+        {
+          "label": "2020",
+          "value": 23.35
         },
         {
-          "label": "Local",
-          "value": 4
+          "label": "2021",
+          "value": 24.19
         },
         {
-          "label": "Private",
-          "value": 2
+          "label": "2022",
+          "value": 24.57
+        },
+        {
+          "label": "2023",
+          "value": 23.63
+        },
+        {
+          "label": "2024",
+          "value": 25.13
         }
       ]
     }
   ],
   "sources": [
     {
-      "id": "bea-acpsa",
-      "label": "Bureau of Economic Analysis, Arts and Cultural Production Satellite Account",
-      "href": "https://www.bea.gov/data/special-topics/arts-and-culture"
+      "id": "bea-acpsa-2023",
+      "label": "U.S. Bureau of Economic Analysis, Arts and Cultural Production Satellite Account, U.S. and States, 2023",
+      "href": "https://www.bea.gov/news/2025/arts-and-cultural-production-satellite-account-us-and-states-2023"
     },
     {
-      "id": "nea-research",
-      "label": "National Endowment for the Arts, Research and Analysis",
-      "href": "https://www.arts.gov/impact/research"
+      "id": "nea-acpsa-2023",
+      "label": "National Endowment for the Arts, Arts and Cultural Industries Grew at Twice the Rate of the U.S. Economy",
+      "href": "https://www.arts.gov/news/press-releases/2025/arts-and-cultural-industries-grew-twice-rate-us-economy-adding-12-trillion"
     },
     {
       "id": "nasaa-fy2026-preview",
       "label": "National Assembly of State Arts Agencies, FY2026 legislative appropriations preview",
-      "href": "https://nasaa-arts.org/nasaa_research/"
+      "href": "https://nasaa-arts.org/communication/state-arts-agency-fy2026-legislative-appropriations-preview/"
     },
     {
-      "id": "candid-foundation-center",
-      "label": "Candid / Foundation Center, foundation giving research",
-      "href": "https://candid.org/research-and-verify-nonprofits/research"
+      "id": "treasury-slfrf",
+      "label": "U.S. Department of the Treasury, State and Local Fiscal Recovery Funds",
+      "href": "https://home.treasury.gov/policy-issues/coronavirus/assistance-for-state-local-and-tribal-governments/state-and-local-fiscal-recovery-funds"
+    },
+    {
+      "id": "nasaa-nea-fy2026-budget",
+      "label": "National Assembly of State Arts Agencies, President's FY2026 Budget Cuts NEA",
+      "href": "https://nasaa-arts.org/newsletter/2025-nasaa-notes-issues/may-2025-nasaa-notes/presidents-fy2026-budget-cuts-nea/"
+    },
+    {
+      "id": "nea-fy2026-grants",
+      "label": "National Endowment for the Arts, Updates on FY 2026 Grant Opportunities",
+      "href": "https://www.arts.gov/news/press-releases/2025/updates-national-endowment-arts-fy-2026-grant-opportunities"
+    },
+    {
+      "id": "aep6",
+      "label": "Americans for the Arts, Arts & Economic Prosperity 6 Study Findings",
+      "href": "https://aep6.americansforthearts.org/study-findings"
+    },
+    {
+      "id": "giving-usa-2025",
+      "label": "Giving USA 2025, researched by Indiana University Lilly Family School of Philanthropy",
+      "href": "https://philanthropy.iupui.edu/news-events/news/_news/2025/giving-usa-2025.html"
+    },
+    {
+      "id": "kpbs-san-diego",
+      "label": "KPBS, San Diego Mayor's proposed budget slashes arts and culture funding",
+      "href": "https://www.kpbs.org/news/arts-culture/2026/04/20/san-diego-mayors-proposed-budget-slashes-arts-and-culture-funding"
     }
   ]
 }

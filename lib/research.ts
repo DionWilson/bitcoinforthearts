@@ -36,6 +36,8 @@ export type ResearchChartDefinition = {
   title: string;
   description: string;
   type: 'bar';
+  valuePrefix?: string;
+  valueSuffix?: string;
   sourceIds: string[];
   data: ResearchChartDatum[];
 };

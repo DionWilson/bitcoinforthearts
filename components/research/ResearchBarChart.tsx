@@ -13,11 +13,16 @@ import type { ResearchChartDefinition } from '@/lib/research';
 
 export default function ResearchBarChart({
   chart,
-  valueSuffix = '%',
+  valuePrefix,
+  valueSuffix,
 }: {
   chart: ResearchChartDefinition;
+  valuePrefix?: string;
   valueSuffix?: string;
 }) {
+  const prefix = valuePrefix ?? chart.valuePrefix ?? '';
+  const suffix = valueSuffix ?? chart.valueSuffix ?? '%';
+
   return (
     <figure className="rounded-2xl border border-border bg-surface p-5">
       <div>
@@ -38,7 +43,7 @@ export default function ResearchBarChart({
               tickLine={false}
               axisLine={false}
               tick={{ fill: 'rgba(0,0,0,0.68)', fontSize: 12 }}
-              tickFormatter={(value) => `${value}${valueSuffix}`}
+              tickFormatter={(value) => `${prefix}${value}${suffix}`}
             />
             <Tooltip
               cursor={{ fill: 'rgba(255,79,20,0.08)' }}
@@ -48,7 +53,7 @@ export default function ResearchBarChart({
                 background: '#fffaf0',
                 color: '#000',
               }}
-              formatter={(value) => [`${value}${valueSuffix}`, 'Value']}
+              formatter={(value) => [`${prefix}${value}${suffix}`, 'Value']}
             />
             <Bar dataKey="value" fill="#ff4f14" radius={[8, 8, 0, 0]} />
           </BarChart>
