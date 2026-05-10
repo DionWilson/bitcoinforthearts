@@ -37,8 +37,28 @@ export default function Navigation() {
         label: 'About',
         href: '/about',
         children: [
+          { label: 'Reason for Formation', href: '/about/reason-for-formation' },
           { label: 'Leadership', href: '/about/leadership' },
           { label: 'Governance', href: '/about/governance' },
+        ],
+      },
+      {
+        label: 'Artists',
+        href: '/artists',
+        children: [
+          { label: 'Stories', href: '/stories' },
+          { label: 'Artist Hub', href: '/artist-hub' },
+          { label: 'Why Bitcoin', href: '/artists/why-bitcoin' },
+          { label: 'Share Your Story', href: '/stories/share-your-story' },
+        ],
+      },
+      { label: 'Research', href: '/artists/research' },
+      {
+        label: 'Grants',
+        href: '/grants',
+        children: [
+          { label: 'Guidelines', href: '/grants/guidelines' },
+          { label: 'FAQ', href: '/grants/faq' },
         ],
       },
       {
@@ -50,33 +70,6 @@ export default function Navigation() {
           { label: 'Feedback', href: '/get-involved/feedback' },
         ],
       },
-      {
-        label: 'Grants',
-        href: '/grants',
-        children: [
-          { label: 'Why Bitcoin', href: '/artists/why-bitcoin' },
-          { label: 'Research', href: '/artists/research' },
-          { label: 'Guidelines', href: '/grants/guidelines' },
-          { label: 'FAQ', href: '/grants/faq' },
-        ],
-      },
-      {
-        label: 'Artists',
-        href: '/artists',
-        children: [
-          { label: 'Artist Hub', href: '/artist-hub' },
-        ],
-      },
-      {
-        label: 'Programming',
-        href: '/programming',
-        children: [
-          { label: 'Education', href: '/education' },
-          { label: 'Events', href: '/events' },
-        ],
-      },
-      { label: 'Stories', href: '/stories' },
-      { label: 'Contact', href: '/contact' },
       {
         label: 'Donate',
         href: '/donate',
@@ -161,7 +154,7 @@ export default function Navigation() {
             const isActiveBase =
               item.href === '/'
                 ? pathname === '/'
-                : pathname === item.href || pathname.startsWith(`${item.href}/`);
+                : pathname === item.href;
             const isCta = item.variant === 'cta';
             const hasChildren = Boolean(item.children?.length);
             const isChildActive = Boolean(
@@ -264,12 +257,20 @@ export default function Navigation() {
         <div className="border-t border-black/10 bg-brand-surface text-brand-surface-fg sm:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-3">
             {navItems.map((item) => {
-              const isActive =
-                item.href === '/'
-                  ? pathname === '/'
-                  : pathname === item.href || pathname.startsWith(`${item.href}/`);
               const isCta = item.variant === 'cta';
               const hasChildren = Boolean(item.children?.length);
+              const isChildActive = Boolean(
+                item.children?.some(
+                  (c) => pathname === c.href || pathname.startsWith(`${c.href}/`),
+                ),
+              );
+              const isActiveBase =
+                item.href === '/'
+                  ? pathname === '/'
+                  : hasChildren
+                    ? pathname === item.href
+                    : pathname === item.href || pathname.startsWith(`${item.href}/`);
+              const isActive = isActiveBase || isChildActive;
               const isExpanded = openMobileSection === item.href;
 
               return (
