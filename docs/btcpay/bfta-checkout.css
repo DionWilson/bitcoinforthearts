@@ -1,0 +1,568 @@
+/* =============================================================
+   Bitcoin For The Arts — BTCPay Server custom theme (v2)
+   =============================================================
+   v2 fixes admin-UI bleed from v1. In v1 the CSS variable
+   overrides lived on :root, which BTCPay applied site-wide
+   (including the admin dashboard) — washing out checkboxes,
+   muted text, and tab borders against the cream background.
+
+   v2 scopes EVERY override (variables and element rules) to
+   BTCPay's public-facing page wrappers, so the admin keeps its
+   default Bootstrap styling and only the donor-facing pages get
+   re-skinned.
+
+   Public-page wrapper selectors used for scoping:
+     .public-page-wrap         — standard v2 public layout
+     .checkout-template-base   — checkout / invoice pages
+     .receipt-template-base    — public receipt pages
+     body.public-page          — some pay-button + store layouts
+     body[data-page="checkout"]— newer BTCPay versions
+
+   Drop-in CSS for the BTCPay-hosted invoice / checkout / receipt
+   pages. Re-skins them to match bitcoinforthearts.org's brand kit
+   so the donation handoff (BFTA donate page → BTCPay checkout →
+   BFTA thank-you) feels like a single continuous experience.
+
+   Brand palette (from public/brand-kit/):
+     Cream   #FFFAF0   — body background, light surfaces
+     Black   #000000   — primary text, on-cream contrast
+     Orange  #FF4F14   — primary CTA, accents, links
+     Lime    #B3FF48   — secondary accent, success highlight
+
+   Where to upload:
+     BTCPay Server admin → Stores → [your store] → Settings →
+     "Customize the look" or "Theme" → Custom CSS file picker.
+     (Field labels vary slightly by BTCPay version. The field that
+     accepts a .css file upload is the right one.)
+
+   Maintenance:
+     - The variable-override block is the safest and most version-
+       stable layer. If a BTCPay upgrade restructures markup, the
+       palette swap will likely keep working.
+     - Element-level rules below are more brittle. If parts of the
+       public page revert to default styling after a BTCPay upgrade,
+       inspect the live page and update the selector here.
+     - Do NOT remove the public-page-wrapper scoping. Without it,
+       the admin UI breaks (v1 lesson learned).
+   ============================================================= */
+
+
+/* =============================================================
+   PALETTE — CSS variable overrides
+   Scoped to public-page wrappers ONLY so the admin keeps its
+   default theme. All BTCPay-defined and Bootstrap-defined hooks
+   for color and typography are reset here in one place.
+   ============================================================= */
+
+.public-page-wrap,
+.checkout-template-base,
+.receipt-template-base,
+body.public-page,
+body[data-page="checkout"],
+body[data-page="receipt"] {
+  /* ---------- BTCPay v2 theming hooks ---------- */
+  --btcpay-body-bg: #FFFAF0;
+  --btcpay-body-text: #000000;
+  --btcpay-body-text-muted: rgba(0, 0, 0, 0.62);
+  --btcpay-body-text-secondary: rgba(0, 0, 0, 0.7);
+
+  --btcpay-primary: #FF4F14;
+  --btcpay-primary-text: #FFFFFF;
+
+  --btcpay-secondary: #000000;
+  --btcpay-secondary-text: #FFFAF0;
+
+  --btcpay-link: #FF4F14;
+  --btcpay-link-accent: #FF4F14;
+  --btcpay-link-hover: #C72B0F;
+
+  --btcpay-success: #B3FF48;
+  --btcpay-success-text: #000000;
+
+  --btcpay-warning: #FF4F14;
+  --btcpay-danger: #C72B0F;
+  --btcpay-info: #000000;
+
+  --btcpay-neutral-50: #FFFFFF;
+  --btcpay-neutral-100: #FFFAF0;
+  --btcpay-neutral-200: #F5EFE0;
+  --btcpay-neutral-300: rgba(0, 0, 0, 0.16);
+  --btcpay-neutral-400: rgba(0, 0, 0, 0.4);
+  --btcpay-neutral-700: rgba(0, 0, 0, 0.7);
+  --btcpay-neutral-900: #000000;
+
+  /* ---------- Bootstrap fallbacks ---------- */
+  --bs-primary: #FF4F14;
+  --bs-primary-rgb: 255, 79, 20;
+  --bs-secondary: #000000;
+  --bs-secondary-rgb: 0, 0, 0;
+  --bs-link-color: #FF4F14;
+  --bs-link-color-rgb: 255, 79, 20;
+  --bs-link-hover-color: #C72B0F;
+  --bs-body-bg: #FFFAF0;
+  --bs-body-color: #000000;
+  --bs-success: #B3FF48;
+  --bs-success-rgb: 179, 255, 72;
+  --bs-warning: #FF4F14;
+  --bs-warning-rgb: 255, 79, 20;
+  --bs-danger: #C72B0F;
+  --bs-danger-rgb: 199, 43, 15;
+
+  /* ---------- Typography ---------- */
+  --btcpay-font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bs-font-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* =============================================================
+   Body + general layout (PUBLIC PAGES ONLY)
+   ============================================================= */
+
+.public-page-wrap,
+.checkout-template-base,
+.receipt-template-base,
+body.public-page {
+  background: #FFFAF0 !important;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Page header (store branding strip) */
+.public-page-wrap .store-header,
+.checkout-template-base .store-header,
+.public-page-wrap header,
+.checkout-template-base header {
+  background: #FFFAF0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* =============================================================
+   Cards / surfaces (the main invoice card the donor sees)
+   ============================================================= */
+
+.public-page-wrap .card,
+.checkout-template-base .card,
+.receipt-template-base .card,
+.public-page-wrap .card-block,
+.public-page-wrap .invoice-details,
+body.public-page .card {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.public-page-wrap .card-header,
+.checkout-template-base .card-header,
+.receipt-template-base .card-header {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* QR-code panel */
+.public-page-wrap .qr-container,
+.checkout-template-base .qr-container,
+.public-page-wrap .qrcode,
+.checkout-template-base .qrcode,
+.public-page-wrap .payment-qr,
+.checkout-template-base .payment-qr {
+  background: #FFFFFF;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+
+/* =============================================================
+   Buttons (PUBLIC PAGES ONLY)
+   ============================================================= */
+
+.public-page-wrap .btn-primary,
+.checkout-template-base .btn-primary,
+.receipt-template-base .btn-primary,
+body.public-page .btn-primary,
+.public-page-wrap button.btn-primary {
+  background: #FF4F14;
+  border-color: #FF4F14;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: opacity 0.15s ease, background 0.15s ease;
+}
+
+.public-page-wrap .btn-primary:hover,
+.checkout-template-base .btn-primary:hover,
+.receipt-template-base .btn-primary:hover,
+.public-page-wrap .btn-primary:focus,
+.checkout-template-base .btn-primary:focus,
+.public-page-wrap .btn-primary:active,
+.checkout-template-base .btn-primary:active {
+  background: #E64411;
+  border-color: #E64411;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+
+.public-page-wrap .btn-success,
+.checkout-template-base .btn-success,
+.receipt-template-base .btn-success {
+  background: #B3FF48;
+  border-color: #B3FF48;
+  color: #000000;
+  font-weight: 600;
+}
+
+.public-page-wrap .btn-success:hover,
+.checkout-template-base .btn-success:hover,
+.receipt-template-base .btn-success:hover {
+  background: #9FE63D;
+  border-color: #9FE63D;
+  color: #000000;
+}
+
+/* Outline / secondary buttons (e.g. "Copy address") */
+.public-page-wrap .btn-outline-primary,
+.checkout-template-base .btn-outline-primary,
+.public-page-wrap .btn-secondary,
+.checkout-template-base .btn-secondary,
+.public-page-wrap .btn-outline-secondary,
+.checkout-template-base .btn-outline-secondary {
+  background: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.public-page-wrap .btn-outline-primary:hover,
+.checkout-template-base .btn-outline-primary:hover,
+.public-page-wrap .btn-secondary:hover,
+.checkout-template-base .btn-secondary:hover,
+.public-page-wrap .btn-outline-secondary:hover,
+.checkout-template-base .btn-outline-secondary:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFAF0;
+}
+
+.public-page-wrap .btn-link,
+.checkout-template-base .btn-link,
+.receipt-template-base .btn-link {
+  color: #FF4F14;
+}
+
+.public-page-wrap .btn-link:hover,
+.checkout-template-base .btn-link:hover,
+.receipt-template-base .btn-link:hover {
+  color: #C72B0F;
+}
+
+
+/* =============================================================
+   Links (PUBLIC PAGES ONLY)
+   ============================================================= */
+
+.public-page-wrap a,
+.checkout-template-base a,
+.receipt-template-base a,
+body.public-page a {
+  color: #FF4F14;
+  text-decoration: none;
+}
+
+.public-page-wrap a:visited,
+.checkout-template-base a:visited,
+.receipt-template-base a:visited {
+  color: #FF4F14;
+}
+
+.public-page-wrap a:hover,
+.checkout-template-base a:hover,
+.receipt-template-base a:hover,
+.public-page-wrap a:focus,
+.checkout-template-base a:focus {
+  color: #C72B0F;
+  text-decoration: underline;
+}
+
+
+/* =============================================================
+   Status badges + alerts (PUBLIC PAGES ONLY)
+   ============================================================= */
+
+.public-page-wrap .badge.bg-success,
+.checkout-template-base .badge.bg-success,
+.receipt-template-base .badge.bg-success,
+.public-page-wrap .alert-success,
+.checkout-template-base .alert-success,
+.receipt-template-base .alert-success {
+  background: #B3FF48 !important;
+  color: #000000 !important;
+  border: 1px solid #000000;
+}
+
+.public-page-wrap .badge.bg-warning,
+.checkout-template-base .badge.bg-warning,
+.public-page-wrap .alert-warning,
+.checkout-template-base .alert-warning {
+  background: rgba(255, 79, 20, 0.12);
+  color: #C72B0F;
+  border: 1px solid #FF4F14;
+}
+
+.public-page-wrap .badge.bg-danger,
+.checkout-template-base .badge.bg-danger,
+.public-page-wrap .alert-danger,
+.checkout-template-base .alert-danger {
+  background: #C72B0F !important;
+  color: #FFFFFF !important;
+  border: 1px solid #C72B0F;
+}
+
+.public-page-wrap .badge.bg-info,
+.checkout-template-base .badge.bg-info,
+.public-page-wrap .alert-info,
+.checkout-template-base .alert-info {
+  background: rgba(0, 0, 0, 0.06);
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+
+/* =============================================================
+   Forms (PUBLIC PAGES ONLY — receipt sign-up etc.)
+   ============================================================= */
+
+.public-page-wrap .form-control,
+.checkout-template-base .form-control,
+.receipt-template-base .form-control,
+.public-page-wrap input[type="text"],
+.public-page-wrap input[type="email"],
+.public-page-wrap input[type="number"],
+.public-page-wrap textarea,
+.public-page-wrap select,
+.checkout-template-base input[type="text"],
+.checkout-template-base input[type="email"],
+.checkout-template-base input[type="number"],
+.checkout-template-base textarea,
+.checkout-template-base select {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #000000;
+  border-radius: 6px;
+}
+
+.public-page-wrap .form-control:focus,
+.checkout-template-base .form-control:focus,
+.receipt-template-base .form-control:focus,
+.public-page-wrap input:focus,
+.checkout-template-base input:focus,
+.public-page-wrap textarea:focus,
+.checkout-template-base textarea:focus,
+.public-page-wrap select:focus,
+.checkout-template-base select:focus {
+  border-color: #FF4F14;
+  box-shadow: 0 0 0 3px rgba(255, 79, 20, 0.15);
+  outline: none;
+}
+
+.public-page-wrap .form-label,
+.checkout-template-base .form-label,
+.receipt-template-base .form-label {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 600;
+}
+
+
+/* =============================================================
+   Payment-method tabs (Lightning ↔ On-chain switcher)
+   PUBLIC PAGES ONLY
+   ============================================================= */
+
+.public-page-wrap .nav-tabs,
+.checkout-template-base .nav-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.public-page-wrap .nav-tabs .nav-link,
+.checkout-template-base .nav-tabs .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+  padding: 10px 16px;
+}
+
+.public-page-wrap .nav-tabs .nav-link.active,
+.checkout-template-base .nav-tabs .nav-link.active,
+.public-page-wrap .nav-tabs .nav-link:hover,
+.checkout-template-base .nav-tabs .nav-link:hover {
+  color: #FF4F14;
+  border-bottom-color: #FF4F14;
+  background: transparent;
+}
+
+.public-page-wrap .nav-pills .nav-link.active,
+.checkout-template-base .nav-pills .nav-link.active {
+  background: #FF4F14;
+  color: #FFFFFF;
+}
+
+
+/* =============================================================
+   Invoice details / amount displays
+   ============================================================= */
+
+.public-page-wrap .invoice-amount,
+.checkout-template-base .invoice-amount,
+.public-page-wrap .payment-amount,
+.checkout-template-base .payment-amount,
+.public-page-wrap .amount-display,
+.checkout-template-base .amount-display {
+  color: #000000;
+  font-weight: 700;
+}
+
+.public-page-wrap .invoice-amount .currency,
+.checkout-template-base .invoice-amount .currency,
+.public-page-wrap .invoice-amount .symbol,
+.checkout-template-base .invoice-amount .symbol {
+  color: #FF4F14;
+}
+
+.public-page-wrap .timer,
+.checkout-template-base .timer,
+.public-page-wrap .expiration,
+.checkout-template-base .expiration,
+.public-page-wrap .countdown,
+.checkout-template-base .countdown {
+  color: rgba(0, 0, 0, 0.7);
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* =============================================================
+   Receipt / thank-you page
+   ============================================================= */
+
+.receipt-template-base,
+.public-page-wrap.receipt {
+  background: #FFFAF0;
+}
+
+.receipt-template-base h1,
+.receipt-template-base h2,
+.public-page-wrap.receipt h1,
+.public-page-wrap.receipt h2 {
+  color: #000000;
+}
+
+.receipt-template-base .receipt-amount,
+.public-page-wrap .receipt-amount {
+  color: #FF4F14;
+  font-weight: 700;
+}
+
+.receipt-template-base .receipt-status-success,
+.public-page-wrap .receipt-status-success {
+  background: #B3FF48;
+  color: #000000;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+
+/* =============================================================
+   Footer + "powered by BTCPay" notice
+   =============================================================
+   Note: do NOT hide the "powered by BTCPay" link — that violates
+   BTCPay Server's branding requirements. Just retint it.
+   ============================================================= */
+
+.public-page-wrap .footer,
+.checkout-template-base .footer,
+.receipt-template-base .footer,
+.public-page-wrap .checkout-footer,
+.checkout-template-base .checkout-footer,
+.public-page-wrap .public-page-footer {
+  background: #FFFAF0;
+  color: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.public-page-wrap .footer a,
+.checkout-template-base .footer a,
+.receipt-template-base .footer a,
+.public-page-wrap .checkout-footer a,
+.checkout-template-base .checkout-footer a,
+.public-page-wrap .public-page-footer a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.public-page-wrap .footer a:hover,
+.checkout-template-base .footer a:hover,
+.public-page-wrap .checkout-footer a:hover,
+.checkout-template-base .checkout-footer a:hover {
+  color: #FF4F14;
+}
+
+
+/* =============================================================
+   Misc text utilities (PUBLIC PAGES ONLY)
+   ============================================================= */
+
+.public-page-wrap .text-muted,
+.checkout-template-base .text-muted,
+.receipt-template-base .text-muted,
+.public-page-wrap .text-secondary,
+.checkout-template-base .text-secondary {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.public-page-wrap .text-primary,
+.checkout-template-base .text-primary,
+.receipt-template-base .text-primary {
+  color: #FF4F14 !important;
+}
+
+.public-page-wrap .text-success,
+.checkout-template-base .text-success,
+.receipt-template-base .text-success {
+  color: #000000 !important;
+}
+
+.public-page-wrap .bg-light,
+.checkout-template-base .bg-light,
+.receipt-template-base .bg-light {
+  background: #FFFAF0 !important;
+}
+
+.public-page-wrap .bg-white,
+.checkout-template-base .bg-white,
+.receipt-template-base .bg-white {
+  background: #FFFFFF !important;
+}
+
+
+/* =============================================================
+   Crowdfund / pay-button apps (if BFTA ever launches one)
+   ============================================================= */
+
+.public-page-wrap .crowdfund-header,
+.public-page-wrap .app-header,
+.public-page-wrap .payment-button {
+  background: #FFFAF0;
+  color: #000000;
+}
+
+.public-page-wrap .crowdfund-progress-bar,
+.public-page-wrap .progress-bar {
+  background: #FF4F14;
+}
+
+.public-page-wrap .crowdfund-progress,
+.public-page-wrap .progress {
+  background: rgba(0, 0, 0, 0.08);
+}
