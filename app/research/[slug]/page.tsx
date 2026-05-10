@@ -11,7 +11,7 @@ import {
 } from '@/lib/research';
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 function sectionId(label: string) {
@@ -25,8 +25,9 @@ export function generateStaticParams() {
   return researchReports.map((report) => ({ slug: report.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const report = getResearchReportBySlug(params.slug);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const report = getResearchReportBySlug(slug);
 
   if (!report) {
     return {
@@ -50,8 +51,9 @@ export function generateMetadata({ params }: PageProps): Metadata {
   };
 }
 
-export default function ResearchReportPage({ params }: PageProps) {
-  const report = getResearchReportBySlug(params.slug);
+export default async function ResearchReportPage({ params }: PageProps) {
+  const { slug } = await params;
+  const report = getResearchReportBySlug(slug);
 
   if (!report) notFound();
 
