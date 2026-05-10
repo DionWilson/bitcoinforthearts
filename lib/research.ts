@@ -9,7 +9,6 @@ export type ResearchReportSummary = {
   kicker: string;
   dek: string;
   status: string;
-  phase: string;
   priority: number;
   href: string;
   imageSrc?: string;

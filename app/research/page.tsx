@@ -163,7 +163,7 @@ export default function ResearchPortalPage() {
                       {report.kicker}
                     </div>
                     <div className="rounded-full border border-border px-3 py-1 text-xs font-semibold text-muted">
-                      {report.phase}
+                      {report.status}
                     </div>
                   </div>
                   <h3 className="mt-4 text-2xl font-semibold tracking-tight">
@@ -206,7 +206,7 @@ export default function ResearchPortalPage() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-                Phase 5
+                Research standards
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight">
                 Methodology and glossary
