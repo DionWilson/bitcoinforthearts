@@ -5,7 +5,7 @@ import { useMemo, useState } from 'react';
 const FEATURED_AMOUNT = 21;
 
 export default function BtcPayDonateWidget() {
-  const [amountInput, setAmountInput] = useState<string>('');
+  const [amountInput, setAmountInput] = useState<string>(String(FEATURED_AMOUNT));
   const [email, setEmail] = useState<string>('');
   const [name, setName] = useState<string>('');
   const [message, setMessage] = useState<string>('');
@@ -90,14 +90,13 @@ export default function BtcPayDonateWidget() {
               no censorship, pure peer-to-peer support for artists.
             </p>
 
-            {/* Amount grid — $21 featured */}
+            {/* Amount grid — $21 starts selected */}
             <div className="mt-6">
               <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                 Choose an amount (USD)
               </div>
               <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
                 {suggested.map((v) => {
-                  const isFeatured = v === FEATURED_AMOUNT;
                   const isSelected = amountInput === String(v);
                   return (
                     <button
@@ -109,22 +108,12 @@ export default function BtcPayDonateWidget() {
                       }}
                       className={[
                         'relative min-h-14 rounded-xl border-2 px-4 py-3 text-center font-semibold transition-all',
-                        isFeatured && !isSelected
-                          ? 'border-accent bg-accent/10 text-accent hover:bg-accent/20'
-                          : '',
-                        isFeatured && isSelected
+                        isSelected
                           ? 'border-accent bg-accent text-accent-fg shadow-lg shadow-accent/25'
-                          : '',
-                        !isFeatured && isSelected
-                          ? 'border-accent bg-accent/10 text-foreground'
-                          : '',
-                        !isFeatured && !isSelected
-                          ? 'border-border bg-background text-foreground hover:border-accent/40 hover:bg-surface'
-                          : '',
+                          : 'border-border bg-background text-foreground hover:border-accent/40 hover:bg-surface',
                       ].join(' ')}
                     >
                       <span className="text-lg">${v}</span>
-                      {null}
                     </button>
                   );
                 })}

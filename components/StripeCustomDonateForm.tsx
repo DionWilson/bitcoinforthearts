@@ -2,6 +2,9 @@
 
 import { useState } from 'react';
 
+const SUGGESTED_AMOUNTS = [11, 21, 51, 101] as const;
+const DEFAULT_AMOUNT = 21;
+
 type State =
   | { status: 'idle' }
   | { status: 'submitting' }
@@ -17,7 +20,7 @@ function getErrorMessage(err: unknown) {
 }
 
 export default function StripeCustomDonateForm() {
-  const [amount, setAmount] = useState<string>('');
+  const [amount, setAmount] = useState<string>(String(DEFAULT_AMOUNT));
   const [coverFees, setCoverFees] = useState<boolean>(false);
   const [state, setState] = useState<State>({ status: 'idle' });
 
@@ -57,15 +60,37 @@ export default function StripeCustomDonateForm() {
 
   return (
     <form onSubmit={onSubmit} className="mt-5 rounded-2xl border border-border bg-surface/60 p-5">
-      <div className="text-sm font-semibold">Custom amount (Stripe Checkout)</div>
-      <p className="mt-2 text-xs leading-relaxed text-muted">
-        Enter any amount. You’ll complete payment securely on Stripe. This checkout uses card payments only.
-      </p>
+      <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+        Choose an amount (USD)
+      </div>
+      <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        {SUGGESTED_AMOUNTS.map((value) => {
+          const isSelected = amount === String(value);
+          return (
+            <button
+              key={value}
+              type="button"
+              onClick={() => {
+                setAmount(String(value));
+                if (state.status === 'error') setState({ status: 'idle' });
+              }}
+              className={[
+                'min-h-11 rounded-lg border px-3 py-2 text-sm font-semibold transition-colors',
+                isSelected
+                  ? 'border-accent bg-accent text-accent-fg shadow-sm'
+                  : 'border-border bg-background text-foreground hover:border-accent/40 hover:bg-surface',
+              ].join(' ')}
+            >
+              ${value}
+            </button>
+          );
+        })}
+      </div>
 
       <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:items-end">
         <label className="block sm:col-span-1">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Amount (USD)
+            Other amount
           </div>
           <input
             inputMode="decimal"
@@ -77,6 +102,7 @@ export default function StripeCustomDonateForm() {
               setAmount(e.target.value);
               if (state.status === 'error') setState({ status: 'idle' });
             }}
+            onFocus={(e) => e.target.select()}
             className="mt-2 min-h-11 w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
           />
         </label>
