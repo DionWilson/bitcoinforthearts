@@ -24,14 +24,14 @@ export default function ResearchPortalPage() {
     <main className="bg-background">
       <div className="mx-auto max-w-7xl px-6 py-14">
         <section className="border-b border-border pb-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent">
-            Bitcoin for the Arts Research
-          </p>
           <div className="mt-5 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
               <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
-                Research for non-state-dependent arts funding.
+                Bitcoin for the Arts Research
               </h1>
+              <p className="mt-5 max-w-3xl text-2xl font-semibold leading-snug text-foreground sm:text-3xl">
+                Data and analysis for the future of arts funding.
+              </p>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-muted">
                 BFTA Research is building an institutional, citable body of work
                 on arts funding, the ARPA cliff, and Bitcoin-native patronage.
