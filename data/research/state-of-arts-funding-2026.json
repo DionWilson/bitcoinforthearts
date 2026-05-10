@@ -1,0 +1,98 @@
+{
+  "slug": "state-of-arts-funding-2026",
+  "title": "The State of Arts Funding 2026",
+  "byline": "Bitcoin for the Arts Research",
+  "lastReviewed": "2026-05-10",
+  "heroStats": [
+    {
+      "label": "Arts sector growth",
+      "value": "6.6%",
+      "context": "Compared with 2.5% overall U.S. economy growth in the current research baseline.",
+      "sourceIds": ["bea-acpsa"]
+    },
+    {
+      "label": "GDP contribution",
+      "value": "$1.17T",
+      "context": "Arts and culture value added to U.S. GDP in the current research baseline.",
+      "sourceIds": ["bea-acpsa"]
+    },
+    {
+      "label": "Arts employment",
+      "value": "5.2M",
+      "context": "Jobs supported by arts and culture in the current research baseline.",
+      "sourceIds": ["bea-acpsa"]
+    },
+    {
+      "label": "Projected state funding drop",
+      "value": "7.7%",
+      "context": "Projected national drop in state arts appropriations for FY2026 cited in BFTA source drafts.",
+      "sourceIds": ["nasaa-fy2026-preview"]
+    }
+  ],
+  "charts": [
+    {
+      "id": "arts-growth-vs-economy",
+      "title": "Arts sector growth compared with the broader U.S. economy",
+      "description": "Baseline chart data migrated out of the legacy /artists/research page so report charts can render from versioned JSON.",
+      "type": "bar",
+      "sourceIds": ["bea-acpsa"],
+      "data": [
+        {
+          "label": "Arts sector",
+          "value": 6.6
+        },
+        {
+          "label": "Overall U.S. economy",
+          "value": 2.5
+        }
+      ]
+    },
+    {
+      "id": "funding-pressure-watchlist",
+      "title": "Funding pressure watchlist for the 2026 report",
+      "description": "A Phase 1 scaffold for the major funding rails the flagship report will track as source tables are assembled.",
+      "type": "bar",
+      "sourceIds": ["nea-research", "nasaa-fy2026-preview", "candid-foundation-center"],
+      "data": [
+        {
+          "label": "Federal",
+          "value": 3
+        },
+        {
+          "label": "State",
+          "value": 4
+        },
+        {
+          "label": "Local",
+          "value": 4
+        },
+        {
+          "label": "Private",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bea-acpsa",
+      "label": "Bureau of Economic Analysis, Arts and Cultural Production Satellite Account",
+      "href": "https://www.bea.gov/data/special-topics/arts-and-culture"
+    },
+    {
+      "id": "nea-research",
+      "label": "National Endowment for the Arts, Research and Analysis",
+      "href": "https://www.arts.gov/impact/research"
+    },
+    {
+      "id": "nasaa-fy2026-preview",
+      "label": "National Assembly of State Arts Agencies, FY2026 legislative appropriations preview",
+      "href": "https://nasaa-arts.org/nasaa_research/"
+    },
+    {
+      "id": "candid-foundation-center",
+      "label": "Candid / Foundation Center, foundation giving research",
+      "href": "https://candid.org/research-and-verify-nonprofits/research"
+    }
+  ]
+}

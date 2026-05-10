@@ -52,7 +52,7 @@ export default function Navigation() {
           { label: 'Share Your Story', href: '/stories/share-your-story' },
         ],
       },
-      { label: 'Research', href: '/artists/research' },
+      { label: 'Research', href: '/research' },
       {
         label: 'Grants',
         href: '/grants',
@@ -70,6 +70,16 @@ export default function Navigation() {
           { label: 'Feedback', href: '/get-involved/feedback' },
         ],
       },
+      {
+        label: 'Programs',
+        href: '/programming',
+        children: [
+          { label: 'Education', href: '/education' },
+          { label: 'Events', href: '/events' },
+        ],
+      },
+      { label: 'Stories', href: '/stories' },
+      { label: 'Contact', href: '/contact' },
       {
         label: 'Donate',
         href: '/donate',

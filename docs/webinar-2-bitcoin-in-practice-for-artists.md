@@ -357,7 +357,7 @@ Once you're holding more than you'd be comfortable losing:
 | Donate | bitcoinforthearts.org/donate |
 | Apply for a Grant | bitcoinforthearts.org/grants |
 | Why Bitcoin for Artists | bitcoinforthearts.org/artists/why-bitcoin |
-| Research & Economic Data | bitcoinforthearts.org/artists/research |
+| Research & Economic Data | bitcoinforthearts.org/research |
 | Bitcoin Whitepaper | bitcoin.org/bitcoin.pdf |
 | BlueWallet | bluewallet.io |
 | Phoenix Wallet | phoenix.acinq.co |

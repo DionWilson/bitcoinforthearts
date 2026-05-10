@@ -164,3 +164,29 @@ body.mobile-vibrant .mobile-vibrant-sunset {
   color: var(--foreground);
   margin: 0;
 }
+
+@media print {
+  header,
+  footer,
+  .print-hidden {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .research-report-page {
+    background: #ffffff !important;
+  }
+
+  .research-report-page a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .research-report-page section {
+    break-inside: avoid;
+  }
+}

@@ -15,6 +15,9 @@ const nextConfig: NextConfig = {
   // home. Search engines will learn the new URLs; humans never see a 404.
   async redirects() {
     return [
+      // Research portal migration
+      { source: '/artists/research', destination: '/research', permanent: true },
+
       // Social platform glyphs used in email signatures
       { source: '/X.png',        destination: '/brand-kit/social-icons/x.png',         permanent: true },
       { source: '/IG.png',       destination: '/brand-kit/social-icons/instagram.png', permanent: true },

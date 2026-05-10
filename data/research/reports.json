@@ -1,0 +1,55 @@
+[
+  {
+    "slug": "state-of-arts-funding-2026",
+    "title": "The State of Arts Funding 2026",
+    "kicker": "Flagship annual report",
+    "dek": "BFTA's annual anchor document on public, private, and non-state-dependent arts funding.",
+    "status": "In production",
+    "phase": "Phase 2",
+    "priority": 1,
+    "href": "/research/state-of-arts-funding-2026",
+    "expectedSections": [
+      "Executive summary",
+      "The funding landscape today",
+      "The collapse: 2024-2026",
+      "Who gets hurt",
+      "The market response",
+      "The case for non-state-dependent funding",
+      "References and methodology"
+    ]
+  },
+  {
+    "slug": "the-arpa-cliff",
+    "title": "The ARPA Cliff",
+    "kicker": "Deep-dive #1",
+    "dek": "The canonical on-site research version of BFTA's ARPA cliff analysis, expanded from the editorial Substack draft.",
+    "status": "In production",
+    "phase": "Phase 3",
+    "priority": 2,
+    "href": "/research/the-arpa-cliff",
+    "expectedSections": [
+      "What the cliff actually looks like",
+      "Why cities cannot replace the cliff",
+      "Who gets hit first",
+      "What Bitcoin has to do with this",
+      "State-by-state source table"
+    ]
+  },
+  {
+    "slug": "sound-money-for-the-arts",
+    "title": "Sound Money for the Arts",
+    "kicker": "Deep-dive #2",
+    "dek": "BFTA's analytical case for why fiat debasement hits working artists hard, and why Bitcoin-native endowments change the funding horizon.",
+    "status": "In production",
+    "phase": "Phase 4",
+    "priority": 3,
+    "href": "/research/sound-money-for-the-arts",
+    "expectedSections": [
+      "Why working artists are exposed",
+      "Purchasing power decay",
+      "Traditional endowment limits",
+      "Bitcoin reserve durability",
+      "Risks, caveats, and fiduciary framing"
+    ]
+  }
+]
