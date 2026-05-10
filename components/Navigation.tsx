@@ -32,7 +32,6 @@ export default function Navigation() {
 
   const navItems: NavItem[] = useMemo(
     () => [
-      { label: 'Home', href: '/' },
       {
         label: 'About',
         href: '/about',
@@ -79,7 +78,6 @@ export default function Navigation() {
         ],
       },
       { label: 'Stories', href: '/stories' },
-      { label: 'Contact', href: '/contact' },
       {
         label: 'Donate',
         href: '/donate',
