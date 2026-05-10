@@ -35,8 +35,9 @@ export default function ResearchPortalPage() {
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-muted">
                 BFTA Research is building an institutional, citable body of work
                 on arts funding, the ARPA cliff, and Bitcoin-native patronage.
-                Phase 1 establishes the portal, data layer, charting, report
-                shell, table of contents, and citation framework.
+                The goal is simple: make Bitcoin for the Arts useful to
+                journalists, foundation officers, donors, and researchers trying
+                to understand why arts funding needs more durable rails.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-surface p-5 lg:col-span-4">
@@ -92,32 +93,28 @@ export default function ResearchPortalPage() {
           </div>
           <div className="rounded-2xl border border-border bg-background p-6 lg:col-span-5">
             <h2 className="text-2xl font-semibold tracking-tight">
-              Phase 1 foundation
+              Research standards
             </h2>
             <ul className="mt-5 space-y-3 text-sm leading-relaxed text-muted">
               <li>
-                <span className="font-semibold text-foreground">Data:</span>{' '}
-                report metadata and chart values live in JSON under
-                <code className="mx-1 rounded bg-surface px-1 py-0.5 text-foreground">
-                  data/research/
-                </code>
-                .
+                <span className="font-semibold text-foreground">Institutional:</span>{' '}
+                reports are published under the Bitcoin for the Arts Research
+                byline, not personal authorship.
               </li>
               <li>
-                <span className="font-semibold text-foreground">Charts:</span>{' '}
-                Recharts renders chart definitions from the data layer.
+                <span className="font-semibold text-foreground">Cited:</span>{' '}
+                factual claims should point back to primary sources or clearly
+                named secondary reporting.
               </li>
               <li>
-                <span className="font-semibold text-foreground">Reports:</span>{' '}
-                long-form pages share one report shell with sticky section
-                navigation and sources.
+                <span className="font-semibold text-foreground">Measured:</span>{' '}
+                charts and summary stats are included only when the underlying
+                data can be reviewed and updated.
               </li>
               <li>
-                <span className="font-semibold text-foreground">Legacy URL:</span>{' '}
-                <code className="rounded bg-surface px-1 py-0.5 text-foreground">
-                  /artists/research
-                </code>{' '}
-                now redirects permanently to this portal.
+                <span className="font-semibold text-foreground">Serious:</span>{' '}
+                the intended reader is a journalist, grantmaker, researcher, or
+                critical donor looking for verifiable analysis.
               </li>
             </ul>
           </div>
@@ -143,10 +140,9 @@ export default function ResearchPortalPage() {
 
           <div className="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-3">
             {researchReports.map((report) => (
-              <Link
+              <article
                 key={report.slug}
-                href={report.href}
-                className="group rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/60"
+                className="rounded-2xl border border-border bg-surface p-6"
               >
                 <div className="flex items-center justify-between gap-3">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">
@@ -156,29 +152,29 @@ export default function ResearchPortalPage() {
                     {report.phase}
                   </div>
                 </div>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight group-hover:text-accent">
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight">
                   {report.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
                   {report.dek}
                 </p>
-                <p className="mt-5 text-sm font-semibold underline underline-offset-4">
-                  Open report scaffold
+                <p className="mt-5 text-sm font-semibold text-accent">
+                  Report in production
                 </p>
-              </Link>
+              </article>
             ))}
           </div>
         </section>
 
         <section className="mt-14 rounded-2xl border border-border bg-surface p-6">
           <h2 className="text-2xl font-semibold tracking-tight">
-            Methodology and glossary
+            Methodology
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
-            The locked plan reserves full methodology and glossary pages for
-            Phase 5. Phase 1 keeps those URLs out of production content until
-            the citation standards, source review process, and definitions are
-            ready to publish.
+            Each published report will include its own references and a clear
+            explanation of how BFTA selected, interpreted, and updated the data.
+            Claims without a source will either be removed or labeled as
+            estimates with explicit assumptions.
           </p>
         </section>
       </div>

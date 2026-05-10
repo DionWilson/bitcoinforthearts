@@ -63,15 +63,6 @@ const sections: SitemapSection[] = [
     heading: "Research",
     links: [
       { href: "/research", label: "Research Portal" },
-      {
-        href: "/research/state-of-arts-funding-2026",
-        label: "The State of Arts Funding 2026",
-      },
-      { href: "/research/the-arpa-cliff", label: "The ARPA Cliff" },
-      {
-        href: "/research/sound-money-for-the-arts",
-        label: "Sound Money for the Arts",
-      },
     ],
   },
   {
