@@ -32,11 +32,7 @@ export default function DonatePage({
   const stripeOneTimeUrl = normalizeStripeUrl(
     process.env.NEXT_PUBLIC_STRIPE_DONATION_LINK,
   );
-  const stripeOneTimeCoverFeesUrl = normalizeStripeUrl(
-    process.env.NEXT_PUBLIC_STRIPE_DONATION_LINK_COVER_FEES,
-  );
   const hasStripeOneTime = Boolean(stripeOneTimeUrl);
-  const hasStripeCoverFees = Boolean(stripeOneTimeCoverFeesUrl);
 
   return (
     <main className="bg-background">
@@ -113,35 +109,14 @@ export default function DonatePage({
           <StripeCustomDonateForm />
 
           <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            {hasStripeOneTime ? (
-              <>
-                <a
-                  href={stripeOneTimeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
-                >
-                  Give once
-                </a>
-                {hasStripeCoverFees ? (
-                  <a
-                    href={stripeOneTimeCoverFeesUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-                  >
-                    Give once (cover fees)
-                  </a>
-                ) : null}
-              </>
-            ) : (
+            {!hasStripeOneTime ? (
               <a
                 href="mailto:donate@bitcoinforthearts.org?subject=Credit%20card%20donation"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
               >
                 Email to donate
               </a>
-            )}
+            ) : null}
 
             <Link
               href="/donate/monthly"
@@ -153,15 +128,6 @@ export default function DonatePage({
           {!hasStripeOneTime ? (
             <p className="mt-3 text-xs leading-relaxed text-muted">
               Add a Stripe payment link to enable instant card donations.
-            </p>
-          ) : null}
-          {hasStripeOneTime && !hasStripeCoverFees ? (
-            <p className="mt-3 text-xs leading-relaxed text-muted">
-              Want to offer a &ldquo;cover fees&rdquo; option? Add a second Stripe Payment Link and set{' '}
-              <span className="font-semibold text-foreground">
-                NEXT_PUBLIC_STRIPE_DONATION_LINK_COVER_FEES
-              </span>
-              .
             </p>
           ) : null}
         </div>

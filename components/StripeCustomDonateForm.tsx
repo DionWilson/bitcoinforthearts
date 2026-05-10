@@ -130,7 +130,7 @@ export default function StripeCustomDonateForm() {
             state.status === 'submitting' ? 'opacity-70 cursor-wait' : '',
           ].join(' ')}
         >
-          {state.status === 'submitting' ? 'Redirecting…' : 'Donate now'}
+          {state.status === 'submitting' ? 'Redirecting…' : 'Give once'}
         </button>
       </div>
 
