@@ -8,6 +8,8 @@
     "phase": "Phase 2",
     "priority": 1,
     "href": "/research/state-of-arts-funding-2026",
+    "imageSrc": "/State-of-Funding-2026.jpg",
+    "imageAlt": "Classical sculpture and data visualization representing the State of Arts Funding 2026 report.",
     "expectedSections": [
       "Executive summary",
       "The funding landscape today",
@@ -27,6 +29,8 @@
     "phase": "Phase 3",
     "priority": 2,
     "href": "/research/the-arpa-cliff",
+    "imageSrc": "/ARPA-Cliff.jpg",
+    "imageAlt": "Classical sculpture near a cliff edge representing the temporary ARPA arts funding cliff.",
     "expectedSections": [
       "What the cliff actually looks like",
       "Why cities cannot replace the cliff",
@@ -40,10 +44,12 @@
     "title": "Sound Money for the Arts",
     "kicker": "Deep-dive #2",
     "dek": "BFTA's analytical case for why fiat debasement hits working artists hard, and why Bitcoin-native endowments change the funding horizon.",
-    "status": "In production",
+    "status": "Published v1",
     "phase": "Phase 4",
     "priority": 3,
     "href": "/research/sound-money-for-the-arts",
+    "imageSrc": "/Sound-Money-For-Sound-Arts.jpg",
+    "imageAlt": "Classical sculpture and monetary imagery representing sound money for the arts.",
     "expectedSections": [
       "Why working artists are exposed",
       "Purchasing power decay",

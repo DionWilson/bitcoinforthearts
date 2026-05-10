@@ -4,12 +4,16 @@ import ResearchReportShell from '@/components/research/ResearchReportShell';
 import StateOfArtsFunding2026Report, {
   stateOfArtsFundingSections,
 } from '@/components/research/StateOfArtsFunding2026Report';
+import SoundMoneyForTheArtsReport, {
+  soundMoneyForTheArtsSections,
+} from '@/components/research/SoundMoneyForTheArtsReport';
 import TheArpaCliffReport, {
   theArpaCliffSections,
 } from '@/components/research/TheArpaCliffReport';
 import {
   getResearchReportBySlug,
   researchReports,
+  soundMoneyForTheArts,
   stateOfArtsFunding2026,
   theArpaCliff,
 } from '@/lib/research';
@@ -46,7 +50,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       canonical: report.href,
     },
     robots:
-      report.slug === stateOfArtsFunding2026.slug || report.slug === theArpaCliff.slug
+      report.slug === stateOfArtsFunding2026.slug ||
+      report.slug === theArpaCliff.slug ||
+      report.slug === soundMoneyForTheArts.slug
         ? undefined
         : {
             index: false,
@@ -89,6 +95,22 @@ export default async function ResearchReportPage({ params }: PageProps) {
         sources={theArpaCliff.sources}
       >
         <TheArpaCliffReport />
+      </ResearchReportShell>
+    );
+  }
+
+  if (report.slug === soundMoneyForTheArts.slug) {
+    return (
+      <ResearchReportShell
+        title={report.title}
+        dek={report.dek}
+        kicker={report.kicker}
+        status="Version 1.0"
+        lastReviewed={soundMoneyForTheArts.lastReviewed}
+        sections={soundMoneyForTheArtsSections}
+        sources={soundMoneyForTheArts.sources}
+      >
+        <SoundMoneyForTheArtsReport />
       </ResearchReportShell>
     );
   }

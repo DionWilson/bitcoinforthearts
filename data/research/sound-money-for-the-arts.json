@@ -1,0 +1,144 @@
+{
+  "slug": "sound-money-for-the-arts",
+  "title": "Sound Money for the Arts",
+  "byline": "Bitcoin for the Arts Research",
+  "lastReviewed": "2026-05-10",
+  "heroStats": [
+    {
+      "label": "Dollar purchasing power",
+      "value": "-87.9%",
+      "context": "Approximate decline in the CPI purchasing power of one U.S. dollar from January 1971 to March 2026.",
+      "sourceIds": ["fred-cpi"]
+    },
+    {
+      "label": "M2 money stock",
+      "value": "35.8x",
+      "context": "Increase in U.S. M2 from January 1971 to March 2026, based on Federal Reserve H.6 data via FRED.",
+      "sourceIds": ["fred-m2"]
+    },
+    {
+      "label": "Artist self-employment",
+      "value": "3.6x",
+      "context": "NEA reported artists were 3.6 times as likely as other workers to be self-employed in 2012-2016.",
+      "sourceIds": ["nea-artists-portrait"]
+    },
+    {
+      "label": "Endowment spending",
+      "value": "4.8%",
+      "context": "Average effective spending rate reported in the FY2024 NACUBO-Commonfund Study of Endowments.",
+      "sourceIds": ["nacubo-2024"]
+    }
+  ],
+  "charts": [
+    {
+      "id": "dollar-purchasing-power-remaining",
+      "title": "Purchasing power remaining from a 1971 dollar",
+      "description": "CPI-based estimate using January observations and March 2026 as the latest available value. The chart shows purchasing power relative to January 1971 = 100.",
+      "type": "bar",
+      "valueSuffix": "%",
+      "sourceIds": ["fred-cpi"],
+      "data": [
+        { "label": "1971", "value": 100 },
+        { "label": "1980", "value": 51.2 },
+        { "label": "1990", "value": 31.3 },
+        { "label": "2000", "value": 23.6 },
+        { "label": "2010", "value": 18.3 },
+        { "label": "2020", "value": 15.4 },
+        { "label": "2026", "value": 12.1 }
+      ]
+    },
+    {
+      "id": "fixed-grant-purchasing-power",
+      "title": "Real value of a fixed $10,000 arts grant",
+      "description": "If a nominal grant amount stays fixed at $10,000, its CPI-adjusted purchasing power falls as input costs rise.",
+      "type": "bar",
+      "valuePrefix": "$",
+      "valueSuffix": "",
+      "sourceIds": ["fred-cpi"],
+      "data": [
+        { "label": "2000", "value": 10000 },
+        { "label": "2010", "value": 7784 },
+        { "label": "2020", "value": 6533 },
+        { "label": "2026", "value": 5126 }
+      ]
+    },
+    {
+      "id": "bitcoin-supply-schedule",
+      "title": "Bitcoin issuance approaches a fixed terminal supply",
+      "description": "Bitcoin's subsidy schedule approaches, but does not exceed, roughly 21 million bitcoin. This is a monetary-rule chart, not an investment-return chart.",
+      "type": "bar",
+      "valueSuffix": "%",
+      "sourceIds": ["bitcoin-controlled-supply"],
+      "data": [
+        { "label": "2012", "value": 50 },
+        { "label": "2016", "value": 75 },
+        { "label": "2020", "value": 87.5 },
+        { "label": "2024", "value": 93.8 },
+        { "label": "2028", "value": 96.9 },
+        { "label": "2032", "value": 98.4 },
+        { "label": "2040", "value": 99.6 }
+      ]
+    },
+    {
+      "id": "reserve-scenario",
+      "title": "Illustrative reserve durability scenario",
+      "description": "A conventional endowment model with 6.8% nominal return, 4.8% annual spending, and 3.0% inflation loses real principal over time. A BTC reserve line is shown as units held, not projected purchasing power.",
+      "type": "bar",
+      "valueSuffix": "",
+      "sourceIds": ["nacubo-2024", "fred-cpi", "bitcoin-controlled-supply"],
+      "data": [
+        { "label": "Fiat yr 0", "value": 100 },
+        { "label": "Fiat yr 10", "value": 91 },
+        { "label": "Fiat yr 20", "value": 82 },
+        { "label": "BTC units held", "value": 100 }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fred-cpi",
+      "label": "U.S. Bureau of Labor Statistics via FRED, Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)",
+      "href": "https://fred.stlouisfed.org/series/CPIAUCSL"
+    },
+    {
+      "id": "fred-m2",
+      "label": "Board of Governors of the Federal Reserve System via FRED, M2 Money Stock (M2SL)",
+      "href": "https://fred.stlouisfed.org/series/M2SL"
+    },
+    {
+      "id": "nacubo-2024",
+      "label": "NACUBO, U.S. Higher Education Endowments Report 6.8% 10-Year Average Annual Return",
+      "href": "https://www.nacubo.org/Press-Releases/2025/US-Higher-Education-Endowments-Report-10-Year-Average-Annual-Return"
+    },
+    {
+      "id": "bitcoin-whitepaper",
+      "label": "Satoshi Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System",
+      "href": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "id": "bitcoin-controlled-supply",
+      "label": "Bitcoin Wiki, Controlled Supply",
+      "href": "https://en.bitcoin.it/wiki/Controlled_supply"
+    },
+    {
+      "id": "nea-artists-portrait",
+      "label": "National Endowment for the Arts, Artists and Other Cultural Workers: A Statistical Portrait",
+      "href": "https://www.arts.gov/sites/default/files/Artists_and_Other_Cultural_Workers.pdf"
+    },
+    {
+      "id": "nea-artists-workers",
+      "label": "National Endowment for the Arts, Artists and Other Cultural Workers indicator archive",
+      "href": "https://www.arts.gov/impact/research/NASERC/artists-and-other-cultural-workers"
+    },
+    {
+      "id": "bls-craft-fine-artists",
+      "label": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook: Craft and Fine Artists",
+      "href": "https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm"
+    },
+    {
+      "id": "bea-acpsa-2023",
+      "label": "U.S. Bureau of Economic Analysis, Arts and Cultural Production Satellite Account, U.S. and States, 2023",
+      "href": "https://www.bea.gov/news/2025/arts-and-cultural-production-satellite-account-us-and-states-2023"
+    }
+  ]
+}

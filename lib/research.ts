@@ -1,4 +1,5 @@
 import reportsJson from '@/data/research/reports.json';
+import soundMoneyForTheArtsJson from '@/data/research/sound-money-for-the-arts.json';
 import stateOfArtsFunding2026Json from '@/data/research/state-of-arts-funding-2026.json';
 import theArpaCliffJson from '@/data/research/the-arpa-cliff.json';
 
@@ -11,6 +12,8 @@ export type ResearchReportSummary = {
   phase: string;
   priority: number;
   href: string;
+  imageSrc?: string;
+  imageAlt?: string;
   expectedSections: string[];
 };
 
@@ -60,11 +63,15 @@ export const stateOfArtsFunding2026 =
 
 export const theArpaCliff = theArpaCliffJson as ResearchDataSet;
 
+export const soundMoneyForTheArts =
+  soundMoneyForTheArtsJson as ResearchDataSet;
+
 export const researchSourcesById = new Map(
-  [...stateOfArtsFunding2026.sources, ...theArpaCliff.sources].map((source) => [
-    source.id,
-    source,
-  ]),
+  [
+    ...stateOfArtsFunding2026.sources,
+    ...theArpaCliff.sources,
+    ...soundMoneyForTheArts.sources,
+  ].map((source) => [source.id, source]),
 );
 
 export function getResearchReportBySlug(slug: string) {

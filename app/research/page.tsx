@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import ResearchBarChart from '@/components/research/ResearchBarChart';
 import {
@@ -144,6 +145,19 @@ export default function ResearchPortalPage() {
 
               const cardContent = (
                 <>
+                  {report.imageSrc ? (
+                    <div className="-mx-6 -mt-6 mb-5 overflow-hidden rounded-t-2xl border-b border-border bg-background">
+                      <div className="relative aspect-[16/10] w-full">
+                        <Image
+                          src={report.imageSrc}
+                          alt={report.imageAlt ?? ''}
+                          fill
+                          className="object-cover object-center transition-transform duration-300"
+                          sizes="(max-width: 1024px) 100vw, 33vw"
+                        />
+                      </div>
+                    </div>
+                  ) : null}
                   <div className="flex items-center justify-between gap-3">
                     <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                       {report.kicker}
