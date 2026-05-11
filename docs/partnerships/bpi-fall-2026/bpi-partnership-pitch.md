@@ -17,7 +17,7 @@ Per our follow-up: here's the partnership pitch for BPI. Forward whatever fits �
 A few things to flag in your cover note when you send it:
 
 1. **We will flex on date.** Sunday Sept 20 or Monday Sept 21 — whichever fits BPI's venue setup needs at Pubkey. If BPI wants the building from Monday morning for their own setup, we shift to Sunday night without complaint.
-2. **Four partnership shapes** are listed, ranging from "BPI sponsors BFTA" to "BFTA sponsors BPI" to "purely reputational co-promotion." Cheapest path for them is co-promotion (zero dollars, mutual marketing benefit); richest path for us is title sponsorship at $25K. Anywhere on that spectrum works for us.
+2. **Five partnership shapes** are listed, ranging from "BPI sponsors BFTA" to "BFTA sponsors BPI" to "purely reputational co-promotion" to "BFTA fits inside the setup BPI already has." Cheapest path for them is co-promotion (zero dollars, mutual marketing benefit); richest path for us is title sponsorship at $25K. The "we fit inside your existing setup" option (Option 5) is the operational-friction-free path if BPI's Monday setup is non-negotiable. Anywhere on that spectrum works for us.
 3. **The ask is a 20-minute call.** Not a commitment. Just enough to gauge fit. You can offer to broker the intro or hand off my contact directly — whichever feels right for the relationship.
 4. **No pressure on timing.** If they need a week to think it over, fine. If they're a hard no, also fine — we'll proceed with Sept 14 standalone.
 
@@ -44,7 +44,7 @@ Bitcoin Policy Institute is bringing the most consequential Bitcoin policy gathe
 
 [Bitcoin For The Arts](https://bitcoinforthearts.org) is the first 501(c)(3) in the United States funding artists exclusively in Bitcoin. EIN 41-2642260. Founded 2025 by Dion Wilson, an AEA-credentialed performing artist whose career includes Dance Theatre of Harlem, the *Lion King* national tour, and 15+ years inside the working-artist economy. Our governance, board, allocation formula (55/30/10/5 — direct grants / programs / operations / HODL Vault), and quarterly transparency reports are all public. We funded our first artist grants this year.
 
-We're not a casual nonprofit asking for a favor. We're a young organization building durably — including [a research portal](https://www.bitcoinforthearts.org/research) modeled on Brookings and the American Cancer Society, anchored by an annual *State of Arts Funding* report and a recent deep-dive on the ARPA cliff (the structural funding gap left by the expiration of American Rescue Plan arts dollars). That research is intentionally policy-adjacent and we'd value BPI's eyes on it.
+We're not a casual nonprofit asking for a favor. We're a young organization building durably — with public governance, transparent quarterly reporting, and a growing body of policy-adjacent writing. Our recent Substack piece on the ARPA Cliff — the structural funding gap left by the expiration of American Rescue Plan arts dollars — is what we'd flag for BPI's audience specifically.
 
 ### The opportunity
 
@@ -116,18 +116,29 @@ This is the inverse of Option 1. **BFTA pays BPI** a track-sponsor fee to be inc
 
 Track-sponsor fee is something we'd discuss based on what slot BPI typically reserves for this kind of inclusion. We'd want a clear deliverable list to justify the investment.
 
+**Option 5 — BFTA integrates within BPI's existing Monday setup**
+
+If BPI already has Pubkey DC's setup locked for Monday Sept 21 and a teardown-then-rebuild would be operationally expensive, BFTA can fit our event entirely **inside the environment BPI has already designed**:
+
+- BPI's signage, branding, floor plan, and AV configuration stay primarily as-is.
+- BFTA adds only what's strictly necessary for the night — silent-auction tables, the stage configuration for the Broadway-caliber headliner, our livestream camera setup, and modest sponsor / BFTA logo placements alongside (not instead of) BPI's branding.
+- Most BFTA event-specific elements are mobile and removable in under 90 minutes.
+- Result: Tuesday morning, BPI's setup is essentially intact — minimal handoff overhead, your team walks in to a venue that's already prepared for your attendees.
+
+This is the version that demands the least from BPI's operations team. We adapt to your venue plan, not the other way around. Particularly attractive if BPI is treating Pubkey as effectively a single multi-day production where every additional setup/teardown cycle is friction.
+
 ### Concerns we anticipate
 
 A few things that might give BPI pause, addressed upfront:
 
-- **"This isn't on-brand for a policy convening."** Counter: this is precisely the kind of cultural soft power that durable policy needs to associate with. The Bitcoin policy story strengthens when it's grounded in a parallel cultural and artistic story. BFTA's brand is serious — we publish research, our board includes a multi-decade public-sector financial professional, our governance is transparent.
+- **"This isn't on-brand for a policy convening."** Counter: this is precisely the kind of cultural soft power that durable policy needs to associate with. The Bitcoin policy story strengthens when it's grounded in a parallel cultural and artistic story. BFTA's brand is serious — published writing, transparent governance, public allocation framework.
 - **"Will BFTA's event compete with our event for donors or attention?"** Counter: we're not competing for the same dollar. BPI donors give to policy work; BFTA donors give to artist grants. They're complementary motivation paths. Many donors give to both — and a single trip to DC where both organizations are featured produces more giving across both than two separate trips would.
 - **"How much coordination overhead does this add?"** Counter: Option 2 (co-hosted cultural opening) requires roughly one comms coordination call, one logo-approval round, and a few cross-promotional posts. That's it. Heavier partnership shapes are entirely scoped to whatever BPI is willing to invest.
 - **"What if your event under-delivers?"** Counter: we ship every reasonable promise. Our existing landing page lists exact sponsor deliverables; our existing donor receipts include EIN, the 501(c)(3) compliance language, and the "no goods or services" tax statement. If we miss a deliverable, we make it right — that's documented in our public accountability framework.
 
 ### What we'd like next
 
-A 20-minute call to explore which of the four partnership shapes (or a hybrid) might fit. We'd recommend that conversation include whoever at BPI typically handles partnerships and event programming — and Dion will fly in for it if useful. Trey can broker the intro or hand off Dion's contact directly:
+A 20-minute call to explore which of the five partnership shapes (or a hybrid) might fit. We'd recommend that conversation include whoever at BPI typically handles partnerships and event programming — and Dion will fly in for it if useful. Trey can broker the intro or hand off Dion's contact directly:
 
 - **Dion Wilson** — Founder, Executive Director, Interim Chair, Bitcoin For The Arts
 - **Email:** dionwilson@bitcoinforthearts.org
@@ -139,8 +150,7 @@ A 20-minute call to explore which of the four partnership shapes (or a hybrid) m
 - **Sponsor sheet (PDF):** linked in the event page (downloadable)
 - **About BFTA:** [bitcoinforthearts.org/about](https://www.bitcoinforthearts.org/about)
 - **Governance + transparency:** [bitcoinforthearts.org/about/governance](https://www.bitcoinforthearts.org/about/governance) and [bitcoinforthearts.org/transparency](https://www.bitcoinforthearts.org/transparency)
-- **Research portal (new):** [bitcoinforthearts.org/research](https://www.bitcoinforthearts.org/research)
-- **The ARPA Cliff** *(deep-dive)* — policy-adjacent reading we'd value BPI's audience engaging with: linked in the research portal
+- **The ARPA Cliff** *(recent essay)* — policy-adjacent reading we'd flag for your audience: [bitcoinforthearts.substack.com](https://bitcoinforthearts.substack.com)
 
 Thank you for taking the time with this. Whether the answer is Option 1, Option 2, a hybrid, or "not this year, let's stay in touch" — we're grateful Trey thought to put us in front of you.
 
