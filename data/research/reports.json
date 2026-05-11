@@ -7,6 +7,7 @@
     "status": "Published v1",
     "priority": 1,
     "href": "/research/state-of-arts-funding-2026",
+    "pdfHref": "/research/state-of-arts-funding-2026.pdf",
     "imageSrc": "/State-of-Funding-2026.jpg",
     "imageAlt": "Classical sculpture and data visualization representing the State of Arts Funding 2026 report.",
     "expectedSections": [
@@ -27,6 +28,7 @@
     "status": "Published v1",
     "priority": 2,
     "href": "/research/the-arpa-cliff",
+    "pdfHref": "/research/the-arpa-cliff.pdf",
     "imageSrc": "/ARPA-Cliff.jpg",
     "imageAlt": "Classical sculpture near a cliff edge representing the temporary ARPA arts funding cliff.",
     "expectedSections": [
@@ -45,6 +47,7 @@
     "status": "Published v1",
     "priority": 3,
     "href": "/research/sound-money-for-the-arts",
+    "pdfHref": "/research/sound-money-for-the-arts.pdf",
     "imageSrc": "/Sound-Money-For-Sound-Arts.jpg",
     "imageAlt": "Classical sculpture and monetary imagery representing sound money for the arts.",
     "expectedSections": [

@@ -75,6 +75,7 @@ export default async function ResearchReportPage({ params }: PageProps) {
         kicker={report.kicker}
         status="Version 1.0"
         lastReviewed={stateOfArtsFunding2026.lastReviewed}
+        pdfHref={report.pdfHref}
         sections={stateOfArtsFundingSections}
         sources={stateOfArtsFunding2026.sources}
       >
@@ -91,6 +92,7 @@ export default async function ResearchReportPage({ params }: PageProps) {
         kicker={report.kicker}
         status="Version 1.0"
         lastReviewed={theArpaCliff.lastReviewed}
+        pdfHref={report.pdfHref}
         sections={theArpaCliffSections}
         sources={theArpaCliff.sources}
       >
@@ -107,6 +109,7 @@ export default async function ResearchReportPage({ params }: PageProps) {
         kicker={report.kicker}
         status="Version 1.0"
         lastReviewed={soundMoneyForTheArts.lastReviewed}
+        pdfHref={report.pdfHref}
         sections={soundMoneyForTheArtsSections}
         sources={soundMoneyForTheArts.sources}
       >

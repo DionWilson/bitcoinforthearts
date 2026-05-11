@@ -173,22 +173,15 @@ export default function ResearchPortalPage() {
                     {report.dek}
                   </p>
                   <p className="mt-5 text-sm font-semibold text-accent">
-                    {isPublished ? 'Read the report' : 'Report in production'}
+                    {isPublished ? report.status : 'Report in production'}
                   </p>
+                  {isPublished && report.pdfHref ? (
+                    <p className="mt-2 text-sm font-semibold text-muted">
+                      PDF available
+                    </p>
+                  ) : null}
                 </>
               );
-
-              if (isPublished) {
-                return (
-                  <Link
-                    key={report.slug}
-                    href={report.href}
-                    className="rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/60"
-                  >
-                    {cardContent}
-                  </Link>
-                );
-              }
 
               return (
                 <article
@@ -196,6 +189,26 @@ export default function ResearchPortalPage() {
                   className="rounded-2xl border border-border bg-surface p-6"
                 >
                   {cardContent}
+                  {isPublished ? (
+                    <div className="mt-5 flex flex-col gap-2 sm:flex-row">
+                      <Link
+                        href={report.href}
+                        className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-4 py-2 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+                      >
+                        Read report
+                      </Link>
+                      {report.pdfHref ? (
+                        <a
+                          href={report.pdfHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-sm font-semibold transition-colors hover:bg-surface"
+                        >
+                          Download PDF
+                        </a>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </article>
               );
             })}

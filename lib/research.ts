@@ -11,6 +11,7 @@ export type ResearchReportSummary = {
   status: string;
   priority: number;
   href: string;
+  pdfHref?: string;
   imageSrc?: string;
   imageAlt?: string;
   expectedSections: string[];

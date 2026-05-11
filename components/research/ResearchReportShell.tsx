@@ -10,6 +10,7 @@ type Props = {
   kicker: string;
   status?: string;
   lastReviewed?: string;
+  pdfHref?: string;
   sections: ResearchTocSection[];
   sources?: ResearchSource[];
   children: ReactNode;
@@ -21,6 +22,7 @@ export default function ResearchReportShell({
   kicker,
   status = 'In production',
   lastReviewed,
+  pdfHref,
   sections,
   sources = [],
   children,
@@ -57,6 +59,18 @@ export default function ResearchReportShell({
               </>
             ) : null}
           </div>
+          {pdfHref ? (
+            <div className="print-hidden mt-8">
+              <a
+                href={pdfHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-accent px-5 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+              >
+                Download PDF
+              </a>
+            </div>
+          ) : null}
         </section>
 
         <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start">
