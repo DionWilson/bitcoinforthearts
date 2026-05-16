@@ -1,0 +1,199 @@
+Share Your Bitcoin Journey: Anik Malcolm — Interview Questions
+
+For BFTA Podcast Series · YouTube · Recording date TBD
+Show host: Dion Wilson · Founder, Executive Director, Interim Chair, Bitcoin for the Arts
+
+Source material reviewed: anikmalcolm.com · Bitcoin Magazine "The Whole Entire Universe:
+21 Million, One Painting" · Bitcoin Art Podcast (Asanoha) Episode 4 · Lugano Plan B
+exhibition page · BFTA Issue #6 newsletter feature.
+
+Note for the host: Anik has already given his "The Whole Entire Universe" origin story
+on the Asanoha podcast. This question set is calibrated to push past the standard
+biographical beats and into territory those other interviews didn't fully cover —
+specifically the establishment-rejection trajectory, his wife Una's role as creative
+partner, the philosophical weight of choosing oil paint as a medium for Bitcoin,
+the geography of where his work is being collected (Lugano, Vegas, Roatán — not
+the traditional museum circuit), and fatherhood / generational sound money. The
+questions are sequenced so the early ones warm up familiar ground briefly and the
+middle questions hit angles he hasn't aired before publicly.
+
+
+BACKGROUND & JOURNEY
+
+1. Anik, welcome to Share Your Bitcoin Journey. You're a conceptual multimedia artist
+   classically trained in London, who eventually left both London and Reykjavík out
+   of frustration with the art establishment, and now lives with your wife Una and
+   your children in the mountains of central Italy. For anyone meeting you for the
+   first time — take us back to the beginning. When did you know you were going to
+   spend your life making things, and what did "making things" mean to you as a kid?
+
+2. Classical training in London is a particular kind of forge — there's a craft
+   discipline there that not many artists go through anymore. What did the London
+   training give you that you still draw on every day, even now that you've broken
+   with that world?
+
+3. You've described becoming disillusioned with the establishment in both London and
+   later Reykjavík. Disillusionment is usually a moment, not a slow fade. Was there
+   a specific encounter, exhibition, or conversation that broke the spell for you?
+
+4. After London came Reykjavík — Iceland is a fascinating choice. Geothermal energy,
+   a small but serious Bitcoin community, a creative tradition that's completely
+   different from London's. Why Iceland? And what did being in Reykjavík do to your
+   thinking that London couldn't have done?
+
+5. And then central Italy — the mountains, with your wife and children. That's a
+   meaningful relocation. There's a long European tradition of artists withdrawing
+   from cities to do their most serious work. What did the move to Italy unlock for
+   you that the cities couldn't?
+
+
+THE BITCOIN TURN
+
+6. Before Bitcoin clicked for you, you were already doing music and urban art
+   projects — you'd been searching for the channel that would hold everything you
+   were feeling about the status quo. How did you first encounter Bitcoin, and at
+   what point did you realize this wasn't going to be a passing interest but the
+   subject of the rest of your artistic life?
+
+7. On your website you describe Bitcoin as having "given purpose to both [your] art
+   and [your] life in general." That's a strong claim. A lot of Bitcoiners feel it.
+   But to put it at the center of an entire career — that's commitment few artists
+   make to any single subject. What gave you the conviction to fold your whole
+   artistic identity into one theme?
+
+8. Many artists who reference Bitcoin make it a small element — a laser eye here, a
+   Satoshi quote there. You've gone the other direction completely. The tagline on
+   your site is "depicting Bitcoin." Two words. What do you say to other artists
+   who are afraid of committing that hard to a single subject?
+
+
+THE WHOLE ENTIRE UNIVERSE
+
+9. Let's talk about The Whole Entire Universe. The painting that debuted at
+   Bitcoin 2026 at The Venetian. The math is genuinely beautiful — a 276 by 276
+   by 276 cube of beads, which gives you 21,024,576 beads, then you remove 4,096
+   beads from each of the six sides. 4,096 is a perfect square — 64 by 64 — and a
+   power of two, so each removed area halves repeatedly down to 2 by 2, mirroring
+   Bitcoin's halving mechanism. When did you discover that the math worked out that
+   way? Was it something you architected, or did the universe present itself to you?
+
+10. Your wife Una — who is also an artist and a jeweler — was the one who suggested
+    representing the 21 million as beads, because beads were among the very first
+    forms of currency human beings used. Talk to us about Una and that moment.
+    What's it like making a piece this consequential where the conceptual seed came
+    from your partner?
+
+11. You and Una are both artists. You're raising children together in the mountains
+    of central Italy, both making work, both thinking about money and meaning. How
+    does the household function as a creative unit? Does the work bleed between you,
+    or do you keep your practices separate?
+
+12. The oil painting took you 900 hours. That number alone is a kind of statement —
+    low time preference made literal. The most "Bitcoin" thing about the painting
+    may not be its subject; it may be that you sat with it for 900 hours. Was that
+    deliberate? Did you feel the parallel as you were painting?
+
+13. The medium choice fascinates me. Bitcoin imagery has been dominated by glossy
+    digital aesthetics — vector laser eyes, neon, futuristic typography. You went
+    the other direction completely — oil paint, classical technique, a physical
+    object that exists in real space. Why oil? Why classical technique for a subject
+    that exists in code?
+
+14. Beads as the conceptual unit — Una's idea — point back to the very origin of
+    money. Your work is asking what money IS, not just what Bitcoin is. Do you see
+    The Whole Entire Universe as a piece about Bitcoin, or as a piece about money
+    itself, with Bitcoin happening to be the final form?
+
+
+GEOGRAPHY OF A NEW PATRONAGE
+
+15. Look at where your work has been shown and where it's headed: Lugano Plan B —
+    a Swiss city that's actively embracing Bitcoin. The Venetian in Las Vegas for
+    Bitcoin 2026 — the largest Bitcoin conference in the world. A planned monumental
+    public sculpture in Roatán — an offshore Bitcoin community. That's a very
+    specific map. You're being collected and exhibited in the emerging citadels of
+    Bitcoin, not in the traditional museum circuit. Was that a conscious strategy,
+    or did the work pull you there?
+
+16. The Roatán public sculpture is the next major project. What can you tell us
+    about what you're planning? How does scale change the meaning when the work
+    leaves the gallery and becomes part of a place?
+
+17. There's a real question underneath all of this — whether the next renaissance
+    in serious craft is going to happen inside or outside the traditional art
+    establishment. You've explicitly chosen outside. What does a renaissance look
+    like that's being built in Lugano, in Roatán, at conferences, in artists'
+    studios in mountain villages? What can it produce that MoMA can't?
+
+
+FATHERHOOD AND THE LONG TIME HORIZON
+
+18. You have children. You're making art that depicts a hard-money system that's
+    been designed with your kids' generation specifically in mind. How does
+    fatherhood inform what you're putting on the canvas? When you imagine your kids
+    seeing The Whole Entire Universe twenty years from now, what do you want them
+    to understand about why you made it?
+
+19. Bitcoiners talk about "generational wealth" and "stack for your grandkids"
+    constantly. But Bitcoin is also about generational MEANING — passing down a
+    monetary culture, not just money. As both an artist and a father, what's the
+    cultural inheritance you're trying to build?
+
+
+THE FORWARD QUESTION
+
+20. What's the next major work after the Roatán sculpture? Where is your practice
+    heading over the next five to ten years?
+
+
+THE CLOSING QUESTION
+
+21. Last question — we ask every guest this on Share Your Bitcoin Journey:
+    if a $500 to $2,000 Bitcoin micro-grant from Bitcoin for the Arts landed in
+    your wallet tomorrow, what would it unlock for you as a creator?
+
+
+─────────────────────────────────────────────────────────────────────────────
+
+REFERENCES TO HAVE AT HAND DURING THE INTERVIEW (so you can quote/reference fluently)
+
+  - anikmalcolm.com — his portfolio. The "About" page has the disillusionment
+    framing; the Lugano Plan B page covers the October 2025 graphic version of
+    The Whole Entire Universe.
+
+  - Bitcoin Magazine, "The Whole Entire Universe: 21 Million, One Painting" —
+    the canonical writeup of the painting. Has the bead-math breakdown,
+    Una's role in the concept, the 900-hour figure, the Roatán public-sculpture
+    plan.
+
+  - Bitcoin Art Podcast (Asanoha) Episode 4 — Anik's previous longer-form
+    podcast appearance. Listen before recording to avoid asking questions he's
+    already answered there at length. Anything he covered with Asanoha, our
+    angle should go deeper or come at it sideways.
+
+  - BFTA Issue #6 newsletter feature (May 4, 2026) — has Dion's existing
+    framing of Anik as "the next renaissance, full stop" and notes that Anik
+    has committed to coming on the BFTA podcast. Worth re-reading right before
+    the call so the language stays continuous with what subscribers already
+    know about him.
+
+
+NOTES ON ORDER
+
+  - Q1-5 are biographical warmup. Don't dwell — get to Q6 within ~10 minutes.
+  - Q6-8 are the Bitcoin turn. These should feel reflective; don't rush.
+  - Q9-14 are the deep dive on The Whole Entire Universe. This is the heart of
+    the episode. Let him talk. Follow tangents he opens up.
+  - Q15-17 are the cultural commentary — where his work is being shown and
+    what that says about the new patronage geography. This is where the
+    episode earns its place in the BFTA series specifically.
+  - Q18-19 are the human / generational layer. These often produce the
+    most emotionally resonant moments. Don't skip if you're running long;
+    instead, trim Q15-17 to make room.
+  - Q20-21 are the wrap. Q21 is sacred — every episode ends with it.
+
+If the conversation is flowing and you're running over 60 minutes, the
+questions to consider cutting are: Q3 (disillusionment moment — touchy and
+may have been covered with Asanoha), Q11 (household creative unit — nice
+but optional if Q10 already opened that ground), and Q17 (renaissance —
+worth a follow-up episode of its own if it doesn't land).
