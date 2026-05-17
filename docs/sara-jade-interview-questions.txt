@@ -1,0 +1,250 @@
+Share Your Bitcoin Journey: Sara Jade — Interview Questions
+
+For BFTA Podcast Series · YouTube · Recording date TBD
+Show host: Dion Wilson · Founder, Executive Director, Interim Chair, Bitcoin for the Arts
+
+Source material reviewed: sarajademusic.com · sarajademusic.com/epk · "It's A Mood"
+podcast extended interview (May 2025) · SHOUTOUT SOCAL interview · The Bitcoin Vinyl
+Record (Nashville 2024) · Heather Larson Substack on the Spotify "Never Knew"
+takedown · Sara Jade's Nostr presence (30K+ followers).
+
+Note for the host: Sara has done several podcast interviews already, including one
+long-form on "It's A Mood" where she covered the Spotify "Never Knew" phantom-
+streaming takedown story in detail. Don't rehash the basic biographical arc those
+shows have covered. The angles BFTA should pull on that other interviewers
+haven't fully mined: (1) her father's-band origins as an apprenticeship rather
+than a career launching pad, (2) the keytar as a deliberate signature against
+indie-rock conventions, (3) the Spotify takedown as policy-relevant evidence
+of platform fragility, (4) Songwriter Sisters as a Bitcoin-adjacent community
+model worth replicating, and (5) the bridge moment of opening for Jason Mraz
+in April 2026 as a mainstream-vs-independent inflection point. The closing
+question (Q21) is sacred — every episode of Share Your Bitcoin Journey ends
+with the BFTA micro-grant prompt.
+
+
+BACKGROUND & JOURNEY
+
+1. Sara, welcome to Share Your Bitcoin Journey. For anyone meeting you here for
+   the first time — you're a cinematic pop-rock artist out of San Diego, you
+   play keytar, you won the 2026 San Diego Music Award for Best Pop Song, you
+   opened for Jason Mraz in April, you've performed in Vegas multiple times,
+   and you've built a 30,000-plus following on Nostr. That's a lot. Where does
+   the story actually start for you, before any of that?
+
+2. You cut your teeth as a vocalist in your father's band. That's an
+   apprenticeship most working musicians never get — being inside a serious
+   musical operation as a kid, hearing how songs get built, watching adults
+   actually do this as a craft. What did being inside your dad's band teach
+   you that you don't think you could've learned anywhere else?
+
+3. There's a moment in every musician-from-a-musical-family story where they
+   choose to forge their own path instead of inheriting one. When was that
+   moment for you? What was the first thing that was yours and yours alone?
+
+4. Your 2021 ballad "Jacoma" got a San Diego Music Award nomination — that
+   was an Americana piece, much more intimate than what you make now. The
+   cinematic pop-rock you're doing today is a real genre shift. Was that
+   evolution driven by what you wanted to write, or was it the band that
+   formed around you, or was it something else?
+
+5. The keytar. It's a deliberate choice — most singer-songwriters fronting
+   a rock band would pick a guitar or just a mic. You picked the most
+   theatrical, most maligned, most "80s" instrument in pop music history
+   and made it your signature. Tell us about that decision.
+
+
+THE BITCOIN TURN
+
+6. You're described on your own EPK as an "early adopter of the value-for-
+   value music movement." Most independent musicians I talk to who eventually
+   find Bitcoin came in through inflation, or libertarian politics, or a
+   technical friend. What was your way in? What was the first crack in the
+   wall for you?
+
+7. You moved heavily onto Nostr — 30,000 plus followers is real scale in
+   that ecosystem. Most musicians at your career level treat Nostr as an
+   experiment alongside their main platforms. You leaned in. What did Nostr
+   give you that Instagram, TikTok, and Spotify couldn't?
+
+8. The value-for-value music model — for any listener who hasn't encountered
+   it — describe what it actually means for an independent artist day to day.
+   How does it change how you make decisions about what songs to release,
+   what shows to play, what your relationship with your audience is?
+
+
+SPOTIFY, STREAMING, AND THE INSTITUTIONAL BREAK
+
+9. Let's talk about "Never Knew." Spotify pulled it. Their stated reason was
+   phantom streaming — the algorithmic accusation that your own streams were
+   somehow fraudulent. You're not the only artist this has happened to;
+   you're not even close. But you talked about it publicly, on the "It's A
+   Mood" podcast in May 2025, in a way most artists are too afraid to. What
+   actually happened?
+
+10. The phantom-streaming accusation is one of the most insulting things a
+    platform can throw at an artist, because it's both: a) "your fans don't
+    really love you," and b) "we're going to demonetize you for the
+    affection your fans show." What did that experience do to your trust
+    in centralized platforms, beyond just Spotify?
+
+11. There's a policy story underneath your personal story here. Spotify
+    pulling tracks for "phantom streams" is not an artist-protection
+    measure. It's a platform-margin-management measure. Bitcoin and value-
+    for-value don't have phantom streams — you're paid directly by listeners,
+    per actual play, and nobody between you and them can revoke it. For an
+    artist who hasn't lived this, articulate what changes when the rails
+    underneath the music can't deplatform you.
+
+
+THE MUSIC ITSELF
+
+12. "Singin' Woman" — your 2024 track featuring Jessie Lark and Elizabeth
+    Bowersox — was featured on The Bitcoin Vinyl Record at the Bitcoin
+    Conference in Nashville. Tell us the story of that song. How did the
+    three of you come together on it, and how did it end up on a literal
+    Bitcoin vinyl record?
+
+13. The cinematic pop-rock aesthetic — the spectacle, the immersive show,
+    the "ringmaster drawing audiences into the spectacle" framing on your
+    EPK — that's not how most singer-songwriters present themselves. It
+    sounds closer to theater than to indie music. Where does that
+    sensibility come from?
+
+14. You opened for Jason Mraz in April 2026. That's a major stage and a
+    mainstream music-industry moment. What was it like stepping into that
+    arena straight from a career you've built largely outside the
+    traditional industry?
+
+15. You've performed at Bitcoin conferences, at NOSTR events, and now in
+    venues that book traditional touring acts like Mraz. The audiences in
+    those rooms are wildly different. What does the Bitcoin community
+    audience get about your music that a traditional music audience doesn't,
+    and vice versa?
+
+
+SONGWRITER SISTERS
+
+16. You founded Songwriter Sisters in 2024 — a community uplifting and
+    amplifying women in music. And you created and produced San Diego's
+    HalloWomen Spooktacular concert, female-fronted, theatrical, now an
+    annual tradition that doubled in both scale and sponsorship between
+    its first and second years. Where did the idea for that come from?
+
+17. Women are underrepresented in indie rock, and they're severely
+    underrepresented in the Bitcoin music community specifically. Songwriter
+    Sisters is doing the slow work of changing the first; you're doing some
+    of the most visible work of changing the second by being one of the very
+    few women at this career level inside Bitcoin music. What do you think
+    the path looks like — how do more women find their way in?
+
+18. The HalloWomen Spooktacular doubled in scale and sponsorship from year
+    one to year two. That kind of sponsorship growth in the independent
+    music world is meaningful. Who's funding it, what's the structure, and
+    is there a Bitcoin angle to how Songwriter Sisters might be funded
+    going forward?
+
+
+LOOKING FORWARD
+
+19. The traditional music industry is structured around scarcity of
+    distribution, scarcity of attention, scarcity of capital, and scarcity
+    of access to gatekeepers. Bitcoin and value-for-value invert all four —
+    distribution is open, attention is direct, capital is permissionless,
+    and there are no gatekeepers. What does a music career architected from
+    the ground up on those new rules actually look like five years from
+    now? You're as well-positioned as anyone to describe it.
+
+20. What's next for you in the back half of 2026 and into 2027 — new music,
+    new tours, new Songwriter Sisters expansion? Where are you pointed?
+
+
+THE CLOSING QUESTION
+
+21. Last question — we ask every guest this on Share Your Bitcoin Journey:
+    if a $500 to $2,000 Bitcoin micro-grant from Bitcoin for the Arts landed
+    in your wallet tomorrow, what would it unlock for you as a creator?
+
+
+─────────────────────────────────────────────────────────────────────────────
+
+REFERENCES TO HAVE AT HAND DURING THE INTERVIEW
+
+  - sarajademusic.com — main artist page; "Classic Roots to Cinematic Pop
+    Rock" and "Award-Winning Artistry" sections have the awards/career
+    biography in her own words.
+
+  - sarajademusic.com/epk — Electronic Press Kit; the "value-for-value
+    music movement" language and the Tunestr / Dark Matter Audio Labs
+    endorsements live here.
+
+  - "It's A Mood" podcast (May 20, 2025) — her existing long-form interview
+    where she covered the Spotify "Never Knew" takedown story in detail.
+    Worth listening to so we don't ask her to repeat the same beats.
+
+  - SHOUTOUT SOCAL — "Meet Sara Jade" interview piece, mostly biographical;
+    light listen for color on her early years.
+
+  - The Bitcoin Vinyl Record — Nashville Bitcoin Conference 2024 artifact
+    that "Singin' Woman" was featured on. Worth being able to reference
+    fluently for Q12.
+
+  - Songwriter Sisters — her community organization; check current
+    membership scale and recent events before recording.
+
+  - HalloWomen Spooktacular — the annual concert she produces; year-over-
+    year growth numbers are her own (doubled in scale and sponsorship).
+
+
+NOTES ON ORDER
+
+  - Q1-5 are biographical warmup. The keytar question (Q5) is fun and
+    sets a personable tone before the conversation gets heavier. Spend ~10
+    minutes max on this section.
+
+  - Q6-8 are the Bitcoin turn. Let her describe the value-for-value model
+    in her own words at Q8 — it's a concept many in the BFTA audience
+    are still figuring out, and her articulation will be cleaner than
+    yours could be.
+
+  - Q9-11 are the policy/institutional break section. This is the heart
+    of why her story matters beyond music — she has documented evidence
+    of platform fragility that policy people, foundation officers, and
+    journalists should be able to cite from her experience. Let her be
+    angry if she wants to be; don't soften her.
+
+  - Q12-15 are the music itself. Lighter section, but Q14 (the Mraz
+    opener) is the bridge moment between independent and mainstream
+    worlds — it gets more interesting if you push on the contrast.
+
+  - Q16-18 are Songwriter Sisters. The women-in-Bitcoin-music conversation
+    is one BFTA hasn't yet hosted seriously, and Sara is the right voice
+    for it. Don't rush it.
+
+  - Q19-21 are the wrap. Q21 is sacred — every episode ends with it.
+
+If running over 60 minutes, the questions to consider cutting are Q4
+(genre evolution — may be covered organically in other questions),
+Q13 (theatrical aesthetic — interesting but can be glossed if time-
+constrained), and Q18 (HalloWomen funding structure — worth its own
+followup or a Songwriter Sisters profile newsletter piece). Q9-11 and
+Q21 should never be cut.
+
+
+POSSIBLE FOLLOW-UPS AFTER THE EPISODE AIRS
+
+  - Newsletter feature on the Spotify "Never Knew" story, framed as the
+    artist evidence underneath BFTA's broader thesis about why Bitcoin-
+    native music distribution is structurally necessary.
+
+  - Substack piece on Songwriter Sisters as a community model — Bitcoin
+    nonprofits should learn from how she's built and grown that community
+    without venture capital or institutional sponsorship.
+
+  - YouTube short of her best soundbite — likely from Q10 (the phantom
+    streaming reaction) or Q19 (her vision of music architected on the
+    new rules).
+
+  - Direct booking ask — would she perform at BFTA's September Pubkey DC
+    benefit night, in person or remote livestream? If yes, the podcast
+    episode becomes the warm-up; if no, it's still a strong relationship
+    plant for future events.
