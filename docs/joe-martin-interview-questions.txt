@@ -1,0 +1,288 @@
+Share Your Bitcoin Journey: Joe Martin — Interview Questions
+
+For BFTA Podcast Series · YouTube · Recording date TBD (targeting late May 2026)
+Show host: Dion Wilson · Founder, Executive Director, Interim Chair, Bitcoin for the Arts
+
+Source material reviewed: joemartinmusic.com · his Nostr profile
+(npub19r9qrxmckj2vyk5a5ttyt966s5qu06vmzyczuh97wj8wtyluktxqymeukr) · his
+Shopstr marketplace listing · "Three Chords And The Truth" review of his
+new album "Alone In..." (April 2026) · his publicly posted "no AI" album-
+production statement · the gig + community engagement we can see in his
+recent Nostr feed.
+
+Note for the host: Joe is a singer-songwriter — a self-described
+"21st century troubadour" based on the Isle of Man. His artistic identity
+right now is built around a recent album ("Alone In...") that he
+intentionally made with zero AI involvement, traveling half-way around
+the world and spending most of his savings to do it. His public quote
+about the project frames AI and inflation as twin forces "eating the
+world." That parallel — between AI slop debasing art the way fiat
+debases money — is the editorial spine the BFTA episode should hold
+onto. The closing question (Q21) is sacred — every episode of Share
+Your Bitcoin Journey ends with the BFTA micro-grant prompt.
+
+
+BACKGROUND & JOURNEY
+
+1. Joe, welcome to Share Your Bitcoin Journey. For anyone meeting you
+   here for the first time — you're a singer-songwriter based on the
+   Isle of Man, you call yourself a 21st century troubadour, you just
+   released an album called "Alone In..." that's getting some genuinely
+   warm reviews, and you sell merch for sats. That's already a
+   distinctive picture. Where does the story actually start for you?
+   When did you first know you were going to spend your life writing
+   songs?
+
+2. The phrase "21st century troubadour" is doing a lot of work on
+   your profile. Troubadours were medieval poet-musicians traveling
+   court to court — independent operators, beholden to no label, paid
+   by patrons who valued the song itself. You've put yourself in that
+   lineage on purpose. Tell us what that identity means to you and
+   why you chose those exact words.
+
+3. Your bio says simply, "It's all about the song." In a music
+   industry built around branding, image, social-platform optimization,
+   and algorithmic exposure — that's almost a counter-cultural
+   statement. What does "it's all about the song" actually mean in
+   practice when you sit down to write?
+
+4. The Isle of Man is a fascinating place to be based as a songwriter.
+   Small island in the Irish Sea, ~85,000 people, its own folk-music
+   tradition, geographically and culturally distinct from both Britain
+   and Ireland. How did you end up there, and what does being on the
+   island do to your work that being on the mainland couldn't?
+
+5. There's a long tradition of musicians who do their most serious
+   work in places that are away from the industry — far from London,
+   far from Nashville, far from LA. You're as far from the music
+   industry as a British-isles songwriter can get without leaving the
+   British Isles entirely. Is that deliberate, or just where life
+   took you?
+
+
+THE BITCOIN TURN
+
+6. You sell merch for sats. You're active on Nostr. You're part of
+   the value-for-value music movement. How did you first encounter
+   Bitcoin, and when did it cross from "interesting tech idea" to
+   "this is going to be how I do my work as an artist"?
+
+7. Most working musicians today operate inside platforms — Spotify,
+   Apple Music, the label model, the streaming-revenue treadmill.
+   You've stepped substantially outside that. What did you give up
+   when you made that move, and what did you gain that the platform
+   musicians don't have?
+
+8. The value-for-value model — for a listener who hasn't encountered
+   it — describe what it actually means for an independent musician
+   day to day. How does it change how you decide what songs to
+   release, what gigs to play, what your relationship with your
+   audience is?
+
+
+"ALONE IN..." — THE ALBUM AND THE ARGUMENT
+
+9. Let's talk about the new album, "Alone In...". You published a
+   statement that I think is one of the most striking pieces of
+   artistic positioning I've read this year. You wrote:
+   "I intentionally made my album without any AI. I wanted to make
+   one last thing that was truly pure and human before AI slop and
+   inflation ate the world and will make it impractical / impossible.
+   That meant me traveling half-way around the world and spending
+   most of my savings on making something I could truly say I was
+   proud of. It was worth it."
+   Walk us through that decision. When did you realize the album had
+   to be made this way, and what was the moment you committed to it
+   even knowing the cost?
+
+10. The parallel you draw in that statement — between AI slop and
+    inflation, both "eating the world" — is exactly the framing
+    Bitcoin for the Arts is trying to surface in our own research:
+    that fiat debasement and AI-generated cultural saturation are
+    parallel debasements of value. One eats your money, one eats
+    your art. Was that parallel something you arrived at slowly, or
+    did it click for you all at once?
+
+11. You said you traveled half-way around the world and spent most
+    of your savings on the album. The traveling and the savings part
+    — that's low time preference made literal. The most "Bitcoin"
+    thing about the album may not be how you sell it; it may be the
+    900-day commitment you made to creating it without shortcuts.
+    Talk to us about what that travel and that spending actually
+    looked like.
+
+12. The Three Chords And The Truth review of the album wrote that
+    you've "sharpened your writing tools, expanded the horizon,
+    [and] revel in fertile pastures where good music grows." That's
+    a critic describing artistic maturation. Whatever happened during
+    the making of "Alone In..." — does it feel, to you, like a
+    permanent change in your work? Or just one record where you
+    pushed in a particular direction?
+
+13. There's a deeper question underneath all of this. If your
+    forecast about AI is right — that authentic, fully-human albums
+    will become impractical or impossible within a few years — then
+    "Alone In..." is something close to a final document. A
+    deliberate artifact made for a moment that's about to end. Did
+    you feel that weight while you were making it, and what do you
+    hope this album becomes ten years from now, when its rarity is
+    obvious?
+
+
+THE ISLE OF MAN AS CREATIVE LOCUS
+
+14. The Isle of Man has a particular history — long Celtic folk
+    tradition, deep ties to TT racing, a status as a self-governing
+    Crown Dependency that's economically more nimble than mainland
+    UK on things like financial regulation. There's a small but
+    serious Bitcoin community there. What's it actually like being a
+    songwriter inside that culture?
+
+15. You play gigs locally — Douglas, the harbour scene, the venues
+    on the island. You've also said "no gig too big or too small, just
+    happy to play my songs to anyone wanting to listen." For a
+    musician with a serious album out and Nostr-side recognition from
+    artists across the world, that's a pretty unusual posture. Where
+    does that come from?
+
+16. When you imagine your audience — the people who are actually
+    going to listen to "Alone In..." over the next decade — who do
+    you see? Who is this album for?
+
+
+THE WORLDVIEW: INFLATION, AI, AUTHENTICITY
+
+17. You're one of a small but growing community of musicians who see
+    Bitcoin not as a side investment but as the foundation underneath
+    a different kind of artistic career — one that doesn't depend on
+    the platforms, the labels, the streaming economics, or the AI
+    flooding. If a young songwriter came to you this year and said,
+    "I want to build my career on those new rules, what should I
+    actually do" — what would you tell them?
+
+18. The AI-and-inflation parallel keeps coming back. Both are forms
+    of debasement: one of currency, one of culture. Both quietly
+    erode the value of work that was honest and hard-earned. Bitcoin
+    answers the first. What — if anything — answers the second?
+    Where does the cultural defense come from?
+
+19. There's a real question whether AI-made music can ever carry the
+    same weight as music made by a person who lived something and
+    wrote it down. Some people would say no, never; some would say
+    yes, eventually. You've staked a career-shaping decision on the
+    "never" side. Make the case for that, plainly, for any listener
+    who hasn't made up their mind.
+
+
+LOOKING FORWARD
+
+20. What's next for you in the back half of 2026 and into 2027 —
+    touring "Alone In...," writing a follow-up, more gigs around the
+    Bitcoin and Nostr conference circuit? Where are you pointed?
+
+
+THE CLOSING QUESTION
+
+21. Last question — we ask every guest this on Share Your Bitcoin
+    Journey: if a $500 to $2,000 Bitcoin micro-grant from Bitcoin for
+    the Arts landed in your wallet tomorrow, what would it unlock
+    for you as a creator?
+
+
+─────────────────────────────────────────────────────────────────────────────
+
+REFERENCES TO HAVE AT HAND DURING THE INTERVIEW
+
+  - joemartinmusic.com — official site. Tour dates, merch, recent
+    album info.
+
+  - Joe's Nostr profile (npub19r9...eukr) — short bio "It's all about
+    the song. 21st century troubadour, based in Isle of Man. Merch
+    for sats at https://tinyurl.com/joemartinmusic." Recent posts
+    are a good temperature-check on what he's thinking about right
+    now.
+
+  - Joe's "no AI" album-production statement (posted on Nostr,
+    quoted in Q9). Worth having the exact quote in front of you
+    during the recording so you can read it back to him verbatim.
+    That moment usually produces the strongest response.
+
+  - "Three Chords And The Truth" album review of "Alone In..."
+    (threechordsandthetruthuk.blogspot.com, April 2026) — useful for
+    the "sharpened his writing tools" framing in Q12 and to confirm
+    the album's critical reception.
+
+  - Joe's Shopstr marketplace listing — confirms his Bitcoin/Nostr-
+    native commerce stack and value-for-value posture.
+
+  - For context: Abel James (a Nostr-native musician and broadcaster)
+    publicly called Joe "an incredible artist and also the man."
+    Matt Finlay (BFTA-featured musician, Issue #6) is engaging with
+    Joe's posts on Nostr. There's an ecosystem of Bitcoin-native
+    musicians supporting each other across borders.
+
+
+NOTES ON ORDER
+
+  - Q1-5 are biographical warmup. The Isle of Man and troubadour
+    questions are fun and humanizing — set the personable tone
+    before the conversation gets philosophical. Spend ~10 minutes
+    max on this section.
+
+  - Q6-8 are the Bitcoin turn. Q8 is where Joe should describe value-
+    for-value in his own words — his articulation as a working
+    musician will land cleaner than a host-side explanation.
+
+  - Q9-13 are the heart of the episode. The "no AI" statement is the
+    quotable, sharable, share-worthy core of why this conversation
+    matters. Don't rush. Let him reflect on Q13 especially — the
+    "ten years from now" framing often produces the most resonant
+    moments because it pulls the artist out of promotional mode and
+    into legacy mode.
+
+  - Q14-16 are the geography section. Lighter, but Q16 (who is the
+    album for) often opens up emotionally — listen for the audience
+    he sees in his mind, that's where his real creative compass is.
+
+  - Q17-19 are the philosophical pivot — twin debasements of money
+    and culture. This section is where the episode earns its place
+    in the BFTA series specifically. Don't rush.
+
+  - Q20-21 are the wrap. Q21 is sacred — every episode ends with it.
+
+If running over 60 minutes, the questions to consider cutting are Q5
+(deliberate-distance-from-industry — may emerge organically in Q4),
+Q15 (no-gig-too-big-or-small — color, not central), and Q19 (the AI-
+or-never debate — interesting but standalone-able). Q9-13 and Q21
+should never be cut.
+
+
+POSSIBLE FOLLOW-UPS AFTER THE EPISODE AIRS
+
+  - Newsletter feature on Joe's "no AI" statement, framed inside
+    BFTA's broader argument that fiat debasement and AI-generated
+    cultural debasement are the twin forces working artists are
+    losing ground to. His quote alone is the kind of editorial hook
+    that travels.
+
+  - Substack piece on the 21st-century-troubadour identity — there
+    is a real and growing community of musicians (Joe, Sara Jade,
+    Matt Finlay, Beth Alta Fletcher, Anik Malcolm in painting) who
+    have stepped outside the platform / industry model and onto
+    Bitcoin / Nostr rails. That's a movement worth profiling
+    collectively. Joe is a strong anchor voice for that piece.
+
+  - YouTube short of the strongest soundbite. Likely Q9 (reading the
+    no-AI statement back to him) or Q13 (the "ten years from now"
+    legacy framing). Either has the emotional weight that travels.
+
+  - Direct booking ask — would Joe perform at BFTA's September
+    Pubkey DC benefit night, in person or via remote livestream
+    contribution? Travel from Isle of Man to DC for a single night
+    is a real ask, so the livestream-contribution path is the more
+    realistic one. The podcast episode itself becomes the warm-up.
+
+  - Connect him to other BFTA-featured musicians publicly — Sara
+    Jade, Matt Finlay, Beth Alta Fletcher. Cross-pollination across
+    the Bitcoin-native music community is part of what BFTA can
+    uniquely do that solo artists can't do for themselves.
