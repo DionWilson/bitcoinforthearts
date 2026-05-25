@@ -12,7 +12,14 @@ The Money Is There
 
 ## SUBTITLE
 
-Christie's just had its biggest May auction week in history. The same week, Bank of America's 2026 U.S. Art Market Report confirmed that working artists and the small galleries that show them are the most vulnerable part of the market. The capital is not the problem. The bridge is.
+Christie's sold $1.1 billion of art in one night. Bank of America's new report says working artists are the most fragile part of the market. The capital isn't the problem — the bridge is.
+
+### Alternates (pick one for Substack)
+
+1. *Christie's sold $1.1 billion of art in one night. Bank of America's new report says working artists are the most fragile part of the market. The capital isn't the problem — the bridge is.* (recommended)
+2. *Christie's sold $1.1 billion in one night. Working artists never see it. The gap isn't capital — it's the bridge.*
+3. *A single Christie's evening sale moved $1.1 billion last week. Bank of America's 2026 report flagged working artists as the market's most fragile node. The money is there. The bridge isn't.*
+4. *The capital exists. The bridge doesn't. Notes on a $1.1 billion auction night and the Bank of America report that ran the same week.*
 
 ---
 
