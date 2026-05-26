@@ -1,5 +1,3 @@
-import FramedImage from "@/components/FramedImage";
-import StoryEntry from "@/components/StoryEntry";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -609,37 +607,6 @@ export default function StoriesPage() {
                 </div>
               </Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
-      {/*  6. PAST STORIES                                             */}
-      {/* ============================================================ */}
-      <section className="border-t border-border">
-        <div className="mx-auto max-w-6xl px-6 py-14">
-          <div className="text-xs font-semibold uppercase tracking-widest text-muted">
-            Archive
-          </div>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Past Stories
-          </h2>
-
-          <div className="mt-6">
-            <StoryEntry
-              title="FANTASTIC CAT, THE BAND THAT LIVES UP TO THE NAME"
-              subtitle="TOPIC DISCUSSION"
-              isFirst
-            />
-            <StoryEntry
-              title="A FANTASTIC CAT OFFICE HOLIDAY PARTY AT THE BOWERY BALLROOM"
-              subtitle="TOPIC DISCUSSION"
-              reverse
-            />
-            <StoryEntry
-              title="A MIAMI BREEZE, PROJECTOR SCREENS, AND NFTS"
-              subtitle="BITCOIN FOR ARTS UPDATES"
-            />
           </div>
         </div>
       </section>
