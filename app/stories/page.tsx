@@ -43,7 +43,7 @@ const storiesData: StoryItem[] = [
     title:
       "Share Your Bitcoin Journey: Episode 1 \u2013 Andrea Arghinenti\u2019s Sovereign Renaissance",
     summary:
-      "Dive into the inaugural episode of Bitcoin For The Arts\u2019 \u201CShare Your Bitcoin Journey\u201D series, featuring visionary artist Andrea Arghinenti. As a pioneering 3D/VFX creator and early Bitcoin adopter, Andrea shares how BTC transformed his creative path\u2014from escaping fiat gatekeepers to embracing financial sovereignty and low-time-preference artistry. Discover his \u201Caha\u201D moments, the challenges of integrating decentralized tools into visual storytelling, and why Bitcoin is fueling a cultural renaissance for independent creators.\n\nThis episode kicks off our open-licensed series, highlighting artists stacking culture on sound money. Watch now to get orange-pilled on the intersection of art and Bitcoin!",
+      "Pioneering 3D/VFX creator Andrea Arghinenti shares how Bitcoin transformed his creative path\u2014from escaping fiat gatekeepers to embracing financial sovereignty and low-time-preference artistry.",
     thumbnail: "/SYBJ-Andrea.png",
     link: "https://youtube.com/watch?v=4oKXPZeXbYg",
   },
@@ -53,7 +53,7 @@ const storiesData: StoryItem[] = [
     title:
       "Share Your Bitcoin Journey: Episode 2 \u2013 Ethan\u2019s Vegan Bitcoin Revolution",
     summary:
-      "In this engaging episode, founder Dion Wilson interviews Ethan, the innovative writer and vegan advocate behind @bitcoinisvegan. Ethan shares his 2018 entry into Bitcoin while working at an AI company predicting crypto prices, evolving from casual investor to maximalist after the GameStop fiasco exposed fiat\u2019s rigged nature. He discusses his book \u201CThe Next Gold Rush\u201D\u2014the first turned into an NFT\u2014and his upcoming \u201CBitcoin is Vegan,\u201D arguing BTC\u2019s neutrality aligns with vegan ethics by avoiding subsidies for exploitative industries, promoting deflationary saving, and encouraging low-time-preference decisions.\n\nAs a 10-year vegan living on a Bitcoin standard, Ethan explores how sound money shifts spending habits, reduces harm, and empowers sovereignty. This open-licensed talk inspires creators to embrace Bitcoin for ethical, independent futures.",
+      "Writer and vegan advocate Ethan (@bitcoinisvegan) explores how sound money aligns with ethical living\u2014from his 2018 Bitcoin entry to arguing that BTC\u2019s neutrality promotes deflationary saving and low-time-preference decisions.",
     thumbnail: "/SYBJ-Ethan.png",
     link: "https://youtu.be/rTeq2sjk_CE?si=MAKBMUhyJ9G3m5Qv",
   },
@@ -63,7 +63,7 @@ const storiesData: StoryItem[] = [
     title:
       "Share Your Bitcoin Journey: Episode 3 \u2013 Mr. Meadow\u2019s Bitcoin Art Odyssey",
     summary:
-      "In Episode 3, founder Dion Wilson interviews Mr. Meadow, an Indian filmmaker, Bitcoin artist, and visual storyteller pioneering at the intersection of BTC, art, and AI. Mr. Meadow shares his path from discovering Bitcoin in 2017 and experimenting with altcoins, to fully embracing BTC in 2020 as the only sound money worth building on\u2014after seeing fiat\u2019s corruption and the superiority of Bitcoin\u2019s fixed supply and decentralization.\n\nHe discusses how Bitcoin reshaped his creative mindset: moving from rushed, fiat-driven work to low-time-preference creation, using AI to simplify complex Bitcoin concepts into beautiful, tangible visuals. Highlights include his Bitcoin Cowboy mascot, designs for Bitcoin Racing and Cashew Spaces, collaborations with Maya in Suriname, and upcoming short films blending BTC lore with cinematic storytelling. This open-licensed episode celebrates Bitcoin as the ultimate canvas for independent creators.",
+      "Indian filmmaker and visual storyteller Mr. Meadow shares his path from altcoin experiments to fully embracing BTC\u2014using AI to turn complex Bitcoin concepts into beautiful, tangible art.",
     thumbnail: "/SYBJ-Meadow.png",
     link: "https://youtu.be/BC-Lk4REV5I?si=6AmE28IzwDwS5Apm",
   },
@@ -73,7 +73,7 @@ const storiesData: StoryItem[] = [
     title:
       "Share Your Bitcoin Journey: Episode 4 \u2013 Benjamin Ella\u2019s Sovereign Leap from The Royal Ballet to Bitcoin",
     summary:
-      "In this powerful episode, founder Dion Wilson sits down with Benjamin Ella \u2014 a Soloist of The Royal Ballet for 17 seasons \u2014 for a conversation that could only happen between two professional dancers who found Bitcoin. Benjamin shares his journey from Melbourne tennis courts to London\u2019s Royal Opera House, where choreographers like Wayne McGregor, Crystal Pite, and Hofesh Shechter created roles for him.\n\nAfter retiring in December 2025, he discovered Bitcoin during COVID while serving as a union deputy negotiating dancer contracts. The deeper he went, the more the veil was lifted. Bitcoin then led him to faith: \u201CProverbs 11:1 \u2014 The Lord detests dishonest weights and scales. That\u2019s what money printing is.\u201D Two dancers from opposite sides of the world, one shared conviction: Bitcoin is the path forward for the arts.",
+      "After 17 seasons as a Soloist of The Royal Ballet, Benjamin Ella discovered Bitcoin while negotiating dancer contracts\u2014and found that sound money principles aligned with everything he believed about art, faith, and freedom.",
     thumbnail: "/SYBJ-Benjamin.png",
     link: "https://youtu.be/8FadoHhvxwY",
   },
@@ -83,7 +83,7 @@ const storiesData: StoryItem[] = [
     title:
       "Share Your Bitcoin Journey: Episode 5 \u2013 Sara Jade\u2019s Value-for-Value Music Revolution",
     summary:
-      "In Episode 5, founder Dion Wilson sits down with Sara Jade, a cinematic pop-rock artist and keytarist from San Diego who has become one of the most visible musicians in the value-for-value movement. A 2026 San Diego Music Award winner for Best Pop Song, Sara shares how she discovered Bitcoin and Lightning through WavLake in 2023, earned a million sats in a single half-hour acoustic TuneStr set at Nostr Phoenix, and built a 30,000-plus following on Nostr\u2014dwarfing her presence on any legacy platform.\n\nSara opens up about her musical roots\u2014growing up in her father\u2019s classic rock band, writing her first song at age nine, and evolving from Americana ballads to cinematic pop-rock with her signature keytar. She details the moment Spotify removed her single \u201CNever Knew\u201D for phantom streaming, crystallizing why centralized platforms fail independent creators. From opening for Jason Mraz to founding Songwriter Sisters, Sara makes the case that Bitcoin and Nostr aren\u2019t just tools\u2014they\u2019re the infrastructure for a new kind of artistic career built on direct connection, permissionless capital, and real fan engagement.",
+      "Cinematic pop-rock keytarist Sara Jade shares how she built a 30,000-plus following on Nostr, earned a million sats in a single TuneStr set, and left legacy platforms behind after Spotify removed her single for phantom streaming.",
     thumbnail: "/SYBJ-Sara.png",
     link: "https://youtu.be/U6cHaC-ZFWY",
   },
@@ -328,36 +328,152 @@ export default function StoriesPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* ============================================================ */}
-      {/*  HERO HEADER                                                 */}
+      {/*  1. HERO — 21-artist image, headline, dual CTAs              */}
       {/* ============================================================ */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#7e57c2]" />
-        <div
-          className="absolute inset-0 opacity-[0.06]"
-          style={{
-            backgroundImage: [
-              "repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(255,255,255,0.04) 2px,rgba(255,255,255,0.04) 4px)",
-              "repeating-linear-gradient(90deg,transparent,transparent 2px,rgba(255,255,255,0.04) 2px,rgba(255,255,255,0.04) 4px)",
-            ].join(","),
-          }}
+        <Image
+          src="/21-artist.jpg"
+          alt="Artists creating with sovereignty"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
 
-        <div className="relative mx-auto max-w-6xl px-6 py-20 text-center sm:py-28">
-          <div className="mx-auto inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/90">
+        <div className="relative mx-auto max-w-6xl px-6 py-24 text-center sm:py-32 lg:py-40">
+          <div className="mx-auto inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-white/90 backdrop-blur-sm">
             Bitcoin for the Arts
           </div>
-          <h1 className="mx-auto mt-5 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Artist Stories
+          <h1 className="mx-auto mt-6 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Real Artists. Real Bitcoin Journeys.
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80 sm:text-xl font-[var(--font-display)] italic">
-            Sovereign Journeys in Bitcoin and Creativity
+            How sound money is giving creators time, freedom, and sovereignty.
           </p>
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/stories/share-your-story"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-[#f7931a] px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#e8850f] hover:shadow-xl"
+            >
+              Share Your Story
+            </Link>
+            <a
+              href="#episodes"
+              className="inline-flex min-h-12 items-center justify-center rounded-md border-2 border-white/40 bg-white/10 px-8 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+            >
+              Explore the Stories
+            </a>
+          </div>
         </div>
       </section>
 
       {/* ============================================================ */}
-      {/*  SPOTLIGHT — MICRO-GRANT QUOTE CARDS                         */}
+      {/*  2. FEATURED EPISODES — moved up, trimmed summaries           */}
+      {/* ============================================================ */}
+      <section id="episodes" className="bg-gradient-to-b from-surface/60 via-background to-surface/40 py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="text-xs font-semibold uppercase tracking-widest text-muted">
+            Featured Episodes
+          </div>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
+            Share Your Bitcoin Journey
+          </h2>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {episodes.map((ep) => (
+              <a
+                key={ep.link}
+                href={ep.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col overflow-hidden rounded-2xl border-2 border-[#d4af37] bg-background shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[0_12px_40px_rgba(212,175,55,0.2)]"
+              >
+                {/* Thumbnail */}
+                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <Image
+                    src={ep.thumbnail}
+                    alt={ep.title}
+                    fill
+                    className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/20">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f7931a] shadow-lg transition-transform duration-300 group-hover:scale-110">
+                      <svg
+                        className="ml-1 h-6 w-6 text-white"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Summary */}
+                <div className="flex flex-1 flex-col p-5">
+                  <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    Episode {ep.episodeNumber}
+                  </div>
+                  <h3 className="mt-3 text-base font-bold leading-snug tracking-tight sm:text-lg">
+                    {ep.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted line-clamp-3">
+                    {ep.summary}
+                  </p>
+                  <div className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                    Watch on YouTube
+                    <svg
+                      className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  3. MID-PAGE CTA BANNER                                      */}
+      {/* ============================================================ */}
+      <section className="border-y border-[#d4af37]/30 bg-gradient-to-r from-[#7e57c2]/[0.06] via-background to-[#f7931a]/[0.06]">
+        <div className="mx-auto max-w-4xl px-6 py-12 text-center sm:py-14">
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+            Every artist has a Bitcoin story worth telling.
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-base text-muted sm:text-lg">
+            Help us teach artists about Bitcoin through real lived experience.
+            Share your journey so other creators can learn, grow, and build
+            sovereignty with confidence.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/stories/share-your-story"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-[#f7931a] px-8 py-3 text-sm font-semibold text-white shadow-md transition-all hover:bg-[#e8850f] hover:shadow-lg"
+            >
+              Share Your Story
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/*  4. MICRO-GRANT QUOTE CARDS — moved down                     */}
       {/* ============================================================ */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="max-w-4xl">
@@ -417,94 +533,9 @@ export default function StoriesPage() {
       </section>
 
       {/* ============================================================ */}
-      {/*  FEATURED EPISODES                                           */}
+      {/*  5. ARTIST GALLERY — tightened cards, single featured image   */}
       {/* ============================================================ */}
-      <section className="bg-gradient-to-b from-surface/60 via-background to-surface/40 py-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="text-xs font-semibold uppercase tracking-widest text-muted">
-            Featured Episodes
-          </div>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Share Your Bitcoin Journey
-          </h2>
-
-          <div className="mt-10 flex flex-col gap-10">
-            {episodes.map((ep) => (
-              <a
-                key={ep.link}
-                href={ep.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block overflow-hidden rounded-2xl border-2 border-[#d4af37] bg-background shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow hover:shadow-[0_12px_40px_rgba(212,175,55,0.2)]"
-              >
-                <div className="flex flex-col lg:flex-row">
-                  {/* Thumbnail */}
-                  <div className="relative aspect-[4/5] w-full shrink-0 overflow-hidden sm:aspect-video lg:aspect-auto lg:w-[400px]">
-                    <Image
-                      src={ep.thumbnail}
-                      alt={ep.title}
-                      fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 1024px) 100vw, 400px"
-                    />
-                    {/* Play button overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/10 transition-colors group-hover:bg-black/20">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#f7931a] shadow-lg transition-transform duration-300 group-hover:scale-110">
-                        <svg
-                          className="ml-1 h-7 w-7 text-white"
-                          viewBox="0 0 24 24"
-                          fill="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Summary */}
-                  <div className="flex flex-1 flex-col justify-center p-6 lg:p-8">
-                    <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
-                      <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                      Episode {ep.episodeNumber}
-                    </div>
-                    <h3 className="mt-3 text-xl font-bold tracking-tight sm:text-2xl">
-                      {ep.title}
-                    </h3>
-                    <div className="mt-4 space-y-3 text-sm leading-relaxed text-muted sm:text-base">
-                      {ep.summary.split("\n\n").map((para, i) => (
-                        <p key={i}>{para}</p>
-                      ))}
-                    </div>
-                    <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                      Watch on YouTube
-                      <svg
-                        className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
-      {/*  ARTIST GALLERY                                              */}
-      {/* ============================================================ */}
-      <section className="py-16">
+      <section className="bg-gradient-to-b from-surface/40 to-background py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-xs font-semibold uppercase tracking-widest text-muted">
             Artist Gallery
@@ -513,122 +544,77 @@ export default function StoriesPage() {
             Featured Artists &amp; Articles
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 gap-10">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {articles.map((article) => (
-              <div
+              <Link
                 key={article.link}
-                className="overflow-hidden rounded-2xl border border-border bg-surface/50 shadow-sm"
+                href={article.link}
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface/50 shadow-sm transition-all hover:shadow-md hover:border-accent/30"
               >
+                {/* Card image — profile photo or first gallery artwork */}
                 {article.profileImage ? (
-                  /* Profile-style card (musicians, performers) */
-                  <Link href={article.link} className="group block">
-                    <div className="flex flex-col sm:flex-row">
-                      <div className="relative mx-auto mt-6 h-36 w-36 shrink-0 overflow-hidden rounded-full border-4 border-[#d4af37] shadow-md sm:mx-0 sm:ml-8 sm:mt-0 sm:self-center">
-                        <Image
-                          src={article.profileImage.src}
-                          alt={article.profileImage.alt}
-                          fill
-                          className="object-cover"
-                          sizes="144px"
-                        />
-                      </div>
-                      <div className="flex-1 p-6 sm:p-8">
-                        <h3 className="text-xl font-bold tracking-tight transition-colors group-hover:text-accent sm:text-2xl">
-                          {article.title}
-                        </h3>
-                        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted">
-                          {article.byline}
-                        </p>
-                        <p className="mt-4 text-base leading-relaxed text-muted line-clamp-3">
-                          {article.teaser}
-                        </p>
-                        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                          Read full article
-                          <svg
-                            className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M17 8l4 4m0 0l-4 4m4-4H3"
-                            />
-                          </svg>
-                        </span>
-                      </div>
+                  <div className="flex items-center justify-center bg-gradient-to-b from-[#7e57c2]/10 to-surface/30 py-8">
+                    <div className="relative h-32 w-32 overflow-hidden rounded-full border-4 border-[#d4af37] shadow-md">
+                      <Image
+                        src={article.profileImage.src}
+                        alt={article.profileImage.alt}
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                      />
                     </div>
-                  </Link>
-                ) : (
-                  /* Gallery-style card (visual artists, painters) */
-                  <>
-                    <div className="snap-carousel flex snap-x snap-mandatory gap-4 overflow-x-auto p-6 sm:grid sm:grid-cols-3 sm:gap-5 sm:overflow-visible sm:p-8">
-                      {article.images.map((img) => (
-                        <div key={img.src} className="w-[75vw] shrink-0 snap-center sm:w-auto">
-                          <FramedImage
-                            src={img.src}
-                            alt={img.alt}
-                            caption={img.caption}
-                            objectPosition={img.objectPosition}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="flex items-center justify-center gap-1.5 pb-3 sm:hidden">
-                      {article.images.map((_, i) => (
-                        <span
-                          key={i}
-                          className="h-1.5 w-1.5 rounded-full bg-accent/40"
-                          aria-hidden="true"
-                        />
-                      ))}
-                      <span className="ml-1 text-[10px] font-semibold uppercase tracking-wide text-muted">
-                        Swipe
-                      </span>
-                    </div>
-                    <div className="border-t border-border px-6 py-6 sm:px-8">
-                      <Link href={article.link} className="group block">
-                        <h3 className="text-xl font-bold tracking-tight transition-colors group-hover:text-accent sm:text-2xl">
-                          {article.title}
-                        </h3>
-                        <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted">
-                          {article.byline}
-                        </p>
-                        <p className="mt-4 text-base leading-relaxed text-muted line-clamp-3">
-                          {article.teaser}
-                        </p>
-                        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                          Read full article
-                          <svg
-                            className="h-4 w-4 transition-transform group-hover:translate-x-1"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M17 8l4 4m0 0l-4 4m4-4H3"
-                            />
-                          </svg>
-                        </span>
-                      </Link>
-                    </div>
-                  </>
-                )}
-              </div>
+                  </div>
+                ) : article.images.length > 0 ? (
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={article.images[0].src}
+                      alt={article.images[0].alt}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={article.images[0].objectPosition ? { objectPosition: article.images[0].objectPosition } : undefined}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+                ) : null}
+
+                {/* Text content */}
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="text-base font-bold leading-snug tracking-tight transition-colors group-hover:text-accent sm:text-lg">
+                    {article.title}
+                  </h3>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted">
+                    {article.byline}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-muted line-clamp-3">
+                    {article.teaser}
+                  </p>
+                  <div className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                    Read full article
+                    <svg
+                      className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ============================================================ */}
-      {/*  PAST STORIES                                                */}
+      {/*  6. PAST STORIES                                             */}
       {/* ============================================================ */}
       <section className="border-t border-border">
         <div className="mx-auto max-w-6xl px-6 py-14">
@@ -659,7 +645,7 @@ export default function StoriesPage() {
       </section>
 
       {/* ============================================================ */}
-      {/*  GALLERY WINGS — STORY INVITATION + NEWSLETTER               */}
+      {/*  7. GALLERY WINGS — STORY INVITATION + NEWSLETTER             */}
       {/* ============================================================ */}
       <section className="border-t border-[#d4af37]/30 bg-gradient-to-b from-[#7e57c2]/[0.04] to-background">
         <div className="mx-auto max-w-6xl px-6 py-16">
