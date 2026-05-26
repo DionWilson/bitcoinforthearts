@@ -44,7 +44,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 1 \u2013 Andrea Arghinenti\u2019s Sovereign Renaissance",
     summary:
       "Dive into the inaugural episode of Bitcoin For The Arts\u2019 \u201CShare Your Bitcoin Journey\u201D series, featuring visionary artist Andrea Arghinenti. As a pioneering 3D/VFX creator and early Bitcoin adopter, Andrea shares how BTC transformed his creative path\u2014from escaping fiat gatekeepers to embracing financial sovereignty and low-time-preference artistry. Discover his \u201Caha\u201D moments, the challenges of integrating decentralized tools into visual storytelling, and why Bitcoin is fueling a cultural renaissance for independent creators.\n\nThis episode kicks off our open-licensed series, highlighting artists stacking culture on sound money. Watch now to get orange-pilled on the intersection of art and Bitcoin!",
-    thumbnail: "/Share-Your-Bitcoin-Journey.jpg",
+    thumbnail: "/SYBJ-Andrea.png",
     link: "https://youtube.com/watch?v=4oKXPZeXbYg",
   },
   {
@@ -54,7 +54,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 2 \u2013 Ethan\u2019s Vegan Bitcoin Revolution",
     summary:
       "In this engaging episode, founder Dion Wilson interviews Ethan, the innovative writer and vegan advocate behind @bitcoinisvegan. Ethan shares his 2018 entry into Bitcoin while working at an AI company predicting crypto prices, evolving from casual investor to maximalist after the GameStop fiasco exposed fiat\u2019s rigged nature. He discusses his book \u201CThe Next Gold Rush\u201D\u2014the first turned into an NFT\u2014and his upcoming \u201CBitcoin is Vegan,\u201D arguing BTC\u2019s neutrality aligns with vegan ethics by avoiding subsidies for exploitative industries, promoting deflationary saving, and encouraging low-time-preference decisions.\n\nAs a 10-year vegan living on a Bitcoin standard, Ethan explores how sound money shifts spending habits, reduces harm, and empowers sovereignty. This open-licensed talk inspires creators to embrace Bitcoin for ethical, independent futures.",
-    thumbnail: "/BFTA-Artist-Story-EP2.jpg",
+    thumbnail: "/SYBJ-Ethan.png",
     link: "https://youtu.be/rTeq2sjk_CE?si=MAKBMUhyJ9G3m5Qv",
   },
   {
@@ -64,7 +64,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 3 \u2013 Mr. Meadow\u2019s Bitcoin Art Odyssey",
     summary:
       "In Episode 3, founder Dion Wilson interviews Mr. Meadow, an Indian filmmaker, Bitcoin artist, and visual storyteller pioneering at the intersection of BTC, art, and AI. Mr. Meadow shares his path from discovering Bitcoin in 2017 and experimenting with altcoins, to fully embracing BTC in 2020 as the only sound money worth building on\u2014after seeing fiat\u2019s corruption and the superiority of Bitcoin\u2019s fixed supply and decentralization.\n\nHe discusses how Bitcoin reshaped his creative mindset: moving from rushed, fiat-driven work to low-time-preference creation, using AI to simplify complex Bitcoin concepts into beautiful, tangible visuals. Highlights include his Bitcoin Cowboy mascot, designs for Bitcoin Racing and Cashew Spaces, collaborations with Maya in Suriname, and upcoming short films blending BTC lore with cinematic storytelling. This open-licensed episode celebrates Bitcoin as the ultimate canvas for independent creators.",
-    thumbnail: "/BFTA-SYBJ_EP3.jpg",
+    thumbnail: "/SYBJ-Meadow.png",
     link: "https://youtu.be/BC-Lk4REV5I?si=6AmE28IzwDwS5Apm",
   },
   {
@@ -74,8 +74,18 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 4 \u2013 Benjamin Ella\u2019s Sovereign Leap from The Royal Ballet to Bitcoin",
     summary:
       "In this powerful episode, founder Dion Wilson sits down with Benjamin Ella \u2014 a Soloist of The Royal Ballet for 17 seasons \u2014 for a conversation that could only happen between two professional dancers who found Bitcoin. Benjamin shares his journey from Melbourne tennis courts to London\u2019s Royal Opera House, where choreographers like Wayne McGregor, Crystal Pite, and Hofesh Shechter created roles for him.\n\nAfter retiring in December 2025, he discovered Bitcoin during COVID while serving as a union deputy negotiating dancer contracts. The deeper he went, the more the veil was lifted. Bitcoin then led him to faith: \u201CProverbs 11:1 \u2014 The Lord detests dishonest weights and scales. That\u2019s what money printing is.\u201D Two dancers from opposite sides of the world, one shared conviction: Bitcoin is the path forward for the arts.",
-    thumbnail: "/Benjamin-Ella-BFTA-Artist.jpg",
+    thumbnail: "/SYBJ-Benjamin.png",
     link: "https://youtu.be/8FadoHhvxwY",
+  },
+  {
+    type: "episode",
+    episodeNumber: 5,
+    title:
+      "Share Your Bitcoin Journey: Episode 5 \u2013 Sara Jade\u2019s Value-for-Value Music Revolution",
+    summary:
+      "In Episode 5, founder Dion Wilson sits down with Sara Jade, a cinematic pop-rock artist and keytarist from San Diego who has become one of the most visible musicians in the value-for-value movement. A 2026 San Diego Music Award winner for Best Pop Song, Sara shares how she discovered Bitcoin and Lightning through WavLake in 2023, earned a million sats in a single half-hour acoustic TuneStr set at Nostr Phoenix, and built a 30,000-plus following on Nostr\u2014dwarfing her presence on any legacy platform.\n\nSara opens up about her musical roots\u2014growing up in her father\u2019s classic rock band, writing her first song at age nine, and evolving from Americana ballads to cinematic pop-rock with her signature keytar. She details the moment Spotify removed her single \u201CNever Knew\u201D for phantom streaming, crystallizing why centralized platforms fail independent creators. From opening for Jason Mraz to founding Songwriter Sisters, Sara makes the case that Bitcoin and Nostr aren\u2019t just tools\u2014they\u2019re the infrastructure for a new kind of artistic career built on direct connection, permissionless capital, and real fan engagement.",
+    thumbnail: "/SYBJ-Sara.png",
+    link: "https://youtu.be/U6cHaC-ZFWY",
   },
   {
     type: "article",
