@@ -318,9 +318,9 @@ function QuoteCard({
 /* ------------------------------------------------------------------ */
 
 export default function StoriesPage() {
-  const episodes = storiesData.filter(
-    (s): s is Episode => s.type === "episode",
-  );
+  const episodes = storiesData
+    .filter((s): s is Episode => s.type === "episode")
+    .sort((a, b) => b.episodeNumber - a.episodeNumber);
   const articles = storiesData.filter(
     (s): s is Article => s.type === "article",
   );
