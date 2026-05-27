@@ -20,7 +20,8 @@ function getErrorMessage(err: unknown) {
 }
 
 export default function ConnectForm() {
-  const [fullName, setFullName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [notes, setNotes] = useState('');
   const [hp, setHp] = useState('');
@@ -30,8 +31,8 @@ export default function ConnectForm() {
 
   const canSubmit = useMemo(() => {
     if (status === 'submitting' || status === 'success') return false;
-    return fullName.trim().length > 0 && isEmail(email) && agreed;
-  }, [fullName, email, agreed, status]);
+    return firstName.trim().length > 0 && lastName.trim().length > 0 && isEmail(email) && agreed;
+  }, [firstName, lastName, email, agreed, status]);
 
   function resetIfNeeded() {
     if (status !== 'idle') setStatus('idle');
@@ -41,12 +42,13 @@ export default function ConnectForm() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
 
-    const trimmedName = fullName.trim();
+    const trimmedFirst = firstName.trim();
+    const trimmedLast = lastName.trim();
     const trimmedEmail = email.trim().toLowerCase();
 
-    if (!trimmedName) {
+    if (!trimmedFirst || !trimmedLast) {
       setStatus('error');
-      setMessage('Please enter your full name.');
+      setMessage('Please enter both your first and last name.');
       return;
     }
     if (!isEmail(trimmedEmail)) {
@@ -63,7 +65,7 @@ export default function ConnectForm() {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
-          name: trimmedName,
+          name: `${trimmedFirst} ${trimmedLast}`,
           email: trimmedEmail,
           notes: notes.trim() || undefined,
           website: hp,
@@ -105,25 +107,47 @@ export default function ConnectForm() {
         name="website"
       />
 
-      <div>
-        <label
-          htmlFor="connect-name"
-          className="block text-sm font-semibold mb-1.5"
-        >
-          Full Name <span className="text-red-600">*</span>
-        </label>
-        <input
-          id="connect-name"
-          type="text"
-          autoComplete="name"
-          value={fullName}
-          onChange={(e) => {
-            setFullName(e.target.value);
-            resetIfNeeded();
-          }}
-          placeholder="Your full name"
-          className="min-h-11 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent/40"
-        />
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div>
+          <label
+            htmlFor="connect-first-name"
+            className="block text-sm font-semibold mb-1.5"
+          >
+            First Name <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="connect-first-name"
+            type="text"
+            autoComplete="given-name"
+            value={firstName}
+            onChange={(e) => {
+              setFirstName(e.target.value);
+              resetIfNeeded();
+            }}
+            placeholder="First name"
+            className="min-h-11 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent/40"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="connect-last-name"
+            className="block text-sm font-semibold mb-1.5"
+          >
+            Last Name <span className="text-red-600">*</span>
+          </label>
+          <input
+            id="connect-last-name"
+            type="text"
+            autoComplete="family-name"
+            value={lastName}
+            onChange={(e) => {
+              setLastName(e.target.value);
+              resetIfNeeded();
+            }}
+            placeholder="Last name"
+            className="min-h-11 w-full rounded-md border border-border bg-white px-3 py-2 text-sm text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-2 focus:ring-accent/40"
+          />
+        </div>
       </div>
 
       <div>
