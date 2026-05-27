@@ -641,7 +641,7 @@ export default function StoriesPage() {
               </div>
             </div>
 
-            {/* Right wing — Newsletter & Community */}
+            {/* Right wing — Stay Connected */}
             <div className="rounded-2xl border border-[#d4af37]/40 bg-surface/80 p-6 shadow-sm sm:p-8">
               <div className="text-xs font-semibold uppercase tracking-widest text-[#d4af37]">
                 Stay Connected
@@ -651,21 +651,14 @@ export default function StoriesPage() {
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted">
                 Get occasional updates on grants, programming, and events.
-                Subscribe to our newsletter or follow us on Nostr to stay in the
-                loop.
+                Sign up to stay in the loop.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6">
                 <Link
-                  href="/donate"
+                  href="/connect"
                   className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
                 >
-                  Support the arts
-                </Link>
-                <Link
-                  href="/get-involved"
-                  className="inline-flex min-h-11 items-center justify-center rounded-md border-2 border-[#d4af37] bg-transparent px-5 py-2 text-sm font-semibold text-[#d4af37] transition-colors hover:bg-[#d4af37]/10"
-                >
-                  Get involved
+                  Sign up for updates
                 </Link>
               </div>
             </div>
