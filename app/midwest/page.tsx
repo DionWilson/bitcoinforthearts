@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function MidwestPage() {
   const heroImage = '/21-artist.jpg';
-  const sponsorEmail = 'dion@bitcoinforthearts.org';
+  const sponsorEmail = 'info@bitcoinforthearts.org';
   const ein = '41-2642260';
 
   const pathBTiers = [
@@ -68,7 +68,7 @@ export default function MidwestPage() {
     },
     {
       q: 'How do I get in touch?',
-      a: `Email Dion directly at ${sponsorEmail}. Warm introductions are prioritized over cold outreach.`,
+      a: `Email us at ${sponsorEmail}. Warm introductions are prioritized over cold outreach.`,
     },
   ];
 
