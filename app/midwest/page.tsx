@@ -112,7 +112,7 @@ export default function MidwestPage() {
             Bitcoin conferences have grown into serious institutions. What has been quietly missing alongside them is a curatorial counterpart — a serious cultural room, with serious working artists, treated as central to the programming rather than peripheral to it. <em>Generations</em> is that room, and Columbus is where Bitcoin for the Arts is going to help build it.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Curated by Kyle Knight — a producer with deep roots in the Bitcoin culture world — <em>Generations</em> is a 60×60 installation organized around four named zones, with anchor partnerships from the Human Rights Foundation, Bitcoin Trading Cards, and BSN. BFTA is joining as a curatorial partner: featuring artists, programming live work, and bringing the BFTA mission directly into the conference floor.
+            Curated by Kyle Knight — a producer with deep roots in the Bitcoin culture world — <em>Generations</em> is a 100×60 installation organized around four named zones, with anchor partnerships from the Human Rights Foundation, Bitcoin Trading Cards, and BSN. BFTA is joining as a curatorial partner: featuring artists, programming live work, and bringing the BFTA mission directly into the conference floor.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
             The audience is the reason. The room at the Midwest Summit is a crowd of Bitcoiners who already understand sound money — and who are, by every definition, the future patron base for the next generation of working artists. Bringing real artists into that room, paid in Bitcoin, supported by infrastructure that lets the audience zap them in real time, is exactly the kind of moment our 501(c)(3) was built to create.
@@ -206,7 +206,7 @@ export default function MidwestPage() {
             Generations.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            <em>Generations</em> is a curated cultural installation inside the Midwest Bitcoin Summit, organized as four named zones across roughly a 60×60 footprint. It is curated by <strong className="text-foreground">Kyle Knight</strong>, with anchor partnerships from the <strong className="text-foreground">Human Rights Foundation</strong>, <strong className="text-foreground">Bitcoin Trading Cards</strong>, and <strong className="text-foreground">BSN</strong>. Bitcoin for the Arts is joining as a curatorial partner.
+            <em>Generations</em> is a curated cultural installation inside the Midwest Bitcoin Summit, organized as four named zones across roughly a 100×60 footprint. It is curated by <strong className="text-foreground">Kyle Knight</strong>, with anchor partnerships from the <strong className="text-foreground">Human Rights Foundation</strong>, <strong className="text-foreground">Bitcoin Trading Cards</strong>, and <strong className="text-foreground">BSN</strong>. Bitcoin for the Arts is joining as a curatorial partner.
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
