@@ -651,24 +651,24 @@ export default function StoriesPage() {
               </div>
             </div>
 
-            {/* Right wing — Stay Connected */}
+            {/* Right wing — Newsletter Signup */}
             <div className="rounded-2xl border border-[#d4af37]/40 bg-surface/80 p-6 shadow-sm sm:p-8">
               <div className="text-xs font-semibold uppercase tracking-widest text-[#d4af37]">
-                Stay Connected
+                Newsletter Signup
               </div>
               <h3 className="mt-3 text-xl font-bold tracking-tight sm:text-2xl">
                 News, Grants &amp; Events
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted">
-                Get occasional updates on grants, programming, and events.
-                Sign up to stay in the loop.
+                Subscribe to the Bitcoin for the Arts newsletter for updates on
+                grants, programming, events, and artist stories.
               </p>
               <div className="mt-6">
                 <Link
                   href="/connect"
                   className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
                 >
-                  Sign up for updates
+                  Subscribe to the Newsletter
                 </Link>
               </div>
             </div>
