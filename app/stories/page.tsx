@@ -42,7 +42,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 1 \u2013 Andrea Arghinenti\u2019s Sovereign Renaissance",
     summary:
       "Pioneering 3D/VFX creator Andrea Arghinenti shares how Bitcoin transformed his creative path\u2014from escaping fiat gatekeepers to embracing financial sovereignty and low-time-preference artistry.",
-    thumbnail: "/SYBJ-Andrea.png",
+    thumbnail: "/SYBJ-EP1-web-Andrea-Arghinenti.png",
     link: "https://youtube.com/watch?v=4oKXPZeXbYg",
   },
   {
@@ -52,7 +52,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 2 \u2013 Ethan\u2019s Vegan Bitcoin Revolution",
     summary:
       "Writer and vegan advocate Ethan (@bitcoinisvegan) explores how sound money aligns with ethical living\u2014from his 2018 Bitcoin entry to arguing that BTC\u2019s neutrality promotes deflationary saving and low-time-preference decisions.",
-    thumbnail: "/SYBJ-Ethan.png",
+    thumbnail: "/SYBJ-EP2-web-Ethan-Turer.png",
     link: "https://youtu.be/rTeq2sjk_CE?si=MAKBMUhyJ9G3m5Qv",
   },
   {
@@ -62,7 +62,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 3 \u2013 Mr. Meadow\u2019s Bitcoin Art Odyssey",
     summary:
       "Indian filmmaker and visual storyteller Mr. Meadow shares his path from altcoin experiments to fully embracing BTC\u2014using AI to turn complex Bitcoin concepts into beautiful, tangible art.",
-    thumbnail: "/SYBJ-Meadow.png",
+    thumbnail: "/SYBJ-EP3-web-Mr.Mdeaow.png",
     link: "https://youtu.be/BC-Lk4REV5I?si=6AmE28IzwDwS5Apm",
   },
   {
@@ -72,7 +72,7 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 4 \u2013 Benjamin Ella\u2019s Sovereign Leap from The Royal Ballet to Bitcoin",
     summary:
       "After 17 seasons as a Soloist of The Royal Ballet, Benjamin Ella discovered Bitcoin while negotiating dancer contracts\u2014and found that sound money principles aligned with everything he believed about art, faith, and freedom.",
-    thumbnail: "/SYBJ-Benjamin.png",
+    thumbnail: "/SYBJ-EP4-web-Ben-Ella.png",
     link: "https://youtu.be/8FadoHhvxwY",
   },
   {
@@ -82,8 +82,18 @@ const storiesData: StoryItem[] = [
       "Share Your Bitcoin Journey: Episode 5 \u2013 Sara Jade\u2019s Value-for-Value Music Revolution",
     summary:
       "Cinematic pop-rock keytarist Sara Jade shares how she built a 30,000-plus following on Nostr, earned a million sats in a single TuneStr set, and left legacy platforms behind after Spotify removed her single for phantom streaming.",
-    thumbnail: "/SYBJ-Sara.png",
+    thumbnail: "/SYBJ-EP5-web-Sara-Jade.png",
     link: "https://youtu.be/U6cHaC-ZFWY",
+  },
+  {
+    type: "episode",
+    episodeNumber: 6,
+    title:
+      "Share Your Bitcoin Journey: Episode 6 \u2013 Joe Martin\u2019s 21st Century Troubadour Journey",
+    summary:
+      "UK singer-songwriter and self-described 21st century troubadour Joe Martin shares his journey from traditional touring to value-for-value music\u2014including how a $100 first-week earning on RSS exceeded years of Spotify streaming, and why he made his new album Alone in Valentine in Nashville with no shortcuts.",
+    thumbnail: "/SYBJ-EP6-web-Joe-Martin.png",
+    link: "https://youtu.be/MXUgrViBCaI?si=7CSkQGiV2BmLyrC2",
   },
   {
     type: "article",
