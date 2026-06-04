@@ -13,11 +13,12 @@ function getEnv(name: string) {
  * Diagnostic endpoint for the Airtable Contacts integration.
  *
  * Usage:
- *   GET /api/admin/airtable-health?secret=<ADMIN_DEBUG_SECRET>
+ *   GET /api/admin/airtable-health
  *
  * Authentication:
- *   Set ADMIN_DEBUG_SECRET in Vercel env vars to any random string.
- *   Pass that same string as the `secret` query param.
+ *   Protected by the project's existing HTTP Basic Auth middleware
+ *   (see proxy.ts) — the same ADMIN_USER / ADMIN_PASS used for
+ *   /admin/applications. No additional secret needed.
  *
  * What it returns:
  *   - Validates env var presence and shape (without leaking the PAT itself).
@@ -28,25 +29,7 @@ function getEnv(name: string) {
  * Safe to remove after the integration is verified working. This file
  * is an isolated diagnostic and is not referenced anywhere else in the app.
  */
-export async function GET(req: NextRequest) {
-  const expectedSecret = getEnv('ADMIN_DEBUG_SECRET');
-  if (!expectedSecret) {
-    return NextResponse.json(
-      {
-        ok: false,
-        error:
-          'ADMIN_DEBUG_SECRET is not configured. Add it to Vercel env vars (any random string), redeploy, then retry with ?secret=<that value>.',
-      },
-      { status: 500 },
-    );
-  }
-
-  const url = new URL(req.url);
-  const secret = url.searchParams.get('secret');
-  if (secret !== expectedSecret) {
-    return NextResponse.json({ ok: false, error: 'Unauthorized' }, { status: 401 });
-  }
-
+export async function GET(_req: NextRequest) {
   const pat = getEnv('AIRTABLE_PAT');
   const baseId = getEnv('AIRTABLE_BASE_ID');
   const tableName = getEnv('AIRTABLE_CONTACTS_TABLE') ?? 'Contacts';
