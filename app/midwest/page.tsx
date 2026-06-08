@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
+import MidwestVolunteerForm from './MidwestVolunteerForm';
 
 export const metadata: Metadata = {
   title: 'BFTA at the Midwest Bitcoin Summit',
   description:
-    'Bitcoin for the Arts joins the curatorial team behind Generations, the gallery and live programming inside the Midwest Bitcoin Summit. September 23–24, 2026, Greater Columbus Convention Center, Columbus, Ohio. Sponsor a working artist for $2,500 or support BFTA\u2019s curatorial presence at tier.',
+    'Bitcoin for the Arts joins the curatorial team behind Generations, the gallery and live programming inside the Midwest Bitcoin Summit. September 23–24, 2026, Greater Columbus Convention Center, Columbus, Ohio. Sponsor a working artist for $2,500, sponsor BFTA\u2019s curatorial presence at tier, support in-kind, or volunteer.',
   openGraph: {
     title: 'Where Culture Meets Sound Money — BFTA at the Midwest Bitcoin Summit',
     description:
-      'BFTA × Midwest Bitcoin Summit · September 23–24, 2026 · Columbus, OH. Sponsor a working artist for $2,500 or support BFTA\u2019s curatorial presence inside Generations.',
+      'BFTA × Midwest Bitcoin Summit · September 23–24, 2026 · Columbus, OH. Live performances, visual art, live painting, podcast station, panel, Lightning Lounge, raffles. Sponsor, support in-kind, or volunteer.',
     type: 'website',
   },
 };
@@ -19,58 +20,260 @@ export default function MidwestPage() {
   const sponsorEmail = 'info@bitcoinforthearts.org';
   const ein = '41-2642260';
 
-  const pathBTiers = [
-    { name: 'Presenting Sponsor', price: '$25,000' },
-    { name: 'Curatorial Sponsor', price: '$7,500' },
-    { name: 'Programming Sponsor', price: '$5,000' },
-    { name: 'Friend of BFTA at Midwest', price: '$1,000' },
+  /* ──────────────────────────── EVENT PROGRAMMING ──────────────────────────── */
+
+  const programming = [
+    {
+      title: 'Live Performances',
+      detail:
+        '6\u201310 working artists performing live across two days. Professional broadcast sound. Ticketed audience and Bitcoiners alike.',
+    },
+    {
+      title: 'Visual Artist Showcase',
+      detail:
+        '10\u201315 visual artists featured on the gallery walls of Generations. Lightning QR codes on every piece, so the audience can zap the artist directly.',
+    },
+    {
+      title: 'Live Painting',
+      detail:
+        'A featured artist creating a piece in real time across the run of the event. The work itself becomes the room\u2019s anchor moment.',
+    },
+    {
+      title: 'Share Your Bitcoin Journey \u2014 Live',
+      detail:
+        'A dedicated podcast station where artists, builders, and patrons record episodes of BFTA\u2019s podcast on-site. Multiple episodes captured over two days.',
+    },
+    {
+      title: 'Artist Discussion Panel',
+      detail:
+        'A moderated conversation with featured artists about how Bitcoin and value-for-value are reshaping the working creative life. Open to all attendees.',
+    },
+    {
+      title: 'Lightning Lounge',
+      detail:
+        'Staffed on-site Lightning wallet onboarding for first-time users. The lounge that turns Lightning curiosity into a working wallet and a real first transaction.',
+    },
+    {
+      title: 'Live Broadcast to Nostr',
+      detail:
+        'All performances streamed to Nostr in real time. The room reaches a global Bitcoin audience that can boost artists live.',
+    },
+    {
+      title: 'Artist Funding Raffle',
+      detail:
+        'Underwritten by a sponsor. A randomly selected applying artist wins a $2,500 Bitcoin micro-grant in the sponsor\u2019s name, drawn live on stage.',
+    },
+    {
+      title: 'Artwork Raffle',
+      detail:
+        'Open to any attendee. The winner takes home an original work donated by featured artist Sean. One ticket, one chance at a piece of working art.',
+    },
   ];
 
-  const generationsZones = [
+  /* ──────────────────────────── SPONSOR TIERS ──────────────────────────── */
+
+  const sponsorTiers = [
     {
-      name: 'HRF Freedom Tech Lounge',
-      description:
-        'A lounge anchored by live developer activity, freedom-tech artifacts, and a large mirroring display, presented in partnership with the Human Rights Foundation.',
+      name: 'Presenting Sponsor',
+      price: '$25,000',
+      slots: '1 slot (possibly 2)',
+      featured: true,
+      benefits: [
+        'Co-branded as "Bitcoin for the Arts at Generations, presented by [Sponsor]"',
+        'Dedicated branded booth space inside the gallery floor (the only tier that includes a booth)',
+        'Prominent logo placement on the BFTA wall installation, panel stage backdrop, and podcast set',
+        '2-minute speaking slot at the BFTA mission panel',
+        'One named-artist sponsorship included ($2,500 value)',
+        'First mention in every BFTA newsletter from announcement through year-end',
+        'Sponsor branding throughout the post-event recap video',
+        'Permanent listing on BFTA Sponsors page and in the 2026 transparency report',
+        'Tax-deductible to the full extent of the law',
+      ],
     },
     {
-      name: 'B4C Gallery',
-      description:
-        'The curated heart of the show — roughly 810 square feet of gallery space hung in museum register, featuring living artists and selected historical works.',
+      name: 'Curatorial Sponsor',
+      price: '$15,000',
+      slots: '2 slots',
+      featured: false,
+      benefits: [
+        'Standing banner placement inside the gallery (no booth)',
+        'Logo on the gallery wall as the named "Visual Artists Sponsor"',
+        'Named recognition with the visual artist program — "Visual Artists Program presented by [Sponsor]"',
+        'Sponsor logo on the livestream lower-third during gallery walkthroughs',
+        'Two named-artist sponsorships included',
+        'Featured in BFTA newsletter and post-event recap',
+        'Permanent listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
     },
     {
-      name: 'BTCTC Play Area',
-      description:
-        'A tactile, family-friendly zone presented by Bitcoin Trading Cards. Tables for four featured products, hands-on for all ages.',
+      name: 'Lightning Lounge Sponsor',
+      price: '$10,000',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'The Lightning Lounge takes the sponsor\u2019s name \u2014 "The [Sponsor] Lightning Lounge"',
+        'On-site staffed onboarding station inside the gallery, branded throughout',
+        'Lightning QR codes on all artworks routed through the sponsor\u2019s wallet (every zap demos their product)',
+        'Sponsor logo on every Lightning QR placard, the program, and the livestream',
+        '2-minute demo or speaking slot during the panel programming',
+        'Featured in BFTA newsletter and post-event recap',
+        'Permanent listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
     },
     {
-      name: 'The Community Lounge',
-      description:
-        'The social heart of the floor, combining the BSN Opportunity Engine and BCH Grassroots — lounge seating, a reading library, and a small project-presentation setup.',
+      name: 'Programming Sponsor',
+      price: '$7,500',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'Logo on the panel stage backdrop',
+        'Named credit in the live podcast taping intro/outro \u2014 "This live taping of Share Your Bitcoin Journey is presented by [Sponsor]"',
+        'Logo on livestream lower-third during the panel',
+        'One named-artist sponsorship included',
+        'Featured in BFTA newsletter and post-event recap',
+        'Permanent listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Sponsor an Artist',
+      price: '$2,500',
+      slots: '8\u201310 slots',
+      featured: false,
+      benefits: [
+        'Named program credit \u2014 "[Artist] presented by [Sponsor]"',
+        'Personal thank-you from the artist during their set introduction',
+        'Logo on artist\u2019s program card and livestream lower-third during their performance',
+        'Sponsor name in post-event social posts about that artist',
+        'Listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Raffle Underwriter',
+      price: '$2,500',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'The Artist Funding Raffle is named \u2014 "The [Sponsor] Artist Funding Raffle"',
+        'Live raffle moment on stage with sponsor named',
+        'Sponsor logo on all raffle materials and livestream lower-third during the draw',
+        'Winning artist receives the $2,500 Bitcoin micro-grant in the sponsor\u2019s name',
+        'Listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Visual Artist Stipend',
+      price: '$500',
+      slots: '8\u201315 slots',
+      featured: false,
+      benefits: [
+        'Named credit on the visual artist\u2019s wall card \u2014 "[Artist], stipend supported by [Sponsor]"',
+        'Listing in event program and on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Friend of BFTA at Midwest',
+      price: '$1,000',
+      slots: 'Open',
+      featured: false,
+      benefits: [
+        'Logo on a shared "Made possible by" wall card',
+        'Mention in BFTA newsletter and post-event recap',
+        'Listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
     },
   ];
+
+  /* ──────────────────────────── IN-KIND ASKS ──────────────────────────── */
+
+  const inKindAsks = [
+    {
+      label: 'A/V production support',
+      detail:
+        'Beyond the equipment Phantom Power Music has donated \u2014 additional gear, monitor mixing, or stage backline (~$2,000\u2013$5,000 value).',
+    },
+    {
+      label: 'Photography & videography',
+      detail:
+        'On-site coverage of the performances, gallery, and panel + edited recap reel for downstream use (~$3,000\u2013$5,000 value).',
+    },
+    {
+      label: 'Hardware wallets for artists',
+      detail:
+        'A great fit for any hardware vendor who wants to put their device in the hands of working artists who will talk about it on the broadcast (~$1,500\u2013$3,000 value).',
+    },
+    {
+      label: 'Backline gear for live music',
+      detail:
+        'Instruments, amps, drum kit, keyboard. A real contribution to the live performance program (~$1,500\u2013$3,000 value).',
+    },
+    {
+      label: 'Live painting materials',
+      detail:
+        'Canvases, paints, brushes, easels for the featured live painter (~$300\u2013$800 value).',
+    },
+    {
+      label: 'Catering & beverage',
+      detail:
+        'Meals or coffee for artists and crew during install and show days (~$2,000\u2013$5,000 value).',
+    },
+    {
+      label: 'Travel & lodging for performing artists',
+      detail:
+        'Hotel rooms or flights for one or more featured artists (~$1,500\u2013$5,000 value).',
+    },
+    {
+      label: 'Print & signage',
+      detail:
+        'Sponsor banners, wall labels, programs, step-and-repeat (~$500\u2013$1,500 value).',
+    },
+    {
+      label: 'Additional artwork raffle prizes',
+      detail:
+        'Sean has donated one piece for the artwork raffle. Additional artists or sponsors are welcome to contribute work to expand the raffle (each donor publicly named).',
+    },
+  ];
+
+  /* ──────────────────────────── FAQ ──────────────────────────── */
 
   const faqs = [
     {
       q: 'What is BFTA\u2019s role at the Midwest Bitcoin Summit?',
-      a: 'Bitcoin for the Arts is joining as a curatorial partner — featuring artists, programming live work, and bringing the BFTA mission directly into the conference floor inside Generations, the gallery curated by Kyle Knight.',
+      a: 'Bitcoin for the Arts is joining as a curatorial partner \u2014 featuring artists, programming live work, and bringing the BFTA mission directly into the conference floor inside Generations, the gallery curated by Kyle Knight.',
     },
     {
-      q: 'Can a single sponsor combine Path A and Path B?',
-      a: 'Yes. A sponsor can name a specific artist (Path A) and take a curatorial tier (Path B) on the same agreement. The two stack.',
+      q: 'Can a single sponsor combine tiers?',
+      a: 'Yes. A sponsor can name a specific artist and take a curatorial tier on the same agreement. Tiers stack, and the recognition for each is delivered as described.',
     },
     {
       q: 'Are sponsorships tax-deductible?',
       a: `Yes. Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN ${ein}. Sponsorships are tax-deductible to the full extent allowed by law.`,
     },
     {
+      q: 'How does the Artist Funding Raffle work?',
+      a: 'The raffle is underwritten by a sponsor (the Raffle Underwriter tier). Participating artists submit an entry; one is drawn live on stage during the event. The winning artist receives a $2,500 Bitcoin micro-grant paid in the sponsor\u2019s name.',
+    },
+    {
+      q: 'How does the Artwork Raffle work?',
+      a: 'Open to any attendee. Tickets are sold during the event; the winner takes home an original artwork donated by featured artist Sean. Proceeds support BFTA\u2019s artist grants program.',
+    },
+    {
       q: 'When are artist and sponsor announcements going public?',
-      a: 'Artists and sponsors will be named publicly only after each is confirmed in writing. Subscribers to the BFTA newsletter are first to hear as pieces lock in.',
+      a: 'Artists and sponsors are named publicly only after each is confirmed in writing. Subscribers to the BFTA newsletter are first to hear as pieces lock in.',
     },
     {
       q: 'How do I get in touch?',
       a: `Email us at ${sponsorEmail}. Warm introductions are prioritized over cold outreach.`,
     },
   ];
+
+  /* ──────────────────────────── PAGE ──────────────────────────── */
 
   return (
     <main className="bg-background">
@@ -79,7 +282,7 @@ export default function MidwestPage() {
         imageAlt="Bitcoin for the Arts at the Midwest Bitcoin Summit · September 23–24, 2026, Columbus, Ohio."
         label="BFTA × Midwest Bitcoin Summit · Sept 23–24 · Columbus, OH"
         title="Where Culture Meets Sound Money."
-        description="Bitcoin for the Arts is co-curating Generations, the gallery and live programming inside the Midwest Bitcoin Summit. Two days. Working artists. The audience that already understands sound money — meeting the artists who deserve it."
+        description="Two days of live performances, visual art, a live painting, a podcast station, an artist panel, and a Lightning Lounge — co-curated inside Generations at the Midwest Bitcoin Summit. Working artists, paid in Bitcoin. The audience that already understands sound money — meeting the artists who deserve it."
         titleClassName="text-3xl sm:text-5xl"
         priority
       >
@@ -89,6 +292,12 @@ export default function MidwestPage() {
             className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
           >
             Sponsor an Artist →
+          </a>
+          <a
+            href="#volunteer"
+            className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/20"
+          >
+            Volunteer →
           </a>
           <Link
             href="/connect"
@@ -119,82 +328,146 @@ export default function MidwestPage() {
           </p>
         </section>
 
-        {/* ── Two Sponsor Paths ────────────────────────── */}
+        {/* ── Two Days at Generations (NEW: Programming) ────────────────────── */}
+        <section className="mt-16">
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            What&rsquo;s Happening
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            Two days at Generations.
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
+            Nine programming threads run across the two days of the summit. Most happen in parallel inside the gallery footprint. All of it is built to put working artists in front of a Bitcoin audience that can support them directly.
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {programming.map((p) => (
+              <div
+                key={p.title}
+                className="rounded-2xl border border-border bg-surface/60 p-6"
+              >
+                <h3 className="text-lg font-semibold tracking-tight text-foreground">
+                  {p.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{p.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ── How To Sponsor ────────────────────── */}
         <section className="mt-16">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
             How To Sponsor
           </div>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Two clean paths.
+            Sponsorship tiers.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            Any Bitcoin company, family office, or individual patron can pick the path that fits.
-            Sponsorships are tax-deductible to the full extent allowed by law — Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>.
+            Eight tiers. Pick the one that fits your organization. Sponsorships are tax-deductible to the full extent allowed by law — Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>. Tailored sponsorships above the Presenting tier are also welcome.
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {/* Path A */}
-            <div className="rounded-2xl border-2 border-accent bg-surface/60 p-6 sm:p-8">
-              <div className="text-xs font-semibold uppercase tracking-wide text-accent">
-                Path A
-              </div>
-              <h3 className="mt-2 text-2xl font-semibold tracking-tight">
-                Sponsor a Specific Artist
-              </h3>
-              <div className="mt-4 text-4xl font-semibold tracking-tight text-foreground">
-                $2,500
-              </div>
-              <div className="mt-1 text-xs uppercase tracking-wide text-muted">
-                per artist
-              </div>
-              <p className="mt-6 text-base leading-relaxed text-muted">
-                The sponsor&apos;s name and the artist&apos;s name appear together on the program. The artist is paid directly. The sponsor knows exactly which working artist their dollars put on stage in Columbus.
-              </p>
-              <a
-                href={`mailto:${sponsorEmail}?subject=Path%20A%20%E2%80%94%20Sponsor%20a%20Specific%20Artist`}
-                className="mt-6 inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
+            {sponsorTiers.map((tier) => (
+              <div
+                key={tier.name}
+                className={`rounded-2xl bg-surface/60 p-6 sm:p-8 ${
+                  tier.featured ? 'border-2 border-accent' : 'border border-border'
+                }`}
               >
-                Sponsor an Artist →
-              </a>
-            </div>
-
-            {/* Path B */}
-            <div className="rounded-2xl border border-border bg-surface/60 p-6 sm:p-8">
-              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-                Path B
+                <div className="flex items-baseline justify-between gap-3">
+                  <div>
+                    <div
+                      className={`text-xs font-semibold uppercase tracking-wide ${
+                        tier.featured ? 'text-accent' : 'text-muted'
+                      }`}
+                    >
+                      {tier.slots}
+                    </div>
+                    <h3 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
+                      {tier.name}
+                    </h3>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-3xl font-semibold tracking-tight text-foreground">
+                      {tier.price}
+                    </div>
+                  </div>
+                </div>
+                <ul className="mt-6 space-y-2 text-sm leading-relaxed text-muted">
+                  {tier.benefits.map((benefit, idx) => (
+                    <li key={idx} className="flex gap-2">
+                      <span aria-hidden="true" className="mt-2 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={`mailto:${sponsorEmail}?subject=Midwest%20Summit%20\u2014%20${encodeURIComponent(
+                    tier.name,
+                  )}`}
+                  className="mt-6 inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
+                >
+                  Discuss This Tier →
+                </a>
               </div>
-              <h3 className="mt-2 text-2xl font-semibold tracking-tight">
-                Sponsor BFTA&apos;s Curatorial Presence
-              </h3>
-              <p className="mt-4 text-base leading-relaxed text-muted">
-                Tiered sponsorship that supports the broader BFTA programming we&apos;re bringing to Columbus — across the artists, the experience, and the curatorial presence inside <em>Generations</em>.
-              </p>
-              <ul className="mt-6 space-y-3">
-                {pathBTiers.map((tier) => (
-                  <li
-                    key={tier.name}
-                    className="flex items-baseline justify-between border-b border-border pb-2 text-sm"
-                  >
-                    <span className="font-semibold text-foreground">{tier.name}</span>
-                    <span className="font-mono tabular-nums text-muted">{tier.price}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-sm leading-relaxed text-muted">
-                Tailored sponsorships above the Presenting tier are also welcome — please reach out.
-              </p>
-              <a
-                href={`mailto:${sponsorEmail}?subject=Path%20B%20%E2%80%94%20Curatorial%20Sponsorship`}
-                className="mt-6 inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
-              >
-                Discuss a Tier →
-              </a>
-            </div>
+            ))}
           </div>
 
-          <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted">
-            Our Midwest fundraising target is <strong className="text-foreground">$70,000–$80,000</strong> — the level that lets us bring working artists into Columbus and pay them like the working professionals they are.
+          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted">
+            Our Midwest fundraising target is <strong className="text-foreground">$80,000+</strong> — the level that lets us bring working artists into Columbus and pay them like the working professionals they are.
           </p>
+        </section>
+
+        {/* ── In-Kind Support ────────────────────── */}
+        <section className="mt-16">
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            Other Ways to Support
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            In-kind contributions.
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
+            Cash isn&rsquo;t the only way to support the event. Goods and services contributed in-kind are tax-deductible at fair market value, and each donor is publicly named. Below are the categories where in-kind support matters most.
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {inKindAsks.map((ask) => (
+              <div
+                key={ask.label}
+                className="rounded-2xl border border-border bg-surface/60 p-5"
+              >
+                <h3 className="text-base font-semibold tracking-tight text-foreground">
+                  {ask.label}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{ask.detail}</p>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href={`mailto:${sponsorEmail}?subject=Midwest%20Summit%20\u2014%20In-Kind%20Contribution`}
+            className="mt-8 inline-flex items-center justify-center rounded-md border-2 border-foreground/20 bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface"
+          >
+            Offer an In-Kind Contribution →
+          </a>
+        </section>
+
+        {/* ── Volunteer ────────────────────── */}
+        <section id="volunteer" className="mt-16 rounded-2xl border border-accent/30 bg-surface/60 p-6 sm:p-10">
+          <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+            Volunteer with Us
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+            Be in the room. Make it happen.
+          </h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
+            Two days, nine programming threads, working artists from across the country in one room — and a small core team holding it all together. If you can give time during install (Sept 22), the show days (Sept 23–24), strike (Sept 25), or pre-event remote help, sign up here. We&rsquo;ll be in touch as the event gets closer with specific roles and the run-of-show.
+          </p>
+
+          <div className="mt-8 max-w-2xl">
+            <MidwestVolunteerForm />
+          </div>
         </section>
 
         {/* ── The Generations Brief ────────────────────── */}
@@ -208,23 +481,9 @@ export default function MidwestPage() {
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
             <em>Generations</em> is a curated cultural installation inside the Midwest Bitcoin Summit, organized as four named zones across roughly a 100×60 footprint. It is curated by <strong className="text-foreground">Kyle Knight</strong>, with anchor partnerships from the <strong className="text-foreground">Human Rights Foundation</strong>, <strong className="text-foreground">Bitcoin Trading Cards</strong>, and <strong className="text-foreground">BSN</strong>. Bitcoin for the Arts is joining as a curatorial partner.
           </p>
-
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {generationsZones.map((zone) => (
-              <div
-                key={zone.name}
-                className="rounded-2xl border border-border bg-surface/60 p-6"
-              >
-                <h3 className="text-lg font-semibold tracking-tight text-foreground">
-                  {zone.name}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{zone.description}</p>
-              </div>
-            ))}
-          </div>
         </section>
 
-        {/* ── FAQ ──────────────────────────────────────── */}
+        {/* ── FAQ ────────────────────── */}
         <section className="mt-16">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
             FAQ
@@ -245,7 +504,7 @@ export default function MidwestPage() {
           </div>
         </section>
 
-        {/* ── Footer CTA ──────────────────────────────── */}
+        {/* ── Footer CTA ────────────────────── */}
         <section className="mt-16 rounded-2xl border border-border bg-surface/60 p-8 sm:p-10">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
             Stay close to this
@@ -254,7 +513,7 @@ export default function MidwestPage() {
             Be in the room when the lineup locks.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted">
-            Subscribers to the BFTA newsletter are the first to hear as artists and sponsors confirm. Get on the list, and follow our long-form research on the arts-funding economy on Substack.
+            Subscribers to the BFTA newsletter are the first to hear as artists and sponsors confirm. Get on the list to follow what we&rsquo;re building in Columbus.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
