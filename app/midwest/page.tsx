@@ -56,7 +56,7 @@ export default function MidwestPage() {
     {
       title: 'Live Broadcast to Nostr',
       detail:
-        'All performances streamed to Nostr in real time. The room reaches a global Bitcoin audience that can boost artists live.',
+        'All live music performances streamed to Nostr in real time. The room reaches a global Bitcoin audience that can boost the artists live during their sets.',
     },
     {
       title: 'Artist Funding Raffle',
@@ -66,7 +66,7 @@ export default function MidwestPage() {
     {
       title: 'Artwork Raffle',
       detail:
-        'Open to any attendee. The winner takes home an original work donated by featured artist Sean. One ticket, one chance at a piece of working art.',
+        'Open to any attendee. The winner takes home an original work donated by a featured artist. One ticket, one chance at a piece of working art.',
     },
   ];
 
@@ -236,7 +236,7 @@ export default function MidwestPage() {
     {
       label: 'Additional artwork raffle prizes',
       detail:
-        'Sean has donated one piece for the artwork raffle. Additional artists or sponsors are welcome to contribute work to expand the raffle (each donor publicly named).',
+        'A featured artist has already donated one piece for the artwork raffle. Additional artists or sponsors are welcome to contribute work to expand the raffle (each donor publicly named).',
     },
   ];
 
@@ -261,7 +261,7 @@ export default function MidwestPage() {
     },
     {
       q: 'How does the Artwork Raffle work?',
-      a: 'Open to any attendee. Tickets are sold during the event; the winner takes home an original artwork donated by featured artist Sean. Proceeds support BFTA\u2019s artist grants program.',
+      a: 'Open to any attendee. Tickets are sold during the event; the winner takes home an original artwork donated by a featured artist. Proceeds support BFTA\u2019s artist grants program.',
     },
     {
       q: 'When are artist and sponsor announcements going public?',

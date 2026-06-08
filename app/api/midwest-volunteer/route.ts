@@ -253,7 +253,7 @@ export async function POST(req: NextRequest) {
   const toEmail =
     getEnv('VOLUNTEER_TO_EMAIL') ??
     getEnv('NEWSLETTER_TO_EMAIL') ??
-    'volunteers@bitcoinforthearts.org';
+    'volunteer@bitcoinforthearts.org';
   const subject = `New Midwest volunteer: ${name}`.slice(0, 200);
   const text = [
     'New Midwest Bitcoin Summit volunteer signup (bitcoinforthearts.org/midwest)',
