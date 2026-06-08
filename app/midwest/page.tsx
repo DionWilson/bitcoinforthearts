@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
 import MidwestVolunteerForm from './MidwestVolunteerForm';
+import MidwestCountdown from './MidwestCountdown';
 
 export const metadata: Metadata = {
   title: 'BFTA at the Midwest Bitcoin Summit',
@@ -307,6 +308,38 @@ export default function MidwestPage() {
           </Link>
         </div>
       </FullBleedHero>
+
+      {/* ── Countdown Band ────────────────────────── */}
+      <section className="border-y border-border bg-foreground py-10 text-background sm:py-14">
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="text-center">
+            <p className="text-[10px] font-semibold uppercase tracking-widest opacity-70 sm:text-xs">
+              Counting down to Generations
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+              September 23–24, 2026 · Columbus, Ohio
+            </h2>
+          </div>
+
+          <div className="mt-8">
+            <MidwestCountdown />
+          </div>
+
+          <div className="mt-8 flex flex-col items-center gap-3 text-center">
+            <p className="max-w-xl text-sm leading-relaxed opacity-80">
+              The Midwest Bitcoin Summit runs both days at the Greater Columbus Convention Center, 10:00 AM – 5:00 PM. Generations is the gallery and live-programming room inside it.
+            </p>
+            <a
+              href="https://www.midwestbtc.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md border border-background/30 bg-background/10 px-6 py-3 text-sm font-semibold transition-colors hover:bg-background/20"
+            >
+              Visit the Midwest Bitcoin Summit →
+            </a>
+          </div>
+        </div>
+      </section>
 
       <div className="mx-auto max-w-6xl px-6 py-14">
         {/* ── Why Columbus, Why Now ────────────────────── */}
