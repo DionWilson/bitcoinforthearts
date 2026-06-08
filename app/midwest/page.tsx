@@ -245,7 +245,7 @@ export default function MidwestPage() {
   const faqs = [
     {
       q: 'What is BFTA\u2019s role at the Midwest Bitcoin Summit?',
-      a: 'Bitcoin for the Arts is co-curating Generations with Kyle Knight inside the Midwest Bitcoin Summit. Kyle leads and is the principal point of contact with the conference; BFTA programs the live performances, visual art, live painting, podcast station, artist panel, and Lightning Lounge inside the gallery.',
+      a: 'Bitcoin for the Arts is co-curating Generations with Kyle Knight inside the Midwest Bitcoin Summit. Together we program the gallery: live performances, visual art, live painting, podcast station, artist panel, and Lightning Lounge.',
     },
     {
       q: 'Can a single sponsor combine tiers?',
@@ -321,7 +321,7 @@ export default function MidwestPage() {
             Bitcoin conferences have grown into serious institutions. What has been quietly missing alongside them is a curatorial counterpart — a serious cultural room, with serious working artists, treated as central to the programming rather than peripheral to it. <em>Generations</em> is that room, and Columbus is where Bitcoin for the Arts is going to help build it.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            <em>Generations</em> is led by <strong className="text-foreground">Kyle Knight</strong> — a producer with deep roots in the Bitcoin culture world — and <strong className="text-foreground">co-curated by Bitcoin for the Arts</strong>. Kyle is our principal point of contact with the Midwest Bitcoin Summit and the curatorial lead; BFTA programs the live performances, visual art, live painting, podcast station, artist panel, and Lightning Lounge inside the 100×60 gallery footprint.
+            <em>Generations</em> is co-curated by <strong className="text-foreground">Kyle Knight</strong> — a producer with deep roots in the Bitcoin culture world — and <strong className="text-foreground">Bitcoin for the Arts</strong>. Together we program the gallery: live performances, visual art, live painting, the podcast station, the artist panel, and the Lightning Lounge inside a 100×60 footprint.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
             The audience is the reason. The room at the Midwest Summit is a crowd of Bitcoiners who already understand sound money — and who are, by every definition, the future patron base for the next generation of working artists. Bringing real artists into that room, paid in Bitcoin, supported by infrastructure that lets the audience zap them in real time, is exactly the kind of moment our 501(c)(3) was built to create.
@@ -479,7 +479,7 @@ export default function MidwestPage() {
             Generations.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            <em>Generations</em> is a curated cultural installation inside the Midwest Bitcoin Summit, organized as four named zones across roughly a 100×60 footprint. It is led by <strong className="text-foreground">Kyle Knight</strong> and <strong className="text-foreground">co-curated by Bitcoin for the Arts</strong>.
+            <em>Generations</em> is a curated cultural installation inside the Midwest Bitcoin Summit, organized as four named zones across roughly a 100×60 footprint. It is <strong className="text-foreground">co-curated by Kyle Knight and Bitcoin for the Arts</strong>.
           </p>
         </section>
 
