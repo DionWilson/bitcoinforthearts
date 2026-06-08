@@ -96,6 +96,16 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/MXUgrViBCaI?si=7CSkQGiV2BmLyrC2",
   },
   {
+    type: "episode",
+    episodeNumber: 7,
+    title:
+      "Share Your Bitcoin Journey: Episode 7 \u2013 Thomas Forsyth\u2019s General Handychap Path to Sound Money",
+    summary:
+      "London-based designer, maker, and engineer Thomas Forsyth\u2014whose work spans the Saatchi Gallery, Glastonbury Festival, the Wall Street Journal\u2019s Apple Car, and a Star Wars K-2SO build for Silicon Valley Comic Con\u2014shares why he calls himself a \u201Cgeneral handychap,\u201D how he discovered Bitcoin three times before it clicked, and the philosophical link between sound money and sound craft.",
+    thumbnail: "/SYBJ-web-EP7-Thomas-.png",
+    link: "https://youtu.be/ZepNitUDItg",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
