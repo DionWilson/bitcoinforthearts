@@ -2,7 +2,7 @@
 
 *Generations gallery · Greater Columbus Convention Center · September 23–24, 2026*
 
-**Status:** Draft v1 · written June 7, 2026 · BFTA internal · subject to board approval at Q3 meeting Tuesday July 7, 2026, 4:30 PM ET.
+**Status:** v2 · written June 7, 2026 · synced June 8, 2026 · BFTA internal · subject to board approval at Q3 meeting Tuesday July 7, 2026, 4:30 PM ET.
 
 ---
 
@@ -12,32 +12,60 @@
 
 ---
 
+## Updates since v1 *(June 7 → June 8, 2026)*
+
+A meaningful amount of state moved between v1 and v2. Key changes:
+
+1. **`/midwest` landing page is live** — full programming list, 8 sponsor tiers with detailed benefits, in-kind asks, volunteer signup form (Airtable-backed), live countdown to Sept 23, and link to midwestbtc.com.
+2. **Co-curator status with Kyle is publicly confirmed.** Public framing: BFTA and Kyle as equal co-curators of *Generations*. Internal framing (not public): Kyle is the principal point of contact with the conference and the curatorial lead given that he brought the opportunity in.
+3. **HRF / Bitcoin Trading Cards / BSN partner attributions removed publicly** until Kyle confirms what each partner is doing. They remain in his curatorial brief; we just don't surface them on the BFTA-controlled page.
+4. **Sponsor tier architecture expanded from 4 tiers to 8 tiers** with detailed benefits per tier. New tiers: Lightning Lounge Sponsor ($10K), Raffle Underwriter ($2,500), Visual Artist Stipend ($500). Curatorial Sponsor scaled from $7,500 → $15,000 with 2 slots.
+5. **Public fundraising target** updated from `$70K–$80K` → **`$80,000+`** to reflect the higher floor of the expanded tier menu.
+6. **Live programming defined publicly** — nine threads (live performances, visual art with Lightning QR codes, live painting, podcast station, panel, Lightning Lounge, Nostr broadcast, two raffles).
+7. **Two raffles confirmed and named:**
+   - **Artist Funding Raffle** — sponsor-underwritten $2,500 Bitcoin micro-grant to a randomly-selected applying artist
+   - **Artwork Raffle** — open to attendees, prize is donated artwork from a featured artist
+8. **In-kind asks defined** — 9 categories on the public page, including a flexible *"donated artwork (auction, raffle, or sale)"* category that accommodates a silent auction if enough work is donated.
+9. **Volunteer signup form live** at `/midwest`, wired to Airtable's new `Volunteers` table via `/api/midwest-volunteer`. Same defensive pattern as `/api/connect`.
+10. **Issue #11 newsletter** (Monday June 8 send) covers the BFF Warsaw screening, Episode 7 (Tom Forsyth), Camp Nakamoto / Ainsley, and the public Midwest landing page launch.
+
+What did *not* change: the five priorities, the parking lot, the 14-week calendar, the open decisions for Dion. Those frames still hold.
+
+---
+
 ## What's actually locked vs. open after the Kyle meeting
 
 ### Locked
 
-- **Live music IS approved at the venue** — performance area is 50–60 feet from the main speaker stage. Can be loud but not "rock concert" loud. *(This was an open question from Julie's note. It's now closed.)*
+- **Co-curator status with Kyle Knight is confirmed.** Public framing: equal co-curators of *Generations*. Internal: Kyle is principal point of contact with the conference and curatorial lead.
+- **Live music IS approved at the venue** — performance area is 50–60 feet from the main speaker stage. Can be loud but not "rock concert" loud.
 - **Stipend structure** — $2,500 per performing artist, $500 per visual artist.
 - **Two funding lanes are separate** — Kyle sources sponsors for the gallery/build/AV; BFTA sources sponsors for artist payments + BFTA's curatorial presence. Each side owns its own dollars.
 - **Excess BFTA fundraising flows to BFTA** — anything raised over the production cost stays with us.
-- **Julie has donated equipment** — material change to production economics.
-- **Production engineering — open question.** Original plan was Steven Ishizu ($1,000 PubKey scope, scaled up for Columbus). Kyle's meeting raised local OSU production talent as an alternative. **Decision needed this week** — see *Open Decisions*.
+- **Julie + Phantom Power Music have donated equipment** — material change to production economics. On-the-record confirmed in board email exchange June 1.
+- **Sponsor tier architecture (8 tiers, $80K+ target)** — public on `/midwest`. Presenting Sponsor is the only tier with a dedicated booth.
+- **Two raffles confirmed** — Artist Funding Raffle (sponsor-underwritten $2,500 grant) and Artwork Raffle (open to attendees, donated work as prize).
+- **Programming list (9 threads)** — public on `/midwest`.
+- **Live broadcast to Nostr** — confirmed for live music performances specifically.
+- **Volunteer pipeline live** — form on `/midwest`, Airtable-backed via `/api/midwest-volunteer`.
+- **Landing page live** — `bitcoinforthearts.org/midwest`.
 
 ### Open
 
-- Specific artist roster (8–10 performers + 8–15 visual artists)
-- Confirmed sponsor commitments (zero so far)
-- BFTA panel format and moderator
-- Lightning wallet partner
-- Documentation / photo / video team
-- Silent auction yes/no
-- Documentary submission to Bitcoin Film Fest 2027
+- **Production engineering decision** — Steven Ishizu (PubKey scope, scaled up) vs. local Columbus / OSU broadcast engineer. Email to Steven sent; awaiting his decision. **Decision needed by June 30.**
+- **Specific artist roster** — 6–10 performers + 8–15 visual artists. Invitations going out by June 20; RSVPs by July 15.
+- **Confirmed sponsor commitments** — zero in writing as of June 8. Outreach starts week of June 9.
+- **BFTA panel host/moderator** — internal default is Dion if no big-name moderator confirms by July 31.
+- **Lightning wallet partner** — outreach order: Cake Wallet / Wallet of Satoshi / Strike / Phoenix / Fold (priority list TBD per Dion).
+- **Documentation team** — photographer + videographer + on-site reporter. Confirmed names by August 1.
+- **Documentary submission to Bitcoin Film Fest 2027** — capture footage now, edit and submit Spring 2027.
 
 ### Risks
 
-- **Capital risk** — neither BFTA nor Kyle has the cash to underwrite a shortfall. If sponsor pledges land below $50K, we cannot deliver the event at the scale described publicly.
-- **Time risk** — 14 weeks to event. Sponsor sales cycles in B2B Bitcoin run 4–8 weeks. We need outbound moving by **June 9**.
-- **Distraction risk** — the meeting surfaced 14+ ideas. If we try to ship all of them, none ship at the level Julie's "we are not joining the pattern" line publicly committed BFTA to.
+- **Capital risk** — neither BFTA nor Kyle has the cash to underwrite a shortfall. If sponsor pledges land below ~$50K, we have to scale down (fewer artists, smaller production, less broadcast) and announce that scaling honestly.
+- **Time risk** — 15 weeks to event as of June 8. Sponsor sales cycles in B2B Bitcoin run 4–8 weeks. Outbound starts week of June 9.
+- **Distraction risk** — the parking lot below holds. Every "what if we also..." idea defers to October.
+- **Volunteer pipeline scaling risk** — Airtable now collects volunteers. If we get more than ~10 signups, we need a plan for how to organize them (roles, shifts, communication channels) in advance of Sept 22 install. Not urgent until volume materializes.
 
 ---
 
@@ -145,7 +173,7 @@ These are the choices the sponsor pitch and the partner conversations *cannot* h
 
 ## Money — the actual numbers
 
-**Goal:** $70,000 floor, $80,000 stretch (already public on `/midwest` and in Issue #10).
+**Goal:** $80,000+ public-facing target (set on `/midwest` and in Issue #11). Internal modeling against the 8-tier menu lands at ~$90K floor / $130K aggressive ceiling if all slots fill at the higher counts. $80K+ is the public number; the upside is private.
 
 **How it allocates:**
 
@@ -206,7 +234,7 @@ That's it. The list is short on purpose. If you do those six things by Friday Ju
 At the Q3 meeting July 7:
 
 1. **Formal approval of the Midwest pivot** as BFTA's 2026 flagship.
-2. **Approval of the $70K–$80K fundraising target** and the two-path sponsor structure.
+2. **Approval of the $80,000+ public fundraising target** and the 8-tier sponsor structure now live on `/midwest`.
 3. **Approval of the broadcast-engineer line item** (Steven or vetted equivalent) as a non-negotiable production cost.
 4. **Approval to defer all parked items** explicitly so the team isn't second-guessed in August.
 5. **Warm-intro contributions** from each board member to at least 1 priority sponsor target.
