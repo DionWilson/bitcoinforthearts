@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Generations — Sponsor Sheet | Bitcoin for the Arts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  /*  Print-friendly sponsor sheet for BFTA at the Midwest Bitcoin Summit.
+      Open in any browser, then File → Print → Save as PDF.
+      Recommended print settings: Letter size, no headers/footers, default margins, background graphics ON. */
+
+  :root {
+    --bfta-black: #000000;
+    --bfta-orange: #ff4f14;
+    --bfta-lime: #b3ff48;
+    --bfta-cream: #fffaf0;
+    --ink: #111111;
+    --muted: #5a5a5a;
+    --rule: #e5e1d6;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bfta-cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+  .page {
+    max-width: 7.5in;
+    margin: 0 auto;
+    padding: 0.5in 0.6in;
+    background: var(--bfta-cream);
+  }
+
+  header.cover {
+    border-bottom: 2px solid var(--bfta-black);
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 9pt;
+    color: var(--bfta-orange);
+    font-weight: 700;
+  }
+  h1 {
+    margin: 6px 0 4px;
+    font-size: 28pt;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .subtitle {
+    color: var(--ink);
+    margin: 8px 0 0;
+    font-size: 13pt;
+    font-weight: 500;
+  }
+  .lede {
+    margin: 16px 0 0;
+    font-size: 11pt;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .lede strong { color: var(--bfta-black); }
+
+  h2 {
+    font-size: 14pt;
+    margin: 26px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--rule);
+    font-weight: 700;
+    letter-spacing: -0.005em;
+  }
+  h3 {
+    font-size: 12pt;
+    margin: 18px 0 6px;
+    font-weight: 700;
+  }
+
+  p { margin: 0 0 10px; }
+
+  .key-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 18px;
+    margin: 16px 0 0;
+    font-size: 10.5pt;
+  }
+  .key-facts dt {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 8.5pt;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .key-facts dd {
+    margin: 0 0 8px;
+    font-weight: 500;
+  }
+
+  .section-intro {
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+
+  .tier {
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 0 0 14px;
+    background: #ffffff;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .tier.featured {
+    border: 2px solid var(--bfta-orange);
+    background: #fff6f1;
+  }
+  .tier-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 4px;
+    gap: 12px;
+  }
+  .tier-title {
+    font-size: 13pt;
+    font-weight: 700;
+    margin: 0;
+  }
+  .tier-price {
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--bfta-black);
+    white-space: nowrap;
+  }
+  .tier-slots {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 8.5pt;
+    color: var(--muted);
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  .tier ul {
+    margin: 8px 0 0;
+    padding-left: 18px;
+  }
+  .tier li {
+    margin: 0 0 4px;
+    line-height: 1.45;
+    font-size: 10.5pt;
+  }
+
+  .in-kind-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 8px 0 0;
+  }
+  .in-kind {
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 10px 12px;
+    background: #ffffff;
+    page-break-inside: avoid;
+  }
+  .in-kind-label {
+    font-weight: 700;
+    font-size: 10.5pt;
+    margin: 0 0 4px;
+  }
+  .in-kind-detail {
+    margin: 0;
+    font-size: 9.5pt;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  .callout {
+    background: #ffffff;
+    border-left: 3px solid var(--bfta-orange);
+    padding: 12px 16px;
+    margin: 14px 0;
+    font-size: 10.5pt;
+  }
+  .callout-strong {
+    background: var(--bfta-lime);
+    border-left: 3px solid var(--bfta-black);
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: 11pt;
+    color: var(--bfta-black);
+  }
+
+  .programming-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 14px;
+    margin: 10px 0 0;
+  }
+  .programming-item {
+    padding: 8px 0;
+    border-top: 1px solid var(--rule);
+    font-size: 10pt;
+  }
+  .programming-item strong {
+    display: block;
+    margin: 0 0 2px;
+    font-size: 10.5pt;
+  }
+
+  .contact-block {
+    margin-top: 30px;
+    padding: 18px 20px;
+    background: var(--bfta-black);
+    color: var(--bfta-cream);
+    border-radius: 6px;
+  }
+  .contact-block h2 {
+    color: var(--bfta-cream);
+    border-bottom-color: var(--bfta-orange);
+    margin-top: 0;
+  }
+  .contact-block a {
+    color: var(--bfta-lime);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .contact-block .ein {
+    font-size: 9.5pt;
+    color: #cccccc;
+    margin-top: 14px;
+  }
+
+  .footer {
+    margin-top: 26px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 9pt;
+    color: var(--muted);
+  }
+
+  /* Page-break helpers for clean PDF output */
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  @media print {
+    body, .page {
+      background: var(--bfta-cream);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page { padding: 0.4in 0.5in; }
+    a { color: var(--ink); text-decoration: none; }
+    .contact-block a { color: var(--bfta-lime); }
+  }
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<header class="cover">
+  <p class="eyebrow">BFTA × Midwest Bitcoin Summit · Sponsor Sheet</p>
+  <h1>Generations.</h1>
+  <p class="subtitle">Where culture meets sound money.</p>
+
+  <dl class="key-facts">
+    <div><dt>Dates</dt><dd>September 23–24, 2026</dd></div>
+    <div><dt>Venue</dt><dd>Greater Columbus Convention Center, Columbus, Ohio</dd></div>
+    <div><dt>Co-curated by</dt><dd>Kyle Knight &amp; Bitcoin for the Arts</dd></div>
+    <div><dt>Audience</dt><dd>Bitcoiners, working artists, cultural patrons</dd></div>
+  </dl>
+
+  <p class="lede">
+    <strong>Bitcoin for the Arts (BFTA)</strong> is a 501(c)(3) nonprofit that pays working artists directly in Bitcoin and maintains a long-term reserve so what we raise today supports artists for generations. We are co-curating <em>Generations</em>, the gallery and live programming inside the Midwest Bitcoin Summit — two days of working artists in a curated cultural room, with sponsorship opportunities from $500 to $25,000.
+  </p>
+</header>
+
+<h2>The Opportunity</h2>
+<p>
+  Bitcoin conferences have grown into serious institutions. What has been quietly missing alongside them is a curatorial counterpart — a serious cultural room, with serious working artists, treated as central to the programming rather than peripheral to it. <em>Generations</em> is that room, and Columbus is where Bitcoin for the Arts is going to help build it.
+</p>
+
+<p>
+  The audience is the reason. The room at the Midwest Bitcoin Summit is a crowd of Bitcoiners who already understand sound money — and who are, by every definition, the future patron base for the next generation of working artists. Bringing real artists into that room, paid in Bitcoin, supported by infrastructure that lets the audience zap them in real time, is exactly the kind of moment our 501(c)(3) was built to create.
+</p>
+
+<div class="callout-strong">
+  <strong>Total fundraising target: $80,000+.</strong> The level of commitment that lets us bring working artists into Columbus and pay them like the working professionals they are. Tiers below from $500 to $25,000.
+</div>
+
+<h2>What's in the Room</h2>
+<p class="section-intro">
+  Two days of programming inside <em>Generations</em>, our co-curated cultural footprint at the conference. Specific artists and run-of-show being finalized.
+</p>
+
+<div class="programming-grid">
+  <div class="programming-item"><strong>Live Music Performances</strong>Working artists performing across both days, with broadcast sound by a professional engineer.</div>
+  <div class="programming-item"><strong>Visual Artist Showcase</strong>Featured artists on the gallery walls, with Lightning QR codes on every piece.</div>
+  <div class="programming-item"><strong>Live Painting</strong>A featured artist creating a piece in real time across the run of the event.</div>
+  <div class="programming-item"><strong>Share Your Bitcoin Journey — Live</strong>On-site podcast station capturing live tapings of BFTA's flagship podcast.</div>
+  <div class="programming-item"><strong>Artist Discussion Panel</strong>A moderated conversation about Bitcoin and the working artist's life.</div>
+  <div class="programming-item"><strong>Lightning Lounge</strong>Staffed Lightning wallet onboarding for first-time users.</div>
+  <div class="programming-item"><strong>Live Broadcast to Nostr</strong>Live music performances streamed to Nostr in real time.</div>
+  <div class="programming-item"><strong>Two Raffles</strong>An artist-funding raffle ($2,500 micro-grant) and an artwork raffle (donated piece, attendee winner).</div>
+</div>
+
+<div class="page-break"></div>
+
+<h2>Sponsorship Tiers</h2>
+
+<div class="tier featured">
+  <div class="tier-head">
+    <p class="tier-title">Presenting Sponsor</p>
+    <p class="tier-price">$25,000</p>
+  </div>
+  <p class="tier-slots">1 slot (possibly 2)</p>
+  <ul>
+    <li>Co-branded as <em>"Bitcoin for the Arts at Generations, presented by [Sponsor]"</em></li>
+    <li><strong>Dedicated branded booth</strong> inside the gallery floor (the only tier that includes a booth)</li>
+    <li>Prominent logo placement on the BFTA wall installation, panel stage backdrop, and podcast set</li>
+    <li>2-minute speaking slot at the BFTA mission panel</li>
+    <li>One named-artist sponsorship included ($2,500 value)</li>
+    <li>First mention in every BFTA newsletter from announcement through year-end</li>
+    <li>Sponsor branding throughout the post-event recap video</li>
+    <li>Permanent listing on BFTA Sponsors page and in the 2026 transparency report</li>
+    <li>Tax-deductible to the full extent of the law</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Curatorial Sponsor</p>
+    <p class="tier-price">$15,000</p>
+  </div>
+  <p class="tier-slots">2 slots</p>
+  <ul>
+    <li>Standing banner placement inside the gallery (no booth)</li>
+    <li>Logo on the gallery wall as the named "Visual Artists Sponsor"</li>
+    <li>Named recognition with the visual artist program — <em>"Visual Artists Program presented by [Sponsor]"</em></li>
+    <li>Sponsor logo on the livestream lower-third during gallery walkthroughs</li>
+    <li>Two named-artist sponsorships included</li>
+    <li>Featured in BFTA newsletter and post-event recap</li>
+    <li>Permanent listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Lightning Lounge Sponsor</p>
+    <p class="tier-price">$10,000</p>
+  </div>
+  <p class="tier-slots">1 slot</p>
+  <ul>
+    <li>The Lightning Lounge takes the sponsor's name — <em>"The [Sponsor] Lightning Lounge"</em></li>
+    <li>On-site staffed onboarding station inside the gallery, branded throughout</li>
+    <li>Every attendee being walked through their first Lightning wallet downloads the sponsor's app</li>
+    <li>Sponsor logo on Lightning Lounge signage, the program, and the livestream</li>
+    <li>2-minute demo or speaking slot during the panel programming</li>
+    <li>Featured in BFTA newsletter and post-event recap</li>
+    <li>Permanent listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Programming Sponsor</p>
+    <p class="tier-price">$7,500</p>
+  </div>
+  <p class="tier-slots">1 slot</p>
+  <ul>
+    <li>Logo on the panel stage backdrop</li>
+    <li>Named credit in the live podcast taping intro/outro — <em>"This live taping of Share Your Bitcoin Journey is presented by [Sponsor]"</em></li>
+    <li>Logo on livestream lower-third during the panel</li>
+    <li>One named-artist sponsorship included</li>
+    <li>Featured in BFTA newsletter and post-event recap</li>
+    <li>Permanent listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Sponsor an Artist</p>
+    <p class="tier-price">$2,500</p>
+  </div>
+  <p class="tier-slots">8–10 slots</p>
+  <ul>
+    <li>Named program credit — <em>"[Artist] presented by [Sponsor]"</em></li>
+    <li>Personal thank-you from the artist during their set introduction</li>
+    <li>Logo on artist's program card and livestream lower-third during their performance</li>
+    <li>Sponsor name in post-event social posts about that artist</li>
+    <li>Listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Raffle Underwriter</p>
+    <p class="tier-price">$2,500</p>
+  </div>
+  <p class="tier-slots">1 slot</p>
+  <ul>
+    <li>The Artist Funding Raffle is named — <em>"The [Sponsor] Artist Funding Raffle"</em></li>
+    <li>Live raffle moment on stage with sponsor named</li>
+    <li>Sponsor logo on all raffle materials and livestream lower-third during the draw</li>
+    <li>Winning artist receives the $2,500 Bitcoin micro-grant in the sponsor's name</li>
+    <li>Listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Friend of BFTA at Midwest</p>
+    <p class="tier-price">$1,000</p>
+  </div>
+  <p class="tier-slots">Open</p>
+  <ul>
+    <li>Logo on a shared "Made possible by" wall card</li>
+    <li>Mention in BFTA newsletter and post-event recap</li>
+    <li>Listing on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <div class="tier-head">
+    <p class="tier-title">Visual Artist Stipend</p>
+    <p class="tier-price">$500</p>
+  </div>
+  <p class="tier-slots">8–15 slots</p>
+  <ul>
+    <li>Named credit on the visual artist's wall card — <em>"[Artist], stipend supported by [Sponsor]"</em></li>
+    <li>Listing in event program and on BFTA Sponsors page</li>
+    <li>Tax-deductible</li>
+  </ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2>In-Kind Contributions</h2>
+<p class="section-intro">
+  Cash isn't the only way to support the event. Goods and services contributed in-kind are tax-deductible at fair market value, and each donor is publicly named.
+</p>
+
+<div class="in-kind-grid">
+  <div class="in-kind">
+    <p class="in-kind-label">A/V production support</p>
+    <p class="in-kind-detail">Beyond the equipment Phantom Power Music has donated — additional gear, monitor mixing, or stage backline (~$2,000–$5,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Photography &amp; videography</p>
+    <p class="in-kind-detail">On-site coverage of performances, gallery, and panel + edited recap reel (~$3,000–$5,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Hardware wallets for artists</p>
+    <p class="in-kind-detail">A great fit for any hardware vendor who wants to put their device in the hands of working artists who will talk about it on the broadcast (~$1,500–$3,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Backline gear for live music</p>
+    <p class="in-kind-detail">Instruments, amps, drum kit, keyboard. A real contribution to the live performance program (~$1,500–$3,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Live painting materials</p>
+    <p class="in-kind-detail">Canvases, paints, brushes, easels for the featured live painter (~$300–$800 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Catering &amp; beverage</p>
+    <p class="in-kind-detail">Meals or coffee for artists and crew during install and show days (~$2,000–$5,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Travel &amp; lodging for artists</p>
+    <p class="in-kind-detail">Hotel rooms or flights for one or more featured artists (~$1,500–$5,000 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Print &amp; signage</p>
+    <p class="in-kind-detail">Sponsor banners, wall labels, programs, step-and-repeat (~$500–$1,500 value).</p>
+  </div>
+  <div class="in-kind">
+    <p class="in-kind-label">Donated artwork</p>
+    <p class="in-kind-detail">Artists donating original work for use in a silent auction, the artwork raffle, or direct sale. Proceeds support BFTA's artist grants program. Each donor publicly named.</p>
+  </div>
+</div>
+
+<h2>Why This Matters</h2>
+<p>
+  Bitcoin for the Arts pays working artists directly in Bitcoin through quarterly micro-grants and longer-term residencies. Every donation flows through a public allocation rule we call <strong>55/30/10/5</strong>: 55% to artists, 30% to programs, 10% to operations, and 5% to a long-term Bitcoin reserve we call the <strong>HODL Vault</strong>. What we raise today supports artists for generations.
+</p>
+
+<div class="callout">
+  Sponsorships at <em>Generations</em> directly fund artist payments at the event and grow BFTA's reserve for future grant cycles. Every sponsor is publicly credited and counted in our annual transparency report.
+</div>
+
+<div class="contact-block">
+  <h2>Get Involved</h2>
+  <p>Sponsorships, in-kind contributions, and partnership conversations all start with a 15-minute call.</p>
+  <p style="margin-top:14px;">
+    <strong>Email:</strong> <a href="mailto:info@bitcoinforthearts.org">info@bitcoinforthearts.org</a><br/>
+    <strong>Web:</strong> <a href="https://www.bitcoinforthearts.org/midwest">bitcoinforthearts.org/midwest</a>
+  </p>
+  <p class="ein">
+    Bitcoin for the Arts, Inc. · 501(c)(3) tax-exempt nonprofit · EIN 41-2642260 · Founded 2025 · Headquartered in New York, NY
+  </p>
+</div>
+
+<p class="footer">
+  Sound money for timeless creators. Empowering artists with Bitcoin micro-grants &amp; workshops.<br/>
+  bitcoinforthearts.org
+</p>
+
+</div>
+</body>
+</html>
