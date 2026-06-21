@@ -106,6 +106,16 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/ZepNitUDItg",
   },
   {
+    type: "episode",
+    episodeNumber: 8,
+    title:
+      "Share Your Bitcoin Journey: Episode 8 \u2013 James Kintore\u2019s Materials-First Path from Sydney to Sound Money",
+    summary:
+      "Australian interior designer James Kintore\u2014founder of Kintore Design and co-creator of the furniture brand Matt and Kin\u2014shares how the same materiality that drives his work in walnut and cast bronze led him to Bitcoin, why he calls Bitcoin \u201Can energy agreement,\u201D and what made him leave Australia in 2025 to rebuild his life on a Bitcoin standard in Costa Rica.",
+    thumbnail: "/sybj-web-ep8-james-kintore.png",
+    link: "https://youtu.be/TjghYaEnCIM",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
