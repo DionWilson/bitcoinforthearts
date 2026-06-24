@@ -148,10 +148,9 @@ the start, or did you discover it along the way?
 life. That's a serious sentence. What did that investment look like,
 and at what point did you know you had to keep going?
 
-13. The book has been endorsed by Vijay Boyapati, Del Bigtree,
-Matthew Lysiak, Joel Bomgar, and Efrat Fenigson. That's a serious
-list. How did those endorsements come about, and what did it mean
-to you to have those names attached to your first book?
+13. You've shared that adult readers hit "eureka moments" reading
+the book to their kids. Walk us through one. A specific parent, a
+specific child, the moment Bitcoin clicked. What did they say?
 
 
 THE WINNEBAGO YEAR
@@ -179,10 +178,10 @@ his mom to buy Bitcoin in 2012 has grown up. What does the family
 Bitcoin standard look like across two generations, and what has he
 taught you that you wouldn't have learned otherwise?
 
-18. We are both creatives in different mediums. You write, I dance.
-Both of our work depends on being paid by people who value culture.
-What does our seat in the room let us see about Bitcoin that the
-tech-native Bitcoin community sometimes misses?
+18. Parents on a Bitcoin standard end up teaching their kids things
+most kids don't grow up with. Low time preference, sound money,
+valuing time over things, skin in the game. What have your kids
+learned from living this that you didn't grow up with?
 
 19. Your mission is clear. You want this book in Barnes & Noble. You
 want it in classrooms. You want children to understand sound money
@@ -225,8 +224,8 @@ NOTES ON ORDER
     artifact she has built and the thing that travels best in the
     audience after the episode airs. Q12 (generational wealth
     invested) is the line most likely to produce a quotable
-    moment. Q13 (endorsements) is fan-service to the Bitcoin world
-    and a credibility moment for her.
+    moment. Q13 (a specific reader's eureka moment) gives Lindey
+    a story to tell about real impact on real families.
 
   - Q14-16 are the Winnebago year. Visceral, visual, currently
     happening. Q16 (the counterfactual: what does this season look
@@ -235,9 +234,11 @@ NOTES ON ORDER
     Don't rush.
 
   - Q17-19 are the worldview pivot. Q17 (Bennett, intergenerational
-    Bitcoin) is uniquely her story. Q18 (creators in the room) is
-    your Dion-and-Lindey personal connection moment. Q19 (the
-    distribution question) is the practical mission ask.
+    Bitcoin) is uniquely her story. Q18 (what kids learn from
+    living on a Bitcoin standard) bridges her parenting to the
+    book's mission and gets at the values layer beyond the
+    mechanics. Q19 (the distribution question) is the practical
+    mission ask.
 
   - Q20 sets up the Midwest Summit collaboration in real time on
     air. The audience hears that the book is going to be read to
