@@ -76,58 +76,62 @@ export default function MidwestPage() {
   const sponsorTiers = [
     {
       name: 'Presenting Sponsor',
-      price: '$60,000',
-      slots: '1 slot',
+      price: '$25,000',
+      slots: '1 slot (possibly 2)',
       featured: true,
-      pdf: '/sponsor-proposals/midwest-2026/bfta-midwest-sponsorship-60k.pdf',
       benefits: [
-        'Underwrites the full BFTA Bitcoin Arts Park build to professional production standards',
-        'Lead-billing presence on all signage, the 30 ft overhead banner, and at the entrance to the footprint',
-        'Pre-roll recognition in the produced documentary recap and on every live podcast taping recorded on-site',
-        'Acknowledgment at the live Dirty Coin presentation, at every Secondary Stage performance, and during BFTA\u2019s on-camera Artist Stories interviews',
-        'Featured donor story in BFTA newsletter and a dedicated post on the BFTA Substack',
-        'On-chain receipt for BTC contribution, plus full 501(c)(3) tax-deductible acknowledgment for USD',
-        'Right of first option on Presenting Tier sponsorship at BFTA Bitcoin Arts Park activations through 2027',
-      ],
-    },
-    {
-      name: 'Bitcoin Arts Park Founding Patron',
-      price: '$15,000',
-      slots: '3 slots',
-      featured: false,
-      pdf: '/sponsor-proposals/midwest-2026/bfta-midwest-sponsorship-15k.pdf',
-      benefits: [
-        'Brings Dirty Coin live with director Alana Mediavilla and funds core Bitcoin Arts Park operations',
-        'Named recognition on signage inside the BFTA Bitcoin Arts Park footprint',
-        'Acknowledgment at the live Dirty Coin presentation and at Secondary Stage performances',
-        'Donor feature in BFTA newsletter and on the BFTA Substack post-event',
-        'On-chain receipt for BTC contribution, plus full 501(c)(3) tax-deductible acknowledgment for USD',
-        'Standing invitation to all BFTA Bitcoin Arts Park activations at future Bitcoin conferences',
+        'Co-branded as "Bitcoin Arts Park, presented by [Sponsor]"',
+        'Lead-billing logo on the 30 ft overhead banner spanning the full BFTA footprint',
+        'Prominent logo across all three zones \u2014 the Cinema, the Living Room, and the Gallery wall',
+        'Acknowledgment at every Secondary Stage performance and at each on-site podcast taping',
+        'One named-performance sponsorship included ($2,500 value)',
+        'First mention in every BFTA newsletter from announcement through year-end',
+        'Sponsor branding throughout the post-event recap video',
+        'Permanent listing on BFTA Sponsors page and in the 2026 transparency report',
+        'Tax-deductible to the full extent of the law',
       ],
     },
     {
       name: 'Cinema Sponsor',
-      price: '$7,500',
-      slots: '1 slot',
+      price: '$15,000',
+      slots: '1\u20132 slots',
       featured: false,
       benefits: [
         'The BFTA Film Cinema takes the sponsor\u2019s name \u2014 "The [Sponsor] Cinema"',
-        'Sponsor logo on cinema entrance signage and on every silent-disco headphone placard',
+        'Logo on cinema entrance signage, the projection wall header, and every silent-disco headphone placard',
         'Named credit before each film screening across both days',
+        'Two named-performance sponsorships included',
         'Featured in BFTA newsletter and post-event recap',
         'Permanent listing on BFTA Sponsors page',
         'Tax-deductible',
       ],
     },
     {
-      name: 'Secondary Stage Sponsor',
-      price: '$5,000',
+      name: 'Lightning Lounge Sponsor',
+      price: '$10,000',
       slots: '1 slot',
       featured: false,
       benefits: [
-        'Named credit on the Secondary Stage performances \u2014 "Performances presented by [Sponsor]"',
-        'Logo on stage backdrop signage and in the Nostr livestream lower-third during sets',
-        'Acknowledgment by the BFTA team before each performance',
+        'The Living Room Lightning demo zone takes the sponsor\u2019s name \u2014 "The [Sponsor] Lightning Lounge"',
+        'On-site staffed Lightning wallet activation in the Living Room, branded throughout',
+        'Lightning QR codes on every silent auction piece routed through the sponsor\u2019s wallet (every zap demos their product)',
+        'Sponsor logo on every Lightning QR placard, the program, and the livestream',
+        '2-minute demo slot during a Secondary Stage break',
+        'Featured in BFTA newsletter and post-event recap',
+        'Permanent listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Programming Sponsor',
+      price: '$7,500',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'Named credit on the Secondary Stage program \u2014 "Performances presented by [Sponsor]"',
+        'Named credit in the live podcast taping intro/outro \u2014 "This live taping of Share Your Bitcoin Journey is presented by [Sponsor]"',
+        'Sponsor logo on the Nostr livestream lower-third during performances',
+        'One named-performance sponsorship included',
         'Featured in BFTA newsletter and post-event recap',
         'Permanent listing on BFTA Sponsors page',
         'Tax-deductible',
@@ -141,14 +145,39 @@ export default function MidwestPage() {
       benefits: [
         'Named program credit \u2014 "[Artist] presented by [Sponsor]"',
         'Personal thank-you from the artist during their set introduction',
-        'Logo on artist program card and livestream lower-third during their performance',
+        'Logo on artist\u2019s program card and on the livestream lower-third during their performance',
         'Sponsor name in post-event social posts about that artist',
         'Listing on BFTA Sponsors page',
         'Tax-deductible',
       ],
     },
     {
-      name: 'Founding Friend of Bitcoin Arts Park',
+      name: 'Silent Auction Underwriter',
+      price: '$2,500',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'The peer-to-peer Lightning silent auction is named \u2014 "The [Sponsor] Silent Auction"',
+        'Live closing moment on stage with sponsor named',
+        'Sponsor logo on every auction QR placard, the Gallery wall header, and the livestream',
+        'Proceeds support a Bitcoin micro-grant for a featured BFTA artist in the sponsor\u2019s name',
+        'Listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Featured Artist Stipend',
+      price: '$500',
+      slots: '4\u20138 slots',
+      featured: false,
+      benefits: [
+        'Named credit on the featured artist\u2019s program card \u2014 "[Artist], stipend supported by [Sponsor]"',
+        'Listing in event program and on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
+      name: 'Friend of Bitcoin Arts Park',
       price: '$1,000',
       slots: 'Open',
       featured: false,
@@ -372,7 +401,7 @@ export default function MidwestPage() {
             Sponsorship tiers.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            Six tiers. Pick the one that fits your organization. Sponsorships are tax-deductible to the full extent allowed by law \u2014 Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>. Tailored sponsorships above the Presenting tier are also welcome. Full Presenting Tier and Founding Patron proposals are available as downloadable PDFs below.
+            Eight tiers. Pick the one that fits your organization. Sponsorships are tax-deductible to the full extent allowed by law \u2014 Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>. Tailored sponsorships above the Presenting tier are also welcome.
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -410,32 +439,20 @@ export default function MidwestPage() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6 flex flex-wrap gap-3">
-                  <a
-                    href={`mailto:${sponsorEmail}?subject=Midwest%20Summit%20\u2014%20${encodeURIComponent(
-                      tier.name,
-                    )}`}
-                    className="inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
-                  >
-                    Discuss This Tier →
-                  </a>
-                  {'pdf' in tier && tier.pdf ? (
-                    <a
-                      href={tier.pdf as string}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-md border border-foreground/20 bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface"
-                    >
-                      View Full Proposal (PDF) →
-                    </a>
-                  ) : null}
-                </div>
+                <a
+                  href={`mailto:${sponsorEmail}?subject=Midwest%20Summit%20\u2014%20${encodeURIComponent(
+                    tier.name,
+                  )}`}
+                  className="mt-6 inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
+                >
+                  Discuss This Tier →
+                </a>
               </div>
             ))}
           </div>
 
           <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted">
-            Our Midwest fundraising target is <strong className="text-foreground">$60,000</strong> at the Presenting Tier. Founding Patron sponsorships at $15,000 each cover the live <em>Dirty Coin</em> presentation with Alana Mediavilla and the core operational backbone. Every dollar is itemized in the proposal PDFs above.
+            Our Midwest fundraising target is <strong className="text-foreground">$80,000+</strong> \u2014 the level that lets us build Bitcoin Arts Park to professional production standards, pay the working artists like the professionals they are, and turn the weekend into a body of evergreen content for the BFTA community.
           </p>
         </section>
 
