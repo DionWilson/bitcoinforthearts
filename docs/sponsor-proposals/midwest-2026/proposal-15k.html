@@ -172,46 +172,64 @@
       color: #000;
     }
 
-    /* Component block */
-    .component {
+    /* Budget block (single unified ask) */
+    .budget-block {
       margin-top: 18px;
-      padding-top: 14px;
-      border-top: 1px solid #000;
-      page-break-inside: avoid;
     }
 
-    .component .head {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 10px;
-    }
-
-    .component .head .label {
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 500;
-      font-size: 9pt;
-      color: #000;
-    }
-
-    .component .head .total {
+    .budget-section-label {
+      margin-top: 22px;
+      margin-bottom: 6px;
       font-size: 13pt;
       font-weight: 500;
       color: #000;
+      padding-top: 12px;
+      border-top: 1px solid #000;
     }
 
-    .component .title {
-      font-size: 14pt;
-      font-weight: 400;
-      margin-bottom: 6px;
+    .budget-section-label:first-of-type {
+      margin-top: 6px;
     }
 
-    .component .blurb {
+    .budget-section-blurb {
       font-size: 10pt;
       line-height: 1.5;
       margin-bottom: 12px;
       color: #000;
+    }
+
+    /* Budget summary at-a-glance */
+    .budget-summary {
+      margin: 16px 0 22px 0;
+      padding: 14px 0;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+
+    .budget-summary .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 6px 0;
+      font-size: 10.5pt;
+    }
+
+    .budget-summary .row .pct {
+      font-size: 9pt;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #000;
+      margin-left: 12px;
+    }
+
+    .budget-summary .row.total {
+      border-top: 1px solid #000;
+      margin-top: 8px;
+      padding-top: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 9.5pt;
     }
 
     /* Budget table */
@@ -393,7 +411,7 @@
     <h1>Generations: A Cultural Footprint at the Midwest Bitcoin Summit</h1>
     <p class="subtitle">A two-day BFTA-programmed Bitcoin Arts Park, with a live presentation of <em>Dirty Coin</em> by award-winning director Alana Mediavilla.</p>
 
-    <p class="meta-line">Bitcoin for the Arts, Inc. &middot; 501(c)(3) &middot; Payable in fiat or BTC &middot; Fundable in full or by component</p>
+    <p class="meta-line">Bitcoin for the Arts, Inc. &middot; 501(c)(3) &middot; Payable in fiat or BTC</p>
 
     <p class="lead-copy">
       Bitcoin for the Arts is mounting a dedicated cultural footprint on the floor of the 2026 Midwest Bitcoin Summit. A 30&apos;-wide BFTA Bitcoin Arts Park with film screenings, live performances by Ainsley Costello and other working artists, a peer-to-peer Lightning silent auction, and a live Q&amp;A presentation of <em>Dirty Coin</em>, the most-screened Bitcoin documentary in the world, by director Alana Mediavilla. This sponsorship makes that footprint possible and brings <em>Dirty Coin</em> to the heartland.
@@ -449,14 +467,20 @@
 
   <section>
     <h2>W H A T &nbsp; T H E &nbsp; S P O N S O R S H I P &nbsp; F U N D S</h2>
+    <p>
+      A $15,000 sponsorship covers a single, unified ask: the live <em>Dirty Coin</em> presentation by Alana Mediavilla in Columbus and the operational backbone of BFTA&apos;s Bitcoin Arts Park footprint. The budget below shows exactly how every dollar is allocated.
+    </p>
 
-    <div class="component">
-      <div class="head">
-        <span class="label">Component A</span>
-        <span class="total">~$5,000</span>
-      </div>
-      <p class="title">Bring <em>Dirty Coin</em> &amp; Alana Mediavilla to Columbus</p>
-      <p class="blurb">
+    <p class="kerned" style="margin-top:18px;">B U D G E T &nbsp; A T &nbsp; A &nbsp; G L A N C E</p>
+    <div class="budget-summary">
+      <div class="row"><span>Director presentation (Alana Mediavilla &amp; <em>Dirty Coin</em>)</span><span>$5,000 <span class="pct">33.3%</span></span></div>
+      <div class="row"><span>BFTA Bitcoin Arts Park operational backbone</span><span>$10,000 <span class="pct">66.7%</span></span></div>
+      <div class="row total"><span>Total Request</span><span>$15,000</span></div>
+    </div>
+
+    <div class="budget-block">
+      <p class="budget-section-label">Director Presentation &mdash; Bring Alana Mediavilla &amp; <em>Dirty Coin</em> to Columbus</p>
+      <p class="budget-section-blurb">
         A live presentation and audience Q&amp;A of <em>Dirty Coin</em>, the most-screened Bitcoin documentary in the world (500+ screenings, 200+ cities, 23+ awards), inside the BFTA Bitcoin Arts Park footprint. Hosted by director Alana Mediavilla, founder of Campo Libre. Estimated using the filmmaker&apos;s own delivered figures.
       </p>
       <table class="budget">
@@ -465,17 +489,11 @@
         <tr><td>Ground transport &amp; logistics</td><td>$400</td></tr>
         <tr><td>Screening prep: master, captions, shipping</td><td>$1,500</td></tr>
         <tr><td>Filmmaker honorarium &amp; per diem</td><td>$900</td></tr>
-        <tr class="subtotal"><td>Subtotal</td><td>$5,000</td></tr>
+        <tr class="subtotal"><td>Director Presentation Subtotal</td><td>$5,000</td></tr>
       </table>
-    </div>
 
-    <div class="component">
-      <div class="head">
-        <span class="label">Component B</span>
-        <span class="total">~$10,000</span>
-      </div>
-      <p class="title">BFTA Bitcoin Arts Park Operations</p>
-      <p class="blurb">
+      <p class="budget-section-label">BFTA Bitcoin Arts Park &mdash; Operational Backbone</p>
+      <p class="budget-section-blurb">
         Core operational backbone of the 30&apos;-wide BFTA footprint on the Expo Hall floor and the Secondary Stage performance programming. Built to Ahmed Designs construction-intent spec; itemized from the booth and event delivery budget.
       </p>
       <table class="budget">
@@ -485,7 +503,7 @@
         <tr><td>Show services (power, drayage, Wi-Fi)</td><td>$1,200</td></tr>
         <tr><td>Performer honoraria (Secondary Stage)</td><td>$1,000</td></tr>
         <tr><td>Hospitality, supplies, shipping, contingency</td><td>$800</td></tr>
-        <tr class="subtotal"><td>Subtotal</td><td>$10,000</td></tr>
+        <tr class="subtotal"><td>Operations Subtotal</td><td>$10,000</td></tr>
       </table>
     </div>
 
@@ -496,7 +514,7 @@
 
     <div class="fallback">
       <div class="heading">If the full $15,000 is not raised</div>
-      <p>If the campaign falls short of the full request, Bitcoin for the Arts will deploy any committed funds to the operational backbone of the BFTA Bitcoin Arts Park (Component B). <em>Dirty Coin</em> will still be presented at the Summit through a decentralized rental of the film, without director travel. Donors will receive a full reconciliation against actuals after the Summit.</p>
+      <p>If the campaign falls short of the full ask, Bitcoin for the Arts will deploy any committed funds first to the operational backbone of the BFTA Bitcoin Arts Park. <em>Dirty Coin</em> will still be presented at the Summit through a decentralized rental of the film, without director travel. Donors will receive a full reconciliation against actuals after the Summit.</p>
     </div>
   </section>
 

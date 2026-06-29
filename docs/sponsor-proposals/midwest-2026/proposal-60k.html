@@ -166,45 +166,63 @@
       color: #000;
     }
 
-    .component {
+    .budget-block {
       margin-top: 18px;
-      padding-top: 14px;
-      border-top: 1px solid #000;
-      page-break-inside: avoid;
     }
 
-    .component .head {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 10px;
-    }
-
-    .component .head .label {
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 500;
-      font-size: 9pt;
-      color: #000;
-    }
-
-    .component .head .total {
+    .budget-section-label {
+      margin-top: 22px;
+      margin-bottom: 6px;
       font-size: 13pt;
       font-weight: 500;
       color: #000;
+      padding-top: 12px;
+      border-top: 1px solid #000;
     }
 
-    .component .title {
-      font-size: 14pt;
-      font-weight: 400;
-      margin-bottom: 6px;
+    .budget-section-label:first-of-type {
+      margin-top: 6px;
     }
 
-    .component .blurb {
+    .budget-section-blurb {
       font-size: 10pt;
       line-height: 1.5;
       margin-bottom: 12px;
       color: #000;
+    }
+
+    /* Budget summary at-a-glance */
+    .budget-summary {
+      margin: 16px 0 22px 0;
+      padding: 14px 0;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+
+    .budget-summary .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 6px 0;
+      font-size: 10.5pt;
+    }
+
+    .budget-summary .row .pct {
+      font-size: 9pt;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #000;
+      margin-left: 12px;
+    }
+
+    .budget-summary .row.total {
+      border-top: 1px solid #000;
+      margin-top: 8px;
+      padding-top: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 9.5pt;
     }
 
     table.budget {
@@ -363,7 +381,7 @@
     <h1>Generations: Underwrite the Cultural Footprint of the Midwest Bitcoin Summit</h1>
     <p class="subtitle">Underwrite the full BFTA Bitcoin Arts Park, two days of programmed performances, a live presentation of <em>Dirty Coin</em> by Alana Mediavilla, and the entire artist-first operational backbone.</p>
 
-    <p class="meta-line">Bitcoin for the Arts, Inc. &middot; 501(c)(3) &middot; Payable in fiat or BTC &middot; Fundable in full or by component</p>
+    <p class="meta-line">Bitcoin for the Arts, Inc. &middot; 501(c)(3) &middot; Payable in fiat or BTC</p>
 
     <p class="lead-copy">
       A 30&apos;-wide BFTA Bitcoin Arts Park on the Expo Hall floor. A film cinema running independent Bitcoin-aligned documentaries. A Living Room with Lightning wallet activation and merchandise counter. A Gallery with peer-to-peer Lightning silent auction. Two days of Secondary Stage performances by Ainsley Costello and other working artists paid in Bitcoin. A live presentation and Q&amp;A of <em>Dirty Coin</em> by director Alana Mediavilla. The Presenting Tier sponsorship underwrites the full build and establishes the donor as the lead patron of BFTA&apos;s 2026 Midwest footprint.
@@ -422,15 +440,21 @@
   <!-- PAGE 3: WHAT THE SPONSORSHIP FUNDS -->
   <section>
     <h2>W H A T &nbsp; T H E &nbsp; S P O N S O R S H I P &nbsp; F U N D S</h2>
+    <p>
+      A $60,000 sponsorship covers a single, unified ask: the live <em>Dirty Coin</em> presentation by Alana Mediavilla in Columbus and the full operational build of BFTA&apos;s Bitcoin Arts Park footprint. The budget below shows exactly how every dollar is allocated.
+    </p>
 
-    <div class="component">
-      <div class="head">
-        <span class="label">Component A</span>
-        <span class="total">~$5,000</span>
-      </div>
-      <p class="title">Bring <em>Dirty Coin</em> &amp; Alana Mediavilla to Columbus</p>
-      <p class="blurb">
-        A live presentation and audience Q&amp;A of <em>Dirty Coin</em>, the most-screened Bitcoin documentary in the world (500+ screenings, 200+ cities, 23+ awards), inside the BFTA Bitcoin Arts Park footprint. Hosted by director Alana Mediavilla, founder of Campo Libre.
+    <p class="kerned" style="margin-top:18px;">B U D G E T &nbsp; A T &nbsp; A &nbsp; G L A N C E</p>
+    <div class="budget-summary">
+      <div class="row"><span>Director presentation (Alana Mediavilla &amp; <em>Dirty Coin</em>)</span><span>$5,000 <span class="pct">8.3%</span></span></div>
+      <div class="row"><span>BFTA Bitcoin Arts Park full build &amp; programming</span><span>$55,000 <span class="pct">91.7%</span></span></div>
+      <div class="row total"><span>Total Request</span><span>$60,000</span></div>
+    </div>
+
+    <div class="budget-block">
+      <p class="budget-section-label">Director Presentation &mdash; Bring Alana Mediavilla &amp; <em>Dirty Coin</em> to Columbus</p>
+      <p class="budget-section-blurb">
+        A live presentation and audience Q&amp;A of <em>Dirty Coin</em>, the most-screened Bitcoin documentary in the world (500+ screenings, 200+ cities, 23+ awards), inside the BFTA Bitcoin Arts Park footprint. Hosted by director Alana Mediavilla, founder of Campo Libre. Estimated using the filmmaker&apos;s own delivered figures.
       </p>
       <table class="budget">
         <tr><td>Round-trip travel, San Juan &harr; Columbus</td><td>$1,200</td></tr>
@@ -438,17 +462,11 @@
         <tr><td>Ground transport &amp; logistics</td><td>$400</td></tr>
         <tr><td>Screening prep: master, captions, shipping</td><td>$1,500</td></tr>
         <tr><td>Filmmaker honorarium &amp; per diem</td><td>$900</td></tr>
-        <tr class="subtotal"><td>Subtotal</td><td>$5,000</td></tr>
+        <tr class="subtotal"><td>Director Presentation Subtotal</td><td>$5,000</td></tr>
       </table>
-    </div>
 
-    <div class="component">
-      <div class="head">
-        <span class="label">Component B</span>
-        <span class="total">~$55,000</span>
-      </div>
-      <p class="title">BFTA Bitcoin Arts Park &mdash; Full Build &amp; Programming</p>
-      <p class="blurb">
+      <p class="budget-section-label">BFTA Bitcoin Arts Park &mdash; Full Build, Programming &amp; Documentation</p>
+      <p class="budget-section-blurb">
         The complete 30&apos;-wide footprint built to professional production standards, two days of curated artist programming on the Secondary Stage, full A/V production and documentation, hospitality, marketing, and operational backbone. Built to the Ahmed Designs construction-intent spec, itemized below.
       </p>
       <table class="budget">
@@ -459,13 +477,13 @@
         <tr><td>Furniture, fixtures, and signage</td><td>$3,500</td></tr>
         <tr><td>Show services (power drops, drayage, dedicated booth Wi-Fi, labor)</td><td>$3,800</td></tr>
         <tr><td>Performer honoraria, artist travel, and Secondary Stage programming (4 to 6 artists)</td><td>$8,000</td></tr>
-        <tr><td>Film festival licensing &amp; cinema operations (Dirty Coin + additional features)</td><td>$2,400</td></tr>
+        <tr><td>Film festival licensing &amp; cinema operations (<em>Dirty Coin</em> + additional features)</td><td>$2,400</td></tr>
         <tr><td>Live podcast taping &amp; on-camera Artist Stories production at the booth</td><td>$3,500</td></tr>
         <tr><td>Hospitality (artist + crew meals, green room provisions, day-of hospitality)</td><td>$1,800</td></tr>
         <tr><td>Marketing &amp; pre-event distribution (newsletter ads, social, print collateral)</td><td>$2,500</td></tr>
         <tr><td>Lightning hardware, merchandise inventory, and donation infrastructure</td><td>$1,200</td></tr>
         <tr><td>BFTA staff &amp; volunteer travel and on-site coordination</td><td>$1,500</td></tr>
-        <tr class="subtotal"><td>Subtotal</td><td>$55,000</td></tr>
+        <tr class="subtotal"><td>Bitcoin Arts Park Subtotal</td><td>$55,000</td></tr>
       </table>
     </div>
 
@@ -476,7 +494,7 @@
 
     <div class="fallback">
       <div class="heading">If the full $60,000 is not raised</div>
-      <p>If the campaign falls short of the full request, Bitcoin for the Arts will scale the build to match committed funding and deploy any committed funds first to the operational backbone of the BFTA Bitcoin Arts Park (Component B). <em>Dirty Coin</em> will still be presented at the Summit through a decentralized rental of the film, without director travel, if Component A is not separately funded. Donors will receive a full reconciliation against actuals after the Summit.</p>
+      <p>If the campaign falls short of the full ask, Bitcoin for the Arts will scale the build to match committed funding and deploy any committed funds first to the operational backbone of the BFTA Bitcoin Arts Park. <em>Dirty Coin</em> will still be presented at the Summit through a decentralized rental of the film, without director travel, if the director presentation allocation is not separately covered. Donors will receive a full reconciliation against actuals after the Summit.</p>
     </div>
   </section>
 
