@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BFTA Sponsorship Proposal · Midwest Bitcoin Summit · $15,000</title>
+  <style>
+    @page {
+      size: Letter;
+      margin: 0.6in 0.75in;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #000;
+      background: #FFFFFF;
+      font-size: 10pt;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .kerned {
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-weight: 500;
+      font-size: 8.5pt;
+      color: #000;
+    }
+
+    /* Header strip */
+    .doc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #000;
+      margin-bottom: 22px;
+    }
+
+    .doc-header .logo {
+      height: 64px;
+      width: auto;
+      display: block;
+    }
+
+    .doc-header .meta {
+      text-align: right;
+      font-size: 8.5pt;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #000;
+      line-height: 1.55;
+    }
+
+    .doc-header .meta strong { font-weight: 600; }
+
+    /* Section blocks */
+    section {
+      margin-top: 18px;
+      page-break-inside: avoid;
+    }
+
+    section.tight { margin-top: 14px; }
+
+    section h2 {
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-weight: 500;
+      font-size: 8.5pt;
+      color: #000;
+      margin-bottom: 8px;
+    }
+
+    section p {
+      margin-bottom: 9px;
+      line-height: 1.55;
+    }
+
+    .lead {
+      font-size: 12pt;
+      line-height: 1.45;
+      margin-bottom: 14px;
+      font-weight: 400;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      gap: 16px;
+      margin: 12px 0 4px 0;
+      padding-top: 12px;
+      border-top: 1px solid #000;
+    }
+
+    .stats .stat { flex: 1; }
+
+    .stats .stat .number {
+      font-weight: 300;
+      font-size: 26pt;
+      line-height: 1;
+      letter-spacing: -0.5px;
+      color: #000;
+      margin-bottom: 4px;
+    }
+
+    .stats .stat .caption {
+      font-size: 8.5pt;
+      line-height: 1.35;
+      color: #000;
+    }
+
+    /* Budget summary */
+    .budget-summary {
+      margin: 10px 0 16px 0;
+      padding: 12px 0;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+
+    .budget-summary .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 5px 0;
+      font-size: 10pt;
+    }
+
+    .budget-summary .row .pct {
+      font-size: 8.5pt;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #000;
+      margin-left: 10px;
+    }
+
+    .budget-summary .row.total {
+      border-top: 1px solid #000;
+      margin-top: 6px;
+      padding-top: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 9.5pt;
+    }
+
+    /* Allocation block */
+    .alloc-label {
+      margin-top: 14px;
+      margin-bottom: 4px;
+      font-size: 11pt;
+      font-weight: 500;
+      color: #000;
+      padding-top: 10px;
+      border-top: 1px solid #000;
+    }
+
+    .alloc-label:first-of-type {
+      margin-top: 4px;
+    }
+
+    .alloc-blurb {
+      font-size: 9.5pt;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      color: #000;
+    }
+
+    /* Budget table */
+    table.budget {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin-top: 4px;
+    }
+
+    table.budget tr { border-bottom: 1px solid #000; }
+    table.budget tr:first-child { border-top: 1px solid #000; }
+
+    table.budget td {
+      padding: 6px 0;
+      vertical-align: top;
+    }
+
+    table.budget td:last-child {
+      text-align: right;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    table.budget tr.subtotal {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 8.5pt;
+    }
+
+    /* Single-row alloc summary (for Alana, no breakdown) */
+    .alloc-single {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      font-size: 9.5pt;
+      margin-top: 6px;
+    }
+
+    .alloc-single .amount {
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Outcomes list */
+    ul.clean {
+      list-style: none;
+      margin: 6px 0;
+    }
+
+    ul.clean li {
+      padding: 7px 0;
+      border-bottom: 1px solid #000;
+      line-height: 1.45;
+      font-size: 9.5pt;
+    }
+
+    ul.clean li:first-child { border-top: 1px solid #000; }
+
+    /* Total */
+    .total-request {
+      margin-top: 14px;
+      padding: 10px 0;
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .total-request .label {
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      font-size: 10pt;
+    }
+
+    .total-request .amount {
+      font-size: 18pt;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+    }
+
+    /* Fallback */
+    .fallback {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: 1px solid #000;
+      font-size: 9pt;
+      line-height: 1.5;
+      page-break-inside: avoid;
+    }
+
+    .fallback .heading {
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 600;
+      font-size: 8.5pt;
+      margin-bottom: 5px;
+    }
+
+    /* Closing */
+    .closing {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #000;
+    }
+
+    .closing .signature {
+      margin-top: 10px;
+      font-size: 9.5pt;
+      line-height: 1.55;
+    }
+
+    .closing .signature strong { display: block; margin-top: 4px; }
+
+    .page-break { page-break-after: always; }
+
+    strong { font-weight: 600; }
+    em { font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: WHO WE ARE -->
+  <div class="doc-header">
+    <img class="logo" src="file:///tmp/bfta-logo.png" alt="Bitcoin for the Arts">
+    <div class="meta">
+      <strong>Sponsorship Proposal</strong><br>
+      Midwest Bitcoin Summit 2026<br>
+      Sept 23&ndash;24 &middot; Columbus, OH
+    </div>
+  </div>
+
+  <section class="tight">
+    <h2>W H O &nbsp; W E &nbsp; A R E</h2>
+    <p class="lead">
+      Bitcoin for the Arts is a 501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, education, and sovereign funding tools. We are the first nonprofit paying artists exclusively in Bitcoin.
+    </p>
+    <p>
+      Our work spans original podcast journalism, weekly editorial publishing, an 8-part educational webinar series for artists, micro-grant deployment, a public Artist Directory, and on-the-ground cultural programming at major Bitcoin conferences. We are a startup nonprofit operating with limited resources, building the patronage model that the arts and the Bitcoin movement both need.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="number">10</div>
+        <div class="caption"><em>Share Your Bitcoin Journey</em> podcast episodes with artists from 5 countries</div>
+      </div>
+      <div class="stat">
+        <div class="number">14</div>
+        <div class="caption">Weekly newsletter issues with a growing Substack on arts &amp; sound money</div>
+      </div>
+      <div class="stat">
+        <div class="number">8</div>
+        <div class="caption">Educational webinars on practical Bitcoin adoption for artists</div>
+      </div>
+      <div class="stat">
+        <div class="number">#1</div>
+        <div class="caption">Founding Bitcoin Producer of the Golden Globe winning <em>Six Billion Dollar Man</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>T H E &nbsp; O P P O R T U N I T Y</h2>
+    <p>
+      The Midwest Bitcoin Summit returns to the Greater Columbus Convention Center on <strong>September 23 and 24, 2026</strong>. BFTA has secured a dedicated 30&apos;-wide footprint on the Expo Hall floor and access to the Secondary Stage for lunch-hour performances on both days. We call this footprint <strong>Bitcoin Arts Park</strong>.
+    </p>
+    <p>
+      Inside the footprint: a curated film cinema, a Living Room brand and Lightning wallet demo zone, a Gallery wall with peer-to-peer Lightning silent auction, and a merchandise and donation counter. On the Secondary Stage, two days of programmed live performances by Ainsley Costello and other working artists on a Bitcoin standard. And, anchoring the cinema, a live presentation and Q&amp;A of <em>Dirty Coin</em>, the most-screened Bitcoin documentary in the world, by director Alana Mediavilla.
+    </p>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- PAGE 2: WHAT THE SPONSORSHIP FUNDS -->
+  <section class="tight">
+    <h2>W H A T &nbsp; T H E &nbsp; S P O N S O R S H I P &nbsp; F U N D S</h2>
+    <p>
+      This is a single, unified $15,000 ask. The budget below shows exactly where every dollar is allocated.
+    </p>
+
+    <div class="budget-summary">
+      <div class="row"><span>Director appearance &mdash; Alana Mediavilla &amp; <em>Dirty Coin</em></span><span>$5,000 <span class="pct">33.3%</span></span></div>
+      <div class="row"><span>BFTA Bitcoin Arts Park operations</span><span>$10,000 <span class="pct">66.7%</span></span></div>
+      <div class="row total"><span>Total Request</span><span>$15,000</span></div>
+    </div>
+
+    <p class="alloc-label">Director Appearance &mdash; Alana Mediavilla &amp; <em>Dirty Coin</em></p>
+    <p class="alloc-blurb">
+      A $5,000 stipend supporting Alana&apos;s travel, lodging, ground transport, screening preparation, and honorarium for her live presentation and audience Q&amp;A of <em>Dirty Coin</em> at the BFTA Bitcoin Arts Park.
+    </p>
+    <div class="alloc-single">
+      <span>Director appearance stipend (Alana Mediavilla, Campo Libre)</span>
+      <span class="amount">$5,000</span>
+    </div>
+
+    <p class="alloc-label">BFTA Bitcoin Arts Park &mdash; Operational Backbone</p>
+    <p class="alloc-blurb">
+      Core operational build of the 30&apos;-wide BFTA footprint and the Secondary Stage performance programming. Built to the Ahmed Designs construction-intent spec, itemized below.
+    </p>
+    <table class="budget">
+      <tr><td>Booth structure (modular base, 3 zones, install &amp; dismantle)</td><td>$3,500</td></tr>
+      <tr><td>A/V package (projection, monitor, headphones, media players)</td><td>$2,000</td></tr>
+      <tr><td>Furniture, lighting, and signage</td><td>$1,500</td></tr>
+      <tr><td>Show services (power, drayage, Wi-Fi)</td><td>$1,200</td></tr>
+      <tr><td>Performer honoraria (Secondary Stage)</td><td>$1,000</td></tr>
+      <tr><td>Hospitality, supplies, shipping, contingency</td><td>$800</td></tr>
+      <tr class="subtotal"><td>Operations Subtotal</td><td>$10,000</td></tr>
+    </table>
+
+    <div class="total-request">
+      <span class="label">T O T A L &nbsp; R E Q U E S T</span>
+      <span class="amount">$15,000</span>
+    </div>
+
+    <div class="fallback">
+      <div class="heading">If the full $15,000 is not raised</div>
+      <p>If committed funding falls short of the full ask, BFTA will deploy any committed funds first to the operational backbone of the BFTA Bitcoin Arts Park. <em>Dirty Coin</em> will still be presented at the Summit through a decentralized rental of the film, without director travel. Donors will receive a full reconciliation against actuals within 30 days of the Summit.</p>
+    </div>
+  </section>
+
+  <div class="page-break"></div>
+
+  <!-- PAGE 3: OUTCOMES, RECOGNITION, CONTACT -->
+  <section class="tight">
+    <h2>O U T C O M E S &nbsp; &amp; &nbsp; D E L I V E R A B L E S</h2>
+    <ul class="clean">
+      <li><strong>Live <em>Dirty Coin</em> presentation and audience Q&amp;A</strong> at the 2026 Midwest Bitcoin Summit, hosted by director Alana Mediavilla, inside the BFTA Bitcoin Arts Park footprint.</li>
+      <li><strong>Two days of live cultural programming</strong> on the Secondary Stage, featuring Ainsley Costello and other working artists paid in Bitcoin.</li>
+      <li><strong>A documented Bitcoin Arts Park</strong> with photo, video, and on-chain receipts published to BFTA&apos;s newsletter, Substack, and social channels post-event.</li>
+      <li><strong>Audience reach</strong>: an estimated 3,000+ heartland attendees plus reciprocal access traffic, and BFTA&apos;s growing newsletter, Substack, and podcast audiences.</li>
+      <li><strong>A post-Summit reconciliation report</strong> with actuals against budget, distributed to all donors within 30 days.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>D O N O R &nbsp; R E C O G N I T I O N</h2>
+    <p>Sponsors at the $15,000 level are recognized as <strong>Bitcoin Arts Park Founding Patrons</strong>:</p>
+    <ul class="clean">
+      <li><strong>Named recognition</strong> on signage inside the BFTA Bitcoin Arts Park footprint at the Midwest Bitcoin Summit.</li>
+      <li><strong>Acknowledgment</strong> at the live <em>Dirty Coin</em> presentation and at Secondary Stage performances introduced by the BFTA team.</li>
+      <li><strong>A donor feature</strong> in BFTA&apos;s newsletter and on the BFTA Substack post-event, with the donor&apos;s preferred attribution.</li>
+      <li><strong>On-chain receipt</strong> issued via BFTA for any BTC contribution, plus a full 501(c)(3) tax-deductible acknowledgment letter for any USD contribution.</li>
+      <li><strong>Standing invitation</strong> to all BFTA Bitcoin Arts Park activations at future Bitcoin conferences.</li>
+    </ul>
+  </section>
+
+  <section class="closing">
+    <h2>C O N T A C T</h2>
+    <p>Bitcoin for the Arts welcomes the chance to discuss this proposal in person or by call.</p>
+
+    <div class="signature">
+      <strong>Dion Wilson</strong>
+      Executive Director, Bitcoin for the Arts, Inc.<br>
+      Email: dion@bitcoinforthearts.org &middot; Web: bitcoinforthearts.org<br>
+      Newsletter &amp; Substack: bitcoinforthearts.substack.com
+    </div>
+  </section>
+
+</body>
+</html>
