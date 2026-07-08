@@ -65,17 +65,22 @@ Not a group of kids themselves, but they can amplify to hundreds of families.
 Homeschool co-op leaders will say yes when we make the ask concrete, low-friction, and safe. In every email and call, lead with:
 
 - **Free admission to the summit** for children in the group and their parents/chaperones for the reading window.
-- **A dedicated reading room / quiet space** (not the show floor). We are actively scoping this with Andrew (venue director) on Thursday.
+- **A featured live reading on the summit floor.** The reading is intentionally staged in a **high-visibility BFTA area** — either at our booth on the show floor or on the Summit's Secondary Stage — so the children are treated as *featured guests* of the event. Foot traffic will stop and listen; the children become part of the summit's public programming. Think a bookstore author reading with a small live audience, not a tucked-away side room. BFTA staff will manage the environment: chairs arranged for the group, parents seated with their children, calm and welcoming energy throughout. Exact location will be confirmed after our Thursday meeting with the venue director and shared with the co-op leader once the group commits.
 - **A physical hardcover copy of *Bitcoin: A Treasure to HODL* for every child** who attends, signed by Lindey. Lindey has a 10,000-copy print run and has told us she wants to put books in hands.
 - **A short live reading (15–20 minutes) plus Q&A with the author (10–15 minutes)** — total commitment about 30–45 minutes.
-- **Parents are welcome to stay** for the whole event.
+- **Parents are welcome and expected** to stay for the whole event.
 - **Curriculum-worthy content.** Lindey's book has a glossary and a "Did You Know" section — it counts as a language-arts + financial-literacy + author-visit combo for the co-op's year.
+- **Flexible timing.** Default target is a **lunchtime slot on either Tuesday, September 23 or Wednesday, September 24, 2026**. If lunchtime doesn't fit the co-op's schedule, we will coordinate a different hour that does — the co-op picks first, and BFTA works around them. Final time and exact spot inside the venue lock together once the group confirms interest.
 - **Optional: a BFTA-hosted mini financial-literacy Q&A** immediately after the reading (10 minutes) that kids can attend or skip. Age-appropriate. No "buy Bitcoin" talk — just sound money, saving, giving, and the value of time.
 - **Optional transportation help** if a group needs it (we can budget a shared van / bus contribution for a co-op of 10+ kids).
+
+**Design note.** The reading is a *visibility play* for BFTA — this is exactly why we want a public spot rather than a closed room. The film screenings of *Dirty Coin* and *The Six Billion Dollar Man* need the quiet, dedicated room; the author reading needs the live audience. Do not conflate the two when talking to venue partners.
 
 ---
 
 ## Pitch — Christian homeschool version
+
+Use this for Tier 1 Christian co-ops (Home On The Rock, CACH, Linworth, Tapestry, Cornerstone, Mid-Ohio Christian, COCHC) and for any Christian statewide multiplier such as CHEO. Lindey's faith is named plainly. Proverbs on honest weights and measures is cited because it is genuinely how Lindey talks about money.
 
 **Subject:** A free Columbus author visit worth 30 minutes of your co-op's year
 
@@ -91,8 +96,8 @@ Lindey's story is worth knowing before you decide. She lost her husband Chuck to
 
 Here's the concrete ask:
 
-- **When:** One reading window on either September 23 or September 24, 2026 — whichever your families prefer.
-- **Where:** A quiet, dedicated room at the Midwest Bitcoin Summit convention venue in Columbus (we are working with the venue director this week to hold the room). Parents are welcome and expected.
+- **When:** A live reading window on either **Tuesday, September 23** or **Wednesday, September 24, 2026**, targeting the lunchtime hour. If lunchtime does not fit [Group name]'s schedule, tell us what does and we will coordinate around your day.
+- **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit in Columbus — either at BFTA's booth on the main floor or on the Summit's Secondary Stage. Your children are the featured guests. Think a live bookstore author reading with a small standing audience, not a tucked-away side room. BFTA staff arrange the chairs, seat the parents with their children, and hold the space calm and welcoming from start to finish. We finalize the exact spot after the venue meeting this week and share it with you as soon as [Group name] commits.
 - **What:** Lindey reads her book aloud to the children, then a short Q&A. About 30–45 minutes total.
 - **What every child leaves with:** A signed hardcover copy of *Bitcoin: A Treasure to HODL*, at no cost to your families.
 - **Cost to your co-op:** Zero. Bitcoin For The Arts covers admission for the children and their parents for the reading window. We can also help with transportation if [Group name] would like us to sponsor a shared van for 10 or more kids.
@@ -116,6 +121,8 @@ P.S. If your co-op's calendar doesn't have room for a group visit this fall, wou
 
 ## Pitch — Secular / inclusive homeschool version
 
+Use this for Tier 2 secular / inclusive co-ops (Firelight, Columbus Unschoolers, Learning Tree, GATHRE, L.E.A.F., Columbus Area Students at Home, Secular Homeschoolers of Central Ohio, D.A.S.H.) and for secular statewide multipliers such as Ohio Homeschooling Parents. No faith language. Leads with the accidental-author story, the book's craft, and the financial-literacy framing.
+
 **Subject:** Free author visit for your Columbus co-op — Seuss-style children's book, September
 
 Hi [Leader's first name],
@@ -130,8 +137,8 @@ Lindey did not set out to be an author. She lost her husband to cancer in 2024 a
 
 The concrete offer:
 
-- **When:** One reading window on September 23 or 24, 2026 — you pick the time that works for your families.
-- **Where:** A quiet, dedicated room at the Midwest Bitcoin Summit venue in Columbus. Parents welcome.
+- **When:** A live reading window on **Tuesday, September 23** or **Wednesday, September 24, 2026** — default target is lunchtime, but if that doesn't work for [Group name]'s schedule, we build around whatever hour does.
+- **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit venue in Columbus — either at BFTA's booth on the main floor or on the summit's Secondary Stage. Think a live bookstore author reading with a small standing audience — your children are the featured guests. BFTA staff arrange chairs, seat parents with their children, and hold the environment calm and welcoming. We confirm the exact spot after our venue meeting this week and share it with you as soon as [Group name] commits.
 - **What:** Live reading of the book (15–20 minutes) plus a Q&A with Lindey (10–15 minutes). Roughly 30–45 minutes total.
 - **What every child leaves with:** A signed hardcover of the book, free.
 - **Cost to your co-op:** Zero. We cover the children's admission and their parents for the reading window. If your group would like transportation help for 10+ kids, we can budget a shared van contribution.
@@ -150,6 +157,52 @@ Phone: [YOUR PHONE]
 Email: [YOUR EMAIL]
 
 P.S. If a formal group visit isn't the right fit, would you be open to sharing this with parents in your network individually? Any child who shows up leaves with a signed book.
+
+---
+
+## Pitch — General / classical / financial-literacy version
+
+Use this as the *default* pitch when a group's orientation isn't clearly Christian or secular-inclusive — classical academies, statewide multipliers (CHEO, Ohio Homeschooling Parents), Metro Parks Homeschoolers, hybrid academies, or anywhere you want to lead with craft and curriculum rather than tone. It leans on the author's craft, the book's design, and the homeschool-mom-to-homeschool-mom bridge, and it acknowledges Lindey's faith honestly without making faith the frame.
+
+**Subject:** A children's-book author visit for your Columbus co-op — Sept 23–24
+
+Hi [Leader's first name],
+
+My name is Dion Wilson, and I'm the founder of Bitcoin For The Arts — a 501(c)(3) nonprofit that pays working artists and helps them tell their stories. I'm writing because we have a **live author reading** planned in Columbus in late September and I'd like to invite [Group name] families to attend as our featured guests, at no cost.
+
+The author is **Lindey Magee**, a Mississippi homeschool mom who wrote a rhyming, Seuss-style children's picture book called ***Bitcoin: A Treasure to HODL***. A few reasons your co-op leadership may want to look at this one:
+
+- **The book is a real book.** Not print-on-demand, not a novelty. Lindey invested a full $30,000 into a 10,000-copy offset-printed hardcover with dust jacket, black-linen boards, a professional illustrator (Kenny Knowley), a glossary, and a "Did You Know" section. It is designed to be a keepsake children ask to re-read.
+- **Nationally distributed.** *A Treasure to HODL* debuted at Bitcoin 2025 in Las Vegas and now sits in the Ingram catalog — the same distributor Barnes & Noble, Target, and public libraries order from.
+- **Written from a homeschool mother's chair.** Lindey homeschooled both of her children through her husband Chuck's illness and his passing in 2024. She wrote this book on New Year's Eve at her kitchen table, missing him, and looked up at 3:00 AM with a manuscript. Her faith is part of the story, told plainly rather than preached — the way it shows up in most homeschool families.
+- **It functions as a language-arts + financial-literacy visit.** The rhyming text carries the story; the glossary and Did-You-Know back matter teach vocabulary and light economics. It counts as an author visit *and* a curriculum piece for the co-op's year.
+
+If your leadership team wants to hear Lindey tell her own story before deciding, we just released a long-form conversation with her on our *Share Your Bitcoin Journey* series:
+
+**Watch:** https://youtu.be/S7oBI9aAz6w
+
+Here's the concrete offer:
+
+- **When:** A live reading window on **Tuesday, September 23** or **Wednesday, September 24, 2026**. Default target is lunchtime; if that doesn't fit [Group name]'s day, tell us what hour does and we'll build around it.
+- **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit venue in Columbus — either at BFTA's booth on the main floor or on the summit's Secondary Stage. Think a live bookstore author reading with a small standing audience; the children are the featured guests. BFTA staff will arrange the chairs, seat the parents with their children, and hold a calm, welcoming environment start-to-finish. Final exact spot confirmed the week of the meeting and shared with you as soon as [Group name] commits.
+- **What:** A 15–20 minute reading by Lindey, a 10–15 minute Q&A. About 30–45 minutes total.
+- **What every child leaves with:** A signed hardcover of *Bitcoin: A Treasure to HODL* — no cost to your families.
+- **Cost to your co-op:** Zero. Bitcoin For The Arts covers admission for the children and their parents for the reading window. If your group would like transportation help for 10+ kids, we can also budget a shared van contribution.
+
+I want to be direct about one thing. The venue is a Bitcoin summit, and Lindey's book is about honest money. That is intentional. Lindey's angle is not "buy Bitcoin" — it is that children deserve to understand what money is and what sound money does, in the same way they deserve to understand honest weights on a scale. That is a conversation that fits comfortably inside a classical curriculum, a financial-literacy curriculum, or a home-education-of-any-kind curriculum. If it doesn't feel like a fit for [Group name] this fall, no problem at all.
+
+Could I get 15 minutes with you on the phone this week or next to walk through details? I'll fit your schedule.
+
+Thank you for reading this far,
+
+**Dion Wilson**
+Founder & Executive Director
+Bitcoin For The Arts, Inc. — 501(c)(3)
+[bitcoinforthearts.org](https://www.bitcoinforthearts.org)
+Phone: [YOUR PHONE]
+Email: [YOUR EMAIL]
+
+P.S. If a group visit isn't the right shape for [Group name] this year, forwarding this note to parents in your network would help just as much. Any child who shows up leaves with a signed book.
 
 ---
 
@@ -192,12 +245,13 @@ Opening (~20 seconds): "Hi, this is Dion with Bitcoin For The Arts. I sent [Grou
 
 Then in this order:
 
-1. **The author.** Mississippi homeschool mom. Widow. Wrote a Seuss-style rhyming children's book. Book has a glossary. It's genuinely good.
-2. **The story.** She wrote it at her kitchen table on New Year's Eve, missing her late husband. There's a YouTube interview if their leadership wants to preview her.
-3. **The event.** Quiet, dedicated room at the venue. Not the show floor. Parents welcome. 30–45 minutes total.
-4. **The gift.** Every child leaves with a signed book, free.
-5. **The cost.** Zero. We can also help with transportation.
-6. **The ask.** "Would your families like to come? Or if a full group visit is too big a lift, would you forward this to a few parents in your group?"
+1. **The author.** Mississippi homeschool mom. Widow. Wrote a Seuss-style rhyming children's book. 10,000-copy offset print run. Nationally distributed. Book has a glossary. It's genuinely good.
+2. **The story.** She wrote it at her kitchen table on New Year's Eve, missing her late husband. There's a YouTube interview if their leadership wants to preview her before saying yes.
+3. **The event.** A live author reading, featured on the summit floor — either at BFTA's booth or on the Secondary Stage. Not tucked away. The kids are the featured guests. Think library story time with a small standing audience, not chaos. Chairs arranged, parents seated with the children, calm environment.
+4. **The timing.** Lunchtime on Sept 23 or Sept 24 is the default target — but if their homeschool schedule prefers a different hour, we build around it.
+5. **The gift.** Every child leaves with a signed hardcover, free.
+6. **The cost.** Zero for the co-op. Free admission for kids and parents for the reading window. Transportation help available for 10+ kids.
+7. **The ask.** "Would your families like to come? Or if a full group visit is too big a lift, would you forward this to a few parents in your group?"
 
 If they ask "Why Bitcoin?", answer honestly: "The book is about sound money. The author didn't start with Bitcoin — she started with the question of what honest money looks like, which is a question with a long history in Scripture and in economics. If that's a conversation your co-op is open to, we'd love to be part of it. If not, we understand."
 
@@ -222,7 +276,7 @@ Suggested cadence:
 ## Success looks like
 
 - One committed co-op of 10–20 children by August 1, 2026.
-- A dedicated, quiet reading room secured at the venue by mid-August.
+- A confirmed, high-visibility reading spot at the venue (booth or Secondary Stage) locked by mid-August, with lunchtime Sept 23 or Sept 24 held.
 - Signed books ready for every child on the day.
 - 30 minutes of BFTA-produced video of Lindey reading to a real group of homeschool kids — one of the most valuable pieces of storytelling BFTA will ever record.
 
