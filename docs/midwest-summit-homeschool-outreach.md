@@ -70,7 +70,7 @@ Homeschool co-op leaders will say yes when we make the ask concrete, low-frictio
 - **A short live reading (15 to 20 minutes) plus Q&A with the author (10 to 15 minutes).** Total commitment about 30 to 45 minutes.
 - **Parents are welcome and expected** to stay for the whole event.
 - **Curriculum-worthy content.** Lindey's book has a glossary and a "Did You Know" section. It counts as a language-arts, financial-literacy, and author-visit combo for the co-op's year.
-- **Flexible timing.** Default target is a **lunchtime slot on either Tuesday, September 23 or Wednesday, September 24, 2026**. If lunchtime doesn't fit the co-op's schedule, we will coordinate a different hour that does. The co-op picks first, and BFTA works around them. Final time and exact spot inside the venue lock together once the group confirms interest.
+- **Flexible timing.** Default target is a **lunchtime slot on either Wednesday, September 23 or Thursday, September 24, 2026**. If lunchtime doesn't fit the co-op's schedule, we will coordinate a different hour that does. The co-op picks first, and BFTA works around them. Final time and exact spot inside the venue lock together once the group confirms interest.
 - **Optional: a BFTA-hosted mini financial-literacy Q&A** immediately after the reading (10 minutes) that kids can attend or skip. Age-appropriate. No "buy Bitcoin" talk. Just sound money, saving, giving, and the value of time.
 - **Optional transportation help** if a group needs it (we can budget a shared van or bus contribution for a co-op of 10 or more kids).
 
@@ -96,7 +96,7 @@ Lindey's story is worth knowing before you decide. She lost her husband Chuck to
 
 Here's the concrete ask:
 
-- **When:** A live reading window on either **Tuesday, September 23** or **Wednesday, September 24, 2026**, targeting the lunchtime hour. If lunchtime does not fit [Group name]'s schedule, tell us what does and we will coordinate around your day.
+- **When:** A live reading window on either **Wednesday, September 23** or **Thursday, September 24, 2026**, targeting the lunchtime hour. If lunchtime does not fit [Group name]'s schedule, tell us what does and we will coordinate around your day.
 - **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit in Columbus, either at BFTA's booth on the main floor or on the Summit's Secondary Stage. Your children are the featured guests. Think a live bookstore author reading with a small standing audience, not a tucked-away side room. BFTA staff arrange the chairs, seat the parents with their children, and hold the space calm and welcoming from start to finish. We finalize the exact spot after the venue meeting this week and share it with you as soon as [Group name] commits.
 - **What:** Lindey reads her book aloud to the children, then a short Q&A. About 30 to 45 minutes total.
 - **What every child leaves with:** A signed hardcover copy of *Bitcoin: A Treasure to HODL*, at no cost to your families.
@@ -137,7 +137,7 @@ Lindey did not set out to be an author. She lost her husband to cancer in 2024 a
 
 The concrete offer:
 
-- **When:** A live reading window on **Tuesday, September 23** or **Wednesday, September 24, 2026**. Default target is lunchtime, but if that doesn't work for [Group name]'s schedule, we build around whatever hour does.
+- **When:** A live reading window on **Wednesday, September 23** or **Thursday, September 24, 2026**. Default target is lunchtime, but if that doesn't work for [Group name]'s schedule, we build around whatever hour does.
 - **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit venue in Columbus, either at BFTA's booth on the main floor or on the summit's Secondary Stage. Think a live bookstore author reading with a small standing audience. Your children are the featured guests. BFTA staff arrange chairs, seat parents with their children, and hold the environment calm and welcoming. We confirm the exact spot after our venue meeting this week and share it with you as soon as [Group name] commits.
 - **What:** Live reading of the book (15 to 20 minutes) plus a Q&A with Lindey (10 to 15 minutes). Roughly 30 to 45 minutes total.
 - **What every child leaves with:** A signed hardcover of the book, free.
@@ -183,7 +183,7 @@ If your leadership team wants to hear Lindey tell her own story before deciding,
 
 Here's the concrete offer:
 
-- **When:** A live reading window on **Tuesday, September 23** or **Wednesday, September 24, 2026**. Default target is lunchtime; if that doesn't fit [Group name]'s day, tell us what hour does and we'll build around it.
+- **When:** A live reading window on **Wednesday, September 23** or **Thursday, September 24, 2026**. Default target is lunchtime; if that doesn't fit [Group name]'s day, tell us what hour does and we'll build around it.
 - **Where:** A featured, high-visibility spot at the Midwest Bitcoin Summit venue in Columbus, either at BFTA's booth on the main floor or on the summit's Secondary Stage. Think a live bookstore author reading with a small standing audience. The children are the featured guests. BFTA staff will arrange the chairs, seat the parents with their children, and hold a calm, welcoming environment start to finish. Final exact spot confirmed the week of the meeting and shared with you as soon as [Group name] commits.
 - **What:** A 15 to 20 minute reading by Lindey, a 10 to 15 minute Q&A. About 30 to 45 minutes total.
 - **What every child leaves with:** A signed hardcover of *Bitcoin: A Treasure to HODL*, at no cost to your families.
