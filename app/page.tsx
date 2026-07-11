@@ -85,8 +85,42 @@ export default function Home() {
         </>
       ) : null}
 
-      {/* Main lockup — sits directly below the intro video as the brand
-          "centerpiece" before the rest of the home content. */}
+      {/* Midwest Bitcoin Summit banner — appears after the intro video and before
+          the main lockup on both desktop and mobile so the visual grammar is identical.
+          Delete this <section> block once the Midwest event ends (Sept 24, 2026). */}
+      <section className="w-full bg-accent">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-10 sm:py-12 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <div className="text-[11px] font-semibold uppercase tracking-widest text-white/85 sm:text-xs">
+              Sept 23 and 24, 2026 · Columbus, OH
+            </div>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Bitcoin For The Arts at the Midwest Bitcoin Summit.
+            </h2>
+            <p className="mt-2 text-sm leading-relaxed text-white/90 sm:text-base">
+              Help build Bitcoin Arts Park with us, or sponsor a piece of it.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-3 sm:flex-row md:flex-none">
+            <Link
+              href="/midwest/volunteer"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-semibold text-background transition-colors hover:opacity-90"
+            >
+              Volunteer with Us →
+            </Link>
+            <Link
+              href="/midwest"
+              className="inline-flex min-h-12 items-center justify-center rounded-md bg-white/15 px-6 py-3 text-sm font-semibold text-white ring-1 ring-inset ring-white/30 transition-colors hover:bg-white/25"
+            >
+              Sponsor Midwest →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Main lockup — sits directly below the intro video (and the Midwest banner)
+          as the brand "centerpiece" before the rest of the home content. */}
       <section className="mx-auto max-w-3xl px-6 pt-12 sm:pt-16">
         <Image
           src={MAIN_LOCKUP_SRC}

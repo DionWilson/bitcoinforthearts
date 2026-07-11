@@ -1,17 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
-import MidwestVolunteerForm from './MidwestVolunteerForm';
 import MidwestCountdown from './MidwestCountdown';
 
 export const metadata: Metadata = {
   title: 'BFTA Bitcoin Arts Park at the Midwest Bitcoin Summit',
   description:
-    'Bitcoin for the Arts is bringing Bitcoin Arts Park to the Midwest Bitcoin Summit. September 23\u201324, 2026 at the Greater Columbus Convention Center, Columbus, Ohio. A dedicated cultural footprint with a live presentation of Dirty Coin by director Alana Mediavilla, Secondary Stage performances by Ainsley Costello and other working artists, a peer-to-peer Lightning silent auction, and live podcast tapings. Sponsor, support in-kind, or volunteer.',
+    'Bitcoin for the Arts is bringing Bitcoin Arts Park to the Midwest Bitcoin Summit. September 23\u201324, 2026 at the Greater Columbus Convention Center, Columbus, Ohio. A dedicated cultural footprint with a featured screening of Dirty Coin, Secondary Stage performances by Ainsley Costello and other working artists, a peer-to-peer Lightning silent auction, and live podcast tapings. Sponsor, support in-kind, or volunteer.',
   openGraph: {
     title: 'Bitcoin Arts Park — BFTA at the Midwest Bitcoin Summit',
     description:
-      'BFTA × Midwest Bitcoin Summit · September 23–24, 2026 · Columbus, OH. Live presentation of Dirty Coin with director Alana Mediavilla, Secondary Stage performances by Ainsley Costello and other working artists, peer-to-peer Lightning silent auction, live podcast tapings. Sponsor, support in-kind, or volunteer.',
+      'BFTA × Midwest Bitcoin Summit · September 23–24, 2026 · Columbus, OH. Featured screening of Dirty Coin, Secondary Stage performances by Ainsley Costello and other working artists, peer-to-peer Lightning silent auction, live podcast tapings. Sponsor, support in-kind, or volunteer.',
     type: 'website',
   },
 };
@@ -25,9 +24,9 @@ export default function MidwestPage() {
 
   const programming = [
     {
-      title: 'Dirty Coin \u2014 Live with Alana Mediavilla',
+      title: 'Dirty Coin \u2014 Featured Screening',
       detail:
-        'A live presentation and audience Q&A of Dirty Coin, the most-screened Bitcoin documentary in the world, hosted inside the BFTA Bitcoin Arts Park by director Alana Mediavilla, founder of Campo Libre.',
+        'A featured screening of Dirty Coin, the most-screened Bitcoin documentary in the world, presented inside the BFTA Bitcoin Arts Park across the two days of the Summit.',
     },
     {
       title: 'BFTA Film Cinema',
@@ -37,7 +36,7 @@ export default function MidwestPage() {
     {
       title: 'Secondary Stage Performances',
       detail:
-        'Two days of lunch-hour live performances on the Summit\u2019s Secondary Stage, anchored by Ainsley Costello and additional working artists. Professional sound, broadcast to Nostr live.',
+        'Two days of lunch-hour live performances on the Summit\u2019s Secondary Stage, anchored by Ainsley Costello and additional working artists. Professional sound and full-quality recordings captured for post-event distribution.',
     },
     {
       title: 'Peer-to-Peer Lightning Silent Auction',
@@ -63,11 +62,6 @@ export default function MidwestPage() {
       title: 'BFTA Merchandise \u0026 Donation Counter',
       detail:
         'A front counter for BFTA merchandise, artist marketplace items, and Lightning-native donations. Tap-to-pay enabled. Funds support the BFTA artist grants program.',
-    },
-    {
-      title: 'Live Broadcast to Nostr',
-      detail:
-        'All Secondary Stage performances and key Bitcoin Arts Park moments streamed to Nostr in real time. The room reaches a global Bitcoin audience that can boost the artists live.',
     },
   ];
 
@@ -115,7 +109,7 @@ export default function MidwestPage() {
         'The Living Room Lightning demo zone takes the sponsor\u2019s name \u2014 "The [Sponsor] Lightning Lounge"',
         'On-site staffed Lightning wallet activation in the Living Room, branded throughout',
         'Lightning QR codes on every silent auction piece routed through the sponsor\u2019s wallet (every zap demos their product)',
-        'Sponsor logo on every Lightning QR placard, the program, and the livestream',
+        'Sponsor logo on every Lightning QR placard and in the printed program',
         '2-minute demo slot during a Secondary Stage break',
         'Featured in BFTA newsletter and post-event recap',
         'Permanent listing on BFTA Sponsors page',
@@ -130,7 +124,7 @@ export default function MidwestPage() {
       benefits: [
         'Named credit on the Secondary Stage program \u2014 "Performances presented by [Sponsor]"',
         'Named credit in the live podcast taping intro/outro \u2014 "This live taping of Share Your Bitcoin Journey is presented by [Sponsor]"',
-        'Sponsor logo on the Nostr livestream lower-third during performances',
+        'Sponsor logo on the printed Bitcoin Arts Park program and on-stage signage during performances',
         'One named-performance sponsorship included',
         'Featured in BFTA newsletter and post-event recap',
         'Permanent listing on BFTA Sponsors page',
@@ -145,7 +139,7 @@ export default function MidwestPage() {
       benefits: [
         'Named program credit \u2014 "[Artist] presented by [Sponsor]"',
         'Personal thank-you from the artist during their set introduction',
-        'Logo on artist\u2019s program card and on the livestream lower-third during their performance',
+        'Logo on the artist\u2019s program card and on-stage signage during their performance',
         'Sponsor name in post-event social posts about that artist',
         'Listing on BFTA Sponsors page',
         'Tax-deductible',
@@ -159,7 +153,7 @@ export default function MidwestPage() {
       benefits: [
         'The peer-to-peer Lightning silent auction is named \u2014 "The [Sponsor] Silent Auction"',
         'Live closing moment on stage with sponsor named',
-        'Sponsor logo on every auction QR placard, the Gallery wall header, and the livestream',
+        'Sponsor logo on every auction QR placard and on the Gallery wall header',
         'Proceeds support a Bitcoin micro-grant for a featured BFTA artist in the sponsor\u2019s name',
         'Listing on BFTA Sponsors page',
         'Tax-deductible',
@@ -287,7 +281,7 @@ export default function MidwestPage() {
         imageAlt="Bitcoin Arts Park by Bitcoin for the Arts at the Midwest Bitcoin Summit · September 23–24, 2026, Columbus, Ohio."
         label="BFTA × Midwest Bitcoin Summit · Sept 23–24 · Columbus, OH"
         title="Bitcoin Arts Park."
-        description="A dedicated cultural footprint by Bitcoin for the Arts on the floor of the Midwest Bitcoin Summit. A live presentation of Dirty Coin with director Alana Mediavilla, two days of Secondary Stage performances by Ainsley Costello and other working artists, a peer-to-peer Lightning silent auction, live podcast tapings, and a wallet demo. Working artists paid in Bitcoin, in front of the audience that already understands sound money."
+        description="A dedicated cultural footprint by Bitcoin for the Arts on the floor of the Midwest Bitcoin Summit. A featured screening of Dirty Coin, two days of Secondary Stage performances by Ainsley Costello and other working artists, a peer-to-peer Lightning silent auction, live podcast tapings, and a wallet demo. Working artists paid in Bitcoin, in front of the audience that already understands sound money."
         titleClassName="text-3xl sm:text-5xl"
         priority
       >
@@ -358,7 +352,7 @@ export default function MidwestPage() {
             Bitcoin conferences have grown into serious institutions. What has been quietly missing alongside them is a curatorial counterpart \u2014 a serious cultural room, with serious working artists, treated as central to the programming rather than peripheral to it. <strong className="text-foreground">Bitcoin Arts Park</strong> is that room, and Columbus is where Bitcoin for the Arts is building it.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
-            Bitcoin Arts Park is a dedicated 30 ft cultural footprint on the floor of the Midwest Bitcoin Summit, programmed end-to-end by BFTA. A film cinema anchored by a live presentation of <em>Dirty Coin</em> with director <strong className="text-foreground">Alana Mediavilla</strong>. Two days of Secondary Stage performances led by <strong className="text-foreground">Ainsley Costello</strong> and additional working artists. A peer-to-peer Lightning silent auction on the Gallery wall. A Living Room with a Lightning wallet activation. Live tapings of <em>Share Your Bitcoin Journey</em> recorded on-site.
+            Bitcoin Arts Park is a dedicated 30 ft cultural footprint on the floor of the Midwest Bitcoin Summit, programmed end-to-end by BFTA. A film cinema anchored by a featured screening of <em>Dirty Coin</em>. Two days of Secondary Stage performances led by <strong className="text-foreground">Ainsley Costello</strong> and additional working artists. A peer-to-peer Lightning silent auction on the Gallery wall. A Living Room with a Lightning wallet activation. Live tapings of <em>Share Your Bitcoin Journey</em> recorded on-site.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
             The audience is the reason. The room at the Midwest Summit is a crowd of Bitcoiners who already understand sound money \u2014 and who are, by every definition, the future patron base for the next generation of working artists. Bringing real artists into that room, paid in Bitcoin, supported by infrastructure that lets the audience zap them in real time, is exactly the kind of moment our 501(c)(3) was built to create.
@@ -490,7 +484,7 @@ export default function MidwestPage() {
           </a>
         </section>
 
-        {/* ── Volunteer ────────────────────── */}
+        {/* ── Volunteer teaser (full form lives at /midwest/volunteer) ────────────────────── */}
         <section id="volunteer" className="mt-16 rounded-2xl border border-accent/30 bg-surface/60 p-6 sm:p-10">
           <div className="text-xs font-semibold uppercase tracking-wide text-accent">
             Volunteer with Us
@@ -499,11 +493,21 @@ export default function MidwestPage() {
             Be in the room. Make it happen.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            Two days, nine programming threads, working artists from across the country in one room — and a small core team holding it all together. If you can give time during install (Sept 22), the show days (Sept 23–24), strike (Sept 25), or pre-event remote help, sign up here. We&rsquo;ll be in touch as the event gets closer with specific roles and the run-of-show.
+            Two days, nine programming threads, working artists from across the country in one room, and a small core team holding it all together. If you can give time during load-in (Tuesday, Sept 22), the show days (Wednesday and Thursday, Sept 23 and 24), load-out (Thursday evening, Sept 24), or pre-event remote help, sign up on our dedicated Midwest volunteer page.
           </p>
-
-          <div className="mt-8 max-w-2xl">
-            <MidwestVolunteerForm />
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/midwest/volunteer"
+              className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+            >
+              Volunteer with BFTA →
+            </Link>
+            <a
+              href="mailto:volunteer@bitcoinforthearts.org?subject=Midwest%20volunteer%20question"
+              className="inline-flex min-h-11 items-center justify-center rounded-md border border-foreground/20 bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface"
+            >
+              Email volunteer@bitcoinforthearts.org
+            </a>
           </div>
         </section>
 
