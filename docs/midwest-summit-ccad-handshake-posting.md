@@ -1,6 +1,6 @@
 # CCAD Handshake Volunteer Posting: Midwest Bitcoin Summit 2026
 
-**Context.** On July 8, 2026, BFTA board advisor Kenneth Burris (CCAD alumnus) met with Lyndsey Adams (adams.3@ccad.edu) at Columbus College of Art and Design about placing 1–2 CCAD students as production volunteers at the Midwest Bitcoin Summit (Sept 22–25, 2026). Lyndsey confirmed CCAD's process runs through their campus job board, Handshake. She will personally approve and distribute BFTA's posting to students once it's live.
+**Context.** On July 8, 2026, BFTA board advisor Kenneth Burris (CCAD alumnus) met with Lyndsey Adams (adams.3@ccad.edu) at Columbus College of Art and Design about placing 1–2 CCAD students as production volunteers at the Midwest Bitcoin Summit (Sept 22 through 24, 2026). Lyndsey confirmed CCAD's process runs through their campus job board, Handshake. She will personally approve and distribute BFTA's posting to students once it's live.
 
 This document contains: (1) the compensation decision and rationale, (2) the ready-to-paste Handshake posting, (3) the reply to Kenneth, (4) the reply to Lyndsey.
 
@@ -14,7 +14,7 @@ Lyndsey asked whether students will be compensated. BFTA's answer needs to be cr
 
 | Option | What it says | Pros | Cons |
 | --- | --- | --- | --- |
-| A. Unpaid volunteer | Matches the Issue #15 newsletter volunteer call. Non-monetary compensation only (meals, gear, reference letter, on-camera credit, portfolio experience). | Zero cost. Cleanest legal framing (pure volunteer). | Weakest applicant pool. Off-mission. BFTA is the *"first nonprofit paying artists exclusively in Bitcoin."* Asking CCAD students to work four days for free while carrying that mission on our banner is a contradiction Lyndsey and her students will notice. |
+| A. Unpaid volunteer | Matches the Issue #15 newsletter volunteer call. Non-monetary compensation only (meals, gear, reference letter, on-camera credit, portfolio experience). | Zero cost. Cleanest legal framing (pure volunteer). | Weakest applicant pool. Off-mission. BFTA is the *"first nonprofit paying artists exclusively in Bitcoin."* Asking CCAD students to work three days for free while carrying that mission on our banner is a contradiction Lyndsey and her students will notice. |
 | B. Paid honorarium in Bitcoin | Modest stipend paid in Bitcoin at the end of the summit, plus the full non-monetary package. | Fully on-mission. Story-worthy (CCAD students paid in Bitcoin for their first professional gig). Attracts stronger applicants. Legally clean if framed as a stipend/honorarium rather than an hourly wage. | Adds a budget line. |
 | C. Academic internship credit | Structure the role so CCAD students can receive course credit through the college's internship program. Small or no cash stipend. | High perceived value to students. Deepens the CCAD relationship. | Requires CCAD paperwork, faculty sponsor, and a longer onboarding. May not be feasible for a September event. |
 
@@ -77,9 +77,9 @@ Friday, August 29, 2026
 **Position Dates**
 
 ```text
-Load-in: Monday, September 22, 2026
-Show Days: Tuesday & Wednesday, September 23–24, 2026
-Load-out: Thursday, September 25, 2026
+Load-in: Tuesday, September 22, 2026
+Show Days: Wednesday and Thursday, September 23 and 24, 2026
+Load-out: Thursday evening, September 24, 2026 (immediately after the event ends, approx 5 to 6 PM)
 As-needed hours: Days leading up to load-in (schedule coordinated 1:1 with selected students)
 ```
 
