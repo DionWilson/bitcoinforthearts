@@ -26,9 +26,8 @@ const SHIFT_OPTIONS = [
 ] as const;
 
 const TRANSPORT_OPTIONS = [
-  { id: 'own', label: 'I have my own transportation' },
-  { id: 'local', label: 'I am local to Columbus' },
-  { id: 'ride', label: 'I need a short ride within 15 miles of the venue' },
+  { id: 'own', label: 'I have my own transportation to the convention center' },
+  { id: 'ride', label: 'I need a short ride within 15 miles of the convention center' },
 ] as const;
 
 const TSHIRT_OPTIONS = ['XS', 'S', 'M', 'L', 'XL', '2XL'] as const;

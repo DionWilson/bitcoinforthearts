@@ -89,7 +89,7 @@ export default function MidwestVolunteerPage() {
             A small handful of great humans.
           </h2>
           <p className="mt-5 text-base leading-relaxed text-muted">
-            This is a volunteer role. Bitcoin For The Arts is a small nonprofit and Bitcoin Arts Park is being produced by a four-person core team: Steven on production, Dion and Julie in the booth, Jim on stage. We are looking for up to five great volunteers to help us hold it all together.
+            This is a volunteer role. Bitcoin For The Arts is a small nonprofit producing Bitcoin Arts Park with a lean core team, and we are looking for up to five great volunteers to help us hold it all together.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted">
             We are asking for volunteers who are <strong className="text-foreground">already planning to attend the Midwest Bitcoin Summit</strong>, or who <strong className="text-foreground">live in the Columbus area</strong>. If you need a short ride from your Columbus-area home to the venue, we can cover a rideshare or a short train trip within roughly a 15-mile radius of the venue. Beyond that we cannot cover travel or lodging. Everything else, the free pass, the gear, the meals, the credit, and the story, is on us.
