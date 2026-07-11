@@ -58,19 +58,21 @@ function rateLimitOk(ip: string) {
 /*  Airtable                                                          */
 /* ------------------------------------------------------------------ */
 
+// Field names below MUST match the column headers of the "MBS Vol" table
+// in Airtable EXACTLY. Airtable rejects the whole record write with 422 if
+// any field name is unknown, so keep this list in sync with the table.
 type AirtableFields = {
-  Name: string;
+  'Full Name': string;
   Email: string;
   Phone?: string;
   'Signal ID'?: string;
   '18 or older'?: boolean;
   'Roles of interest'?: string[];
-  Availability?: string[];
+  'Days available'?: string[];
   'Preferred shift length'?: string;
   Transportation?: string;
   'T-shirt size'?: string;
-  Skills?: string;
-  Status?: string;
+  'About and experience'?: string;
 };
 
 async function writeToAirtable(fields: AirtableFields) {
@@ -84,9 +86,8 @@ async function writeToAirtable(fields: AirtableFields) {
   const url = `https://api.airtable.com/v0/${baseId}/${encodeURIComponent(tableName)}`;
 
   const cleanFields: Record<string, unknown> = {
-    Name: fields.Name,
+    'Full Name': fields['Full Name'],
     Email: fields.Email,
-    Status: fields.Status ?? 'New',
   };
   if (fields.Phone) cleanFields.Phone = fields.Phone;
   if (fields['Signal ID']) cleanFields['Signal ID'] = fields['Signal ID'];
@@ -96,15 +97,17 @@ async function writeToAirtable(fields: AirtableFields) {
   if (fields['Roles of interest']?.length) {
     cleanFields['Roles of interest'] = fields['Roles of interest'];
   }
-  if (fields.Availability?.length) {
-    cleanFields.Availability = fields.Availability;
+  if (fields['Days available']?.length) {
+    cleanFields['Days available'] = fields['Days available'];
   }
   if (fields['Preferred shift length']) {
     cleanFields['Preferred shift length'] = fields['Preferred shift length'];
   }
   if (fields.Transportation) cleanFields.Transportation = fields.Transportation;
   if (fields['T-shirt size']) cleanFields['T-shirt size'] = fields['T-shirt size'];
-  if (fields.Skills) cleanFields.Skills = fields.Skills;
+  if (fields['About and experience']) {
+    cleanFields['About and experience'] = fields['About and experience'];
+  }
 
   const res = await fetch(url, {
     method: 'POST',
@@ -264,17 +267,17 @@ export async function POST(req: NextRequest) {
   // 1. Airtable (primary system of record)
   try {
     const airtable = await writeToAirtable({
-      Name: name,
+      'Full Name': name,
       Email: email,
       Phone: phone || undefined,
       'Signal ID': signalId || undefined,
       '18 or older': isAdult,
       'Roles of interest': roles,
-      Availability: availability,
+      'Days available': availability,
       'Preferred shift length': shiftLength || undefined,
       Transportation: transportation || undefined,
       'T-shirt size': tshirtSize || undefined,
-      Skills: skills || undefined,
+      'About and experience': skills || undefined,
     });
     if (!airtable.ok && !airtable.skipped) {
       console.error('[midwest-volunteer] airtable write failed', airtable);
