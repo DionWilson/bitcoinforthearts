@@ -12,9 +12,15 @@ type Body = {
   lastName?: string;
   email?: string;
   phone?: string;
+  signalId?: string;
+  isAdult?: boolean;
+  roles?: string[];
   availability?: string[];
+  shiftLength?: string;
+  transportation?: string;
+  tshirtSize?: string;
   skills?: string;
-  website?: string; // honeypot
+  website?: string;
 };
 
 function getEnv(name: string) {
@@ -52,28 +58,52 @@ function rateLimitOk(ip: string) {
 /*  Airtable                                                          */
 /* ------------------------------------------------------------------ */
 
-async function writeToAirtable(fields: {
+type AirtableFields = {
   Name: string;
   Email: string;
   Phone?: string;
-  Availability?: string;
+  'Signal ID'?: string;
+  '18 or older'?: boolean;
+  'Roles of interest'?: string[];
+  Availability?: string[];
+  'Preferred shift length'?: string;
+  Transportation?: string;
+  'T-shirt size'?: string;
   Skills?: string;
-}) {
+  Status?: string;
+};
+
+async function writeToAirtable(fields: AirtableFields) {
   const pat = getEnv('AIRTABLE_PAT');
   const baseId = getEnv('AIRTABLE_BASE_ID');
   if (!pat || !baseId) {
     return { ok: false as const, skipped: true, reason: 'missing_airtable_config' };
   }
 
-  const tableName = getEnv('AIRTABLE_VOLUNTEERS_TABLE') ?? 'Volunteers';
+  const tableName = getEnv('AIRTABLE_VOLUNTEERS_TABLE') ?? 'MBS Vol';
   const url = `https://api.airtable.com/v0/${baseId}/${encodeURIComponent(tableName)}`;
 
-  const cleanFields: Record<string, string> = {
+  const cleanFields: Record<string, unknown> = {
     Name: fields.Name,
     Email: fields.Email,
+    Status: fields.Status ?? 'New',
   };
   if (fields.Phone) cleanFields.Phone = fields.Phone;
-  if (fields.Availability) cleanFields.Availability = fields.Availability;
+  if (fields['Signal ID']) cleanFields['Signal ID'] = fields['Signal ID'];
+  if (typeof fields['18 or older'] === 'boolean') {
+    cleanFields['18 or older'] = fields['18 or older'];
+  }
+  if (fields['Roles of interest']?.length) {
+    cleanFields['Roles of interest'] = fields['Roles of interest'];
+  }
+  if (fields.Availability?.length) {
+    cleanFields.Availability = fields.Availability;
+  }
+  if (fields['Preferred shift length']) {
+    cleanFields['Preferred shift length'] = fields['Preferred shift length'];
+  }
+  if (fields.Transportation) cleanFields.Transportation = fields.Transportation;
+  if (fields['T-shirt size']) cleanFields['T-shirt size'] = fields['T-shirt size'];
   if (fields.Skills) cleanFields.Skills = fields.Skills;
 
   const res = await fetch(url, {
@@ -82,7 +112,10 @@ async function writeToAirtable(fields: {
       Authorization: `Bearer ${pat}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ records: [{ fields: cleanFields }] }),
+    body: JSON.stringify({
+      records: [{ fields: cleanFields }],
+      typecast: true,
+    }),
   });
 
   if (!res.ok) {
@@ -180,12 +213,17 @@ export async function POST(req: NextRequest) {
   const lastName = String(body.lastName ?? '').trim();
   const email = String(body.email ?? '').trim().toLowerCase();
   const phone = String(body.phone ?? '').trim();
+  const signalId = String(body.signalId ?? '').trim();
+  const isAdult = body.isAdult === true;
+  const roles = Array.isArray(body.roles)
+    ? body.roles.map((s) => String(s).trim()).filter(Boolean)
+    : [];
   const availability = Array.isArray(body.availability)
-    ? body.availability
-        .map((s) => String(s).trim())
-        .filter(Boolean)
-        .join(', ')
-    : '';
+    ? body.availability.map((s) => String(s).trim()).filter(Boolean)
+    : [];
+  const shiftLength = String(body.shiftLength ?? '').trim();
+  const transportation = String(body.transportation ?? '').trim();
+  const tshirtSize = String(body.tshirtSize ?? '').trim();
   const skills = String(body.skills ?? '').trim();
 
   if (!firstName || !lastName) {
@@ -200,18 +238,42 @@ export async function POST(req: NextRequest) {
       { status: 400 },
     );
   }
+  if (!isAdult) {
+    return NextResponse.json(
+      { ok: false, error: 'Volunteers must be 18 or older.' },
+      { status: 400 },
+    );
+  }
+  if (roles.length === 0) {
+    return NextResponse.json(
+      { ok: false, error: 'Please choose at least one role you are interested in.' },
+      { status: 400 },
+    );
+  }
+  if (availability.length === 0) {
+    return NextResponse.json(
+      { ok: false, error: 'Please choose at least one day you can help.' },
+      { status: 400 },
+    );
+  }
 
   const name = `${firstName} ${lastName}`;
   const now = new Date();
   const ua = req.headers.get('user-agent') ?? '';
 
-  // 1. Airtable (primary)
+  // 1. Airtable (primary system of record)
   try {
     const airtable = await writeToAirtable({
       Name: name,
       Email: email,
       Phone: phone || undefined,
-      Availability: availability || undefined,
+      'Signal ID': signalId || undefined,
+      '18 or older': isAdult,
+      'Roles of interest': roles,
+      Availability: availability,
+      'Preferred shift length': shiftLength || undefined,
+      Transportation: transportation || undefined,
+      'T-shirt size': tshirtSize || undefined,
       Skills: skills || undefined,
     });
     if (!airtable.ok && !airtable.skipped) {
@@ -221,7 +283,7 @@ export async function POST(req: NextRequest) {
     console.error('[midwest-volunteer] airtable write threw', err);
   }
 
-  // 2. MongoDB (backup)
+  // 2. MongoDB (backup so submissions are never lost if Airtable is down)
   try {
     if (getEnv('MONGODB_URI')) {
       const db = await getMongoDb();
@@ -234,7 +296,13 @@ export async function POST(req: NextRequest) {
             firstName,
             lastName,
             phone: phone || undefined,
-            availability: availability || undefined,
+            signalId: signalId || undefined,
+            isAdult,
+            roles,
+            availability,
+            shiftLength: shiftLength || undefined,
+            transportation: transportation || undefined,
+            tshirtSize: tshirtSize || undefined,
             skills: skills || undefined,
             lastSeenAt: now,
             lastIp: ip,
@@ -249,20 +317,26 @@ export async function POST(req: NextRequest) {
     console.error('[midwest-volunteer] db write failed', err);
   }
 
-  // 3. Email notification
+  // 3. Email notification to the volunteer coordinator inbox
   const toEmail =
     getEnv('VOLUNTEER_TO_EMAIL') ??
     getEnv('NEWSLETTER_TO_EMAIL') ??
     'volunteer@bitcoinforthearts.org';
   const subject = `New Midwest volunteer: ${name}`.slice(0, 200);
   const text = [
-    'New Midwest Bitcoin Summit volunteer signup (bitcoinforthearts.org/midwest)',
+    'New Midwest Bitcoin Summit volunteer signup (bitcoinforthearts.org/midwest/volunteer)',
     '',
     `Name: ${name}`,
     `Email: ${email}`,
     phone ? `Phone: ${phone}` : null,
-    availability ? `Availability: ${availability}` : null,
-    skills ? `Skills/Notes: ${skills}` : null,
+    signalId ? `Signal ID: ${signalId}` : null,
+    `18 or older: ${isAdult ? 'Yes' : 'No'}`,
+    roles.length ? `Roles of interest: ${roles.join(', ')}` : null,
+    availability.length ? `Availability: ${availability.join(', ')}` : null,
+    shiftLength ? `Preferred shift length: ${shiftLength}` : null,
+    transportation ? `Transportation: ${transportation}` : null,
+    tshirtSize ? `T-shirt size: ${tshirtSize}` : null,
+    skills ? `Notes: ${skills}` : null,
     `Time: ${now.toISOString()}`,
     `IP: ${ip}`,
     ua ? `User-Agent: ${ua}` : null,
@@ -270,17 +344,32 @@ export async function POST(req: NextRequest) {
     .filter(Boolean)
     .join('\n');
 
+  const rows = [
+    ['Name', name],
+    ['Email', email],
+    ...(phone ? [['Phone', phone]] : []),
+    ...(signalId ? [['Signal ID', signalId]] : []),
+    ['18 or older', isAdult ? 'Yes' : 'No'],
+    ...(roles.length ? [['Roles of interest', roles.join(', ')]] : []),
+    ...(availability.length ? [['Availability', availability.join(', ')]] : []),
+    ...(shiftLength ? [['Preferred shift length', shiftLength]] : []),
+    ...(transportation ? [['Transportation', transportation]] : []),
+    ...(tshirtSize ? [['T-shirt size', tshirtSize]] : []),
+    ...(skills ? [['Notes', skills]] : []),
+    ['Time', now.toISOString()],
+    ['IP', ip],
+    ...(ua ? [['User-Agent', ua]] : []),
+  ];
+
   const html = `
     <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5;">
       <h2 style="margin: 0 0 12px;">New Midwest volunteer signup</h2>
-      <p style="margin: 0 0 8px;"><strong>Name:</strong> ${escapeHtml(name)}</p>
-      <p style="margin: 0 0 8px;"><strong>Email:</strong> ${escapeHtml(email)}</p>
-      ${phone ? `<p style="margin: 0 0 8px;"><strong>Phone:</strong> ${escapeHtml(phone)}</p>` : ''}
-      ${availability ? `<p style="margin: 0 0 8px;"><strong>Availability:</strong> ${escapeHtml(availability)}</p>` : ''}
-      ${skills ? `<p style="margin: 0 0 8px;"><strong>Skills/Notes:</strong> ${escapeHtml(skills)}</p>` : ''}
-      <p style="margin: 0 0 8px;"><strong>Time:</strong> ${escapeHtml(now.toISOString())}</p>
-      <p style="margin: 0 0 8px;"><strong>IP:</strong> ${escapeHtml(ip)}</p>
-      ${ua ? `<p style="margin: 0 0 0;"><strong>User-Agent:</strong> ${escapeHtml(ua)}</p>` : ''}
+      ${rows
+        .map(
+          ([k, v]) =>
+            `<p style="margin: 0 0 8px;"><strong>${escapeHtml(k)}:</strong> ${escapeHtml(v)}</p>`,
+        )
+        .join('')}
     </div>
   `.trim();
 

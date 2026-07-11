@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
-import MidwestVolunteerForm from './MidwestVolunteerForm';
 import MidwestCountdown from './MidwestCountdown';
 
 export const metadata: Metadata = {
@@ -490,7 +489,7 @@ export default function MidwestPage() {
           </a>
         </section>
 
-        {/* ── Volunteer ────────────────────── */}
+        {/* ── Volunteer teaser (full form lives at /midwest/volunteer) ────────────────────── */}
         <section id="volunteer" className="mt-16 rounded-2xl border border-accent/30 bg-surface/60 p-6 sm:p-10">
           <div className="text-xs font-semibold uppercase tracking-wide text-accent">
             Volunteer with Us
@@ -499,11 +498,21 @@ export default function MidwestPage() {
             Be in the room. Make it happen.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            Two days, nine programming threads, working artists from across the country in one room — and a small core team holding it all together. If you can give time during install (Sept 22), the show days (Sept 23–24), strike (Sept 25), or pre-event remote help, sign up here. We&rsquo;ll be in touch as the event gets closer with specific roles and the run-of-show.
+            Two days, nine programming threads, working artists from across the country in one room, and a small core team holding it all together. If you can give time during load-in (Tuesday, Sept 22), the show days (Wednesday and Thursday, Sept 23 and 24), load-out (Thursday evening, Sept 24), or pre-event remote help, sign up on our dedicated Midwest volunteer page.
           </p>
-
-          <div className="mt-8 max-w-2xl">
-            <MidwestVolunteerForm />
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/midwest/volunteer"
+              className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+            >
+              Volunteer with BFTA →
+            </Link>
+            <a
+              href="mailto:volunteer@bitcoinforthearts.org?subject=Midwest%20volunteer%20question"
+              className="inline-flex min-h-11 items-center justify-center rounded-md border border-foreground/20 bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-surface"
+            >
+              Email volunteer@bitcoinforthearts.org
+            </a>
           </div>
         </section>
 
