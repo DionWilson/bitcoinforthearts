@@ -43,11 +43,12 @@ IN THIS EPISODE:
 - Advice for women and mothers looking at Bitcoin from outside the movement
 - What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock for Node Runners
 
-ABOUT ALANA MEDIAVILLA:
-Alana Mediavilla is a Puerto Rican filmmaker, director and producer of Dirty Coin, and founder of Campo Libre in San Juan. She spent more than a decade producing for Google, Apple, PayPal, Volkswagen, and Volvo. Mother of three. Currently developing her next documentary, Node Runners, alongside a decentralized distribution platform designed to bypass traditional film gatekeepers.
+WATCH DIRTY COIN or HOST A SCREENING:
+Dirty Coin: The Bitcoin Mining Documentary is available on Kinema, IndeeHub, Geyser, and Relay, with more streamers on the way.
+Watch or host a screening: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1
 
-Dirty Coin: https://dirtycoin.film
-Campo Libre: https://campolibre.co
+ABOUT ALANA MEDIAVILLA:
+Puerto Rican filmmaker, director and producer of Dirty Coin, founder of Campo Libre (San Juan). Mother of three. Currently filming Node Runners, her next documentary.
 
 ABOUT BITCOIN FOR THE ARTS:
 501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
@@ -219,7 +220,8 @@ Read her full story on our Stories page (coming soon): https://www.bitcoinforthe
 - If Alana confirms Midwest attendance later, we can add her name back to the /midwest sponsor page in a single follow-up commit.
 - 1:23 intro clip is factored into the chapters. Chapter 1 (Welcome and Puerto Rico origins) starts at 1:23, matching the Ep 10 pattern.
 - Chapter timestamps are estimates based on transcript pacing. Confirm by scrubbing before publishing.
-- Book / film references to double-check before publish: Dirty Coin site URL (I used https://dirtycoin.film as a best guess; confirm before publishing), Campo Libre URL (https://campolibre.co as a best guess), Alana's X handle on the thread posts (I used @amediavilla as a best guess; if her actual handle is different, update the four X posts).
+- Dirty Coin canonical watch/host destination is the Kinema page confirmed by Alana: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1. Film is also on IndeeHub, Geyser, and Relay.
+- References still to double-check before publish: Campo Libre URL (https://campolibre.co as a best guess), Alana's X handle on the thread posts (I used @amediavilla as a best guess; if her actual handle is different, update the four X posts).
 - Description length under YouTube's 5,000-character cap.
 - Tags line under YouTube's 500-character cap.
 - No em dashes anywhere in this file (per BFTA voice rule).
