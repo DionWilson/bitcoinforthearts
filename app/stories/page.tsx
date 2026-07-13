@@ -116,6 +116,36 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/TjghYaEnCIM",
   },
   {
+    type: "episode",
+    episodeNumber: 9,
+    title:
+      "Share Your Bitcoin Journey: Episode 9 \u2013 Lady Nakamoto\u2019s Alaskan Digital Sovereignty",
+    summary:
+      "Alaskan digital artist Lady Nakamoto, the mind behind Along the Watchtower, The Patriot, and The Greatest War, joins us for her first ever interview. Former X Games and World Cup snowboarder, Rolf Institute graduate in structural integration, and one of the earliest Bitcoin-aligned digital artists working today. Her holistic philosophy, her clear read on why peer-to-peer is the most overlooked line in the white paper, and the story of her first peer-to-peer sale representing BFTA on the floor in Portland.",
+    thumbnail: "/sybj-ep9-lady-web.png",
+    link: "https://youtu.be/o29FeRGsu6o",
+  },
+  {
+    type: "episode",
+    episodeNumber: 10,
+    title:
+      "Share Your Bitcoin Journey: Episode 10 \u2013 Lindey Magee: The Bitcoin Decision That Saved Her Family",
+    summary:
+      "Mississippi mother, homeschool advocate, and author of the Seuss-style children\u2019s book Bitcoin: A Treasure to HODL. After losing her husband Chuck to cancer, Lindey put the life insurance into Bitcoin and rebuilt her family life on a Bitcoin standard. Her twelve-year-old son had tried to orange-pill her back in 2012. It took twelve more years and a life insurance check for the message to finally land. Faith, family, sound money, and a children\u2019s book funded entirely by Bitcoin.",
+    thumbnail: "/sybj-ep10-lindey-web.png",
+    link: "https://youtu.be/S7oBI9aAz6w",
+  },
+  {
+    type: "episode",
+    episodeNumber: 11,
+    title:
+      "Share Your Bitcoin Journey: Episode 11 \u2013 Alana Mediavilla: The Filmmaker Behind Dirty Coin",
+    summary:
+      "Puerto Rican filmmaker, director of the award-winning documentary Dirty Coin, and founder of Campo Libre in San Juan. After more than a decade producing for Google Cloud, Apple, PayPal, Volkswagen, and Volvo, Alana walked away in 2020, moved her family home to Puerto Rico, and built the most important documentary on Bitcoin mining ever made. Two hours on sovereignty, energy, mining, community-hosted distribution, and independent cinema on a Bitcoin standard.",
+    thumbnail: "/sybj-ep11-alana-web.png",
+    link: "https://youtu.be/tw4Hl5EFm4w",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
