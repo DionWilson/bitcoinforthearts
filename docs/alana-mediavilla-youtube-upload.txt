@@ -138,9 +138,9 @@ Watch: [LINK]
 
 NEW: Share Your Bitcoin Journey, Episode 11.
 
-Alana Mediavilla walked away from a decade inside @Google, moved home to Puerto Rico, and directed Dirty Coin, the most important documentary on Bitcoin mining ever made.
+@AlanaMediavilla walked away from a decade inside @Google, moved home to Puerto Rico, and directed Dirty Coin (@DirtyCoinDoc), the most important documentary on Bitcoin mining ever made.
 
-500+ screenings in 200+ cities. All community-hosted.
+500+ screenings in 200+ cities via @campolibrefilms. All community-hosted.
 
 Watch: [LINK]
 
@@ -153,14 +153,14 @@ Watch: [LINK]
 
 "That was my first lesson in not your keys, not your coins."
 
-@amediavilla on the moment that made her hold her own coins forever.
+@AlanaMediavilla on the moment that made her hold her own coins forever.
 
 
 --- X (Post 3, thread) ---
 
 "There is no energy crisis. There is only a crisis of ignorance."
 
-Dirty Coin director @amediavilla on how Bitcoin mining unlocks stranded renewable energy from rural Texas to the mountains of Malawi.
+Dirty Coin (@DirtyCoinDoc) director @AlanaMediavilla on how Bitcoin mining unlocks stranded renewable energy from rural Texas to the mountains of Malawi.
 
 The story mainstream media refuses to show.
 
@@ -169,7 +169,7 @@ The story mainstream media refuses to show.
 
 Dirty Coin has been screened in 500 events across 200 cities using a community-hosted distribution model that bypasses the traditional gatekeepers.
 
-@amediavilla on why the next decade of cinema belongs to artists who control their own rails.
+@AlanaMediavilla on why the next decade of cinema belongs to artists who control their own rails.
 
 
 --- Nostr ---
@@ -221,7 +221,7 @@ Read her full story on our Stories page (coming soon): https://www.bitcoinforthe
 - 1:23 intro clip is factored into the chapters. Chapter 1 (Welcome and Puerto Rico origins) starts at 1:23, matching the Ep 10 pattern.
 - Chapter timestamps are estimates based on transcript pacing. Confirm by scrubbing before publishing.
 - Dirty Coin canonical watch/host destination is the Kinema page confirmed by Alana: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1. Film is also on IndeeHub, Geyser, and Relay.
-- References still to double-check before publish: Campo Libre URL (https://campolibre.co as a best guess), Alana's X handle on the thread posts (I used @amediavilla as a best guess; if her actual handle is different, update the four X posts).
+- X handles confirmed by Dion: @AlanaMediavilla (Alana), @DirtyCoinDoc (Dirty Coin film), @campolibrefilms (Campo Libre production company). All three are woven into the X thread posts.
 - Description length under YouTube's 5,000-character cap.
 - Tags line under YouTube's 500-character cap.
 - No em dashes anywhere in this file (per BFTA voice rule).
