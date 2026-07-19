@@ -1,6 +1,6 @@
 YOUTUBE UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 12
 
-UPLOAD STATUS: Ready to publish. Thumbnail is already in the repo at public/Ep12PhilipCharter.JPG and will resolve at https://www.bitcoinforthearts.org/Ep12PhilipCharter.JPG once main is deployed. Upload as PUBLIC unless Dion wants a final review pass before making it live.
+UPLOAD STATUS: Live at https://youtu.be/Aafx8q4RaPA (uploaded July 19, 2026). Thumbnail is in the repo at public/Ep12PhilipCharter.JPG and web hero at public/sybj-ep12-PhilipCharter-web.png.
 
 
 === TITLE ===
@@ -135,7 +135,7 @@ His thesis: "We don't need more technical explanations. We need to get better at
 
 Two hours on writing, fiction, community, and why the next generation of orange-pilling will be done by artists and authors, not analysts.
 
-Watch: [LINK]
+Watch: https://youtu.be/Aafx8q4RaPA
 
 #BitcoinForTheArts #Bitcoin #21Futures #Writing #SoundMoney #Nonprofit
 
@@ -148,7 +148,7 @@ NEW: Share Your Bitcoin Journey, Episode 12.
 
 Today he is one of the most read voices in Bitcoin writing.
 
-Watch: [LINK]
+Watch: https://youtu.be/Aafx8q4RaPA
 
 
 --- X (Post 2, thread) ---
@@ -199,7 +199,7 @@ Highlights from the conversation:
 * Life on a Bitcoin standard as a resident of a Spanish island
 * Advice for writers looking to work in the Bitcoin space professionally
 
-Watch: [LINK]
+Watch: https://youtu.be/Aafx8q4RaPA
 
 #Bitcoin #Nostr #BitcoinForTheArts #BFTA #21Futures #SoundMoney #V4V
 
@@ -218,7 +218,7 @@ For BFTA, that lands close to home. If artists are going to understand the monet
 
 Two hours on writing, fiction, community, ghostwriting for Bitcoin founders, life on a Bitcoin standard on a Spanish island, and what a $500 to $2,000 Bitcoin micro-grant from BFTA could do for the next chapter of freedom fiction.
 
-Watch: [LINK]
+Watch: https://youtu.be/Aafx8q4RaPA
 
 Read his full story on our Stories page (coming soon): https://www.bitcoinforthearts.org/stories
 
