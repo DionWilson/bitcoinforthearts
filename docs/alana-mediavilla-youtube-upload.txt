@@ -1,0 +1,227 @@
+YOUTUBE UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 11
+
+UPLOAD STATUS: Ready to publish. Thumbnail is already in the repo at public/Ep11AlanaMediavilla.JPG and will resolve at https://www.bitcoinforthearts.org/Ep11AlanaMediavilla.JPG once main is deployed. Upload as PUBLIC unless Dion wants a final review pass before making it live.
+
+
+=== TITLE ===
+
+Share Your Bitcoin Journey: Episode 11 – Alana Mediavilla: The Filmmaker Behind Dirty Coin
+
+
+=== TITLE (BACKUP OPTIONS) ===
+
+- Share Your Bitcoin Journey: Episode 11 – Alana Mediavilla: From Google Cloud to Decentralized Cinema
+- Share Your Bitcoin Journey: Episode 11 – Alana Mediavilla: Dirty Coin, Malawi, and Sound Money Filmmaking
+- Share Your Bitcoin Journey: Episode 11 – Alana Mediavilla: The Puerto Rican Filmmaker on a Bitcoin Standard
+
+
+=== DESCRIPTION ===
+
+In this two-hour conversation, Bitcoin For The Arts founder Dion Wilson sits down with Alana Mediavilla, the Puerto Rican filmmaker behind the award-winning documentary Dirty Coin and founder of Campo Libre in San Juan.
+
+Alana spent more than a decade inside Silicon Valley producing for Google, Apple, PayPal, Volkswagen, and Volvo, including four years as a video producer for Google Cloud. In 2020 she walked away, moved her family home to Puerto Rico, and built the most important documentary on Bitcoin mining ever made. Dirty Coin has since been screened in over 200 cities through a community-hosted distribution model and won Best National Documentary in Puerto Rico, the first English-language film ever to do so.
+
+This is the full story: a photographer father at Kodak, a Cuban mother whose family left Havana under Fidel, the personal sovereignty question that runs through every choice she has made since, and why the next decade of cinema belongs to artists who control their own rails.
+
+IN THIS EPISODE:
+- Growing up in Puerto Rico with a Kodak photographer father, and how free film rolls shaped a filmmaker
+- Half Cuban, half Puerto Rican: sovereignty as a verb, not a noun
+- The 2018 phone call from her Cuban grandfather that reframed Bitcoin as a family tool
+- Buying 3 BTC at $200 each, and finding out her husband had sold them at $600
+- Leaving Google Cloud during the 2020 lockdown and moving three kids home to Puerto Rico
+- Becoming a Bitcoin-only maxi after watching neighbors get rug-pulled on the island
+- Why Dirty Coin had to exist: policymakers regulating math they did not understand
+- What Malawi taught her that Texas could not, and how mining unlocks stranded renewable energy
+- Grid balancing: why a Bitcoin miner can turn on and off 20 times a day and an AI data center cannot
+- Financing a documentary in Bitcoin, and the day a 40k BTC donation became 70k of production spend
+- Building trust with Cynthia Loomis, flare-gas operators, and communities burned by mainstream media
+- Community-hosted distribution: 500 screenings, 200 cities, aimed at meetup leaders
+- The most unreported story about Bitcoin and energy
+- Where techno-optimism ends and surveillance begins
+- The vision for decentralized film distribution paid in sats
+- Node Runners: the documentary she is filming through 2027 for 2028 release
+- Advice for women and mothers looking at Bitcoin from outside the movement
+- What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock for Node Runners
+
+WATCH DIRTY COIN or HOST A SCREENING:
+Dirty Coin: The Bitcoin Mining Documentary is available on Kinema, IndeeHub, Geyser, and Relay, with more streamers on the way.
+Watch or host a screening: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1
+
+ABOUT ALANA MEDIAVILLA:
+Puerto Rican filmmaker, director and producer of Dirty Coin, founder of Campo Libre (San Juan). Mother of three. Currently filming Node Runners, her next documentary.
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
+
+https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Grants: https://www.bitcoinforthearts.org/grants/apply
+Substack: https://substack.com/@bitcoinforthearts
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+CHAPTERS (estimated; verify after final edit. Opens with a 1:23 intro clip, runs about 2:00:58):
+0:00 Cold open, intro clip
+1:23 Welcome and Puerto Rico origins
+3:00 Growing up with a Kodak photographer father
+8:30 Half Cuban, half Puerto Rican, and the family history of independence
+14:00 Sovereignty as a verb, not a noun
+18:00 Leaving Silicon Valley and moving the family home in 2020
+24:00 A day in the life in the jungle five minutes from the beach
+28:30 What ten years inside Big Tech taught her about how technology is sold
+33:00 First encounter with Bitcoin in 2015
+38:00 Not your keys, not your coins
+42:00 The Cuban grandfather call of 2018
+45:30 Becoming a Bitcoin-only maxi in Puerto Rico
+51:00 Why Dirty Coin had to exist
+57:00 What Malawi taught her that Texas could not
+1:05:00 Grid balancing, load management, and the misconceptions about mining
+1:13:00 Financing a documentary in Bitcoin
+1:19:00 Building trust with Cynthia Loomis and the mining community
+1:24:00 Community-hosted distribution: 500 screenings, 200 cities
+1:31:00 The single most unreported story about Bitcoin and energy
+1:38:00 Techno-optimism and where to draw the line
+1:46:00 A five-year vision for decentralized film distribution
+1:51:00 Node Runners: the next documentary
+1:55:30 Advice for women and mothers in the Bitcoin space
+1:58:30 The first English documentary to win Best National Documentary in Puerto Rico
+2:00:00 The BFTA micro-grant question and closing
+
+#Bitcoin #DirtyCoin #AlanaMediavilla #BitcoinMining #SoundMoney
+
+
+=== TAGS ===
+
+Bitcoin,Bitcoin For The Arts,Alana Mediavilla,Dirty Coin,Campo Libre,Bitcoin mining,Bitcoin documentary,Share Your Bitcoin Journey,Dion Wilson,Puerto Rico,Malawi,Cynthia Loomis,flare gas,decentralized cinema,independent film,sound money,HODL,not your keys not your coins,Google Cloud,Node Runners,Bitcoin filmmaker,Kinema,community screening,nonprofit,501c3,Bitcoin micro grants,Nostr,orange pill,sovereignty
+
+
+=== THUMBNAIL ===
+
+Thumbnail is already in the repo at public/Ep11AlanaMediavilla.JPG. Once main is deployed it will resolve at https://www.bitcoinforthearts.org/Ep11AlanaMediavilla.JPG.
+
+If a graphic overlay is added later, three text options that could work:
+
+Option 1: "The Filmmaker Behind Dirty Coin" (portrait of Alana, orange bar bottom)
+Option 2: "From Google Cloud to Decentralized Cinema" (Alana + Dirty Coin key art)
+Option 3: "Bitcoin Mining, Honestly" (Alana + a Malawi field still)
+
+Consistent branding: BFTA orange bar across bottom, "Share Your Bitcoin Journey / EP 11" lockup, Dirty Coin key art in the top-right if space allows.
+
+
+=== CATEGORY ===
+
+Nonprofits & Activism (or Education)
+
+
+=== PLAYLIST ===
+
+Share Your Bitcoin Journey
+
+
+=== SOCIAL POSTS ===
+
+
+--- LinkedIn ---
+
+NEW EPISODE: Share Your Bitcoin Journey with Alana Mediavilla, director of Dirty Coin
+
+Alana spent more than a decade inside Silicon Valley producing content for Google, Apple, PayPal, Volkswagen, and Volvo. In 2020 she walked away, moved her family back to Puerto Rico, and built the most important documentary on Bitcoin mining ever made. Dirty Coin has since been screened in over 200 cities through a community-hosted distribution model and won Best National Documentary in Puerto Rico as the first English-language film ever to do so.
+
+Two hours on: growing up between a Kodak photographer father and a Cuban mother whose family left Havana under Fidel, the personal sovereignty question that runs through every choice she has made since, what Malawi taught her that Texas could not, and why the next decade of cinema belongs to the artists who control their own rails.
+
+Watch: [LINK]
+
+#BitcoinForTheArts #Bitcoin #DirtyCoin #Documentary #SoundMoney #Nonprofit
+
+
+--- X (Post 1) ---
+
+NEW: Share Your Bitcoin Journey, Episode 11.
+
+@AlanaMediavilla walked away from a decade inside @Google, moved home to Puerto Rico, and directed Dirty Coin (@DirtyCoinDoc), the most important documentary on Bitcoin mining ever made.
+
+500+ screenings in 200+ cities via @campolibrefilms. All community-hosted.
+
+Watch: [LINK]
+
+
+--- X (Post 2, thread) ---
+
+"I bought 3 Bitcoin at $200 each in 2015."
+
+"I found out at Starbucks when Bitcoin hit $10,000 that my husband had sold them at $600."
+
+"That was my first lesson in not your keys, not your coins."
+
+@AlanaMediavilla on the moment that made her hold her own coins forever.
+
+
+--- X (Post 3, thread) ---
+
+"There is no energy crisis. There is only a crisis of ignorance."
+
+Dirty Coin (@DirtyCoinDoc) director @AlanaMediavilla on how Bitcoin mining unlocks stranded renewable energy from rural Texas to the mountains of Malawi.
+
+The story mainstream media refuses to show.
+
+
+--- X (Post 4, thread) ---
+
+Dirty Coin has been screened in 500 events across 200 cities using a community-hosted distribution model that bypasses the traditional gatekeepers.
+
+@AlanaMediavilla on why the next decade of cinema belongs to artists who control their own rails.
+
+
+--- Nostr ---
+
+New episode of Share Your Bitcoin Journey just dropped.
+
+Alana Mediavilla, the Puerto Rican filmmaker behind Dirty Coin and founder of Campo Libre, sits down with Bitcoin For The Arts for a two-hour conversation about the making of the most important documentary on Bitcoin mining ever made.
+
+She spent more than a decade inside Silicon Valley producing for Google, Apple, PayPal, Volkswagen, and Volvo. In 2020 she walked away, moved her family home to Puerto Rico, and built Dirty Coin from the ground up. The film has since been screened in over 200 cities through a community-hosted distribution model, and won Best National Documentary in Puerto Rico as the first English-language film ever to do so.
+
+Highlights from the conversation:
+
+* Buying 3 BTC at $200 each in 2015, and how she found out her husband had sold them at $600
+* The 2018 phone call from her Cuban grandfather that reframed Bitcoin as a family-scale tool
+* Why she left Google Cloud during the 2020 lockdown and moved the kids home to Puerto Rico
+* Becoming a Bitcoin-only maxi after watching neighbors get rug-pulled on the island
+* What Malawi taught her that Texas could not, and why Bitcoin mining unlocks stranded renewable energy
+* Financing a documentary in Bitcoin, and the day a 40k BTC donation turned into 70k of production spend
+* Community-hosted distribution: 500 screenings in 200 cities via Kinema, aimed at meetup leaders
+* Node Runners, her next documentary on how to own your own data and run your own compute
+* Advice for women and mothers looking at Bitcoin from outside the movement
+
+Watch: [LINK]
+
+#Bitcoin #Nostr #BitcoinForTheArts #BFTA #DirtyCoin #SoundMoney #V4V
+
+
+--- Substack ---
+
+Subject: The Filmmaker Behind Dirty Coin
+
+New episode of Share Your Bitcoin Journey is live, and this one is the longest and most substantive conversation we have recorded to date.
+
+Alana Mediavilla is the Puerto Rican filmmaker behind Dirty Coin, the most important documentary on Bitcoin mining ever made, and the founder of Campo Libre, an independent production company headquartered in San Juan. She spent more than a decade inside Silicon Valley producing for Google, Apple, PayPal, Volkswagen, and Volvo. In 2020 she walked away, moved her family home to Puerto Rico, and built Dirty Coin from the ground up.
+
+The film has since been screened in over 200 cities through a community-hosted distribution model, and won Best National Documentary in Puerto Rico as the first English-language film ever to do so.
+
+Two hours on sovereignty, energy, mining, community distribution, and what the next decade of independent cinema looks like when the artists control their own rails.
+
+Watch: [LINK]
+
+Read her full story on our Stories page (coming soon): https://www.bitcoinforthearts.org/stories
+
+
+=== INTERNAL NOTES ===
+
+- Alana's status for the Midwest Bitcoin Summit (Sept 23 and 24, 2026) is not confirmed. The public copy on /midwest was scrubbed of her name because we were not yet certain she could attend. The podcast episode is completely separate. Publishing the interview does not commit her to the summit and does not obligate BFTA either way.
+- If Alana confirms Midwest attendance later, we can add her name back to the /midwest sponsor page in a single follow-up commit.
+- 1:23 intro clip is factored into the chapters. Chapter 1 (Welcome and Puerto Rico origins) starts at 1:23, matching the Ep 10 pattern.
+- Chapter timestamps are estimates based on transcript pacing. Confirm by scrubbing before publishing.
+- Dirty Coin canonical watch/host destination is the Kinema page confirmed by Alana: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1. Film is also on IndeeHub, Geyser, and Relay.
+- X handles confirmed by Dion: @AlanaMediavilla (Alana), @DirtyCoinDoc (Dirty Coin film), @campolibrefilms (Campo Libre production company). All three are woven into the X thread posts.
+- Description length under YouTube's 5,000-character cap.
+- Tags line under YouTube's 500-character cap.
+- No em dashes anywhere in this file (per BFTA voice rule).
