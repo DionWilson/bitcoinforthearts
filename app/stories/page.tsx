@@ -143,7 +143,7 @@ const storiesData: StoryItem[] = [
     summary:
       "Puerto Rican filmmaker, director of the award-winning documentary Dirty Coin, and founder of Campo Libre in San Juan. After more than a decade producing for Google Cloud, Apple, PayPal, Volkswagen, and Volvo, Alana walked away in 2020, moved her family home to Puerto Rico, and built the most important documentary on Bitcoin mining ever made. Two hours on sovereignty, energy, mining, community-hosted distribution, and independent cinema on a Bitcoin standard.",
     thumbnail: "/sybj-ep11-alana-web.png",
-    link: "https://youtu.be/tw4Hl5EFm4w",
+    link: "https://youtu.be/c--KiT8r8iI",
   },
   {
     type: "article",

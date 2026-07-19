@@ -60,32 +60,29 @@ Substack: https://substack.com/@bitcoinforthearts
 X: https://x.com/Bitcoinfta
 Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
-CHAPTERS (estimated; verify after final edit. Opens with a 1:23 intro clip, runs about 2:00:58):
+CHAPTERS (rebuilt from full transcript after the re-edit. Opens with a 1:57 intro clip):
 0:00 Cold open, intro clip
-1:23 Welcome and Puerto Rico origins
+1:57 Welcome and Puerto Rico origins
 3:00 Growing up with a Kodak photographer father
-8:30 Half Cuban, half Puerto Rican, and the family history of independence
-14:00 Sovereignty as a verb, not a noun
-18:00 Leaving Silicon Valley and moving the family home in 2020
-24:00 A day in the life in the jungle five minutes from the beach
-28:30 What ten years inside Big Tech taught her about how technology is sold
-33:00 First encounter with Bitcoin in 2015
-38:00 Not your keys, not your coins
-42:00 The Cuban grandfather call of 2018
-45:30 Becoming a Bitcoin-only maxi in Puerto Rico
-51:00 Why Dirty Coin had to exist
-57:00 What Malawi taught her that Texas could not
-1:05:00 Grid balancing, load management, and the misconceptions about mining
-1:13:00 Financing a documentary in Bitcoin
-1:19:00 Building trust with Cynthia Loomis and the mining community
-1:24:00 Community-hosted distribution: 500 screenings, 200 cities
-1:31:00 The single most unreported story about Bitcoin and energy
-1:38:00 Techno-optimism and where to draw the line
-1:46:00 A five-year vision for decentralized film distribution
-1:51:00 Node Runners: the next documentary
-1:55:30 Advice for women and mothers in the Bitcoin space
-1:58:30 The first English documentary to win Best National Documentary in Puerto Rico
-2:00:00 The BFTA micro-grant question and closing
+12:30 Half Cuban, half Puerto Rican: sovereignty as a verb, not a noun
+24:30 Leaving Silicon Valley and moving the family home in 2020
+34:00 What Big Tech taught her about how technology is sold
+40:00 First encounter with Bitcoin in 2015
+43:30 Not your keys, not your coins
+47:00 Returning to Puerto Rico and becoming a Bitcoin-only maxi
+56:30 Why Dirty Coin had to exist
+1:06:00 What Malawi taught her that Texas could not
+1:13:00 Grid balancing and the misconceptions about mining
+1:20:00 Financing Dirty Coin in Bitcoin
+1:27:30 Building trust with Cynthia Loomis and the mining community
+1:33:30 Community-hosted distribution: 500 screenings, 200 cities
+1:39:30 The most unreported story about Bitcoin and energy
+1:44:00 Techno-optimism and where to draw the line
+1:50:00 A five-year vision for decentralized film distribution
+1:52:30 Node Runners: the next documentary
+1:55:00 Advice for women and mothers in the Bitcoin space
+1:57:00 Advice to her younger self at Google
+1:58:30 The BFTA micro-grant question and closing
 
 #Bitcoin #DirtyCoin #AlanaMediavilla #BitcoinMining #SoundMoney
 
@@ -129,7 +126,7 @@ Alana spent more than a decade inside Silicon Valley producing content for Googl
 
 Two hours on: growing up between a Kodak photographer father and a Cuban mother whose family left Havana under Fidel, the personal sovereignty question that runs through every choice she has made since, what Malawi taught her that Texas could not, and why the next decade of cinema belongs to the artists who control their own rails.
 
-Watch: [LINK]
+Watch: https://youtu.be/c--KiT8r8iI
 
 #BitcoinForTheArts #Bitcoin #DirtyCoin #Documentary #SoundMoney #Nonprofit
 
@@ -142,7 +139,7 @@ NEW: Share Your Bitcoin Journey, Episode 11.
 
 500+ screenings in 200+ cities via @campolibrefilms. All community-hosted.
 
-Watch: [LINK]
+Watch: https://youtu.be/c--KiT8r8iI
 
 
 --- X (Post 2, thread) ---
@@ -192,7 +189,7 @@ Highlights from the conversation:
 * Node Runners, her next documentary on how to own your own data and run your own compute
 * Advice for women and mothers looking at Bitcoin from outside the movement
 
-Watch: [LINK]
+Watch: https://youtu.be/c--KiT8r8iI
 
 #Bitcoin #Nostr #BitcoinForTheArts #BFTA #DirtyCoin #SoundMoney #V4V
 
@@ -209,7 +206,7 @@ The film has since been screened in over 200 cities through a community-hosted d
 
 Two hours on sovereignty, energy, mining, community distribution, and what the next decade of independent cinema looks like when the artists control their own rails.
 
-Watch: [LINK]
+Watch: https://youtu.be/c--KiT8r8iI
 
 Read her full story on our Stories page (coming soon): https://www.bitcoinforthearts.org/stories
 
@@ -218,8 +215,9 @@ Read her full story on our Stories page (coming soon): https://www.bitcoinforthe
 
 - Alana's status for the Midwest Bitcoin Summit (Sept 23 and 24, 2026) is not confirmed. The public copy on /midwest was scrubbed of her name because we were not yet certain she could attend. The podcast episode is completely separate. Publishing the interview does not commit her to the summit and does not obligate BFTA either way.
 - If Alana confirms Midwest attendance later, we can add her name back to the /midwest sponsor page in a single follow-up commit.
-- 1:23 intro clip is factored into the chapters. Chapter 1 (Welcome and Puerto Rico origins) starts at 1:23, matching the Ep 10 pattern.
-- Chapter timestamps are estimates based on transcript pacing. Confirm by scrubbing before publishing.
+- Ep 11 was re-edited on July 19, 2026. Canonical YouTube URL is now https://youtu.be/c--KiT8r8iI. The original upload at https://youtu.be/tw4Hl5EFm4w is superseded and should not be shared going forward.
+- 1:57 intro clip in the re-edit. Chapter 1 (Welcome and Puerto Rico origins) starts at 1:57.
+- Chapter timestamps were rebuilt from the full transcript against a total runtime of approximately 2:00:53 (matching the pre-edit runtime). If the re-edit trimmed content and the new total runtime is materially different, ping Dion so we can rescale the marks in a one-line follow-up commit.
 - Dirty Coin canonical watch/host destination is the Kinema page confirmed by Alana: https://kinema.com/films/dirty-coin-the-bitcoin-mining-documentary-46arp1. Film is also on IndeeHub, Geyser, and Relay.
 - X handles confirmed by Dion: @AlanaMediavilla (Alana), @DirtyCoinDoc (Dirty Coin film), @campolibrefilms (Campo Libre production company). All three are woven into the X thread posts.
 - Description length under YouTube's 5,000-character cap.
