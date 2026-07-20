@@ -146,6 +146,16 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/tw4Hl5EFm4w",
   },
   {
+    type: "episode",
+    episodeNumber: 12,
+    title:
+      "Share Your Bitcoin Journey: Episode 12 \u2013 Philip Charter: The Totally Human Writer",
+    summary:
+      "British author, editor, and ghostwriter behind Totally Human Writer, and the co-editor of 21 Futures: Tales from the Timechain, the world\u2019s first Bitcoin fiction anthology. From a walked-away London marketing career and years teaching English across Latin America, Asia, and Spain, to seven published books and a Konsensus Network imprint. His thesis: we don\u2019t need more technical explanations, we need to get better at telling stories.",
+    thumbnail: "/sybj-ep12-PhilipCharter-web.png",
+    link: "https://youtu.be/c--KiT8r8iI",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
