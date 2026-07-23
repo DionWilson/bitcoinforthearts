@@ -341,6 +341,36 @@ const storiesData: StoryItem[] = [
     ],
     link: "/stories/a13mw-zap-animations",
   },
+  {
+    type: "article",
+    title:
+      "No Good Kid \u2013 The Designer Behind the Books You Already Own",
+    teaser:
+      "In the age of the algorithm, where identity is currency and every artist is asked to sell a face, No Good Kid has chosen the opposite. A designer, art director, and creative producer with fifteen years inside the machine of branding and marketing, he works behind a bandana and a pseudonym, shaping the visual language of Bitcoin\u2019s most enduring books, zines, and cultural artifacts. He is not the artist you see on the cover. He is the one who decided what the cover should be.",
+    byline: "Bitcoin For The Arts, Inc.",
+    profileImage: {
+      src: "/nogoodkid-portrait.jpg",
+      alt: "No Good Kid, creative producer and art director, self-portrait in bandana and cap",
+    },
+    images: [
+      {
+        src: "/nogoodkid-amityage-top10.jpg",
+        alt: "Top 10 Bitcoin F*ck Ups book design by No Good Kid for AmityAge Education",
+        caption: "\u201CTop 10 Bitcoin F*ck Ups\u201D, book design for AmityAge Education",
+      },
+      {
+        src: "/nogoodkid-calligraphy-cover.jpg",
+        alt: "Cypherpunk zine cover treatment by No Good Kid, hand-drawn calligraphy on black paper",
+        caption: "Cypherpunk cover treatment, hand-drawn calligraphy",
+      },
+      {
+        src: "/nogoodkid-tamers-evidence.jpg",
+        alt: "Tamers of Entropy premium edition evidence-bag packaging designed by No Good Kid",
+        caption: "\u201CTamers of Entropy\u201D, premium edition evidence-bag packaging",
+      },
+    ],
+    link: "/stories/no-good-kid",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
