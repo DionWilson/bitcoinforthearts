@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "No Good Kid \u2013 The Designer Behind the Books You Already Own | Bitcoin for the Arts",
+    "No Good Kid \u2013 Building Culture Around Bitcoin and Nostr | Bitcoin for the Arts",
   description:
-    "No Good Kid, a masked creative producer and art director working across the Bitcoin, cypherpunk, and lunarpunk publishing worlds, shapes the visual language of the movement\u2019s most enduring books, zines, and cultural artifacts.",
+    "No Good Kid is a designer, art director, and creative producer collaborating with authors, publishers, and independent artists to help complex ideas around Bitcoin, Nostr, and freedom tech reach a broader audience.",
 };
 
 export default function NoGoodKidPage() {
@@ -45,7 +45,7 @@ export default function NoGoodKidPage() {
             Back to Stories
           </Link>
           <h1 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            No Good Kid &ndash; The Designer Behind the Books You Already Own
+            No Good Kid &ndash; Building Culture Around Bitcoin and Nostr
           </h1>
           <p className="mt-4 text-sm font-semibold uppercase tracking-wide text-white/60">
             Bitcoin For The Arts, Inc.
@@ -58,26 +58,26 @@ export default function NoGoodKidPage() {
         <div className="prose-article">
           <p>
             In the age of the algorithm, where identity is currency and every
-            artist is asked to sell a face, No Good Kid has chosen the opposite.
-            A designer, art director, and creative producer with fifteen years
-            inside the machine of branding and marketing, he now works behind a
-            bandana and a pseudonym, shaping the visual language of
-            Bitcoin&rsquo;s most enduring books, zines, and cultural artifacts.
-            He is not the artist you see on the cover. He is the one who
-            decided what the cover should be.
+            artist is asked to sell a face, No Good Kid has chosen the
+            opposite. A designer, art director, and creative producer with
+            fifteen years in branding and marketing, he works behind a
+            bandana and a pseudonym, collaborating with authors, publishers,
+            and independent artists to help complex ideas reach a broader
+            audience. He is not the name on the cover. He is one of the
+            people in the room helping shape the project from the inside.
           </p>
 
           <p>
-            His path began in the commercial arts, over a decade and a half of
-            building brand identities and marketing campaigns for clients who
-            never once mentioned money. Then, in 2020, Bitcoin entered his life
-            through the lens most newcomers arrive through: as a store of
-            value, as an escape hatch from the fiat treadmill. He attended
-            meetups, then conferences, expecting to find a technology
-            community. What he found was culture. &ldquo;I realized there was
-            something beneath all the investing and technology talk,&rdquo; he
-            writes, &ldquo;a culture I felt I&rsquo;d been looking for my whole
-            life.&rdquo;
+            His path began in the commercial arts, with fifteen years of
+            building brand identities and marketing campaigns before Bitcoin
+            ever entered the frame. That changed in 2020, when he encountered
+            Bitcoin through the lens most newcomers arrive through: as a
+            store of value, an escape hatch from the fiat treadmill. He
+            attended meetups, then conferences, expecting to find a
+            technology community. What he found was culture. &ldquo;I
+            realized there was something beneath all the investing and
+            technology talk,&rdquo; he writes, &ldquo;a culture I felt I&rsquo;d
+            been looking for my whole life.&rdquo;
           </p>
 
           {/* Portrait */}
@@ -107,27 +107,15 @@ export default function NoGoodKidPage() {
           </p>
 
           <p>
-            His portfolio inside Bitcoin reads like a survey of the
-            movement&rsquo;s most literate corners. For Du&scaron;an
-            Matu&scaron;ka and the AmityAge team, whose Bitcoin Educators
-            Academy has trained a generation of Central and Eastern European
-            Bitcoin teachers, No Good Kid designed the book{" "}
-            <em>Top 10 Bitcoin F*ck Ups</em>, a beginner&rsquo;s guide to the
-            mistakes new Bitcoiners make on the way down the rabbit hole. The
-            original brief called for something academic.{" "}
-            <em>
-              &ldquo;My original idea was to make it look like a boring paper
-              that could have been written by the European Central
-              Bank,&rdquo;
-            </em>{" "}
-            Matu&scaron;ka recalls.{" "}
-            <em>
-              &ldquo;No Good Kid said that&rsquo;s boring. True. And created
-              something that looked like an academic paper but had punk
-              energy.&rdquo;
-            </em>{" "}
-            The result: the pink and black hardcover that thousands of new
-            Bitcoiners now own.
+            His work in the space has taken shape mostly in collaboration
+            with authors and educators building outside the mainstream. For
+            Du&scaron;an Matu&scaron;ka and the AmityAge team, whose Bitcoin
+            Educators Academy has trained a generation of global Bitcoin
+            educators, No Good Kid designed <em>Top 10 Bitcoin F*ck Ups</em>,
+            written by Matu&scaron;ka, a guide for beginners to avoid the
+            most common mistakes on their way down the Bitcoin rabbit hole.
+            The result is the pink and black hardcover that has helped a lot
+            of new Bitcoiners get their footing.
           </p>
 
           {/* Top 10 Bitcoin F*ck Ups */}
@@ -142,20 +130,19 @@ export default function NoGoodKidPage() {
           <p>
             Not every doorway into the Bitcoin space felt open to him. The
             famous cypherpunk line, &ldquo;cypherpunks write code,&rdquo;
-            landed as an exclusion. He is not a coder, and does not pretend to
-            be. What arrived next was the term <em>lunarpunk</em>,
+            landed as an exclusion. He is not a coder, and does not pretend
+            to be. What arrived next was the term <em>lunarpunk</em>,
             articulated to him by the Slovak cypherpunk author Juraj
-            Bedn&aacute;r, and it changed everything. Lunarpunk, in
-            Bedn&aacute;r&rsquo;s framing, was less an implementation than a
-            culture, a model for society built on peer-to-peer interactions,
-            private communication tools, independent money, and the ability to
-            transact without permission. The cypherpunk tools were there.
-            Lunarpunk asked what a society built on top of those tools could
-            feel like. For No Good Kid, the door opened. He designed the{" "}
-            <em>Dark Forest</em> zine, an editorial collaboration between
-            Peter Horv&aacute;th and the Bitcoin-punk podcast bitpunk.fm,
-            translating a subculture&rsquo;s inner language into a visual
-            object a broader audience could hold.
+            Bedn&aacute;r. Lunarpunk, in Bedn&aacute;r&rsquo;s framing, was
+            less an implementation than a culture, a model for society built
+            on peer-to-peer interactions, private communication tools,
+            independent money, and the ability to transact without
+            permission. For No Good Kid, the door opened. He designed the{" "}
+            <em>Dark Forest</em> zine, a collaboration featuring an essay by
+            Peter Horv&aacute;th and poetry and photography by the analog
+            podcaster and artist bitpunk.fm, translating an emerging
+            subculture&rsquo;s inner language into a visual object a broader
+            audience could hold.
           </p>
 
           {/* Calligraphy cover treatment */}
@@ -168,19 +155,18 @@ export default function NoGoodKidPage() {
           </div>
 
           <p>
-            The fullest expression of that lunarpunk practice arrived in 2026,
-            when Juraj Bedn&aacute;r and his co-author Lisa published{" "}
-            <em>Tamers of Entropy</em>, described as a lunarpunk novel but
-            conceived as a full conceptual project. The book became a
-            universe. Premium editions arrived in evidence-bag packaging with
-            pre-numbered case files, sealed for authorized eyes only.
-            Characters from the story continued to post in character on Nostr,
-            their profiles live and responsive to readers who chose to engage.
-            No Good Kid served as art director across the entire ecosystem,
-            from typography of the printed page to the packaging that makes
+            The fullest expression of that lunarpunk practice arrived in
+            2026, when juraj &amp; lisa published <em>Tamers of Entropy</em>,
+            described as a lunarpunk novel but conceived as a full
+            conceptual project. The book became a universe. Premium editions
+            arrived in evidence-bag packaging with pre-numbered case files,
+            sealed for authorized eyes only. Characters from the story
+            continued to post in character on Nostr, their profiles live and
+            responsive to readers who chose to engage. No Good Kid produced
+            and art-directed the project across the entire ecosystem, from
+            the typography of the printed page to the packaging that makes
             each premium edition feel like contraband smuggled from a nearby
-            future. The evidence bag is not a marketing gimmick. It is the
-            argument.
+            future.
           </p>
 
           {/* Evidence bag packaging */}
@@ -221,29 +207,16 @@ export default function NoGoodKidPage() {
           </blockquote>
 
           <p>
-            The infrastructure of his practice runs on the very tools he
-            designs for. His payments are received over Lightning at his
-            Nostr address, nogoodkid at wallet.yakihonne.com. His
-            verifiable identity lives at nogoodkid at tamersofentropy.net.
-            His portfolio sits on the open web without dependency on any
-            platform he does not control. In choosing to work behind a mask,
-            he acknowledges what the movement he serves has always
-            acknowledged: the work is what matters, not the face behind it.
-            Satoshi&rsquo;s most durable lesson is not a slogan. It is a way
-            of working.
-          </p>
-
-          <p>
-            Bitcoin For The Arts has long argued that the artists most
-            essential to the movement&rsquo;s next decade are the ones the
-            algorithm cannot see. Musicians, painters, and choreographers
-            get their names on the ticket, and that is right. Designers,
-            producers, and art directors do not. In No Good Kid, BFTA finds
-            the culture worker who has quietly designed the covers, the
-            packaging, and the visual language that make the Bitcoin
-            renaissance look like a renaissance at all. His art is not the
-            thing you see first when you open the book. His art is why you
-            wanted to open the book in the first place.
+            Bitcoin For The Arts is proud to feature the artists most
+            essential to the movement&rsquo;s next decade, including the
+            ones whose work the algorithm cannot easily surface. Musicians,
+            painters, and choreographers get their names on the ticket, and
+            that is right. Designers, producers, and art directors more
+            often do not. In No Good Kid, BFTA finds a collaborator whose
+            craft is in service of the story others are trying to tell, and
+            whose thesis about people, culture, community, and the emerging
+            world of Bitcoin and Nostr fits our own without needing
+            translation.
           </p>
         </div>
 

@@ -344,9 +344,9 @@ const storiesData: StoryItem[] = [
   {
     type: "article",
     title:
-      "No Good Kid \u2013 The Designer Behind the Books You Already Own",
+      "No Good Kid \u2013 Building Culture Around Bitcoin and Nostr",
     teaser:
-      "In the age of the algorithm, where identity is currency and every artist is asked to sell a face, No Good Kid has chosen the opposite. A designer, art director, and creative producer with fifteen years inside the machine of branding and marketing, he works behind a bandana and a pseudonym, shaping the visual language of Bitcoin\u2019s most enduring books, zines, and cultural artifacts. He is not the artist you see on the cover. He is the one who decided what the cover should be.",
+      "In the age of the algorithm, where identity is currency and every artist is asked to sell a face, No Good Kid has chosen the opposite. A designer, art director, and creative producer with fifteen years in branding and marketing, he works behind a bandana and a pseudonym, collaborating with authors, publishers, and independent artists to help complex ideas around Bitcoin, Nostr, and freedom tech reach a broader audience.",
     byline: "Bitcoin For The Arts, Inc.",
     profileImage: {
       src: "/nogoodkid-portrait.jpg",
