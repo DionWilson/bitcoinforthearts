@@ -114,8 +114,6 @@ export default function NoGoodKidPage() {
             educators, No Good Kid designed <em>Top 10 Bitcoin F*ck Ups</em>,
             written by Matu&scaron;ka, a guide for beginners to avoid the
             most common mistakes on their way down the Bitcoin rabbit hole.
-            The result is the pink and black hardcover that has helped a lot
-            of new Bitcoiners get their footing.
           </p>
 
           {/* Top 10 Bitcoin F*ck Ups */}
@@ -159,8 +157,8 @@ export default function NoGoodKidPage() {
             2026, when juraj &amp; lisa published <em>Tamers of Entropy</em>,
             described as a lunarpunk novel but conceived as a full
             conceptual project. The book became a universe. Premium editions
-            arrived in evidence-bag packaging with pre-numbered case files,
-            sealed for authorized eyes only. Characters from the story
+            arrived in evidence-bag packaging, sealed for authorized eyes
+            only. Characters from the story
             continued to post in character on Nostr, their profiles live and
             responsive to readers who chose to engage. No Good Kid produced
             and art-directed the project across the entire ecosystem, from
@@ -181,8 +179,9 @@ export default function NoGoodKidPage() {
           <p>
             Read across the body of work, a thesis emerges.{" "}
             <em>
-              &ldquo;I got lucky when my personal hero invited me to handle
-              the creative side of some of his projects,&rdquo;
+              &ldquo;I got lucky when Juraj Bedn&aacute;r, my personal hero,
+              invited me to handle the creative side of some of his
+              projects,&rdquo;
             </em>{" "}
             No Good Kid writes.{" "}
             <em>
