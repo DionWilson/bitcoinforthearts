@@ -341,6 +341,36 @@ const storiesData: StoryItem[] = [
     ],
     link: "/stories/a13mw-zap-animations",
   },
+  {
+    type: "article",
+    title:
+      "No Good Kid \u2013 Building Culture Around Bitcoin and Nostr",
+    teaser:
+      "In the age of the algorithm, where identity is currency and every artist is asked to sell a face, No Good Kid has chosen the opposite. A designer, art director, and creative producer with fifteen years in branding and marketing, he works behind a bandana and a pseudonym, collaborating with authors, publishers, and independent artists to help complex ideas around Bitcoin, Nostr, and freedom tech reach a broader audience.",
+    byline: "Bitcoin For The Arts, Inc.",
+    profileImage: {
+      src: "/nogoodkid-portrait.jpg",
+      alt: "No Good Kid, creative producer and art director, self-portrait in bandana and cap",
+    },
+    images: [
+      {
+        src: "/nogoodkid-amityage-top10.jpg",
+        alt: "Top 10 Bitcoin F*ck Ups book design by No Good Kid for AmityAge Education",
+        caption: "\u201CTop 10 Bitcoin F*ck Ups\u201D, book design for AmityAge Education",
+      },
+      {
+        src: "/nogoodkid-dark-forest.jpg",
+        alt: "Dark Forest zine cover, essay by Peter Horvath and poetry and photography by bitpunk.fm, designed by No Good Kid",
+        caption: "\u201CDark Forest\u201D zine, designed by No Good Kid",
+      },
+      {
+        src: "/nogoodkid-tamers-cover.jpg",
+        alt: "Tamers of Entropy, lunarpunk novel by juraj and lisa, produced and art directed by No Good Kid",
+        caption: "\u201CTamers of Entropy\u201D, produced and art directed by No Good Kid",
+      },
+    ],
+    link: "/stories/no-good-kid",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
