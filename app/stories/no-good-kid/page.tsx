@@ -143,12 +143,12 @@ export default function NoGoodKidPage() {
             audience could hold.
           </p>
 
-          {/* Calligraphy cover treatment */}
+          {/* Dark Forest zine */}
           <div className="my-12 mx-auto max-w-md">
             <FramedImage
-              src="/nogoodkid-calligraphy-cover.jpg"
-              alt="Cypherpunk zine cover treatment by No Good Kid, hand-drawn calligraphy on black paper"
-              caption="Cypherpunk cover treatment, hand-drawn calligraphy"
+              src="/nogoodkid-dark-forest.jpg"
+              alt="Dark Forest zine cover, essay by Peter Horvath and poetry and photography by bitpunk.fm, designed by No Good Kid"
+              caption="Dark Forest zine, designed by No Good Kid"
             />
           </div>
 
@@ -167,12 +167,12 @@ export default function NoGoodKidPage() {
             future.
           </p>
 
-          {/* Evidence bag packaging */}
+          {/* Tamers of Entropy */}
           <div className="my-12 mx-auto max-w-md">
             <FramedImage
-              src="/nogoodkid-tamers-evidence.jpg"
-              alt="Tamers of Entropy premium edition evidence-bag packaging designed by No Good Kid"
-              caption="Tamers of Entropy, premium edition evidence-bag packaging"
+              src="/nogoodkid-tamers-cover.jpg"
+              alt="Tamers of Entropy, lunarpunk novel by juraj and lisa, produced and art directed by No Good Kid"
+              caption="Tamers of Entropy, produced and art directed by No Good Kid"
             />
           </div>
 
