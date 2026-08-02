@@ -177,7 +177,7 @@ export default function MidwestVolunteerPage() {
             Sponsor or apply for a grant.
           </h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
-            If you would rather back the event with dollars or in-kind support, our sponsor page walks through eight tiers and a range of in-kind asks. If you are a working artist, our grant application is open year-round.
+            If you would rather back the event with dollars or in-kind support, our sponsor page walks through nine tiers and a range of in-kind asks. If you are a working artist, our grant application is open year-round.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link

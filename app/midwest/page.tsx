@@ -132,6 +132,24 @@ export default function MidwestPage() {
       ],
     },
     {
+      name: 'The Storyteller Sponsor',
+      price: '$5,000',
+      slots: '1 slot',
+      featured: false,
+      benefits: [
+        'Sponsor the Bitcoin Arts Park children\u2019s book reading of Lindey Magee\u2019s Bitcoin: A Treasure to HODL, presented in partnership with Short North Stage and Columbus-area homeschool families',
+        'Every attending child receives an autographed copy of the book, a BFTA welcome kit, and a starter Bitcoin wallet preloaded with sats, the first Bitcoin transaction of their lives, given in the sponsor\u2019s name',
+        'Live thank-you from the stage at the beginning of the reading',
+        'Sponsor name and logo on a bookplate sticker inside every book given to a child',
+        'Dedicated signage at the reading area at Bitcoin Arts Park',
+        'Featured across the BFTA newsletter, Substack, X, LinkedIn, Nostr, and Facebook channels leading into and out of the event',
+        'Featured in the produced post-event recap that runs through year-end',
+        'Written acknowledgment in BFTA\u2019s year-end donor communications and 2026 annual report',
+        'Permanent listing on BFTA Sponsors page',
+        'Tax-deductible',
+      ],
+    },
+    {
       name: 'Sponsor a Performance',
       price: '$2,500',
       slots: '4\u20136 slots',
@@ -395,7 +413,7 @@ export default function MidwestPage() {
             Sponsorship tiers.
           </h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted">
-            Eight tiers. Pick the one that fits your organization. Sponsorships are tax-deductible to the full extent allowed by law \u2014 Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>. Tailored sponsorships above the Presenting tier are also welcome.
+            Nine tiers. Pick the one that fits your organization. Sponsorships are tax-deductible to the full extent allowed by law \u2014 Bitcoin for the Arts, Inc. is a 501(c)(3) tax-exempt nonprofit, EIN <strong className="text-foreground">{ein}</strong>. Tailored sponsorships above the Presenting tier are also welcome.
           </p>
 
           <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
