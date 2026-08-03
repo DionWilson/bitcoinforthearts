@@ -108,11 +108,23 @@ Bitcoin is a monetary protocol. But it is also a technology. Its underlying arch
 
 Bitcoin mining monetizes stranded and wasted energy that no traditional market could ever reach. Renewable installations that would otherwise be economically nonviable become viable when a Bitcoin miner is willing to buy the excess power. Grids get built. Communities in Malawi and rural Texas get infrastructure they could not have financed any other way.
 
-Bitcoin's security model, the aggregate hash rate of the global mining network, is one of the most robust cybersecurity investments in human history. Every transaction validated by that network inherits its security. Every message signed with a Bitcoin private key inherits its cryptographic guarantee.
+Bitcoin's security model, the aggregate hash rate of the global mining network, is one of the most robust cybersecurity systems humanity has ever built. Every transaction validated by that network inherits its security. Every message signed with a Bitcoin private key inherits its cryptographic guarantee.
 
 Bitcoin's self-custody model puts a citizen back in control of their own value. No bank. No intermediary. No permission slip. That is not a financial product. That is a civil-liberties advancement.
 
 None of those things should be calculated as an investment. All of them should be calculated as what they are: a technological advancement of human society. Same protocol. Different framing.
+
+---
+
+### The gravity of the old rails
+
+There is one more distortion worth naming, and it is happening in real time.
+
+The same monetary architecture that trained us to think of everything as an investment is now doing its very best to pull Bitcoin back inside its own walls. Large financial institutions have begun packaging Bitcoin into the same instruments they use to control fiat: exchange-traded products, structured funds, custodial wrappers, and every other form of financialization that turns a monetary asset into a portfolio line item. On the surface, these products bring more capital into Bitcoin. Underneath, they train the next generation of Bitcoin holders to use the exact same fiat vocabulary the technology was designed to make obsolete.
+
+If those instruments become the primary way most people ever encounter Bitcoin, the reframing this essay is arguing for will never happen. Bitcoin will remain an asset on a screen, not a ruler in a hand. The financial system will have absorbed the protocol without absorbing the point.
+
+That is the corrective this movement has to make. And someone specific has to make it.
 
 ---
 
