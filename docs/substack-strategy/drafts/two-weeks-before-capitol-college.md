@@ -56,7 +56,11 @@ The road that did was the stage.
 
 This week, a hardcover book with a lighthouse on the cover arrived at Dion's door. The sender was Victor Manuel Rosano López himself.
 
-The title is *The Last Refuge: Bitcoin Amid Digital Dystopia*. Rosano López is a Spanish computer scientist and software analyst from Jerez de la Frontera in Andalusia, currently a community manager at Tangem. The book is his first. In his own words, he first encountered Bitcoin through its technology and then "never stopped exploring its deeper purpose." *The Last Refuge* is a survey of Bitcoin as a peaceful instrument for reclaiming autonomy, sovereignty, and freedom from centralized digital control. It draws testimonies from activists, artists, journalists, and entrepreneurs across four continents. Every Lightning purchase of the book routes entirely to three nonprofits: Bitcoin Transformation Community, Women of Bitcoin, and Bitcoin For The Arts.
+![The Last Refuge: Bitcoin Amid Digital Dystopia by Victor Manuel Rosano López](/last-refuge-landscape-front.jpg)
+
+The title is *The Last Refuge: Bitcoin Amid Digital Dystopia*. Rosano López is a Spanish computer scientist and software analyst from Jerez de la Frontera in Andalusia, currently a community manager at Tangem. The book is his first. In his own words, he first encountered Bitcoin through its technology and then "never stopped exploring its deeper purpose." *The Last Refuge* is a survey of Bitcoin as a peaceful instrument for reclaiming autonomy, sovereignty, and freedom from centralized digital control. It draws testimonies from activists, artists, journalists, and entrepreneurs across four continents. Every Lightning purchase of the book on [Leanpub](https://leanpub.com/thelastrefuge) routes entirely to three nonprofits: Bitcoin Transformation Community, Women of Bitcoin, and Bitcoin For The Arts.
+
+![Back cover blurb, The Last Refuge by Victor Manuel Rosano López](/last-refuge-landscape-back.jpg)
 
 Dion opened the table of contents and looked down at Chapter 14. It is called "Bitcoin Is Hope." Two interviews are listed under the chapter title. The first is with Justin Rhedrick. The second is with Dion Wilson.
 
