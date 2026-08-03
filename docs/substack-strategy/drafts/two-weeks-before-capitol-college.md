@@ -54,9 +54,9 @@ The road that did was the stage.
 
 ---
 
-Last week, someone handed him a hardcover book with a lighthouse on the cover.
+This week, a hardcover book with a lighthouse on the cover arrived at Dion's door. The sender was Victor Manuel Rosano López himself.
 
-The title is *The Last Refuge: Bitcoin Amid Digital Dystopia*. The author, Victor Manuel Rosano López, is a Spanish computer scientist and software analyst from Jerez de la Frontera in Andalusia, currently a community manager at Tangem. The book is his first. In his own words, he first encountered Bitcoin through its technology and then "never stopped exploring its deeper purpose." *The Last Refuge* is a survey of Bitcoin as a peaceful instrument for reclaiming autonomy, sovereignty, and freedom from centralized digital control. It draws testimonies from activists, artists, journalists, and entrepreneurs across four continents.
+The title is *The Last Refuge: Bitcoin Amid Digital Dystopia*. Rosano López is a Spanish computer scientist and software analyst from Jerez de la Frontera in Andalusia, currently a community manager at Tangem. The book is his first. In his own words, he first encountered Bitcoin through its technology and then "never stopped exploring its deeper purpose." *The Last Refuge* is a survey of Bitcoin as a peaceful instrument for reclaiming autonomy, sovereignty, and freedom from centralized digital control. It draws testimonies from activists, artists, journalists, and entrepreneurs across four continents. Every Lightning purchase of the book routes entirely to three nonprofits: Bitcoin Transformation Community, Women of Bitcoin, and Bitcoin For The Arts.
 
 Dion opened the table of contents and looked down at Chapter 14. It is called "Bitcoin Is Hope." Two interviews are listed under the chapter title. The first is with Justin Rhedrick. The second is with Dion Wilson.
 
@@ -70,11 +70,19 @@ Two men on opposite ends of the same road.
 
 Rosano López, from Spain, arrived at Bitcoin from the technology end. He was drawn to the cryptography, the architecture, the decentralized design, and then, slowly, to the deeper purpose that the technology was pointing at. Dion Wilson, from Baltimore, arrived at Bitcoin from the stage end. He spent a life inside the arts, watched what fiat inflation did to working artists, and then, slowly, arrived at the technology that could give them a different set of rails. Both of them met inside a single chapter about hope. Neither of them could have plotted this in advance. It is a story neither of them would have made up if they tried.
 
-Bitcoin For The Arts has always argued that the artists who understand Bitcoin will be the people who bring the rest of the artistic world across the bridge. Dion has said it a hundred times on *Share Your Bitcoin Journey*. He has said it in every newsletter. He has said it at every conference. But last week, walking with a book in his hand, he was on the other side of the argument. He was the artist someone had already brought across. Someone had built the bridge for him. Someone had put him in a book. He is what the story is about now.
+Bitcoin For The Arts has always argued that the artists who understand Bitcoin will be the people who bring the rest of the artistic world across the bridge. Dion has said it a hundred times on *Share Your Bitcoin Journey*. He has said it in every newsletter. He has said it at every conference. But this week, holding a book he did not expect, he was on the other side of the argument. He was the artist someone had already brought across. Someone had built the bridge for him. Someone had put him in a book. He is what the story is about now.
 
 ---
 
-He has not yet decided what he is going to do next. But he is not going to imagine it.
+The book landing at his door is the kind of moment that could only happen inside this movement.
+
+Victor did not owe him this. There was no invoice, no contract, no algorithmic incentive routing a gift from Andalusia to a nonprofit founder in the United States. One Bitcoiner mailed a book to another Bitcoiner because he thought it belonged in his hands. The broken fiat system does not produce moments like this. It cannot. Its whole architecture rewards extraction and volume, not care and craft and slow honest exchange. Sound money produces this exact moment, over and over, at every scale, because it is built for a longer time horizon and a smaller trust radius and a kinder economy of gratitude. Dion has said, more than once, that the reason he can build Bitcoin For The Arts with confidence is that he is inside a community of morally serious people who behave this way as a matter of course. Victor is one of them. There are many more.
+
+The rest of the arts world does not know this yet. Getting them to know it is the work.
+
+---
+
+Dion has not yet decided what he is going to do next. But he is not going to imagine it.
 
 He has learned, twice now, that the road he is on turns in ways he cannot predict from where he is standing. In 1996, he could not have imagined a career at Alvin Ailey. In 2001, he could not have imagined touring in *The Lion King*. In 2024, he could not have imagined a Spanish computer scientist writing his name into a book about digital sovereignty. It has been, as he has said, a remarkable ride so far.
 
@@ -88,4 +96,4 @@ Whatever the next chapter is called, this one is not the ending.
 
 *Bitcoin For The Arts, Inc. is a 501(c)(3) nonprofit funding working artists with Bitcoin micro-grants, education, and sovereign funding tools. You can find us at [bitcoinforthearts.org](https://www.bitcoinforthearts.org) and on [Substack](https://bitcoinforthearts.substack.com). Share Your Bitcoin Journey is available on [Apple Podcasts](https://podcasts.apple.com/us/podcast/share-your-bitcoin-journey/id6794978998), [Spotify](https://open.spotify.com/show/033WuXPnEiz3bzbT9ryFx4), and [YouTube](https://www.youtube.com/playlist?list=PLOwdVkmBTo5w).*
 
-*Buy* The Last Refuge: Bitcoin Amid Digital Dystopia *by Victor Manuel Rosano López on [Leanpub](https://leanpub.com/thelastrefuge). Every Lightning purchase routes directly to Bitcoin For The Arts, Bitcoin Transformation Community, and Women of Bitcoin.*
+*Buy* The Last Refuge: Bitcoin Amid Digital Dystopia *by Victor Manuel Rosano López on [Leanpub](https://leanpub.com/thelastrefuge). Every Lightning purchase routes entirely to Bitcoin For The Arts, Bitcoin Transformation Community, and Women of Bitcoin. Connect with Victor on [LinkedIn](https://www.linkedin.com/in/victor-rosano/).*
