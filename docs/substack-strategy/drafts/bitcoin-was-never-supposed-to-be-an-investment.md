@@ -96,7 +96,7 @@ But from the very first year, Bitcoin was priced in dollars. In pizzas denominat
 
 The pricing of Bitcoin in dollars is a temporary compromise with human psychology, not a description of what Bitcoin is.
 
-Satoshi understood that. He priced it that way not because he had to, but because we needed him to. Two decades in, the scaffolding is still holding up the frame. But it is scaffolding. It comes down when the building can stand on its own.
+Satoshi understood that. They priced it that way not because they had to, but because we needed them to. Two decades in, the scaffolding is still holding up the frame. But it is scaffolding. It comes down when the building can stand on its own.
 
 ---
 
