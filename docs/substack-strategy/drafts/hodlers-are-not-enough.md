@@ -1,6 +1,6 @@
 # Hodlers Are Not Enough
 
-*BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is that the prerequisite for defending Bitcoin's decentralization and for shaping its governance is the same: the plebs must become the economic majority in fact.*
+*BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is more uncomfortable and more empowering than either side made explicit. The plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.*
 
 **Bitcoin for the Arts · Substack draft · for publication week of August 10, 2026**
 
@@ -12,7 +12,7 @@ Hodlers Are Not Enough
 
 ## SUBTITLE
 
-BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is that the prerequisite for defending Bitcoin's decentralization and for shaping its governance is the same. The plebs must become the economic majority in fact, and it is a fight the plebs can win.
+BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is more uncomfortable and more empowering than either side made explicit. The plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.
 
 ---
 
@@ -108,6 +108,26 @@ The math of who is an economic user, in Adam's sense, is not a math of headcount
 
 That is the situation. It is the terrain the BIP-110 coalition was fighting on without necessarily naming it in those terms. It is the terrain Adam Back named in one sentence last weekend. Whatever anyone thinks of either of them, both were describing the same underlying condition. The pleb, in aggregate, has been out of the economic majority for years. Not because the pleb was excluded. Because the pleb bought bitcoin and stopped.
 
+## But the coins are already in pleb hands
+
+Here is the harder truth underneath the transaction flow, and the one that changes the meaning of everything above.
+
+Bitcoin's ownership is not what its transaction volume suggests. By the best available on-chain analyses, the majority of the bitcoin actually in circulation is not held by exchanges, spot ETFs, corporate treasuries, custodians, or governments. It is held by individuals. Millions of individual addresses. Small holders, medium holders, and ordinary people who bought over the past decade, moved their bitcoin into their own custody, and quietly stopped.
+
+When institutional bitcoin is tallied honestly, spot ETF holdings, publicly traded corporate treasuries such as Strategy, government-held coins from seizures, publicly listed miner reserves, and the balances that custodians hold on behalf of large clients, the total sits well below half of the effectively circulating supply. Rough estimates in mid-2026 place institutional and institutionally-adjacent holdings somewhere between fifteen and twenty percent of the coins that are actually moveable. The remaining eighty percent or more sits in the wallets of individuals. Not any single individual whale. Millions of ordinary people, each holding a little.
+
+The plebs, in aggregate, own Bitcoin.
+
+What the plebs do not do is *use* Bitcoin. That is the crack in the picture. The ownership is theirs. The economic use is not. Every day, plebs collectively hold the vast majority of the network's coins and produce a small fraction of its transaction volume. Every day, institutions hold a minority of the coins and produce nearly all of the volume that counts as economic use in Adam Back's sense.
+
+This is not a story about being outgunned. This is a story about being unactivated. The economic majority the plebs would need to reshape Bitcoin's governance is not something they have to build from scratch. It is something they already have and choose not to use. The institutions did not take it from them. The plebs handed it over, one cold-stored coin at a time, by holding and refusing to conduct commerce.
+
+That is a hard sentence to sit with, and it should be. If Bitcoin drifts further into a supervised financial network operated for the benefit of the actors who bothered to transact, it will not have been because the plebs were locked out. It will have been because the plebs, holding the majority of the coins, declined to show up in the market. That is a responsibility that lives with the pleb community, not with anyone else.
+
+It is also, and this is the hopeful part, entirely fixable. The fix does not require anyone to buy more bitcoin. The fix does not require an activist protocol change. The fix does not require any institution to lose. It requires only that the people who already hold bitcoin begin to move it, receive it, spend it, and earn it, in the ordinary rhythms of their economic lives. The moment enough of them do, the composition of Bitcoin's economic majority changes, and everything downstream, including protocol politics, changes with it.
+
+If Bitcoiners want Bitcoin to survive as the network Satoshi designed, they have to change how they see it, how they perceive it, and how they use it. Bitcoin is not a share certificate to be locked in a drawer. It is money. It becomes real money only when people conduct their lives in it. The plebs, right now, are the largest holders of the world's hardest money and the smallest users of it. That has to be the sentence that reorganizes the culture inside Bitcoin from this point forward.
+
 ## The battle after BIP-110
 
 If the sound-money coalition inside Bitcoin wants a governance model that returns influence to the sovereign individual, they cannot win it by fighting more protocol wars against miners. Adam has told them why. They have to win it by changing the composition of the economic majority itself.
@@ -156,7 +176,7 @@ Nodes without economic use have no influence. That is one half of the sentence. 
 
 Bitcoin was designed to be spent. Satoshi wrote it that way on purpose. The system the whitepaper describes is a payment network first and a store of value only as a consequence of being trustworthy money. Every hodler who understands that, and every institution that has quietly benefited from the plebs forgetting it, knows what happens if the plebs remember.
 
-BIP-110 mined two blocks and died. The next fight is not another BIP. The next fight is whether the fifty thousand plebs running nodes and holding sats can, together, make themselves into the economic majority of Bitcoin. If they do, the protocol politics of the next decade will look nothing like the last one. If they do not, Bitcoin will keep drifting into a supervised financial network operated for the benefit of the actors who bothered to show up and transact.
+BIP-110 mined two blocks and stalled. The next fight is not another BIP. The next fight is whether the plebs, who already hold most of the coins, decide to also hold most of the transaction flow. That is the whole choice. Activate what is already theirs, and the protocol politics of the next decade will look nothing like the last one. Leave it dormant, and Bitcoin will keep drifting into a supervised financial network operated for the benefit of the actors who bothered to show up and transact.
 
 The BIP-110 coalition told us what is at stake. Adam Back told us how the game is scored under current conditions. Both are worth listening to. And the answer to both, the thing that would honor what BIP-110 was defending and the thing that would change what Adam described, is the same. It is time for the plebs to become the economic majority in fact, so that what Bitcoin becomes is decided by the people it was designed to serve.
 
@@ -174,17 +194,17 @@ The BIP-110 coalition told us what is at stake. Adam Back told us how the game i
 
 ## SOCIAL EXCERPT OPTIONS (280 char cap)
 
-**Option A (both-sides framing, neutral):**
-BIP-110 raised real concerns. Adam Back named the terrain those concerns have to be won on. Both are worth taking seriously. The lesson last weekend, taken together: hodling is not enough. The plebs must become the economic majority. New Substack from BFTA.
+**Option A (the killer line, neutral):**
+Plebs own the majority of Bitcoin. Institutions own the majority of Bitcoin's transaction flow. That is not a rigging. That is a choice. Activate what is already yours. New Substack from BFTA on BIP-110, Adam Back, and what the pleb community has to do next.
 
-**Option B (thesis, softened):**
-BIP-110 stalled. Adam Back explained the governance mechanics. Both surfaced something important. The lesson is that hodling is not enough. Every hodler must become an economic user. That is the real fight, and the plebs can win it.
+**Option B (both-sides framing):**
+BIP-110 raised real concerns. Adam Back named the terrain those concerns have to be won on. Both are worth taking seriously. The lesson: hodling is not enough. The plebs already own most of Bitcoin. They just do not use it. Fix that, and everything follows. New Substack from BFTA.
 
 **Option C (arts angle):**
-An artist selling a print for sats is an economic user. So is a dance company taking Lightning tickets. Whatever anyone thinks of BIP-110 or Adam Back's response to it, the shared path forward is the same. Help the plebs transact. Composition is the real battle.
+An artist selling a print for sats is an economic user. So is a dance company taking Lightning tickets. Plebs already hold most of Bitcoin. The moment they use it, Bitcoin's governance changes. Composition is the real battle. New Substack from BFTA.
 
 **Option D (Nostr-first, personal voice, for Dion to post directly on Nostr):**
-The BIP-110 coalition and Adam Back were, whether they know it or not, describing the same problem from opposite sides. Nodes without economic use have no influence, and that can change. It changes the day plebs stop hodling and start transacting. That is the fight I want to be in.
+The plebs already own the majority of Bitcoin. What we do not do is use it. That is why the institutions get to speak for the network. The fix does not require buying more. It requires spending, earning, receiving, and transacting. Ordinary economic life. That is the fight I want to be in.
 
 ---
 
@@ -193,7 +213,8 @@ The BIP-110 coalition and Adam Back were, whether they know it or not, describin
 - Written in third-person editorial voice consistent with prior BFTA Substack pieces.
 - No em dashes anywhere in the body (per BFTA style).
 - Adam Back's tweet is quoted verbatim; do not paraphrase the direct quotation.
-- The BIP-110 details ("mined two blocks," "activated August 8, 2026") are stated as user reported. Confirm accuracy of block count and activation date before publishing.
+- The BIP-110 details ("mined two blocks," "activated August 8, 2026") are stated as user reported. Confirm accuracy of block count and activation date before publishing. Note: Adam Back wrote his post the morning of August 9 in response to BIP-110's stalled activation the day before; adjust wording ("later that same morning" is currently written to imply Sunday morning; verify final phrasing).
+- **Ownership figures.** The section titled "But the coins are already in pleb hands" states that individuals hold roughly 80 to 85 percent of the effectively circulating Bitcoin supply, and institutional and institutionally-adjacent actors hold roughly 15 to 20 percent. These figures are drawn from mid-2026 on-chain research consensus (spot ETF holdings, publicly traded corporate treasuries, government seizures, publicly listed miner reserves, custodian institutional client balances). Before publishing, verify with a current Glassnode, River Financial, or Chainalysis snapshot. Even a materially different exact percentage does not change the argument, but the ratio should be defensible if challenged.
 - **BFTA neutrality is intentional.** The piece explicitly does not endorse Adam Back's framing over the BIP-110 coalition's, or vice versa. It treats both as raising real concerns and takes the lesson from what both surfaced. The opening explicitly states this neutrality. The section titled "The concerns behind BIP-110 were serious" spells out what BIP-110 was actually about (spam, block-space bloat, rising node cost, UTXO growth, decentralization erosion) and states that BFTA shares those concerns. The closing frames both parties as describing the same underlying condition from different sides.
 - The piece deliberately does not engage with the specific technical text of BIP-110 or with any PR / marketing debates around how it was promoted. Discussion is confined to governance composition, which is the point of the piece.
 - Deliberately does not name specific "villains" in the institutional custody world. Names Coinbase, Strike, BitGo, MicroStrategy, Fidelity as descriptive, not accusatory.
