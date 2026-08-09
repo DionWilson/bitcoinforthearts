@@ -1,0 +1,10 @@
+{
+  "name": "Bitcoin For The Arts (Next.js)",
+  "install": "npm ci",
+  "terminals": [
+    {
+      "name": "next-dev",
+      "command": "npm run dev"
+    }
+  ]
+}
