@@ -1,0 +1,192 @@
+RSS.COM UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 10
+
+UPLOAD STATUS: Ready to upload. Audio file is the Ep 10 recording with Lindsey (Lindy) Magee. Video runs with a 1:20 intro clip; recommendation is to strip the intro from the audio version so the podcast begins at the Dion cold-open welcome. Timestamps below are given for both the video timeline and the audio-only timeline. Confirm which version rss.com is ingesting before setting chapters.
+
+YouTube URL (for cross-reference): https://youtu.be/S7oBI9aAz6w
+
+
+=== EPISODE TITLE ===
+
+From Widow to Bitcoin Author: A Mother's Journey with Lindsey Magee
+
+
+=== EPISODE TITLE (BACKUP OPTIONS) ===
+
+- A Mother's Journey to a Bitcoin Standard with Lindsey Magee
+- Lindsey Magee: From Grieving Widow to Bitcoin Author in Two Years
+- Bitcoin: A Treasury to HODL, and the Mississippi Mom Who Wrote It
+
+
+=== EPISODE NUMBER ===
+
+10
+
+
+=== SEASON NUMBER ===
+
+1
+
+
+=== EPISODE TYPE ===
+
+Full
+
+
+=== EXPLICIT ===
+
+No
+
+
+=== AI CONTENT DECLARATION ===
+
+No AI-generated content. Human interview, human-produced.
+
+
+=== PUBLICATION DATE ===
+
+Set to today (or whenever Dion schedules the release on rss.com). Prior episodes have been released on Sundays.
+
+
+=== DESCRIPTION ===
+
+Mississippi mother Lindsey Magee never planned to become a Bitcoin author. In August 2024, her husband Chuck lost his battle with cancer after twenty-five years of marriage, leaving her a widow with two children and no traditional income. Twelve years earlier, her then-twelve-year-old son Bennett had tried to teach her about Bitcoin. In grief, that conversation came back.
+
+In this two-hour episode of Share Your Bitcoin Journey, Bitcoin For The Arts founder Dion Wilson sits down with Lindsey Magee, author of the Seuss-style rhyming children's book Bitcoin: A Treasury to HODL, which debuted at Bitcoin 2025 in Las Vegas and is now in the Ingram catalog for nationwide bookstore, library, and school distribution.
+
+Lindsey walks through her journey from grieving widow to Bitcoin advocate. She talks about the Holy Spirit conviction that led her to put Chuck's life insurance into Bitcoin, the New Year's Eve she sat down at her kitchen table and wrote most of the book by three in the morning, the offset print run of ten thousand copies she committed to on her own, and the thirty thousand dollars she has invested in the book while raising her teenage daughter on a Bitcoin standard, currently from inside a twenty-six foot Winnebago after mold destroyed their home.
+
+IN THIS EPISODE:
+- Fighting Mississippi's vaccine law and co-founding a nonprofit and a PAC before Bitcoin was on her radar
+- Homeschooling both kids and celebrating "why" instead of punishing it
+- Her son Bennett trying to orange-pill her at twelve years old in 2012
+- Losing Chuck in August 2024 after his cancer battle
+- The urgent conviction that led her to put life insurance into Bitcoin
+- Living on a Bitcoin standard: Strike Bill Pay, Coinbase debit card, self-custody, cold storage
+- Making fiat go twice as far in a bear market
+- Writing Bitcoin: A Treasury to HODL in a single overnight sitting
+- Choosing an offset print with a black linen cover and Seuss-inspired illustrations by Kenny Knowley
+- Getting the book into the Ingram catalog for nationwide distribution
+- Faith, honest money, and the Proverbs passage on weights and measures
+- Living in a Winnebago with a seventeen-year-old daughter and three dogs after mold destroyed her home
+- Suing the HVAC company that made her and her family sick during Chuck's cancer battle
+- Two generations on a Bitcoin standard: what her adult son Bennett has taught her
+- Why kids raised on a Bitcoin standard learn low time preference by watching, not lecturing
+- Getting Bitcoin: A Treasury to HODL into Barnes & Noble, libraries, and classrooms
+- Reading her book to homeschool children at the Midwest Bitcoin Summit in September 2026
+- What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock for her book's exposure at the summit
+
+ABOUT LINDSEY MAGEE:
+Mississippi author, homeschool mom, medical freedom advocate, and Bitcoin evangelist. Author of Bitcoin: A Treasury to HODL, the first Seuss-style rhyming children's book on sound money. Widow of Chuck. Mother of Bennett and Palin.
+
+BUY THE BOOK: https://lindymagee.com
+X: @LindyMagee
+Nostr: Lindy Magee
+Facebook: Lindy Magee Children's Author
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
+
+https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Grants: https://www.bitcoinforthearts.org/grants/apply
+Substack: https://substack.com/@bitcoinforthearts
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+
+=== KEYWORDS (comma separated, rss.com will accept up to ~12) ===
+
+Bitcoin, Bitcoin For The Arts, Lindsey Magee, Bitcoin author, children's book, HODL, Bitcoin standard, sound money, homeschool, widow, Mississippi, medical freedom, faith, self-custody, Share Your Bitcoin Journey, Dion Wilson
+
+
+=== LOCATION (for Podcasting 2.0 location tag, optional) ===
+
+Mississippi, United States
+
+
+=== EPISODE ARTWORK ===
+
+Use the same show artwork rss.com already has for Share Your Bitcoin Journey. If Dion wants an episode-specific cover, the web-optimized image at public/sybj-ep10-lindey-web.png is available in the repo. rss.com prefers 3000x3000 square episode art if uploading a custom cover; the current file may need to be re-cropped and re-exported to that resolution.
+
+
+=== CHAPTERS (Podcasting 2.0 chapters) ===
+
+Two chapter sets below. Use the AUDIO timeline if the intro clip was stripped from the podcast audio (recommended). Use the VIDEO timeline if the podcast audio was exported to match the YouTube upload exactly (includes the 1:20 intro clip).
+
+AUDIO TIMELINE (intro clip stripped, recommended for podcast):
+0:00 Cold open, introduction to Lindsey Magee
+1:40 The Mississippi mom origin: questioning everything, medical freedom, and the fight for a religious exemption
+7:00 Homeschooling as sovereignty, and celebrating "why"
+11:30 Bennett at twelve years old on YouTube, and the first Bitcoin conversation in 2012
+17:00 Losing Chuck to cancer in August 2024
+21:30 The Holy Spirit conviction to put the life insurance into Bitcoin
+27:00 What "studying Bitcoin like a full-time job" actually looked like
+32:00 Living on a Bitcoin standard: Strike Bill Pay, Coinbase debit card, self-custody
+38:00 Making fiat go twice as far in a bear market
+43:00 Faith, sound money, and the Proverbs passage on weights and measures
+49:00 The accidental author: New Year's Eve, a kitchen table, and 3:00 AM
+54:00 Why Seuss, why rhyming, and why the glossary
+1:00:00 Spending generational wealth on a 10,000 copy offset print run
+1:07:00 Getting into Ingram and the road to Barnes & Noble
+1:12:00 Living in a Winnebago after mold destroyed the home
+1:18:00 Two generations on a Bitcoin standard: what Bennett has taught her back
+1:24:00 What kids raised on a Bitcoin standard learn by watching
+1:28:00 The mission: bookstores, libraries, classrooms, families
+1:33:00 Reading Bitcoin: A Treasury to HODL to kids at the Midwest Summit
+1:36:00 The BFTA micro-grant question and closing
+
+VIDEO TIMELINE (matches YouTube upload, includes 1:20 intro clip):
+0:00 Cold open, intro clip
+1:20 Introduction to Lindsey Magee
+3:00 The Mississippi mom origin
+8:20 Homeschooling as sovereignty
+12:50 Bennett at twelve, and the first Bitcoin conversation in 2012
+18:20 Losing Chuck to cancer in August 2024
+22:50 The Holy Spirit conviction to put life insurance into Bitcoin
+28:20 Studying Bitcoin like a full-time job
+33:20 Living on a Bitcoin standard
+39:20 Making fiat go twice as far in a bear market
+44:20 Faith, sound money, and Proverbs on weights and measures
+50:20 The accidental author: New Year's Eve and 3:00 AM
+55:20 Why Seuss, why rhyming, why the glossary
+1:01:20 Generational wealth spent on a 10,000 copy offset print run
+1:08:20 Getting into Ingram and the road to Barnes & Noble
+1:13:20 Living in a Winnebago after mold destroyed the home
+1:19:20 Two generations on a Bitcoin standard
+1:25:20 What kids raised on a Bitcoin standard learn by watching
+1:29:20 The mission: bookstores, libraries, classrooms, families
+1:34:20 Reading Bitcoin: A Treasury to HODL at the Midwest Summit
+1:37:20 The BFTA micro-grant question and closing
+
+Note: Timestamps are estimates. Verify against the final audio file after upload. rss.com's chapter editor will allow adjustments after ingestion.
+
+
+=== VALUE 4 VALUE / LIGHTNING SPLITS (Podcasting 2.0, optional) ===
+
+If Dion wants to enable Value4Value splits for Ep 10, current recommendation matching prior episodes:
+- Bitcoin For The Arts primary: 90 percent
+- Guest (Lindsey Magee) split: 10 percent
+
+Guest Lightning address: request from Lindsey before publishing. Her website (lindymagee.com) does not currently list one publicly; consider asking her by DM.
+
+
+=== SOCIAL COPY BLURBS FOR RELEASE DAY ===
+
+For BFTA X (short):
+Episode 10 of Share Your Bitcoin Journey is live. Mississippi mom, widow, homeschooler, and author Lindsey Magee (@LindyMagee) on how her twelve-year-old son tried to orange-pill her in 2012, and what happened when she finally listened. Buy her book at lindymagee.com.
+
+For BFTA Nostr / Substack Notes (medium):
+Episode 10 of Share Your Bitcoin Journey is live. A Mississippi mother, homeschooler, and widow talks about the son who tried to teach her Bitcoin at twelve years old, the Holy Spirit conviction that led her to put her husband's life insurance into it after his death, and the Seuss-style children's book she wrote at a kitchen table at 3:00 AM. Bitcoin: A Treasury to HODL is now in the Ingram catalog. Buy it. Take it into your local bookstore.
+
+For BFTA Facebook (longer):
+When Chuck Magee died of cancer in August 2024, his wife Lindsey was left with two children, no traditional income, and one lifeline: a life insurance check. Twelve years earlier, her then-twelve-year-old son Bennett had tried to teach her about Bitcoin. She had not listened. In grief, she did the work. She studied Bitcoin like a full-time job. She put Chuck's life insurance into it. Today, Lindsey and her seventeen-year-old daughter Palin live on a Bitcoin standard, currently from inside a twenty-six foot Winnebago after mold destroyed their Mississippi home. Lindsey used the same standard to write and publish Bitcoin: A Treasury to HODL, a Seuss-style rhyming children's book on sound money. It debuted at Bitcoin 2025 in Las Vegas. It is now in the Ingram catalog. Episode 10 of Share Your Bitcoin Journey is her story. Wherever you get your podcasts. Buy the book: lindymagee.com.
+
+
+=== NOTES FOR EDITING ===
+
+- Confirm Lindsey's preferred spelling. She goes by "Lindy" but her legal name is Lindsey. Both spellings appear in the community. This document uses "Lindsey" in the description and "Lindy" in the social copy where warmth is preferred. Adjust to one consistent choice before publishing.
+- Confirm her Nostr npub if it is available; the description currently just says "Nostr: Lindy Magee" as a searchable handle.
+- Confirm her Lightning address before enabling any Value4Value split.
+- Ask Lindsey for a favored one-line pull quote from the episode if she wants one added to the description above the "IN THIS EPISODE" list. She said several powerful things; one that stood out: "This is the most remarkable Bitcoin story I have ever heard" was Dion's line, so a Lindsey-authored pull quote would be better.
+- Book title on cover uses "HODL" all caps as stylized on the physical book jacket.
+- Description length: currently well under the 4000-character rss.com/Apple limit.
