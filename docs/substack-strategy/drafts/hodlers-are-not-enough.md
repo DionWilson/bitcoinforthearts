@@ -1,6 +1,6 @@
 # Hodlers Are Not Enough
 
-*BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is more uncomfortable and more empowering than either side made explicit. The plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.*
+*BIP-110 stalled. Adam Back explained why. Both raise concerns worth taking seriously. But the deeper truth is that the plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.*
 
 **Bitcoin for the Arts · Substack draft · for publication week of August 10, 2026**
 
@@ -12,7 +12,10 @@ Hodlers Are Not Enough
 
 ## SUBTITLE
 
-BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is more uncomfortable and more empowering than either side made explicit. The plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.
+BIP-110 stalled. Adam Back explained why. Both raise concerns worth taking seriously. But the deeper truth is that the plebs already own the majority of Bitcoin. They just do not use it. Fix that, and everything else follows.
+
+**Alternate shorter option if 230 chars is still too long:**
+The plebs already own the majority of Bitcoin. What they do not do is use it. That is the whole choice. Everything else follows.
 
 ---
 
