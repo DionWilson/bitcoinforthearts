@@ -1,6 +1,6 @@
 # Hodlers Are Not Enough
 
-*BIP-110 mined two blocks and died. In one sentence, Adam Back explained why. What he said about how Bitcoin is actually governed should reorganize the priorities of every serious Bitcoiner. This is the fight that comes next, and it is a fight the plebs can win.*
+*BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is that the prerequisite for defending Bitcoin's decentralization and for shaping its governance is the same: the plebs must become the economic majority in fact.*
 
 **Bitcoin for the Arts · Substack draft · for publication week of August 10, 2026**
 
@@ -12,7 +12,7 @@ Hodlers Are Not Enough
 
 ## SUBTITLE
 
-BIP-110 mined two blocks and died. In one sentence, Adam Back explained why. The people who supported BIP-110 had the right instinct and the wrong battlefield. The real fight is turning every Bitcoiner from a passive holder into a working economic user, because that is where Bitcoin's governance actually lives, and it is a fight the plebs can win.
+BIP-110 mined two blocks and stalled. The concerns behind it are real. Adam Back's response named the terrain those concerns actually have to be won on. Both are worth taking seriously. What last weekend teaches, taken together, is that the prerequisite for defending Bitcoin's decentralization and for shaping its governance is the same. The plebs must become the economic majority in fact, and it is a fight the plebs can win.
 
 ---
 
@@ -20,9 +20,13 @@ BIP-110 mined two blocks and died. In one sentence, Adam Back explained why. The
 
 This is a piece written in respect, not in argument. Adam Back is one of the small handful of people whose original work directly informed the Bitcoin whitepaper, and whose name appears in its references. His voice on how the protocol is actually governed carries weight because he has been thinking about the underlying problem longer than most Bitcoiners have owned any bitcoin. This essay engages with what he said last weekend, and takes his framework seriously enough to follow where it actually leads.
 
+It is also written in respect for the people who ran BIP-110. Their concerns about the direction of the network are serious and legitimate. They were arguing that certain classes of on-chain data have been bloating the blockchain and the UTXO set, driving up the cost of running a full node, and quietly pricing ordinary individuals out of the ability to independently validate the network. If the cost of running a node rises high enough, only institutions can afford to run them, and Bitcoin's decentralization erodes from the outside in. Bitcoin for the Arts shares those concerns. Keeping the cost of sovereignty low for a homeschooling family, a working artist, or a small-town shopkeeper is a mission this organization exists to defend.
+
+So this piece does not take a side between Adam Back and the BIP-110 coalition. It takes what both of them made visible last weekend, treats each of their concerns as real, and follows the lesson toward what the pleb community can actually do next.
+
 On Saturday, August 8, 2026, a group of Bitcoiners activated BIP-110 on their nodes and waited to see what the network would do. BIP-110 was a proposed change to Bitcoin's consensus rules, put forward by a coalition of self-described sound-money maximalists who believed the network had drifted from what Bitcoin was designed to be. They believed, or hoped, that if enough node operators refused miners' current blocks and demanded blocks that followed the new rules, miners would eventually follow. That is a legitimate strategy in Bitcoin governance. It has a name. It is called a user-activated soft fork, and it has worked before. It did not work this time.
 
-The BIP-110 chain mined two blocks. Then it stalled. The rest of the Bitcoin network kept moving forward as if nothing had happened, because for the network, nothing had. Two blocks on a minority chain is not a fork. It is a rounding error. The vast majority of hash power stayed on the main chain. The vast majority of exchanges, custodians, and payment processors stayed on the main chain. Users transacting on the main chain never noticed. By Sunday morning, the BIP-110 attempt was over.
+The BIP-110 chain mined two blocks. Then it stalled. The rest of the Bitcoin network kept moving forward as if nothing had happened, because for the network, nothing had. The vast majority of hash power stayed on the main chain. The vast majority of exchanges, custodians, and payment processors stayed on the main chain. Users transacting on the main chain never noticed. By Sunday morning, the BIP-110 attempt was over. The coalition that had spent months organizing around it was left with a technical outcome that did not reflect the seriousness of the concerns that motivated the effort.
 
 Later that same morning, Adam Back posted this on X:
 
@@ -80,13 +84,15 @@ The unfair version is: therefore, any critique of the current composition of the
 
 Everything that follows in this piece takes that question, the composition question, as the real terrain. Not who gets to dictate. Who gets to show up.
 
-## The instinct behind BIP-110 was right
+## The concerns behind BIP-110 were serious
 
-Do not dismiss the people who ran BIP-110. Whatever anyone thinks of the specifics of the proposal, or of the way it was marketed, the instinct underneath it was correct. They were watching Bitcoin drift into being a settlement layer for institutional finance, and they were trying, with the only tools they had, to pull it back toward being money. They believed that the sovereignty of the node, which is real at a technical level, was also sovereign at a governance level. They tried to use that sovereignty to fight for what they believed Bitcoin was for. That is not stupid. That is faithful.
+Do not dismiss the people who ran BIP-110. The concerns underneath the proposal were real. They were arguing that certain classes of on-chain data had been bloating the blockchain and expanding the UTXO set beyond what a plain individual could reasonably store and validate on modest hardware. They were arguing that if the cost of running a node keeps rising, Bitcoin's decentralization erodes, because only well-capitalized institutions can afford to independently verify the chain. They were arguing that this drift, if left unchecked, quietly transforms Bitcoin from a peer-to-peer money system into a settlement layer for institutional finance. Those are legitimate concerns, and Bitcoin for the Arts shares them.
 
-The problem is that Adam is telling them, correctly, that the tool they reached for is not the tool that decides. Nodes without economic weight cannot force miners to accept new rules. The market decides, and the market listens to the actors who move real value. If BIP-110 supporters want their vision of Bitcoin to actually shape the network, they cannot get there by running more nodes and issuing more manifestos. They have to get there by becoming the economic majority.
+They believed that the sovereignty of the node, which is real at a technical level, was also sovereign at a governance level. They tried to use that sovereignty to fight for what they believed Bitcoin was for. That is not stupid. That is faithful.
 
-Right now, they are not.
+What Adam is surfacing is not that their concerns were wrong. It is that the tool they reached for is not the tool that decides. Nodes without economic weight cannot force miners to accept new rules. The market decides, and the market listens to the actors who move real value. If the pleb coalition wants its vision of Bitcoin to actually shape the network, running more nodes and issuing more manifestos is not sufficient on its own. Composition is. If the sound-money coalition wants to protect what BIP-110 was trying to protect, it has to become the economic majority whose transactions the market watches.
+
+Right now, it is not.
 
 ## The math the institutions are winning
 
@@ -100,7 +106,7 @@ Meanwhile, an exchange like Coinbase processes billions of dollars of bitcoin tr
 
 The math of who is an economic user, in Adam's sense, is not a math of headcount. It is a math of transaction flow. And by that math, right now, a few dozen institutions are the economic majority, and fifty thousand plebs with cold-stored coins are, in aggregate, background noise.
 
-That is the situation. That is what the BIP-110 supporters were railing against without quite naming it. And it is what Adam has now named for them, in one sentence, without flinching.
+That is the situation. It is the terrain the BIP-110 coalition was fighting on without necessarily naming it in those terms. It is the terrain Adam Back named in one sentence last weekend. Whatever anyone thinks of either of them, both were describing the same underlying condition. The pleb, in aggregate, has been out of the economic majority for years. Not because the pleb was excluded. Because the pleb bought bitcoin and stopped.
 
 ## The battle after BIP-110
 
@@ -118,7 +124,7 @@ Right now, that scale is empty on the pleb side. Not because plebs do not care, 
 
 ## What every serious Bitcoiner should do next
 
-If Adam's framework is correct, and it is, then a small number of things become obvious.
+If the empirical part of Adam's framework describes how Bitcoin's forks and protocol politics actually resolve under current conditions, and it appears to, then a small number of things become obvious.
 
 **One.** Hodling is not enough. Hodling is a starting condition. Hodling is what happens on day one after understanding that fiat money loses value. Hodling is protective. Hodling is right. But hodling by itself makes no case to the market that bitcoin is money. It makes the opposite case. It says, "This thing is precious enough to save and not precious enough to spend." Every serious Bitcoiner who is only hodling is, in Adam's framework, silent.
 
@@ -128,7 +134,7 @@ If Adam's framework is correct, and it is, then a small number of things become 
 
 **Four.** Every Bitcoiner who has an audience should teach transacting, not just holding. The educational infrastructure of Bitcoin, its podcasts, its books, its conferences, has spent a decade teaching people to buy and hold. That was the right lesson for that decade. The lesson for the next decade is different. It is: use it. Route your economic life through the network. Become an economic node in Adam's sense. Not because Adam said so. Because the sovereignty the cypherpunks fought for cannot exist without it.
 
-**Five.** BIP-110, and the fights that come after BIP-110, are worth having. But they are second-order. The first-order fight is composition. Who counts as an economic user is decided by who is transacting. Who is transacting is decided by whether Bitcoin is usable in daily life. Whether Bitcoin is usable in daily life is decided by builders, teachers, merchants, and above all users. Change the composition of the economic majority, and the protocol politics resolve differently. Fail to change it, and BIP-110's failure is not an anomaly. It is a preview.
+**Five.** The concerns BIP-110 raised, about spam, about block-space bloat, about the rising cost of running a node, about the erosion of decentralization, remain real. They deserve to keep being fought for, at the level of miner policy, node relay defaults, and cultural pressure around what counts as legitimate use of block space. But this weekend's outcome teaches an ordering lesson. Composition comes first. Who counts as an economic user is decided by who is transacting. Who is transacting is decided by whether Bitcoin is usable in daily life. Whether Bitcoin is usable in daily life is decided by builders, teachers, merchants, and above all users. Change the composition of the economic majority, and the protocol politics of the future, including the ones BIP-110 was trying to influence, resolve differently. Leave composition unchanged, and BIP-110's failure is not an anomaly. It is a preview.
 
 ## What this means for the arts
 
@@ -136,13 +142,15 @@ Bitcoin for the Arts exists in the middle of this problem in a way that is not a
 
 An artist selling a print for sats is an economic user. A dance company selling tickets over Lightning is an economic user. A theater accepting a monthly membership in bitcoin is an economic user. A homeschooling family paying for a private class in sats is an economic user. A podcast taking value-for-value contributions is an economic user. Every one of these is a real transaction with a real counterparty, and every one of them registers on the network in the same category that a Coinbase trade or a Fidelity settlement registers. Not in the same volume, obviously. But in the same category. And volumes are what get built.
 
-The strategic path for BFTA and the artists in its orbit, in the light of what Adam has said, sharpens rather than softens. The mission is not to teach artists to hold bitcoin. It is to teach artists to *conduct their economic lives* in bitcoin, one transaction at a time, until the composition of the economic majority in this network includes the people who make culture.
+The strategic path for BFTA and the artists in its orbit, in the light of everything last weekend surfaced, sharpens rather than softens. The mission is not to teach artists to hold bitcoin. It is to teach artists to *conduct their economic lives* in bitcoin, one transaction at a time, until the composition of the economic majority in this network includes the people who make culture.
 
-If the sound-money coalition wants to win the next BIP-110, they should be helping every artist take sats for their work, every merchant install a payment processor, every musician stream value over Nostr, every writer accept zaps, every teacher receive a stipend in bitcoin. That is the war. Everything else is skirmish.
+If the sound-money coalition wants to protect what BIP-110 was trying to protect, and if the network wants to be governed by anyone other than a handful of custodians, the shared path forward runs through the same door. Help every artist take sats for their work. Help every merchant install a payment processor. Help every musician stream value over Nostr. Help every writer accept zaps. Help every teacher receive a stipend in bitcoin. That is the work. Everything else is downstream.
 
 ## The last honest thing to say
 
-Adam Back's post was not an attack on the plebs. Read charitably, it was a warning. He was telling a group of people who thought they had governance power that they do not, in fact, have it under current conditions. He was showing them the wall they ran into and explaining why the wall is there. What he did not do, but what someone should, is complete the sentence.
+Adam Back's post was not an attack on the plebs, and the BIP-110 coalition's proposal was not a mistake. Both were part of the same conversation about how Bitcoin remains the network Satoshi designed. One side was defending a specific technical property of that network. The other was pointing out how that network is actually governed in practice. Neither is complete without the other. What last weekend teaches, taken as a whole, is that the two conversations have been running in parallel when they should have been running as one, and that the prerequisite for winning either of them is the same. Composition. Use. Pleb economic activity at scale.
+
+Adam's post, read charitably, was a warning. He was telling a group of people who thought they had governance power that they do not, in fact, have it under current conditions. He was showing them the wall they ran into and explaining why the wall is there. What he did not do, but what someone should, is complete the sentence.
 
 Nodes without economic use have no influence. That is one half of the sentence. The other half is: *and that can change*. It changes the day the plebs stop hodling and start transacting. It changes the day the tools built for the individual finally match the tools built for the institution. It changes the day the culture inside Bitcoin decides that the highest virtue is not accumulation but use. That day is not automatic. It has to be chosen, over and over, by people who understand that the money they hold is only real to the extent that it moves.
 
@@ -150,7 +158,7 @@ Bitcoin was designed to be spent. Satoshi wrote it that way on purpose. The syst
 
 BIP-110 mined two blocks and died. The next fight is not another BIP. The next fight is whether the fifty thousand plebs running nodes and holding sats can, together, make themselves into the economic majority of Bitcoin. If they do, the protocol politics of the next decade will look nothing like the last one. If they do not, Bitcoin will keep drifting into a supervised financial network operated for the benefit of the actors who bothered to show up and transact.
 
-Adam told us how the game is scored. It is time to play it that way.
+The BIP-110 coalition told us what is at stake. Adam Back told us how the game is scored under current conditions. Both are worth listening to. And the answer to both, the thing that would honor what BIP-110 was defending and the thing that would change what Adam described, is the same. It is time for the plebs to become the economic majority in fact, so that what Bitcoin becomes is decided by the people it was designed to serve.
 
 ---
 
@@ -166,17 +174,17 @@ Adam told us how the game is scored. It is time to play it that way.
 
 ## SOCIAL EXCERPT OPTIONS (280 char cap)
 
-**Option A (Adam quote pull):**
-"the economic users control the protocol, via the market." — Adam Back. He is right about how forks resolve. What every pleb should do about it is the more important question. New Substack.
+**Option A (both-sides framing, neutral):**
+BIP-110 raised real concerns. Adam Back named the terrain those concerns have to be won on. Both are worth taking seriously. The lesson last weekend, taken together: hodling is not enough. The plebs must become the economic majority. New Substack from BFTA.
 
 **Option B (thesis, softened):**
-BIP-110 mined two blocks and died. Adam Back explained why. The lesson is not that plebs are powerless. The lesson is that hodling is not enough. Every hodler must become an economic user. That is the real fight, and the plebs can win it.
+BIP-110 stalled. Adam Back explained the governance mechanics. Both surfaced something important. The lesson is that hodling is not enough. Every hodler must become an economic user. That is the real fight, and the plebs can win it.
 
 **Option C (arts angle):**
-An artist selling a print for sats is an economic user. So is a dance company taking Lightning tickets. If the sound-money coalition wants to shape Bitcoin's future, help the plebs transact. Composition is the real battle.
+An artist selling a print for sats is an economic user. So is a dance company taking Lightning tickets. Whatever anyone thinks of BIP-110 or Adam Back's response to it, the shared path forward is the same. Help the plebs transact. Composition is the real battle.
 
 **Option D (Nostr-first, personal voice, for Dion to post directly on Nostr):**
-Adam Back is not wrong about how forks resolve. But the sentence he wrote deserves to be completed. Nodes without economic use have no influence, and that can change. It changes the day plebs stop hodling and start transacting. That is the fight I want to be in.
+The BIP-110 coalition and Adam Back were, whether they know it or not, describing the same problem from opposite sides. Nodes without economic use have no influence, and that can change. It changes the day plebs stop hodling and start transacting. That is the fight I want to be in.
 
 ---
 
@@ -186,9 +194,10 @@ Adam Back is not wrong about how forks resolve. But the sentence he wrote deserv
 - No em dashes anywhere in the body (per BFTA style).
 - Adam Back's tweet is quoted verbatim; do not paraphrase the direct quotation.
 - The BIP-110 details ("mined two blocks," "activated August 8, 2026") are stated as user reported. Confirm accuracy of block count and activation date before publishing.
-- Piece deliberately does not engage with the specific content of BIP-110 or the marketing choices of its supporters. Discussion is confined to governance composition, which is the point of the piece.
+- **BFTA neutrality is intentional.** The piece explicitly does not endorse Adam Back's framing over the BIP-110 coalition's, or vice versa. It treats both as raising real concerns and takes the lesson from what both surfaced. The opening explicitly states this neutrality. The section titled "The concerns behind BIP-110 were serious" spells out what BIP-110 was actually about (spam, block-space bloat, rising node cost, UTXO growth, decentralization erosion) and states that BFTA shares those concerns. The closing frames both parties as describing the same underlying condition from different sides.
+- The piece deliberately does not engage with the specific technical text of BIP-110 or with any PR / marketing debates around how it was promoted. Discussion is confined to governance composition, which is the point of the piece.
 - Deliberately does not name specific "villains" in the institutional custody world. Names Coinbase, Strike, BitGo, MicroStrategy, Fidelity as descriptive, not accusatory.
 - Deliberately does not use gendered pronouns for Satoshi. Uses "Satoshi" as name only.
 - Companion to "Bitcoin Was Never Supposed to Be an Investment." That piece argued Bitcoin's purpose. This piece argues Bitcoin's citizenship. Together they form a two-part frame on where the movement is drifting and how to correct course.
-- The opening paragraph explicitly grounds the piece in respect for Adam Back's stature. The counter-argument section explicitly acknowledges the strongest reply Adam's framework will elicit ("you just don't get to dictate the outcome") and defuses it before continuing. Both are anticipatory softening for a Bitcoin-Twitter audience that will be prepared to attack.
+- The counter-argument section explicitly acknowledges the strongest reply the piece will elicit ("you just don't get to dictate the outcome") and defuses it before continuing. Anticipatory softening for a Bitcoin-Twitter audience that will be prepared to attack.
 - Suggested cover image: a wide-format photograph of many hands holding a single line of text or a single note, symbolizing many plebs, one signal. Or a mosaic-tile illustration of small transactions building into a larger form.
