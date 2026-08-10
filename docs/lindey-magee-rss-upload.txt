@@ -111,7 +111,17 @@ Use the same show artwork rss.com already has for Share Your Bitcoin Journey. If
 
 === CHAPTERS (Podcasting 2.0 chapters) ===
 
-Timestamps below are drawn from the episode's VTT transcript and align to the actual audio file. Total runtime approximately 1:01:52.
+**rss.com chapter formatting rules (for future episodes as well):**
+- Maximum 45 characters per chapter title. Anything longer gets truncated in the podcast player. Aim for 25 to 35 characters where possible.
+- Aim for 12 to 18 chapters for a one-hour episode. 25 is on the high side and can feel noisy in players.
+- Each chapter can carry an optional URL. Use this on the closing chapter to point listeners at the guest's website. This is one of the most underused Podcasting 2.0 features and it converts.
+
+**Chapter URLs to attach in the rss.com chapter editor for this episode:**
+- Final chapter ("Where to find Lindey, and closing") → https://lindeymagee.com (verify against her live site first)
+- Micro-grant chapter → https://www.bitcoinforthearts.org/grants/apply (optional)
+- Midwest reading chapter → https://www.bitcoinforthearts.org/midwest (optional, once live)
+
+Timestamps below are drawn from the episode's VTT transcript and align to the actual audio file. Total runtime approximately 1:01:52. Chapter titles below are the long-form reference; Dion has already trimmed the actual rss.com chapter titles for this episode to fit the 45-character limit.
 
 0:00 Cold open and introduction to Lindey Magee
 1:45 Welcoming Lindey to the show
@@ -171,3 +181,9 @@ When Chuck Magee died of cancer in August 2024, his wife Lindey was left with tw
 - Ask Lindey for a favored one-line pull quote from the episode if she wants one added to the description above the "IN THIS EPISODE" list. She said several powerful things; one that stood out: "This is the most remarkable Bitcoin story I have ever heard" was Dion's line, so a Lindey-authored pull quote would be better.
 - Book title on cover uses "HODL" all caps as stylized on the physical book jacket.
 - Description length: currently well under the 4000-character rss.com/Apple limit.
+
+**Standing rules for future SYBJ episodes uploaded to rss.com:**
+- Chapter titles: hard cap 45 characters. Aim for 25 to 35 characters where possible.
+- Chapter count: aim for 12 to 18 chapters for a one-hour episode. More than about 20 starts to feel noisy in podcast players.
+- Chapter URLs: always attach the guest's website URL to the closing chapter. Optionally attach BFTA URLs (grants, donations, midwest, etc.) to relevant chapters when they map cleanly to a call to action.
+- Duration and chapters: always derive from the VTT transcript when available, not estimated. Auto-transcribers cannot distinguish similar-sounding names or capture pre-roll intros correctly, so a VTT check is worth the two minutes.
