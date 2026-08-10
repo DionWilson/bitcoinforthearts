@@ -1,6 +1,6 @@
 RSS.COM UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 10
 
-UPLOAD STATUS: Ready to upload. Audio file is the Ep 10 recording with Lindey Magee. Video runs with a 1:20 intro clip; recommendation is to strip the intro from the audio version so the podcast begins at the Dion cold-open welcome. Timestamps below are given for both the video timeline and the audio-only timeline. Confirm which version rss.com is ingesting before setting chapters.
+UPLOAD STATUS: Ready to upload. Audio file is the Ep 10 recording with Lindey Magee. There is no pre-roll intro clip on this recording; the audio opens directly on Dion's cold-open welcome at 0:00:01. Total runtime is approximately 1:01:52. Chapter timestamps below are drawn from the VTT transcript and align directly with the audio file.
 
 YouTube URL (for cross-reference): https://youtu.be/S7oBI9aAz6w
 
@@ -51,7 +51,7 @@ Set to today (or whenever Dion schedules the release on rss.com). Prior episodes
 
 Mississippi mother Lindey Magee never planned to become a Bitcoin author. In August 2024, her husband Chuck lost his battle with cancer after twenty-five years of marriage, leaving her a widow with two children and no traditional income. Twelve years earlier, her then-twelve-year-old son Bennett had tried to teach her about Bitcoin. In grief, that conversation came back.
 
-In this two-hour episode of Share Your Bitcoin Journey, Bitcoin For The Arts founder Dion Wilson sits down with Lindey Magee, author of the Seuss-style rhyming children's book Bitcoin: A Treasury to HODL, which debuted at Bitcoin 2025 in Las Vegas and is now in the Ingram catalog for nationwide bookstore, library, and school distribution.
+In this hour-long episode of Share Your Bitcoin Journey, Bitcoin For The Arts founder Dion Wilson sits down with Lindey Magee, author of the Seuss-style rhyming children's book Bitcoin: A Treasury to HODL, which debuted at Bitcoin 2025 in Las Vegas and is now in the Ingram catalog for nationwide bookstore, library, and school distribution.
 
 Lindey walks through her journey from grieving widow to Bitcoin advocate. She talks about the Holy Spirit conviction that led her to put Chuck's life insurance into Bitcoin, the New Year's Eve she sat down at her kitchen table and wrote most of the book by three in the morning, the offset print run of ten thousand copies she committed to on her own, and the thirty thousand dollars she has invested in the book while raising her teenage daughter on a Bitcoin standard, currently from inside a twenty-six foot Winnebago after mold destroyed their home.
 
@@ -111,54 +111,34 @@ Use the same show artwork rss.com already has for Share Your Bitcoin Journey. If
 
 === CHAPTERS (Podcasting 2.0 chapters) ===
 
-Two chapter sets below. Use the AUDIO timeline if the intro clip was stripped from the podcast audio (recommended). Use the VIDEO timeline if the podcast audio was exported to match the YouTube upload exactly (includes the 1:20 intro clip).
+Timestamps below are drawn from the episode's VTT transcript and align to the actual audio file. Total runtime approximately 1:01:52.
 
-AUDIO TIMELINE (intro clip stripped, recommended for podcast):
-0:00 Cold open, introduction to Lindey Magee
-1:40 The Mississippi mom origin: questioning everything, medical freedom, and the fight for a religious exemption
-7:00 Homeschooling as sovereignty, and celebrating "why"
-11:30 Bennett at twelve years old on YouTube, and the first Bitcoin conversation in 2012
-17:00 Losing Chuck to cancer in August 2024
-21:30 The Holy Spirit conviction to put the life insurance into Bitcoin
-27:00 What "studying Bitcoin like a full-time job" actually looked like
-32:00 Living on a Bitcoin standard: Strike Bill Pay, Coinbase debit card, self-custody
-38:00 Making fiat go twice as far in a bear market
-43:00 Faith, sound money, and the Proverbs passage on weights and measures
-49:00 The accidental author: New Year's Eve, a kitchen table, and 3:00 AM
-54:00 Why Seuss, why rhyming, and why the glossary
-1:00:00 Spending generational wealth on a 10,000 copy offset print run
-1:07:00 Getting into Ingram and the road to Barnes & Noble
-1:12:00 Living in a Winnebago after mold destroyed the home
-1:18:00 Two generations on a Bitcoin standard: what Bennett has taught her back
-1:24:00 What kids raised on a Bitcoin standard learn by watching
-1:28:00 The mission: bookstores, libraries, classrooms, families
-1:33:00 Reading Bitcoin: A Treasury to HODL to kids at the Midwest Summit
-1:36:00 The BFTA micro-grant question and closing
-
-VIDEO TIMELINE (matches YouTube upload, includes 1:20 intro clip):
-0:00 Cold open, intro clip
-1:20 Introduction to Lindey Magee
-3:00 The Mississippi mom origin
-8:20 Homeschooling as sovereignty
-12:50 Bennett at twelve, and the first Bitcoin conversation in 2012
-18:20 Losing Chuck to cancer in August 2024
-22:50 The Holy Spirit conviction to put life insurance into Bitcoin
-28:20 Studying Bitcoin like a full-time job
-33:20 Living on a Bitcoin standard
-39:20 Making fiat go twice as far in a bear market
-44:20 Faith, sound money, and Proverbs on weights and measures
-50:20 The accidental author: New Year's Eve and 3:00 AM
-55:20 Why Seuss, why rhyming, why the glossary
-1:01:20 Generational wealth spent on a 10,000 copy offset print run
-1:08:20 Getting into Ingram and the road to Barnes & Noble
-1:13:20 Living in a Winnebago after mold destroyed the home
-1:19:20 Two generations on a Bitcoin standard
-1:25:20 What kids raised on a Bitcoin standard learn by watching
-1:29:20 The mission: bookstores, libraries, classrooms, families
-1:34:20 Reading Bitcoin: A Treasury to HODL at the Midwest Summit
-1:37:20 The BFTA micro-grant question and closing
-
-Note: Timestamps are estimates. Verify against the final audio file after upload. rss.com's chapter editor will allow adjustments after ingestion.
+0:00 Cold open and introduction to Lindey Magee
+1:45 Welcoming Lindey to the show
+2:09 Mississippi origins: questioning everything, vaccines, and medical freedom
+4:49 Homeschooling as sovereignty, and celebrating "why"
+6:34 Bennett at twelve, Bitcoin in 2012, and the parents who did not listen
+9:11 A cameo from Ivanka the dog
+9:29 A pilot's license before a driver's license, and twelve years of persistent orange-pilling
+12:33 Losing Chuck to cancer in August 2024
+15:02 The Holy Spirit conviction to put the life insurance into Bitcoin
+17:31 Studying Bitcoin like a full-time paid job
+20:00 What life on a Bitcoin standard actually looks like, day to day
+22:32 Strike Bill Pay, Coinbase debit card, cold storage, and making fiat go twice as far
+25:08 Faith, sound money, and the Proverbs passage on weights and measures
+26:59 The accidental author: New Year's Eve, a kitchen table, and 3:00 AM
+29:12 Why Seuss, why rhyming, why the glossary
+33:32 Generational wealth: $30,000 and a 10,000-copy offset print run
+37:45 Reader stories: DCA-curious twins and a Bitcoin-skeptical mother-in-law
+40:22 Living in a Winnebago after mold destroyed the home
+42:56 Prayer, discernment, and letting people help
+49:25 Two generations on a Bitcoin standard: what Bennett has taught her back
+51:40 What kids raised on a Bitcoin standard learn by watching
+53:49 The mission: bookstores, libraries, classrooms, families
+54:19 "Bitcoin doesn't have a marketing department. It has us."
+57:37 Reading Bitcoin: A Treasury to HODL to homeschool kids at the Midwest Summit
+59:48 The BFTA micro-grant question and booth materials for Midwest
+1:01:04 Where to find Lindey, and closing
 
 
 === VALUE 4 VALUE / LIGHTNING SPLITS (Podcasting 2.0, optional) ===
@@ -184,8 +164,8 @@ When Chuck Magee died of cancer in August 2024, his wife Lindey was left with tw
 
 === NOTES FOR EDITING ===
 
-- Name spelling is Lindey Magee (L-I-N-D-E-Y), per Dion's confirmation. All references updated globally in this file.
-- **VERIFY BEFORE PUBLISHING:** the website URL and X handle are shown as `lindeymagee.com` and `@LindeyMagee` respectively, based on the L-I-N-D-E-Y spelling. Auto-transcription of the episode heard the URL as "lindymagee.com" without the second `e`, and prior BFTA newsletter references used the same. Open her live X profile and website in a browser to confirm the actual URL and handle before pasting them into rss.com. If either is `lindymagee.com` / `@LindyMagee`, change them back in this file before use.
+- Name spelling is Lindey Magee (L-I-N-D-E-Y), confirmed by Dion and confirmed in-episode: at approximately 1:01:05 Lindey spells her own name on the air as "L-I-N-D-E-Y M-A-G-E-E." All references in this file use the correct spelling.
+- **VERIFY BEFORE PUBLISHING:** the website URL and X handle are shown as `lindeymagee.com` and `@LindeyMagee` respectively, based on the L-I-N-D-E-Y spelling. Auto-transcription in the VTT captured the domain as "lindymagee.com" (auto-transcribers cannot distinguish Lindey from Lindy audibly). Open her live X profile and website in a browser once to confirm the actual URL and handle before pasting them into rss.com. If either resolves as `lindymagee.com` / `@LindyMagee`, change them in the description and social copy above before use.
 - Confirm her Nostr npub if it is available; the description currently just says "Nostr: Lindey Magee" as a searchable handle.
 - Confirm her Lightning address before enabling any Value4Value split.
 - Ask Lindey for a favored one-line pull quote from the episode if she wants one added to the description above the "IN THIS EPISODE" list. She said several powerful things; one that stood out: "This is the most remarkable Bitcoin story I have ever heard" was Dion's line, so a Lindey-authored pull quote would be better.
