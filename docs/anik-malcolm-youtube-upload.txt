@@ -26,42 +26,32 @@ Share Your Bitcoin Journey: Episode 13 – Anik Malcolm: The Whole Entire Univer
 
 === DESCRIPTION ===
 
-In this hour-long conversation, Bitcoin For The Arts founder Dion Wilson sits down with Anik Malcolm, the classically trained multimedia artist who walked away from the London and Reykjavik art establishments and now lives with his wife and children in the mountains of central Italy, producing some of the most rigorous fine art anywhere in the Bitcoin space today.
+In this hour-long conversation, Bitcoin For The Arts founder Dion Wilson sits down with Anik Malcolm, the classically trained multimedia artist who walked away from the London and Reykjavik art establishments and now lives with his wife and children in the mountains of central Italy.
 
-Anik's practice carries a two-word tagline: Depicting Bitcoin. His most consequential work to date is a monumental oil painting titled The Whole Entire Universe, which debuted at the Bitcoin 2026 conference in Las Vegas. It took over 900 hours to complete. His work is being collected and exhibited in the emerging citadels of Bitcoin: Lugano Plan B in Switzerland, The Venetian in Las Vegas, the Bitcoin Museum and Gallery in Nashville, and a planned monumental public sculpture in Roatán.
+His practice carries a two-word tagline: Depicting Bitcoin. His most consequential work is a monumental oil painting titled The Whole Entire Universe, which debuted at Bitcoin 2026 in Las Vegas and took over 900 hours to complete. His work is being collected and exhibited in the emerging citadels of Bitcoin: Lugano Plan B, The Venetian, the Bitcoin Museum and Gallery in Nashville, and a planned monumental public sculpture in Roatán.
 
-This conversation goes back to the beginning: classical training in London, the specific Reykjavik gallery meeting that broke his faith in the fiat art system, the withdrawal to central Italy that unlocked a career surge for both him and his wife Una, and the mathematics of The Whole Entire Universe. How 21 million beads fit into a cube of 276. How each face gives up 4,096 squares, exactly 64 by 64. How the resulting halving pattern of 64, 32, 16, 8, 4, 2 turns out to be an accidental visual signature of Bitcoin itself, one that only works cleanly at 21 million and one billion, and at no round number in between.
+The mathematics: 21 million beads fit into a cube of 276. Each face gives up 4,096 squares, exactly 64 by 64. The resulting halving pattern of 64, 32, 16, 8, 4, 2 turns out to be an accidental visual signature of Bitcoin itself, and it only works cleanly at 21 million.
 
 IN THIS EPISODE:
-- Growing up drawing every free minute as a kid in London
-- Classical fine art training and the discipline that outlasted the establishment
-- The Reykjavik gallery meeting that finally broke the spell
-- Why COVID and the collapse of social trust drove the move to central Italy
-- The 2009 Iceland anti-banker protests and a lifelong distrust of central banking
-- First encountering Bitcoin in 2012 through a Hieroglyphics reference
-- How a Reykjavik property sale re-opened the door and the conviction became instant
-- Discovering the Art of Freedom podcast and the Bitcoin cultural scene
+- Classical fine art training in London and the discipline that outlasted the establishment
+- The Reykjavik gallery meeting that broke the fiat spell
+- COVID, the move to central Italy, and a shared career surge with his wife Una
+- First encountering Bitcoin in 2012, and why the conviction became instant
 - Depicting Bitcoin: folding an entire artistic identity into one subject
-- The math of The Whole Entire Universe: 276 cubed, 21,024,756, and the 4,096 squares that make the pattern work
-- Why 21 million is the smallest round number for which this pattern is possible
-- The halving mechanism inside the image: 64 to 32 to 16 to 8 to 4 to 2
-- Odds of 15 in 8 billion, and what that suggests about Bitcoin's design
-- The Bitcoin Lens, Jeff Booth, and reconsidering time through block structure
-- Una the jeweler, the household as creative unit, and building a family practice
+- The math of The Whole Entire Universe and why 21 million is the only round number that works
+- The Bitcoin Lens, Jeff Booth, and rethinking time through block structure
+- The household as creative unit: Una the jeweler and building a family practice
 - 900 hours of oil paint as low time preference made literal
-- Proof of human: why oil paint holds warmth that digital cannot
-- Lugano Plan B, The Venetian, Nashville, Roatán, and the new citadel map
-- The Roatán monumental public sculpture, and why the disadvantaged should see Bitcoin first
+- Proof of human: why classical medium for a subject that exists in code
+- Lugano, The Venetian, Nashville, Roatán, and the new citadel map
 - Fatherhood, and a daughter who came into the room just to be with the painting
-- What comes after Roatán: Lugano commission, drone shows, sculpture editions
-- Bitcoin's message finally has a receiver
-- What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock for a small sculpture version of The Whole Entire Universe
+- What a $500 to $2,000 BFTA micro-grant would unlock for a small sculpture version
 
 STAY UNTIL THE END:
-This episode closes with Anik Malcolm's own animation video "The Whole Entire Universe," included with permission after the conversation. It explains the mathematics of the painting in visual form. Do not skip it.
+This episode closes with Anik's own animation video "The Whole Entire Universe," included with permission. It explains the mathematics of the painting in visual form.
 
 ABOUT ANIK MALCOLM:
-Multimedia artist based in the mountains of central Italy. Classically trained in London. Debuted The Whole Entire Universe at Bitcoin 2026 in Las Vegas. Currently on commission for the Bitcoin Museum and Gallery in Nashville, with a monumental public sculpture in Roatán in planning.
+Classically trained multimedia artist based in the mountains of central Italy. Depicting Bitcoin. Debuted The Whole Entire Universe at Bitcoin 2026 in Las Vegas.
 
 Website: https://anikmalcolm.com
 X: https://x.com/anikmalcolm
@@ -124,7 +114,7 @@ Thumbnail is already in the repo at public/ep13-anik-malcom.jpg. Once main is de
 - Bonus outro chapter at 59:30 flags Anik's own animation video "The Whole Entire Universe." Confirm the exact hand-off timestamp when reviewing the final export; adjust the 59:30 marker if needed.
 - Anik provided his X post URL for the animation as the source: https://x.com/anikmalcolm/status/2014397959954194868. If the video is being reused, ensure permission is on file (a note in his DMs or an on-camera consent moment counts).
 - No em dashes anywhere in the description or tags, per BFTA style.
-- Description length: approximately 3,800 characters, well under the 5,000 YouTube limit.
+- Description length: 4,482 characters after trimming, comfortably under the 5,000 YouTube limit.
 - Tags length: approximately 480 characters, just under the 500 YouTube limit.
 - Title length: 80 characters, well under the 100 YouTube limit.
 - Consider pinning a comment on the video at upload time that reads: "Do not skip past the closing at 59:15. Anik's own animation video The Whole Entire Universe plays as an outro at 59:30. It explains the math in visual form."
