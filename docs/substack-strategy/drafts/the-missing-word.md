@@ -52,6 +52,14 @@ Artists are especially not taught to make these connections. In no undergraduate
 
 This is what Bitcoin for the Arts exists to correct. Not to make artists into Bitcoiners. To make artists into people who can see what is happening to them.
 
+## What inflation actually is
+
+Because this word is going to do a great deal of work in what follows, it is worth naming precisely what it means, especially for a reader who was never handed a working definition in school.
+
+In everyday conversation, inflation is treated as a synonym for "prices going up." That is the visible symptom. It is not the underlying event. Inflation, in its rigorous economic sense, is an expansion of the money supply. When more dollars enter the economy without a corresponding increase in the goods and services those dollars can buy, each individual dollar becomes less valuable. Prices rise because dollars are worth less, not because bread or theater tickets have become intrinsically more precious. This distinction matters, because it locates the cause of inflation not in butchers or bakers or ticket-sellers, but in the institution that controls how many dollars exist. In the United States, that institution is the Federal Reserve.
+
+The scoreboard the Federal Reserve publishes to measure how many dollars are in the American economy is called *M2*. When this article refers to M2, it is referring to that specific measure. M2 counts physical cash, checking-account balances, savings-account balances, and money market funds. It is a public number, released monthly, and anyone can look it up. When the M2 number goes up, more dollars have entered the system. When it goes up faster than the actual economy grows, each dollar in your paycheck buys less than it did before. That is inflation at its source.
+
 ## Why the nut got to a million dollars a week
 
 Let us complete Frey's analysis with the piece he does not have.
@@ -176,6 +184,7 @@ I danced for twenty-five years on the biggest stages in the country. I watched b
 - No em dashes anywhere in the body (verified).
 - Brian D. Frey is quoted respectfully and by name. His analysis is treated as authoritative on everything he addresses; the piece completes rather than rebuts him. The tone is "and here is the chapter he did not have room to write," not "here is what he got wrong."
 - Deliberately avoids condescension toward the theater industry. The piece names, in the opening, that no performing arts program teaches monetary theory. This is the missing framework, not a personal failing.
+- Section titled "What inflation actually is" provides plain-language definitions of two terms the rest of the article depends on: (1) inflation as a rise in the money supply, not merely a rise in prices, and (2) M2 as the Federal Reserve's monthly-published scoreboard of total dollars in the American economy. These definitions land before the first use of either term in the argument, so a reader with no economics background can follow the whole piece.
 - The founder's credentials as a working dancer (Alvin Ailey, Dance Theatre of Harlem, Philadanco, Disney's The Lion King) are named in the sign-off, establishing insider authority without leading with it in the body.
 - Includes specific, verifiable monetary data (M2 expansion from ~$15.4T in Feb 2020 to ~$23.2T by mid-2026, ~50% expansion, ~85% USD purchasing power loss since 1971) verified against Federal Reserve H.6 releases via FRED. A reader can independently confirm any figure.
 - Deliberately positions Bitcoin as an option available rather than the required conclusion. The piece is a monetary education piece first and a Bitcoin case second. This is intentional and matches Dion's stated intent.
