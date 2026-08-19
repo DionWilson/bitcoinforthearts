@@ -39,9 +39,9 @@ export default function MidwestPage() {
         'Two days of lunch-hour live performances on the Summit\u2019s Secondary Stage, anchored by Ainsley Costello and additional working artists. Professional sound and full-quality recordings captured for post-event distribution.',
     },
     {
-      title: 'Peer-to-Peer Lightning Silent Auction',
+      title: 'Peer-to-Peer Silent Auction',
       detail:
-        'A gallery wall of donated artworks running a live Lightning silent auction. Bidders scan a QR, bid in sats, and the leaderboard updates in real time. Bitcoin-native and gallery-grade.',
+        'Donated artworks on the gallery wall with paper bid sheets and QR codes to full lot details. Opening bids and $21 increments; one-third of each hammer price supports BFTA. Browse lots at bitcoinforthearts.org/midwest/auction.',
     },
     {
       title: 'Living Room \u0026 Lightning Wallet Demo',
