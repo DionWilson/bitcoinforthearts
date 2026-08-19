@@ -41,7 +41,7 @@ export default function MidwestPage() {
     {
       title: 'Peer-to-Peer Silent Auction',
       detail:
-        'Donated artworks on the gallery wall with paper bid sheets and QR codes to full lot details. Opening bids and $21 increments; one-third of each hammer price supports BFTA. Browse lots at bitcoinforthearts.org/midwest/auction.',
+        'Donated artworks on the gallery wall with paper bid sheets and QR codes to full lot details. Opening bids and increments in sats; one-third of each hammer price supports BFTA. Browse lots at bitcoinforthearts.org/midwest/auction.',
     },
     {
       title: 'Living Room \u0026 Lightning Wallet Demo',

@@ -25,12 +25,12 @@ export type AuctionLot = {
   imageSrc?: string;
   imageAlt?: string;
   description: string;
-  /** Opening bid in USD */
+  /** Opening bid in USD (informational display) */
   startingBidUsd: number;
-  /** Opening bid in sats (informational; settle at posted rate) */
+  /** Opening bid in sats — primary auction unit */
   startingBidSats: number;
-  /** Fixed USD increment between bids */
-  incrementUsd: number;
+  /** Fixed sats increment between bids */
+  incrementSats: number;
   /** BFTA share of hammer price, e.g. 1/3 */
   bftaShare: string;
   /** Artist share of hammer price, e.g. 2/3 */
@@ -66,7 +66,7 @@ export const midwestAuctionLots: AuctionLot[] = [
       'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical — donated for silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
     startingBidUsd: 98,
     startingBidSats: 150000,
-    incrementUsd: 21,
+    incrementSats: 21000,
     bftaShare: '1/3',
     artistShare: '2/3',
     noSaleTerms:

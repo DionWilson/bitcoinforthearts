@@ -61,13 +61,15 @@ export default async function AuctionBidSheetPage({ params }: Props) {
             <p>
               <span className="underline">Opening bid:</span>{' '}
               <strong>
-                {formatUsd(lot.startingBidUsd)} /{' '}
                 {formatSats(lot.startingBidSats)}
+                {lot.startingBidUsd
+                  ? ` / ${formatUsd(lot.startingBidUsd)}`
+                  : ''}
               </strong>
             </p>
             <p>
               <span className="underline">Minimum increase:</span>{' '}
-              <strong>{formatUsd(lot.incrementUsd)}</strong>
+              <strong>{formatSats(lot.incrementSats)}</strong>
             </p>
             <p>
               <span className="underline">Proceeds:</span> {lot.bftaShare} BFTA ·{' '}
@@ -78,9 +80,9 @@ export default async function AuctionBidSheetPage({ params }: Props) {
             </p>
           </div>
           <p className="mt-3 text-xs leading-relaxed text-black/65">
-            Sign below with a bid at least {formatUsd(lot.incrementUsd)} above
+            Sign below with a bid at least {formatSats(lot.incrementSats)} above
             the previous bid. Highest valid bid at close wins. Payment due
-            before release (USD or Bitcoin/Lightning). Full terms:{' '}
+            before release (Bitcoin/Lightning or USD). Full terms:{' '}
             <span className="break-all">{detailUrl}</span>
           </p>
           {(lot.artistStrike || lot.artistEmail) && (
@@ -98,7 +100,7 @@ export default async function AuctionBidSheetPage({ params }: Props) {
               <th className="w-8 py-2 pr-2">#</th>
               <th className="py-2 pr-2">Name</th>
               <th className="py-2 pr-2">Email / Phone</th>
-              <th className="w-[28%] py-2">Bid (USD or sats)</th>
+              <th className="w-[28%] py-2">Bid in sats</th>
             </tr>
           </thead>
           <tbody>

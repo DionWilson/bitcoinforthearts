@@ -118,21 +118,23 @@ export default async function AuctionLotPage({ params }: Props) {
               <li>
                 Opening bid:{' '}
                 <strong>
-                  {formatUsd(lot.startingBidUsd)} /{' '}
                   {formatSats(lot.startingBidSats)}
+                  {lot.startingBidUsd
+                    ? ` / ${formatUsd(lot.startingBidUsd)}`
+                    : ''}
                 </strong>
               </li>
               <li>
                 Minimum increase between bids:{' '}
-                <strong>{formatUsd(lot.incrementUsd)}</strong>
+                <strong>{formatSats(lot.incrementSats)}</strong>
               </li>
               <li>
                 Sign the paper bid sheet next to the work with your name, email
-                or phone, and bid amount.
+                or phone, and bid amount in sats.
               </li>
               <li>
-                Bids may be noted in USD or sats. Settlement after win may be
-                paid in USD or Bitcoin/Lightning at the posted rate of the day.
+                Bids are counted in sats. Settlement after win may be paid in
+                Bitcoin/Lightning or USD at the posted rate of the day.
               </li>
               <li>
                 Auction closes:{' '}

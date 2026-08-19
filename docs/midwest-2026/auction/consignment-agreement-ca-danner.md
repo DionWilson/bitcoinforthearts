@@ -32,7 +32,7 @@ Artist represents that Artist is the sole owner of the Work, that the Work is fr
 
 1. The Work will be offered in a **peer-to-peer silent auction** at Bitcoin Arts Park during the Event.
 2. **Opening bid:** **150,000 sats** (displayed with an informational USD equivalent of **$98**).
-3. **Minimum bid increment:** USD **$21**.
+3. **Minimum bid increment:** **21,000 sats**.
 4. Bidding closes **Thursday, September 24, 2026 at 3:00 PM Eastern Time**, unless BFTA announces an earlier or later close on-site for operational reasons.
 5. The highest valid bid at close is the **hammer price**. The winning bidder must complete payment before the Work is released.
 6. Payment may be accepted in **USD and/or Bitcoin / Lightning**, at BFTA’s posted conversion practice for the Event day.

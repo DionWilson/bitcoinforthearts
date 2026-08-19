@@ -26,6 +26,6 @@
 ## Agreed economics (LOT-01)
 
 - Opening: **150,000 sats / $98**
-- Increment: **$21**
+- Increment: **21,000 sats**
 - Split: **1/3 BFTA · 2/3 CA Danner**
 - No sale: **donated in full to BFTA**

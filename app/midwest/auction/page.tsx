@@ -56,9 +56,11 @@ export default function MidwestAuctionIndexPage() {
                   <span className="text-black/50"> · {lot.year}</span>
                 </p>
                 <p className="text-sm text-black/80">
-                  Opening bid {formatUsd(lot.startingBidUsd)} /{' '}
-                  {formatSats(lot.startingBidSats)} · increments{' '}
-                  {formatUsd(lot.incrementUsd)}
+                  Opening bid {formatSats(lot.startingBidSats)}
+                  {lot.startingBidUsd
+                    ? ` / ${formatUsd(lot.startingBidUsd)}`
+                    : ''}{' '}
+                  · increments {formatSats(lot.incrementSats)}
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Link
