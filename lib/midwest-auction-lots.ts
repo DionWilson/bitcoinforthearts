@@ -64,8 +64,8 @@ export const midwestAuctionLots: AuctionLot[] = [
       'CA Danner, Satoshi White Paper Series #52, Block Height 770067 — mixed media on linen canvas with Satoshi Nakamoto white paper text under color washes',
     description:
       'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical — donated for silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
-    startingBidUsd: 322,
-    startingBidSats: 500000,
+    startingBidUsd: 98,
+    startingBidSats: 150000,
     incrementUsd: 21,
     bftaShare: '1/3',
     artistShare: '2/3',

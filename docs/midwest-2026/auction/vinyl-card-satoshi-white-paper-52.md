@@ -20,7 +20,7 @@ CA Danner
 Mixed media on linen canvas
 22 × 28 in
 
-Opening bid  $322  /  500,000 sats
+Opening bid  150,000 sats  /  $98
 Minimum increase  $21
 
 Of the winning bid:
@@ -43,7 +43,7 @@ bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52
 LOT-01 · CA Danner
 Satoshi White Paper Series #52
 Block Height 770067 · 22×28 in
-Open $322 / 500,000 sats · +$21
+Open 150,000 sats / $98 · +$21
 1/3 BFTA · Closes Thu 3PM
 Scan QR to bid details
 ```
