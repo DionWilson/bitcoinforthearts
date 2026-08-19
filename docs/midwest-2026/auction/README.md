@@ -20,8 +20,16 @@
 - [ ] Vinyl/wall card from `vinyl-card-satoshi-white-paper-52.md`
 - [ ] QR code → lot detail URL above
 - [ ] Bid sheet printed from `/bid-sheet` (clipboard + pen)
-- [ ] Signed consignment agreement
+- [ ] Signed consignment agreement (`consignment-agreement-ca-danner.pdf` — send to artist)
 - [ ] Warehouse label + tracking from artist (arrive Sept 20–22)
+
+## Consignment PDF
+
+Source: `consignment-agreement-ca-danner.md`  
+Regenerate: `python3 docs/midwest-2026/auction/generate-consignment-pdf.py`  
+(Uses BFTA black logo: `public/brand-kit/derived/main-black-transparent-800.png`)
+
+Entity language: **New York 501(c)(3)** — no street / operating address on the agreement.
 
 ## Agreed economics (LOT-01)
 

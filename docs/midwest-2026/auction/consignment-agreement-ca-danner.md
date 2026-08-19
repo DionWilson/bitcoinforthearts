@@ -1,6 +1,6 @@
 # Artwork Consignment & Silent Auction Agreement
 
-**Bitcoin for the Arts, Inc.** (a Delaware 501(c)(3) nonprofit)  
+**Bitcoin for the Arts, Inc.** (a New York 501(c)(3) nonprofit)  
 and  
 **CA Danner** (“Artist”)
 
