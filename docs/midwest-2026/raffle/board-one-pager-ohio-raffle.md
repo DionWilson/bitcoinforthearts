@@ -2,7 +2,7 @@
 
 **Bitcoin for the Arts, Inc.** · New York 501(c)(3) · EIN 41-2642260  
 **Event:** Bitcoin Arts Park / *Generations* · Greater Columbus Convention Center · Sept 23–24, 2026  
-**Status:** Internal guidance summary for board review — **not legal advice**. Confirm in writing with Ohio AG Charitable Law Section and City of Columbus before any tickets are sold.
+**Status:** Ohio AG Charitable Law **confirmed in writing** (Aug 2026) that they do not see concern with BFTA’s laid-out in-person / physical-draw plan. **Not legal advice.** Still confirm City of Columbus / local requirements before tickets are sold. Full memo: `ohio-ag-confirmation-aug-2026.md`.
 
 ---
 
@@ -42,23 +42,23 @@ We still must follow **Ohio Revised Code Chapter 2915**, keep required records, 
 
 ## Board action before tickets are sold
 
-1. Confirm current guidance with **Ohio Attorney General Charitable Law Section**  
-   - CharitableLaw@OhioAGO.gov · 800-282-0515  
-   - [charitable.ohioago.gov/Charitable-Gaming](https://charitable.ohioago.gov/Charitable-Gaming)
+1. ~~Confirm current guidance with Ohio AG Charitable Law~~ **Done (Aug 2026).** See `ohio-ag-confirmation-aug-2026.md`.
 2. Check **City of Columbus** License Section / charitable solicitations and any Franklin County event rules.
 3. Confirm BFTA’s **Ohio charitable solicitation registration** (Chapter 1716) is current.
 4. Approve the in-person + physical-draw structure for any Summit raffle(s).
+5. Do **not** raffle alcohol without ORC 4301.58 / Liquor Control procedures (not part of current plan).
 
 ---
 
 ## Recommended board-packet note
 
-> Ohio note: Raffles by 501(c)(3) nonprofits are legal and do **not** require a state raffle/bingo license under ORC 2915.092. However, the raffle must comply with Chapter 2915 (especially physical-draw rules and 3-year recordkeeping under 2915.10). Fully online raffles remain restricted under current AG interpretation. Local Columbus/Franklin County rules may also apply. Board should confirm current Ohio AG Charitable Law Section guidance and local requirements **in writing** before any tickets are sold.
+> Ohio AG Charitable Law reviewed BFTA’s Midwest Summit raffle plan (in-person sales, physical draw, Chapter 2915 / 2915.10 compliance, net proceeds to artist grants) and replied that they do not see anything of concern if we follow that plan. Eligible 501(c)(3) raffles do not require a state raffle/bingo license. We will still confirm Columbus/local requirements, keep ORC 2915.10 records for at least three years, and will not run a fully online raffle without separate written guidance.
 
 ---
 
 ## Related files
 
+- AG confirmation memo: `ohio-ag-confirmation-aug-2026.md`
 - Full research digest: `ohio-raffle-rules-summary.md`
-- Draft email to Ohio AG: `email-ohio-ag-raffle-confirmation.md`
+- Original AG request draft: `email-ohio-ag-raffle-confirmation.md`
 - Silent auction (separate process): `../auction/`
