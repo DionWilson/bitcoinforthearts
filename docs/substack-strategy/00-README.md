@@ -25,6 +25,7 @@ Dion is one person running a 501(c)(3) plus an event plus sponsor outreach plus 
 | `03-contributor-system.md` | How to recruit + onboard 5–8 contributors (board members, advisors, featured artists, mission-aligned outsiders). Includes a contributor invitation email, brief template, editorial standards, and FMV acknowledgment letter for contributed writing. |
 | `04-growth-and-cross-promotion.md` | Specific tactics to grow subscriber count: cross-posts with other Bitcoin/arts Substacks, Notes engagement strategy, newsletter-to-Substack flow, conference outreach, paid promotion ladders. |
 | `05-art-zap-weekend-arc.md` | A 12-week countdown arc of articles + Notes specifically designed to drive Art + Zap Weekend awareness, sponsor inquiries, and audience signups for the event. Maps directly to the calendar in `01`. |
+| `06-house-style.md` | Standing writing rules. **Hard rule: no em dashes in BFTA copy.** |
 
 ## What success looks like in 12 weeks
 

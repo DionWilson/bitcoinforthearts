@@ -161,11 +161,12 @@ Dion
 A contributor article passes when it has:
 
 - A clear thesis stated in the first 3 paragraphs
-- At least one specific reference (a person, event, statistic) — not generic
-- At least one BFTA mission tie-in — natural, not bolted-on
+- At least one specific reference (a person, event, statistic), not generic
+- At least one BFTA mission tie-in, natural, not bolted-on
 - A clear next-step CTA at the end (subscribe, donate, attend Art + Zap, share)
 - Reads in under 8 minutes
-- The contributor's voice — not Dion's, not BFTA's institutional voice
+- The contributor's voice, not Dion's, not BFTA's institutional voice
+- **No em dashes (—).** See `06-house-style.md`. Use commas, periods, or a new sentence instead.
 
 A contributor article fails when:
 
