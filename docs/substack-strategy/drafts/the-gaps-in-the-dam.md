@@ -4,7 +4,7 @@
 
 **Bitcoin for the Arts · Substack draft · newsjack of WBEZ / Sun-Times, Aug 20, 2026**  
 **Pillar:** Newsjacking the arts-funding crisis + Bitcoin thesis for artists  
-**Estimated read:** 9–11 minutes  
+**Estimated read:** 9-11 minutes  
 **Source article:** Erica Thompson, “‘Dance for Life’ puts the spotlight on healthcare gaps for Chicago performers,” WBEZ / Chicago Sun-Times, Aug 20, 2026  
 https://www.wbez.org/theater-stages/2026/08/20/dance-for-life-chicago-dance-health-fund-puts-the-spotlight-on-healthcare-gaps-for-chicago-performers
 
@@ -202,9 +202,9 @@ Bitcoin is not health insurance. Say it twice. What it can be for dancers is lit
 - Voice matches “The Missing Word”: complete the news story, do not rebut the journalists or the charity.
 - Explicitly celebrates Chicago Dance Health Fund / Dance for Life; BFTA is adjacent (monetary literacy + sovereign funding), not a competitor for emergency healthcare grants.
 - Hard boundary section: “What Bitcoin is not” prevents the piece from being misread as crypto-cure messaging.
-- No em dashes in the body.
+- No em dashes and no en dashes anywhere in the piece (BFTA house style; see `../06-house-style.md`). Number ranges use plain hyphens.
 - Companion energy to `art-is-health-infrastructure.md` (research/health thesis) but this piece is newsjack + dancer labor + money education.
-- Suggest publishing within 48–72 hours of the WBEZ piece while Dance for Life (Aug 22) is still in the cultural window; afterward it still works as evergreen dancer-healthcare commentary.
-- Optional Dion open: 2–3 sentences of personal injury/insurance memory from Ailey / DTH / Lion King years if he wants first-person heat at the top.
+- Suggest publishing within 48-72 hours of the WBEZ piece while Dance for Life (Aug 22) is still in the cultural window; afterward it still works as evergreen dancer-healthcare commentary.
+- Optional Dion open: 2-3 sentences of personal injury/insurance memory from Ailey / DTH / Lion King years if he wants first-person heat at the top.
 - Suggested tags: dance, healthcare, chicago, inflation, sound-money, bitcoin, arts-funding, dancers, AGMA.
 - Suggested cover: dancers in rehearsal / Auditorium marquee energy, black-and-white, no crypto cliché imagery.
