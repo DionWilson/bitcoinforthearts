@@ -173,7 +173,7 @@ This is the chapter we are here to write.
 
 ## FOOTER / SIGN-OFF (for Substack)
 
-**Dion Wilson** is the founder and executive director of Bitcoin for the Arts, a 501(c)(3) nonprofit supporting working artists with Bitcoin micro-grants, education, and sovereign funding tools. He spent twenty-five years as a professional dancer with Alvin Ailey American Dance Theater, Dance Theatre of Harlem, Philadanco, and Disney’s *The Lion King* on Broadway. Bitcoin for the Arts exists to close the gap between how artists are trained and how their industry is actually funded.
+**Dion Wilson** is the founder and executive director of Bitcoin for the Arts, a 501(c)(3) nonprofit supporting working artists with Bitcoin micro-grants, education, and sovereign funding tools. He spent sixteen years as a professional dancer with Alvin Ailey American Dance Theater, Dance Theatre of Harlem, Philadanco, and Disney’s *The Lion King* on Broadway, and twenty-five years in the industry. Bitcoin for the Arts exists to close the gap between how artists are trained and how their industry is actually funded.
 
 If you are a dancer or working artist navigating healthcare, contracts, and money you were never taught, start here: [bitcoinforthearts.org](https://www.bitcoinforthearts.org). Subscribe at [bitcoinforthearts.substack.com](https://bitcoinforthearts.substack.com). Support the work via the Sovereign Circle or a direct gift at [bitcoinforthearts.org/donate](https://www.bitcoinforthearts.org/donate).
 
@@ -190,7 +190,7 @@ WBEZ just told the truth about healthcare gaps for Chicago dancers. Dance for Li
 “This money saves lives,” a Chicago dancer said of a healthcare grant that paid for therapy. Correct. Now ask why a $1,000 grant buys less care every year, and why company premiums outrun ticket revenue. The dam is leaking for a monetary reason.
 
 **Option C (Dion / first person possible Note):**
-I danced twenty-five years on major stages and watched benefits thin out while premiums and co-pays climbed. I did not have the language for it then. I do now. Healthcare is the crisis. Money is the missing syllabus.
+I danced professionally for sixteen years on major stages, twenty-five years in the industry, and watched benefits thin out while premiums and co-pays climbed. I did not have the language for it then. I do now. Healthcare is the crisis. Money is the missing syllabus.
 
 **Option D:**
 Bitcoin is not health insurance. Say it twice. What it can be for dancers is literacy, a savings rail between contracts, and a way funders stop volunteering to buy less care every year with the same nominal dollars.

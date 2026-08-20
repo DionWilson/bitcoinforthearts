@@ -156,7 +156,7 @@ Brian D. Frey wrote the sharpest short piece of Broadway analysis of the year. I
 
 ## FOOTER / SIGN-OFF (for Substack)
 
-**Dion Wilson** is the founder and executive director of Bitcoin for the Arts, a 501(c)(3) nonprofit supporting working artists with Bitcoin micro-grants, education, and sovereign funding tools. He spent twenty-five years as a professional dancer with Alvin Ailey American Dance Theater, Dance Theatre of Harlem, Philadanco, and Disney's *The Lion King* on Broadway. Bitcoin for the Arts exists to close the gap between how artists are trained and how their industry is actually funded.
+**Dion Wilson** is the founder and executive director of Bitcoin for the Arts, a 501(c)(3) nonprofit supporting working artists with Bitcoin micro-grants, education, and sovereign funding tools. He spent sixteen years as a professional dancer with Alvin Ailey American Dance Theater, Dance Theatre of Harlem, Philadanco, and Disney's *The Lion King* on Broadway, and twenty-five years in the industry. Bitcoin for the Arts exists to close the gap between how artists are trained and how their industry is actually funded.
 
 Support BFTA's work by subscribing at [bitcoinforthearts.substack.com](https://bitcoinforthearts.substack.com), joining the Sovereign Circle at [bitcoinforthearts.org/sovereign-circle](https://bitcoinforthearts.org/sovereign-circle), or funding a specific project at [geyser.fund/project/bitcoinforthearts](https://geyser.fund/project/bitcoinforthearts). If you are a working artist, apply for a Q3 micro-grant by September 1 at [bitcoinforthearts.org/grants/apply](https://bitcoinforthearts.org/grants/apply).
 
@@ -174,7 +174,7 @@ The show did not close because the title was tired. It closed because the runnin
 No undergraduate or graduate performing arts program requires a class on monetary theory. Artists spend a decade honing craft, another decade building a career, and are never taught how the currency they are paid in loses value every year of their working life. Time to fix that.
 
 **Option D (Nostr / personal, first-person for Dion):**
-I danced for twenty-five years on the biggest stages in the country. I watched budgets shrink, health benefits erode, and audiences vanish, and I did not understand why while it was happening. I do now. Bitcoin For The Arts is the education I wish I had had. Every working artist deserves it.
+I danced professionally for sixteen years on the biggest stages in the country, twenty-five years in the industry. I watched budgets shrink, health benefits erode, and audiences vanish, and I did not understand why while it was happening. I do now. Bitcoin For The Arts is the education I wish I had had. Every working artist deserves it.
 
 ---
 
