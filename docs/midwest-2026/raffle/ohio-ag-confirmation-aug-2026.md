@@ -41,7 +41,7 @@
 3. Build the **ORC 2915.10 record kit** before ticket sales (gross receipts, expenses with receipts, prize list, $600+ winner ID fields, use of net profit).
 4. Keep the raffle **separate** from the silent auction in money handling and books.
 5. File this AG email in the Midwest 2026 compliance folder (PDF or print of the thread).
-6. **Chapter 1716:** BFTA is NY-based and has **no** Ohio solicitation registration yet. Complete registration (or written exemption) before Ohio solicitation. See `ohio-chapter-1716-ny-org-note.md`.
+6. **Chapter 1716:** Not treated as a blocking open item after the Aug AG reply. Dion asked about any AG registration/permit/notice for this raffle; Charitable Law did not require 1716 registration. See `ohio-chapter-1716-ny-org-note.md`.
 
 ---
 

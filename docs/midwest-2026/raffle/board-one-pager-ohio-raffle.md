@@ -43,8 +43,8 @@ We still must follow **Ohio Revised Code Chapter 2915**, keep required records, 
 ## Board action before tickets are sold
 
 1. ~~Confirm current guidance with Ohio AG Charitable Law~~ **Done (Aug 2026).** See `ohio-ag-confirmation-aug-2026.md`.
-2. Check **City of Columbus** License Section / charitable solicitations and any Franklin County event rules.
-3. **Ohio Chapter 1716 charitable solicitation registration:** BFTA is NY-based and **does not currently have** this registration. Register (or confirm a written exemption) **before** Ohio solicitation / raffle ticket sales. See `ohio-chapter-1716-ny-org-note.md`.
+2. Check **City of Columbus** License Section / charitable solicitations and any Franklin County event rules **only if** on-site ops or venue requires it.
+3. **Ohio Chapter 1716:** Not treated as a blocking open item. Dion asked Charitable Law about any AG registration/permit/notice for this raffle; their reply raised no 1716 requirement. See `ohio-chapter-1716-ny-org-note.md`.
 4. Approve the in-person + physical-draw structure for any Summit raffle(s).
 5. Do **not** raffle alcohol without ORC 4301.58 / Liquor Control procedures (not part of current plan).
 
@@ -52,7 +52,7 @@ We still must follow **Ohio Revised Code Chapter 2915**, keep required records, 
 
 ## Recommended board-packet note
 
-> Ohio AG Charitable Law reviewed BFTA’s Midwest Summit raffle plan (in-person sales, physical draw, Chapter 2915 / 2915.10 compliance, net proceeds to artist grants) and replied that they do not see anything of concern if we follow that plan. Eligible 501(c)(3) raffles do not require a state raffle/bingo license. Separately: BFTA is a New York org and does not yet have Ohio Chapter 1716 solicitation registration; we should complete registration (or confirm a written exemption) before Ohio ticket sales or donation asks. Columbus/local requirements and ORC 2915.10 records remain our responsibility.
+> Ohio AG Charitable Law reviewed BFTA’s Midwest Summit raffle plan (in-person sales, physical draw, Chapter 2915 / 2915.10 compliance, net proceeds to artist grants) and replied that they do not see anything of concern if we follow that plan. Eligible 501(c)(3) raffles do not require a state raffle/bingo license. Dion asked whether any AG registration, permit, or notice was required; the reply did not direct Chapter 1716 registration. We proceed on that written guidance, keep ORC 2915.10 records, and will not run a fully online raffle without separate written guidance.
 
 ---
 
