@@ -1,172 +1,151 @@
-# SYBJ Episode 14 — CapCut edit bible + clip cut sheet
+# SYBJ Episode 14 — CapCut edit bible + timestamped clip cut sheet
 
 **Episode:** Share Your Bitcoin Journey · Episode 14  
-**Guest:** MadMunky2140 (confirm spelling on camera / lower-third)  
-**Goal:** Master cut for YouTube longform + Shorts + landscape social + Nostr-safe clips
+**Guest:** MadMunky2140 (on-screen Zoom label: `mad munk`; say **MadMunky** on camera / titles)  
+**Source:** Zoom cloud recording · Aug 21, 2026  
+**Files:** Recording 1 (6:13 intro retakes) · Recording 2 (1:16:59 main episode)
 
-This file is the **editing script**. Fill the TIMecode column in CapCut as you scrub. If you paste a transcript with timestamps later, we can lock exact in/out points.
+Whisper timestamps below are approximate (±2-5s). Scrub and trim to breath/punctuation in CapCut.
 
 ---
 
-## Recommended workflow (your CapCut idea, tightened)
+## Which file to use
 
-Do this in order. Do not export 30 clips from the raw camera file.
+**Use Recording 2 as the master.** It contains the clean full intro + full interview + close.
 
-### Pass 1 — Master cleanup (one timeline)
-
-1. **Hard cut the pre-talk.** Start the master at the first clean frame of your standard intro (“Welcome to another episode of Share Your Bitcoin Journey…”). Everything before that goes to a “B-roll / scrap” bin, not the public cut.
-2. **Light cleanup only on the master:** remove long dead air, “um” stacks that kill pace, and any false starts. Do not over-edit the conversation.
-3. **Brand once on the master, not on every clip:**
-   - Subtle grade / film look (what you called the filter) on the whole timeline
-   - BFTA logo lower-third or corner bug (small, consistent, never covering faces)
-   - Optional: episode title card 3-5 seconds after intro line
-4. **Export MASTER once:**
-   - 1080p (or 1440p if you shot higher), H.264, ~8-12 Mbps
-   - This is the YouTube longform upload source
-
-### Pass 2 — Pull clips FROM the master
-
-Duplicate the master project or nest it. Mark clips with CapCut markers using the cut sheet below. Export each marker range as its own file.
-
-### Pass 3 — Aspect + platform exports
-
-For each approved clip, export **two aspect ratios** from the same edit:
-
-| Version | Ratio | Use |
+| Zoom file | Duration | Use |
 | --- | --- | --- |
-| Portrait | 9:16 | YouTube Shorts, IG Reels, TikTok, Facebook Reels |
-| Landscape | 16:9 | X, LinkedIn, Facebook feed, YouTube community, Substack embed |
-
-Reframe portrait carefully: keep both faces / key speaker in frame. Prefer slight punch-in over wild keyframes.
-
-### Pass 4 — Nostr-safe encodes (under 100 MB)
-
-Nostr clients often fail uploads over ~100 MB. That is **file size**, driven by duration × resolution × bitrate.
-
-**Safe Nostr recipe (use this for every Nostr upload):**
-
-- Max length: prefer **under 60s**; if longer, keep under **2:00**
-- Resolution: **720p** (1280×720 landscape or 720×1280 portrait), not 1080p
-- Codec: H.264, AAC audio
-- Bitrate video: **1.5-2.5 Mbps** (CapCut “Recommended” is often too fat)
-- Target file size: **under 40-60 MB** so you have headroom
-- If CapCut will not hit size: export 720p, then compress once in HandBrake (`Very Fast 720p30`, RF 28-30)
-
-Do **not** upload the 1080p social master to Nostr. Keep a separate `nostr/` export folder.
+| Recording 1 | 6:13 | Optional only. Intro retakes + BFTA title card. Prefer **not** for public cut. |
+| Recording 2 | 1:16:59 | **Master.** Cut pre-talk, grade, logo, then pull all clips from this. |
 
 ---
 
-## Master open (edit note)
+## Master cut (Recording 2)
 
-**IN:** First frame of Dion’s formal intro  
-**OUT:** End of episode / standard close + CTA  
+| Beat | TC | Action |
+| --- | --- | --- |
+| Pre-talk | 00:00-00:32 | **DELETE** (mic check / “good to see you”) |
+| **MASTER IN** | **00:33** | Dion: “Welcome to Share Your Bitcoin Journey…” |
+| Intro end / handoff | 02:26-02:31 | “Without further ado, welcome to the show, MadMunky.” |
+| Interview | 02:46 → ~1:16:00 | Full conversation |
+| **MASTER OUT** | **~1:16:50** | After “until next time” / blessings (trim dead end) |
 
-Discard: zoom small talk, mic checks, “are we rolling,” wardrobe notes, anything before the intro.
-
-Suggested YouTube title pattern:  
-`Share Your Bitcoin Journey: Episode 14 – MadMunky2140: [short hook from best answer]`
-
----
-
-## A) SHORTS / REELS — 10+ clips under 60 seconds
-
-Export each as **9:16** and **16:9**. Keep each under 0:55 so platforms do not truncate captions weirdly.
-
-Fill timecodes while scrubbing:
-
-| # | Working title | What to pull | Target length | TC IN | TC OUT | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| S01 | Who is MadMunky | Guest says name / craft in one breath | 20-35s | | | Cold open possible: jump cut intro |
-| S02 | Woodworker hook | Best line about making with hands / wood | 25-45s | | | Visual: if tool talk, keep hands in frame |
-| S03 | Why 2140 | Meaning of 2140 / Bitcoin identity | 25-45s | | | Strong Bitcoin culture clip |
-| S04 | Privacy click | Cleanest privacy conviction line | 25-50s | | | Avoid jargon pileups |
-| S05 | Nostr moment | First Nostr / why it matters for artists | 30-55s | | | Tag Nostr audience |
-| S06 | Fiat pain | Money / pay / industry friction for makers | 30-55s | | | Mission alignment |
-| S07 | Bitcoin turn | “Something snapped” / why Bitcoin stuck | 30-55s | | | Core show DNA |
-| S08 | Artist sovereignty | Working free / uncensorable creativity | 30-55s | | | BFTA thesis |
-| S09 | Practical tip | One concrete tip (wallet, sats, custody) | 35-55s | | | Saveable |
-| S10 | Micro-grant answer | Closing grant question highlight | 35-55s | | | Always a strong short |
-| S11 | Dion bridge | Your best 1-2 sentence bridge tying guest to BFTA | 20-40s | | | Brand clip |
-| S12 | Hot quote | Single best quotable sentence + 5s pad | 15-30s | | | Text-on-screen candidate |
-
-**Short caption pattern (all platforms):**  
-`[Hook line from clip]` + `Full episode: [YouTube link]` + `#ShareYourBitcoinJourney #BitcoinForTheArts #Bitcoin`
+**CapCut order (confirmed):**
+1. Slice master IN at **00:33** on Recording 2  
+2. One grade / filter on the whole timeline  
+3. Small BFTA logo bug (corner) + optional end card  
+4. Export 1080p longform master for YouTube  
+5. Pull shorts/mids from that master  
+6. Separate **720p Nostr** exports under 100 MB
 
 ---
 
-## B) MID / LONG SOCIAL — 7-8 clips (~1:45-1:59 or ~2:45-3:00)
+## A) SHORTS / REELS — 12 clips under 60s
 
-Use these for LinkedIn, Facebook, X (when it allows), Substack video, IG carousel cover + link in bio.
+Export each as **9:16** and **16:9**. Times are on **Recording 2** after you keep the full timeline (do not renumber after the pre-talk cut unless CapCut shifts; if you delete 0:00-0:32, subtract 33s from every TC below).
 
-Prefer **1:45-1:59** for X/LinkedIn attention. Use **~3:00** only for LinkedIn / Facebook / Substack when the story needs room.
+**Important:** Times below assume you keep the pre-talk on the timeline and only hide/cut it from the export, OR you mark from original Recording 2. Easiest: **mark on original Recording 2, then export ranges.**
 
-| # | Working title | Structure | Target | TC IN | TC OUT |
+| # | Title | IN | OUT | Len | Hook / what lands |
 | --- | --- | --- | --- | --- | --- |
-| M01 | Origin story | Childhood / craft start → first identity as maker | 1:50 or 2:50 | | |
-| M02 | From wood to Bitcoin | Craft values → sound money parallel | 1:50 | | |
-| M03 | Privacy deep cut | Why privacy is not paranoia for a working artist | 1:50 or 2:45 | | |
-| M04 | Nostr for creators | Discovery, zaps, audience without the algorithm leash | 1:50 | | |
-| M05 | Making a living | How money actually moves in his creative life | 1:50 or 3:00 | | |
-| M06 | Midwest / BFTA bridge | If mentioned: conference, arts park, why this room | 1:45 | | |
-| M07 | Advice to artists | “If you think Bitcoin is only tech…” answer | 1:50 | | |
-| M08 | Full closing arc | Last 2-3 questions including micro-grant | 2:00-3:00 | | |
+| S01 | Welcome + who is MadMunky | 00:33 | 01:28 | ~55s | Intro → woodworker, privacy, 2140 |
+| S02 | Oak, epoxy, Bitcoin standard | 01:03 | 01:50 | ~47s | Physical Bitcoin art + 2140 collective |
+| S03 | Origin: COVID / privacy wake-up | 02:46 | 03:40 | ~54s | “Where does that story begin” → Apr 2021 mindset shift |
+| S04 | Apple+Google tracking moment | 04:08 | 04:55 | ~47s | Centralized data / “they own us” privacy snap |
+| S05 | Privacy first, then Bitcoin | 05:07 | 05:55 | ~48s | Educated on privacy; Bitcoin as tool to fight back |
+| S06 | Why wood / hands as artist | 06:16 | 07:10 | ~54s | Patience, craft, wood as medium |
+| S07 | Lost the job → coffee tables | 08:09 | 08:50 | ~41s | COVID work loss → taught himself woodworking |
+| S08 | Signal on wood / Manifesto 2140 | 09:15 | 09:50 | ~35s | Stencils on wood; signal that lasts |
+| S09 | Prague: Bitcoin + Monero + Nostr | 11:18 | 12:20 | ~62s trim to 55s | Building community on sound-money rails |
+| S10 | Bitcoin stopped being a thesis | 20:50 | 21:40 | ~50s | Cyberpunk life stacked out loud → practice |
+| S11 | Nostr: permissionless / can’t ban you | 26:06 | 27:00 | ~54s | Secret key = your identity; Elon can’t stop you |
+| S12 | Micro-grant answer | 1:14:00 | 1:14:55 | ~55s | Equipment / music mixtapes / content while workshop is down |
+
+**Bonus shorts if you want more:**
+| S13 | Shadowbanned → done with IG | 53:35 | 54:20 | ~45s | Invisible to friends; “fuck that” energy (check language for IG) |
+| S14 | Sell your soul vs Bitcoin | 54:30 | 55:20 | ~50s | Fiat sales vs values |
+| S15 | Building Bitcoin art fundament | 58:20 | 59:15 | ~55s | “We’re building fundament of Bitcoin art now” |
+| S16 | Dion: Bitcoin gives artists time back | 1:00:53 | 1:01:50 | ~57s | Strong BFTA thesis clip with your voice |
+
+Language note: guest uses strong language in places (S04, S13). Keep for X/Nostr; clean-cut or skip for YouTube Shorts kids-mode / IG if needed.
 
 ---
 
-## C) Platform export matrix
+## B) MID / LONG SOCIAL — 8 clips (~1:45-3:00)
 
-| Destination | Aspect | Max length | Encode | Folder name |
-| --- | --- | --- | --- | --- |
-| YouTube longform | 16:9 | full episode | 1080p master | `yt-long/` |
-| YouTube Shorts | 9:16 | under 60s | 1080p ok | `yt-shorts/` |
-| IG / FB Reels | 9:16 | under 60s | 1080p ok | `reels/` |
-| X | 16:9 (also 9:16 if you want) | under 2:20 safe | 720p-1080p | `x/` |
-| LinkedIn | 16:9 | 1:50-3:00 | 1080p | `linkedin/` |
-| Facebook feed | 16:9 | 1:50-3:00 | 1080p | `facebook/` |
-| Nostr | 16:9 or 9:16 | under 60s preferred | **720p, under 100MB** | `nostr/` |
-| Substack | 16:9 | 1:50-3:00 | 1080p or 720p | `substack/` |
+| # | Title | IN | OUT | Target | Platform fit |
+| --- | --- | --- | --- | --- | --- |
+| M01 | Origin story (COVID → privacy → Bitcoin) | 02:46 | 05:55 | ~3:00 | LinkedIn, FB, Substack |
+| M02 | Wood, signal, Manifesto 2140 | 06:16 | 09:50 | ~3:30 trim to 2:59 | LinkedIn, YT community |
+| M03 | Community in Prague / what he’s building now | 11:00 | 13:30 | ~2:30 | FB, LinkedIn |
+| M04 | Bitcoin as lived practice | 20:30 | 23:00 | ~2:30 | X long, LinkedIn |
+| M05 | Nostr rabbit hole for creators | 25:50 | 28:40 | ~2:50 | Nostr+FB (Nostr export 720p) |
+| M06 | Cypherboards + objects people live with | 48:10 | 50:40 | ~2:30 | All |
+| M07 | Privacy vs public art / shadowban | 50:20 | 54:45 | ~2:59? trim | X, Nostr |
+| M08 | Peer-to-peer art on a Bitcoin standard | 54:44 | 57:40 | ~2:56 | LinkedIn, Substack |
+| M09 | Artists have no time / Renaissance close | 59:10 | 1:03:15 | ~3:00? trim 2:59 | Best long social |
+| M10 | Five years + micro-grant + outro | 1:10:42 | 1:16:50 | ~6:00 → **cut to 2:59** ending on grant answer + short CTA | YT, FB |
+
+For M10 prefer two posts: (a) five-year vision 1:10:42-1:13:50 · (b) grant+outro 1:14:00-1:16:50.
 
 ---
 
-## On-screen text / end cards (keep consistent)
+## C) Platform + Nostr encode matrix
 
-Every short:
+| Destination | Aspect | Max | Encode |
+| --- | --- | --- | --- |
+| YouTube longform | 16:9 | full master from 00:33 | 1080p H.264 |
+| YouTube Shorts | 9:16 | under 60s | 1080p ok |
+| IG / FB Reels | 9:16 | under 60s | 1080p ok |
+| X | 16:9 | under ~2:20 | 720-1080p |
+| LinkedIn / Facebook feed | 16:9 | 1:45-2:59 | 1080p |
+| Substack | 16:9 | 1:45-2:59 | 1080p or 720p |
+| **Nostr** | 16:9 or 9:16 | prefer under 60s | **720p, H.264, ~1.5-2.5 Mbps, under 100 MB** (aim 40-60 MB) |
 
-1. Hook text in first 2 seconds (5-8 words max)
-2. `MadMunky2140 · SYBJ Ep 14` small lower label
-3. End card 2 seconds: `Full episode on YouTube` + BFTA wordmark
+Nostr tip: export a dedicated `nostr/` preset at 720p. Do not upload the 1080p social master.
 
-Do not put giant logo over the whole frame. Corner bug + end card is enough.
+---
+
+## Suggested YouTube package
+
+**Title:** Share Your Bitcoin Journey: Episode 14 – MadMunky2140: Privacy, Wood, and Manifesto 2140  
+
+**Description blurb:**  
+MadMunky2140 is a woodworker, privacy advocate, and founding voice of the 2140 movement. He builds physical Bitcoin art from oak, epoxy, and hard wax oil, sells on a Bitcoin standard, and carries cypherpunk values into art, music, and culture. We talk COVID wake-ups, why wood holds a signal, Nostr, peer-to-peer art, and what a micro-grant would unlock.
+
+**Chapters (Recording 2, after cutting pre-talk add +0:33 offset if you delete pre-talk):**  
+If master starts at original 00:33 as 00:00 on YouTube:
+- 0:00 Intro  
+- 2:13 Origin / privacy wake-up  
+- 5:43 Why wood  
+- 10:45 What he’s building now  
+- 20:17 Bitcoin as practice  
+- 25:33 Nostr  
+- 47:37 Cypherboards & objects  
+- 54:11 Peer-to-peer Bitcoin art  
+- 59:00 Artists, time, Renaissance  
+- 1:10:09 Five years  
+- 1:13:27 Micro-grant  
+- 1:15:29 Outro  
+
+(Verify chapter math in CapCut after your master IN point.)
 
 ---
 
 ## File naming
 
 ```
-SYBJ14_S01_who-is-madmunky_9x16.mp4
-SYBJ14_S01_who-is-madmunky_16x9.mp4
-SYBJ14_S01_who-is-madmunky_nostr720.mp4
-SYBJ14_M03_privacy_16x9.mp4
+SYBJ14_MASTER_16x9.mp4
+SYBJ14_S01_welcome_9x16.mp4
+SYBJ14_S01_welcome_16x9.mp4
+SYBJ14_S01_welcome_nostr720.mp4
+SYBJ14_M05_nostr_16x9.mp4
 ```
 
 ---
 
-## Verdict on your CapCut plan
+## CapCut verdict (your plan)
 
-**Yes: pre-edit the master in CapCut** (cut pre-talk, grade, BFTA logo), then pull clips from that master.
+**Yes.** Pre-edit Recording 2 in CapCut: cut pre-talk at 00:33, one filter/grade, BFTA logo, export master, then duplicate ranges for Shorts + landscape + Nostr 720p.
 
-**Do not:** brand and grade differently on every short (you will waste hours and drift).
-
-**Do:** make a dedicated Nostr export preset at 720p so you never fight the 100 MB wall at upload time.
-
----
-
-## What I need from you to lock exact cuts
-
-Any one of these and I can turn this into a finished timestamp script:
-
-1. Rough transcript with timestamps, or  
-2. CapCut marker list / chapter notes after your first scrub, or  
-3. Drop the master (or audio) into the project and ask for a cut list
-
-Until then, use the tables above as your scrub checklist and fill TC IN / TC OUT as you go.
+Do not re-brand every clip from scratch. Do not upload 1080p long clips to Nostr.
