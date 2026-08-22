@@ -478,6 +478,50 @@ export default function StoriesPage() {
             Share Your Bitcoin Journey
           </h2>
 
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <span className="text-sm font-semibold uppercase tracking-wide text-muted">
+              Also listen on
+            </span>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://podcasts.apple.com/us/podcast/share-your-bitcoin-journey/id6794978998"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#d4af37] bg-background px-4 py-2 text-sm font-semibold text-foreground shadow-sm transition-all hover:bg-[#d4af37]/10 hover:shadow-md"
+                aria-label="Listen on Apple Podcasts"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3.5a3 3 0 013 3v3a3 3 0 01-6 0v-3a3 3 0 013-3zm-5 8a5 5 0 0010 0h-2a3 3 0 01-6 0H7zm4 6.94v1.06a1 1 0 002 0v-1.06A6.99 6.99 0 0018 13.5h-2A5 5 0 016 13.5H4a6.99 6.99 0 007 6.94z" />
+                </svg>
+                Apple Podcasts
+              </a>
+              <a
+                href="https://open.spotify.com/show/033WuXPnEiz3bzbT9ryFx4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#d4af37] bg-background px-4 py-2 text-sm font-semibold text-foreground shadow-sm transition-all hover:bg-[#d4af37]/10 hover:shadow-md"
+                aria-label="Listen on Spotify"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.6 14.4a.62.62 0 01-.86.21c-2.36-1.44-5.33-1.77-8.83-.97a.63.63 0 11-.28-1.22c3.84-.87 7.13-.5 9.77 1.12a.62.62 0 01.2.86zm1.22-2.73a.78.78 0 01-1.07.26c-2.7-1.66-6.82-2.14-10.02-1.17a.78.78 0 11-.45-1.5c3.65-1.1 8.19-.56 11.29 1.34a.78.78 0 01.25 1.07zm.1-2.83c-3.24-1.92-8.58-2.1-11.67-1.16a.94.94 0 11-.54-1.8c3.55-1.08 9.44-.87 13.17 1.34a.94.94 0 11-.96 1.62z" />
+                </svg>
+                Spotify
+              </a>
+              <a
+                href="https://rss.com/podcasts/share-your-bitcoin-journey/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#d4af37] bg-background px-4 py-2 text-sm font-semibold text-foreground shadow-sm transition-all hover:bg-[#d4af37]/10 hover:shadow-md"
+                aria-label="Listen on rss.com"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
+                  <path d="M4 4a16 16 0 0116 16h-3A13 13 0 004 7V4zm0 6a10 10 0 0110 10h-3a7 7 0 00-7-7v-3zm2 8a2 2 0 110 4 2 2 0 010-4z" />
+                </svg>
+                rss.com
+              </a>
+            </div>
+          </div>
+
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {episodes.map((ep) => (
               <a
