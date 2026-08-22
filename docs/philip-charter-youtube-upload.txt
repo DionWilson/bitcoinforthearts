@@ -1,0 +1,263 @@
+YOUTUBE UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 12
+
+UPLOAD STATUS: Live at https://youtu.be/c--KiT8r8iI (uploaded July 19, 2026). Thumbnail is in the repo at public/Ep12PhilipCharter.JPG and web hero at public/sybj-ep12-PhilipCharter-web.png.
+
+
+=== TITLE ===
+
+Share Your Bitcoin Journey: Episode 12 – Philip Charter: The Totally Human Writer
+
+
+=== TITLE (BACKUP OPTIONS) ===
+
+- Share Your Bitcoin Journey: Episode 12 – Philip Charter: Stories Over Technical Explanations
+- Share Your Bitcoin Journey: Episode 12 – Philip Charter: Editor of the First Bitcoin Fiction Anthology
+- Share Your Bitcoin Journey: Episode 12 – Philip Charter: From English Teacher to 21 Futures
+
+
+=== DESCRIPTION ===
+
+In this conversation, Bitcoin For The Arts founder Dion Wilson sits down with Philip Charter, the British author, editor, and ghostwriter behind Totally Human Writer, and the editor of 21 Futures, the world's first Bitcoin fiction anthology.
+
+Philip lives in Gran Canaria. He is the co-editor of 21 Futures: Tales from the Timechain, a collection of twenty-one stories from twenty-one authors including Knut Svanholm and Ioni Appelberg, released by Konsensus Network in 2023 and presented at Bitcoin Atlantis in 2024. He has published seven books, and his writing tips have earned over three million impressions on LinkedIn.
+
+His thesis has quietly made him one of the most influential communicators in the Bitcoin space: "We don't need more technical explanations. We need to get better at telling stories."
+
+IN THIS EPISODE:
+- Growing up in the UK and teaching English across Latin America, Asia, and Spain
+- Walking away from a London marketing career in 2011
+- Publishing his first book of short fiction in 2018 and getting to seven titles total
+- The coaching client whose book about "something called Bitcoin" changed everything
+- Founding Totally Human Writer as the deliberate opposite of AI-generated content
+- Why stories, not spreadsheets, orange-pill artists and everyday readers
+- Editing 21 Futures: Tales from the Timechain, the world's first Bitcoin fiction anthology
+- Working with Knut Svanholm, Ioni Appelberg, and Niko Laamanen to build the book
+- 21 Futures becoming an imprint of Konsensus Network in 2025
+- Expanding from Bitcoin fiction into the broader freedom-fiction universe: privacy tech, self-sovereignty, free cities, libertarian ideals
+- Building the Gran Canaria Bitcoin community from the ground up
+- The "Proof of Walk" ritual and why community sits at the center of the plan
+- Three million LinkedIn impressions on writing tips, and what content actually works for Bitcoin founders
+- Ghostwriting for Bitcoin leaders: what converts, what falls flat, and what founders keep getting wrong
+- Living life on a Bitcoin standard as a resident of a Spanish island
+- Advice for creators and writers looking to enter the Bitcoin space professionally
+- What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock for the next 21 Futures project
+
+READ PHILIP'S WORK:
+- Totally Human Writer: https://totallyhumanwriter.com
+- Philip Charter (author site): https://philipcharter.com
+- 21 Futures: https://21futures.com
+- All links in one place: https://www.totallyhumanwriter.com/links-288242
+- 21 Futures: Tales from the Timechain (Amazon): https://www.amazon.com/dp/9916723702
+
+ABOUT PHILIP CHARTER:
+British author, editor, and ghostwriter based in Gran Canaria, Spain. Founder of Totally Human Writer, a Bitcoin-native writing practice. Co-editor of 21 Futures: Tales from the Timechain, the world's first Bitcoin fiction anthology. Author of seven books in his own name. Organizer of the Gran Canaria Bitcoin community and the monthly "Proof of Walk" gatherings.
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
+
+https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Grants: https://www.bitcoinforthearts.org/grants/apply
+Substack: https://substack.com/@bitcoinforthearts
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+CHAPTERS (estimated; verify after final edit. Opens with a 1:55 intro clip):
+0:00 Cold open, intro clip
+1:55 Welcome and Gran Canaria
+4:00 Growing up in the UK and teaching English abroad
+9:00 Latin America, Asia, and Spain: the writer forming inside the teacher
+14:00 Walking away from the London marketing job in 2011
+18:30 Publishing the first book in 2018
+24:00 The coaching client who was writing about Bitcoin
+29:30 Falling down the rabbit hole
+34:00 The two-year on-ramp from curious to full-time
+39:00 Founding Totally Human Writer
+44:00 Why the Bitcoin space needed a human writer, not another AI feed
+49:00 The origin of 21 Futures
+55:00 Building the anthology with Knut Svanholm, Ioni Appelberg, and Niko Laamanen
+1:01:30 Tales from the Timechain: releasing the world's first Bitcoin fiction anthology
+1:07:00 Bitcoin Atlantis 2024 and the response from readers
+1:12:00 Becoming an imprint of Konsensus Network
+1:17:00 From Bitcoin fiction to the freedom-fiction universe
+1:23:00 The Gran Canaria Bitcoin community
+1:27:30 Proof of Walk: putting steps to signal
+1:33:00 Three million LinkedIn impressions and what actually works
+1:39:00 Ghostwriting for Bitcoin leaders
+1:44:30 Human writing versus AI-generated content
+1:49:00 Life on a Bitcoin standard on a Spanish island
+1:54:00 Advice for writers looking to work in the Bitcoin space
+1:58:00 The BFTA micro-grant question and closing
+
+#Bitcoin #21Futures #TotallyHumanWriter #BitcoinFiction #SoundMoney
+
+
+=== TAGS ===
+
+Bitcoin,Bitcoin For The Arts,Philip Charter,Totally Human Writer,21 Futures,Tales from the Timechain,Bitcoin fiction,Bitcoin writing,ghostwriting,Bitcoin author,Share Your Bitcoin Journey,Dion Wilson,Gran Canaria,Konsensus Network,Knut Svanholm,Ioni Appelberg,Niko Laamanen,Bitcoin community,Proof of Walk,freedom fiction,Bitcoin storytelling,Bitcoin content,sound money,nonprofit,501c3,Bitcoin micro grants,Nostr,orange pill,Timechain,cypherpunk
+
+
+=== THUMBNAIL ===
+
+Thumbnail is already in the repo at public/Ep12PhilipCharter.JPG. Once main is deployed it will resolve at https://www.bitcoinforthearts.org/Ep12PhilipCharter.JPG.
+
+If a graphic overlay is added later, three text options that could work:
+
+Option 1: "The Totally Human Writer" (portrait of Philip, orange bar bottom)
+Option 2: "Editor of the First Bitcoin Fiction Anthology" (Philip + 21 Futures cover)
+Option 3: "Stories Over Technical Explanations" (Philip at a desk or on a Gran Canaria walk)
+
+Consistent branding: BFTA orange bar across bottom, "Share Your Bitcoin Journey / EP 12" lockup, 21 Futures cover art in the top-right if space allows.
+
+
+=== CATEGORY ===
+
+Nonprofits & Activism (or Education)
+
+
+=== PLAYLIST ===
+
+Share Your Bitcoin Journey
+
+
+=== SOCIAL POSTS ===
+
+
+--- LinkedIn ---
+
+NEW EPISODE: Share Your Bitcoin Journey with Philip Charter, the Totally Human Writer
+
+Philip walked away from a London marketing career in 2011, taught English across Latin America, Asia, and Spain, published his first book in 2018, and then a coaching client asked him to help with a manuscript about "something called Bitcoin." Two years later he was writing full-time in the space.
+
+Today he is the co-editor of 21 Futures: Tales from the Timechain, the world's first Bitcoin fiction anthology, an imprint of Konsensus Network, and the ghostwriting engine behind some of the most read newsletters and thought-leadership pieces in the Bitcoin world. His writing tips on this platform have earned over three million impressions.
+
+His thesis: "We don't need more technical explanations. We need to get better at telling stories."
+
+Two hours on writing, fiction, community, and why the next generation of orange-pilling will be done by artists and authors, not analysts.
+
+Watch: https://youtu.be/c--KiT8r8iI
+
+#BitcoinForTheArts #Bitcoin #21Futures #Writing #SoundMoney #Nonprofit
+
+
+--- X (Post 1) ---
+
+NEW: Share Your Bitcoin Journey, Episode 12.
+
+@HumanWriter21 walked away from a London marketing job in 2011, taught English on three continents, and then edited the world's first Bitcoin fiction anthology.
+
+Today he is one of the most read voices in Bitcoin writing.
+
+Watch: https://youtu.be/c--KiT8r8iI
+
+
+--- X (Post 2, thread) ---
+
+"We don't need more technical explanations. We need to get better at telling stories."
+
+@HumanWriter21 on why the next wave of orange-pilling will not come from spreadsheets or hash-rate charts.
+
+It will come from artists and authors.
+
+
+--- X (Post 3, thread) ---
+
+21 Futures: Tales from the Timechain.
+
+21 authors. 21 stories. The world's first Bitcoin fiction anthology.
+
+@HumanWriter21 on building the book with Knut Svanholm, Ioni Appelberg, and Niko Laamanen, presenting it at Bitcoin Atlantis, and turning the project into a Konsensus Network imprint.
+
+
+--- X (Post 4, thread) ---
+
+Three million LinkedIn impressions on writing tips for Bitcoin leaders.
+
+Monthly meetups and "Proof of Walk" gatherings in Gran Canaria.
+
+@HumanWriter21 on what actually works when you write for Bitcoiners, and what founders keep getting wrong.
+
+
+--- Nostr ---
+
+New episode of Share Your Bitcoin Journey just dropped.
+
+Philip Charter, the British author, editor, and ghostwriter behind Totally Human Writer, sits down with Bitcoin For The Arts for a full conversation on writing, fiction, and community as the tools that actually change minds.
+
+Philip is the co-editor of 21 Futures: Tales from the Timechain, the world's first Bitcoin fiction anthology, released by Konsensus Network in December 2023 and presented at Bitcoin Atlantis in 2024. He is the author of seven books in his own name. And he is the driving force behind the Gran Canaria Bitcoin community and its "Proof of Walk" gatherings.
+
+Highlights from the conversation:
+
+* Leaving a London marketing career in 2011 and teaching English across Latin America, Asia, and Spain
+* Publishing the first book of short fiction in 2018
+* The coaching client whose book about "something called Bitcoin" changed everything
+* Founding Totally Human Writer as the deliberate opposite of AI-generated content
+* Editing 21 Futures with Knut Svanholm, Ioni Appelberg, and Niko Laamanen
+* Bitcoin Atlantis 2024, and the anthology becoming a Konsensus Network imprint
+* Expanding from Bitcoin fiction to the wider freedom-fiction universe
+* Three million LinkedIn impressions on writing tips for Bitcoin founders
+* Life on a Bitcoin standard as a resident of a Spanish island
+* Advice for writers looking to work in the Bitcoin space professionally
+
+Watch: https://youtu.be/c--KiT8r8iI
+
+#Bitcoin #Nostr #BitcoinForTheArts #BFTA #21Futures #SoundMoney #V4V
+
+
+--- Substack ---
+
+Subject: The Totally Human Writer
+
+New episode of Share Your Bitcoin Journey is live.
+
+Philip Charter is the British author, editor, and ghostwriter behind Totally Human Writer, and the co-editor of 21 Futures: Tales from the Timechain, the world's first Bitcoin fiction anthology. He lives in Gran Canaria, has published seven books in his own name, and organizes the local Bitcoin community, including the monthly "Proof of Walk" gatherings.
+
+His thesis is simple, and it is the reason we wanted him on the show. "We don't need more technical explanations. We need to get better at telling stories."
+
+For BFTA, that lands close to home. If artists are going to understand the monetary system they are living inside, the case will not be made in an economics paper. It will be made in a novel, a screenplay, a song, an essay, a short film. Philip has been quietly building the infrastructure for exactly that work for the last four years.
+
+Two hours on writing, fiction, community, ghostwriting for Bitcoin founders, life on a Bitcoin standard on a Spanish island, and what a $500 to $2,000 Bitcoin micro-grant from BFTA could do for the next chapter of freedom fiction.
+
+Watch: https://youtu.be/c--KiT8r8iI
+
+Read his full story on our Stories page (coming soon): https://www.bitcoinforthearts.org/stories
+
+
+--- Facebook ---
+
+NEW EPISODE. Share Your Bitcoin Journey, Episode 12.
+
+Meet Philip Charter, the Totally Human Writer.
+
+Philip walked away from a London marketing career in 2011. He taught English across Latin America, Asia, and Spain. He published his first book of short fiction in 2018. And then a coaching client asked him for help with a manuscript about "something called Bitcoin."
+
+Two years later he was writing in the space full time.
+
+Today Philip lives in Gran Canaria in the Canary Islands. He is the co-editor, with Niko Laamanen, of "21 Futures: Tales from the Timechain," the world's first Bitcoin fiction anthology, released by Konsensus Network in 2023 and presented at Bitcoin Atlantis in 2024. He has published seven books in his own name. His writing tips on LinkedIn alone have earned over three million impressions. And he ghostwrites for some of the most read Bitcoin founders and companies in the space today.
+
+His thesis is the reason we wanted him on the show:
+
+"We don't need more technical explanations. We need to get better at telling stories."
+
+That is the whole mission of Bitcoin For The Arts in a single sentence. If artists are going to understand the monetary system they are living inside, the case will not be made in an economics paper. It will be made in a novel, a screenplay, a song, an essay, a short film. Philip has been quietly building the infrastructure for exactly that work.
+
+Two hours on writing, fiction, community, ghostwriting for Bitcoin founders, life on a Bitcoin standard as a resident of a Spanish island, and what the next chapter of freedom fiction looks like.
+
+Watch: https://youtu.be/c--KiT8r8iI
+
+#BitcoinForTheArts #Bitcoin #ShareYourBitcoinJourney #21Futures #TotallyHumanWriter #Writing #SoundMoney
+
+
+=== INTERNAL NOTES ===
+
+- 1:55 intro clip is factored into the chapters. Chapter 1 (Welcome and Gran Canaria) starts at 1:55, matching the Ep 10 and Ep 11 pattern.
+- Chapter timestamps are estimates. The Descript share link (https://share.descript.com/view/DPQklSqRoaj) requires a sign-in to view the transcript, so bullets and timestamps were built from Philip's public bio, his author site, the 21 Futures site, and the Bitcoin Peer Stories interview on europeanbitcoiners.com. Confirm every chapter mark and every claim against the actual edit before publishing.
+- X handle confirmed by Dion: @HumanWriter21 (Philip's personal handle). No confirmed X handle for 21 Futures or Totally Human Writer as a brand yet, so all @ mentions in the thread route to @HumanWriter21.
+- If Philip wants us to also tag @21FuturesBooks or the Konsensus handle, we can swap those in on a one-line edit before scheduling.
+- Book count: Philip's public sites report seven published books in his own name across short fiction and Bitcoin-adjacent titles. His author site listing focuses on four books of short fiction. We used "seven" per Totally Human Writer and LinkedIn, but confirm on air if he cites a different number.
+- Notable titles that may come up: "Fifteen Shades of Time" and "Before. During. After."
+- Description length under YouTube's 5,000-character cap.
+- Tags line under YouTube's 500-character cap.
+- No em dashes anywhere in this file (per BFTA voice rule).
+- Thumbnail already in the repo at public/Ep12PhilipCharter.JPG. Web hero for the Stories page (sybj-ep12-philip-web.png or similar) is not yet uploaded; Dion has indicated it is on the way. Once uploaded, we can drop Ep 12 into app/stories/page.tsx in a one-commit follow-up (same pattern as Ep 10 and Ep 11).
+- 21 Futures: Tales from the Timechain canonical purchase/discovery link is https://21futures.com (project home) and https://www.amazon.com/dp/9916723702 (retail). We can add the Konsensus Network storefront URL if Philip prefers.
