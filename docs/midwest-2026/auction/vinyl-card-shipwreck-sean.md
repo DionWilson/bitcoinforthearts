@@ -4,16 +4,18 @@
 **Artist:** Shipwreck Sean · shipwrecksean.com · bitsby.co  
 **Event:** Bitcoin Arts Park · Midwest Bitcoin Summit · Sept 23-24, 2026
 
-**Pricing (confirmed by artist):**
-- *The Volatility Blues* - fixed sale **$2,500 | 0.03 BTC**
-- *A Slice of History* - fixed sale **$2,000 | 0.03 BTC**
-- *HODL On* - **peer-to-peer silent auction** (proceeds to BFTA)
-- *Cold Storage* - fixed sale **$1,500 | 0.02 BTC**
+**Pricing (sats-primary, per artist):**
+- *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)**
+- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)**
+- *HODL On* - **peer-to-peer silent auction** (proceeds to BFTA; opening bid in sats)
+- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)**
 - Live painting - **raffle** (whatever it brings)
+
+USD figures Sean also quoted for gallery works ($2,500 / $2,000 / $1,500) are artist reference only; wall cards and auction lots lead with sats.
 
 Medium not specified by artist yet; cards use **Original painting**. Update if he confirms acrylic/oil/etc.
 
-Opening bid for *HODL On* still blank until BFTA sets it (artist said the auction is for BFTA to make money).
+Opening bid for *HODL On*: **2,100,000 sats** (about $1,700).
 
 ---
 
@@ -29,7 +31,8 @@ Old-fashioned drink and Bitsby
 Original painting
 20 × 24 in (H × W)
 
-$2,500  |  0.03 BTC
+3,000,000 sats
+0.03 BTC
 
 shipwrecksean.com · bitsby.co
 ```
@@ -38,7 +41,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · The Volatility Blues
-20×24 in · $2,500 | 0.03 BTC
+20×24 in · 3,000,000 sats (0.03 BTC)
 ```
 
 ---
@@ -55,7 +58,8 @@ The pizza slice painting
 Original painting
 40 × 16 in (H × W)
 
-$2,000  |  0.03 BTC
+3,000,000 sats
+0.03 BTC
 
 shipwrecksean.com · bitsby.co
 ```
@@ -64,7 +68,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · A Slice of History
-40×16 in · $2,000 | 0.03 BTC
+40×16 in · 3,000,000 sats (0.03 BTC)
 ```
 
 ---
@@ -72,7 +76,7 @@ Shipwreck Sean · A Slice of History
 ## Painting #3 - peer-to-peer silent auction (BFTA)
 
 ```
-LOT-___
+LOT-03
 PEER-TO-PEER SILENT AUCTION
 
 HODL On
@@ -82,7 +86,8 @@ Shipwreck Sean
 Original painting
 40 × 16 in (H × W)
 
-Opening bid  ________ sats  /  $________
+Opening bid  2,100,000 sats
+(about $1,700)
 Minimum increase  21,000 sats
 
 Of the winning bid:
@@ -93,14 +98,14 @@ Sign the bid sheet to enter.
 
 Scan for full details →
 [QR CODE]
-bitcoinforthearts.org/midwest/auction/[slug]
+bitcoinforthearts.org/midwest/auction/hodl-on
 ```
 
 ### Short sticker
 
 ```
 Shipwreck Sean · HODL On · AUCTION
-40×16 in · Open ________ sats · +21,000
+LOT-03 · 40×16 in · Open 2,100,000 sats · +21,000
 100% BFTA · Closes Thu 3PM
 ```
 
@@ -118,7 +123,8 @@ Bitsby frozen in an ice cube
 Original painting
 20 × 24 in (H × W)
 
-$1,500  |  0.02 BTC
+2,000,000 sats
+0.02 BTC
 
 shipwrecksean.com · bitsby.co
 ```
@@ -127,7 +133,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · Cold Storage
-20×24 in · $1,500 | 0.02 BTC
+20×24 in · 2,000,000 sats (0.02 BTC)
 ```
 
 ---
@@ -186,10 +192,10 @@ bitsby.co
 
 | Work | Role at Summit | Price / terms | Card type |
 | --- | --- | --- | --- |
-| The Volatility Blues | Fixed sale | $2,500 \| 0.03 BTC | For-sale vinyl |
-| A Slice of History | Fixed sale | $2,000 \| 0.03 BTC | For-sale vinyl |
-| HODL On | Silent auction | Opening bid TBD · 100% BFTA | Auction vinyl |
-| Cold Storage | Fixed sale | $1,500 \| 0.02 BTC | For-sale vinyl |
+| The Volatility Blues | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
+| A Slice of History | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
+| HODL On | Silent auction | Open **2,100,000 sats** · 100% BFTA | Auction vinyl |
+| Cold Storage | Fixed sale | 2,000,000 sats (0.02 BTC) | For-sale vinyl |
 | Live canvas (title TBD) | Live paint + raffle | Raffle | Raffle vinyl |
 
-Next for *HODL On*: assign lot code, set opening bid, add to `midwestAuctionLots`, print QR + bid sheet. Consignment: confirm 100% to BFTA in writing (artist: "yours to make money").
+Next for *HODL On*: set opening bid in sats, lot page/QR already live, bid sheet.

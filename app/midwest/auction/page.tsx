@@ -2,14 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   midwestAuctionLots,
-  formatUsd,
-  formatSats,
+  formatOpeningBidLine,
 } from '@/lib/midwest-auction-lots';
 
 export const metadata: Metadata = {
   title: 'Silent Auction | Bitcoin Arts Park · Midwest Bitcoin Summit',
   description:
-    'Peer-to-peer silent auction lots at Bitcoin Arts Park during the Midwest Bitcoin Summit. Bid in person; one-third of proceeds support Bitcoin for the Arts.',
+    'Peer-to-peer silent auction lots at Bitcoin Arts Park during the Midwest Bitcoin Summit. Place an advance bid online now; pick up in person in Columbus. Proceeds support Bitcoin for the Arts per each lot’s terms.',
 };
 
 export default function MidwestAuctionIndexPage() {
@@ -23,9 +22,10 @@ export default function MidwestAuctionIndexPage() {
           Peer-to-Peer Silent Auction
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#FFFAF0]/90">
-          Donated works. In-person bidding on the Expo floor. One-third of each
-          hammer price supports Bitcoin for the Arts. Scan the QR next to any
-          lot for full details.
+          Donated works and editions. Place a binding advance bid online now;
+          the high advance bid seeds the paper sheet on the Expo floor. Winner
+          must pick up in person at Bitcoin Arts Park in Columbus (no shipping).
+          Proceeds support Bitcoin for the Arts per each lot’s posted split.
         </p>
       </section>
 
@@ -56,11 +56,7 @@ export default function MidwestAuctionIndexPage() {
                   <span className="text-black/50"> · {lot.year}</span>
                 </p>
                 <p className="text-sm text-black/80">
-                  Opening bid {formatSats(lot.startingBidSats)}
-                  {lot.startingBidUsd
-                    ? ` / ${formatUsd(lot.startingBidUsd)}`
-                    : ''}{' '}
-                  · increments {formatSats(lot.incrementSats)}
+                  {formatOpeningBidLine(lot)}
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Link
@@ -69,6 +65,14 @@ export default function MidwestAuctionIndexPage() {
                   >
                     Lot details →
                   </Link>
+                  {lot.status === 'open' && lot.startingBidSats != null ? (
+                    <Link
+                      href={`/midwest/auction/${lot.slug}#advance-bid`}
+                      className="inline-block bg-[#FF4F14] px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em] text-[#FFFAF0]"
+                    >
+                      Advance bid →
+                    </Link>
+                  ) : null}
                   <Link
                     href={`/midwest/auction/${lot.slug}/bid-sheet`}
                     className="inline-block border border-black px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em]"

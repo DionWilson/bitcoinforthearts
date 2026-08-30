@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 import {
   getAuctionLot,
   midwestAuctionLots,
-  formatUsd,
   formatSats,
+  formatOpeningBid,
 } from '@/lib/midwest-auction-lots';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -60,12 +60,7 @@ export default async function AuctionBidSheetPage({ params }: Props) {
           <div className="mt-3 grid gap-1 text-sm sm:grid-cols-2">
             <p>
               <span className="underline">Opening bid:</span>{' '}
-              <strong>
-                {formatSats(lot.startingBidSats)}
-                {lot.startingBidUsd
-                  ? ` / ${formatUsd(lot.startingBidUsd)}`
-                  : ''}
-              </strong>
+              <strong>{formatOpeningBid(lot)}</strong>
             </p>
             <p>
               <span className="underline">Minimum increase:</span>{' '}
@@ -80,9 +75,12 @@ export default async function AuctionBidSheetPage({ params }: Props) {
             </p>
           </div>
           <p className="mt-3 text-xs leading-relaxed text-black/65">
-            Sign below with a bid at least {formatSats(lot.incrementSats)} above
-            the previous bid. Highest valid bid at close wins. Payment due
-            before release (Bitcoin/Lightning or USD). Full terms:{' '}
+            Staff: write the high Airtable advance bid on row 1 before doors
+            open. Then sign below with a bid at least{' '}
+            {formatSats(lot.incrementSats)} above the previous bid. Highest
+            valid bid at close wins. “About $” figures are orientation only;
+            bidding is in sats. Winner pays before release
+            (Bitcoin/Lightning or USD) and picks up in person. Full terms:{' '}
             <span className="break-all">{detailUrl}</span>
           </p>
           {(lot.artistStrike || lot.artistEmail) && (

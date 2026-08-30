@@ -206,8 +206,18 @@ def build():
                 [Paragraph("Location", s["cell"]), Paragraph("Maryland", s["cell"])],
                 [Paragraph("Email", s["cell"]), Paragraph("________________", s["cell"])],
                 [
-                    Paragraph("BTC / Lightning / Strike payout", s["cell"]),
-                    Paragraph("________________", s["cell"]),
+                    Paragraph("Lightning", s["cell"]),
+                    Paragraph(
+                        "<font face='Courier' size='8'>shipwrecksean@walletofsatoshi.com</font>",
+                        s["cell"],
+                    ),
+                ],
+                [
+                    Paragraph("Bitcoin (Taproot)", s["cell"]),
+                    Paragraph(
+                        "<font face='Courier' size='7'>bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q</font>",
+                        s["cell"],
+                    ),
                 ],
             ],
             [1.7 * inch, 5.0 * inch],
@@ -441,7 +451,14 @@ def build():
                 ),
                 Paragraph("Printed name: Shipwreck Sean", s["sig"]),
                 Paragraph("Email: ________________", s["sig"]),
-                Paragraph("Payout handle: ________________", s["sig"]),
+                Paragraph(
+                    "Lightning: shipwrecksean@walletofsatoshi.com",
+                    s["sig"],
+                ),
+                Paragraph(
+                    "BTC: bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q",
+                    s["sig"],
+                ),
                 Paragraph("Websites: shipwrecksean.com · bitsby.co", s["sig"]),
                 Paragraph("Social: @artbyshipwreck", s["sig"]),
             ]
