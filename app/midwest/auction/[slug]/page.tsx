@@ -4,8 +4,8 @@ import { notFound } from 'next/navigation';
 import {
   getAuctionLot,
   midwestAuctionLots,
-  formatUsd,
   formatSats,
+  formatOpeningBid,
 } from '@/lib/midwest-auction-lots';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${lot.title} · Silent Auction | Bitcoin for the Arts`,
     description: lot.description,
     openGraph: {
-      title: `${lot.title} — ${lot.artistName}`,
+      title: `${lot.title} - ${lot.artistName}`,
       description: lot.description,
       images: lot.imageSrc ? [lot.imageSrc] : undefined,
     },
@@ -35,6 +35,15 @@ export default async function AuctionLotPage({ params }: Props) {
   if (!lot) notFound();
 
   const qrTarget = `https://www.bitcoinforthearts.org/midwest/auction/${lot.slug}`;
+  const hasArtistContact =
+    Boolean(lot.artistEmail) ||
+    Boolean(lot.artistStrike) ||
+    Boolean(lot.artistLightning) ||
+    Boolean(lot.artistBitcoin) ||
+    Boolean(lot.artistWebsite) ||
+    Boolean(lot.artistSocial) ||
+    Boolean(lot.artistLinks?.length) ||
+    Boolean(lot.artistBio);
 
   return (
     <main className="min-h-screen bg-[#FFFAF0] text-black">
@@ -110,19 +119,108 @@ export default async function AuctionLotPage({ params }: Props) {
             </p>
           </div>
 
+          {hasArtistContact ? (
+            <div className="border border-black bg-white p-5">
+              <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#FF4F14]">
+                Artist
+              </h2>
+              {lot.artistBio ? (
+                <p className="mt-3 text-sm leading-relaxed text-black/85">
+                  {lot.artistBio}
+                </p>
+              ) : null}
+              <dl className="mt-4 space-y-2 text-sm leading-relaxed">
+                {lot.artistWebsite ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Website</dt>
+                    <dd>
+                      <a
+                        href={lot.artistWebsite}
+                        className="text-[#FF4F14] no-underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {lot.artistWebsite.replace(/^https?:\/\//, '')}
+                      </a>
+                    </dd>
+                  </div>
+                ) : null}
+                {lot.artistSocial ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Social</dt>
+                    <dd>{lot.artistSocial}</dd>
+                  </div>
+                ) : null}
+                {lot.artistEmail ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Email</dt>
+                    <dd>
+                      <a
+                        href={`mailto:${lot.artistEmail}`}
+                        className="text-[#FF4F14] no-underline"
+                      >
+                        {lot.artistEmail}
+                      </a>
+                    </dd>
+                  </div>
+                ) : null}
+                {lot.artistStrike ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Strike</dt>
+                    <dd className="break-all font-mono text-xs sm:text-sm">
+                      {lot.artistStrike}
+                    </dd>
+                  </div>
+                ) : null}
+                {lot.artistLightning ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Lightning</dt>
+                    <dd className="break-all font-mono text-xs sm:text-sm">
+                      {lot.artistLightning}
+                    </dd>
+                  </div>
+                ) : null}
+                {lot.artistBitcoin ? (
+                  <div className="flex gap-3 border-b border-black/10 pb-2">
+                    <dt className="w-28 shrink-0 text-black/50">Bitcoin</dt>
+                    <dd className="break-all font-mono text-xs sm:text-sm">
+                      {lot.artistBitcoin}
+                    </dd>
+                  </div>
+                ) : null}
+              </dl>
+              {lot.artistLinks?.length ? (
+                <ul className="mt-4 space-y-1 text-sm">
+                  {lot.artistLinks.map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        className="text-[#FF4F14] no-underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {link.label} →
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {!lot.artistEmail && !lot.artistLightning && !lot.artistBitcoin && !lot.artistStrike ? (
+                <p className="mt-3 text-xs text-black/50">
+                  Bitcoin / Lightning payout handles appear here when the artist
+                  provides them on the consignment agreement.
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+
           <div className="border border-black bg-white p-5">
             <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#FF4F14]">
               How to Bid
             </h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed">
               <li>
-                Opening bid:{' '}
-                <strong>
-                  {formatSats(lot.startingBidSats)}
-                  {lot.startingBidUsd
-                    ? ` / ${formatUsd(lot.startingBidUsd)}`
-                    : ''}
-                </strong>
+                Opening bid: <strong>{formatOpeningBid(lot)}</strong>
               </li>
               <li>
                 Minimum increase between bids:{' '}
@@ -137,8 +235,7 @@ export default async function AuctionLotPage({ params }: Props) {
                 Bitcoin/Lightning or USD at the posted rate of the day.
               </li>
               <li>
-                Auction closes:{' '}
-                <strong>{lot.closesDisplay}</strong>
+                Auction closes: <strong>{lot.closesDisplay}</strong>
               </li>
               <li>
                 Highest valid bid at close wins. Winner must complete payment
@@ -153,8 +250,18 @@ export default async function AuctionLotPage({ params }: Props) {
             </h2>
             <p className="mt-3 text-sm leading-relaxed">
               Of the hammer price (winning bid):{' '}
-              <strong>{lot.bftaShare} Bitcoin for the Arts</strong> (501(c)(3)) ·{' '}
-              <strong>{lot.artistShare} {lot.artistName}</strong>.
+              <strong>{lot.bftaShare} Bitcoin for the Arts</strong> (501(c)(3))
+              {lot.artistShare && lot.artistShare !== '0%' ? (
+                <>
+                  {' '}
+                  · <strong>
+                    {lot.artistShare} {lot.artistName}
+                  </strong>
+                  .
+                </>
+              ) : (
+                '.'
+              )}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-black/75">
               {lot.noSaleTerms}
@@ -172,42 +279,6 @@ export default async function AuctionLotPage({ params }: Props) {
               <br />
               {lot.eventDates}
             </p>
-            {(lot.artistEmail || lot.artistStrike || lot.artistWebsite) && (
-              <p className="mt-4 text-sm leading-relaxed text-black/75">
-                Artist contact
-                {lot.artistEmail ? (
-                  <>
-                    <br />
-                    Email:{' '}
-                    <a
-                      href={`mailto:${lot.artistEmail}`}
-                      className="text-[#FF4F14] no-underline"
-                    >
-                      {lot.artistEmail}
-                    </a>
-                  </>
-                ) : null}
-                {lot.artistStrike ? (
-                  <>
-                    <br />
-                    Strike: {lot.artistStrike}
-                  </>
-                ) : null}
-                {lot.artistWebsite ? (
-                  <>
-                    <br />
-                    <a
-                      href={lot.artistWebsite}
-                      className="text-[#FF4F14] no-underline"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {lot.artistWebsite.replace(/^https?:\/\//, '')}
-                    </a>
-                  </>
-                ) : null}
-              </p>
-            )}
           </div>
 
           <div className="flex flex-wrap gap-3">
@@ -232,7 +303,7 @@ export default async function AuctionLotPage({ params }: Props) {
           </div>
 
           <p className="text-xs text-black/45">
-            QR for this lot points to:{' '}
+            Vinyl QR for this lot points to:{' '}
             <span className="break-all text-black/70">{qrTarget}</span>
           </p>
         </div>

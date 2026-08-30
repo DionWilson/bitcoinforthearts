@@ -1,23 +1,40 @@
 /**
- * Midwest Bitcoin Arts Park — Silent Auction Lots
+ * Midwest Bitcoin Arts Park - Silent Auction Lots
  *
  * Add a new lot object to `midwestAuctionLots` for each donated work.
  * Each lot gets:
- *   - /midwest/auction/[slug]         → public detail page (QR target)
+ *   - /midwest/auction/[slug]         → public detail page (QR target on vinyl cards)
  *   - /midwest/auction/[slug]/bid-sheet → printable peer-to-peer bid sheet
+ *
+ * QR pages should include artist website, social, email, and any Bitcoin /
+ * Lightning / Strike payout handles the artist provides.
  */
 
+export type AuctionLotLink = {
+  label: string;
+  href: string;
+};
+
 export type AuctionLot = {
-  /** URL slug — unique, lowercase, hyphenated */
+  /** URL slug - unique, lowercase, hyphenated */
   slug: string;
   /** Short lot code printed on sheets, e.g. LOT-01 */
   lotCode: string;
   title: string;
   subtitle?: string;
   artistName: string;
+  /** Short wall / lot-page bio */
+  artistBio?: string;
   artistWebsite?: string;
   artistEmail?: string;
+  artistSocial?: string;
+  /** Strike username / LN address / lightning: URI the artist provided */
   artistStrike?: string;
+  artistLightning?: string;
+  /** On-chain BTC address if provided */
+  artistBitcoin?: string;
+  /** Extra public links (stores, Linktree, etc.) shown on the QR lot page */
+  artistLinks?: AuctionLotLink[];
   year: string;
   medium: string;
   dimensions: string;
@@ -25,15 +42,15 @@ export type AuctionLot = {
   imageSrc?: string;
   imageAlt?: string;
   description: string;
-  /** Opening bid in USD (informational display) */
-  startingBidUsd: number;
-  /** Opening bid in sats — primary auction unit */
-  startingBidSats: number;
+  /** Opening bid in USD (informational). Null = TBD / not yet set. */
+  startingBidUsd: number | null;
+  /** Opening bid in sats. Null = TBD / not yet set. */
+  startingBidSats: number | null;
   /** Fixed sats increment between bids */
   incrementSats: number;
-  /** BFTA share of hammer price, e.g. 1/3 */
+  /** BFTA share of hammer price, e.g. 1/3 or 100% */
   bftaShare: string;
-  /** Artist share of hammer price, e.g. 2/3 */
+  /** Artist share of hammer price, e.g. 2/3 or 0% */
   artistShare: string;
   /** What happens if the lot does not sell */
   noSaleTerms: string;
@@ -46,6 +63,14 @@ export type AuctionLot = {
   status: 'open' | 'closed' | 'sold';
 };
 
+const EVENT = {
+  eventName: 'Bitcoin Arts Park · Midwest Bitcoin Summit',
+  eventLocation: 'Greater Columbus Convention Center, Columbus, OH',
+  eventDates: 'September 23-24, 2026',
+  closesDisplay: 'Thursday, September 24, 2026 · 3:00 PM ET',
+  incrementSats: 21000,
+} as const;
+
 export const midwestAuctionLots: AuctionLot[] = [
   {
     slug: 'satoshi-white-paper-52',
@@ -53,28 +78,146 @@ export const midwestAuctionLots: AuctionLot[] = [
     title: 'Satoshi White Paper Series #52',
     subtitle: 'Block Height 770067',
     artistName: 'CA Danner',
+    artistBio:
+      'Since 2017, CA Danner’s work has been devoted to Bitcoin, Lightning, and Satoshi Nakamoto’s white paper. Mixed media on linen canvas: paper glued and scraped, string for network effects, layers of acrylic. Each piece is tied to a block height. MFA.',
     artistWebsite: 'https://www.cadanner.com',
     artistEmail: 'cadanner@protonmail.com',
+    artistSocial: '@cityalley21',
     artistStrike: 'cityalley@strike.me',
-    year: '2022–2023',
+    artistLinks: [
+      { label: 'cadanner.com', href: 'https://www.cadanner.com' },
+      { label: 'Artist statement', href: 'https://www.cadanner.com/artist-statement' },
+      { label: 'X @cityalley21', href: 'https://x.com/cityalley21' },
+    ],
+    year: '2022-2023',
     medium: 'Mixed media on linen canvas',
     dimensions: '22 × 28 in',
     imageSrc: '/auction/satoshi-white-paper-52.jpg',
     imageAlt:
-      'CA Danner, Satoshi White Paper Series #52, Block Height 770067 — mixed media on linen canvas with Satoshi Nakamoto white paper text under color washes',
+      'CA Danner, Satoshi White Paper Series #52, Block Height 770067 - mixed media on linen canvas with Satoshi Nakamoto white paper text under color washes',
     description:
-      'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical — donated for silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
+      'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical - silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
     startingBidUsd: 98,
     startingBidSats: 150000,
-    incrementSats: 21000,
+    incrementSats: EVENT.incrementSats,
     bftaShare: '1/3',
     artistShare: '2/3',
     noSaleTerms:
       'If the lot does not sell by close of auction, the Artist donates the Work to Bitcoin for the Arts in full.',
-    closesDisplay: 'Thursday, September 24, 2026 · 3:00 PM ET',
-    eventName: 'Bitcoin Arts Park · Midwest Bitcoin Summit',
-    eventLocation: 'Greater Columbus Convention Center, Columbus, OH',
-    eventDates: 'September 23–24, 2026',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
+    status: 'open',
+  },
+  {
+    slug: 'transfer-of-light',
+    lotCode: 'LOT-02',
+    title: 'The Transfer of Light',
+    subtitle: 'Angels of Freedom series',
+    artistName: 'Lady RedHorns',
+    artistBio:
+      'Lady RedHorns is a contemporary artist exploring Bitcoin through expressive, gestural painting. Her Angels of Freedom and related series treat orange light, angels, and awakening as visual language for sound money. Red Horns Gallery.',
+    artistWebsite: 'https://redhornsbtc.store',
+    artistSocial: '@LRedhorns',
+    artistLinks: [
+      { label: 'Red Horns Gallery (Bitcoin)', href: 'https://redhornsbtc.store' },
+      { label: 'Contemporary collection', href: 'http://redhornsart.store' },
+      { label: 'Linktree', href: 'https://linktr.ee/ladyredhorns' },
+      { label: 'X @LRedhorns', href: 'https://x.com/LRedhorns' },
+    ],
+    year: 'n/d',
+    medium: 'Acrylic on canvas (acrylic paints, glossy acrylic varnish)',
+    dimensions: '15.7 × 15.7 in (40 × 40 cm)',
+    imageSrc: '/auction/transfer-of-light.jpg',
+    imageAlt:
+      'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
+    description:
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid and proceeds split finalize when the signed consignment returns.',
+    startingBidUsd: null,
+    startingBidSats: null,
+    incrementSats: EVENT.incrementSats,
+    bftaShare: 'TBD (consignment)',
+    artistShare: 'TBD (consignment)',
+    noSaleTerms:
+      'No-sale outcome (donate in full to BFTA, or reclaim) is chosen by the Artist on the signed consignment agreement.',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
+    status: 'open',
+  },
+  {
+    slug: 'hodl-on',
+    lotCode: 'LOT-03',
+    title: 'HODL On',
+    subtitle: 'Bitsby holding onto the Bitcoin balloon',
+    artistName: 'Shipwreck Sean',
+    artistBio:
+      'Shipwreck Sean is an artist, tattooer, and creator of Bitsby, with over 16 years dedicated to his craft. Physical and digital work influenced by Bitcoin, blending traditional artistry with the culture, ideas, and evolving story of sound money. Maryland.',
+    artistWebsite: 'https://shipwrecksean.com',
+    artistSocial: '@artbyshipwreck',
+    artistLinks: [
+      { label: 'shipwrecksean.com', href: 'https://shipwrecksean.com' },
+      { label: 'bitsby.co', href: 'https://www.bitsby.co' },
+      { label: 'X @artbyshipwreck', href: 'https://x.com/artbyshipwreck' },
+    ],
+    year: '2026',
+    medium: 'Original painting',
+    dimensions: '40 × 16 in (H × W)',
+    imageSrc: '/shipwreck-sean-tvb.jpg',
+    imageAlt: 'Shipwreck Sean, HODL On - Bitsby holding a Bitcoin balloon',
+    description:
+      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction: 100% of net hammer price supports Bitcoin for the Arts. Opening bid set by BFTA before the Event (Artist authorized).',
+    startingBidUsd: null,
+    startingBidSats: null,
+    incrementSats: EVENT.incrementSats,
+    bftaShare: '100%',
+    artistShare: '0%',
+    noSaleTerms:
+      'If the lot does not sell, Artist chooses donate-in-full to BFTA or reclaim on the signed multi-work agreement.',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
+    status: 'open',
+  },
+  {
+    slug: 'timechain-magazine-genesis',
+    lotCode: 'LOT-04',
+    title: 'Timechain Art Magazine - Genesis Edition',
+    subtitle: 'Formerly Bitcoin Art Magazine · donated by Timechain / Asanoha',
+    artistName: 'Timechain Art Magazine',
+    artistBio:
+      'Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine - featuring artists across the Bitcoin creative stack. Run by Asanoha. Sponsor of Bitcoin Arts Park; this Genesis Edition copy is fully donated to BFTA’s silent auction.',
+    artistWebsite: 'https://timechainartmagazine.com',
+    artistSocial: '@TimechainArtMag',
+    artistLinks: [
+      { label: 'timechainartmagazine.com', href: 'https://timechainartmagazine.com' },
+      {
+        label: 'Newsletter signup',
+        href: 'http://timechainartmagazine.com/signup',
+      },
+      { label: 'X @TimechainArtMag', href: 'https://x.com/TimechainArtMag' },
+    ],
+    year: 'Genesis edition',
+    medium: 'Print magazine (Genesis Edition)',
+    dimensions: 'Single donated copy',
+    imageSrc: '/auction/timechain-magazine-genesis.jpg',
+    imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
+    description:
+      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. 100% of net proceeds support Bitcoin for the Arts. Opening bid TBD.',
+    startingBidUsd: null,
+    startingBidSats: null,
+    incrementSats: EVENT.incrementSats,
+    bftaShare: '100%',
+    artistShare: '0%',
+    noSaleTerms:
+      'If the lot does not sell, the copy remains with Bitcoin for the Arts as a donated archive / future fundraising asset unless otherwise agreed in writing.',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
     status: 'open',
   },
 ];
@@ -93,4 +236,11 @@ export function formatUsd(amount: number): string {
 
 export function formatSats(amount: number): string {
   return `${amount.toLocaleString('en-US')} sats`;
+}
+
+export function formatOpeningBid(lot: AuctionLot): string {
+  if (lot.startingBidSats == null) return 'Opening bid TBD';
+  const sats = formatSats(lot.startingBidSats);
+  if (lot.startingBidUsd == null) return sats;
+  return `${sats} / ${formatUsd(lot.startingBidUsd)}`;
 }

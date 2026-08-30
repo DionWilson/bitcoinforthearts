@@ -72,7 +72,7 @@ Shipwreck Sean · A Slice of History
 ## Painting #3 - peer-to-peer silent auction (BFTA)
 
 ```
-LOT-___
+LOT-03
 PEER-TO-PEER SILENT AUCTION
 
 HODL On
@@ -93,14 +93,14 @@ Sign the bid sheet to enter.
 
 Scan for full details →
 [QR CODE]
-bitcoinforthearts.org/midwest/auction/[slug]
+bitcoinforthearts.org/midwest/auction/hodl-on
 ```
 
 ### Short sticker
 
 ```
 Shipwreck Sean · HODL On · AUCTION
-40×16 in · Open ________ sats · +21,000
+LOT-03 · 40×16 in · Open ________ sats · +21,000
 100% BFTA · Closes Thu 3PM
 ```
 

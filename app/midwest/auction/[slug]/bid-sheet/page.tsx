@@ -3,8 +3,8 @@ import { notFound } from 'next/navigation';
 import {
   getAuctionLot,
   midwestAuctionLots,
-  formatUsd,
   formatSats,
+  formatOpeningBid,
 } from '@/lib/midwest-auction-lots';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -60,12 +60,7 @@ export default async function AuctionBidSheetPage({ params }: Props) {
           <div className="mt-3 grid gap-1 text-sm sm:grid-cols-2">
             <p>
               <span className="underline">Opening bid:</span>{' '}
-              <strong>
-                {formatSats(lot.startingBidSats)}
-                {lot.startingBidUsd
-                  ? ` / ${formatUsd(lot.startingBidUsd)}`
-                  : ''}
-              </strong>
+              <strong>{formatOpeningBid(lot)}</strong>
             </p>
             <p>
               <span className="underline">Minimum increase:</span>{' '}

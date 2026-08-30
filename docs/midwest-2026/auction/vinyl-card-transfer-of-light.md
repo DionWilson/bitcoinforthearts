@@ -3,7 +3,7 @@
 **Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card, mounted beside the work.  
 **QR (after lot page is live):**  
 `https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light`  
-(Assign lot code when consignment is signed; placeholder LOT-02 below.)
+Lot code: LOT-02. Opening bid / split fill after signed consignment.
 
 **Source specs** (from Red Horns Gallery product `angel-1`, Aug 2026): acrylic on canvas, 40 × 40 cm / 15.7 × 15.7 in, listed $850 USD. Artist is framing for exhibition.
 

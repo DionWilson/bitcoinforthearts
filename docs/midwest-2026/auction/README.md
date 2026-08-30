@@ -5,9 +5,15 @@
 | Asset | URL |
 | --- | --- |
 | All lots | https://www.bitcoinforthearts.org/midwest/auction |
-| LOT-01 detail (QR target) | https://www.bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52 |
-| LOT-01 printable bid sheet | https://www.bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52/bid-sheet |
-| LOT-02 detail (planned) | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
+| LOT-01 CA Danner | https://www.bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52 |
+| LOT-02 Lady RedHorns | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
+| LOT-03 Shipwreck Sean *HODL On* | https://www.bitcoinforthearts.org/midwest/auction/hodl-on |
+| LOT-04 Timechain Mag Genesis | https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis |
+
+Vinyl QR codes should point at the lot URLs above. Lot pages show artist bio, website, social, email, Strike / Lightning / Bitcoin when provided.
+
+Artist bios: `artist-bios.md`
+
 
 ## Add another donated lot
 
