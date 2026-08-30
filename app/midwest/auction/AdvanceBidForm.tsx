@@ -293,7 +293,7 @@ export default function AdvanceBidForm({
             setNotes(e.target.value);
             resetIfNeeded();
           }}
-          rows={3}
+          rows={compact ? 2 : 3}
           placeholder="Pass confirmation, preferred contact, or anything staff should know."
           className="w-full resize-y border border-black/20 bg-[#FFFAF0] px-3 py-2 text-sm text-black placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-[#FF4F14]/35"
         />
