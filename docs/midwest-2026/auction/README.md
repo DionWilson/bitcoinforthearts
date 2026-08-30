@@ -59,7 +59,7 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ### Lady RedHorns specs (from redhornsbtc.store/products/angel-1)
 
 - Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · gallery list **$850**
-- Opening bid: **850,000 sats (informational $850)**; proceeds split after signed consignment
+- Opening bid: **1,000,000 sats (informational $850)**; proceeds split after signed consignment
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 

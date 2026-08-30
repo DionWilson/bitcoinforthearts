@@ -139,9 +139,9 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageAlt:
       'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
     description:
-      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 850,000 sats (informational $850, matching Red Horns Gallery list). Proceeds split finalize when the signed consignment returns.',
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 1,000,000 sats (informational $850, matching Red Horns Gallery list). Proceeds split finalize when the signed consignment returns.',
     startingBidUsd: 850,
-    startingBidSats: 850000,
+    startingBidSats: 1000000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',

@@ -24,7 +24,7 @@ Acrylic on canvas
 15.7 × 15.7 in (40 × 40 cm)
 Framed for exhibition
 
-Opening bid  850,000 sats
+Opening bid  1,000,000 sats
 (informational $850 · Red Horns Gallery list)
 Minimum increase  21,000 sats
 
@@ -48,7 +48,7 @@ bitcoinforthearts.org/midwest/auction/transfer-of-light
 LOT-02 · Lady RedHorns
 The Transfer of Light
 Acrylic on canvas · 15.7×15.7 in
-Open 850,000 sats (informational $850) · +21,000 sats
+Open 1,000,000 sats (informational $850) · +21,000 sats
 Closes Thu 3PM · Scan QR
 ```
 
