@@ -10,9 +10,33 @@
 | LOT-03 Shipwreck Sean *HODL On* | https://www.bitcoinforthearts.org/midwest/auction/hodl-on |
 | LOT-04 Timechain Mag Genesis | https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis |
 
-Vinyl QR codes should point at the lot URLs above. Lot pages show artist bio, website, social, email, Strike / Lightning / Bitcoin when provided.
+Vinyl QR codes should point at the lot URLs above. Lot pages show artist bio, website, social, email, Strike / Lightning / Bitcoin when provided. Each lot page also has an **advance bid** form that posts to Airtable (`MBS Advance Bids`) via `/api/midwest-advance-bid` using the same `AIRTABLE_PAT` + `AIRTABLE_BASE_ID` as volunteers/connect.
 
 Artist bios: `artist-bios.md`
+
+## Advance bids → Airtable
+
+1. In the existing BFTA Airtable base, create a table named **`MBS Advance Bids`** (or set `AIRTABLE_ADVANCE_BIDS_TABLE`).
+2. Exact column names (API field names must match):
+
+| Field | Type |
+| --- | --- |
+| Full Name | Single line text |
+| Email | Email |
+| Phone | Phone / single line text |
+| Lot Code | Single line text |
+| Lot Title | Single line text |
+| Artist | Single line text |
+| Bid Sats | Number |
+| Opening Bid Sats | Number |
+| Will Attend Midwest | Checkbox |
+| Notes | Long text |
+| Source | Single line text |
+| Status | Single select (`Pending`, `Seeded`, `Outbid`, `Won`, `Forfeit`) |
+
+3. Vercel already has `AIRTABLE_PAT` and `AIRTABLE_BASE_ID`. Optional: `AIRTABLE_ADVANCE_BIDS_TABLE`, `AUCTION_TO_EMAIL`.
+4. Ops: before doors open, sort Airtable by lot + Bid Sats desc, write the high advance bid onto row 1 of each printed bid sheet.
+5. Rules on the form: bid ≥ opening, steps of 21,000 sats, must confirm in-person Columbus pickup (no shipping).
 
 
 ## Add another donated lot

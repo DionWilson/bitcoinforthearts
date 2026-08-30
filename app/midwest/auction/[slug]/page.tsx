@@ -7,6 +7,7 @@ import {
   formatSats,
   formatOpeningBid,
 } from '@/lib/midwest-auction-lots';
+import AdvanceBidForm from '../AdvanceBidForm';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -227,8 +228,12 @@ export default async function AuctionLotPage({ params }: Props) {
                 <strong>{formatSats(lot.incrementSats)}</strong>
               </li>
               <li>
-                Sign the paper bid sheet next to the work with your name, email
-                or phone, and bid amount in sats.
+                Advance bids are open now online. The high advance bid seeds the
+                paper sheet on the Expo floor.
+              </li>
+              <li>
+                On site: sign the paper bid sheet next to the work with your
+                name, email or phone, and bid amount in sats.
               </li>
               <li>
                 Bids are counted in sats. Settlement after win may be paid in
@@ -239,10 +244,28 @@ export default async function AuctionLotPage({ params }: Props) {
               </li>
               <li>
                 Highest valid bid at close wins. Winner must complete payment
-                before the work is released.
+                and pick up in person at Bitcoin Arts Park in Columbus. No
+                shipping.
               </li>
             </ul>
           </div>
+
+          {lot.status === 'open' && lot.startingBidSats != null ? (
+            <div className="border border-black bg-white p-5">
+              <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#FF4F14]">
+                Advance bid
+              </h2>
+              <div className="mt-4">
+                <AdvanceBidForm
+                  slug={lot.slug}
+                  lotCode={lot.lotCode}
+                  title={lot.title}
+                  openingBidSats={lot.startingBidSats}
+                  incrementSats={lot.incrementSats}
+                />
+              </div>
+            </div>
+          ) : null}
 
           <div className="border border-black/15 bg-white p-5">
             <h2 className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#FF4F14]">

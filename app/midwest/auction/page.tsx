@@ -8,7 +8,7 @@ import {
 export const metadata: Metadata = {
   title: 'Silent Auction | Bitcoin Arts Park · Midwest Bitcoin Summit',
   description:
-    'Peer-to-peer silent auction lots at Bitcoin Arts Park during the Midwest Bitcoin Summit. Bid in person; proceeds support Bitcoin for the Arts per each lot’s terms.',
+    'Peer-to-peer silent auction lots at Bitcoin Arts Park during the Midwest Bitcoin Summit. Place an advance bid online now; pick up in person in Columbus. Proceeds support Bitcoin for the Arts per each lot’s terms.',
 };
 
 export default function MidwestAuctionIndexPage() {
@@ -22,10 +22,10 @@ export default function MidwestAuctionIndexPage() {
           Peer-to-Peer Silent Auction
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#FFFAF0]/90">
-          Donated works and editions. In-person bidding on the Expo floor.
+          Donated works and editions. Place a binding advance bid online now;
+          the high advance bid seeds the paper sheet on the Expo floor. Winner
+          must pick up in person at Bitcoin Arts Park in Columbus (no shipping).
           Proceeds support Bitcoin for the Arts per each lot’s posted split.
-          Scan the QR next to any lot for artist links, contact, and Bitcoin /
-          Lightning handles when provided.
         </p>
       </section>
 

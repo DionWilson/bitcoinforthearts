@@ -75,9 +75,11 @@ export default async function AuctionBidSheetPage({ params }: Props) {
             </p>
           </div>
           <p className="mt-3 text-xs leading-relaxed text-black/65">
-            Sign below with a bid at least {formatSats(lot.incrementSats)} above
-            the previous bid. Highest valid bid at close wins. Payment due
-            before release (Bitcoin/Lightning or USD). Full terms:{' '}
+            Staff: write the high Airtable advance bid on row 1 before doors
+            open. Then sign below with a bid at least{' '}
+            {formatSats(lot.incrementSats)} above the previous bid. Highest
+            valid bid at close wins. Winner pays before release
+            (Bitcoin/Lightning or USD) and picks up in person. Full terms:{' '}
             <span className="break-all">{detailUrl}</span>
           </p>
           {(lot.artistStrike || lot.artistEmail) && (
