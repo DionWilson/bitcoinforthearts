@@ -10,6 +10,8 @@ type Props = {
   title: string;
   openingBidSats: number;
   incrementSats: number;
+  /** Shorter copy when the page already shows opening/pickup context above */
+  compact?: boolean;
 };
 
 function formatSats(amount: number): string {
@@ -45,6 +47,7 @@ export default function AdvanceBidForm({
   title,
   openingBidSats,
   incrementSats,
+  compact = false,
 }: Props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -170,13 +173,20 @@ export default function AdvanceBidForm({
         name="website"
       />
 
-      <p className="text-sm leading-relaxed text-black/75">
-        Place a binding advance bid on <strong>{title}</strong> ({lotCode}).
-        Staff will write the high advance bid onto the Expo floor sheet before
-        doors open. Anyone in the room can still outbid you. Winner must pick
-        up in person at Bitcoin Arts Park (Greater Columbus Convention Center,
-        Sept 23-24). No shipping.
-      </p>
+      {compact ? (
+        <p className="text-sm leading-relaxed text-black/75">
+          High advance bid seeds the Expo floor sheet. Anyone on site can still
+          outbid you.
+        </p>
+      ) : (
+        <p className="text-sm leading-relaxed text-black/75">
+          Place a binding advance bid on <strong>{title}</strong> ({lotCode}).
+          Staff will write the high advance bid onto the Expo floor sheet before
+          doors open. Anyone in the room can still outbid you. Winner must pick
+          up in person at Bitcoin Arts Park (Greater Columbus Convention Center,
+          Sept 23-24). No shipping.
+        </p>
+      )}
 
       <div>
         <label htmlFor={`bid-name-${slug}`} className={labelClass}>

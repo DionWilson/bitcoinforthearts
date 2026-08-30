@@ -65,6 +65,14 @@ export default function MidwestAuctionIndexPage() {
                   >
                     Lot details →
                   </Link>
+                  {lot.status === 'open' && lot.startingBidSats != null ? (
+                    <Link
+                      href={`/midwest/auction/${lot.slug}#advance-bid`}
+                      className="inline-block bg-[#FF4F14] px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em] text-[#FFFAF0]"
+                    >
+                      Advance bid →
+                    </Link>
+                  ) : null}
                   <Link
                     href={`/midwest/auction/${lot.slug}/bid-sheet`}
                     className="inline-block border border-black px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em]"
