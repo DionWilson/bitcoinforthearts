@@ -42,6 +42,7 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ## Print checklist - LOT-01 (CA Danner)
 
 - [ ] Vinyl/wall card from `vinyl-card-satoshi-white-paper-52.md`
+- [ ] Optional CA Danner artist bio card (same file)
 - [ ] QR code → lot detail URL above
 - [ ] Bid sheet printed from `/bid-sheet` (clipboard + pen)
 - [ ] Signed consignment agreement (`consignment-agreement-ca-danner.pdf` - send to artist)
