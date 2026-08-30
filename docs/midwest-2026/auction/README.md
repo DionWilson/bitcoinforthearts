@@ -34,8 +34,8 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ### Lady RedHorns specs (from redhornsbtc.store/products/angel-1)
 
-- Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · listed **$850 USD** (price unit: dollars)
-- Opening bid: **$850** (gallery list); proceeds split after signed consignment
+- Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · gallery list **$850**
+- Opening bid: **850,000 sats (informational $850)**; proceeds split after signed consignment
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 
@@ -95,7 +95,7 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 ## Agreed economics (LOT-04 Timechain Mag)
 
 - Retail: **$269**
-- Opening: **$300**
+- Opening: **300,000 sats (informational $300)**
 - Increment: **21,000 sats**
 - Split: **100% BFTA**
-- Price unit: **USD**
+- Display format (all lots): `X sats (informational $Y) · increments 21,000 sats`

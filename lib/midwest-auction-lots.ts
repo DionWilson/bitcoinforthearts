@@ -139,9 +139,9 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageAlt:
       'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
     description:
-      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Priced in USD to match Red Horns Gallery ($850 list). Proceeds split finalize when the signed consignment returns.',
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 850,000 sats (informational $850, matching Red Horns Gallery list). Proceeds split finalize when the signed consignment returns.',
     startingBidUsd: 850,
-    startingBidSats: null,
+    startingBidSats: 850000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',
@@ -218,7 +218,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/timechain-magazine-genesis.jpg',
     imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
     description:
-      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid $300. 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
+      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 300,000 sats (informational $300). 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
     startingBidUsd: 300,
     startingBidSats: 300000,
     priceUnit: 'usd',
@@ -252,18 +252,17 @@ export function formatSats(amount: number): string {
 }
 
 export function formatOpeningBid(lot: AuctionLot): string {
-  const unit = lot.priceUnit ?? (lot.startingBidSats != null ? 'sats' : 'usd');
-
-  if (unit === 'usd') {
-    if (lot.startingBidUsd == null) return 'Opening bid TBD';
-    const usd = formatUsd(lot.startingBidUsd);
-    if (lot.startingBidSats == null) return usd;
-    return `${usd} (${formatSats(lot.startingBidSats)})`;
+  if (lot.startingBidSats == null || lot.startingBidUsd == null) {
+    if (lot.startingBidSats != null) return formatSats(lot.startingBidSats);
+    if (lot.startingBidUsd != null) return formatUsd(lot.startingBidUsd);
+    return 'Opening bid TBD';
   }
+  // Uniform auction display for every lot.
+  return `${formatSats(lot.startingBidSats)} (informational ${formatUsd(lot.startingBidUsd)})`;
+}
 
-  if (lot.startingBidSats == null) return 'Opening bid TBD';
-  const sats = formatSats(lot.startingBidSats);
-  // Sats-primary artists: show sats first; USD only as quiet informational if present.
-  if (lot.startingBidUsd == null) return sats;
-  return `${sats} (informational ${formatUsd(lot.startingBidUsd)})`;
+export function formatOpeningBidLine(lot: AuctionLot): string {
+  const bid = formatOpeningBid(lot);
+  if (bid === 'Opening bid TBD') return bid;
+  return `${bid} · increments ${formatSats(lot.incrementSats)}`;
 }

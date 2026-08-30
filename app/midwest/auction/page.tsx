@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   midwestAuctionLots,
-  formatSats,
-  formatOpeningBid,
+  formatOpeningBidLine,
 } from '@/lib/midwest-auction-lots';
 
 export const metadata: Metadata = {
@@ -57,10 +56,7 @@ export default function MidwestAuctionIndexPage() {
                   <span className="text-black/50"> · {lot.year}</span>
                 </p>
                 <p className="text-sm text-black/80">
-                  {formatOpeningBid(lot)}
-                  {lot.startingBidSats != null
-                    ? ` · increments ${formatSats(lot.incrementSats)}`
-                    : ''}
+                  {formatOpeningBidLine(lot)}
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
                   <Link
