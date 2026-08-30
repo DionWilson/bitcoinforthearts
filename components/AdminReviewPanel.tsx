@@ -13,7 +13,9 @@ type ReviewScores = {
 
 export type AdminReview = {
   reviewer?: string | null;
+  reviewerEmail?: string | null;
   createdAt?: string | null; // ISO
+  source?: string | null;
   scores?: Partial<ReviewScores> | null;
   notes?: string | null;
 };
@@ -129,7 +131,8 @@ export default function AdminReviewPanel({
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-semibold tracking-tight">Internal review</h2>
         <p className="text-sm text-muted">
-          Add a score + notes. This is stored in MongoDB and visible only in admin.
+          Add a score + notes. Board advisor scores from review links appear below and are
+          included in the averages. This is stored in MongoDB and visible only in admin.
         </p>
       </div>
 
@@ -300,8 +303,16 @@ export default function AdminReviewPanel({
             {reviews.map((r, idx) => (
               <div key={`${idx}`} className="rounded-xl border border-border bg-surface p-4">
                 <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
-                  <div className="font-semibold">
-                    {r.reviewer?.trim() ? r.reviewer : 'Reviewer'}
+                  <div>
+                    <div className="font-semibold">
+                      {r.reviewer?.trim() ? r.reviewer : 'Reviewer'}
+                    </div>
+                    {r.reviewerEmail?.trim() ? (
+                      <div className="text-xs text-muted">{r.reviewerEmail}</div>
+                    ) : null}
+                    {r.source === 'review_link' ? (
+                      <div className="text-xs text-muted">Via review link</div>
+                    ) : null}
                   </div>
                   <div className="text-xs text-muted">
                     {r.createdAt ? new Date(r.createdAt).toLocaleString() : ''}

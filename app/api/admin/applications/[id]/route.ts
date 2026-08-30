@@ -100,6 +100,7 @@ export async function PATCH(
     const review = {
       reviewer,
       createdAt: new Date(),
+      source: 'admin' as const,
       scores: {
         overall: clampScore(s.overall),
         impact: clampScore(s.impact),
