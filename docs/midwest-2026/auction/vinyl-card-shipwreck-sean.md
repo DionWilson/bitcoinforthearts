@@ -15,7 +15,7 @@ USD figures Sean also quoted for gallery works ($2,500 / $2,000 / $1,500) are ar
 
 Medium not specified by artist yet; cards use **Original painting**. Update if he confirms acrylic/oil/etc.
 
-Opening bid for *HODL On*: **2,100,000 sats** (about $2,100).
+Opening bid for *HODL On*: **2,100,000 sats** (about $1,700).
 
 ---
 
@@ -87,7 +87,7 @@ Original painting
 40 × 16 in (H × W)
 
 Opening bid  2,100,000 sats
-(about $2,100)
+(about $1,700)
 Minimum increase  21,000 sats
 
 Of the winning bid:

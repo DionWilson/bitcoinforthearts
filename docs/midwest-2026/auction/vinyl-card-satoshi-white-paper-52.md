@@ -23,7 +23,7 @@ Mixed media on linen canvas
 22 × 28 in
 
 Opening bid  150,000 sats
-(about $98)
+(about $125)
 Minimum increase  21,000 sats
 
 Of the winning bid:

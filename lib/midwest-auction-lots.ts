@@ -102,7 +102,7 @@ export const midwestAuctionLots: AuctionLot[] = [
       'CA Danner, Satoshi White Paper Series #52, Block Height 770067 - mixed media on linen canvas with Satoshi Nakamoto white paper text under color washes',
     description:
       'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical - silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
-    startingBidUsd: 98,
+    startingBidUsd: 125,
     startingBidSats: 150000,
     priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
@@ -178,8 +178,8 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/hodl-on.jpg',
     imageAlt: 'Shipwreck Sean, HODL On - Bitsby holding a Bitcoin balloon',
     description:
-      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction priced in sats: 100% of net hammer price supports Bitcoin for the Arts. Opening bid 2,100,000 sats (about $2,100).',
-    startingBidUsd: 2100,
+      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction priced in sats: 100% of net hammer price supports Bitcoin for the Arts. Opening bid 2,100,000 sats (about $1,700).',
+    startingBidUsd: 1700,
     startingBidSats: 2100000,
     priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
@@ -200,19 +200,24 @@ export const midwestAuctionLots: AuctionLot[] = [
     subtitle: 'Formerly Bitcoin Art Magazine · donated by Timechain / Asanoha',
     artistName: 'Timechain Art Magazine',
     artistBio:
-      'Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine - featuring artists across the Bitcoin creative stack. Run by Asanoha. Sponsor of Bitcoin Arts Park; this Genesis Edition copy is fully donated to BFTA’s silent auction.',
+      'Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine - featuring artists across the Bitcoin creative stack. Founded by Asanoha (@asanoha_gold). Sponsor of Bitcoin Arts Park; this Genesis Edition copy is fully donated to BFTA’s silent auction.',
     artistWebsite: 'https://timechainartmagazine.com',
-    artistSocial: '@TimechainArtMag',
+    artistSocial: '@TimechainArtMag · Asanoha @asanoha_gold',
     artistLinks: [
       { label: 'timechainartmagazine.com', href: 'https://timechainartmagazine.com' },
       {
         label: 'Newsletter signup',
         href: 'http://timechainartmagazine.com/signup',
       },
+      { label: 'Asanoha on X @asanoha_gold', href: 'https://x.com/asanoha_gold' },
       { label: 'X @TimechainArtMag', href: 'https://x.com/TimechainArtMag' },
       {
         label: 'Inside the Genesis Edition (video)',
         href: 'https://x.com/TimechainArtMag/status/2091065528488259646',
+      },
+      {
+        label: 'artistsovereignremnant.com',
+        href: 'https://artistsovereignremnant.com',
       },
     ],
     year: 'Genesis edition',
@@ -221,8 +226,8 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/timechain-magazine-genesis.jpg',
     imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
     description:
-      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 350,000 sats (about $350). 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
-    startingBidUsd: 350,
+      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 350,000 sats (about $300). 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
+    startingBidUsd: 300,
     startingBidSats: 350000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
