@@ -65,7 +65,7 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 - [ ] Send `consignment-agreement-shipwreck-sean.pdf` for signature (email + payout + raffle split + HODL On no-sale)
 - [ ] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl from `vinyl-card-shipwreck-sean.md`
 - [ ] Optional bio card for the Sean wall
-- [ ] *HODL On*: set opening bid, lot code, lot page/QR, bid sheet
+- [ ] *HODL On*: opening **2,100,000 sats** ($2,100) · lot page/QR · bid sheet
 
 Regenerate Sean PDF: `python3 docs/midwest-2026/auction/generate-shipwreck-sean-pdf.py`
 
@@ -84,3 +84,18 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 - Split: **1/3 BFTA · 2/3 CA Danner**
 - No sale: **donated in full to BFTA**
 - Price unit: **sats**
+
+## Agreed economics (LOT-03 HODL On)
+
+- Opening: **2,100,000 sats** (informational $2,100)
+- Increment: **21,000 sats**
+- Split: **100% BFTA**
+- Image: `public/auction/hodl-on.jpg` (from `public/Hodl On.jpg`)
+
+## Agreed economics (LOT-04 Timechain Mag)
+
+- Retail: **$269**
+- Opening: **$300**
+- Increment: **21,000 sats**
+- Split: **100% BFTA**
+- Price unit: **USD**
