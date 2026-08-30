@@ -11,11 +11,11 @@
 - *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)**
 - Live painting - **raffle** (whatever it brings)
 
-USD figures Sean also quoted ($2,500 / $2,000 / $1,500) are informational only; wall cards lead with sats.
+USD figures Sean also quoted for gallery works ($2,500 / $2,000 / $1,500) are artist reference only; wall cards and auction lots lead with sats.
 
 Medium not specified by artist yet; cards use **Original painting**. Update if he confirms acrylic/oil/etc.
 
-Opening bid for *HODL On*: **2,100,000 sats** (informational $2,100).
+Opening bid for *HODL On*: **2,100,000 sats**.
 
 ---
 
@@ -87,7 +87,6 @@ Original painting
 40 × 16 in (H × W)
 
 Opening bid  2,100,000 sats
-(informational $2,100)
 Minimum increase  21,000 sats
 
 Of the winning bid:
@@ -194,7 +193,7 @@ bitsby.co
 | --- | --- | --- | --- |
 | The Volatility Blues | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
 | A Slice of History | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
-| HODL On | Silent auction | Open **2,100,000 sats** ($2,100) · 100% BFTA | Auction vinyl |
+| HODL On | Silent auction | Open **2,100,000 sats** · 100% BFTA | Auction vinyl |
 | Cold Storage | Fixed sale | 2,000,000 sats (0.02 BTC) | For-sale vinyl |
 | Live canvas (title TBD) | Live paint + raffle | Raffle | Raffle vinyl |
 

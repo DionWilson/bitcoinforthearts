@@ -59,13 +59,13 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ### Lady RedHorns specs (from redhornsbtc.store/products/angel-1)
 
 - Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · gallery list **$850**
-- Opening bid: **1,000,000 sats (informational $850)**; proceeds split after signed consignment
+- Opening bid: **1,000,000 sats** (gallery list $850); proceeds split after signed consignment
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 
 - *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)** · 20×24 in
 - *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)** · 40×16 in
-- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening **2,100,000 sats** ($2,100)
+- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening **2,100,000 sats**
 - *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)** · 20×24 in
 - Live raffle canvas: title TBD · 20×16 in · winner Thu Sept 24 · 3:00 PM ET
 
@@ -89,7 +89,7 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 - [ ] Send `consignment-agreement-shipwreck-sean.pdf` for signature (email + payout + raffle split + HODL On no-sale)
 - [ ] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl from `vinyl-card-shipwreck-sean.md`
 - [ ] Optional bio card for the Sean wall
-- [ ] *HODL On*: opening **2,100,000 sats** ($2,100) · lot page/QR · bid sheet
+- [ ] *HODL On*: opening **2,100,000 sats** · lot page/QR · bid sheet
 
 Regenerate Sean PDF: `python3 docs/midwest-2026/auction/generate-shipwreck-sean-pdf.py`
 
@@ -103,23 +103,23 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 
 ## Agreed economics (LOT-01)
 
-- Opening: **150,000 sats** (informational $98)
+- Opening: **150,000 sats**
 - Increment: **21,000 sats**
 - Split: **1/3 BFTA · 2/3 CA Danner**
 - No sale: **donated in full to BFTA**
-- Price unit: **sats**
+- Public display: **sats only** (no USD equivalent on lot cards)
 
 ## Agreed economics (LOT-03 HODL On)
 
-- Opening: **2,100,000 sats** (informational $2,100)
+- Opening: **2,100,000 sats**
 - Increment: **21,000 sats**
 - Split: **100% BFTA**
 - Image: `public/auction/hodl-on.jpg` (from `public/Hodl On.jpg`)
 
 ## Agreed economics (LOT-04 Timechain Mag)
 
-- Retail: **$269**
-- Opening: **300,000 sats (informational $300)**
+- Retail: **$269** (stated separately from opening bid)
+- Opening: **350,000 sats**
 - Increment: **21,000 sats**
 - Split: **100% BFTA**
-- Display format (all lots): `X sats (informational $Y) · increments 21,000 sats`
+- Display format (all lots): `X sats · increments 21,000 sats`
