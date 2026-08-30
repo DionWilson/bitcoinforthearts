@@ -55,9 +55,12 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ## Print checklist - Shipwreck Sean
 
+- [ ] Send `consignment-agreement-shipwreck-sean.pdf` for signature (email + payout + raffle split + HODL On no-sale)
 - [ ] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl from `vinyl-card-shipwreck-sean.md`
 - [ ] Optional bio card for the Sean wall
-- [ ] *HODL On*: set opening bid, lot code, lot page/QR, bid sheet; confirm 100% BFTA in writing
+- [ ] *HODL On*: set opening bid, lot code, lot page/QR, bid sheet
+
+Regenerate Sean PDF: `python3 docs/midwest-2026/auction/generate-shipwreck-sean-pdf.py`
 
 ## Consignment PDF
 
