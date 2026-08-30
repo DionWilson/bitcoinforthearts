@@ -586,7 +586,7 @@ def build_danner():
     story.append(Paragraph("2. Auction terms", s["h"]))
     for line in [
         "The Work will be offered in a <b>peer-to-peer silent auction</b> at Bitcoin Arts Park during the Event.",
-        "<b>Opening bid:</b> <b>150,000 sats</b> (displayed with an informational USD equivalent of <b>$98</b>).",
+        "<b>Opening bid:</b> <b>150,000 sats</b> (about <b>$125</b>).",
         "<b>Minimum bid increment:</b> <b>21,000 sats</b>.",
         "Bidding closes <b>Thursday, September 24, 2026 at 3:00 PM Eastern Time</b>, unless BFTA announces an earlier or later close on-site for operational reasons.",
         "The highest valid bid at close is the <b>hammer price</b>. The winning bidder must complete payment before the Work is released.",
