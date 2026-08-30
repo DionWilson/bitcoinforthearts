@@ -15,7 +15,7 @@ USD figures Sean also quoted ($2,500 / $2,000 / $1,500) are informational only; 
 
 Medium not specified by artist yet; cards use **Original painting**. Update if he confirms acrylic/oil/etc.
 
-Opening bid for *HODL On* still blank until BFTA sets it in sats.
+Opening bid for *HODL On*: **2,100,000 sats** (informational $2,100).
 
 ---
 
@@ -86,7 +86,8 @@ Shipwreck Sean
 Original painting
 40 × 16 in (H × W)
 
-Opening bid  ________ sats
+Opening bid  2,100,000 sats
+(informational $2,100)
 Minimum increase  21,000 sats
 
 Of the winning bid:
@@ -104,7 +105,7 @@ bitcoinforthearts.org/midwest/auction/hodl-on
 
 ```
 Shipwreck Sean · HODL On · AUCTION
-LOT-03 · 40×16 in · Open ________ sats · +21,000
+LOT-03 · 40×16 in · Open 2,100,000 sats · +21,000
 100% BFTA · Closes Thu 3PM
 ```
 
@@ -193,7 +194,7 @@ bitsby.co
 | --- | --- | --- | --- |
 | The Volatility Blues | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
 | A Slice of History | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
-| HODL On | Silent auction | Opening bid TBD (sats) · 100% BFTA | Auction vinyl |
+| HODL On | Silent auction | Open **2,100,000 sats** ($2,100) · 100% BFTA | Auction vinyl |
 | Cold Storage | Fixed sale | 2,000,000 sats (0.02 BTC) | For-sale vinyl |
 | Live canvas (title TBD) | Live paint + raffle | Raffle | Raffle vinyl |
 

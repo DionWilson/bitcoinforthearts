@@ -41,7 +41,7 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 - *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)** · 20×24 in
 - *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)** · 40×16 in
-- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening bid TBD (sats)
+- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening **2,100,000 sats** ($2,100)
 - *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)** · 20×24 in
 - Live raffle canvas: title TBD · 20×16 in · winner Thu Sept 24 · 3:00 PM ET
 
