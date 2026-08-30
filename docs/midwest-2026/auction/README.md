@@ -31,10 +31,13 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 - Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · listed $850 (she is framing for exhibition)
 - Opening bid / split: fill after signed consignment
 
-### Shipwreck Sean
+### Shipwreck Sean (prices confirmed)
 
-- Gallery: *The Volatility Blues*, *A Slice of History*, *HODL On*, *Cold Storage* (prices TBD)
-- Live raffle canvas: title TBD · 20 × 16 in · winner Thu Sept 24 · 3:00 PM ET
+- *The Volatility Blues* - fixed sale **$2,500 | 0.03 BTC** · 20×24 in
+- *A Slice of History* - fixed sale **$2,000 | 0.03 BTC** · 40×16 in
+- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening bid TBD
+- *Cold Storage* - fixed sale **$1,500 | 0.02 BTC** · 20×24 in
+- Live raffle canvas: title TBD · 20×16 in · winner Thu Sept 24 · 3:00 PM ET
 
 ## Print checklist - LOT-01 (CA Danner)
 
@@ -52,9 +55,9 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ## Print checklist - Shipwreck Sean
 
-- [ ] Four gallery vinyls + one raffle vinyl from `vinyl-card-shipwreck-sean.md`
+- [ ] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl from `vinyl-card-shipwreck-sean.md`
 - [ ] Optional bio card for the Sean wall
-- [ ] Reprint gallery cards once prices are confirmed
+- [ ] *HODL On*: set opening bid, lot code, lot page/QR, bid sheet; confirm 100% BFTA in writing
 
 ## Consignment PDF
 
