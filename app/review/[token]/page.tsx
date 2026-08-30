@@ -1,5 +1,6 @@
 import { getMongoDb } from '@/lib/mongodb';
 import { hashReviewToken } from '@/lib/reviewLinks';
+import ReviewerScorePanel from '@/components/ReviewerScorePanel';
 import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
@@ -119,7 +120,7 @@ export default async function ReviewPage({
     <main className="mx-auto max-w-5xl px-6 py-14">
       <div className="rounded-3xl border border-border bg-background p-6 sm:p-8">
         <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-          BFTA • Application review (read-only)
+          BFTA • Application review
         </div>
         <h1 className="mt-2 text-2xl font-semibold tracking-tight">
           {doc.applicant?.legalName ?? 'Grant application'}
@@ -272,10 +273,13 @@ export default async function ReviewPage({
               ) : null}
             </div>
           </section>
+
+          <ReviewerScorePanel token={token} />
         </div>
 
         <p className="mt-8 text-xs text-muted">
-          This is a read-only reviewer view. If you need to contact BFTA, email{' '}
+          Score and save your review above. Other reviewers&apos; scores stay private; BFTA will
+          tally them in admin. Questions:{' '}
           <a className="font-semibold underline underline-offset-4" href="mailto:grants@bitcoinforthearts.org">
             grants@bitcoinforthearts.org
           </a>

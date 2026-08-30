@@ -46,7 +46,9 @@ export default function ShareForReview({ applicationId }: { applicationId: strin
         Share for review
       </div>
       <p className="mt-2 text-sm text-muted">
-        Send reviewers a read-only link (no admin login required). Links expire automatically.
+        Email board advisors a review link (no admin login). They can open the application, enter
+        scores under their name and email, and save. Links expire automatically. Use each
+        reviewer&apos;s email so their score is attributed correctly.
       </p>
 
       <div className="mt-4 grid grid-cols-1 gap-3">

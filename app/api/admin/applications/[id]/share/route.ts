@@ -210,7 +210,7 @@ export async function POST(
 
     const msg = (body.message ?? '').toString().trim();
     const text = [
-      'Bitcoin For The Arts — grant application review request',
+      'Bitcoin For The Arts - grant application review request',
       '',
       `Applicant: ${doc?.applicant?.legalName ?? ''}`,
       `Project: ${doc?.project?.title ?? ''}`,
@@ -219,14 +219,14 @@ export async function POST(
       `Review link (expires in ${expiresDays} days):`,
       reviewUrl,
       '',
-      'Note: this link provides read-only access to the application.',
+      'Open the link, review the application, enter your name and this email address, score 1-5 on each criterion, and save. Your score is private to BFTA admin and will be tallied with other reviewers.',
     ]
       .filter(Boolean)
       .join('\n');
 
     const html = `
       <div style="font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; line-height: 1.5;">
-        <h2 style="margin: 0 0 12px;">BFTA grant application — review request</h2>
+        <h2 style="margin: 0 0 12px;">BFTA grant application - review request</h2>
         <p style="margin: 0 0 6px;"><strong>Applicant:</strong> ${escapeHtml(doc?.applicant?.legalName ?? '')}</p>
         <p style="margin: 0 0 6px;"><strong>Project:</strong> ${escapeHtml(doc?.project?.title ?? '')}</p>
         ${
@@ -240,7 +240,9 @@ export async function POST(
           String(expiresDays),
         )} days):</strong></p>
         <p style="margin: 0;"><a href="${escapeHtml(reviewUrl)}">${escapeHtml(reviewUrl)}</a></p>
-        <p style="margin: 14px 0 0; color: #666; font-size: 12px;">Read-only link for reviewers.</p>
+        <p style="margin: 14px 0 0; color: #666; font-size: 12px;">
+          Open the link, review the application, enter your name and the email this message was sent to, score each criterion (1-5), and save. Scores are tallied in BFTA admin.
+        </p>
       </div>
     `.trim();
 

@@ -28,7 +28,9 @@ type ApplicationDoc = {
   };
   reviews?: Array<{
     reviewer?: string | null;
+    reviewerEmail?: string | null;
     createdAt?: Date | null;
+    source?: string | null;
     scores?: {
       overall?: number;
       impact?: number;
@@ -286,6 +288,8 @@ export default async function AdminApplicationDetailsPage({
           applicationId={String(doc._id)}
           reviews={(doc.reviews ?? []).map((r) => ({
             reviewer: r.reviewer ?? null,
+            reviewerEmail: r.reviewerEmail ?? null,
+            source: r.source ?? null,
             createdAt: r.createdAt ? new Date(r.createdAt).toISOString() : null,
             scores: r.scores ?? null,
             notes: r.notes ?? null,
