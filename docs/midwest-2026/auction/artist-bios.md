@@ -34,6 +34,8 @@ Shipwreck Sean is an artist, tattooer, and creator of Bitsby, with over 16 years
 
 - Sites: https://shipwrecksean.com · https://www.bitsby.co
 - X: @artbyshipwreck
+- Lightning: shipwrecksean@walletofsatoshi.com
+- Bitcoin (Taproot): bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q
 - At Midwest: gallery for-sale works (*The Volatility Blues*, *A Slice of History*, *Cold Storage*); *HODL On* silent auction LOT-03 (100% BFTA); live canvas raffle
 
 ---

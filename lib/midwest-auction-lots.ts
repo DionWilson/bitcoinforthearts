@@ -164,6 +164,9 @@ export const midwestAuctionLots: AuctionLot[] = [
       'Shipwreck Sean is an artist, tattooer, and creator of Bitsby, with over 16 years dedicated to his craft. Physical and digital work influenced by Bitcoin, blending traditional artistry with the culture, ideas, and evolving story of sound money. Maryland.',
     artistWebsite: 'https://shipwrecksean.com',
     artistSocial: '@artbyshipwreck',
+    artistLightning: 'shipwrecksean@walletofsatoshi.com',
+    artistBitcoin:
+      'bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q',
     artistLinks: [
       { label: 'shipwrecksean.com', href: 'https://shipwrecksean.com' },
       { label: 'bitsby.co', href: 'https://www.bitsby.co' },

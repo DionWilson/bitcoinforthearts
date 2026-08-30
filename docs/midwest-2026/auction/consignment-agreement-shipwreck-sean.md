@@ -21,7 +21,8 @@ and
 | Websites | https://shipwrecksean.com · https://www.bitsby.co |
 | Location | Maryland |
 | Email | ________________ |
-| Bitcoin / Lightning / Strike payout | ________________ |
+| Lightning | shipwrecksean@walletofsatoshi.com |
+| Bitcoin (Taproot) | bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q |
 
 ---
 
@@ -131,7 +132,8 @@ This document (and any public lot page URL BFTA later confirms for *HODL On*) is
 Signature: _______________________________  Date: _______________  
 Printed name: Shipwreck Sean  
 Email: ________________  
-Payout handle: ________________  
+Lightning: shipwrecksean@walletofsatoshi.com  
+Bitcoin: bc1pc306rnzwz9xxfugewu4jqsqru88v023qpx070kdapf3q2zkrknxq97v65q  
 Websites: shipwrecksean.com · bitsby.co  
 Social: @artbyshipwreck
 
