@@ -42,10 +42,15 @@ export type AuctionLot = {
   imageSrc?: string;
   imageAlt?: string;
   description: string;
-  /** Opening bid in USD (informational). Null = TBD / not yet set. */
+  /** Opening bid in USD (informational or primary if priceUnit is usd). Null = TBD. */
   startingBidUsd: number | null;
-  /** Opening bid in sats. Null = TBD / not yet set. */
+  /** Opening bid in sats (primary if priceUnit is sats). Null = TBD. */
   startingBidSats: number | null;
+  /**
+   * How to display price on lot / vinyl / newsletter.
+   * sats = lead with sats (CA, Sean); usd = lead with dollars (Lady RedHorns site).
+   */
+  priceUnit?: 'sats' | 'usd';
   /** Fixed sats increment between bids */
   incrementSats: number;
   /** BFTA share of hammer price, e.g. 1/3 or 100% */
@@ -99,6 +104,7 @@ export const midwestAuctionLots: AuctionLot[] = [
       'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical - silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
     startingBidUsd: 98,
     startingBidSats: 150000,
+    priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
     bftaShare: '1/3',
     artistShare: '2/3',
@@ -133,9 +139,10 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageAlt:
       'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
     description:
-      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid and proceeds split finalize when the signed consignment returns.',
-    startingBidUsd: null,
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Priced in USD to match Red Horns Gallery ($850 list). Proceeds split finalize when the signed consignment returns.',
+    startingBidUsd: 850,
     startingBidSats: null,
+    priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',
     artistShare: 'TBD (consignment)',
@@ -168,9 +175,10 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/shipwreck-sean-tvb.jpg',
     imageAlt: 'Shipwreck Sean, HODL On - Bitsby holding a Bitcoin balloon',
     description:
-      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction: 100% of net hammer price supports Bitcoin for the Arts. Opening bid set by BFTA before the Event (Artist authorized).',
+      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction priced in sats: 100% of net hammer price supports Bitcoin for the Arts. Opening bid set by BFTA before the Event (Artist authorized).',
     startingBidUsd: null,
     startingBidSats: null,
+    priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
     bftaShare: '100%',
     artistShare: '0%',
@@ -199,6 +207,10 @@ export const midwestAuctionLots: AuctionLot[] = [
         href: 'http://timechainartmagazine.com/signup',
       },
       { label: 'X @TimechainArtMag', href: 'https://x.com/TimechainArtMag' },
+      {
+        label: 'Inside the Genesis Edition (video)',
+        href: 'https://x.com/TimechainArtMag/status/2091065528488259646',
+      },
     ],
     year: 'Genesis edition',
     medium: 'Print magazine (Genesis Edition)',
@@ -206,9 +218,10 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/timechain-magazine-genesis.jpg',
     imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
     description:
-      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. 100% of net proceeds support Bitcoin for the Arts. Opening bid TBD.',
+      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. 100% of net proceeds support Bitcoin for the Arts. Opening bid TBD. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
     startingBidUsd: null,
     startingBidSats: null,
+    priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
     bftaShare: '100%',
     artistShare: '0%',
@@ -239,8 +252,18 @@ export function formatSats(amount: number): string {
 }
 
 export function formatOpeningBid(lot: AuctionLot): string {
+  const unit = lot.priceUnit ?? (lot.startingBidSats != null ? 'sats' : 'usd');
+
+  if (unit === 'usd') {
+    if (lot.startingBidUsd == null) return 'Opening bid TBD';
+    const usd = formatUsd(lot.startingBidUsd);
+    if (lot.startingBidSats == null) return usd;
+    return `${usd} (${formatSats(lot.startingBidSats)})`;
+  }
+
   if (lot.startingBidSats == null) return 'Opening bid TBD';
   const sats = formatSats(lot.startingBidSats);
+  // Sats-primary artists: show sats first; USD only as quiet informational if present.
   if (lot.startingBidUsd == null) return sats;
-  return `${sats} / ${formatUsd(lot.startingBidUsd)}`;
+  return `${sats} (informational ${formatUsd(lot.startingBidUsd)})`;
 }

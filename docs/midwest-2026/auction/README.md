@@ -34,15 +34,15 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ### Lady RedHorns specs (from redhornsbtc.store/products/angel-1)
 
-- Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · listed $850 (she is framing for exhibition)
-- Opening bid / split: fill after signed consignment
+- Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · listed **$850 USD** (price unit: dollars)
+- Opening bid: **$850** (gallery list); proceeds split after signed consignment
 
-### Shipwreck Sean (prices confirmed)
+### Shipwreck Sean (prices confirmed, sats-primary)
 
-- *The Volatility Blues* - fixed sale **$2,500 | 0.03 BTC** · 20×24 in
-- *A Slice of History* - fixed sale **$2,000 | 0.03 BTC** · 40×16 in
-- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening bid TBD
-- *Cold Storage* - fixed sale **$1,500 | 0.02 BTC** · 20×24 in
+- *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)** · 20×24 in
+- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)** · 40×16 in
+- *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening bid TBD (sats)
+- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)** · 20×24 in
 - Live raffle canvas: title TBD · 20×16 in · winner Thu Sept 24 · 3:00 PM ET
 
 ## Print checklist - LOT-01 (CA Danner)
@@ -79,7 +79,8 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 
 ## Agreed economics (LOT-01)
 
-- Opening: **150,000 sats / $98**
+- Opening: **150,000 sats** (informational $98)
 - Increment: **21,000 sats**
 - Split: **1/3 BFTA · 2/3 CA Danner**
 - No sale: **donated in full to BFTA**
+- Price unit: **sats**

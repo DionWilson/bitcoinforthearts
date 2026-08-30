@@ -5,9 +5,9 @@
 `https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light`  
 Lot code: LOT-02. Opening bid / split fill after signed consignment.
 
-**Source specs** (from Red Horns Gallery product `angel-1`, Aug 2026): acrylic on canvas, 40 × 40 cm / 15.7 × 15.7 in, listed $850 USD. Artist is framing for exhibition.
+**Source specs** (from Red Horns Gallery product `angel-1`, Aug 2026): acrylic on canvas, 40 × 40 cm / 15.7 × 15.7 in, listed **$850 USD**. Artist is framing for exhibition. Price unit: **USD** (match her site).
 
-Opening bid, proceeds split, and no-sale terms: fill after she returns the signed consignment.
+Opening bid set to **$850** (gallery list). Proceeds split: fill after she returns the signed consignment.
 
 ---
 
@@ -24,7 +24,8 @@ Acrylic on canvas
 15.7 × 15.7 in (40 × 40 cm)
 Framed for exhibition
 
-Opening bid  ________ sats  /  $________
+Opening bid  **$850**
+(list price from redhornsbtc.store; USD per artist)
 Minimum increase  21,000 sats
 
 Of the winning bid:
@@ -47,7 +48,7 @@ bitcoinforthearts.org/midwest/auction/transfer-of-light
 LOT-02 · Lady RedHorns
 The Transfer of Light
 Acrylic on canvas · 15.7×15.7 in
-Open ________ sats · +21,000 sats
+Open $850 (USD) · +21,000 sats
 Closes Thu 3PM · Scan QR
 ```
 
