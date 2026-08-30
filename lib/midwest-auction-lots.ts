@@ -42,13 +42,13 @@ export type AuctionLot = {
   imageSrc?: string;
   imageAlt?: string;
   description: string;
-  /** Opening bid in USD (ops / consignment reference only; not shown on public lot pages). Null = unused. */
+  /** Approx. USD guide for orientation next to the sats opening bid. Not a retail price and not a live FX quote. Null = no USD guide shown. */
   startingBidUsd: number | null;
-  /** Opening bid in sats (public display). Null = TBD. */
+  /** Opening bid in sats (public auction currency). Null = TBD. */
   startingBidSats: number | null;
   /**
    * How the artist prefers to think about price (ops note).
-   * Public auction display is always sats-first.
+   * Public auction display is sats-first with an optional “about $X” guide.
    */
   priceUnit?: 'sats' | 'usd';
   /** Fixed sats increment between bids */
@@ -139,7 +139,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageAlt:
       'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
     description:
-      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 1,000,000 sats (Red Horns Gallery list $850). Proceeds split finalize when the signed consignment returns.',
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 1,000,000 sats (about $850, Red Horns Gallery list). Proceeds split finalize when the signed consignment returns.',
     startingBidUsd: 850,
     startingBidSats: 1000000,
     priceUnit: 'usd',
@@ -178,7 +178,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/hodl-on.jpg',
     imageAlt: 'Shipwreck Sean, HODL On - Bitsby holding a Bitcoin balloon',
     description:
-      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction priced in sats: 100% of net hammer price supports Bitcoin for the Arts. Opening bid 2,100,000 sats.',
+      'Bitsby holds onto the Bitcoin balloon. Peer-to-peer silent auction priced in sats: 100% of net hammer price supports Bitcoin for the Arts. Opening bid 2,100,000 sats (about $2,100).',
     startingBidUsd: 2100,
     startingBidSats: 2100000,
     priceUnit: 'sats',
@@ -221,8 +221,8 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSrc: '/auction/timechain-magazine-genesis.jpg',
     imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
     description:
-      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 350,000 sats. 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
-    startingBidUsd: 269,
+      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 350,000 sats (about $350). 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
+    startingBidUsd: 350,
     startingBidSats: 350000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
@@ -255,6 +255,9 @@ export function formatSats(amount: number): string {
 }
 
 export function formatOpeningBid(lot: AuctionLot): string {
+  if (lot.startingBidSats != null && lot.startingBidUsd != null) {
+    return `${formatSats(lot.startingBidSats)} (about ${formatUsd(lot.startingBidUsd)})`;
+  }
   if (lot.startingBidSats != null) return formatSats(lot.startingBidSats);
   if (lot.startingBidUsd != null) return formatUsd(lot.startingBidUsd);
   return 'Opening bid TBD';

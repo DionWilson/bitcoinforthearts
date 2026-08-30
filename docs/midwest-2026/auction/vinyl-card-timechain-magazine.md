@@ -3,7 +3,7 @@
 **Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card.  
 **QR:** `https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis`
 
-Opening bid **350,000 sats**; retail $269. 100% net proceeds to BFTA (full donation).
+Opening bid **350,000 sats (about $350)**; retail $269. 100% net proceeds to BFTA (full donation).
 
 ---
 
@@ -23,6 +23,7 @@ Print magazine · single copy
 Retail $269
 
 Opening bid  350,000 sats
+(about $350)
 Minimum increase  21,000 sats
 
 Of the winning bid:

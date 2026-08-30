@@ -306,6 +306,11 @@ export default async function AuctionLotPage({ params }: Props) {
                 sats.
               </li>
               <li>
+                Dollar figures shown as “about $…” are orientation only. They
+                are not a live exchange rate and not a retail price. Bidding is
+                in sats.
+              </li>
+              <li>
                 Settlement after win may be Bitcoin/Lightning or USD at the
                 posted rate of the day.
               </li>
