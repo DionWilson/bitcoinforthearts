@@ -490,9 +490,9 @@ def build_lady_redhorns():
             [
                 ("Title", "<b>The Transfer of Light</b>"),
                 ("Artist", "Lady RedHorns"),
-                ("Year", "________________"),
-                ("Medium", "________________"),
-                ("Dimensions", "________________"),
+                ("Year", "________________ (confirm with artist)"),
+                ("Medium", "Acrylic on canvas (acrylic paints, glossy acrylic varnish)"),
+                ("Dimensions", "40 x 40 cm / 15.7 x 15.7 in"),
                 ("Framing", "Artist to choose and prepare a frame for exhibition"),
                 ("Lot code", "________________ (assigned by BFTA)"),
                 (
