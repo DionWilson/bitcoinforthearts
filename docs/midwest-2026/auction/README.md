@@ -6,6 +6,8 @@
 | --- | --- |
 | All lots | https://www.bitcoinforthearts.org/midwest/auction |
 | LOT-01 CA Danner | https://www.bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52 |
+
+Artwork source for LOT-01 image: https://www.cadanner.com/view/5400977/1/6617154
 | LOT-02 Lady RedHorns | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
 | LOT-03 Shipwreck Sean *HODL On* | https://www.bitcoinforthearts.org/midwest/auction/hodl-on |
 | LOT-04 Timechain Mag Genesis | https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis |
