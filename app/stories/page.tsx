@@ -156,6 +156,26 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/c--KiT8r8iI",
   },
   {
+    type: "episode",
+    episodeNumber: 13,
+    title:
+      "Share Your Bitcoin Journey: Episode 13 \u2013 Anik Malcolm: Depicting Bitcoin",
+    summary:
+      "Classically trained in London, disillusioned in Reykjavik, and now living with his wife and children in the mountains of central Italy, Anik Malcolm is producing some of the most rigorous fine art anywhere in the Bitcoin space today. His practice carries a two-word tagline: Depicting Bitcoin. His monumental oil painting The Whole Entire Universe debuted at Bitcoin 2026 in Las Vegas after more than 900 hours of work\u201421 million beads, a cube of 276 by 276 by 276, and the halving pattern of 64, 32, 16, 8, 4, 2 visible in the image itself.",
+    thumbnail: "/sybj-ep13-anik-web.png",
+    link: "https://youtu.be/Uq8f4HcZYQg",
+  },
+  {
+    type: "episode",
+    episodeNumber: 14,
+    title:
+      "Share Your Bitcoin Journey: Episode 14 \u2013 Mad Munky: Wood, Privacy, and 2140",
+    summary:
+      "Mad Munky is a woodworker, privacy advocate, and founding voice of the 2140 movement. He builds physical Bitcoin art from oak, epoxy, and hard wax oil, sells on a Bitcoin standard, and carries cypherpunk values into art, music, and culture. Episode 14 covers craft and signal: why wood holds a message that lasts, privacy as artistic freedom, Nostr, peer-to-peer culture, and what it looks like to sell work without asking a platform for permission.",
+    thumbnail: "/sybj-ep14-madmunky-website.png",
+    link: "https://www.youtube.com/watch?v=11JVdjVwWNI",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
