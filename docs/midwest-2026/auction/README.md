@@ -7,7 +7,9 @@
 | All lots | https://www.bitcoinforthearts.org/midwest/auction |
 | LOT-01 CA Danner | https://www.bitcoinforthearts.org/midwest/auction/satoshi-white-paper-52 |
 
-Artwork source for LOT-01 image: https://www.cadanner.com/view/5400977/1/6617154
+Artwork sources:
+- LOT-01 CA: full work crop from `public/Satoshi-white-paper-52.JPG` (artist-confirmed). Install/wall shot retained as `public/auction/satoshi-white-paper-52-install.jpg` from `public/whaite-paper-52-backgroind.JPG`. Artist page: https://www.cadanner.com/view/5400977/1/6617154
+- LOT-03 Sean *HODL On*: newer finished photo from `public/hodl-on-1.jpeg` (canvas cropped for lot pages; install shot at `public/auction/hodl-on-install.jpg`).
 | LOT-02 Lady RedHorns | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
 | LOT-03 Shipwreck Sean *HODL On* | https://www.bitcoinforthearts.org/midwest/auction/hodl-on |
 | LOT-04 Timechain Mag Genesis | https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis |
