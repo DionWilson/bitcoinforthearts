@@ -93,13 +93,17 @@ export const midwestAuctionLots: AuctionLot[] = [
       { label: 'cadanner.com', href: 'https://www.cadanner.com' },
       { label: 'Artist statement', href: 'https://www.cadanner.com/artist-statement' },
       { label: 'X @cityalley21', href: 'https://x.com/cityalley21' },
+      {
+        label: 'Satoshi White Paper Series #52',
+        href: 'https://www.cadanner.com/view/5400977/1/6617154',
+      },
     ],
     year: '2022-2023',
     medium: 'Mixed media on linen canvas',
     dimensions: '22 × 28 in',
     imageSrc: '/auction/satoshi-white-paper-52.jpg',
     imageAlt:
-      'CA Danner, Satoshi White Paper Series #52, Block Height 770067 - mixed media on linen canvas with Satoshi Nakamoto white paper text under color washes',
+      'CA Danner, Satoshi White Paper Series #52, Block Height 770067 - mixed media on linen with Bitcoin white paper text under warm pink, orange, and yellow color washes',
     description:
       'From CA Danner’s Satoshi White Paper Series: the Bitcoin white paper rendered as mixed media on linen canvas, tied to block height 770067. Peer-to-peer cash, made physical - silent auction at Bitcoin Arts Park during the Midwest Bitcoin Summit.',
     startingBidUsd: 125,
