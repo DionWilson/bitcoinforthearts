@@ -10,9 +10,11 @@
 Artwork sources:
 - LOT-01 CA: full work crop from `public/Satoshi-white-paper-52.JPG` (artist-confirmed). Install/wall shot retained as `public/auction/satoshi-white-paper-52-install.jpg` from `public/whaite-paper-52-backgroind.JPG`. Artist page: https://www.cadanner.com/view/5400977/1/6617154
 - LOT-03 Sean *HODL On*: newer finished photo from `public/hodl-on-1.jpeg` (canvas cropped for lot pages; install shot at `public/auction/hodl-on-install.jpg`).
-| LOT-02 Lady RedHorns | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
+| LOT-02 Lady RedHorns *Transfer of Light* | https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light |
 | LOT-03 Shipwreck Sean *HODL On* | https://www.bitcoinforthearts.org/midwest/auction/hodl-on |
 | LOT-04 Timechain Mag Genesis | https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis |
+| LOT-05 Lady RedHorns *The Bitcoin Keeper* | https://www.bitcoinforthearts.org/midwest/auction/bitcoin-keeper |
+| LOT-06 Lady RedHorns *Temptation of Bitcoin Angel* | https://www.bitcoinforthearts.org/midwest/auction/temptation-of-bitcoin-angel |
 
 Vinyl QR codes should point at the lot URLs above. Lot pages show artist bio, website, social, email, Strike / Lightning / Bitcoin when provided. Each lot page also has an **advance bid** form that posts to Airtable (`MBS Advance Bids`) via `/api/midwest-advance-bid` using the same `AIRTABLE_PAT` + `AIRTABLE_BASE_ID` as volunteers/connect.
 
@@ -55,15 +57,19 @@ Artist bios: `artist-bios.md`
 | File | Artist / works |
 | --- | --- |
 | `vinyl-card-satoshi-white-paper-52.md` | CA Danner · LOT-01 |
-| `vinyl-card-transfer-of-light.md` | Lady RedHorns · *The Transfer of Light* (LOT-02 draft) |
+| `vinyl-card-transfer-of-light.md` | Lady RedHorns · three Angels of Freedom works (LOT-02, 05, 06) |
 | `vinyl-card-shipwreck-sean.md` | Shipwreck Sean · 4 gallery + 1 live raffle |
 
 Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
-### Lady RedHorns specs (from redhornsbtc.store/products/angel-1)
+### Lady RedHorns specs (Angels of Freedom · three works)
 
-- Acrylic on canvas · 40 × 40 cm / 15.7 × 15.7 in · gallery list **$850**
-- Opening bid: **1,000,000 sats (about $850)**; proceeds split after signed consignment
+- Acrylic on canvas · **16 × 16 in** · Lightning: `ladyredhorns@coinos.io`
+- *The Transfer of Light* - silent auction LOT-02 · opening **1,000,000 sats (about $850)**
+- *The Bitcoin Keeper* - LOT-05 · sale format confirming (auction or fixed price)
+- *The Temptation of Bitcoin Angel* - LOT-06 · sale format confirming (auction or fixed price)
+- Artist promo cards + easel photos under `public/auction/` (`*-card.jpg` + main jpgs)
+- Multi-work consignment: `consignment-agreement-lady-redhorns.md` (Artist initials auction vs fixed per work)
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 
@@ -84,9 +90,11 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ## Print checklist - Lady RedHorns
 
-- [ ] Vinyl card from `vinyl-card-transfer-of-light.md` (fill bid/split blanks after she signs)
-- [ ] Signed consignment + lot page live before printing final QR
+- [ ] Vinyl cards from `vinyl-card-transfer-of-light.md` for LOT-02, 05, 06
+- [ ] Signed multi-work consignment (auction vs fixed + splits + no-sale)
+- [ ] LOT-05 / LOT-06 opening or list prices filled before final print
 - [ ] Warehouse label · mid-September ship · arrive Sept 20-22
+- [ ] Lot pages live with easel photo + promo card + Lightning tip address
 
 ## Print checklist - Shipwreck Sean
 

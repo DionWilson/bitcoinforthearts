@@ -79,6 +79,14 @@ export default async function AuctionLotPage({ params }: Props) {
               className="w-full border border-black/10 bg-white object-contain"
             />
           ) : null}
+          {lot.imageSecondarySrc ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={lot.imageSecondarySrc}
+              alt={lot.imageSecondaryAlt ?? `${lot.title} detail card`}
+              className="w-full border border-black/10 bg-white object-contain"
+            />
+          ) : null}
           <p className="text-xs text-black/50">
             Artwork © {lot.artistName}. Used with permission for Bitcoin Arts
             Park silent auction.

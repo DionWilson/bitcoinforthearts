@@ -470,67 +470,209 @@ def build_lady_redhorns():
         rightMargin=0.65 * inch,
         topMargin=0.4 * inch,
         bottomMargin=0.45 * inch,
-        title="Artwork Consignment & Silent Auction Agreement - Lady RedHorns x BFTA",
+        title="Artwork Exhibition, Sale & Auction Agreement - Lady RedHorns x BFTA",
         author="Bitcoin for the Arts, Inc.",
     )
     story = []
     header(story, s, "Lady RedHorns")
 
-    story.append(Paragraph("1. The Work", s["h"]))
-    story.append(
-        Paragraph(
-            "Artist consigns the following original artwork (the “Work”) to Bitcoin for the Arts, Inc. (“BFTA”) "
-            "for silent auction during the Event (unless Artist and BFTA agree in writing to other Event use):",
-            s["body"],
-        )
-    )
+    story.append(Paragraph("Parties / Artist contact", s["h"]))
     story.append(
         detail_table(
             s,
             [
-                ("Title", "<b>The Transfer of Light</b>"),
-                ("Artist", "Lady RedHorns"),
-                ("Year", "________________ (confirm with artist)"),
-                ("Medium", "Acrylic on canvas (acrylic paints, glossy acrylic varnish)"),
-                ("Dimensions", "40 x 40 cm / 15.7 x 15.7 in"),
-                ("Framing", "Artist to choose and prepare a frame for exhibition"),
-                ("Lot code", "________________ (assigned by BFTA)"),
+                ("Artist name", "Lady RedHorns"),
+                ("Social", "@LRedhorns"),
                 (
-                    "Artist links",
+                    "Websites",
                     "http://redhornsbtc.store · http://redhornsart.store · https://linktr.ee/ladyredhorns",
                 ),
-                ("Social", "@LRedhorns"),
+                ("Email", "________________"),
+                ("Lightning", "<font face='Courier'>ladyredhorns@coinos.io</font>"),
             ],
         )
     )
-    story.append(Spacer(1, 5))
+
+    story.append(Paragraph("1. Purpose", s["h"]))
     story.append(
         Paragraph(
-            "Artist represents that Artist is the sole owner of the Work, that the Work is free of liens, "
-            "and that Artist has full authority to consign and sell (or donate) the Work on the terms below.",
+            "Artist consigns the works listed below to Bitcoin for the Arts, Inc. (“BFTA”) for exhibition and sale "
+            "facilitation at Bitcoin Arts Park during the Event, on the terms stated for each work. Unless a work’s "
+            "section says otherwise, BFTA may display, photograph, and market the works at the Event and online for "
+            "Event purposes, with credit to <b>Lady RedHorns</b>.",
             s["body"],
         )
     )
     story.append(
         Paragraph(
-            "Artist has confirmed intent to provide <i>The Transfer of Light</i> for the exhibition and plans to ship around mid-September after preparing a frame. Shipping details may be confirmed separately in writing.",
+            "Artist represents that Artist is the sole owner of each Work, that each Work is free of liens, and that "
+            "Artist has full authority to consign, sell, or auction each Work on the terms below. Artist plans to ship "
+            "around mid-September after preparing frames. Target warehouse arrival: <b>September 20, 21, or 22, 2026</b>.",
+            s["body"],
+        )
+    )
+
+    story.append(Paragraph("2. Schedule of works", s["h"]))
+    story.append(
+        Paragraph(
+            "All three works are from the <b>Angels of Freedom</b> collection. Medium for all: <b>Acrylic on canvas</b>. "
+            "Size for all: <b>16 x 16 in</b> (about 40 x 40 cm), unless Artist updates in writing. "
+            "For each work, Artist initials <b>Silent auction</b> or <b>Fixed-price sale</b>.",
+            s["body"],
+        )
+    )
+    story.append(
+        Paragraph(
+            "• <b>#1 The Transfer of Light</b> (LOT-02) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
+            "If auction: opening <b>1,000,000 sats (about $850)</b> unless Artist sets otherwise. "
+            "If fixed: $________ / ________ sats",
+            s["bullet"],
+        )
+    )
+    story.append(
+        Paragraph(
+            "• <b>#2 The Bitcoin Keeper</b> (LOT-05) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
+            "Opening / list: _______________ sats (informational USD: $________)",
+            s["bullet"],
+        )
+    )
+    story.append(
+        Paragraph(
+            "• <b>#3 The Temptation of Bitcoin Angel</b> (LOT-06) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
+            "Opening / list: _______________ sats (informational USD: $________)",
+            s["bullet"],
+        )
+    )
+    story.append(
+        Paragraph(
+            "Artist may confirm Event use for Works #2 and #3 in writing (email sufficient) before the Event if blanks remain.",
             s["note"],
         )
     )
 
-    choice_sections(story, s)
-    shared_tail(
-        story,
-        s,
-        "Lady RedHorns",
-        [
-            "Signature: _______________________________  Date: _______________",
-            "Printed name: Lady RedHorns",
-            "Email: ________________",
-            "Payout handle (if any): ________________",
-            "Website: http://redhornsbtc.store · http://redhornsart.store",
-            "Linktree: https://linktr.ee/ladyredhorns",
-        ],
+    story.append(Paragraph("3. Fixed-price sales", s["h"]))
+    for line in [
+        "Applies to any Work marked <b>Fixed-price sale</b> in Section 2.",
+        "BFTA will offer that Work for sale at Bitcoin Arts Park at the listed price (USD and/or sats as stated).",
+        "Of the cleared sale price, after processor fees, Artist’s Section 5 split applies.",
+        "If a fixed-price Work does not sell by end of Event, Artist reclaims it unless donate-in-full is selected in Section 6.",
+        "Buyer is responsible for packing, shipping, or hand-carry from the venue unless otherwise agreed in writing.",
+    ]:
+        story.append(Paragraph(f"• {line}", s["bullet"]))
+
+    story.append(Paragraph("4. Silent auction", s["h"]))
+    for line in [
+        "Applies to any Work marked <b>Silent auction</b> in Section 2.",
+        "Peer-to-peer silent auction at Bitcoin Arts Park. Opening bid as stated in Section 2 or posted on the lot page.",
+        "<b>Minimum bid increment:</b> <b>21,000 sats</b> (or as posted on-site).",
+        "Bidding closes <b>Thursday, September 24, 2026 at 3:00 PM Eastern Time</b>, unless BFTA announces otherwise on-site.",
+        "Highest valid bid at close is the <b>hammer price</b>. Winner pickup in Columbus only (no shipping by BFTA).",
+        "Payment may be accepted in <b>USD and/or Bitcoin / Lightning</b>, at BFTA’s posted conversion practice for the Event day.",
+    ]:
+        story.append(Paragraph(f"• {line}", s["bullet"]))
+
+    story.append(Paragraph("5. Proceeds (Artist initials one)", s["h"]))
+    story.append(
+        Paragraph(
+            "Of the hammer price or cleared fixed sale price, after any payment-processor fees actually incurred:",
+            s["body"],
+        )
+    )
+    story.append(
+        option_table(
+            s,
+            [
+                "<b>A. Full donation.</b> 100% of net proceeds to Bitcoin for the Arts, Inc.",
+                "<b>B. Half / half.</b> 50% to BFTA · 50% to Artist.",
+                "<b>C. One-third / two-thirds.</b> 1/3 to BFTA · 2/3 to Artist.",
+            ],
+        )
+    )
+    story.append(
+        Paragraph(
+            "If Option B or C is selected, BFTA remits Artist’s share within <b>thirty (30) days</b> to Lightning "
+            "<font face='Courier'>ladyredhorns@coinos.io</font> and/or email: ________________",
+            s["body"],
+        )
+    )
+
+    story.append(Paragraph("6. If a Work does not sell (Artist initials one)", s["h"]))
+    story.append(
+        option_table(
+            s,
+            [
+                "<b>Donate in full.</b> Artist donates the unsold Work to Bitcoin for the Arts, Inc. BFTA handles post-Event transport from Columbus unless otherwise agreed.",
+                "<b>Reclaim.</b> Artist reclaims the Work. Artist is responsible for return shipping / pickup cost and timing after the Event, unless otherwise agreed in writing.",
+            ],
+        )
+    )
+
+    story.append(Paragraph("7. Delivery &amp; risk", s["h"]))
+    for line in [
+        "Ship to Midwest Bitcoin Summit <b>advance warehouse</b> to arrive <b>September 20, 21, or 22, 2026</b>.",
+        "Send tracking to BFTA promptly after shipment.",
+        "Risk of loss remains with Artist until received at the warehouse; thereafter BFTA exercises reasonable care on-site. BFTA is not an insurer.",
+        "If a Work sells, buyer handles packing / transport from the venue unless otherwise agreed.",
+        "Unsold Works follow Section 6.",
+    ]:
+        story.append(Paragraph(f"• {line}", s["bullet"]))
+
+    story.append(Paragraph("8. Marketing &amp; credit", s["h"]))
+    story.append(
+        Paragraph(
+            "Artist grants BFTA a non-exclusive license to photograph and reproduce images of the Works for Event signage, "
+            "website lot pages, newsletter, social, and archival documentation, with credit to <b>Lady RedHorns</b>. "
+            "Artist’s published statements for each Work may be used on lot pages with credit.",
+            s["body"],
+        )
+    )
+
+    story.append(Paragraph("9. Relationship", s["h"]))
+    story.append(
+        Paragraph(
+            "This Agreement is a consignment for exhibition, fixed-price sale, and/or auction (and, if selected, donation). "
+            "It does not create employment, partnership, or an obligation for BFTA to guarantee a sale.",
+            s["body"],
+        )
+    )
+
+    story.append(Paragraph("10. Entire agreement", s["h"]))
+    story.append(
+        Paragraph(
+            "This document (and public lot pages for LOT-02, LOT-05, and LOT-06) is the entire agreement for these Works. "
+            "Changes must be in writing (email sufficient) and acknowledged by both parties.",
+            s["body"],
+        )
+    )
+
+    story.append(hr())
+    story.append(Paragraph("Signatures", s["h"]))
+    story.append(
+        KeepTogether(
+            [
+                Paragraph("<b>Artist — Lady RedHorns</b>", s["sighead"]),
+                Paragraph("Signature: _______________________________  Date: _______________", s["sig"]),
+                Paragraph("Printed name: Lady RedHorns", s["sig"]),
+                Paragraph("Email: ________________", s["sig"]),
+                Paragraph("Lightning: ladyredhorns@coinos.io", s["sig"]),
+                Paragraph("Website: http://redhornsbtc.store · http://redhornsart.store", s["sig"]),
+                Paragraph("Linktree: https://linktr.ee/ladyredhorns", s["sig"]),
+                Paragraph("X: @LRedhorns", s["sig"]),
+            ]
+        )
+    )
+    story.append(Spacer(1, 8))
+    story.append(
+        KeepTogether(
+            [
+                Paragraph("<b>Bitcoin for the Arts, Inc.</b>", s["sighead"]),
+                Paragraph("Signature: _______________________________  Date: _______________", s["sig"]),
+                Paragraph("Printed name: Dion Wilson", s["sig"]),
+                Paragraph("Title: Founder &amp; Executive Director", s["sig"]),
+                Paragraph("Email: dionwilson@bitcoinforthearts.org", s["sig"]),
+                Paragraph("EIN: 41-2642260", s["sig"]),
+            ]
+        )
     )
     doc.build(story)
     print(f"Wrote {out}")

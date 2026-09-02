@@ -1,17 +1,16 @@
-# Vinyl / wall card — Lady RedHorns
+# Vinyl / wall cards — Lady RedHorns (three works)
 
-**Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card, mounted beside the work.  
-**QR (after lot page is live):**  
-`https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light`  
-Lot code: LOT-02. Opening bid / split fill after signed consignment.
+**Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card, mounted beside each work.  
+All three: acrylic on canvas · **16 × 16 in** · Angels of Freedom series.  
+Lightning tip (wall bio): `ladyredhorns@coinos.io`
 
-**Source specs** (from Red Horns Gallery product `angel-1`, Aug 2026): acrylic on canvas, 40 × 40 cm / 15.7 × 15.7 in, listed **$850 USD**. Artist is framing for exhibition. Price unit: **USD** (match her site).
-
-Opening bid set to **1,000,000 sats** (about $850, Red Horns Gallery list). Proceeds split: fill after she returns the signed consignment.
+Sale format for LOT-05 / LOT-06 confirming with artist (silent auction or fixed price). LOT-02 opening set.
 
 ---
 
-## Card copy (print exactly)
+## LOT-02 — The Transfer of Light
+
+**QR:** `https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light`
 
 ```
 LOT-02
@@ -20,9 +19,12 @@ PEER-TO-PEER SILENT AUCTION
 The Transfer of Light
 
 Lady RedHorns
-Acrylic on canvas
-15.7 × 15.7 in (40 × 40 cm)
-Framed for exhibition
+Acrylic on canvas · 16 × 16 in
+Angels of Freedom
+
+A moment of connection and transformation,
+as the orange Bitcoin light passes through a gaze
+and begins to awaken within another soul.
 
 Opening bid  1,000,000 sats
 (about $850 · Red Horns Gallery list)
@@ -33,7 +35,7 @@ ________ → Bitcoin for the Arts (501c3)
 ________ → Lady RedHorns
 
 Closes Thursday, Sept 24 · 3:00 PM ET
-Sign the bid sheet to enter.
+Pickup in Columbus only.
 
 Scan for full details →
 [QR CODE]
@@ -42,14 +44,61 @@ bitcoinforthearts.org/midwest/auction/transfer-of-light
 
 ---
 
-## Optional shorter sticker version
+## LOT-05 — The Bitcoin Keeper
+
+**QR:** `https://www.bitcoinforthearts.org/midwest/auction/bitcoin-keeper`
 
 ```
-LOT-02 · Lady RedHorns
-The Transfer of Light
-Acrylic on canvas · 15.7×15.7 in
-Open 1,000,000 sats (about $850) · +21,000 sats
-Closes Thu 3PM · Scan QR
+LOT-05
+LADY REDHORNS · ANGELS OF FREEDOM
+
+The Bitcoin Keeper
+
+Acrylic on canvas · 16 × 16 in
+
+This artwork explores Bitcoin not as a technology,
+but as a symbol of hope, inner freedom, and
+unwavering conviction. The angel becomes a guardian
+of values that transcend material measure.
+
+Sale format / opening or list price: confirming
+[ ] Silent auction   [ ] Fixed-price sale
+Open / list: _______________ sats (about $____)
+If auction: +21,000 sats · closes Thu 3PM ET
+Pickup in Columbus only.
+
+Scan for full details →
+[QR CODE]
+bitcoinforthearts.org/midwest/auction/bitcoin-keeper
+```
+
+---
+
+## LOT-06 — The Temptation of Bitcoin Angel
+
+**QR:** `https://www.bitcoinforthearts.org/midwest/auction/temptation-of-bitcoin-angel`
+
+```
+LOT-06
+LADY REDHORNS · ANGELS OF FREEDOM
+
+The Temptation of Bitcoin Angel
+
+Acrylic on canvas · 16 × 16 in
+
+The Fiat Demon offers a tempting bargain to the
+Bitcoin Angel, but the Angel turns away, drawn to
+the Bitcoin symbol on its wing.
+
+Sale format / opening or list price: confirming
+[ ] Silent auction   [ ] Fixed-price sale
+Open / list: _______________ sats (about $____)
+If auction: +21,000 sats · closes Thu 3PM ET
+Pickup in Columbus only.
+
+Scan for full details →
+[QR CODE]
+bitcoinforthearts.org/midwest/auction/temptation-of-bitcoin-angel
 ```
 
 ---
@@ -60,4 +109,5 @@ Closes Thu 3PM · Scan QR
 Lady RedHorns
 Contemporary artist exploring Bitcoin
 redhornsbtc.store · @LRedhorns
+Lightning: ladyredhorns@coinos.io
 ```
