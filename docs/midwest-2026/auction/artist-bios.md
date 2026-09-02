@@ -20,7 +20,6 @@ Nashville singer-songwriter, musician, and band leader. Rock built for a live ro
 Ann Arbor one-man band. Live-looping, foot-stomping rock you have to see to understand. Opens Bitcoin Arts Park on Thursday, September 24 at noon on the Expo Stage.
 
 - Lightning: witheredsmoke496@getalby.com
-- Wall QR: use Alby QR.png (Breakheart Alby address)
 - At Midwest: Thursday, September 24 · 12PM Expo Stage
 
 ---
