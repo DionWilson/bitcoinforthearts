@@ -41,6 +41,9 @@ export type AuctionLot = {
   /** Optional public image path under /public */
   imageSrc?: string;
   imageAlt?: string;
+  /** Optional second image (artist promo card, install shot, etc.) */
+  imageSecondarySrc?: string;
+  imageSecondaryAlt?: string;
   description: string;
   /** Approx. USD guide for orientation next to the sats opening bid. Not a retail price and not a live FX quote. Null = no USD guide shown. */
   startingBidUsd: number | null;
@@ -75,6 +78,26 @@ const EVENT = {
   closesDisplay: 'Thursday, September 24, 2026 · 3:00 PM ET',
   incrementSats: 21000,
 } as const;
+
+const LADY_REDHORNS = {
+  artistName: 'Lady RedHorns',
+  artistBio:
+    'Lady RedHorns is a contemporary artist exploring Bitcoin through expressive, gestural painting. Her Angels of Freedom and related series treat orange light, angels, and awakening as visual language for sound money. Red Horns Gallery.',
+  artistWebsite: 'https://redhornsbtc.store',
+  artistSocial: '@LRedhorns',
+  artistLightning: 'ladyredhorns@coinos.io',
+  artistLinks: [
+    { label: 'Red Horns Gallery (Bitcoin)', href: 'https://redhornsbtc.store' },
+    { label: 'Contemporary collection', href: 'http://redhornsart.store' },
+    { label: 'Linktree', href: 'https://linktr.ee/ladyredhorns' },
+    { label: 'X @LRedhorns', href: 'https://x.com/LRedhorns' },
+  ] as AuctionLotLink[],
+  year: 'n/d',
+  medium: 'Acrylic on canvas (acrylic paints, glossy acrylic varnish)',
+  dimensions: '16 × 16 in (about 40 × 40 cm)',
+  noSaleTerms:
+    'No-sale outcome (donate in full to BFTA, or reclaim) is chosen by the Artist on the signed consignment agreement. Sale format for each work (silent auction or fixed price) is confirmed with the Artist on that agreement.',
+};
 
 export const midwestAuctionLots: AuctionLot[] = [
   {
@@ -125,33 +148,73 @@ export const midwestAuctionLots: AuctionLot[] = [
     lotCode: 'LOT-02',
     title: 'The Transfer of Light',
     subtitle: 'Angels of Freedom series',
-    artistName: 'Lady RedHorns',
-    artistBio:
-      'Lady RedHorns is a contemporary artist exploring Bitcoin through expressive, gestural painting. Her Angels of Freedom and related series treat orange light, angels, and awakening as visual language for sound money. Red Horns Gallery.',
-    artistWebsite: 'https://redhornsbtc.store',
-    artistSocial: '@LRedhorns',
-    artistLinks: [
-      { label: 'Red Horns Gallery (Bitcoin)', href: 'https://redhornsbtc.store' },
-      { label: 'Contemporary collection', href: 'http://redhornsart.store' },
-      { label: 'Linktree', href: 'https://linktr.ee/ladyredhorns' },
-      { label: 'X @LRedhorns', href: 'https://x.com/LRedhorns' },
-    ],
-    year: 'n/d',
-    medium: 'Acrylic on canvas (acrylic paints, glossy acrylic varnish)',
-    dimensions: '15.7 × 15.7 in (40 × 40 cm)',
+    ...LADY_REDHORNS,
     imageSrc: '/auction/transfer-of-light.jpg',
     imageAlt:
       'Lady RedHorns, The Transfer of Light - acrylic on canvas, orange Bitcoin light passing through a gaze',
+    imageSecondarySrc: '/auction/transfer-of-light-card.jpg',
+    imageSecondaryAlt:
+      'Lady RedHorns promo card for The Transfer of Light with artist detail crops and statement',
     description:
-      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Framed for exhibition at Bitcoin Arts Park. Opening bid 1,000,000 sats (about $850, Red Horns Gallery list). Proceeds split finalize when the signed consignment returns.',
+      'A moment of connection and transformation, as the orange Bitcoin light passes through a gaze and begins to awaken within another soul. Acrylic on canvas. Angels of Freedom series. Peer-to-peer silent auction at Bitcoin Arts Park: opening bid 1,000,000 sats (about $850). Proceeds split finalize when the signed consignment returns.',
     startingBidUsd: 850,
     startingBidSats: 1000000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',
     artistShare: 'TBD (consignment)',
-    noSaleTerms:
-      'No-sale outcome (donate in full to BFTA, or reclaim) is chosen by the Artist on the signed consignment agreement.',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
+    status: 'open',
+  },
+  {
+    slug: 'bitcoin-keeper',
+    lotCode: 'LOT-05',
+    title: 'The Bitcoin Keeper',
+    subtitle: 'Angels of Freedom series',
+    ...LADY_REDHORNS,
+    imageSrc: '/auction/bitcoin-keeper.jpg',
+    imageAlt:
+      'Lady RedHorns, The Bitcoin Keeper - acrylic on canvas, angel holding a Bitcoin orb',
+    imageSecondarySrc: '/auction/bitcoin-keeper-card.jpg',
+    imageSecondaryAlt:
+      'Lady RedHorns promo card for The Bitcoin Keeper with artist detail crops and statement',
+    description:
+      'This artwork explores Bitcoin not as a technology, but as a symbol of hope, inner freedom, and unwavering conviction. The angel becomes a guardian of values that transcend material measure. Acrylic on canvas. Angels of Freedom series. Sale format (silent auction or fixed price) and opening bid / list price confirming with the artist.',
+    startingBidUsd: null,
+    startingBidSats: null,
+    priceUnit: 'usd',
+    incrementSats: EVENT.incrementSats,
+    bftaShare: 'TBD (consignment)',
+    artistShare: 'TBD (consignment)',
+    closesDisplay: EVENT.closesDisplay,
+    eventName: EVENT.eventName,
+    eventLocation: EVENT.eventLocation,
+    eventDates: EVENT.eventDates,
+    status: 'open',
+  },
+  {
+    slug: 'temptation-of-bitcoin-angel',
+    lotCode: 'LOT-06',
+    title: 'The Temptation of Bitcoin Angel',
+    subtitle: 'Angels of Freedom series',
+    ...LADY_REDHORNS,
+    imageSrc: '/auction/temptation-of-bitcoin-angel.jpg',
+    imageAlt:
+      'Lady RedHorns, The Temptation of Bitcoin Angel - acrylic on canvas, Fiat Demon and Bitcoin Angel',
+    imageSecondarySrc: '/auction/temptation-of-bitcoin-angel-card.jpg',
+    imageSecondaryAlt:
+      'Lady RedHorns promo card for The Temptation of Bitcoin Angel with artist detail crops and statement',
+    description:
+      'The Fiat Demon offers a tempting bargain to the Bitcoin Angel, but the Angel turns away, drawn to the Bitcoin symbol on its wing. Acrylic on canvas. Angels of Freedom series. Sale format (silent auction or fixed price) and opening bid / list price confirming with the artist.',
+    startingBidUsd: null,
+    startingBidSats: null,
+    priceUnit: 'usd',
+    incrementSats: EVENT.incrementSats,
+    bftaShare: 'TBD (consignment)',
+    artistShare: 'TBD (consignment)',
     closesDisplay: EVENT.closesDisplay,
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
