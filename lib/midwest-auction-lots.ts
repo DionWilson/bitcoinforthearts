@@ -96,7 +96,7 @@ const LADY_REDHORNS = {
   medium: 'Acrylic on canvas (acrylic paints, glossy acrylic varnish)',
   dimensions: '16 × 16 in (about 40 × 40 cm)',
   noSaleTerms:
-    'No-sale outcome (donate in full to BFTA, or reclaim) is chosen by the Artist on the signed consignment agreement. Sale format for each work (silent auction or fixed price) is confirmed with the Artist on that agreement.',
+    'No-sale outcome (donate in full to BFTA, or reclaim) is chosen by the Artist on the signed consignment agreement.',
 };
 
 export const midwestAuctionLots: AuctionLot[] = [
@@ -182,9 +182,9 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSecondaryAlt:
       'Lady RedHorns promo card for The Bitcoin Keeper with artist detail crops and statement',
     description:
-      'This artwork explores Bitcoin not as a technology, but as a symbol of hope, inner freedom, and unwavering conviction. The angel becomes a guardian of values that transcend material measure. Acrylic on canvas. Angels of Freedom series. Sale format (silent auction or fixed price) and opening bid / list price confirming with the artist.',
-    startingBidUsd: null,
-    startingBidSats: null,
+      'This artwork explores Bitcoin not as a technology, but as a symbol of hope, inner freedom, and unwavering conviction. The angel becomes a guardian of values that transcend material measure. Acrylic on canvas. Angels of Freedom series. Peer-to-peer silent auction at Bitcoin Arts Park: opening bid 1,000,000 sats (about $850). Proceeds split finalize when the signed consignment returns.',
+    startingBidUsd: 850,
+    startingBidSats: 1000000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',
@@ -208,9 +208,9 @@ export const midwestAuctionLots: AuctionLot[] = [
     imageSecondaryAlt:
       'Lady RedHorns promo card for The Temptation of Bitcoin Angel with artist detail crops and statement',
     description:
-      'The Fiat Demon offers a tempting bargain to the Bitcoin Angel, but the Angel turns away, drawn to the Bitcoin symbol on its wing. Acrylic on canvas. Angels of Freedom series. Sale format (silent auction or fixed price) and opening bid / list price confirming with the artist.',
-    startingBidUsd: null,
-    startingBidSats: null,
+      'The Fiat Demon offers a tempting bargain to the Bitcoin Angel, but the Angel turns away, drawn to the Bitcoin symbol on its wing. Acrylic on canvas. Angels of Freedom series. Peer-to-peer silent auction at Bitcoin Arts Park: opening bid 1,000,000 sats (about $850). Proceeds split finalize when the signed consignment returns.',
+    startingBidUsd: 850,
+    startingBidSats: 1000000,
     priceUnit: 'usd',
     incrementSats: EVENT.incrementSats,
     bftaShare: 'TBD (consignment)',

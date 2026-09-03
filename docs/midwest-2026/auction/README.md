@@ -65,11 +65,12 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ### Lady RedHorns specs (Angels of Freedom · three works)
 
 - Acrylic on canvas · **16 × 16 in** · Lightning: `ladyredhorns@coinos.io`
-- *The Transfer of Light* - silent auction LOT-02 · opening **1,000,000 sats (about $850)**
-- *The Bitcoin Keeper* - LOT-05 · sale format confirming (auction or fixed price)
-- *The Temptation of Bitcoin Angel* - LOT-06 · sale format confirming (auction or fixed price)
+- All three peer-to-peer silent auction · opening **1,000,000 sats (about $850)** · increments **21,000 sats**
+- *The Transfer of Light* - LOT-02
+- *The Bitcoin Keeper* - LOT-05
+- *The Temptation of Bitcoin Angel* - LOT-06
 - Artist promo cards + easel photos under `public/auction/` (`*-card.jpg` + main jpgs)
-- Multi-work consignment: `consignment-agreement-lady-redhorns.md` (Artist initials auction vs fixed per work)
+- Multi-work consignment: `consignment-agreement-lady-redhorns.md` (proceeds split + no-sale still Artist choice)
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 
@@ -91,10 +92,9 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ## Print checklist - Lady RedHorns
 
 - [ ] Vinyl cards from `vinyl-card-transfer-of-light.md` for LOT-02, 05, 06
-- [ ] Signed multi-work consignment (auction vs fixed + splits + no-sale)
-- [ ] LOT-05 / LOT-06 opening or list prices filled before final print
+- [ ] Signed multi-work consignment (all three silent auction at 1,000,000 sats open; fill splits + no-sale)
 - [ ] Warehouse label · mid-September ship · arrive Sept 20-22
-- [ ] Lot pages live with easel photo + promo card + Lightning tip address
+- [ ] Lot pages live with easel photo + promo card + Lightning tip address + advance bid
 
 ## Print checklist - Shipwreck Sean
 
@@ -126,7 +126,7 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 - Opening: **2,100,000 sats (about $1,700)**
 - Increment: **21,000 sats**
 - Split: **100% BFTA**
-- Image: `public/auction/hodl-on.jpg` (from `public/Hodl On.jpg`)
+- Image: `public/auction/hodl-on.jpg` (from `public/Hodl-on-final.jpg`)
 
 ## Agreed economics (LOT-04 Timechain Mag)
 
