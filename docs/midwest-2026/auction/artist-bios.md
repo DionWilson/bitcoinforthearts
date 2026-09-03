@@ -57,9 +57,9 @@ Lady RedHorns is a contemporary artist exploring Bitcoin through expressive, ges
 - X: @LRedhorns
 - Lightning: ladyredhorns@coinos.io
 - At Midwest (Angels of Freedom, acrylic on canvas, 16 × 16 in):
-  - *The Transfer of Light* - silent auction LOT-02 (opening 1,000,000 sats / about $850)
-  - *The Bitcoin Keeper* - LOT-05 (sale format confirming: auction or fixed price)
-  - *The Temptation of Bitcoin Angel* - LOT-06 (sale format confirming: auction or fixed price)
+  - *The Transfer of Light* - silent auction LOT-02 · opening 1,000,000 sats (about $850)
+  - *The Bitcoin Keeper* - silent auction LOT-05 · opening 1,000,000 sats (about $850)
+  - *The Temptation of Bitcoin Angel* - silent auction LOT-06 · opening 1,000,000 sats (about $850)
 
 Artist statements (for lot pages / wall):
 

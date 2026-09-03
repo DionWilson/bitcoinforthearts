@@ -37,35 +37,30 @@ Artist plans to ship around mid-September after preparing frames. Shipping detai
 
 All three works are from the **Angels of Freedom** collection. Medium for all: **Acrylic on canvas** (acrylic paints, glossy acrylic varnish). Size for all: **16 × 16 in** (about 40 × 40 cm), unless Artist updates in writing.
 
-| # | Title | Lot / page | Event use (Artist initials one per work) | Price / opening |
-| --- | --- | --- | --- | --- |
-| 1 | The Transfer of Light | LOT-02 · `/midwest/auction/transfer-of-light` | [ ] Silent auction &nbsp;&nbsp; [ ] Fixed-price sale | If auction: opening **1,000,000 sats (about $850)** unless Artist sets otherwise below. If fixed: $________ / ________ sats |
-| 2 | The Bitcoin Keeper | LOT-05 · `/midwest/auction/bitcoin-keeper` | [ ] Silent auction &nbsp;&nbsp; [ ] Fixed-price sale | Opening / list: _______________ sats (informational USD: $________) |
-| 3 | The Temptation of Bitcoin Angel | LOT-06 · `/midwest/auction/temptation-of-bitcoin-angel` | [ ] Silent auction &nbsp;&nbsp; [ ] Fixed-price sale | Opening / list: _______________ sats (informational USD: $________) |
+Artist confirms all three Works are offered in the **peer-to-peer silent auction** at the same opening rate as *The Transfer of Light*.
 
-Artist may confirm Event use for Works #2 and #3 in writing (email sufficient) before the Event if blanks remain unsigned here.
+| # | Title | Lot / page | Event use | Opening bid |
+| --- | --- | --- | --- | --- |
+| 1 | The Transfer of Light | LOT-02 · `/midwest/auction/transfer-of-light` | Silent auction | **1,000,000 sats (about $850)** |
+| 2 | The Bitcoin Keeper | LOT-05 · `/midwest/auction/bitcoin-keeper` | Silent auction | **1,000,000 sats (about $850)** |
+| 3 | The Temptation of Bitcoin Angel | LOT-06 · `/midwest/auction/temptation-of-bitcoin-angel` | Silent auction | **1,000,000 sats (about $850)** |
+
+Minimum bid increment for each Work: **21,000 sats**.
 
 ---
 
 ## 3. Fixed-price sales
 
-Applies to any Work marked **Fixed-price sale** in Section 2.
-
-1. BFTA will offer that Work for sale at Bitcoin Arts Park at the listed price (USD and/or sats as stated). The accepted tender and Event-day conversion practice are posted by BFTA on-site.
-2. Of the cleared sale price, after any payment-processor fees actually incurred on that payment, Artist selects **one** split in Section 5 (same options as auction, applied to the sale price).
-3. If a fixed-price Work does not sell by the end of the Event, Artist reclaims it unless Artist initials donate-in-full for that Work under Section 6. Artist is responsible for return shipping / pickup cost and timing after the Event, unless the parties agree otherwise in writing.
-4. Buyer is responsible for packing, shipping, or hand-carry from the venue unless otherwise agreed in writing.
+Not used for these three Works. All three are silent auction only.
 
 ---
 
 ## 4. Silent auction
 
-Applies to any Work marked **Silent auction** in Section 2.
+Applies to all three Works in Section 2.
 
-1. The Work will be offered in a **peer-to-peer silent auction** at Bitcoin Arts Park during the Event.
-2. **Opening bid:** as stated in Section 2 for that Work, or as posted on the lot card / lot page before open of bidding. If blank, Artist initials one:
-   - [ ] _____ Artist sets the opening bid: _______________ sats (informational USD: $________)
-   - [ ] _____ Artist authorizes BFTA to set a reasonable opening bid for the Event
+1. Each Work will be offered in a **peer-to-peer silent auction** at Bitcoin Arts Park during the Event.
+2. **Opening bid for each Work:** **1,000,000 sats (about $850)**, as stated in Section 2, or as posted on the lot card / lot page before open of bidding.
 3. **Minimum bid increment:** **21,000 sats** (or as posted on-site).
 4. Bidding closes **Thursday, September 24, 2026 at 3:00 PM Eastern Time**, unless BFTA announces an earlier or later close on-site for operational reasons.
 5. The highest valid bid at close is the **hammer price**. The winning bidder must complete payment before the Work is released. Winner pickup is in Columbus only (no shipping by BFTA).
