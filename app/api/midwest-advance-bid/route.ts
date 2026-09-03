@@ -1,7 +1,7 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import { getAuctionLot, formatSats } from '@/lib/midwest-auction-lots';
+import { getAuctionLot, formatSats, getMinimumBidSats, formatOpeningBid } from '@/lib/midwest-auction-lots';
 import { getMongoDb } from '@/lib/mongodb';
 import { formatFrom, sendResendEmail } from '@/lib/resend';
 
@@ -263,17 +263,24 @@ export async function POST(req: NextRequest) {
       { status: 400 },
     );
   }
+  const minimumBidSats = getMinimumBidSats(lot);
+  if (minimumBidSats == null) {
+    return NextResponse.json(
+      { ok: false, error: 'Opening bid is not set for this lot yet.' },
+      { status: 400 },
+    );
+  }
   if (bidSats == null || bidSats <= 0) {
     return NextResponse.json(
       { ok: false, error: 'Please enter your bid in sats as a whole number.' },
       { status: 400 },
     );
   }
-  if (bidSats < lot.startingBidSats) {
+  if (bidSats < minimumBidSats) {
     return NextResponse.json(
       {
         ok: false,
-        error: `Bid must be at least the opening bid (${formatSats(lot.startingBidSats)}).`,
+        error: `Bid must be at least ${formatSats(minimumBidSats)}.`,
       },
       { status: 400 },
     );
@@ -282,7 +289,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         ok: false,
-        error: `Bid must be the opening bid or increase in steps of ${formatSats(lot.incrementSats)}.`,
+        error:
+          lot.startingBidSats === 0
+            ? `Bid must be ${formatSats(lot.incrementSats)} or increase in steps of ${formatSats(lot.incrementSats)}.`
+            : `Bid must be the opening bid or increase in steps of ${formatSats(lot.incrementSats)}.`,
       },
       { status: 400 },
     );
@@ -366,7 +376,7 @@ export async function POST(req: NextRequest) {
     `Lot: ${lot.lotCode} · ${lot.title}`,
     `Artist: ${lot.artistName}`,
     `Bid: ${formatSats(bidSats)}`,
-    `Opening: ${formatSats(lot.startingBidSats)}`,
+    `Opening: ${formatOpeningBid(lot)}`,
     `Name: ${name}`,
     `Email: ${email}`,
     phone ? `Phone: ${phone}` : null,

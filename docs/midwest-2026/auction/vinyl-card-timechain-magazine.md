@@ -3,7 +3,7 @@
 **Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card.  
 **QR:** `https://www.bitcoinforthearts.org/midwest/auction/timechain-magazine-genesis`
 
-Opening bid **350,000 sats (about $300)**; retail $269. 100% net proceeds to BFTA (full donation).
+Package confirmed with Ian / Asanoha. Opens at **0 sats**; minimum bid **21,000 sats**; increments **21,000 sats**. Retail **$269**. 100% net proceeds to BFTA.
 
 ---
 
@@ -14,22 +14,24 @@ LOT-04
 PEER-TO-PEER SILENT AUCTION
 
 Timechain Art Magazine
-Genesis Edition
+Gold Foil Genesis Edition
 
-Formerly Bitcoin Art Magazine
-Donated by Timechain / Asanoha
+Includes:
+• Gold Foil Genesis Edition /210
+  hand-signed and numbered by Asanoha
+• Genesis Edition Limited 1720
+• Silk Mandala Archival Serigraph Print /210
+  hand-signed and numbered by Asanoha
 
-Print magazine · single copy
 Retail $269
-
-Opening bid  350,000 sats
-(about $300)
-Minimum increase  21,000 sats
-
-Of the winning bid:
 100% → Bitcoin for the Arts (501c3)
 
+Opens at  0 sats
+Minimum bid  21,000 sats
+Minimum increase  21,000 sats
+
 Closes Thursday, Sept 24 · 3:00 PM ET
+Pickup in Columbus only.
 Sign the bid sheet to enter.
 
 Scan for full details →

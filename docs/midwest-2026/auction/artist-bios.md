@@ -52,11 +52,15 @@ Shipwreck Sean is an artist, tattooer, and creator of Bitsby, with over 16 years
 
 ## Timechain Art Magazine (sponsor / auction table)
 
-Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine. Founded by Asanoha. Featuring artists across the Bitcoin creative stack. Genesis Edition copy donated in full for the Bitcoin Arts Park silent auction.
+Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine. Founded by Asanoha. Featuring artists across the Bitcoin creative stack. Genesis package donated in full for the Bitcoin Arts Park silent auction.
 
 - Site: https://timechainartmagazine.com
 - Newsletter: http://timechainartmagazine.com/signup
 - Asanoha: https://x.com/asanoha_gold (@asanoha_gold)
 - Magazine X: @TimechainArtMag
 - Asanoha site: https://artistsovereignremnant.com
-- At Midwest: Genesis Edition - silent auction LOT-04 (100% BFTA); Bitcoin Arts Park sponsor
+- At Midwest LOT-04 (100% BFTA; Bitcoin Arts Park sponsor):
+  - Gold Foil Genesis Edition /210 hand-signed and numbered by Asanoha
+  - Genesis Edition Limited 1720
+  - Silk Mandala Archival Serigraph Print /210 hand-signed and numbered by Asanoha
+  - Retail $269 · opens at 0 sats · minimum bid 21,000 sats · increments 21,000 sats

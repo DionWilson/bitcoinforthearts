@@ -18,6 +18,10 @@ function formatSats(amount: number): string {
   return `${amount.toLocaleString('en-US')} sats`;
 }
 
+function minimumBidFromOpening(openingBidSats: number, incrementSats: number) {
+  return openingBidSats === 0 ? incrementSats : openingBidSats;
+}
+
 function isEmail(value: string) {
   const v = value.trim();
   if (!v) return false;
@@ -49,10 +53,11 @@ export default function AdvanceBidForm({
   incrementSats,
   compact = false,
 }: Props) {
+  const minimumBidSats = minimumBidFromOpening(openingBidSats, incrementSats);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [bidSats, setBidSats] = useState(String(openingBidSats));
+  const [bidSats, setBidSats] = useState(String(minimumBidSats));
   const [willAttend, setWillAttend] = useState(false);
   const [notes, setNotes] = useState('');
   const [hp, setHp] = useState('');
@@ -66,10 +71,10 @@ export default function AdvanceBidForm({
       name.trim().length > 0 &&
       isEmail(email) &&
       bid != null &&
-      bid >= openingBidSats &&
+      bid >= minimumBidSats &&
       willAttend
     );
-  }, [name, email, bidSats, openingBidSats, willAttend, status]);
+  }, [name, email, bidSats, minimumBidSats, willAttend, status]);
 
   function resetIfNeeded() {
     if (status !== 'idle') setStatus('idle');
@@ -98,15 +103,17 @@ export default function AdvanceBidForm({
       setMessage('Please enter your bid in sats as a whole number.');
       return;
     }
-    if (bid < openingBidSats) {
+    if (bid < minimumBidSats) {
       setStatus('error');
-      setMessage(`Bid must be at least ${formatSats(openingBidSats)}.`);
+      setMessage(`Bid must be at least ${formatSats(minimumBidSats)}.`);
       return;
     }
     if ((bid - openingBidSats) % incrementSats !== 0) {
       setStatus('error');
       setMessage(
-        `Bid must be the opening bid or increase in steps of ${formatSats(incrementSats)}.`,
+        openingBidSats === 0
+          ? `Bid must be ${formatSats(incrementSats)} or increase in steps of ${formatSats(incrementSats)}.`
+          : `Bid must be the opening bid or increase in steps of ${formatSats(incrementSats)}.`,
       );
       return;
     }
@@ -257,12 +264,13 @@ export default function AdvanceBidForm({
             setBidSats(e.target.value);
             resetIfNeeded();
           }}
-          placeholder={String(openingBidSats)}
+          placeholder={String(minimumBidSats)}
           className={inputClass}
         />
         <p className="mt-1.5 text-xs text-black/55">
-          Opening {formatSats(openingBidSats)}. Increase in steps of{' '}
-          {formatSats(incrementSats)}.
+          {openingBidSats === 0
+            ? `Opens at 0 sats. Minimum bid ${formatSats(minimumBidSats)}. Then increase in steps of ${formatSats(incrementSats)}.`
+            : `Opening ${formatSats(openingBidSats)}. Increase in steps of ${formatSats(incrementSats)}.`}
         </p>
       </div>
 

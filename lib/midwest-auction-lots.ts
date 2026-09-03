@@ -263,11 +263,12 @@ export const midwestAuctionLots: AuctionLot[] = [
   {
     slug: 'timechain-magazine-genesis',
     lotCode: 'LOT-04',
-    title: 'Timechain Art Magazine - Genesis Edition',
-    subtitle: 'Formerly Bitcoin Art Magazine · donated by Timechain / Asanoha',
+    title: 'Timechain Art Magazine - Gold Foil Genesis Edition',
+    subtitle:
+      'Genesis Edition Limited 1720 · with Silk Mandala Archival Serigraph · donated by Timechain / Asanoha',
     artistName: 'Timechain Art Magazine',
     artistBio:
-      'Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine - featuring artists across the Bitcoin creative stack. Founded by Asanoha (@asanoha_gold). Sponsor of Bitcoin Arts Park; this Genesis Edition copy is fully donated to BFTA’s silent auction.',
+      'Timechain Art Magazine (formerly Bitcoin Art Magazine) is the world’s first Bitcoin art magazine - featuring artists across the Bitcoin creative stack. Founded by Asanoha (@asanoha_gold). Sponsor of Bitcoin Arts Park; this Genesis package is fully donated to BFTA’s silent auction.',
     artistWebsite: 'https://timechainartmagazine.com',
     artistSocial: '@TimechainArtMag · Asanoha @asanoha_gold',
     artistLinks: [
@@ -288,15 +289,16 @@ export const midwestAuctionLots: AuctionLot[] = [
       },
     ],
     year: 'Genesis edition',
-    medium: 'Print magazine (Genesis Edition)',
-    dimensions: 'Single donated copy',
+    medium:
+      'Gold Foil Genesis Edition /210 hand-signed and numbered by Asanoha; Genesis Edition Limited 1720; Silk Mandala Archival Serigraph Print /210 hand-signed and numbered by Asanoha',
+    dimensions: 'Donated Genesis package (magazine + serigraph)',
     imageSrc: '/auction/timechain-magazine-genesis.jpg',
     imageAlt: 'Timechain Art Magazine Genesis Edition cover (formerly Bitcoin Art Magazine)',
     description:
-      'A donated Genesis Edition of Timechain Art Magazine (the world’s first Bitcoin art magazine; formerly Bitcoin Art Magazine) for the Bitcoin Arts Park silent auction table. Retail $269; opening bid 350,000 sats (about $300). 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
-    startingBidUsd: 300,
-    startingBidSats: 350000,
-    priceUnit: 'usd',
+      'Donated Timechain Art Magazine Genesis package for the Bitcoin Arts Park silent auction table: Gold Foil Genesis Edition /210 hand-signed and numbered by Asanoha; Genesis Edition Limited 1720; and Silk Mandala Archival Serigraph Print /210 hand-signed and numbered by Asanoha. Retail $269. Bidding opens at 0 sats; minimum bid 21,000 sats; then increases in steps of 21,000 sats. 100% of net proceeds support Bitcoin for the Arts. Watch a walkthrough of what’s inside via @TimechainArtMag on X.',
+    startingBidUsd: null,
+    startingBidSats: 0,
+    priceUnit: 'sats',
     incrementSats: EVENT.incrementSats,
     bftaShare: '100%',
     artistShare: '0%',
@@ -326,7 +328,17 @@ export function formatSats(amount: number): string {
   return `${amount.toLocaleString('en-US')} sats`;
 }
 
+/** First acceptable bid. When opening is 0, first bid must be one increment. */
+export function getMinimumBidSats(lot: AuctionLot): number | null {
+  if (lot.startingBidSats == null) return null;
+  if (lot.startingBidSats === 0) return lot.incrementSats;
+  return lot.startingBidSats;
+}
+
 export function formatOpeningBid(lot: AuctionLot): string {
+  if (lot.startingBidSats === 0) {
+    return `Opens at 0 sats · minimum bid ${formatSats(lot.incrementSats)}`;
+  }
   if (lot.startingBidSats != null && lot.startingBidUsd != null) {
     return `${formatSats(lot.startingBidSats)} (about ${formatUsd(lot.startingBidUsd)})`;
   }
