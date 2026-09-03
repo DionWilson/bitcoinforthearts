@@ -1,8 +1,39 @@
-# Midwest visual artist bios (Bitcoin Arts Park)
+# Midwest artist bios (Bitcoin Arts Park)
 
 Short bios for wall cards, QR lot pages, and newsletter. Keep house style: no em/en dashes as punctuation.
 
 ---
+
+# Performing artists (Secondary Stage / film)
+
+## Ainsley Costello
+
+Nashville singer-songwriter, musician, and band leader. Rock built for a live room. One of the youngest artists building a career on a Bitcoin standard. Opens Bitcoin Arts Park on Wednesday, September 23 at noon on the Expo Stage.
+
+- Lightning: ainsleycostello@epochwallet.xyz
+- At Midwest: Wednesday, September 23 · 12PM Expo Stage
+
+---
+
+## Rock 'n' Roll Andy Breakheart
+
+Ann Arbor one-man band. Live-looping, foot-stomping rock you have to see to understand. Opens Bitcoin Arts Park on Thursday, September 24 at noon on the Expo Stage.
+
+- Lightning: witheredsmoke496@getalby.com
+- At Midwest: Thursday, September 24 · 12PM Expo Stage
+
+---
+
+## Nadia Vaeh
+
+Award-winning recording artist and filmmaker. After more than a decade as an independent musician, she turned the camera on the creative life itself. At Bitcoin Arts Park she brings a teaser, talk, and Q&A around the indie feature *One Poop Scoop Away*.
+
+- Lightning: nadiavaeh@epochwallet.xyz
+- At Midwest: film teaser, talk, Q&A; booth support / Summit footage
+
+---
+
+# Visual artists (gallery / silent auction)
 
 ## CA Danner
 
