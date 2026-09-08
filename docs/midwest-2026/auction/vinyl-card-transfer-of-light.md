@@ -4,7 +4,7 @@
 All three: acrylic on canvas · **16 × 16 in** · Angels of Freedom series.  
 Lightning tip (wall bio): `ladyredhorns@coinos.io`
 
-Sale format for LOT-05 / LOT-06 confirming with artist (silent auction or fixed price). LOT-02 opening set.
+All three peer-to-peer silent auction · opening **1,000,000 sats (about $850)** · increments **21,000 sats**.
 
 ---
 
@@ -50,21 +50,28 @@ bitcoinforthearts.org/midwest/auction/transfer-of-light
 
 ```
 LOT-05
-LADY REDHORNS · ANGELS OF FREEDOM
+PEER-TO-PEER SILENT AUCTION
 
 The Bitcoin Keeper
 
+Lady RedHorns
 Acrylic on canvas · 16 × 16 in
+Angels of Freedom
 
 This artwork explores Bitcoin not as a technology,
 but as a symbol of hope, inner freedom, and
 unwavering conviction. The angel becomes a guardian
 of values that transcend material measure.
 
-Sale format / opening or list price: confirming
-[ ] Silent auction   [ ] Fixed-price sale
-Open / list: _______________ sats (about $____)
-If auction: +21,000 sats · closes Thu 3PM ET
+Opening bid  1,000,000 sats
+(about $850 · same rate as Transfer of Light)
+Minimum increase  21,000 sats
+
+Of the winning bid:
+________ → Bitcoin for the Arts (501c3)
+________ → Lady RedHorns
+
+Closes Thursday, Sept 24 · 3:00 PM ET
 Pickup in Columbus only.
 
 Scan for full details →
@@ -80,20 +87,27 @@ bitcoinforthearts.org/midwest/auction/bitcoin-keeper
 
 ```
 LOT-06
-LADY REDHORNS · ANGELS OF FREEDOM
+PEER-TO-PEER SILENT AUCTION
 
 The Temptation of Bitcoin Angel
 
+Lady RedHorns
 Acrylic on canvas · 16 × 16 in
+Angels of Freedom
 
 The Fiat Demon offers a tempting bargain to the
 Bitcoin Angel, but the Angel turns away, drawn to
 the Bitcoin symbol on its wing.
 
-Sale format / opening or list price: confirming
-[ ] Silent auction   [ ] Fixed-price sale
-Open / list: _______________ sats (about $____)
-If auction: +21,000 sats · closes Thu 3PM ET
+Opening bid  1,000,000 sats
+(about $850 · same rate as Transfer of Light)
+Minimum increase  21,000 sats
+
+Of the winning bid:
+________ → Bitcoin for the Arts (501c3)
+________ → Lady RedHorns
+
+Closes Thursday, Sept 24 · 3:00 PM ET
 Pickup in Columbus only.
 
 Scan for full details →

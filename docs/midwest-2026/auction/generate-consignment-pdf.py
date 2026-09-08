@@ -517,53 +517,47 @@ def build_lady_redhorns():
         Paragraph(
             "All three works are from the <b>Angels of Freedom</b> collection. Medium for all: <b>Acrylic on canvas</b>. "
             "Size for all: <b>16 x 16 in</b> (about 40 x 40 cm), unless Artist updates in writing. "
-            "For each work, Artist initials <b>Silent auction</b> or <b>Fixed-price sale</b>.",
+            "Artist confirms all three Works are offered in the <b>peer-to-peer silent auction</b> at the same opening rate.",
             s["body"],
         )
     )
     story.append(
         Paragraph(
-            "• <b>#1 The Transfer of Light</b> (LOT-02) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
-            "If auction: opening <b>1,000,000 sats (about $850)</b> unless Artist sets otherwise. "
-            "If fixed: $________ / ________ sats",
+            "• <b>#1 The Transfer of Light</b> (LOT-02) — Silent auction — opening <b>1,000,000 sats (about $850)</b>",
             s["bullet"],
         )
     )
     story.append(
         Paragraph(
-            "• <b>#2 The Bitcoin Keeper</b> (LOT-05) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
-            "Opening / list: _______________ sats (informational USD: $________)",
+            "• <b>#2 The Bitcoin Keeper</b> (LOT-05) — Silent auction — opening <b>1,000,000 sats (about $850)</b>",
             s["bullet"],
         )
     )
     story.append(
         Paragraph(
-            "• <b>#3 The Temptation of Bitcoin Angel</b> (LOT-06) — ☐ Silent auction &nbsp; ☐ Fixed-price sale — "
-            "Opening / list: _______________ sats (informational USD: $________)",
+            "• <b>#3 The Temptation of Bitcoin Angel</b> (LOT-06) — Silent auction — opening <b>1,000,000 sats (about $850)</b>",
             s["bullet"],
         )
     )
     story.append(
         Paragraph(
-            "Artist may confirm Event use for Works #2 and #3 in writing (email sufficient) before the Event if blanks remain.",
+            "Minimum bid increment for each Work: <b>21,000 sats</b>.",
             s["note"],
         )
     )
 
     story.append(Paragraph("3. Fixed-price sales", s["h"]))
-    for line in [
-        "Applies to any Work marked <b>Fixed-price sale</b> in Section 2.",
-        "BFTA will offer that Work for sale at Bitcoin Arts Park at the listed price (USD and/or sats as stated).",
-        "Of the cleared sale price, after processor fees, Artist’s Section 5 split applies.",
-        "If a fixed-price Work does not sell by end of Event, Artist reclaims it unless donate-in-full is selected in Section 6.",
-        "Buyer is responsible for packing, shipping, or hand-carry from the venue unless otherwise agreed in writing.",
-    ]:
-        story.append(Paragraph(f"• {line}", s["bullet"]))
+    story.append(
+        Paragraph(
+            "Not used for these three Works. All three are silent auction only.",
+            s["body"],
+        )
+    )
 
     story.append(Paragraph("4. Silent auction", s["h"]))
     for line in [
-        "Applies to any Work marked <b>Silent auction</b> in Section 2.",
-        "Peer-to-peer silent auction at Bitcoin Arts Park. Opening bid as stated in Section 2 or posted on the lot page.",
+        "Applies to all three Works in Section 2.",
+        "Peer-to-peer silent auction at Bitcoin Arts Park. <b>Opening bid for each Work: 1,000,000 sats (about $850)</b>.",
         "<b>Minimum bid increment:</b> <b>21,000 sats</b> (or as posted on-site).",
         "Bidding closes <b>Thursday, September 24, 2026 at 3:00 PM Eastern Time</b>, unless BFTA announces otherwise on-site.",
         "Highest valid bid at close is the <b>hammer price</b>. Winner pickup in Columbus only (no shipping by BFTA).",
@@ -574,7 +568,7 @@ def build_lady_redhorns():
     story.append(Paragraph("5. Proceeds (Artist initials one)", s["h"]))
     story.append(
         Paragraph(
-            "Of the hammer price or cleared fixed sale price, after any payment-processor fees actually incurred:",
+            "Of the hammer price, after any payment-processor fees actually incurred:",
             s["body"],
         )
     )
