@@ -2,31 +2,33 @@
 
 Working packet for Dion Wilson. House style: no em/en dashes as punctuation.
 
-**Status:** Draft for Dion to personalize (mobile number, any time corrections after Boost schedule lock).
+**Status:** Draft for Dion to personalize (mobile number; Short North performer names when locked; Boost schedule later).
 
 ---
 
 ## 1. Reply to Andrew Tilmann (copy/paste, then edit mobile)
 
 **To:** Andrew Tilmann / andrew@mwbitcoin.com  
-**Cc:** Stacey Boyle (btcvegas@proton.me); Kenneth Burris (info@kennethburrisstudio.com) optional once panel prep starts  
-**Subject:** Re: MBS speaker itinerary: Dion Wilson confirmations + Expo Stage performance hosting
+**Cc:** Stacey Boyle (btcvegas@proton.me)  
+**Subject:** Re: MBS speaker itinerary: Dion Wilson confirmations + Expo Stage intro / set-up
 
 Hi Andrew,
 
 Thank you for the clear packet. Saving this email and reviewing every assignment.
 
-**Confirmations and one correction request**
+**Confirmations**
 
-1. **Panel (confirmed).** Thursday, September 24, 1:50–2:20 PM ET, Expo Stage, *Does Bitcoin Need Art to Last?* Role: Panelist. That works. I will review Kenneth’s proposed plan, bring concrete examples, and reply to him separately on any question tweaks. No slides for this panel unless Kenneth asks otherwise.
+1. **Wednesday, September 23 | 12:00–12:10 PM ET | Expo Stage | Dion Intro / Set-up.** Confirmed. My spoken open is about five minutes, give or take, and we will use the full **10-minute** window. Roughly half of that slot overlaps with onstage equipment handoff and set (Steven, Julie, and James) while I speak. I will keep all setup and remarks inside 12:00–12:10, then hand to **Ainsley Costello** for the performance that follows, with **Short North Stage** (professional cast / *Sweeney Todd* excerpt) sharing the day. No slides. Coordinating cues with Stacey Boyle.
 
-2. **Wednesday Expo Stage (needs clarification / correction).** Your Session 1 lists me only as host for a **10-minute** “Dion Intro / Set-up” (12:00–12:10 PM). Bitcoin for the Arts is opening **Bitcoin Arts Park** on the Expo Stage at noon with a live performance by **Ainsley Costello**, plus **Short North Stage**, while our booth team finishes stage set. My spoken open is about five minutes, then I hand to Ainsley for the performance, then a short grant moment and audience invite. Please confirm the **full Expo Stage performance block** for Wednesday (start, hard stop, and whether Short North shares that block or has a separate cue). I will keep my spoken intro and handoff inside whatever window you assign, and coordinate cues with Stacey Boyle.
+2. **Thursday, September 24 | noon Expo Stage (same intro / set-up pattern).** Your packet does not yet list a Thursday noon host block the way Wednesday is listed. We are planning the **exact same 10-minute intro / set-up**: I open while crew hands over equipment, then we swap artists. Thursday headliner: **Rock 'n' Roll Andy Breakheart**. Thursday Short North: **student / high school internship performance** (not the Day 1 *Sweeney Todd* excerpt). Please add me as host for that Thursday noon intro / set-up on V4 when you can, same Expo Stage and stage manager. Separately I remain confirmed for the **1:50–2:20 PM** panel.
 
-3. **Thursday Expo Stage noon (missing from my itinerary).** We also host **Rock 'n' Roll Andy Breakheart** at **12:00 PM Expo Stage on Thursday, September 24**, again with **Short North Stage** sharing the day. Please add me as host / moderator for that lunch-hour performance block the same way as Wednesday, or send the V4 assignment if it lives under another name. Separately I remain on the 1:50 PM panel that afternoon.
+3. **Panel (confirmed).** Thursday, September 24, 1:50–2:20 PM ET, Expo Stage, *Does Bitcoin Need Art to Last?* Role: Panelist. Works for me. I will review Kenneth’s plan, bring concrete examples, and follow up with him on any tweaks. No slides from me unless he asks otherwise.
 
-4. **Travel / accessibility / dietary.** No conflicts or accessibility needs from me at this time. I will reply if that changes. Credential pickup Tuesday, September 22, A110–A114 is on my plan. VIP Night same evening at Parlay.
+4. **Short North performer names.** Understood that you need names for the program. I am still collecting the **Day 2 Short North student performer names** and will send them as soon as I have the final list. Day 1 Short North names: [INSERT DAY 1 NAMES WHEN READY, OR “sending shortly”].
 
-5. **Slides.** I will **not** use PowerPoint for the Expo Stage intro / set-up slots. Spoken remarks + live handoff only. If the panel later needs one shared slide deck from Kenneth, I will follow his lead by September 16.
+5. **Travel / accessibility / dietary.** No conflicts or accessibility needs from me at this time. Credential pickup Tuesday, September 22, A110–A114 is on my plan. VIP Night same evening at Parlay.
+
+6. **Slides.** I will **not** use PowerPoint for the Expo Stage intro / set-up slots. Spoken remarks + live handoff only.
 
 **Preferred introduction / pronunciation**
 
@@ -47,7 +49,7 @@ Best email for stage packets: dionwilson@bitcoinforthearts.org
 
 **Stage contacts I will use**
 
-- Expo Stage manager: Stacey Boyle, btcvegas@proton.me (will request a 20-minute pre-call / day-of report time for both noon blocks once times are confirmed)  
+- Expo Stage manager: Stacey Boyle, btcvegas@proton.me (will report ~20 minutes before each noon intro / set-up)  
 - Panel moderator: Kenneth Burris, info@kennethburrisstudio.com  
 - Ainsley Costello (via Julie): julie@phantompowermusic.io  
 
@@ -62,42 +64,38 @@ dionwilson@bitcoinforthearts.org
 
 ---
 
-## 2. What Andrew’s email does vs what we need
+## 2. Schedule model (locked for our planning)
 
-| Item | In Andrew’s email | Our plan |
-|------|-------------------|----------|
-| Wed 12:00 Expo | 10 min “Intro / Set-up” only | ~5 min Dion open while Steven / Julie / James set, then Ainsley set, grant moment, Q&A invite, Day 2 invite |
-| Wed Short North | Not listed under Dion | Share day with Ainsley; introduce them |
-| Thu 12:00 Expo Andy + Short North | **Not in itinerary** | Same host pattern as Wednesday |
-| Thu 1:50 panel | Listed; Dion panelist | Confirmed; Ainsley also on panel |
-| Boost schedule / booth Ainsley storytelling | Not in this email | Lock after this packet; invite from stage without a hard clock until confirmed |
+| Slot | What we assume | Artists |
+|------|----------------|---------|
+| Wed 12:00–12:10 | Dion intro / set-up (full 10 min). ~5 min speech overlapping ~5 min equipment handoff. Speech may run a little over 5 min but stays inside the 10. | Then **Ainsley Costello** + **Short North** professional *Sweeney Todd* excerpt |
+| Thu noon ~10 min | **Same structure** even if Andrew has not issued the Thursday breakdown yet | Then **Rock 'n' Roll Andy Breakheart** + **Short North** student performance |
+| Thu 1:50–2:20 | Panel *Does Bitcoin Need Art to Last?* | Dion panelist; Ainsley on panel |
 
-**Action:** Send the reply above before building AV assumptions. Do not treat 12:00–12:10 as the whole show unless Andrew confirms the performance continues under a different assignment.
+**Short North gratitude (both days, fuller on Day 2):** They are local artists who support artists. They are not Bitcoin conference regulars or outspoken Bitcoin advocates. They volunteered and extended themselves for this community. We are grateful and we make space for that on the mic.
+
+**Day 2 bridge (between Andy and Short North):** Mention Short North’s own **Sweeney Todd** production in the Columbus area that weekend. Our stage invitation is a return favor for their participation. Invite the room to support their show.
 
 ---
 
 ## 3. Day 1 run of show (Wednesday, Sept 23) — Expo Stage
 
-**Working timing** (adjust after Andrew/Stacey confirm the hard stop)
-
 | Clock | Who | What |
 |-------|-----|------|
 | ~11:40 | Dion + Stacey | Stage manager check-in (20 min before) |
-| 12:00 | Dion | Open: who I am, why BFTA, why culture here, what Bitcoin Arts Park is (~4–5 min) while Steven, Julie, James finish set |
-| ~12:05 | Dion | Introduce Short North briefly if they open or share the top of the block; else hold intro for their cue |
-| ~12:05–12:06 | Dion | Introduce Ainsley Costello; clear stage for performance |
-| Performance | Ainsley | Set |
-| After last song | Dion + Ainsley | Return; **$2,500 Bitcoin grant moment**; photo; thank you |
-| Close | Dion | Invite Q&A at Bitcoin Arts Park booth; invite Thursday noon (Andy + Short North); invite Ainsley’s Nashville-style storytelling at the booth (time TBD after Boost schedule) |
+| 12:00–12:10 | Dion + crew | **Full 10-minute intro / set-up.** Dion speaks (~5 min, can flex) while Steven, Julie, and James hand over equipment / finish set (~5 min overlap). Ends with Ainsley intro (and Short North cue if they go first or share the top). |
+| After 12:10 | Ainsley + Short North | Performance block (per MBS / Stacey cues) |
+| After Ainsley | Dion + Ainsley | **$2,500 Bitcoin grant moment**; photo; thank you |
+| Close | Dion | Booth Q&A invite; Thursday noon (Andy + Short North students); Ainsley booth storytelling (time TBD after Boost schedule) |
 | Hard stop | All | Hand back to Stacey |
 
-**AV / no slides.** Handheld or lav. Confirm playback if Ainsley needs tracks. Confirm Lightning tip QR visibility from stage or booth.
+**AV / no slides.** Handheld or lav. Confirm playback if Ainsley needs tracks. Confirm Lightning tip QR from stage or booth.
 
 ---
 
-## 4. Day 1 script — Dion open (~5 minutes)
+## 4. Day 1 script — Dion open (inside the 10-minute set-up)
 
-Speak at conversation pace. Cut lines in brackets if short on time.
+Speak at conversation pace. You have the whole 10 minutes with crew working under / beside you. Aim ~5 minutes of speech; flex if handoff needs more cover. Cut bracketed lines only if you are tight on the hard stop.
 
 ---
 
@@ -111,7 +109,7 @@ That is why it matters that we are here. Midwest Bitcoin Summit is not only char
 
 Here is what we brought you.
 
-On this stage: live performance, starting today with a voice that already proved value-for-value can work for a working musician.
+On this stage: live performance, starting today with a voice that already proved value-for-value can work for a working musician, and with Columbus theater artists who said yes to this room.
 
 In our footprint: a **film cinema** with Bitcoin documentaries and trailers, including Dirty Coin, Finding Home, Hummingbird, Bigger Than Bitcoin, Till My Last Breath, and a teaser conversation around One Poop Scoop Away. Filmmakers and creators can meet us at the booth, including IndeeHub as a value-for-value resource.
 
@@ -123,10 +121,9 @@ Merchandise, donations, and a team that will talk to you like humans, not like a
 
 We are not here to decorate Bitcoin. We are here to prove that sound money can fund a living culture. If Bitcoin is going to last, it needs more than price. It needs songs, films, paintings, theater, and the people who make them. That is how you get a renaissance: artists paid fairly, audiences close to the work, and rails nobody can freeze because the art got too honest.
 
-While I have been talking, our crew has been finishing this stage. Thank you Steven, Julie, and James.
+While I have been talking, our crew has been handing over this stage. Thank you Steven, Julie, and James.
 
-[If Short North opens or shares the top:]  
-Also with us today from Columbus: **Short North Stage**, bringing professional theater into a Bitcoin room. Please give them love when they take this stage.
+Before I bring out today’s music, I want to thank **Short North Stage**. These are Columbus artists who support artists. They are not here because they live on Bitcoin Twitter. They are not outspoken Bitcoin advocates. They graciously volunteered and extended themselves to help us bring real culture into this hall, and we are deeply grateful. Please give them love when they take this stage with their *Sweeney Todd* work.
 
 And now the reason this park opens with music.
 
@@ -146,9 +143,9 @@ Bitcoin for the Arts exists to move money to working artists. Today we are proud
 
 If you felt that set, do not let it end on the stage. Come find us at **Bitcoin Arts Park** on the Expo floor. Ask questions. Tip in Lightning if you can. Meet the films, the gallery, and the team.
 
-**Tomorrow at noon on this Expo Stage:** Rock 'n' Roll Andy Breakheart, with Short North Stage again. Come back.
+**Tomorrow at noon on this Expo Stage:** same setup. Rock 'n' Roll Andy Breakheart, and Short North Stage returns with their student performers. Come back.
 
-**And later at our booth:** Ainsley will do a Nashville-style storytelling session. We will post the exact time at the booth once our Boost schedule locks. If you want the story behind the songs, that is where to find her.
+**And at our booth:** Ainsley will do a Nashville-style storytelling session. We will post the exact time at the booth once our Boost schedule locks. If you want the story behind the songs, that is where to find her.
 
 I am Dion Wilson. This is Bitcoin for the Arts. Enjoy the Summit. We will see you in the Park.
 
@@ -158,23 +155,21 @@ I am Dion Wilson. This is Bitcoin for the Arts. Enjoy the Summit. We will see yo
 
 ## 5. Day 2 run of show (Thursday, Sept 24) — Expo Stage noon
 
-Same host pattern. Swap artist. Keep the Arts Park summary shorter if the room already heard Day 1.
+**Assume the same 10-minute intro / set-up as Wednesday**, even if Andrew has not issued the Thursday breakdown yet. Swap headliner and Short North program.
 
 | Clock | Who | What |
 |-------|-----|------|
 | ~11:40 | Dion + Stacey | Stage manager check-in |
-| 12:00 | Dion | Shorter open (~3 min): welcome back, what BFTA is, what is live in the Park today |
-| | Dion | Introduce Short North (high school internship singers/performers) on their cue |
-| | Dion | Introduce Rock 'n' Roll Andy Breakheart |
-| Performance | Andy | Set |
-| Close | Dion | Thanks; invite booth; remind panel *Does Bitcoin Need Art to Last?* at **1:50 PM** this Expo Stage with Ainsley, Kenneth Burris, Dr. Michael J. Kelly, Kyle Knight |
+| Noon + 10 min | Dion + crew | Same overlapping intro / set-up. Open BFTA + Park (can be slightly shorter than Day 1). Introduce **Rock 'n' Roll Andy Breakheart**. |
+| After intro | Andy | Set |
+| Between Andy and Short North | Dion | **Short North gratitude + weekend *Sweeney Todd* production shout-out** (return favor). Introduce student performers by name when list is locked. |
+| | Short North students | Performance |
+| Close | Dion | Booth invite; remind **1:50 PM** panel on this stage |
 | Hard stop | All | Hand to Stacey |
-
-**Note:** Confirm with Andrew that Dion is listed as host for this block. Confirm whether Lindey Magee reading is same stage or booth/elsewhere before promising it from the mic.
 
 ---
 
-## 6. Day 2 script — Dion open (~3 minutes)
+## 6. Day 2 script — Dion open (same 10-minute set-up model)
 
 ---
 
@@ -182,20 +177,31 @@ Welcome back to the Expo Stage. Dion Wilson, Bitcoin for the Arts.
 
 Yesterday we opened Bitcoin Arts Park: film cinema, Lightning gallery auction, Living Room wallet help, and live culture on this stage. If you have not walked the footprint yet, do it today. Tip an artist. Bid on a work. Watch a film. Ask us anything.
 
-Bitcoin is better funding rails for artists because value can move at the speed of the feeling. No platform taking the middle forever. No waiting on a committee to decide your work is acceptable. Peer to peer. Global. Immediate.
+I started Bitcoin for the Arts to put better funding rails under working artists. Peer to peer. Lightning in the room. Grants that move. No waiting on a committee to decide your work is acceptable. If Bitcoin is going to last, it needs culture, not only price. That is what this Park is here to prove.
 
-Today’s music is a one-person storm.
+While I am talking, our crew is handing over the stage again. Thank you team.
 
-[Short North cue:]  
-Please welcome **Short North Stage** and the high school internship performers sharing this day with us.
-
-And now: **Rock 'n' Roll Andy Breakheart**. Ann Arbor. One-man band. Live looping, foot-stomping rock you have to see to understand. Please welcome Andy.
+Today’s music is a one-person storm. **Rock 'n' Roll Andy Breakheart**. Ann Arbor. One-man band. Live looping, foot-stomping rock you have to see to understand. Please welcome Andy.
 
 ---
 
-### After Andy’s set — close
+### Between Andy Breakheart and Short North (required beat)
 
 Andy Breakheart. Give it up.
+
+Before we bring Short North back, I want you to hear why they matter in this room.
+
+**Short North Stage** is a Columbus company. They are artists who support artists. They are not Bitcoin conference regulars. They are not outspoken about Bitcoin. And still they graciously volunteered and extended themselves to help Bitcoin for the Arts bring live theater into this Summit. That is rare. We are grateful, and we want this audience to honor that.
+
+This weekend, Short North is also doing their own production of **Sweeney Todd** here in the Columbus area. Them being on this stage with us is part of a return favor for that partnership and for showing up for another organization’s artists. If you can support their production while you are in town, please do. Artists funding artists. That is the point.
+
+Today Short North brings their **student / high school internship performers**. [INSERT NAMES WHEN LOCKED.]
+
+Please welcome Short North Stage.
+
+---
+
+### After Short North — close
 
 Bitcoin Arts Park is open the rest of the day. Come through the booth.
 
@@ -228,7 +234,7 @@ Thank you Columbus. Handing back to the stage.
 
 **Talking points (≤90 sec):**
 - If the work only flatters holders, it is marketing. If it tells a human truth (sovereignty, labor, exile, joy, craft), non-holders can still feel it.
-- Example: a dancer’s body, a song about work, a painting of light. Bitcoin can be the rail underneath without being the only subject on the surface.
+- Live example from this Summit: Short North Stage. Theater artists who are not Bitcoin advocates, in a Bitcoin hall, because artists support artists. That is culture traveling farther than the chart.
 - Invite people into the feeling first; the wallet can come second.
 
 ### Closing round (≤30 sec)
@@ -239,7 +245,8 @@ Hope they leave knowing: Bitcoin without culture is a tool. Bitcoin with artists
 1. Ainsley / value-for-value live (audience tips, career on rails not platform rent).  
 2. Film cinema slate at the Park (especially *Dirty Coin* or *Finding Home*).  
 3. Silent auction / Lightning as patronage in public.  
-4. Your own path: dancer → funding gap → BFTA as 501(c)(3).
+4. Short North: non-Bitcoin artists volunteering culture into a Bitcoin room.  
+5. Your own path: dancer → funding gap → BFTA as 501(c)(3).
 
 ### Reserve if asked
 - Support beyond “donate exposure”: pay stipends, tip in the room, buy work, grant in Bitcoin, hire artists for conferences.  
@@ -247,19 +254,23 @@ Hope they leave knowing: Bitcoin without culture is a tool. Bitcoin with artists
 
 ---
 
-## 8. Still to lock after this task (Boost / booth)
+## 8. Still to lock
 
-- Exact time for Ainsley’s Day 2 **Nashville-style storytelling** at the BFTA booth  
+- Dion mobile number in the Andrew reply  
+- **Day 1 Short North performer names** (send to Andrew)  
+- **Day 2 Short North student performer names** (send to Andrew; insert in Day 2 script)  
+- Exact venue / ticket line for Short North’s weekend *Sweeney Todd* (so the mic invite is accurate)  
+- Exact time for Ainsley’s Day 2 booth storytelling (after Boost schedule)  
 - Full Boost schedule  
-- Whether Short North goes before/after headliner each day  
-- Grant handoff logistics (who holds the phone/QR, photo person, amount confirmation on chain or Lightning)  
-- Confirm Andy’s preferred stage name: **Rock 'n' Roll Andy Breakheart** (public) vs Andy Burghardt (legal/contact)
+- Order: Short North before or after headliner on Day 1 (Day 2 script assumes Andy then Short North)  
+- Grant handoff logistics (phone/QR, photo, on-chain vs Lightning)  
+- Confirm Andy’s preferred stage name: **Rock 'n' Roll Andy Breakheart**
 
 ---
 
 ## 9. One-page cheat card (print)
 
-**Wed 12:00 Expo** — Open Park → Short North (if cued) → Ainsley → $2,500 BTC grant → booth Q&A → invite Thu noon + booth storytelling (time TBD)  
-**Thu 12:00 Expo** — Short open → Short North → Andy → invite booth → invite **1:50 panel**  
+**Wed 12:00–12:10 Expo** — Full 10 min intro / set-up (speech + equipment overlap) → thank Short North → Ainsley → later: $2,500 BTC grant → booth Q&A → invite Thu noon + booth storytelling (TBD)  
+**Thu noon Expo** — Same 10 min model → Andy Breakheart → Short North gratitude + weekend *Sweeney Todd* shout-out → student performers → invite booth → invite **1:50 panel**  
 **Thu 1:50 Expo** — Panelist; lead CORE 1; second on CORE 4; 30-sec close  
-**No slides** for Dion intros. Report to Stacey ~20 min early. Mobile: [INSERT]
+**No slides.** Report to Stacey ~20 min early. Mobile: [INSERT]
