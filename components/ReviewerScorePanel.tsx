@@ -1,6 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+import { maskEmail, normalizeEmail } from '@/lib/emails';
 
 type ReviewScores = {
   overall: number;
@@ -20,9 +22,19 @@ function getErrorMessage(err: unknown) {
   return '';
 }
 
-export default function ReviewerScorePanel({ token }: { token: string }) {
+export default function ReviewerScorePanel({
+  token,
+  authorizedEmails = [],
+}: {
+  token: string;
+  /** Exact emails this review link was issued for (empty = any email OK). */
+  authorizedEmails?: string[];
+}) {
+  const searchParams = useSearchParams();
+  const emailFromQuery = searchParams.get('email')?.trim() ?? '';
+
   const [reviewerName, setReviewerName] = useState('');
-  const [reviewerEmail, setReviewerEmail] = useState('');
+  const [reviewerEmail, setReviewerEmail] = useState(emailFromQuery);
   const [notes, setNotes] = useState('');
   const [scores, setScores] = useState<ReviewScores>({
     overall: 3,
@@ -37,6 +49,22 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
     | { status: 'saved'; updated: boolean }
     | { status: 'error'; message: string }
   >({ status: 'idle' });
+
+  const authorizedNormalized = useMemo(
+    () => authorizedEmails.map((e) => normalizeEmail(e)).filter(Boolean),
+    [authorizedEmails],
+  );
+  const emailRestricted = authorizedNormalized.length > 0;
+  const maskedAuthorized = useMemo(
+    () => authorizedNormalized.map((e) => maskEmail(e)),
+    [authorizedNormalized],
+  );
+
+  useEffect(() => {
+    if (emailFromQuery && !reviewerEmail) setReviewerEmail(emailFromQuery);
+    // Only seed from the URL once on mount / query change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [emailFromQuery]);
 
   useEffect(() => {
     const email = reviewerEmail.trim();
@@ -80,6 +108,13 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
   const save = async () => {
     setState({ status: 'saving' });
     try {
+      const typed = normalizeEmail(reviewerEmail);
+      if (emailRestricted && typed && !authorizedNormalized.includes(typed)) {
+        throw new Error(
+          `This review link only accepts these emails: ${maskedAuthorized.join(', ')}. Use the exact address the link was issued for (check spelling), or ask BFTA to resend the link to your email.`,
+        );
+      }
+
       const res = await fetch(`/api/review/${encodeURIComponent(token)}/score`, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
@@ -97,13 +132,29 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
         }),
       });
       const data = (await res.json().catch(() => null)) as
-        | { ok: true; updated?: boolean }
-        | { ok: false; error?: string }
+        | {
+            ok: true;
+            updated?: boolean;
+          }
+        | {
+            ok: false;
+            error?: string;
+            authorizedEmailsMasked?: string[];
+          }
         | null;
       if (!res.ok || !data || data.ok !== true) {
-        throw new Error(
-          (data && 'error' in data && data.error) || `Save failed (HTTP ${res.status}).`,
-        );
+        const allowed =
+          data && 'authorizedEmailsMasked' in data && Array.isArray(data.authorizedEmailsMasked)
+            ? data.authorizedEmailsMasked
+            : maskedAuthorized;
+        const base =
+          (data && 'error' in data && data.error) || `Save failed (HTTP ${res.status}).`;
+        if (res.status === 403 && allowed.length) {
+          throw new Error(
+            `${base} Allowed emails for this link: ${allowed.join(', ')}.`,
+          );
+        }
+        throw new Error(base);
       }
       setState({ status: 'saved', updated: Boolean(data.updated) });
     } catch (err) {
@@ -112,14 +163,44 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
   };
 
   return (
-    <section className="rounded-2xl border border-border bg-background p-6">
+    <section className="rounded-2xl border border-accent/40 bg-background p-6 shadow-sm">
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-semibold tracking-tight">Your review score</h2>
         <p className="text-sm text-muted">
-          Enter your name and the email this link was sent to, score the application (1-5), then
-          save. You can update your score later with the same email.
+          Score this application (1–5), add optional notes, then save. You can update later with the
+          same email.
         </p>
       </div>
+
+      {emailRestricted ? (
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+          <div className="font-semibold">Use your invited email</div>
+          <p className="mt-1">
+            This link only saves scores for these addresses:{' '}
+            <span className="font-semibold">{maskedAuthorized.join(', ')}</span>.
+            Type the exact email the invitation used (same spelling). If yours is missing, ask Dion
+            to recreate the link with your address included.
+          </p>
+          {authorizedNormalized.length <= 8 ? (
+            <div className="mt-3 flex flex-wrap gap-2">
+              {authorizedEmails.map((email) => (
+                <button
+                  key={email}
+                  type="button"
+                  onClick={() => setReviewerEmail(email)}
+                  className="rounded-full border border-amber-300 bg-white px-3 py-1 text-xs font-semibold text-amber-950 hover:bg-amber-100"
+                >
+                  Use {maskEmail(email)}
+                </button>
+              ))}
+            </div>
+          ) : null}
+        </div>
+      ) : (
+        <div className="mt-4 rounded-xl border border-border bg-surface p-3 text-sm text-muted">
+          Enter the email you use for BFTA board work. Your score is private to BFTA admin.
+        </div>
+      )}
 
       <details className="mt-4 rounded-xl border border-border bg-surface p-4">
         <summary className="cursor-pointer text-sm font-semibold">Scoring guidance</summary>
@@ -135,7 +216,7 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
             </li>
             <li>
               <span className="font-semibold text-foreground">Bitcoin alignment</span>: Bitcoin-native
-              execution and values fit.
+              execution and values fit (payment rails, not inscriptions/NFTs).
             </li>
             <li>
               <span className="font-semibold text-foreground">Transparency</span>: willingness to
@@ -175,22 +256,19 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
         </label>
       </div>
 
-      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
+      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
         {(
           [
             ['overall', 'Overall'],
             ['impact', 'Impact'],
             ['feasibility', 'Feasibility'],
-            ['bitcoinAlignment', 'Bitcoin alignment'],
+            ['bitcoinAlignment', 'Bitcoin'],
             ['transparency', 'Transparency'],
           ] as const
         ).map(([key, label]) => (
           <label key={key} className="block">
-            <div className="text-sm font-semibold">{label} (1-5)</div>
-            <input
-              type="number"
-              min={1}
-              max={5}
+            <div className="text-sm font-semibold">{label}</div>
+            <select
               value={scores[key]}
               onChange={(e) =>
                 setScores((s) => ({
@@ -199,7 +277,14 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
                 }))
               }
               className="mt-2 min-h-11 w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
-            />
+              aria-label={`${label} score 1 to 5`}
+            >
+              {[1, 2, 3, 4, 5].map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
           </label>
         ))}
       </div>
@@ -222,7 +307,7 @@ export default function ReviewerScorePanel({ token }: { token: string }) {
       ) : null}
 
       {state.status === 'saved' ? (
-        <div className="mt-3 rounded-lg border border-border bg-surface p-3 text-sm font-semibold text-foreground">
+        <div className="mt-3 rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm font-semibold text-emerald-900">
           {state.updated ? 'Your review was updated.' : 'Your review was saved.'} Thank you.
         </div>
       ) : null}

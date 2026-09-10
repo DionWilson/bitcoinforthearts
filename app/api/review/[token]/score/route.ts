@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import { ObjectId, type Document } from 'mongodb';
 import { getMongoDb } from '@/lib/mongodb';
 import { hashReviewToken } from '@/lib/reviewLinks';
+import { isEmail, maskEmail, normalizeEmail } from '@/lib/emails';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -24,14 +25,6 @@ function clampScore(v: unknown) {
   const n = typeof v === 'number' ? v : Number(v);
   if (!Number.isFinite(n)) return undefined;
   return Math.min(5, Math.max(1, Math.round(n)));
-}
-
-function isEmail(value: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
-
-function normalizeEmail(value: string) {
-  return value.trim().toLowerCase();
 }
 
 export async function POST(
@@ -113,7 +106,8 @@ export async function POST(
       {
         ok: false,
         error:
-          'Use the email address this review link was sent to. If you need access, ask BFTA to resend the link to your email.',
+          'That email is not authorized for this review link. Use the exact address the link was issued for, or ask BFTA to recreate the link including your email.',
+        authorizedEmailsMasked: sentTo.map((e) => maskEmail(e)),
       },
       { status: 403 },
     );

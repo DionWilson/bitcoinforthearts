@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { getMongoDb } from '@/lib/mongodb';
 import { hashReviewToken } from '@/lib/reviewLinks';
 import ReviewerScorePanel from '@/components/ReviewerScorePanel';
@@ -57,6 +58,7 @@ type ApplicationDoc = {
   reviewShares?: Array<{
     tokenHash: string;
     expiresAt: Date;
+    sentTo?: string[];
   }>;
 };
 
@@ -115,6 +117,12 @@ export default async function ReviewPage({
   }
 
   const files = doc.uploads ?? [];
+  const share = (doc.reviewShares ?? []).find(
+    (r) => r.tokenHash === tokenHash && new Date(r.expiresAt).getTime() > Date.now(),
+  );
+  const authorizedEmails = (share?.sentTo ?? [])
+    .map((e) => String(e).trim())
+    .filter(Boolean);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-14">
@@ -136,6 +144,16 @@ export default async function ReviewPage({
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-6">
+          <Suspense
+            fallback={
+              <div className="rounded-2xl border border-border bg-background p-6 text-sm text-muted">
+                Loading score form…
+              </div>
+            }
+          >
+            <ReviewerScorePanel token={token} authorizedEmails={authorizedEmails} />
+          </Suspense>
+
           <section className="rounded-2xl border border-border bg-surface/40 p-5">
             <div className="text-sm font-semibold">Applicant</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
@@ -274,12 +292,11 @@ export default async function ReviewPage({
             </div>
           </section>
 
-          <ReviewerScorePanel token={token} />
         </div>
 
         <p className="mt-8 text-xs text-muted">
-          Score and save your review above. Other reviewers&apos; scores stay private; BFTA will
-          tally them in admin. Questions:{' '}
+          Score and save your review at the top of this page. Other reviewers&apos; scores stay
+          private; BFTA will tally them in admin. Questions:{' '}
           <a className="font-semibold underline underline-offset-4" href="mailto:grants@bitcoinforthearts.org">
             grants@bitcoinforthearts.org
           </a>
