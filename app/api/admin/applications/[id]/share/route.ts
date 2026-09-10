@@ -144,17 +144,36 @@ export async function POST(
       );
     }
 
-    let body: { emails?: string; message?: string; expiresDays?: number };
+    let body: {
+      emails?: string;
+      message?: string;
+      expiresDays?: number;
+      restrictToEmails?: boolean;
+      sendEmail?: boolean;
+    };
     try {
-      body = (await req.json()) as { emails?: string; message?: string; expiresDays?: number };
+      body = (await req.json()) as {
+        emails?: string;
+        message?: string;
+        expiresDays?: number;
+        restrictToEmails?: boolean;
+        sendEmail?: boolean;
+      };
     } catch {
       return NextResponse.json({ ok: false, error: 'Invalid JSON.' }, { status: 400 });
     }
 
     const emails = parseEmails(String(body.emails ?? ''));
-    if (!emails.length) {
+    const restrictToEmails = body.restrictToEmails !== false;
+    const sendEmail = body.sendEmail !== false;
+
+    if (restrictToEmails && !emails.length) {
       return NextResponse.json(
-        { ok: false, error: 'Please provide at least one email.' },
+        {
+          ok: false,
+          error:
+            'Add every board reviewer email, or turn off “Only these emails can save a score” for an open link.',
+        },
         { status: 400 },
       );
     }
@@ -165,6 +184,7 @@ export async function POST(
         { status: 400 },
       );
     }
+    const sentTo = restrictToEmails ? emails : [];
 
     const expiresDays = Math.max(1, Math.min(30, Number(body.expiresDays ?? 14)));
     const token = createReviewToken();
@@ -193,7 +213,7 @@ export async function POST(
           tokenHash,
           createdAt: new Date(),
           expiresAt,
-          sentTo: emails,
+          sentTo,
           message: (body.message ?? '').toString().slice(0, 2000) || null,
           emailSent: false,
           emailError: null,
@@ -246,6 +266,20 @@ export async function POST(
       </div>
     `.trim();
 
+    if (!sendEmail || emails.length === 0) {
+      return NextResponse.json(
+        {
+          ok: true,
+          reviewUrl,
+          expiresAt: expiresAt.toISOString(),
+          emailSent: false,
+          sentTo,
+          restrictToEmails,
+        },
+        { status: 200 },
+      );
+    }
+
     try {
       await sendMail({ to: emails, subject, text, html });
       await db.collection('applications').updateOne(
@@ -259,7 +293,14 @@ export async function POST(
         },
       );
       return NextResponse.json(
-        { ok: true, reviewUrl, expiresAt: expiresAt.toISOString(), emailSent: true },
+        {
+          ok: true,
+          reviewUrl,
+          expiresAt: expiresAt.toISOString(),
+          emailSent: true,
+          sentTo,
+          restrictToEmails,
+        },
         { status: 200 },
       );
     } catch (emailErr) {
@@ -276,7 +317,15 @@ export async function POST(
       );
       // Still return the link so you can share it manually.
       return NextResponse.json(
-        { ok: true, reviewUrl, expiresAt: expiresAt.toISOString(), emailSent: false, emailError: errMsg },
+        {
+          ok: true,
+          reviewUrl,
+          expiresAt: expiresAt.toISOString(),
+          emailSent: false,
+          emailError: errMsg,
+          sentTo,
+          restrictToEmails,
+        },
         { status: 200 },
       );
     }
