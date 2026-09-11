@@ -54,13 +54,37 @@ Artist bios: `artist-bios.md`
 
 ## Vinyl / wall cards
 
+Print-ready **5×7 in** PDFs + 300dpi PNGs (BFTA square bug + QR on auction lots):
+
+| Print file | Work |
+| --- | --- |
+| `vinyl-cards/lot-01-satoshi-white-paper-52.pdf` | CA Danner · LOT-01 |
+| `vinyl-cards/lot-02-transfer-of-light.pdf` | Lady RedHorns · LOT-02 |
+| `vinyl-cards/lot-05-bitcoin-keeper.pdf` | Lady RedHorns · LOT-05 |
+| `vinyl-cards/lot-06-temptation-of-bitcoin-angel.pdf` | Lady RedHorns · LOT-06 |
+| `vinyl-cards/lot-03-hodl-on.pdf` | Shipwreck Sean · LOT-03 |
+| `vinyl-cards/lot-04-timechain-magazine-genesis.pdf` | Timechain Mag Genesis · LOT-04 |
+| `vinyl-cards/sean-volatility-blues.pdf` | Sean for sale |
+| `vinyl-cards/sean-slice-of-history.pdf` | Sean for sale |
+| `vinyl-cards/sean-cold-storage.pdf` | Sean for sale |
+| `vinyl-cards/sean-live-raffle.pdf` | Sean live raffle |
+| `vinyl-cards/all-midwest-vinyl-cards.pdf` | All 10 cards, one PDF |
+
+Also mirrored under `public/midwest/vinyl-cards/` for download after deploy.
+
+Copy sources (markdown):
+
 | File | Artist / works |
 | --- | --- |
 | `vinyl-card-satoshi-white-paper-52.md` | CA Danner · LOT-01 |
 | `vinyl-card-transfer-of-light.md` | Lady RedHorns · three Angels of Freedom works (LOT-02, 05, 06) |
 | `vinyl-card-shipwreck-sean.md` | Shipwreck Sean · 4 gallery + 1 live raffle |
+| `vinyl-card-timechain-magazine.md` | Timechain Mag Genesis · LOT-04 |
 
-Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
+Regenerate: `python3 docs/midwest-2026/auction/generate-vinyl-cards.py`  
+(Needs `Pillow`, `qrcode[pil]`, `reportlab`, `pymupdf`. Logo: `public/brand-kit/square-bugs/square-cream-orange.png`.)
+
+Print size: 5×7 in vinyl/matte (also fine at 6×8), mounted beside each work.
 
 ### Lady RedHorns specs (Angels of Freedom · three works)
 
@@ -82,16 +106,15 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 
 ## Print checklist - LOT-01 (CA Danner)
 
-- [ ] Vinyl/wall card from `vinyl-card-satoshi-white-paper-52.md`
-- [ ] Optional CA Danner artist bio card (same file)
-- [ ] QR code → lot detail URL above
+- [x] Vinyl/wall card PDF+PNG in `vinyl-cards/lot-01-satoshi-white-paper-52.*` (QR → lot URL)
+- [ ] Optional CA Danner artist bio card (`vinyl-card-satoshi-white-paper-52.md`)
 - [ ] Bid sheet printed from `/bid-sheet` (clipboard + pen)
 - [ ] Signed consignment agreement (`consignment-agreement-ca-danner.pdf` - send to artist)
 - [ ] Warehouse label + tracking from artist (arrive Sept 20-22)
 
 ## Print checklist - Lady RedHorns
 
-- [ ] Vinyl cards from `vinyl-card-transfer-of-light.md` for LOT-02, 05, 06
+- [x] Vinyl cards PDF+PNG for LOT-02, 05, 06 in `vinyl-cards/` (split lines blank for fill-in)
 - [ ] Signed multi-work consignment (all three silent auction at 1,000,000 sats open; fill splits + no-sale)
 - [ ] Warehouse label · mid-September ship · arrive Sept 20-22
 - [ ] Lot pages live with easel photo + promo card + Lightning tip address + advance bid
@@ -99,11 +122,16 @@ Print size: 5×7 or 6×8 in vinyl/matte, mounted beside each work.
 ## Print checklist - Shipwreck Sean
 
 - [ ] Send `consignment-agreement-shipwreck-sean.pdf` for signature (email + payout + raffle split + HODL On no-sale)
-- [ ] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl from `vinyl-card-shipwreck-sean.md`
+- [x] Three for-sale vinyls + *HODL On* auction vinyl + raffle vinyl in `vinyl-cards/`
 - [ ] Optional bio card for the Sean wall
 - [ ] *HODL On*: opening **2,100,000 sats (about $1,700)** · lot page/QR · bid sheet
 
 Regenerate Sean PDF: `python3 docs/midwest-2026/auction/generate-shipwreck-sean-pdf.py`
+
+## Print checklist - Timechain Mag (LOT-04)
+
+- [x] Vinyl/wall card PDF+PNG in `vinyl-cards/lot-04-timechain-magazine-genesis.*`
+- [ ] Bid sheet printed from `/bid-sheet`
 
 ## Consignment PDF
 
