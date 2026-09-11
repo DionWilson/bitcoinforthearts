@@ -1,6 +1,6 @@
 # Vinyl / wall cards - Shipwreck Sean
 
-**Print size (locked for shop):** **5 × 7 in** portrait · matte vinyl or matte cardstock.  
+**Print size (locked for shop):** **7 × 5 in landscape** · matte vinyl or matte cardstock.  
 See `vinyl-cards/PRINT-SPECS.md` for full printer instructions.  
 **Artist:** Shipwreck Sean · shipwrecksean.com · bitsby.co  
 **Event:** Bitcoin Arts Park · Midwest Bitcoin Summit · Sept 23-24, 2026

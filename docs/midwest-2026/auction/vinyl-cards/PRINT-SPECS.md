@@ -6,13 +6,13 @@ Hand this sheet to the printer with `all-midwest-vinyl-cards.pdf` (or the indivi
 
 | Spec | Value |
 | --- | --- |
-| **Trim size** | **5.00 × 7.00 inches** (portrait) |
-| Orientation | Tall / portrait |
+| **Trim size** | **7.00 × 5.00 inches** (**landscape** / wide) |
+| Orientation | **Landscape** (wider than tall) |
 | Quantity | **10 unique designs · print 1 of each** (or more if you want spares) |
 | Preferred file | PDF (vector text + embedded logo/QR) |
-| Also available | Matching 300 dpi PNG (1500 × 2100 px = exactly 5×7 at 300 dpi) |
+| Also available | Matching 300 dpi PNG (**2100 × 1500 px** = exactly 7×5 at 300 dpi) |
 
-Do **not** scale up to 6×8 or letter. These sit under / beside each artwork as wall labels.
+Do **not** rotate to portrait. Do **not** scale to letter. These sit under / beside each artwork as wall labels.
 
 ## Color / stock
 
@@ -29,15 +29,15 @@ Do **not** scale up to 6×8 or letter. These sit under / beside each artwork as 
 
 | Spec | Value |
 | --- | --- |
-| Bleed | **None required** if printing to exact 5×7 trim from the PDF page box |
-| Optional bleed | If shop needs bleed, add **0.125 in** all sides and keep cream to the edge (page is solid cream) |
-| Safe area | ~0.35 in inset already built into the design |
+| Bleed | **None required** if printing to exact 7×5 trim from the PDF page box |
+| Optional bleed | If shop needs bleed, add **0.125 in** all sides and keep cream to the edge |
+| Safe area | ~0.28 in inset already built into the design |
 
 ## What to print (file list)
 
 Combined job (easiest):
 
-1. `all-midwest-vinyl-cards.pdf` — 10 pages, one card per page
+1. `all-midwest-vinyl-cards.pdf` — 10 pages, one landscape card per page
 
 Or individual PDFs in this folder / `public/midwest/vinyl-cards/`:
 
@@ -56,4 +56,4 @@ Or individual PDFs in this folder / `public/midwest/vinyl-cards/`:
 
 ## Mounting note for install
 
-Mount one card under or beside each work. Keep the QR readable at arm’s length on auction lots.
+Mount one card under or beside each work, landscape. Keep the QR readable at arm’s length on auction lots.

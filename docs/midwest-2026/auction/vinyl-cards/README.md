@@ -1,7 +1,7 @@
 # Midwest vinyl / wall cards (print)
 
-**Trim size (locked):** **5.00 × 7.00 in** portrait  
-**Files:** PDF (preferred for shop) + 300 dpi PNG (1500 × 2100 px)  
+**Trim size (locked):** **7.00 × 5.00 in landscape** (wide)  
+**Files:** PDF (preferred for shop) + 300 dpi PNG (2100 × 1500 px)  
 **Logo:** `public/brand-kit/square-bugs/square-cream-orange.png`  
 **Printer handoff:** see **`PRINT-SPECS.md`** in this folder.
 

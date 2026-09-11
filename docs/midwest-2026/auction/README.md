@@ -84,7 +84,7 @@ Copy sources (markdown):
 Regenerate: `python3 docs/midwest-2026/auction/generate-vinyl-cards.py`  
 (Needs `Pillow`, `qrcode[pil]`, `reportlab`, `pymupdf`. Logo: `public/brand-kit/square-bugs/square-cream-orange.png`.)
 
-Print size: **5.00 × 7.00 in** vinyl/matte only (do not scale). See `vinyl-cards/PRINT-SPECS.md`.
+Print size: **7.00 × 5.00 in landscape** vinyl/matte only (do not scale). See `vinyl-cards/PRINT-SPECS.md`.
 
 ### Lady RedHorns specs (Angels of Freedom · three works)
 
@@ -104,7 +104,7 @@ Print size: **5.00 × 7.00 in** vinyl/matte only (do not scale). See `vinyl-card
 - *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC · about $1,700)** · 20×24 in
 - Live raffle canvas: title TBD · 20×16 in · entry **6,500 sats (about $5)** · winner Thu Sept 24 · 3:00 PM ET
 
-**Print shop:** hand them `vinyl-cards/PRINT-SPECS.md` + `vinyl-cards/all-midwest-vinyl-cards.pdf`. Trim size is locked at **5.00 × 7.00 in** portrait.
+**Print shop:** hand them `vinyl-cards/PRINT-SPECS.md` + `vinyl-cards/all-midwest-vinyl-cards.pdf`. Trim size is locked at **7.00 × 5.00 in landscape**.
 
 ## Print checklist - LOT-01 (CA Danner)
 
