@@ -4,7 +4,7 @@
 
 | Print | URL | Pages |
 | --- | --- | --- |
-| **Lot bid sheet** (one per lot) | `/midwest/auction/[slug]/bid-sheet` | **Exactly 2 print pages:** page 1 = details + rules + 8 rows + winner box; page 2 = 18 more rows |
+| **Lot bid sheet** (one per lot) | `/midwest/auction/[slug]/bid-sheet` | **Exactly 2 print pages:** page 1 = details + rules + 10 rows + winner box; page 2 = 18 more rows |
 | **Extra bid pages** (shared) | `/midwest/auction/bid-sheet-extra` | **Exactly 2 print pages** of blank templates; write lot code/title when you clip them |
 
 ### Direct lot sheet links

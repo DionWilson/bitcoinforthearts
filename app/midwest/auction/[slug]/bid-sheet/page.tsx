@@ -28,8 +28,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 /**
  * Keep page 1 short enough for one US Letter print page
  * (header + rules + rows + winner box). Page 2 is continuation only.
+ * Print-tested at ~10 rows with 0.4in letter margins.
  */
-const PRIMARY_ROWS = 8;
+const PRIMARY_ROWS = 10;
 const CONTINUATION_ROWS = 18;
 
 function BidRows({
