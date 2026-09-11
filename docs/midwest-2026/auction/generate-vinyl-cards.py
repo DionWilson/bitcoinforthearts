@@ -91,16 +91,13 @@ CARDS: list[CardSpec] = [
         "LOT-02 · PEER-TO-PEER SILENT AUCTION",
         "The Transfer of Light",
         [
-            "Lady RedHorns",
+            "Lady RedHorns · Angels of Freedom",
             "Acrylic on canvas · 16 × 16 in",
-            "Angels of Freedom",
             "",
-            "A moment of connection and transformation,",
-            "as the orange Bitcoin light passes through a gaze",
-            "and begins to awaken within another soul.",
+            "Connection and transformation as orange Bitcoin",
+            "light passes through a gaze and awakens another soul.",
             "",
-            "Opening bid  1,000,000 sats",
-            "(about $850)",
+            "Opening bid  1,000,000 sats (about $850)",
             "Minimum increase  21,000 sats",
             "",
             "Of the winning bid:",
@@ -108,8 +105,7 @@ CARDS: list[CardSpec] = [
             "________ → Lady RedHorns",
             "",
             "Closes Thursday, Sept 24 · 3:00 PM ET",
-            "Pickup in Columbus only.",
-            "Lightning: ladyredhorns@coinos.io",
+            "Pickup in Columbus only · Lightning: ladyredhorns@coinos.io",
         ],
         qr_url="https://www.bitcoinforthearts.org/midwest/auction/transfer-of-light",
         footer_url="bitcoinforthearts.org/midwest/auction/transfer-of-light",
@@ -119,15 +115,13 @@ CARDS: list[CardSpec] = [
         "LOT-05 · PEER-TO-PEER SILENT AUCTION",
         "The Bitcoin Keeper",
         [
-            "Lady RedHorns",
+            "Lady RedHorns · Angels of Freedom",
             "Acrylic on canvas · 16 × 16 in",
-            "Angels of Freedom",
             "",
             "Bitcoin as hope, inner freedom, and conviction.",
             "The angel as guardian of values beyond measure.",
             "",
-            "Opening bid  1,000,000 sats",
-            "(about $850)",
+            "Opening bid  1,000,000 sats (about $850)",
             "Minimum increase  21,000 sats",
             "",
             "Of the winning bid:",
@@ -135,8 +129,7 @@ CARDS: list[CardSpec] = [
             "________ → Lady RedHorns",
             "",
             "Closes Thursday, Sept 24 · 3:00 PM ET",
-            "Pickup in Columbus only.",
-            "Lightning: ladyredhorns@coinos.io",
+            "Pickup in Columbus only · Lightning: ladyredhorns@coinos.io",
         ],
         qr_url="https://www.bitcoinforthearts.org/midwest/auction/bitcoin-keeper",
         footer_url="bitcoinforthearts.org/midwest/auction/bitcoin-keeper",
@@ -146,16 +139,13 @@ CARDS: list[CardSpec] = [
         "LOT-06 · PEER-TO-PEER SILENT AUCTION",
         "The Temptation of Bitcoin Angel",
         [
-            "Lady RedHorns",
+            "Lady RedHorns · Angels of Freedom",
             "Acrylic on canvas · 16 × 16 in",
-            "Angels of Freedom",
             "",
-            "The Fiat Demon offers a tempting bargain,",
-            "but the Bitcoin Angel turns away,",
-            "drawn to the Bitcoin symbol on its wing.",
+            "The Fiat Demon offers a tempting bargain;",
+            "the Bitcoin Angel turns toward the symbol on its wing.",
             "",
-            "Opening bid  1,000,000 sats",
-            "(about $850)",
+            "Opening bid  1,000,000 sats (about $850)",
             "Minimum increase  21,000 sats",
             "",
             "Of the winning bid:",
@@ -163,8 +153,7 @@ CARDS: list[CardSpec] = [
             "________ → Lady RedHorns",
             "",
             "Closes Thursday, Sept 24 · 3:00 PM ET",
-            "Pickup in Columbus only.",
-            "Lightning: ladyredhorns@coinos.io",
+            "Pickup in Columbus only · Lightning: ladyredhorns@coinos.io",
         ],
         qr_url="https://www.bitcoinforthearts.org/midwest/auction/temptation-of-bitcoin-angel",
         footer_url="bitcoinforthearts.org/midwest/auction/temptation-of-bitcoin-angel",
@@ -324,28 +313,28 @@ def styles():
             "eyebrow",
             parent=base["Normal"],
             fontName="Helvetica-Bold",
-            fontSize=7.5,
-            leading=9.5,
+            fontSize=7,
+            leading=9,
             textColor=ORANGE,
             alignment=TA_LEFT,
-            spaceAfter=6,
+            spaceAfter=3,
         ),
         "title": ParagraphStyle(
             "title",
             parent=base["Normal"],
             fontName="Helvetica-Bold",
-            fontSize=13,
-            leading=15.5,
+            fontSize=12,
+            leading=14,
             textColor=BLACK,
             alignment=TA_LEFT,
-            spaceAfter=4,
+            spaceAfter=3,
         ),
         "body": ParagraphStyle(
             "body",
             parent=base["Normal"],
             fontName="Helvetica",
-            fontSize=8.6,
-            leading=11.2,
+            fontSize=8,
+            leading=10,
             textColor=BLACK,
             alignment=TA_LEFT,
             spaceAfter=0,
@@ -354,8 +343,8 @@ def styles():
             "footer",
             parent=base["Normal"],
             fontName="Helvetica",
-            fontSize=6.5,
-            leading=8.5,
+            fontSize=6,
+            leading=7.5,
             textColor=MUTED,
             alignment=TA_CENTER,
         ),
@@ -363,8 +352,8 @@ def styles():
             "event",
             parent=base["Normal"],
             fontName="Helvetica",
-            fontSize=6.8,
-            leading=8.5,
+            fontSize=6.5,
+            leading=8,
             textColor=MUTED,
             alignment=TA_LEFT,
         ),
@@ -383,10 +372,10 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
     doc = SimpleDocTemplate(
         str(out_pdf),
         pagesize=(CARD_W, CARD_H),
-        leftMargin=0.35 * inch,
-        rightMargin=0.35 * inch,
-        topMargin=0.3 * inch,
-        bottomMargin=0.28 * inch,
+        leftMargin=0.32 * inch,
+        rightMargin=0.32 * inch,
+        topMargin=0.26 * inch,
+        bottomMargin=0.22 * inch,
     )
 
     # Square logo (trim excess transparent padding if present)
@@ -396,8 +385,8 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
         logo_img = logo_img.crop(bbox)
     logo_path = OUT_DIR / "_logo-square.png"
     logo_img.save(logo_path)
-    # Prominent square bug (brand-kit square-cream-orange)
-    logo_w = 0.95 * inch
+    # Square bug sized to keep denser cards on one 5x7 page
+    logo_w = 0.78 * inch
     aspect = logo_img.height / logo_img.width
     logo_h = logo_w * aspect
 
@@ -413,7 +402,7 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
                 ),
             ]
         ],
-        colWidths=[1.05 * inch, 3.25 * inch],
+        colWidths=[0.9 * inch, 3.46 * inch],
     )
     header.setStyle(
         TableStyle(
@@ -422,23 +411,27 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
                 ("LEFTPADDING", (0, 0), (-1, -1), 0),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 0),
                 ("TOPPADDING", (0, 0), (-1, -1), 0),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
             ]
         )
     )
 
     story: list = [
         header,
-        HRFlowable(width="100%", thickness=2, color=ORANGE, spaceBefore=2, spaceAfter=8),
+        HRFlowable(width="100%", thickness=2, color=ORANGE, spaceBefore=1, spaceAfter=5),
         Paragraph(spec.eyebrow.replace("·", "&middot;"), s["eyebrow"]),
         Paragraph(spec.title, s["title"]),
     ]
 
-    body_html = "<br/>".join(
-        line.replace("&", "&amp;") if line else "&nbsp;" for line in spec.lines
-    )
-    story.append(Paragraph(body_html, s["body"]))
-    story.append(Spacer(1, 8))
+    # Compact blank lines so body does not force a second page
+    body_parts: list[str] = []
+    for line in spec.lines:
+        if line:
+            body_parts.append(line.replace("&", "&amp;"))
+        else:
+            body_parts.append("<font size='4'>&nbsp;</font>")
+    story.append(Paragraph("<br/>".join(body_parts), s["body"]))
+    story.append(Spacer(1, 5))
 
     if spec.qr_url:
         qr_path = OUT_DIR / f"_qr-{spec.filename}.png"
@@ -446,15 +439,15 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
         qr_block = Table(
             [
                 [
-                    Image(str(qr_path), width=1.05 * inch, height=1.05 * inch),
+                    Image(str(qr_path), width=0.9 * inch, height=0.9 * inch),
                     Paragraph(
                         "<b>Scan for full details &amp; advance bid</b><br/>"
-                        f"<font size='6.5' color='#333333'>{spec.footer_url or ''}</font>",
+                        f"<font size='6' color='#333333'>{spec.footer_url or ''}</font>",
                         s["body"],
                     ),
                 ]
             ],
-            colWidths=[1.2 * inch, 3.1 * inch],
+            colWidths=[1.05 * inch, 3.3 * inch],
         )
         qr_block.setStyle(
             TableStyle(
@@ -474,8 +467,8 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
             )
         )
 
-    story.append(Spacer(1, 6))
-    story.append(HRFlowable(width="100%", thickness=0.8, color=BLACK, spaceBefore=2, spaceAfter=4))
+    story.append(Spacer(1, 4))
+    story.append(HRFlowable(width="100%", thickness=0.8, color=BLACK, spaceBefore=1, spaceAfter=3))
     story.append(
         Paragraph(
             "UNCENSORABLE MONEY · UNCENSORABLE MINDS · 501(c)(3)",
@@ -484,6 +477,13 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
     )
 
     doc.build(story, onFirstPage=draw_bg, onLaterPages=draw_bg)
+
+    # Hard guarantee: every card must be a single 5x7 page
+    check = pymupdf.open(str(out_pdf))
+    pages = check.page_count
+    check.close()
+    if pages != 1:
+        raise RuntimeError(f"{out_pdf.name} spilled to {pages} pages; tighten copy/layout")
 
 
 def pdf_to_png(pdf_path: Path, png_path: Path, dpi: int = 300) -> None:
@@ -498,7 +498,9 @@ def build_combined(pdf_paths: list[Path], out_path: Path) -> None:
     combined = pymupdf.open()
     for p in pdf_paths:
         src = pymupdf.open(str(p))
-        combined.insert_pdf(src)
+        if src.page_count != 1:
+            raise RuntimeError(f"{p.name} has {src.page_count} pages; refuse to pack")
+        combined.insert_pdf(src, from_page=0, to_page=0)
         src.close()
     combined.save(str(out_path))
     combined.close()
