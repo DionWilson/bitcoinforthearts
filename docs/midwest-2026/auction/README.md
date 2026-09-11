@@ -44,6 +44,14 @@ Artist bios: `artist-bios.md`
 4. Ops: before doors open, sort Airtable by lot + Bid Sats desc, write the high advance bid onto row 1 of each printed bid sheet.
 5. Rules on the form: bid ≥ opening, steps of 21,000 sats, must confirm in-person Columbus pickup (no shipping).
 
+### Clipboard print pack
+
+| Print | URL |
+| --- | --- |
+| Lot sheet (2 pages: details + rules + rows + winner box) | `/midwest/auction/[slug]/bid-sheet` |
+| Extra blank continuation (any lot) | `/midwest/auction/bid-sheet-extra` |
+
+Floor rules on the sheets: close **3:00 PM ET**, winner claims by **4:00 PM ET** or next highest bidder. Full booth + Stripe payment notes: `CLIPBOARD-AND-PAYMENT.md`.
 
 ## Add another donated lot
 
@@ -110,7 +118,8 @@ Print size: **7.00 × 5.00 in landscape** vinyl/matte only (do not scale). See `
 
 - [x] Vinyl/wall card PDF+PNG in `vinyl-cards/lot-01-satoshi-white-paper-52.*` (QR → lot URL)
 - [ ] Optional CA Danner artist bio card (`vinyl-card-satoshi-white-paper-52.md`)
-- [ ] Bid sheet printed from `/bid-sheet` (clipboard + pen)
+- [x] Bid sheet printed from `/midwest/auction/[slug]/bid-sheet` (clipboard + pen; 2 pages)
+- [x] Extra continuation pages from `/midwest/auction/bid-sheet-extra`
 - [ ] Signed consignment agreement (`consignment-agreement-ca-danner.pdf` - send to artist)
 - [ ] Warehouse label + tracking from artist (arrive Sept 20-22)
 
