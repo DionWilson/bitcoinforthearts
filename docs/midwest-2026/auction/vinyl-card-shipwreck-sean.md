@@ -1,17 +1,16 @@
 # Vinyl / wall cards - Shipwreck Sean
 
-**Print size suggestion:** 5 × 7 in or 6 × 8 in vinyl/matte card, one per work.  
+**Print size (locked for shop):** **7 × 5 in landscape** · matte vinyl or matte cardstock.  
+See `vinyl-cards/PRINT-SPECS.md` for full printer instructions.  
 **Artist:** Shipwreck Sean · shipwrecksean.com · bitsby.co  
 **Event:** Bitcoin Arts Park · Midwest Bitcoin Summit · Sept 23-24, 2026
 
-**Pricing (sats-primary, per artist):**
-- *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)**
-- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)**
+**Pricing (sats-primary + USD guide):**
+- *The Volatility Blues* - fixed sale **3,500,000 sats (0.035 BTC · about $3,000)**
+- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC · about $2,550)**
 - *HODL On* - **peer-to-peer silent auction** (proceeds to BFTA; opening bid in sats)
-- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)**
-- Live painting - **raffle** (whatever it brings)
-
-USD figures Sean also quoted for gallery works ($2,500 / $2,000 / $1,500) are artist reference only; wall cards and auction lots lead with sats.
+- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC · about $1,700)**
+- Live painting - **raffle entry 6,500 sats (about $5)**
 
 Medium not specified by artist yet; cards use **Original painting**. Update if he confirms acrylic/oil/etc.
 
@@ -31,8 +30,8 @@ Old-fashioned drink and Bitsby
 Original painting
 20 × 24 in (H × W)
 
-3,000,000 sats
-0.03 BTC
+3,500,000 sats
+0.035 BTC · about $3,000
 
 shipwrecksean.com · bitsby.co
 ```
@@ -41,7 +40,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · The Volatility Blues
-20×24 in · 3,000,000 sats (0.03 BTC)
+20×24 in · 3,500,000 sats (about $3,000)
 ```
 
 ---
@@ -59,7 +58,7 @@ Original painting
 40 × 16 in (H × W)
 
 3,000,000 sats
-0.03 BTC
+0.03 BTC · about $2,550
 
 shipwrecksean.com · bitsby.co
 ```
@@ -68,7 +67,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · A Slice of History
-40×16 in · 3,000,000 sats (0.03 BTC)
+40×16 in · 3,000,000 sats (about $2,550)
 ```
 
 ---
@@ -124,7 +123,7 @@ Original painting
 20 × 24 in (H × W)
 
 2,000,000 sats
-0.02 BTC
+0.02 BTC · about $1,700
 
 shipwrecksean.com · bitsby.co
 ```
@@ -133,7 +132,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · Cold Storage
-20×24 in · 2,000,000 sats (0.02 BTC)
+20×24 in · 2,000,000 sats (about $1,700)
 ```
 
 ---
@@ -154,7 +153,8 @@ the rest comes from the room.
 Original painting
 20 × 16 in (H × W)
 
-Raffle prize · whatever it brings
+Raffle entry  6,500 sats
+(about $5)
 Winner announced Thu, Sept 24 · 3:00 PM ET
 Ask the booth how to enter.
 
@@ -165,7 +165,7 @@ shipwrecksean.com · bitsby.co
 
 ```
 Shipwreck Sean · Live canvas · Raffle
-20×16 in · Winner Thu 3PM · bitsby.co
+20×16 in · 6,500 sats (about $5) · Winner Thu 3PM
 ```
 
 ---
@@ -192,10 +192,10 @@ bitsby.co
 
 | Work | Role at Summit | Price / terms | Card type |
 | --- | --- | --- | --- |
-| The Volatility Blues | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
-| A Slice of History | Fixed sale | 3,000,000 sats (0.03 BTC) | For-sale vinyl |
+| The Volatility Blues | Fixed sale | **3,500,000 sats** (about $3,000) | For-sale vinyl |
+| A Slice of History | Fixed sale | **3,000,000 sats** (about $2,550) | For-sale vinyl |
 | HODL On | Silent auction | Open **2,100,000 sats** · 100% BFTA | Auction vinyl |
-| Cold Storage | Fixed sale | 2,000,000 sats (0.02 BTC) | For-sale vinyl |
-| Live canvas (title TBD) | Live paint + raffle | Raffle | Raffle vinyl |
+| Cold Storage | Fixed sale | **2,000,000 sats** (about $1,700) | For-sale vinyl |
+| Live canvas (title TBD) | Live paint + raffle | Entry **6,500 sats** (about $5) | Raffle vinyl |
 
-Next for *HODL On*: set opening bid in sats, lot page/QR already live, bid sheet.
+Print files: `vinyl-cards/sean-*.pdf` + `lot-03-hodl-on.pdf`

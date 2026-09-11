@@ -86,6 +86,17 @@ export default function MidwestAuctionIndexPage() {
         </ul>
 
         <p className="mt-10 text-sm text-black/60">
+          Staff print pack: each lot’s bid sheet is two pages (rules + rows). Need
+          more signup lines? Print extras from{' '}
+          <Link
+            href="/midwest/auction/bid-sheet-extra"
+            className="font-medium text-black underline underline-offset-2"
+          >
+            /midwest/auction/bid-sheet-extra
+          </Link>
+          . Ops notes: <code className="text-black">docs/midwest-2026/auction/CLIPBOARD-AND-PAYMENT.md</code>.
+        </p>
+        <p className="mt-4 text-sm text-black/60">
           To add another donated lot, add an entry in{' '}
           <code className="text-black">lib/midwest-auction-lots.ts</code> — each
           lot automatically gets a detail page and printable bid sheet.
