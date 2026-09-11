@@ -44,14 +44,18 @@ Artist bios: `artist-bios.md`
 4. Ops: before doors open, sort Airtable by lot + Bid Sats desc, write the high advance bid onto row 1 of each printed bid sheet.
 5. Rules on the form: bid ≥ opening, steps of 21,000 sats, must confirm in-person Columbus pickup (no shipping).
 
-### Clipboard print pack
+### Clipboard print pack (PDFs)
 
-| Print | URL |
+Print the **letter PDFs** (not browser Cmd+P on HTML):
+
+| File | URL |
 | --- | --- |
-| Lot sheet (2 pages: details + rules + rows + winner box) | `/midwest/auction/[slug]/bid-sheet` |
-| Extra blank continuation (any lot) | `/midwest/auction/bid-sheet-extra` |
+| All lots + extras | `/midwest/bid-sheets/all-midwest-bid-sheets.pdf` |
+| Per-lot sheet | `/midwest/bid-sheets/lot-0N-…-bid-sheet.pdf` |
+| Extra blank pages | `/midwest/bid-sheets/extra-bid-pages.pdf` |
 
-Floor rules on the sheets: close **3:00 PM ET**, winner claims by **4:00 PM ET** or next highest bidder. Full booth + Stripe payment notes: `CLIPBOARD-AND-PAYMENT.md`.
+Download pages: `/midwest/auction/[slug]/bid-sheet` and `/midwest/auction/bid-sheet-extra`.  
+Floor rules: close **3:00 PM ET**, claim by **4:00 PM ET** or next bidder. Details: `CLIPBOARD-AND-PAYMENT.md`.
 
 ## Add another donated lot
 

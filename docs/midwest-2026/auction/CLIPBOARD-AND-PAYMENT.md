@@ -1,39 +1,34 @@
-# Midwest silent auction · clipboard print pack
+# Midwest silent auction · clipboard print pack (PDFs)
 
-## What to print
+**Do not use browser Cmd+P on the HTML pages for the floor clipboards.**  
+Print these **letter-size PDFs** at **100% scale** (portrait).
 
-| Print | URL | Pages |
-| --- | --- | --- |
-| **Lot bid sheet** (one per lot) | `/midwest/auction/[slug]/bid-sheet` | **Exactly 2 print pages:** page 1 = details + rules + 10 rows + winner box; page 2 = 18 more rows |
-| **Extra bid pages** (shared) | `/midwest/auction/bid-sheet-extra` | **Exactly 2 print pages** of blank templates; write lot code/title when you clip them |
+## Download
 
-### Direct lot sheet links
-
-| Lot | Print URL |
+| File | Use |
 | --- | --- |
-| LOT-01 CA Danner | `/midwest/auction/satoshi-white-paper-52/bid-sheet` |
-| LOT-02 Transfer of Light | `/midwest/auction/transfer-of-light/bid-sheet` |
-| LOT-03 HODL On | `/midwest/auction/hodl-on/bid-sheet` |
-| LOT-04 Timechain Mag | `/midwest/auction/timechain-magazine-genesis/bid-sheet` |
-| LOT-05 Bitcoin Keeper | `/midwest/auction/bitcoin-keeper/bid-sheet` |
-| LOT-06 Temptation of Bitcoin Angel | `/midwest/auction/temptation-of-bitcoin-angel/bid-sheet` |
-| Extra template | `/midwest/auction/bid-sheet-extra` |
+| `/midwest/bid-sheets/all-midwest-bid-sheets.pdf` | All 6 lots (2 pages each) + extra pages |
+| `/midwest/bid-sheets/lot-01-…-bid-sheet.pdf` … `lot-06-…` | One clipboard per lot |
+| `/midwest/bid-sheets/extra-bid-pages.pdf` | Shared blank continuation (any lot) |
 
-After deploy, prefix with `https://www.bitcoinforthearts.org`.
+Source copies also live in `docs/midwest-2026/auction/bid-sheets/`.
 
-## On each lot sheet
+Regenerate after lot edits:
 
-- Artwork title, artist, medium, size, opening bid, increment, proceeds, close time  
-- Rules: close **3:00 PM ET** · claim by **4:00 PM ET** · else next highest bidder  
-- Columns: **Name · Email · Phone · Bid in sats**  
-- Winner claim box for staff  
-- Page 2 = more rows for that same lot  
+```bash
+python3 docs/midwest-2026/auction/generate-bid-sheets.py
+```
+
+## What’s on each lot PDF (2 pages)
+
+**Page 1** — lot details, rules, full-page tall rows (Name · Email · Phone · Bid in sats)  
+**Page 2** — more tall rows + **winner claim** box at the bottom  
+
+Row height is at least **0.55 in** and stretches so the table fills the page (no dead band).
 
 ## Booth setup
 
-1. Print all 6 lot sheets (2 pages each) → one clipboard per lot + pen  
-2. Print several copies of `/bid-sheet-extra` → keep in a folder when a sheet fills  
-3. Before doors: write the high Airtable advance bid on **row 1** of each lot sheet  
-4. Winners who are present pay via `/donate` (card, custom USD amount) or Bitcoin/BTCPay  
-
-No card numbers on paper.
+1. Print all 6 lot PDFs → one clipboard each + pen  
+2. Print several `extra-bid-pages.pdf` copies for overflow  
+3. Seed **row 1** from Airtable advance bids before doors open  
+4. Close 3:00 PM ET · claim by 4:00 PM ET · else next highest bidder  
