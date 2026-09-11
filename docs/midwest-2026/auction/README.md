@@ -142,7 +142,7 @@ Regenerate Sean PDF: `python3 docs/midwest-2026/auction/generate-shipwreck-sean-
 ## Print checklist - Timechain Mag (LOT-04)
 
 - [x] Vinyl/wall card PDF+PNG in `vinyl-cards/lot-04-timechain-magazine-genesis.*`
-- [ ] Bid sheet printed from `/bid-sheet`
+- [x] Bid sheet printed from `/midwest/auction/[slug]/bid-sheet` (clipboard + pen; 2 pages)
 
 ## Consignment PDF
 
