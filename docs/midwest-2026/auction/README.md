@@ -84,7 +84,7 @@ Copy sources (markdown):
 Regenerate: `python3 docs/midwest-2026/auction/generate-vinyl-cards.py`  
 (Needs `Pillow`, `qrcode[pil]`, `reportlab`, `pymupdf`. Logo: `public/brand-kit/square-bugs/square-cream-orange.png`.)
 
-Print size: 5×7 in vinyl/matte (also fine at 6×8), mounted beside each work.
+Print size: **5.00 × 7.00 in** vinyl/matte only (do not scale). See `vinyl-cards/PRINT-SPECS.md`.
 
 ### Lady RedHorns specs (Angels of Freedom · three works)
 
@@ -98,11 +98,13 @@ Print size: 5×7 in vinyl/matte (also fine at 6×8), mounted beside each work.
 
 ### Shipwreck Sean (prices confirmed, sats-primary)
 
-- *The Volatility Blues* - fixed sale **3,000,000 sats (0.03 BTC)** · 20×24 in
-- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC)** · 40×16 in
+- *The Volatility Blues* - fixed sale **3,500,000 sats (0.035 BTC · about $3,000)** · 20×24 in
+- *A Slice of History* - fixed sale **3,000,000 sats (0.03 BTC · about $2,550)** · 40×16 in
 - *HODL On* - **silent auction, 100% BFTA** · 40×16 in · opening **2,100,000 sats (about $1,700)**
-- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC)** · 20×24 in
-- Live raffle canvas: title TBD · 20×16 in · winner Thu Sept 24 · 3:00 PM ET
+- *Cold Storage* - fixed sale **2,000,000 sats (0.02 BTC · about $1,700)** · 20×24 in
+- Live raffle canvas: title TBD · 20×16 in · entry **6,500 sats (about $5)** · winner Thu Sept 24 · 3:00 PM ET
+
+**Print shop:** hand them `vinyl-cards/PRINT-SPECS.md` + `vinyl-cards/all-midwest-vinyl-cards.pdf`. Trim size is locked at **5.00 × 7.00 in** portrait.
 
 ## Print checklist - LOT-01 (CA Danner)
 
