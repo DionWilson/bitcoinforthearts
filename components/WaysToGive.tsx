@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { getZapriteDonationLink } from '@/lib/zaprite-donation';
 
 type Way = {
   title: string;
@@ -15,22 +16,24 @@ type Way = {
   };
 };
 
+const zapriteDonationLink = getZapriteDonationLink();
+
 const baseWays: Way[] = [
   {
-    title: 'One-Time & Membership Gifts',
+    title: 'One-Time Gift (Bitcoin, Lightning & Card)',
     description:
-      'Give once or become a Sovereign Circle member (monthly or annual) via card or check. Members unlock community access, art drops, grant votes, and tenure milestones.',
-    ctaLabel: 'Donate',
-    href: '/donate#card',
-    meter: { speed: 85, tax: 35, legacy: 45 },
+      'Give any amount in one checkout: Bitcoin and Lightning via Strike, or card via Stripe. Hosted by Zaprite. For monthly membership, join the Sovereign Circle.',
+    ctaLabel: 'Donate now',
+    href: zapriteDonationLink,
+    meter: { speed: 90, tax: 35, legacy: 55 },
   },
   {
-    title: 'Bitcoin & Lightning',
+    title: 'Sovereign Circle Membership',
     description:
-      'Donate with BTCPay (BTC + Lightning). We share governance documents and aggregated reporting for transparency, while keeping sensitive reserves non-public for security.',
-    ctaLabel: 'Donate BTC',
-    href: '/donate#bitcoin',
-    meter: { speed: 90, tax: 30, legacy: 70 },
+      'Become a monthly or annual member for stable artist-grant funding. Members unlock community access, art drops, grant votes, and tenure milestones.',
+    ctaLabel: 'Explore membership',
+    href: '/donate/monthly',
+    meter: { speed: 75, tax: 40, legacy: 70 },
   },
   {
     title: 'Stocks, Bonds, Mutual Funds',
@@ -148,22 +151,6 @@ function HeartBadge() {
 export default function WaysToGive() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [activeIndex, setActiveIndex] = useState(0);
-  const normalizeStripeUrl = (value?: string) => {
-    const trimmed = value?.trim();
-    if (!trimmed) return undefined;
-    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
-      return trimmed;
-    }
-    if (trimmed.startsWith('buy.stripe.com')) {
-      return `https://${trimmed}`;
-    }
-    return undefined;
-  };
-
-  const stripeOneTimeUrl = normalizeStripeUrl(
-    process.env.NEXT_PUBLIC_STRIPE_DONATION_LINK,
-  );
-  const hasStripeOneTime = Boolean(stripeOneTimeUrl);
   const isExternalHref = (href: string) => href.startsWith('http');
   const resolveHref = (way?: Way) => way?.href ?? '#';
   const renderCta = (href: string, label: string, className: string) => (
@@ -177,12 +164,7 @@ export default function WaysToGive() {
     </a>
   );
 
-  const stripeHref = stripeOneTimeUrl ?? '/donate#card';
-  const ways: Way[] = hasStripeOneTime
-    ? baseWays.map((way, index) =>
-        index === 0 ? { ...way, href: stripeHref } : way,
-      )
-    : baseWays;
+  const ways: Way[] = baseWays;
 
   return (
     <section className="mt-10 rounded-2xl border border-border bg-background p-6">
