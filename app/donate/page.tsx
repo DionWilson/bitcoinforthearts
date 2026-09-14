@@ -1,38 +1,25 @@
 import type { Metadata } from 'next';
-import BtcPayDonateWidget from '@/components/BtcPayDonateWidget';
 import WaysToGive from '@/components/WaysToGive';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
-import StripeCustomDonateForm from '@/components/StripeCustomDonateForm';
+import { getZapriteDonationLink } from '@/lib/zaprite-donation';
 
 export const metadata: Metadata = {
   title: 'Donate',
   description:
-    'Donate Bitcoin to support artists through micro-grants and programming.',
+    'Donate with Bitcoin, Lightning, or card to support artists through micro-grants and programming.',
 };
 
 export default function DonatePage({
+  searchParams,
 }: {
-  searchParams?: { amount?: string };
+  searchParams?: { amount?: string; thanks?: string; orderId?: string };
 }) {
   const heroImage = process.env.NEXT_PUBLIC_HERO_DONATE_IMAGE ?? '/bitcoin band.JPG';
   const ein = process.env.NEXT_PUBLIC_BFTA_EIN?.trim();
-  const normalizeStripeUrl = (value?: string) => {
-    const trimmed = value?.trim();
-    if (!trimmed) return undefined;
-    if (trimmed.startsWith('http://') || trimmed.startsWith('https://')) {
-      return trimmed;
-    }
-    if (trimmed.startsWith('buy.stripe.com')) {
-      return `https://${trimmed}`;
-    }
-    return undefined;
-  };
-
-  const stripeOneTimeUrl = normalizeStripeUrl(
-    process.env.NEXT_PUBLIC_STRIPE_DONATION_LINK,
-  );
-  const hasStripeOneTime = Boolean(stripeOneTimeUrl);
+  const zapriteUrl = getZapriteDonationLink();
+  const showThanks =
+    searchParams?.thanks === '1' || Boolean(searchParams?.orderId?.trim());
 
   return (
     <main className="bg-background">
@@ -41,11 +28,37 @@ export default function DonatePage({
         imageAlt="Support artists with Bitcoin."
         label="Donate"
         title="Fund artists. Strengthen sovereign creativity."
-        description="Give in Bitcoin, fiat, stocks, or planned gifts — and help build a long-term reserve for creators."
+        description="Give in Bitcoin, Lightning, card, stocks, or planned gifts — and help build a long-term reserve for creators."
         priority
       />
 
       <div className="mx-auto max-w-6xl px-6 py-14">
+        {showThanks ? (
+          <div
+            id="thanks"
+            className="mb-10 scroll-mt-28 rounded-2xl border border-accent/40 bg-accent/10 p-5 sm:p-6"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+              Thank you
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+              Your gift was received.
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
+              Bitcoin for the Arts thanks you. Your support funds artist micro-grants,
+              education, and cultural programming. A receipt should arrive by email from
+              checkout.
+              {searchParams?.orderId ? (
+                <>
+                  {' '}
+                  Reference:{' '}
+                  <span className="font-mono text-foreground">{searchParams.orderId}</span>
+                </>
+              ) : null}
+            </p>
+          </div>
+        ) : null}
+
         {/* Intro */}
         <div className="max-w-3xl">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
@@ -94,43 +107,49 @@ export default function DonatePage({
           </div>
         </div>
 
-        {/* BTC donation — primary, featured */}
-        <section id="bitcoin" className="mt-10 scroll-mt-28">
-          <BtcPayDonateWidget />
-        </section>
-
-        {/* Card / Stripe donation */}
-        <div id="card" className="mt-10 rounded-2xl border border-border bg-background p-6">
-          <h2 className="text-xl font-semibold tracking-tight">Donate with Card</h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted">
-            Give securely with a one-time card payment via Stripe Checkout.
-          </p>
-
-          <StripeCustomDonateForm />
-
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            {!hasStripeOneTime ? (
-              <a
-                href="mailto:donate@bitcoinforthearts.org?subject=Credit%20card%20donation"
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-              >
-                Email to donate
-              </a>
-            ) : null}
-
-            <Link
-              href="/donate/monthly"
-              className="inline-flex min-h-12 items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-            >
-              Join the Sovereign Circle
-            </Link>
+        {/* One-time give — Zaprite (Strike Bitcoin/Lightning + Stripe card) */}
+        <section id="donate-now" className="mt-10 scroll-mt-28">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-accent/50 bg-background">
+            <div className="h-1.5 w-full bg-[linear-gradient(90deg,#f7931a,#ff6f00,#f7931a)]" />
+            <div className="p-6 sm:p-8">
+              <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+                One-time gift
+              </div>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+                Donate with Bitcoin, Lightning, or card.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
+                One checkout for Bitcoin and Lightning (via Strike) and card (via Stripe).
+                Choose any amount. Receipts are emailed after payment.
+              </p>
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href={zapriteUrl}
+                  id="bitcoin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-14 items-center justify-center rounded-xl bg-accent px-8 py-3 text-sm font-bold text-accent-fg shadow-lg transition-all hover:brightness-110"
+                >
+                  Donate now →
+                </a>
+                <a
+                  href={zapriteUrl}
+                  id="card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+                >
+                  Open checkout
+                </a>
+              </div>
+              <p className="mt-4 text-xs leading-relaxed text-muted">
+                Secure checkout hosted by Zaprite. Bitcoin/Lightning settles to Strike.
+                Card settles to Stripe. Our BTCPay Server path is temporarily offline while
+                we recover from upstream Liquid/Boltz outages.
+              </p>
+            </div>
           </div>
-          {!hasStripeOneTime ? (
-            <p className="mt-3 text-xs leading-relaxed text-muted">
-              Add a Stripe payment link to enable instant card donations.
-            </p>
-          ) : null}
-        </div>
+        </section>
 
         {/* Ways to Give */}
         <WaysToGive />
