@@ -345,6 +345,20 @@ export default function MidwestPage() {
             <p className="max-w-xl text-sm leading-relaxed opacity-80">
               The Midwest Bitcoin Summit runs both days at the Greater Columbus Convention Center, 10:00 AM – 5:00 PM. Bitcoin Arts Park is BFTA\u2019s dedicated 30 ft cultural footprint on the Expo Hall floor inside the Summit.
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Link
+                href="/midwest/schedule"
+                className="inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+              >
+                Two-day schedule →
+              </Link>
+              <a
+                href="/midwest/bitcoin-arts-park-schedule.pdf"
+                className="inline-flex items-center justify-center rounded-md border border-white/30 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20"
+              >
+                Printable PDF →
+              </a>
+            </div>
             <a
               href="https://www.midwestbtc.com/"
               target="_blank"
@@ -402,6 +416,17 @@ export default function MidwestPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-sm text-muted">
+            Hour-by-hour times are posted on the{' '}
+            <Link href="/midwest/schedule" className="font-semibold text-foreground underline underline-offset-2">
+              Bitcoin Arts Park schedule
+            </Link>
+            . Download the{' '}
+            <a href="/midwest/bitcoin-arts-park-schedule.pdf" className="font-semibold text-foreground underline underline-offset-2">
+              one-sheet PDF
+            </a>
+            .
+          </p>
         </section>
 
         {/* ── How To Sponsor ────────────────────── */}
