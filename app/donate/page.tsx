@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 import WaysToGive from '@/components/WaysToGive';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
@@ -15,11 +16,17 @@ export default function DonatePage({
 }: {
   searchParams?: { amount?: string; thanks?: string; orderId?: string };
 }) {
+  const orderId = searchParams?.orderId?.trim();
+  if (searchParams?.thanks === '1' || orderId) {
+    const params = new URLSearchParams();
+    if (orderId) params.set('orderId', orderId);
+    const qs = params.toString();
+    redirect(qs ? `/donate/thank-you?${qs}` : '/donate/thank-you');
+  }
+
   const heroImage = process.env.NEXT_PUBLIC_HERO_DONATE_IMAGE ?? '/bitcoin band.JPG';
   const ein = process.env.NEXT_PUBLIC_BFTA_EIN?.trim();
   const zapriteUrl = getZapriteDonationLink();
-  const showThanks =
-    searchParams?.thanks === '1' || Boolean(searchParams?.orderId?.trim());
 
   return (
     <main className="bg-background">
@@ -33,32 +40,6 @@ export default function DonatePage({
       />
 
       <div className="mx-auto max-w-6xl px-6 py-14">
-        {showThanks ? (
-          <div
-            id="thanks"
-            className="mb-10 scroll-mt-28 rounded-2xl border border-accent/40 bg-accent/10 p-5 sm:p-6"
-          >
-            <p className="text-xs font-semibold uppercase tracking-wide text-accent">
-              Thank you
-            </p>
-            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-              Your gift was received.
-            </h2>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-              Bitcoin for the Arts thanks you. Your support funds artist micro-grants,
-              education, and cultural programming. A receipt should arrive by email from
-              checkout.
-              {searchParams?.orderId ? (
-                <>
-                  {' '}
-                  Reference:{' '}
-                  <span className="font-mono text-foreground">{searchParams.orderId}</span>
-                </>
-              ) : null}
-            </p>
-          </div>
-        ) : null}
-
         {/* Intro */}
         <div className="max-w-3xl">
           <div className="text-xs font-semibold uppercase tracking-wide text-muted">
