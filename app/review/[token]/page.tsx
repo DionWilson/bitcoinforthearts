@@ -91,8 +91,8 @@ export default async function ReviewPage({
   const { token } = await params;
   if (!token || token.length < 10) {
     return (
-      <main className="mx-auto max-w-4xl px-6 py-14">
-        <div className="rounded-2xl border border-border bg-background p-6">
+      <main className="mx-auto max-w-4xl overflow-x-hidden px-4 py-10 sm:px-6 sm:py-14">
+        <div className="rounded-2xl border border-border bg-background p-4 sm:p-6">
           <div className="text-sm text-muted">Invalid review link.</div>
         </div>
       </main>
@@ -100,16 +100,35 @@ export default async function ReviewPage({
   }
 
   const tokenHash = hashReviewToken(token);
-  const db = await getMongoDb();
-
-  const doc = (await db.collection('applications').findOne({
-    reviewShares: { $elemMatch: { tokenHash, expiresAt: { $gt: new Date() } } },
-  })) as ApplicationDoc | null;
+  let doc: ApplicationDoc | null = null;
+  try {
+    const db = await getMongoDb();
+    doc = (await db.collection('applications').findOne({
+      reviewShares: { $elemMatch: { tokenHash, expiresAt: { $gt: new Date() } } },
+    })) as ApplicationDoc | null;
+  } catch {
+    return (
+      <main className="mx-auto max-w-4xl overflow-x-hidden px-4 py-10 sm:px-6 sm:py-14">
+        <div className="rounded-2xl border border-border bg-background p-4 sm:p-6">
+          <div className="text-sm text-muted">
+            This review link could not be loaded right now. Please try again shortly, or contact{' '}
+            <a
+              className="font-semibold underline underline-offset-4"
+              href="mailto:grants@bitcoinforthearts.org"
+            >
+              grants@bitcoinforthearts.org
+            </a>
+            .
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   if (!doc) {
     return (
-      <main className="mx-auto max-w-4xl px-6 py-14">
-        <div className="rounded-2xl border border-border bg-background p-6">
+      <main className="mx-auto max-w-4xl overflow-x-hidden px-4 py-10 sm:px-6 sm:py-14">
+        <div className="rounded-2xl border border-border bg-background p-4 sm:p-6">
           <div className="text-sm text-muted">This review link is invalid or has expired.</div>
         </div>
       </main>
