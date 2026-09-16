@@ -74,9 +74,9 @@ function fmtDate(d?: Date) {
 function textBlock(label: string, value?: string | null) {
   if (!value || !value.trim()) return null;
   return (
-    <div>
+    <div className="min-w-0">
       <div className="text-xs font-semibold uppercase tracking-wide text-muted">{label}</div>
-      <pre className="mt-2 whitespace-pre-wrap rounded-xl border border-border bg-surface p-4 text-sm leading-relaxed text-foreground/90">
+      <pre className="mt-2 overflow-x-auto whitespace-pre-wrap break-words rounded-xl border border-border bg-surface p-3 text-sm leading-relaxed text-foreground/90 sm:p-4">
         {value}
       </pre>
     </div>
@@ -125,15 +125,15 @@ export default async function ReviewPage({
     .filter(Boolean);
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-14">
-      <div className="rounded-3xl border border-border bg-background p-6 sm:p-8">
+    <main className="mx-auto max-w-5xl overflow-x-hidden px-4 py-10 sm:px-6 sm:py-14">
+      <div className="min-w-0 rounded-2xl border border-border bg-background p-4 sm:rounded-3xl sm:p-8">
         <div className="text-xs font-semibold uppercase tracking-wide text-muted">
           BFTA • Application review
         </div>
-        <h1 className="mt-2 text-2xl font-semibold tracking-tight">
+        <h1 className="mt-2 break-words text-xl font-semibold tracking-tight sm:text-2xl">
           {doc.applicant?.legalName ?? 'Grant application'}
         </h1>
-        <div className="mt-2 text-sm text-muted">
+        <div className="mt-2 break-words text-sm text-muted">
           {doc.project?.title ?? ''}
           {doc.createdAt ? (
             <span>
@@ -143,7 +143,7 @@ export default async function ReviewPage({
           ) : null}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6">
+        <div className="mt-6 grid grid-cols-1 gap-5 sm:mt-8 sm:gap-6">
           <Suspense
             fallback={
               <div className="rounded-2xl border border-border bg-background p-6 text-sm text-muted">
@@ -154,7 +154,7 @@ export default async function ReviewPage({
             <ReviewerScorePanel token={token} authorizedEmails={authorizedEmails} />
           </Suspense>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Applicant</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {textBlock('Email', doc.applicant?.email ?? '')}
@@ -190,7 +190,7 @@ export default async function ReviewPage({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Project</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {textBlock('Title', doc.project?.title ?? '')}
@@ -202,7 +202,7 @@ export default async function ReviewPage({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Funding</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {doc.funding?.requestedAmount !== undefined ? (
@@ -220,7 +220,7 @@ export default async function ReviewPage({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Background</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {textBlock('Bio', doc.background?.bio ?? '')}
@@ -230,23 +230,23 @@ export default async function ReviewPage({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Oversight</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {textBlock('Reporting plan', doc.oversight?.reportingPlan ?? '')}
             </div>
           </section>
 
-          <section className="rounded-2xl border border-border bg-surface/40 p-5">
+          <section className="min-w-0 rounded-2xl border border-border bg-surface/40 p-4 sm:p-5">
             <div className="text-sm font-semibold">Attachments</div>
             <div className="mt-4 grid grid-cols-1 gap-4">
               {doc.links?.fiscalSponsorAgreement ? (
-                <div className="text-sm">
+                <div className="min-w-0 text-sm">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                     Sponsor agreement link
                   </div>
                   <a
-                    className="mt-2 inline-flex font-semibold underline underline-offset-4"
+                    className="mt-2 inline-block break-all font-semibold underline underline-offset-4"
                     href={doc.links.fiscalSponsorAgreement}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -256,26 +256,26 @@ export default async function ReviewPage({
                 </div>
               ) : null}
               {doc.links?.artSamples ? (
-                <div>
+                <div className="min-w-0">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                     Samples (links)
                   </div>
-                  <pre className="mt-2 whitespace-pre-wrap rounded-xl border border-border bg-background p-4 text-sm leading-relaxed text-foreground/90">
+                  <pre className="mt-2 overflow-x-auto whitespace-pre-wrap break-words rounded-xl border border-border bg-background p-3 text-sm leading-relaxed text-foreground/90 sm:p-4">
                     {doc.links.artSamples}
                   </pre>
                 </div>
               ) : null}
 
               {files.length ? (
-                <div className="text-sm">
+                <div className="min-w-0 text-sm">
                   <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                     Uploaded PDFs
                   </div>
                   <ul className="mt-2 space-y-2">
                     {files.map((f, idx) => (
-                      <li key={`${String(doc._id)}-${idx}`}>
+                      <li key={`${String(doc._id)}-${idx}`} className="min-w-0">
                         <a
-                          className="font-semibold underline underline-offset-4"
+                          className="break-all font-semibold underline underline-offset-4"
                           href={`/api/review/files/${encodeURIComponent(token)}/${String(
                             f.fileId,
                           )}`}
