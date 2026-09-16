@@ -1,10 +1,15 @@
 # Expo Stage Script: Dion Wilson and Bitcoin for the Arts
 
-**Event:** Midwest Bitcoin Summit  
-**Location:** Expo Stage, Greater Columbus Convention Center  
-**Opening slots:** Wednesday, September 23 and Thursday, September 24, 2026, 12:00-12:10 PM ET  
-**Target delivery:** 8:30-9:15, including the day-specific artist handoff  
-**Voice:** Deliberate, warm, grounded, invitational  
+**Event:** Midwest Bitcoin Summit
+
+**Location:** Expo Stage, Greater Columbus Convention Center
+
+**Opening slots:** Wednesday, September 23 and Thursday, September 24, 2026, 12:00-12:10 PM ET
+
+**Target delivery:** 8:30-9:15, including the day-specific artist handoff
+
+**Voice:** Deliberate, warm, grounded, invitational
+
 **House style:** No em dashes or en dashes as punctuation
 
 ## Before Dion walks onstage
@@ -295,34 +300,34 @@ These notes are for preparation, press follow-up, and slide footnotes. Do not re
 
 ## Artist economy
 
-1. **$1.17 trillion, 4.2 percent of U.S. GDP, and 5.4 million jobs in 2023.** U.S. Bureau of Economic Analysis, "Arts and Cultural Production Satellite Account, U.S. and States, 2023," released April 2, 2025.  
+1. **$1.17 trillion, 4.2 percent of U.S. GDP, and 5.4 million jobs in 2023.** U.S. Bureau of Economic Analysis, "Arts and Cultural Production Satellite Account, U.S. and States, 2023," released April 2, 2025.
    https://www.bea.gov/news/2025/arts-and-cultural-production-satellite-account-us-and-states-2023
 
-2. **37 percent worked two or more jobs; 46 percent performed artistic labor without financial or material return but wanted compensation.** NORC at the University of Chicago, *National Survey of Artists: Findings Report*, survey fielded September-November 2024 and published in 2025. The survey covers people with a dedicated, professionalized artistic practice, including people whose primary occupation is outside the arts. The primary-job median and multiple-job findings should not be confused with NEA occupational statistics.  
+2. **37 percent worked two or more jobs; 46 percent performed artistic labor without financial or material return but wanted compensation.** NORC at the University of Chicago, *National Survey of Artists: Findings Report*, survey fielded September-November 2024 and published in 2025. The survey covers people with a dedicated, professionalized artistic practice, including people whose primary occupation is outside the arts. The primary-job median and multiple-job findings should not be confused with NEA occupational statistics.
    https://www.norc.org/content/dam/norc-org/pdf2025/National%20Survey%20of%20Artists%20-%20Findings%20Report.pdf
 
-3. **Only 9 percent reported adequate or strong protection of economic and social rights.** UNESCO, *Culture: The Missing SDG*, 2025 Global Report on Cultural Policies. This is a survey-based global indicator about artists and cultural professionals, not a measured global poverty rate.  
+3. **Only 9 percent reported adequate or strong protection of economic and social rights.** UNESCO, *Culture: The Missing SDG*, 2025 Global Report on Cultural Policies. This is a survey-based global indicator about artists and cultural professionals, not a measured global poverty rate.
    https://www.unesco.org/en/culture/global-report
 
-4. **Useful backup statistic, not included in the main speech:** In 2024, 23 percent of Americans whose primary occupation was an artist occupation worked part time, compared with 16 percent of the total labor force. Nine percent held a second job, compared with 5 percent overall. National Endowment for the Arts using Current Population Survey data.  
+4. **Useful backup statistic, not included in the main speech:** In 2024, 23 percent of Americans whose primary occupation was an artist occupation worked part time, compared with 16 percent of the total labor force. Nine percent held a second job, compared with 5 percent overall. National Endowment for the Arts using Current Population Survey data.
    https://www.arts.gov/sites/default/files/a5-report-202509.pdf
 
 ## Columbus and Central Ohio
 
-5. **18 Fortune 1000 headquarters, including five Fortune 500 headquarters.** The Columbus Region, June 2026. The 18 headquarters employ more than 36,000 people in the metro and span healthcare, financial services, insurance, energy, technology, retail, advanced manufacturing, construction, and life sciences. The Columbus Region is the area's economic development organization, so attribute the count when using it in formal materials.  
+5. **18 Fortune 1000 headquarters, including five Fortune 500 headquarters.** The Columbus Region, June 2026. The 18 headquarters employ more than 36,000 people in the metro and span healthcare, financial services, insurance, energy, technology, retail, advanced manufacturing, construction, and life sciences. The Columbus Region is the area's economic development organization, so attribute the count when using it in formal materials.
    https://columbusregion.com/press-release/18-fortune-1000-headquarters/
 
-6. **Nationwide origin and scale.** Ohio farmers pooled $10,000 to form Farm Bureau Mutual Automobile Insurance Company. The first policy was sold April 14, 1926. Nationwide's 2025 annual report lists $73.2 billion in sales and premiums and $359.8 billion in assets.  
-   https://news.nationwide.com/centennial/  
+6. **Nationwide origin and scale.** Ohio farmers pooled $10,000 to form Farm Bureau Mutual Automobile Insurance Company. The first policy was sold April 14, 1926. Nationwide's 2025 annual report lists $73.2 billion in sales and premiums and $359.8 billion in assets.
+   https://news.nationwide.com/centennial/
    https://www.nationwide.com/cps/annual-report/index.html
 
-7. **John McConnell and Worthington.** In 1955, McConnell borrowed $600 against his 1952 Oldsmobile to buy his first load of steel and establish Worthington Industries in Columbus. Worthington Steel's fiscal 2025 Form 10-K reports $3.093 billion in net sales and manufacturing operations in the United States, Canada, China, India, Germany, and Mexico.  
-   https://www.worthingtonsteel.com/company/who-we-are/history  
+7. **John McConnell and Worthington.** In 1955, McConnell borrowed $600 against his 1952 Oldsmobile to buy his first load of steel and establish Worthington Industries in Columbus. Worthington Steel's fiscal 2025 Form 10-K reports $3.093 billion in net sales and manufacturing operations in the United States, Canada, China, India, Germany, and Mexico.
+   https://www.worthingtonsteel.com/company/who-we-are/history
    https://www.sec.gov/Archives/edgar/data/1968487/000095017025099742/ws-20250531.htm
 
-8. **Dave Thomas and Wendy's.** Wendy's first-party history documents Thomas's adoption, the death of his adoptive mother when he was five, repeated childhood moves, leaving high school for full-time work, and the first Wendy's opening in Columbus on November 15, 1969. Wendy's fiscal 2025 Form 10-K reports 7,397 restaurants in the United States and 38 foreign countries and U.S. territories as of December 28, 2025. Do not use the disputed claim that Thomas completed only eighth grade.  
-   https://www.wendys.com/daves-legacy-early-years  
-   https://www.wendys.com/who-we-are-daves-legacy-founding-wendys/  
+8. **Dave Thomas and Wendy's.** Wendy's first-party history documents Thomas's adoption, the death of his adoptive mother when he was five, repeated childhood moves, leaving high school for full-time work, and the first Wendy's opening in Columbus on November 15, 1969. Wendy's fiscal 2025 Form 10-K reports 7,397 restaurants in the United States and 38 foreign countries and U.S. territories as of December 28, 2025. Do not use the disputed claim that Thomas completed only eighth grade.
+   https://www.wendys.com/daves-legacy-early-years
+   https://www.wendys.com/who-we-are-daves-legacy-founding-wendys/
    https://www.sec.gov/Archives/edgar/data/30697/000003069726000009/wen-20251228.htm
 
 ## BFTA and event facts
