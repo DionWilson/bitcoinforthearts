@@ -163,7 +163,7 @@ export default function ReviewerScorePanel({
   };
 
   return (
-    <section className="rounded-2xl border border-accent/40 bg-background p-6 shadow-sm">
+    <section className="min-w-0 rounded-2xl border border-accent/40 bg-background p-4 shadow-sm sm:p-6">
       <div className="flex flex-col gap-1">
         <h2 className="text-lg font-semibold tracking-tight">Your review score</h2>
         <p className="text-sm text-muted">
@@ -173,7 +173,7 @@ export default function ReviewerScorePanel({
       </div>
 
       {emailRestricted ? (
-        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-950">
+        <div className="mt-4 break-words rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-950 sm:p-4">
           <div className="font-semibold">Use your invited email</div>
           <p className="mt-1">
             This link only saves scores for these addresses:{' '}
@@ -182,13 +182,13 @@ export default function ReviewerScorePanel({
             to recreate the link with your address included.
           </p>
           {authorizedNormalized.length <= 8 ? (
-            <div className="mt-3 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
               {authorizedEmails.map((email) => (
                 <button
                   key={email}
                   type="button"
                   onClick={() => setReviewerEmail(email)}
-                  className="rounded-full border border-amber-300 bg-white px-3 py-1 text-xs font-semibold text-amber-950 hover:bg-amber-100"
+                  className="min-h-11 w-full rounded-md border border-amber-300 bg-white px-3 py-2 text-left text-xs font-semibold text-amber-950 hover:bg-amber-100 sm:w-auto sm:rounded-full sm:py-1 sm:text-center"
                 >
                   Use {maskEmail(email)}
                 </button>
@@ -256,7 +256,7 @@ export default function ReviewerScorePanel({
         </label>
       </div>
 
-      <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         {(
           [
             ['overall', 'Overall'],
@@ -266,7 +266,7 @@ export default function ReviewerScorePanel({
             ['transparency', 'Transparency'],
           ] as const
         ).map(([key, label]) => (
-          <label key={key} className="block">
+          <label key={key} className="block min-w-0">
             <div className="text-sm font-semibold">{label}</div>
             <select
               value={scores[key]}
@@ -276,7 +276,7 @@ export default function ReviewerScorePanel({
                   [key]: clampScore(Number(e.target.value)),
                 }))
               }
-              className="mt-2 min-h-11 w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
+              className="mt-2 min-h-11 w-full max-w-full rounded-md border border-border bg-background px-2 py-2 text-sm sm:px-3"
               aria-label={`${label} score 1 to 5`}
             >
               {[1, 2, 3, 4, 5].map((n) => (
@@ -301,7 +301,7 @@ export default function ReviewerScorePanel({
       </label>
 
       {state.status === 'error' ? (
-        <div className="mt-3 rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">
+        <div className="mt-3 break-words rounded-lg border border-red-200 bg-red-50 p-3 text-sm text-red-800">
           {state.message}
         </div>
       ) : null}
@@ -318,7 +318,7 @@ export default function ReviewerScorePanel({
           onClick={save}
           disabled={state.status === 'saving'}
           className={[
-            'inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors',
+            'inline-flex min-h-11 w-full items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors sm:w-auto',
             state.status === 'saving' ? 'cursor-wait opacity-70' : 'hover:opacity-90',
           ].join(' ')}
         >

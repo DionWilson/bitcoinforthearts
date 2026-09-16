@@ -90,10 +90,15 @@ export default function Navigation() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/15 bg-brand-surface text-brand-surface-fg">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      {/*
+        Keep the full desktop link row at lg+ only. Between phone and laptop
+        widths the old sm breakpoint crowded "Bitcoin for the Arts" into the
+        menu / link cluster when the window was not full screen.
+      */}
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6">
         <Link
           href="/"
-          className="flex items-center gap-3 font-semibold tracking-tight min-w-0"
+          className="flex min-w-0 flex-1 items-center gap-2 font-semibold tracking-tight sm:gap-3"
           aria-label="Bitcoin for the Arts — Home"
           onClick={() => {
             setIsOpen(false);
@@ -106,16 +111,16 @@ export default function Navigation() {
             width={36}
             height={36}
             priority
-            className="rounded-md border border-black/10"
+            className="h-9 w-9 shrink-0 rounded-md border border-black/10"
           />
-          <span className="text-base sm:text-lg uppercase whitespace-nowrap leading-none">
+          <span className="truncate text-sm uppercase leading-none sm:text-base lg:text-lg">
             Bitcoin for the Arts
           </span>
         </Link>
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md border border-black/25 px-3 py-2 text-sm font-medium sm:hidden hover:bg-black/5"
+          className="inline-flex shrink-0 items-center justify-center rounded-md border border-black/25 px-3 py-2 text-sm font-medium hover:bg-black/5 lg:hidden"
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isOpen}
           onClick={() => {
@@ -157,7 +162,7 @@ export default function Navigation() {
           )}
         </button>
 
-        <div className="hidden items-center gap-2 sm:flex">
+        <div className="hidden items-center gap-1 lg:flex xl:gap-2">
           {navItems.map((item) => {
             const isActiveBase =
               item.href === '/'
@@ -262,8 +267,8 @@ export default function Navigation() {
       </nav>
 
       {isOpen ? (
-        <div className="border-t border-black/10 bg-brand-surface text-brand-surface-fg sm:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-3">
+        <div className="border-t border-black/10 bg-brand-surface text-brand-surface-fg lg:hidden">
+          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
             {navItems.map((item) => {
               const isCta = item.variant === 'cta';
               const hasChildren = Boolean(item.children?.length);
