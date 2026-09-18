@@ -14,4 +14,5 @@ Hand this to the printer with `bfta-merch-donation-flyer.pdf`.
 Do **not** print from a phone screenshot. Use the PDF.
 PNG proof is 2550×3300 px at 300 dpi if the shop insists on raster.
 
-QR opens the open-amount Zaprite checkout so donors can enter $30 (shirt) or $35 (hat).
+QR opens the open-amount Zaprite checkout. The flyer shows retail values and invites
+a donation at retail or more, while leaving the amount to the donor.

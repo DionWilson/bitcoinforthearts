@@ -2,7 +2,8 @@
 """Generate a print-ready wall flyer for Midwest Bitcoin Arts Park soft goods.
 
 Letter size (8.5 × 11 in portrait). Vector PDF + 300 dpi PNG.
-T-shirts and hats are not for sale — suggested donations with QR to give.
+T-shirts, tote bags, and hats are not for sale — retail values shown with
+donation-by-heart guidance and a QR to give.
 """
 
 from __future__ import annotations
@@ -168,21 +169,21 @@ def build_flyer(pdf_path: Path, qr_path: Path) -> None:
         canvas.restoreState()
 
     logo = LOGO if LOGO.exists() else BUG
-    logo_w = 3.1 * inch
+    logo_w = 2.85 * inch
     with PILImage.open(logo) as im:
         aspect = im.size[1] / im.size[0]
     logo_h = logo_w * aspect
 
     story = []
     story.append(Image(str(logo), width=logo_w, height=logo_h, hAlign="CENTER"))
-    story.append(Spacer(1, 0.18 * inch))
+    story.append(Spacer(1, 0.14 * inch))
     story.append(Paragraph("BITCOIN ARTS PARK · MIDWEST BITCOIN SUMMIT", styles["eyebrow"]))
     story.append(Paragraph("Soft goods · take what fits", styles["title"]))
     story.append(
         Paragraph(
-            "These shirts and hats are <b>not for sale</b>. "
-            "If you take one, please leave a donation to support Bitcoin for the Arts "
-            "and the artists we fund.",
+            "Shirts, tote bags, and hats with the Bitcoin for the Arts mark are "
+            "<b>not for sale</b>. They are here as a gift for our community. "
+            "If you take one, please support the artists we fund with a donation.",
             styles["dek"],
         )
     )
@@ -191,18 +192,21 @@ def build_flyer(pdf_path: Path, qr_path: Path) -> None:
         [
             [
                 Paragraph("T-SHIRT", styles["price_label"]),
+                Paragraph("TOTE BAG", styles["price_label"]),
                 Paragraph("HAT", styles["price_label"]),
             ],
             [
                 Paragraph("$30", styles["price_item"]),
+                Paragraph("$30", styles["price_item"]),
                 Paragraph("$35", styles["price_item"]),
             ],
             [
-                Paragraph("Suggested donation", styles["price_sub"]),
-                Paragraph("Suggested donation", styles["price_sub"]),
+                Paragraph("Retail value", styles["price_sub"]),
+                Paragraph("Retail value", styles["price_sub"]),
+                Paragraph("Retail value", styles["price_sub"]),
             ],
         ],
-        colWidths=[3.15 * inch, 3.15 * inch],
+        colWidths=[2.15 * inch, 2.15 * inch, 2.15 * inch],
     )
     price_table.setStyle(
         TableStyle(
@@ -210,34 +214,40 @@ def build_flyer(pdf_path: Path, qr_path: Path) -> None:
                 ("BACKGROUND", (0, 0), (-1, -1), colors.white),
                 ("BOX", (0, 0), (-1, -1), 1.5, ORANGE),
                 ("INNERGRID", (0, 0), (-1, -1), 0.75, colors.HexColor("#E8E0D4")),
-                ("TOPPADDING", (0, 0), (-1, -1), 8),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
-                ("LEFTPADDING", (0, 0), (-1, -1), 8),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+                ("TOPPADDING", (0, 0), (-1, -1), 7),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+                ("LEFTPADDING", (0, 0), (-1, -1), 4),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 4),
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
             ]
         )
     )
     story.append(price_table)
-    story.append(Spacer(1, 0.22 * inch))
+    story.append(Spacer(1, 0.14 * inch))
+    story.append(
+        Paragraph(
+            "We invite a donation at <b>retail value or more</b>. "
+            "Give what you can. Every gift supports Bitcoin for the Arts.",
+            styles["dek"],
+        )
+    )
     story.append(Paragraph("Scan to give", styles["scan"]))
     story.append(
         Paragraph(
-            "Enter <b>$30</b> for a shirt or <b>$35</b> for a hat "
-            "(or any amount that feels right).",
+            "Bitcoin, Lightning, or card. Choose any amount at checkout.",
             styles["dek"],
         )
     )
 
-    qr_display = 2.35 * inch
+    qr_display = 2.2 * inch
     story.append(Image(str(qr_path), width=qr_display, height=qr_display, hAlign="CENTER"))
-    story.append(Spacer(1, 0.08 * inch))
+    story.append(Spacer(1, 0.06 * inch))
     story.append(Paragraph(DONATE_DISPLAY, styles["url"]))
-    story.append(Spacer(1, 0.14 * inch))
+    story.append(Spacer(1, 0.1 * inch))
     story.append(
         Paragraph(
             "Bitcoin for the Arts · 501(c)(3) · EIN 41-2642260<br/>"
-            "Bitcoin, Lightning, or card · Thank you for supporting working artists.",
+            "Thank you for supporting working artists.",
             styles["fine"],
         )
     )
@@ -296,7 +306,8 @@ Hand this to the printer with `bfta-merch-donation-flyer.pdf`.
 Do **not** print from a phone screenshot. Use the PDF.
 PNG proof is 2550×3300 px at 300 dpi if the shop insists on raster.
 
-QR opens the open-amount Zaprite checkout so donors can enter $30 (shirt) or $35 (hat).
+QR opens the open-amount Zaprite checkout. The flyer shows retail values and invites
+a donation at retail or more, while leaving the amount to the donor.
 """,
         encoding="utf-8",
     )
