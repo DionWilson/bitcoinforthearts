@@ -462,11 +462,25 @@ def build_card(spec: CardSpec, out_pdf: Path) -> None:
 
 
 def pdf_to_png(pdf_path: Path, png_path: Path, dpi: int = 300) -> None:
+    """Rasterize at `dpi` and stamp correct print DPI metadata.
+
+    PyMuPDF pixmap saves often default to 96 dpi tags even when the pixel
+    grid is 300 dpi. Print shops that trust the tag then scale wrong and
+    the vinyl looks soft/blurry.
+    """
     doc = pymupdf.open(str(pdf_path))
     page = doc[0]
     zoom = dpi / 72
     pix = page.get_pixmap(matrix=pymupdf.Matrix(zoom, zoom), alpha=False)
-    pix.save(str(png_path))
+    # Save via Pillow so pHYs / dpi metadata matches the real pixel density.
+    img = PILImage.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    img.save(str(png_path), format="PNG", dpi=(dpi, dpi))
+    doc.close()
+    if img.size != (int(7 * dpi), int(5 * dpi)):
+        raise RuntimeError(
+            f"{png_path.name} is {img.size[0]}×{img.size[1]} px; "
+            f"expected {int(7 * dpi)}×{int(5 * dpi)} at {dpi} dpi"
+        )
 
 
 def build_combined(pdf_paths: list[Path], out_path: Path) -> None:
