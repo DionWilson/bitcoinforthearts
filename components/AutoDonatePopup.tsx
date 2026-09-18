@@ -217,20 +217,16 @@ export default function AutoDonatePopup() {
                     href={option.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={isFeatured ? `Donate ${option.label}` : undefined}
                     className={[
-                      'relative inline-flex min-h-14 flex-col items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold transition-all',
+                      'relative inline-flex min-h-14 items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold transition-all',
                       isFeatured
-                        ? 'bg-accent text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110'
+                        ? 'bg-accent text-base font-bold text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110'
                         : 'border border-border bg-background text-foreground hover:bg-surface',
                     ].join(' ')}
                     onClick={dismiss}
                   >
-                    {isFeatured ? (
-                      <span className="mb-1 text-[10px] font-bold uppercase tracking-wide opacity-90">
-                        Most chosen · 21
-                      </span>
-                    ) : null}
-                    <span className={isFeatured ? 'text-base font-bold' : ''}>{option.label}</span>
+                    {option.label}
                   </a>
                 );
               })}

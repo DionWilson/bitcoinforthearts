@@ -122,19 +122,15 @@ export default function DonatePage({
                         id={option.amount === 21 ? 'bitcoin' : undefined}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={isFeatured ? `Donate ${option.label}` : undefined}
                         className={[
-                          'relative inline-flex min-h-16 flex-col items-center justify-center rounded-xl px-4 py-3 text-sm font-bold transition-all',
+                          'relative inline-flex min-h-16 items-center justify-center rounded-xl px-4 py-3 font-bold transition-all',
                           isFeatured
-                            ? 'bg-accent text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110 sm:scale-[1.03]'
-                            : 'border border-border bg-background text-foreground hover:bg-surface',
+                            ? 'bg-accent text-lg text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110 sm:scale-[1.03]'
+                            : 'border border-border bg-background text-base text-foreground hover:bg-surface',
                         ].join(' ')}
                       >
-                        {isFeatured ? (
-                          <span className="mb-1 text-[10px] font-bold uppercase tracking-wide text-accent-fg/90">
-                            Most chosen · 21
-                          </span>
-                        ) : null}
-                        <span className={isFeatured ? 'text-lg' : 'text-base'}>{option.label}</span>
+                        {option.label}
                       </a>
                     );
                   })}
