@@ -1,9 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import {
+  getZapriteDonationLink,
+  getZapriteFixedDonationOptions,
+} from '@/lib/zaprite-donation';
 // BFTA 2026 brand bug — same cream-orange "alt" mark used in nav, footer,
 // and the home/about hero columns, so the popup reads as part of the same
 // brand system instead of dropping the old gold badge in.
@@ -29,7 +32,8 @@ export default function AutoDonatePopup() {
   const [open, setOpen] = useState(false);
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
 
-  const amounts = useMemo(() => [11, 21, 51, 101], []);
+  const amountOptions = useMemo(() => getZapriteFixedDonationOptions(), []);
+  const customAmountUrl = useMemo(() => getZapriteDonationLink(), []);
   const dismiss = useCallback(() => {
     setOpen(false);
     try {
@@ -205,26 +209,30 @@ export default function AutoDonatePopup() {
               Suggested amounts (USD)
             </div>
             <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {amounts.map((a) => (
-                <Link
-                  key={a}
-                  href={`/donate?amount=${a}#bitcoin`}
+              {amountOptions.map((option) => (
+                <a
+                  key={option.amount}
+                  href={option.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-4 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
                   onClick={dismiss}
                 >
-                  {a}
-                </Link>
+                  {option.label}
+                </a>
               ))}
             </div>
 
             <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <Link
-                href="/donate#bitcoin"
+              <a
+                href={customAmountUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-4 py-3 text-sm font-semibold transition-colors hover:bg-surface"
                 onClick={dismiss}
               >
                 Custom amount
-              </Link>
+              </a>
               <button
                 type="button"
                 onClick={dismiss}
