@@ -32,17 +32,45 @@ PUBLIC_OUT = ROOT / "public/midwest/merch-flyer"
 LOGO = ROOT / "public/brand-kit/main-lockups/main-cream-orange.png"
 BUG = ROOT / "public/brand-kit/square-bugs/square-cream-orange.png"
 
-ORANGE = colors.HexColor("#FF4F14")
-CREAM = colors.HexColor("#FFFAF0")
+ORANGE = colors.CMYKColor(0, 0.68, 1.0, 0)  # print-stable orange (high yellow, resists pink shift)
+ORANGE_RGB_HEX = "#E85C00"  # screen/PNG remap target approximating the CMYK orange above
+CREAM = colors.CMYKColor(0, 0.02, 0.06, 0)  # warm cream that still reads on white stock
 BLACK = colors.black
-MUTED = colors.HexColor("#3A3A3A")
+MUTED = colors.HexColor("#333333")
 
 PAGE_W = 8.5 * inch
 PAGE_H = 11 * inch
 
-# Open-amount Zaprite checkout so donors can enter $30 / $35 (or any gift).
+# Most desktop printers cannot ink the outer ~0.25–0.5 in.
+# Keep rules and content inside this safe inset so bars are not cropped.
+SAFE_INSET = 0.45 * inch
+BAR_THICK = 0.2 * inch
+
+# Open-amount Zaprite checkout so donors can choose any gift amount.
 DONATE_URL = "https://pay.zaprite.com/pl_BFbJ9QnTfB"
 DONATE_DISPLAY = "bitcoinforthearts.org/donate"
+
+
+def remapped_print_logo(src: Path, dest: Path) -> Path:
+    """Shift brand-orange pixels toward yellow so inkjet/CMYK stays orange, not pink."""
+    im = PILImage.open(src).convert("RGBA")
+    px = im.load()
+    w, h = im.size
+    for y in range(h):
+        for x in range(w):
+            r, g, b, a = px[x, y]
+            if a < 16:
+                continue
+            # Brand orange / warm script tones
+            if r >= 170 and r > b + 60 and r >= g:
+                # Pull toward print orange: keep red hot, lift green (yellow), crush blue
+                nr = min(255, int(r * 0.92 + 20))
+                ng = min(255, max(int(g * 0.55 + 70), 72))
+                nb = min(28, int(b * 0.35))
+                px[x, y] = (nr, ng, nb, a)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    im.save(dest, format="PNG", dpi=(300, 300))
+    return dest
 
 
 def make_qr_png(path: Path, url: str, box_size: int = 16) -> None:
@@ -73,10 +101,10 @@ def build_flyer(pdf_path: Path, qr_path: Path) -> None:
     doc = SimpleDocTemplate(
         str(pdf_path),
         pagesize=(PAGE_W, PAGE_H),
-        leftMargin=0.6 * inch,
-        rightMargin=0.6 * inch,
-        topMargin=0.4 * inch,
-        bottomMargin=0.4 * inch,
+        leftMargin=SAFE_INSET,
+        rightMargin=SAFE_INSET,
+        topMargin=SAFE_INSET + BAR_THICK + 0.12 * inch,
+        bottomMargin=SAFE_INSET + BAR_THICK + 0.12 * inch,
     )
 
     styles = {
@@ -163,13 +191,31 @@ def build_flyer(pdf_path: Path, qr_path: Path) -> None:
         canvas.saveState()
         canvas.setFillColor(CREAM)
         canvas.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+        # Accent bars inset into the printable safe area (edge-to-edge bars get cropped).
         canvas.setFillColor(ORANGE)
-        canvas.rect(0, PAGE_H - 0.14 * inch, PAGE_W, 0.14 * inch, fill=1, stroke=0)
-        canvas.rect(0, 0, PAGE_W, 0.1 * inch, fill=1, stroke=0)
+        bar_width = PAGE_W - (2 * SAFE_INSET)
+        canvas.rect(
+            SAFE_INSET,
+            PAGE_H - SAFE_INSET - BAR_THICK,
+            bar_width,
+            BAR_THICK,
+            fill=1,
+            stroke=0,
+        )
+        canvas.rect(
+            SAFE_INSET,
+            SAFE_INSET,
+            bar_width,
+            BAR_THICK,
+            fill=1,
+            stroke=0,
+        )
         canvas.restoreState()
 
-    logo = LOGO if LOGO.exists() else BUG
-    logo_w = 2.85 * inch
+    raw_logo = LOGO if LOGO.exists() else BUG
+    logo_print = OUT_DIR / "_logo-print-safe.png"
+    logo = remapped_print_logo(raw_logo, logo_print)
+    logo_w = 2.75 * inch
     with PILImage.open(logo) as im:
         aspect = im.size[1] / im.size[0]
     logo_h = logo_w * aspect
@@ -299,9 +345,15 @@ Hand this to the printer with `bfta-merch-donation-flyer.pdf`.
 | Trim size | **8.50 × 11.00 in** (US Letter, portrait) |
 | Preferred file | **PDF** (vector text + embedded QR/logo) |
 | Scale | **100% / actual size** (do not fit to page) |
-| Color | Cream `#FFFAF0` + orange `#FF4F14` + black |
+| Color | Print-optimized CMYK orange + warm cream + black |
 | Stock | Matte cardstock or foam-core backed print for wall |
-| Bleed | None required if printing exact letter |
+| Safe area | Accent bars sit **0.45 in** inset from each edge so desktop printers do not crop them |
+
+## Important for home / office printers
+
+Most inkjet and laser printers **cannot print to the paper edge**. If orange bars sit on the very edge of the PDF, the bottom bar disappears even at 100% scale. This file keeps bars and type inside a safe margin.
+
+If using a print shop with full-bleed capability, they can still print letter as-is.
 
 Do **not** print from a phone screenshot. Use the PDF.
 PNG proof is 2550×3300 px at 300 dpi if the shop insists on raster.
@@ -321,6 +373,8 @@ a donation at retail or more, while leaving the amount to the donor.
         (PUBLIC_OUT / name).write_bytes(src.read_bytes())
 
     qr_path.unlink(missing_ok=True)
+    logo_print = OUT_DIR / "_logo-print-safe.png"
+    logo_print.unlink(missing_ok=True)
     print(f"ok {pdf_path}")
     print(f"ok {png_path} (300 dpi)")
 
