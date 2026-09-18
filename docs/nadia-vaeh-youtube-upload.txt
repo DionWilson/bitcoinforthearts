@@ -1,0 +1,246 @@
+YOUTUBE UPLOAD DETAILS · Share Your Bitcoin Journey: Episode 16
+
+UPLOAD STATUS: Private / unlisted staging at https://youtu.be/RXNaiUEawv4 (confirm visibility before social posts). Thumbnail is in the repo at public/Ep16NadiaVaeh.JPG and web hero at public/sybj-ep16-nadia-web.png.
+
+
+=== TITLE ===
+
+Share Your Bitcoin Journey: Episode 16 – Nadia Vaeh: One Poop Scoop Away
+
+
+=== TITLE (BACKUP OPTIONS) ===
+
+- Share Your Bitcoin Journey: Episode 16 – Nadia Vaeh: What Does It Mean to Make It?
+- Share Your Bitcoin Journey: Episode 16 – Nadia Vaeh: Music as a Lifeline
+- Share Your Bitcoin Journey: Episode 16 – Nadia Vaeh: Indie Artist, Filmmaker, Bitcoin
+
+
+=== DESCRIPTION ===
+
+In this conversation, Bitcoin For The Arts founder Dion Wilson sits down with Nadia Vaeh, an award-winning recording artist and filmmaker whose music has always been about more than entertainment.
+
+An Atlanta native building a career across songwriting, touring, and her label Galactic Cat Records, Nadia has spent more than a decade living the independent artist grind: writing, performing, building businesses, and stacking the side hustles most creatives never put on the poster. That lived experience became the spark for her first featured documentary, One Poop Scoop Away (directed by Josh Bedsole), a film that asks the question thousands of artists carry quietly: what does it actually mean to make it in today's music industry?
+
+Rather than chasing celebrity, she is documenting the resilient sacrifice and unconventional paths of artists, producers, managers, and industry voices who keep choosing the work. The feature is still completing interviews, with editing ahead and a teaser already in hand. This September she joins Bitcoin For The Arts at the Midwest Bitcoin Summit in Columbus, presenting that teaser and a live talk inside the Bitcoin Arts Park booth, capturing new footage on site for the film, and standing with us as a working artist in the room.
+
+In this episode we talk about music as a lifeline, what independent artists are really navigating right now, how Bitcoin enters a creative life built on honesty and survival, and what it means to bring this story into a Bitcoin conference audience that needs to meet real artists, not abstracts.
+
+IN THIS EPISODE:
+- Growing up as the black sheep and turning to music as nervous-system comfort
+- The day at 23 she quit her boyfriend, quit school, and quit her job to become an artist
+- Losing her mother at 17, and music as language for grief
+- A decade of indie touring, side hustles, burnout, and peeling back the highlight reel
+- Why "what does it mean to make it?" got loud enough to become a film
+- Documenting the industry from inside as both filmmaker and participant
+- Streaming math, broken royalties, and why patronage has to return
+- Songwriter rights, splits, PROs, and what nobody teaches at the start
+- Pairing songs with causes: Alliance of Hope, Peace Over Violence, and more
+- Getting paid in Bitcoin, then going deeper with Ainsley Costello and Julie
+- Ownership and independence versus the easier label path
+- Bringing One Poop Scoop Away to Midwest Bitcoin Summit (teaser, talk, Q&A, pitch)
+- Capturing Summit footage for the documentary
+- Five-year vision: music as the main entree, not twelve side dishes
+- Advice for indie artists putting a toe in Bitcoin
+- What a $500 to $2,000 BFTA Bitcoin grant would unlock in post-production
+
+FIND NADIA:
+- Website: https://www.nadiavaeh.com
+- Instagram: https://www.instagram.com/nadiavaeh
+- LinkedIn: https://www.linkedin.com/in/nadia-vaeh
+- One Poop Scoop Away teaser: https://vimeo.com/jbedsole/opsa
+- Lightning: nadiavaeh@epochwallet.xyz
+
+MIDWEST BITCOIN SUMMIT:
+- Bitcoin Arts Park · Sept 23–24, 2026 · Columbus, OH
+- https://www.bitcoinforthearts.org/midwest
+
+ABOUT NADIA VAEH:
+Award-winning recording artist, songwriter, and filmmaker. Owner of Galactic Cat Records. Atlanta native with more than a decade of independent touring, writing, and performing. Subject and creative force behind the indie feature One Poop Scoop Away, directed by Josh Bedsole, a documentary about resilience, unconventional paths, and what "making it" actually means for working artists.
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
+
+https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Grants: https://www.bitcoinforthearts.org/grants/apply
+Substack: https://substack.com/@bitcoinforthearts
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+CHAPTERS (estimated from Zoom transcript + 1:34 intro clip; verify against final YouTube edit):
+0:00 Intro clip
+1:34 Welcome · music as a lifeline
+5:04 Quitting everything at 23
+7:04 Mother's death and the creative soul
+9:19 The independent artist decade
+12:19 What does it mean to make it?
+14:04 Documentary from inside the industry
+17:34 Why Bitcoin and arts align
+22:34 Making it means keep making
+24:49 Streaming, royalties, and patronage
+26:34 Songwriter rights and SONA
+28:34 Art as livelihood and service
+31:34 Finding Bitcoin
+34:04 Ownership and independence
+35:34 Money education artists never got
+37:34 Midwest Bitcoin Summit
+40:34 What a Bitcoin room reveals
+42:34 Five-year vision
+44:34 Advice for indie artists
+45:34 BFTA grant and closing
+
+#Bitcoin #NadiaVaeh #ShareYourBitcoinJourney #BitcoinForTheArts #IndieMusic #Documentary #OnePoopScoopAway #SoundMoney #MidwestBitcoinSummit
+
+
+=== TAGS ===
+
+Bitcoin,Bitcoin For The Arts,Nadia Vaeh,Galactic Cat Records,One Poop Scoop Away,Share Your Bitcoin Journey,Dion Wilson,indie music,songwriter,documentary film,music industry,streaming royalties,patronage,SONA,Alliance of Hope,Peace Over Violence,Ainsley Costello,Midwest Bitcoin Summit,Bitcoin Arts Park,Atlanta,Lightning,sound money,nonprofit,501c3,Bitcoin micro grants,ownership,independent artist,Josh Bedsole
+
+
+=== THUMBNAIL ===
+
+Thumbnail is already in the repo at public/Ep16NadiaVaeh.JPG (1280×720). Once main is deployed it will resolve at https://www.bitcoinforthearts.org/Ep16NadiaVaeh.JPG.
+
+Web hero for Stories: public/sybj-ep16-nadia-web.png → https://www.bitcoinforthearts.org/sybj-ep16-nadia-web.png
+
+If a graphic overlay is refined later, three text options that could work:
+
+Option 1: "What Does It Mean to Make It?" (portrait of Nadia, orange bar bottom)
+Option 2: "One Poop Scoop Away" (Nadia + film title lockup)
+Option 3: "Music as a Lifeline" (Nadia performance still)
+
+Consistent branding: BFTA orange bar across bottom, "Share Your Bitcoin Journey / EP 16" lockup.
+
+
+=== CATEGORY ===
+
+Nonprofits & Activism (or Education)
+
+
+=== PLAYLIST ===
+
+Share Your Bitcoin Journey
+
+
+=== SOCIAL POSTS ===
+
+
+--- LinkedIn ---
+
+NEW EPISODE: Share Your Bitcoin Journey with Nadia Vaeh
+
+Nadia is an award-winning recording artist, songwriter, and filmmaker. Atlanta native. Owner of Galactic Cat Records. More than a decade of independent touring, writing, performing, and stacking the side hustles most creatives never put on the poster.
+
+That lived experience became One Poop Scoop Away, an indie feature (directed by Josh Bedsole) that asks what it actually means to make it in today's music industry. She is both filmmaker and participant: finishing interviews, holding a teaser, and bringing the story to Bitcoin Arts Park at the Midwest Bitcoin Summit in Columbus this September.
+
+We talk music as a lifeline, streaming math versus patronage, songwriter rights, getting paid in Bitcoin, ownership over the easier label path, and what a BFTA micro-grant would unlock in post-production.
+
+Watch: https://youtu.be/RXNaiUEawv4
+
+#BitcoinForTheArts #Bitcoin #IndieMusic #Documentary #SoundMoney #Nonprofit #MidwestBitcoinSummit
+
+
+--- X (Post 1) ---
+
+NEW: Share Your Bitcoin Journey, Episode 16.
+
+@nadiavaeh quit her boyfriend, quit school, and quit her job at 23 to become an artist.
+
+Now she is documenting what "make it" actually means for indie musicians, and bringing that film to Midwest Bitcoin Summit.
+
+Watch: https://youtu.be/RXNaiUEawv4
+
+
+--- X (Post 2, thread) ---
+
+"Making it is to keep making it. To keep going. The only way you hit a L is if you stop."
+
+@nadiavaeh on why the destination was never the point.
+
+
+--- X (Post 3, thread) ---
+
+Streaming pays confusion. Recording, touring, and content still cost real money.
+
+@nadiavaeh on why patronage has to return, and why Bitcoin is the monetary system that can fund it.
+
+
+--- X (Post 4, thread) ---
+
+One Poop Scoop Away.
+
+Teaser + talk + Q&A inside Bitcoin Arts Park · Midwest Bitcoin Summit · Columbus · Sept 23–24.
+
+@nadiavaeh on ownership, indie economics, and finishing the film.
+
+
+--- Nostr ---
+
+New episode of Share Your Bitcoin Journey just dropped.
+
+Nadia Vaeh, award-winning recording artist and filmmaker, sits down with Bitcoin For The Arts for a conversation on music as a lifeline, the indie grind, and what it means to make it when streaming math does not sustain the people who make the work.
+
+Highlights:
+
+* Quitting boyfriend, school, and job at 23 to rebuild as an artist
+* Mother's death at 17 and music as language for grief
+* A decade of touring, side hustles, and peeling back the highlight reel
+* One Poop Scoop Away: documenting the industry from the inside
+* Streaming, royalties, SONA, and why patronage has to return
+* First Bitcoin payment via a modeling job, then going deeper with Ainsley Costello and Julie
+* Ownership and independence versus the easier label path
+* Midwest Bitcoin Summit booth: teaser, talk, Q&A, Summit footage for the film
+* What a $500–$2,000 BFTA Bitcoin grant would unlock in post-production
+
+Watch: https://youtu.be/RXNaiUEawv4
+
+#Bitcoin #Nostr #BitcoinForTheArts #BFTA #IndieMusic #SoundMoney #V4V
+
+
+--- Substack ---
+
+Subject: What does it mean to make it?
+
+New episode of Share Your Bitcoin Journey is live.
+
+Nadia Vaeh is an award-winning recording artist and filmmaker, Atlanta native, and owner of Galactic Cat Records. After more than a decade of independent work, she turned the camera on the creative life itself. The indie feature One Poop Scoop Away (directed by Josh Bedsole) asks the question working artists carry quietly: what does it actually mean to make it?
+
+For BFTA, her story lands close to home. Streaming made music everywhere and made sustaining artists harder. Nadia names patronage, ownership, and sound money as the path back. She first touched Bitcoin as payment for a modeling job. Ainsley Costello and Julie opened the door wider. This September she brings a teaser, talk, and Q&A to Bitcoin Arts Park at the Midwest Bitcoin Summit, and she will capture Summit footage for the film while she is there.
+
+About forty-five minutes of conversation plus a short intro clip: music as a lifeline, songwriter rights, causes that keep the art from burning out, and what a Bitcoin micro-grant would unlock in post-production.
+
+Watch: https://youtu.be/RXNaiUEawv4
+
+Stories page: https://www.bitcoinforthearts.org/stories
+
+
+--- Facebook ---
+
+NEW EPISODE. Share Your Bitcoin Journey, Episode 16.
+
+Meet Nadia Vaeh.
+
+Award-winning recording artist. Filmmaker. Owner of Galactic Cat Records. Atlanta native who spent more than a decade living the independent artist grind most people never see on the poster.
+
+At 23 she quit her boyfriend, quit school, and quit her job to rebuild as a creator. Music had already been a lifeline after losing her mother at 17. That honesty became One Poop Scoop Away, an indie feature (directed by Josh Bedsole) about resilience, unconventional paths, and what "making it" actually means.
+
+We talk streaming math, songwriter rights, patronage, getting paid in Bitcoin, ownership over the easier label path, and why she is bringing the film teaser to Bitcoin Arts Park at the Midwest Bitcoin Summit in Columbus this September.
+
+Watch: https://youtu.be/RXNaiUEawv4
+
+#BitcoinForTheArts #Bitcoin #ShareYourBitcoinJourney #NadiaVaeh #IndieMusic #Documentary #SoundMoney
+
+
+=== INTERNAL NOTES ===
+
+- User confirmed a 1 min 34 sec intro clip was added in front of the Zoom conversation. All chapter marks = transcript time + 1:34. Approximate full runtime ~46:34 if the Zoom body is ~45:00.
+- Source transcript archived at docs/podcast/sybj-ep16-nadia-vaeh-transcript.md (from uploaded syjb-ep.16-zoom). Planning/prep notes at docs/podcast/sybj-ep16-nadia-vaeh.md.
+- Video was private when checked via yt-dlp (RXNaiUEawv4). Flip to public/unlisted before scheduling social. Re-verify chapters against the published edit once YouTube metadata is readable.
+- Film title in BFTA materials: One Poop Scoop Away (OPSA). Director: Josh Bedsole. Teaser: https://vimeo.com/jbedsole/opsa. Booth shows teaser / portions, not a full feature screening.
+- Prefer "Bitcoin" over "crypto" in BFTA public voice even where the transcript says crypto.
+- No em dashes anywhere in this file (per BFTA voice rule).
+- Description length under YouTube's 5,000-character cap.
+- Tags line under YouTube's 500-character cap.
+- Instagram handle from prep notes: @nadiavaeh. Confirm X/Twitter handle before tagging if she has one; LinkedIn and site are confirmed public.
+- Lightning from Midwest artist bios: nadiavaeh@epochwallet.xyz
+- Stories grid: Ep 16 added with thumbnail /sybj-ep16-nadia-web.png. Episodes 13–15 also backfilled on the same pass (Anik, MadMunky2140, Ainsley) so the gallery is current through this drop.
