@@ -3,7 +3,10 @@ import { redirect } from 'next/navigation';
 import WaysToGive from '@/components/WaysToGive';
 import Link from 'next/link';
 import FullBleedHero from '@/components/FullBleedHero';
-import { getZapriteDonationLink } from '@/lib/zaprite-donation';
+import {
+  getZapriteDonationLink,
+  getZapriteFixedDonationOptions,
+} from '@/lib/zaprite-donation';
 
 export const metadata: Metadata = {
   title: 'Donate',
@@ -27,6 +30,7 @@ export default function DonatePage({
   const heroImage = process.env.NEXT_PUBLIC_HERO_DONATE_IMAGE ?? '/bitcoin band.JPG';
   const ein = process.env.NEXT_PUBLIC_BFTA_EIN?.trim();
   const zapriteUrl = getZapriteDonationLink();
+  const fixedAmounts = getZapriteFixedDonationOptions();
 
   return (
     <main className="bg-background">
@@ -100,27 +104,39 @@ export default function DonatePage({
                 Donate with Bitcoin, Lightning, or card.
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-                One checkout for Bitcoin and Lightning (via Strike) and card (via Stripe).
-                Choose any amount. Receipts are emailed after payment.
+                Pick a suggested amount, or choose your own. One checkout for Bitcoin and
+                Lightning (via Strike) and card (via Stripe). Receipts are emailed after payment.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <a
-                  href={zapriteUrl}
-                  id="bitcoin"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-14 items-center justify-center rounded-xl bg-accent px-8 py-3 text-sm font-bold text-accent-fg shadow-lg transition-all hover:brightness-110"
-                >
-                  Donate now →
-                </a>
+
+              <div className="mt-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Suggested amounts
+                </div>
+                <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {fixedAmounts.map((option) => (
+                    <a
+                      key={option.amount}
+                      href={option.href}
+                      id={option.amount === 11 ? 'bitcoin' : undefined}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex min-h-14 items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-bold text-accent-fg shadow-lg transition-all hover:brightness-110"
+                    >
+                      {option.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
                   href={zapriteUrl}
                   id="card"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+                  className="inline-flex min-h-14 items-center justify-center rounded-xl border border-border bg-background px-8 py-3 text-sm font-bold transition-colors hover:bg-surface"
                 >
-                  Open checkout
+                  Choose your own amount →
                 </a>
               </div>
               <p className="mt-4 text-xs leading-relaxed text-muted">
