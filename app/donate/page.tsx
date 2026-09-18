@@ -104,8 +104,8 @@ export default function DonatePage({
                 Donate with Bitcoin, Lightning, or card.
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-                Pick a suggested amount, or choose your own. One checkout for Bitcoin and
-                Lightning (via Strike) and card (via Stripe). Receipts are emailed after payment.
+                Pick a suggested amount, or give any amount you choose. Bitcoin, Lightning, or card.
+                Receipts are emailed after payment.
               </p>
 
               <div className="mt-6">
@@ -113,30 +113,46 @@ export default function DonatePage({
                   Suggested amounts
                 </div>
                 <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  {fixedAmounts.map((option) => (
-                    <a
-                      key={option.amount}
-                      href={option.href}
-                      id={option.amount === 11 ? 'bitcoin' : undefined}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex min-h-14 items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-bold text-accent-fg shadow-lg transition-all hover:brightness-110"
-                    >
-                      {option.label}
-                    </a>
-                  ))}
+                  {fixedAmounts.map((option) => {
+                    const isFeatured = option.amount === 21;
+                    return (
+                      <a
+                        key={option.amount}
+                        href={option.href}
+                        id={option.amount === 21 ? 'bitcoin' : undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={[
+                          'relative inline-flex min-h-16 flex-col items-center justify-center rounded-xl px-4 py-3 text-sm font-bold transition-all',
+                          isFeatured
+                            ? 'bg-accent text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110 sm:scale-[1.03]'
+                            : 'border border-border bg-background text-foreground hover:bg-surface',
+                        ].join(' ')}
+                      >
+                        {isFeatured ? (
+                          <span className="mb-1 text-[10px] font-bold uppercase tracking-wide text-accent-fg/90">
+                            Most chosen · 21
+                          </span>
+                        ) : null}
+                        <span className={isFeatured ? 'text-lg' : 'text-base'}>{option.label}</span>
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
 
-              <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-5">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Or choose your own
+                </div>
                 <a
                   href={zapriteUrl}
                   id="card"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-14 items-center justify-center rounded-xl border border-border bg-background px-8 py-3 text-sm font-bold transition-colors hover:bg-surface"
+                  className="mt-3 inline-flex min-h-16 w-full items-center justify-center rounded-xl border-2 border-accent bg-accent/10 px-8 py-4 text-base font-bold text-foreground transition-colors hover:bg-accent/20 sm:w-auto sm:min-w-[20rem]"
                 >
-                  Choose your own amount →
+                  Give any amount →
                 </a>
               </div>
               <p className="mt-4 text-xs leading-relaxed text-muted">
