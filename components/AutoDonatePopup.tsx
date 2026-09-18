@@ -205,45 +205,53 @@ export default function AutoDonatePopup() {
               </button>
             </div>
 
-            <div className="mt-4 text-xs font-semibold uppercase tracking-wide text-muted">
+            <div className="mt-5 text-xs font-semibold uppercase tracking-wide text-muted">
               Suggested amounts (USD)
             </div>
-            <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-4">
-              {amountOptions.map((option) => (
-                <a
-                  key={option.amount}
-                  href={option.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-4 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
-                  onClick={dismiss}
-                >
-                  {option.label}
-                </a>
-              ))}
+            <div className="mt-3 grid grid-cols-2 gap-3">
+              {amountOptions.map((option) => {
+                const isFeatured = option.amount === 21;
+                return (
+                  <a
+                    key={option.amount}
+                    href={option.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={isFeatured ? `Donate ${option.label}` : undefined}
+                    className={[
+                      'relative inline-flex min-h-14 items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold transition-all',
+                      isFeatured
+                        ? 'bg-accent text-base font-bold text-accent-fg shadow-lg ring-2 ring-accent ring-offset-2 ring-offset-background hover:brightness-110'
+                        : 'border border-border bg-background text-foreground hover:bg-surface',
+                    ].join(' ')}
+                    onClick={dismiss}
+                  >
+                    {option.label}
+                  </a>
+                );
+              })}
             </div>
 
-            <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <a
-                href={customAmountUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-background px-4 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-                onClick={dismiss}
-              >
-                Custom amount
-              </a>
-              <button
-                type="button"
-                onClick={dismiss}
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-border bg-surface px-4 py-3 text-sm font-semibold transition-colors hover:opacity-90"
-              >
-                Not now
-              </button>
-            </div>
+            <a
+              href={customAmountUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex min-h-14 w-full items-center justify-center rounded-xl border-2 border-accent bg-accent/10 px-4 py-3 text-sm font-bold text-foreground transition-colors hover:bg-accent/20"
+              onClick={dismiss}
+            >
+              Give any amount →
+            </a>
 
-            <div className="mt-4 text-xs leading-relaxed text-muted">
-              You can always donate later via the Donate page.
+            <button
+              type="button"
+              onClick={dismiss}
+              className="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-md px-4 py-2 text-sm font-semibold text-muted transition-colors hover:text-foreground"
+            >
+              Not now
+            </button>
+
+            <div className="mt-3 text-xs leading-relaxed text-muted">
+              Bitcoin, Lightning, or card. You can also donate anytime on the Donate page.
             </div>
           </div>
         </div>
