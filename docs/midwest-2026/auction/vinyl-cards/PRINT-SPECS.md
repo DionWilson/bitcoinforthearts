@@ -14,6 +14,19 @@ Hand this sheet to the printer with `all-midwest-vinyl-cards.pdf` (or the indivi
 
 Do **not** rotate to portrait. Do **not** scale to letter. These sit under / beside each artwork as wall labels.
 
+## Preferred file for reprint
+
+**Send the PDF, not the PNG**, unless the shop insists on raster.
+
+| Spec | Value |
+| --- | --- |
+| Best file | `all-midwest-vinyl-cards.pdf` |
+| Scale | **100% / actual size** (do not “fit to page”) |
+| Page size | Exact **7.00 × 5.00 in landscape** |
+| Soft/blurry last time? | Usually means PNG was used with wrong DPI tags, or PDF was scaled. Reprint from PDF at 100%. |
+
+If the shop must use PNG: each file is **2100 × 1500 px at 300 dpi** = exactly 7×5. Tell them to honor **300 dpi** / print at **7×5 in**, not “fit image.”
+
 ## Color / stock
 
 | Spec | Value |
