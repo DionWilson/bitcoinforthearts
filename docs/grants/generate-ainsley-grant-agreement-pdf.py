@@ -291,7 +291,10 @@ def build(path: Path) -> None:
         "2.4. For BFTA’s records, the USD fair market value on the transfer date will be documented "
         "with the transaction ID.",
         "2.5. BFTA will disburse after this Agreement is signed by both parties and Grantee has provided "
-        "a valid receiving address (and W-9 if BFTA’s accountant requires it for year-end reporting).",
+        "(a) a valid Bitcoin / Lightning receiving address and (b) a completed IRS Form <b>W-9</b>. "
+        "At $2,500, this award is above the 2026 Form 1099 reporting threshold. BFTA collects the W-9 so it can "
+        "report the grant on Form <b>1099-MISC</b> (generally Box 3 for prizes, awards, and certain "
+        "non-government grants to individuals), unless BFTA’s CPA later classifies the payment differently.",
     ]:
         story.append(Paragraph(line, s["bullet"]))
 
@@ -428,8 +431,7 @@ def build(path: Path) -> None:
             ),
             Spacer(1, 6),
             Paragraph(
-                "Optional for BFTA accounting (if requested): Form W-9 attached "
-                "Yes ____ No ____ / N/A ____",
+                "Form W-9 attached (required before disbursement): Yes ____",
                 s["sig"],
             ),
         ]
