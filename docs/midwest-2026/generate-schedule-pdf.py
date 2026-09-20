@@ -26,6 +26,7 @@ BLACK = (0, 0, 0)
 MUTED = (0.27, 0.27, 0.27)
 WHITE = (1, 1, 1)
 
+# Aligned to MBS Master Program V5 (Sept 19, 2026).
 WED = [
     ("10:00–10:20", "Booth", "Doors · Proof of Print"),
     ("10:20–10:50", "Booth", "Cinema: Liberty · Poverty Ep 1"),
@@ -33,14 +34,14 @@ WED = [
     ("11:30–11:45", "Booth", "Nadia Vaeh · film pitch"),
     ("12:00–12:10", "Expo", "Dion · BFTA intro → Ainsley"),
     ("12:10–12:40", "Expo", "Live: Ainsley Costello"),
-    ("12:40–12:50", "Expo", "Dion · Ainsley initial BFTA grantee"),
+    ("12:40–12:50", "Expo", "Award gifting · Ainsley BFTA grantee"),
     ("12:50–1:00", "Expo", "Short North · Sweeney Todd excerpt"),
     ("1:10–1:40", "Booth", "Cinema: Liberty · Poverty Ep 3"),
     ("1:45–2:15", "Booth", "Cinema: Hummingbird"),
     ("2:20–2:50", "Booth", "Cinema: Bigger Than Bitcoin"),
     ("2:55–3:10", "Booth", "Jason R. Johnston · film pitch"),
-    ("3:30–~4:40", "Booth", "Featured: Dirty Coin (Kenema)"),
-    ("4:40–5:00", "Booth", "Soft close · trailer loop"),
+    ("3:15–4:00", "Booth", "Cinema: Finding Home"),
+    ("4:00–5:00", "Booth", "Soft close · trailer loop"),
 ]
 
 THU = [
@@ -52,11 +53,10 @@ THU = [
     ("12:10–12:40", "Expo", "Live: Andy Breakheart"),
     ("12:40–12:50", "Expo", "Dion · transition → Short North"),
     ("12:50–1:00", "Expo", "Short North · youth theater"),
-    ("~1:00–1:08", "Expo", "Lindey · book handoff (TBD)"),
-    ("1:10–1:45", "Booth", "Cinema: Hummingbird / Liberty"),
-    ("1:15–1:30", "Booth", "Jason R. Johnston · film pitch"),
-    ("1:50–2:20", "Expo", "Panel: Does Bitcoin Need Art?"),
-    ("2:25–2:50", "Booth", "Ainsley · booth storytelling"),
+    ("1:05–1:35", "Booth", "Cinema: Hummingbird / Liberty"),
+    ("1:35–1:50", "Booth", "Jason R. Johnston · film pitch"),
+    ("1:50–2:15", "Booth", "Ainsley · booth storytelling"),
+    ("2:20–2:50", "Expo", "Panel: Does Bitcoin Need Art?"),
     ("3:00", "Booth", "Auction close + raffle draw"),
     ("3:10–3:40", "Booth", "Cinema: Bigger Than Bitcoin"),
     ("3:45–4:15", "Booth", "Cinema: Liberty / Finding Home"),
@@ -113,7 +113,7 @@ def build(path: Path) -> None:
     c.drawCentredString(
         w / 2,
         band_bottom + 0.12 * inch,
-        "bitcoinforthearts.org/midwest/schedule   ·   Dirty Coin Wed 3:30 PM ET   ·   Auction + raffle Thu 3:00 PM ET   ·   EIN 41-2642260",
+        "bitcoinforthearts.org/midwest/schedule   ·   Art panel Thu 2:20 PM ET   ·   Auction + raffle Thu 3:00 PM ET   ·   EIN 41-2642260",
     )
 
     # Header
