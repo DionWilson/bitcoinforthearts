@@ -2,6 +2,8 @@
  * Bitcoin Arts Park run-of-show · Midwest Bitcoin Summit
  * Greater Columbus Convention Center · Expo Hall · Sept 23–24, 2026
  * All times Eastern.
+ *
+ * Aligned to MBS Master Program V5 (updated September 19, 2026).
  */
 
 export type SchedulePlace = 'Booth' | 'Expo Stage';
@@ -52,8 +54,8 @@ export const MIDWEST_SCHEDULE_META = {
   notes: [
     'Podcast tapings happen throughout both days. No fixed clock time.',
     'Silent auction closes and the live-painting raffle draws Thursday at 3:00 PM ET.',
-    'Dirty Coin screens via a Kenema timed link. Featured start: Wednesday 3:30 PM ET.',
-    'Lindey Magee book handoff with Short North Stage youth performers is pending Expo Stage confirmation (target: Thursday ~1:00–1:10 PM, between our stage block and 1:10).',
+    'Expo Stage lunch blocks and the art panel follow MBS Master Program V5 (Sept 19).',
+    'Lindey Magee also appears on Expo Stage Thursday: Women, Wealth & Sovereignty (1:40–2:10) and Orange Pilling the Next Generation (4:20–4:50).',
   ],
 } as const;
 
@@ -105,7 +107,7 @@ export const midwestScheduleDays: ScheduleDay[] = [
       {
         time: '12:40–12:50',
         place: 'Expo Stage',
-        title: 'Dion Wilson · transition + grantee moment',
+        title: 'Award gifting',
         detail:
           "Ainsley Costello presented as BFTA's initial grantee (Bitcoin grant). Setup for Short North Stage.",
         kind: 'stage',
@@ -142,14 +144,13 @@ export const midwestScheduleDays: ScheduleDay[] = [
         kind: 'pitch',
       },
       {
-        time: '3:30–~4:40',
+        time: '3:15–4:00',
         place: 'Booth',
-        title: 'Featured cinema: Dirty Coin',
-        detail: 'Alana Mediavilla · ~70 min · Kenema timed link · 3:30 PM ET.',
+        title: 'Cinema: Finding Home',
         kind: 'cinema',
       },
       {
-        time: '4:40–5:00',
+        time: '4:00–5:00',
         place: 'Booth',
         title: 'Soft close · trailer loop',
         kind: 'close',
@@ -214,40 +215,33 @@ export const midwestScheduleDays: ScheduleDay[] = [
         kind: 'stage',
       },
       {
-        time: '~1:00–1:08',
-        place: 'Expo Stage',
-        title: 'Lindey Magee · book handoff (pending stage confirm)',
-        detail:
-          'Brief mention of Bitcoin: A Treasure to HODL + present signed copies to the kids. Target window between our stage block and 1:10.',
-        kind: 'stage',
-      },
-      {
-        time: '1:10–1:45',
+        time: '1:05–1:35',
         place: 'Booth',
         title: 'Cinema: Hummingbird or Liberty Ep 2–3',
         detail: 'Booth cinema while Expo Stage runs other Summit programming.',
         kind: 'cinema',
       },
       {
-        time: '1:15–1:30',
+        time: '1:35–1:50',
         place: 'Booth',
         title: 'Jason R. Johnston · film pitch',
         detail: 'Till My Last Breath trailer + pitch (10–15 min).',
         kind: 'pitch',
       },
       {
-        time: '1:50–2:20',
-        place: 'Expo Stage',
-        title: 'Panel: Does Bitcoin Need Art to Last?',
-        detail: 'Dion Wilson · Ainsley Costello · Dr. Michael J. Kelly · Kyle Knight. Moderator: Kenneth Burris.',
-        kind: 'panel',
-      },
-      {
-        time: '2:25–2:50',
+        time: '1:50–2:15',
         place: 'Booth',
         title: 'Ainsley Costello · storytelling',
         detail: 'Nashville-style booth conversation / interview on the bench.',
         kind: 'booth',
+      },
+      {
+        time: '2:20–2:50',
+        place: 'Expo Stage',
+        title: 'Panel: Does Bitcoin Need Art to Last?',
+        detail:
+          'Moderator: Dr. Michael J. Kelly. Panelists: Dion Wilson · Kenneth Burris · Kyle Knight · Ainsley Costello.',
+        kind: 'panel',
       },
       {
         time: '3:00',
