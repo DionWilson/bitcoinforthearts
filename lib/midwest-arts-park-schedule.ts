@@ -54,7 +54,8 @@ export const MIDWEST_SCHEDULE_META = {
   notes: [
     'Podcast tapings happen throughout both days. No fixed clock time.',
     'Silent auction closes and the live-painting raffle draws Thursday at 3:00 PM ET.',
-    'Expo Stage lunch blocks and the art panel follow MBS Master Program V5 (Sept 19).',
+    'Expo Stage Wednesday: Dion intro, Ainsley Costello 45-minute set, then BFTA grant presentation (no Short North / Sweeney Todd on Wednesday).',
+    'Expo Stage Thursday lunch block and the art panel follow MBS Master Program V5 timing, with Short North youth theater at 12:50.',
     'Lindey Magee also appears on Expo Stage Thursday: Women, Wealth & Sovereignty (1:40–2:10) and Orange Pilling the Next Generation (4:20–4:50).',
   ],
 } as const;
@@ -99,27 +100,22 @@ export const midwestScheduleDays: ScheduleDay[] = [
         kind: 'stage',
       },
       {
-        time: '12:10–12:40',
+        time: '12:10–12:55',
         place: 'Expo Stage',
         title: 'Live: Ainsley Costello',
+        detail: '45-minute set.',
         kind: 'stage',
       },
       {
-        time: '12:40–12:50',
+        time: '12:55–1:10',
         place: 'Expo Stage',
-        title: 'Award gifting',
+        title: 'Grant presentation',
         detail:
-          "Ainsley Costello presented as BFTA's initial grantee (Bitcoin grant). Setup for Short North Stage.",
+          "Ainsley Costello presented as BFTA's initial Bitcoin micro-grantee.",
         kind: 'stage',
       },
       {
-        time: '12:50–1:00',
-        place: 'Expo Stage',
-        title: 'Short North Stage · Sweeney Todd excerpt',
-        kind: 'stage',
-      },
-      {
-        time: '1:10–1:40',
+        time: '1:15–1:45',
         place: 'Booth',
         title: 'Cinema: Liberty International · Solution to Poverty Ep 3',
         kind: 'cinema',

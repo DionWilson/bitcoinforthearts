@@ -26,17 +26,16 @@ BLACK = (0, 0, 0)
 MUTED = (0.27, 0.27, 0.27)
 WHITE = (1, 1, 1)
 
-# Aligned to MBS Master Program V5 (Sept 19, 2026).
+# Wednesday Expo lunch: Ainsley 45-min set + grant presentation (no Short North / Sweeney on Wed).
 WED = [
     ("10:00–10:20", "Booth", "Doors · Proof of Print"),
     ("10:20–10:50", "Booth", "Cinema: Liberty · Poverty Ep 1"),
     ("10:55–11:25", "Booth", "Cinema: Liberty · Poverty Ep 2"),
     ("11:30–11:45", "Booth", "Nadia Vaeh · film pitch"),
     ("12:00–12:10", "Expo", "Dion · BFTA intro → Ainsley"),
-    ("12:10–12:40", "Expo", "Live: Ainsley Costello"),
-    ("12:40–12:50", "Expo", "Award gifting · Ainsley BFTA grantee"),
-    ("12:50–1:00", "Expo", "Short North · Sweeney Todd excerpt"),
-    ("1:10–1:40", "Booth", "Cinema: Liberty · Poverty Ep 3"),
+    ("12:10–12:55", "Expo", "Live: Ainsley Costello (45 min)"),
+    ("12:55–1:10", "Expo", "Grant presentation · Ainsley BFTA"),
+    ("1:15–1:45", "Booth", "Cinema: Liberty · Poverty Ep 3"),
     ("1:45–2:15", "Booth", "Cinema: Hummingbird"),
     ("2:20–2:50", "Booth", "Cinema: Bigger Than Bitcoin"),
     ("2:55–3:10", "Booth", "Jason R. Johnston · film pitch"),
