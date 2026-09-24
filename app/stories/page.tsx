@@ -156,6 +156,46 @@ const storiesData: StoryItem[] = [
     link: "https://youtu.be/c--KiT8r8iI",
   },
   {
+    type: "episode",
+    episodeNumber: 13,
+    title:
+      "Share Your Bitcoin Journey: Episode 13 \u2013 Anik Malcolm: Depicting Bitcoin",
+    summary:
+      "Classically trained in London, disillusioned in Reykjavik, and now living with his family in the mountains of central Italy, Anik Malcolm paints under the two-word tagline Depicting Bitcoin. His monumental oil painting The Whole Entire Universe took over 900 hours and debuted at Bitcoin 2026 in Las Vegas. Fine art, patience, and sound money from the Italian hills.",
+    thumbnail: "/sybj-ep13-anik-web.png",
+    link: "https://youtu.be/Uq8f4HcZYQg",
+  },
+  {
+    type: "episode",
+    episodeNumber: 14,
+    title:
+      "Share Your Bitcoin Journey: Episode 14 \u2013 MadMunky2140: Privacy, Wood, and Manifesto 2140",
+    summary:
+      "Woodcarver and privacy-minded Bitcoin artist MadMunky2140 on craft that outlasts platforms, Nostr and peer-to-peer culture, and what it looks like to sell work without asking a gatekeeper for permission. Manifesto 2140 energy for makers who want signal that lasts.",
+    thumbnail: "/sybj-ep14-madmunky-website.png",
+    link: "https://www.youtube.com/watch?v=11JVdjVwWNI",
+  },
+  {
+    type: "episode",
+    episodeNumber: 15,
+    title:
+      "Share Your Bitcoin Journey: Episode 15 \u2013 Ainsley Costello: Value for Value Music",
+    summary:
+      "Nashville pop-rock artist, band leader, and one of the clearest Gen Z voices in Bitcoin music. First artist on Wavlake to hit one million sats with Cherry On Top. Berklee Music Business, magna cum laude, at 19. Co-founding Epoch Music. Spotify math versus value for value, human-made music in the age of AI, and opening day at Bitcoin Arts Park.",
+    thumbnail: "/Ainsley-mbs-promo-poster.jpg",
+    link: "https://youtu.be/FvmmZUAJuO0",
+  },
+  {
+    type: "episode",
+    episodeNumber: 16,
+    title:
+      "Share Your Bitcoin Journey: Episode 16 \u2013 Nadia Vaeh: One Poop Scoop Away",
+    summary:
+      "Award-winning recording artist and filmmaker Nadia Vaeh on music as a lifeline, a decade of indie grind, and the documentary One Poop Scoop Away. Streaming math versus patronage, songwriter rights, getting paid in Bitcoin, and bringing a teaser and talk to Bitcoin Arts Park at the Midwest Bitcoin Summit.",
+    thumbnail: "/sybj-ep16-nadia-web.png",
+    link: "https://youtu.be/RXNaiUEawv4",
+  },
+  {
     type: "article",
     title:
       "Kenneth Burris \u2013 Sovereign Strokes in the Shadow of Cooling Towers",
