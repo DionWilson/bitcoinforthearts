@@ -173,7 +173,7 @@ Entity language: **New York 501(c)(3)** - no street / operating address on the a
 
 ## Agreed economics (LOT-04 Timechain Mag)
 
-- Package: **Gold Foil Genesis Edition /210** hand-signed and numbered by Asanoha; **Genesis Edition Limited 1720**; **Silk Mandala Archival Serigraph Print /210** hand-signed and numbered by Asanoha
+- Package: **Gold Foil LE/210 Genesis Edition** hand-signed and numbered by Asanoha; **Genesis Edition Limited 1720**; **Silk Mandala Archival Serigraph Print /210** hand-signed and numbered by Asanoha
 - Retail: **$269** (stated separately; not used as the opening USD guide)
 - Opening: **0 sats**
 - Minimum first bid: **21,000 sats**

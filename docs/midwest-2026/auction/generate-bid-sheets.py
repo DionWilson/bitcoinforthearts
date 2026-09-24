@@ -74,7 +74,7 @@ LOTS = [
     {
         "slug": "timechain-magazine-genesis",
         "lot_code": "LOT-04",
-        "title": "Timechain Art Magazine - Gold Foil Genesis",
+        "title": "Timechain Art Magazine - Gold Foil LE/210 Genesis",
         "subtitle": "Genesis package donated by Timechain / Asanoha",
         "artist": "Timechain Art Magazine",
         "meta": "Gold Foil /210 + Genesis 1720 + Silk Mandala serigraph /210",
