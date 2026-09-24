@@ -14,7 +14,7 @@ LOT-04
 PEER-TO-PEER SILENT AUCTION
 
 Timechain Art Magazine
-Gold Foil Genesis Edition
+Gold Foil LE/210 Genesis Edition
 
 Includes:
 • Gold Foil Genesis Edition /210

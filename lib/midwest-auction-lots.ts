@@ -263,7 +263,7 @@ export const midwestAuctionLots: AuctionLot[] = [
   {
     slug: 'timechain-magazine-genesis',
     lotCode: 'LOT-04',
-    title: 'Timechain Art Magazine - Gold Foil Genesis Edition',
+    title: 'Timechain Art Magazine - Gold Foil LE/210 Genesis Edition',
     subtitle:
       'Genesis Edition Limited 1720 · with Silk Mandala Archival Serigraph · donated by Timechain / Asanoha',
     artistName: 'Timechain Art Magazine',
