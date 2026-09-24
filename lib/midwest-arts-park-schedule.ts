@@ -55,7 +55,8 @@ export const MIDWEST_SCHEDULE_META = {
     'Podcast tapings happen throughout both days. No fixed clock time.',
     'Silent auction closes and the live-painting raffle draws Thursday at 3:00 PM ET.',
     'Expo Stage Wednesday: Dion intro, Ainsley Costello 45-minute set, then BFTA grant presentation (no Short North / Sweeney Todd on Wednesday).',
-    'Expo Stage Thursday lunch block and the art panel follow MBS Master Program V5 timing, with Short North youth theater at 12:50.',
+    "Expo Stage Thursday lunch block: Dion intro, Rock 'n' Roll Andy Breakheart, then Short North Stage · Sweeney Todd with youth performers.",
+    'Dirty Coin screens Thursday afternoon at the booth via IndeeHub after auction close (3:10).',
     'Lindey Magee also appears on Expo Stage Thursday: Women, Wealth & Sovereignty (1:40–2:10) and Orange Pilling the Next Generation (4:20–4:50).',
   ],
 } as const;
@@ -201,13 +202,14 @@ export const midwestScheduleDays: ScheduleDay[] = [
         time: '12:40–12:50',
         place: 'Expo Stage',
         title: 'Dion Wilson · transition',
-        detail: 'Setup for Short North Stage youth performers.',
+        detail: 'Setup for Short North Stage · Sweeney Todd.',
         kind: 'stage',
       },
       {
         time: '12:50–1:00',
         place: 'Expo Stage',
-        title: 'Short North Stage · theater with youth performers',
+        title: 'Short North Stage · Sweeney Todd',
+        detail: 'Sweeney Todd excerpt with youth performers.',
         kind: 'stage',
       },
       {
@@ -247,19 +249,15 @@ export const midwestScheduleDays: ScheduleDay[] = [
         kind: 'close',
       },
       {
-        time: '3:10–3:40',
+        time: '3:10–4:45',
         place: 'Booth',
-        title: 'Cinema: Bigger Than Bitcoin',
+        title: 'Cinema: Dirty Coin',
+        detail:
+          'Featured screening streamed via IndeeHub (Alana Mediavilla). Drop-in welcome after auction close.',
         kind: 'cinema',
       },
       {
-        time: '3:45–4:15',
-        place: 'Booth',
-        title: 'Cinema: Liberty shorts / Finding Home reprise',
-        kind: 'cinema',
-      },
-      {
-        time: '4:15–5:00',
+        time: '4:45–5:00',
         place: 'Booth',
         title: 'Claims · soft close',
         kind: 'close',

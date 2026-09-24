@@ -50,16 +50,15 @@ THU = [
     ("11:45–12:00", "Booth", "Nadia Vaeh · film pitch"),
     ("12:00–12:10", "Expo", "Dion · BFTA intro → Andy"),
     ("12:10–12:40", "Expo", "Live: Andy Breakheart"),
-    ("12:40–12:50", "Expo", "Dion · transition → Short North"),
-    ("12:50–1:00", "Expo", "Short North · youth theater"),
+    ("12:40–12:50", "Expo", "Dion · transition → Sweeney Todd"),
+    ("12:50–1:00", "Expo", "Short North · Sweeney Todd"),
     ("1:05–1:35", "Booth", "Cinema: Hummingbird / Liberty"),
     ("1:35–1:50", "Booth", "Jason R. Johnston · film pitch"),
     ("1:50–2:15", "Booth", "Ainsley · booth storytelling"),
     ("2:20–2:50", "Expo", "Panel: Does Bitcoin Need Art?"),
     ("3:00", "Booth", "Auction close + raffle draw"),
-    ("3:10–3:40", "Booth", "Cinema: Bigger Than Bitcoin"),
-    ("3:45–4:15", "Booth", "Cinema: Liberty / Finding Home"),
-    ("4:15–5:00", "Booth", "Claims · soft close"),
+    ("3:10–4:45", "Booth", "Cinema: Dirty Coin (IndeeHub)"),
+    ("4:45–5:00", "Booth", "Claims · soft close"),
 ]
 
 
