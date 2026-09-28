@@ -29,15 +29,21 @@ OUT = PUBLIC / "newsletter" / "issue-27"
 SOURCES = {
     "booth": ["bitcoin-art-park-photo.jpg", "bitcoin-art-park-photo.JPG"],
     "short_north_mbs": ["short-north-mbs.jpg", "short-north-mbs.JPG"],
+    # Board group with BFTA advisors (not the alternate bfta-advisors-mbs.jpg crop)
     "board": [
-        "bfta-advisors-mbs.jpg",
         "bfta-board-advisors-mbs.heic",
         "bfta-board-advisors-mbs.HEIC",
         "bfta-board-advisors-mbs.jpg",
     ],
     "dion_nadia_ainsley": ["dion-nadia-ainsley-mbs.JPG", "dion-nadia-ainsley-mbs.jpg"],
     "andy": ["rock-n-roll-andy-breakheart-mbs.jpg", "rock-n-roll-andy-breakheart-mbs.JPG"],
-    "short_north_stage": ["short-north-stage-bfta.heic", "short-north-stage-bfta.HEIC", "short-north-stage-bfta.jpg"],
+    # Short North with BFTA logo at the booth (not short-north-mbs.jpg)
+    "short_north_stage": [
+        "short-north-stage-bfta.heic",
+        "short-north-stage-bfta.HEIC",
+        "short-north-stage-bfta.jpg",
+    ],
+    "ainsley_band": ["ainsley-band-mbs.jpg", "ainsley-band-mbs.JPG"],
     "ainsley_nadia": ["ainsley-nadia-singing.HEIC", "ainsley-nadia-singing.heic", "ainsley-nadia-singing.jpg"],
     "sean": ["sean-live-painting-mbs.HEIC", "sean-live-painting-mbs.heic", "sean-live-painting-mbs.jpg"],
 }
@@ -124,21 +130,29 @@ def main() -> int:
             hero = cover(hero, hero.width, max_h)
         save_jpg(hero, OUT / "hero-booth.jpg", quality=84)
 
-    # 2) Stage collage: Andy + Short North (2-up landscape)
-    stage_keys = [k for k in ("andy", "short_north_stage", "short_north_mbs") if k in found]
+    # 2) Stage collage: Andy + Short North (BFTA logo booth) + Ainsley band
+    stage_keys = [k for k in ("andy", "short_north_stage", "ainsley_band") if k in found]
     if len(stage_keys) >= 2:
-        imgs = [open_rgb(found[k]) for k in stage_keys[:2]]
-        save_jpg(collage_grid(imgs, cols=2, cell_w=588, cell_h=420), OUT / "collage-stage.jpg")
+        imgs = [open_rgb(found[k]) for k in stage_keys]
+        cols = 3 if len(imgs) >= 3 else 2
+        cell_w = 388 if cols == 3 else 588
+        cell_h = 420
+        save_jpg(collage_grid(imgs[:cols], cols=cols, cell_w=cell_w, cell_h=cell_h), OUT / "collage-stage.jpg")
     elif len(stage_keys) == 1:
         im = cover(open_rgb(found[stage_keys[0]]), EMAIL_W, 640)
         save_jpg(im, OUT / "collage-stage.jpg")
 
-    # 3) Artists collage: Dion/Nadia/Ainsley + singing + Sean (2x2 or 3)
-    artist_keys = [k for k in ("dion_nadia_ainsley", "ainsley_nadia", "sean", "andy") if k in found]
+    # 3) Artists collage: Dion/Nadia/Ainsley + singing + Sean + Short North (mbs)
+    #    No Andy here — he is on the Expo Stage collage.
+    artist_keys = [
+        k
+        for k in ("dion_nadia_ainsley", "ainsley_nadia", "sean", "short_north_mbs")
+        if k in found
+    ]
     if len(artist_keys) >= 2:
-        imgs = [open_rgb(found[k]) for k in artist_keys[:4]]
-        cols = 2 if len(imgs) != 3 else 3
-        cell_w = 588 if cols == 2 else 388
+        imgs = [open_rgb(found[k]) for k in artist_keys]
+        cols = 2
+        cell_w = 588
         cell_h = 440
         save_jpg(collage_grid(imgs, cols=cols, cell_w=cell_w, cell_h=cell_h), OUT / "collage-artists.jpg")
 
