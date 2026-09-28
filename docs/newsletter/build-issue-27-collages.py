@@ -27,7 +27,7 @@ OUT = PUBLIC / "newsletter" / "issue-27"
 
 # Preferred source filenames (case variants resolved at runtime)
 SOURCES = {
-    "booth": ["bitcoin-art-park-photo.jpg", "bitcoin-art-park-photo.JPG", "bitcoin artist park.JPG"],
+    "booth": ["bitcoin-art-park-photo.jpg", "bitcoin-art-park-photo.JPG"],
     "short_north_mbs": ["short-north-mbs.jpg", "short-north-mbs.JPG"],
     "board": ["bfta-board-advisors-mbs.heic", "bfta-board-advisors-mbs.HEIC", "bfta-board-advisors-mbs.jpg"],
     "dion_nadia_ainsley": ["dion-nadia-ainsley-mbs.JPG", "dion-nadia-ainsley-mbs.jpg"],
