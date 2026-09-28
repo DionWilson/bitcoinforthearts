@@ -37,7 +37,7 @@ SOURCES = {
     ],
     "dion_nadia_ainsley": ["dion-nadia-ainsley-mbs.JPG", "dion-nadia-ainsley-mbs.jpg"],
     "andy": ["rock-n-roll-andy-breakheart-mbs.jpg", "rock-n-roll-andy-breakheart-mbs.JPG"],
-    # Short North with BFTA logo at the booth (not short-north-mbs.jpg)
+    # Short North with BFTA logo at the booth → Artists in the Park collage
     "short_north_stage": [
         "short-north-stage-bfta.heic",
         "short-north-stage-bfta.HEIC",
@@ -130,8 +130,8 @@ def main() -> int:
             hero = cover(hero, hero.width, max_h)
         save_jpg(hero, OUT / "hero-booth.jpg", quality=84)
 
-    # 2) Stage collage: Andy + Short North (BFTA logo booth) + Ainsley band
-    stage_keys = [k for k in ("andy", "short_north_stage", "ainsley_band") if k in found]
+    # 2) Stage collage: Andy + Short North (short-north-mbs.jpg) + Ainsley band
+    stage_keys = [k for k in ("andy", "short_north_mbs", "ainsley_band") if k in found]
     if len(stage_keys) >= 2:
         imgs = [open_rgb(found[k]) for k in stage_keys]
         cols = 3 if len(imgs) >= 3 else 2
@@ -142,11 +142,11 @@ def main() -> int:
         im = cover(open_rgb(found[stage_keys[0]]), EMAIL_W, 640)
         save_jpg(im, OUT / "collage-stage.jpg")
 
-    # 3) Artists collage: Dion/Nadia/Ainsley + singing + Sean + Short North (mbs)
+    # 3) Artists collage: Dion/Nadia/Ainsley + singing + Sean + Short North BFTA booth
     #    No Andy here — he is on the Expo Stage collage.
     artist_keys = [
         k
-        for k in ("dion_nadia_ainsley", "ainsley_nadia", "sean", "short_north_mbs")
+        for k in ("dion_nadia_ainsley", "ainsley_nadia", "sean", "short_north_stage")
         if k in found
     ]
     if len(artist_keys) >= 2:
