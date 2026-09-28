@@ -29,7 +29,12 @@ OUT = PUBLIC / "newsletter" / "issue-27"
 SOURCES = {
     "booth": ["bitcoin-art-park-photo.jpg", "bitcoin-art-park-photo.JPG"],
     "short_north_mbs": ["short-north-mbs.jpg", "short-north-mbs.JPG"],
-    "board": ["bfta-board-advisors-mbs.heic", "bfta-board-advisors-mbs.HEIC", "bfta-board-advisors-mbs.jpg"],
+    "board": [
+        "bfta-advisors-mbs.jpg",
+        "bfta-board-advisors-mbs.heic",
+        "bfta-board-advisors-mbs.HEIC",
+        "bfta-board-advisors-mbs.jpg",
+    ],
     "dion_nadia_ainsley": ["dion-nadia-ainsley-mbs.JPG", "dion-nadia-ainsley-mbs.jpg"],
     "andy": ["rock-n-roll-andy-breakheart-mbs.jpg", "rock-n-roll-andy-breakheart-mbs.JPG"],
     "short_north_stage": ["short-north-stage-bfta.heic", "short-north-stage-bfta.HEIC", "short-north-stage-bfta.jpg"],
