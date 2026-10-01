@@ -174,6 +174,76 @@ def letterhead(s):
     return header
 
 
+def payout_block(s, prefilled_address: str | None = None):
+    """DocuSign-ready payout fields for on-chain and/or Lightning."""
+    lines = [
+        Paragraph("Payout destination (required before payment)", s["h"]),
+        Paragraph(
+            "Artist must provide at least one valid payout destination. BFTA will pay the grant in Bitcoin to the address(es) confirmed below. Double-check spelling — Bitcoin transactions are irreversible.",
+            s["body"],
+        ),
+    ]
+    if prefilled_address:
+        lines.append(
+            Paragraph(
+                f"<b>On-chain address listed on application (confirm or update):</b><br/>{prefilled_address}",
+                s["meta"],
+            )
+        )
+        lines.append(Spacer(1, 6))
+
+    rows = [
+        [
+            Paragraph("<b>On-chain Bitcoin address</b><br/>(bc1… / legacy)", s["meta"]),
+            Paragraph(
+                "_______________________________________________<br/>"
+                "_______________________________________________",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Lightning address</b><br/>(name@domain or LNURL / invoice)", s["meta"]),
+            Paragraph(
+                "_______________________________________________<br/>"
+                "_______________________________________________",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Preferred rail</b>", s["meta"]),
+            Paragraph(
+                "☐ On-chain &nbsp;&nbsp; ☐ Lightning &nbsp;&nbsp; ☐ Either (BFTA chooses)",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Artist confirms address is correct</b>", s["meta"]),
+            Paragraph(
+                "Initials: __________ &nbsp;&nbsp; Date: __________",
+                s["meta"],
+            ),
+        ],
+    ]
+    table = Table(rows, colWidths=[2.35 * inch, 4.65 * inch])
+    table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (0, -1), LIGHT),
+                ("BOX", (0, 0), (-1, -1), 0.5, colors.HexColor("#DDDDDD")),
+                ("INNERGRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#EEEEEE")),
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 6),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+                ("TOPPADDING", (0, 0), (-1, -1), 7),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+            ]
+        )
+    )
+    lines.append(table)
+    lines.append(Spacer(1, 6))
+    return lines
+
+
 def header(s, agreement_id):
     story = [
         letterhead(s),
@@ -185,6 +255,76 @@ def header(s, agreement_id):
         ),
     ]
     return story
+
+
+def payout_block(s, prefilled_address: str | None = None):
+    """DocuSign-ready payout fields for on-chain and/or Lightning."""
+    lines = [
+        Paragraph("Payout destination (required before payment)", s["h"]),
+        Paragraph(
+            "Artist must provide at least one valid payout destination. BFTA will pay the grant in Bitcoin to the address(es) confirmed below. Double-check spelling — Bitcoin transactions are irreversible.",
+            s["body"],
+        ),
+    ]
+    if prefilled_address:
+        lines.append(
+            Paragraph(
+                f"<b>On-chain address listed on application (confirm or update):</b><br/>{prefilled_address}",
+                s["meta"],
+            )
+        )
+        lines.append(Spacer(1, 6))
+
+    rows = [
+        [
+            Paragraph("<b>On-chain Bitcoin address</b><br/>(bc1… / legacy)", s["meta"]),
+            Paragraph(
+                "_______________________________________________<br/>"
+                "_______________________________________________",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Lightning address</b><br/>(name@domain or LNURL / invoice)", s["meta"]),
+            Paragraph(
+                "_______________________________________________<br/>"
+                "_______________________________________________",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Preferred rail</b>", s["meta"]),
+            Paragraph(
+                "☐ On-chain &nbsp;&nbsp; ☐ Lightning &nbsp;&nbsp; ☐ Either (BFTA chooses)",
+                s["meta"],
+            ),
+        ],
+        [
+            Paragraph("<b>Artist confirms address is correct</b>", s["meta"]),
+            Paragraph(
+                "Initials: __________ &nbsp;&nbsp; Date: __________",
+                s["meta"],
+            ),
+        ],
+    ]
+    table = Table(rows, colWidths=[2.35 * inch, 4.65 * inch])
+    table.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (0, -1), LIGHT),
+                ("BOX", (0, 0), (-1, -1), 0.5, colors.HexColor("#DDDDDD")),
+                ("INNERGRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#EEEEEE")),
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 6),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 6),
+                ("TOPPADDING", (0, 0), (-1, -1), 7),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+            ]
+        )
+    )
+    lines.append(table)
+    lines.append(Spacer(1, 6))
+    return lines
 
 
 def facts_table(s, facts, left_w=1.55):
@@ -350,7 +490,9 @@ def christopher_story(s):
             "This document is an organizational grant instrument. It is not legal, tax, or investment advice. Artist should consult Artist’s own advisors as needed.",
             s["small"],
         ),
-        Spacer(1, 12),
+        Spacer(1, 8),
+        *payout_block(s),
+        Spacer(1, 8),
         HRFlowable(width="100%", thickness=1, color=ORANGE, spaceAfter=10),
         Paragraph("Signatures", s["h"]),
         sig_block(s),
@@ -439,7 +581,12 @@ def aksana_story(s):
             "This document is an organizational grant instrument. It is not legal, tax, or investment advice. Artist should consult Artist’s own advisors as needed.",
             s["small"],
         ),
-        Spacer(1, 12),
+        Spacer(1, 8),
+        *payout_block(
+            s,
+            prefilled_address="bc1q7xzx7gacnkhlt8j09k5f6krqwjsmhcn85lye5j",
+        ),
+        Spacer(1, 8),
         HRFlowable(width="100%", thickness=1, color=ORANGE, spaceAfter=10),
         Paragraph("Signatures", s["h"]),
         sig_block(s),
