@@ -3,12 +3,21 @@
 
 from pathlib import Path
 
+from PIL import Image as PILImage
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY
+from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_RIGHT
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import inch
-from reportlab.platypus import HRFlowable, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import (
+    HRFlowable,
+    Image,
+    Paragraph,
+    SimpleDocTemplate,
+    Spacer,
+    Table,
+    TableStyle,
+)
 
 ORANGE = colors.HexColor("#FF4F14")
 BLACK = colors.HexColor("#111111")
@@ -17,6 +26,8 @@ LIGHT = colors.HexColor("#F5F5F5")
 ROOT = Path(__file__).resolve().parents[2]
 ART = Path("/opt/cursor/artifacts")
 DOCS = Path(__file__).resolve().parent
+LOGO = ROOT / "public/brand-kit/inline-bugs/inline-cream-orange.png"
+ADDRESS_LINE = "27 West 60th Street, PO Box 20069, New York, NY 10023"
 
 
 def styles():
@@ -26,21 +37,31 @@ def styles():
             "title",
             parent=base["Normal"],
             fontName="Helvetica-Bold",
-            fontSize=14,
-            leading=18,
+            fontSize=13,
+            leading=16,
             textColor=BLACK,
             alignment=TA_CENTER,
-            spaceAfter=4,
+            spaceBefore=6,
+            spaceAfter=2,
         ),
         "sub": ParagraphStyle(
             "sub",
             parent=base["Normal"],
             fontName="Helvetica",
-            fontSize=9,
-            leading=12,
+            fontSize=8.5,
+            leading=11,
             textColor=GRAY,
             alignment=TA_CENTER,
-            spaceAfter=10,
+            spaceAfter=8,
+        ),
+        "org": ParagraphStyle(
+            "org",
+            parent=base["Normal"],
+            fontName="Helvetica",
+            fontSize=8,
+            leading=11,
+            textColor=BLACK,
+            alignment=TA_RIGHT,
         ),
         "h": ParagraphStyle(
             "h",
@@ -109,19 +130,59 @@ def styles():
             spaceBefore=4,
             spaceAfter=2,
         ),
+        "foot": ParagraphStyle(
+            "foot",
+            parent=base["Normal"],
+            fontName="Helvetica",
+            fontSize=7.5,
+            leading=10,
+            textColor=GRAY,
+            alignment=TA_CENTER,
+            spaceBefore=10,
+        ),
     }
+
+
+def letterhead(s):
+    im = PILImage.open(LOGO)
+    w, h = im.size
+    logo_w = 2.35 * inch
+    logo_h = logo_w * (h / w)
+    org = Paragraph(
+        "<b><font color='#FF4F14'>BITCOIN FOR THE ARTS, INC.</font></b><br/>"
+        "New York 501(c)(3) Nonprofit · EIN 41-2642260<br/>"
+        "27 West 60th Street, PO Box 20069<br/>"
+        "New York, NY 10023<br/>"
+        "grants@bitcoinforthearts.org<br/>"
+        "www.bitcoinforthearts.org",
+        s["org"],
+    )
+    header = Table(
+        [[Image(str(LOGO), width=logo_w, height=logo_h), org]],
+        colWidths=[3.3 * inch, 3.7 * inch],
+    )
+    header.setStyle(
+        TableStyle(
+            [
+                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+            ]
+        )
+    )
+    return header
 
 
 def header(s, agreement_id):
     story = [
-        Paragraph("BITCOIN FOR THE ARTS, INC.", s["title"]),
+        letterhead(s),
+        HRFlowable(width="100%", thickness=2.2, color=ORANGE, spaceBefore=2, spaceAfter=8),
         Paragraph("Micro-Grant Agreement", s["title"]),
         Paragraph(
-            "A New York 501(c)(3) nonprofit · EIN 41-2642260 · bitcoinforthearts.org",
+            f"{ADDRESS_LINE}<br/>Agreement ID: {agreement_id}",
             s["sub"],
         ),
-        HRFlowable(width="100%", thickness=2, color=ORANGE, spaceAfter=8),
-        Paragraph(f"<b>Agreement ID:</b> {agreement_id}", s["meta"]),
     ]
     return story
 
@@ -160,12 +221,14 @@ def sig_block(s):
     ]
     right = [
         Paragraph("<b>BITCOIN FOR THE ARTS, INC.</b>", s["label"]),
-        Spacer(1, 18),
+        Spacer(1, 14),
         Paragraph("Signature: _______________________________", s["sign"]),
         Paragraph("Print name: Dion Wilson", s["sign"]),
         Paragraph("Title: Founder &amp; Executive Director", s["sign"]),
         Paragraph("Date: ___________________________________", s["sign"]),
         Paragraph("Email: grants@bitcoinforthearts.org", s["sign"]),
+        Paragraph("27 West 60th Street, PO Box 20069", s["sign"]),
+        Paragraph("New York, NY 10023", s["sign"]),
     ]
     t = Table([[left, right]], colWidths=[3.5 * inch, 3.5 * inch])
     t.setStyle(
@@ -291,6 +354,10 @@ def christopher_story(s):
         HRFlowable(width="100%", thickness=1, color=ORANGE, spaceAfter=10),
         Paragraph("Signatures", s["h"]),
         sig_block(s),
+        Paragraph(
+            "Bitcoin for the Arts, Inc. · 27 West 60th Street, PO Box 20069 · New York, NY 10023 · www.bitcoinforthearts.org",
+            s["foot"],
+        ),
     ]
     return story
 
@@ -376,6 +443,10 @@ def aksana_story(s):
         HRFlowable(width="100%", thickness=1, color=ORANGE, spaceAfter=10),
         Paragraph("Signatures", s["h"]),
         sig_block(s),
+        Paragraph(
+            "Bitcoin for the Arts, Inc. · 27 West 60th Street, PO Box 20069 · New York, NY 10023 · www.bitcoinforthearts.org",
+            s["foot"],
+        ),
     ]
     return story
 
