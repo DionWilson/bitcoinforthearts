@@ -16,9 +16,9 @@ const midwestGallery = [
     caption: 'Bitcoin Arts Park · Expo floor',
   },
   {
-    src: '/bitcoin-arts-park-side1-full.jpg',
-    alt: 'Opposite side of the full Bitcoin Arts Park booth footprint',
-    caption: 'Full booth · opposite side',
+    src: '/bfta-board-advisors-mbs.jpg',
+    alt: 'Bitcoin for the Arts board and advisors at the Midwest Bitcoin Summit',
+    caption: 'Board & advisors on site',
   },
   {
     src: '/board-trustee-director-bfta-mbs.jpg',
@@ -127,7 +127,8 @@ export default function ProgrammingPage() {
             We build cultural events, workshops, and showcases so Bitcoiners
             experience art on a peer-to-peer standard — and so artists who have
             not found Bitcoin yet can see how sound money protects creative time,
-            ownership, and durable value.
+            ownership, and durable value. We start on trade-show floors. We are
+            building toward a sound money art expo of our own.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -292,14 +293,6 @@ export default function ProgrammingPage() {
                   >
                     See grant awards from this work
                   </Link>
-                  <a
-                    href="https://youtu.be/JRxt9FS7zAg"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold transition-colors hover:bg-surface"
-                  >
-                    Watch the full booth walkthrough
-                  </a>
                   <Link
                     href="/midwest/schedule"
                     className="inline-flex items-center justify-center rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold transition-colors hover:bg-surface"
@@ -314,6 +307,25 @@ export default function ProgrammingPage() {
                   </a>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {midwestGallery.map((shot) => (
+                <figure key={shot.src} className="overflow-hidden">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+                    <Image
+                      src={shot.src}
+                      alt={shot.alt}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
+                    {shot.caption}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
 
             {/* Full booth walkthrough */}
@@ -340,37 +352,6 @@ export default function ProgrammingPage() {
                   />
                 </div>
               </div>
-              <p className="mt-3 text-sm text-muted">
-                Watch on{' '}
-                <a
-                  href="https://youtu.be/JRxt9FS7zAg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-foreground underline underline-offset-4"
-                >
-                  YouTube
-                </a>
-                .
-              </p>
-            </div>
-
-            <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {midwestGallery.map((shot) => (
-                <figure key={shot.src} className="overflow-hidden">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
-                    <Image
-                      src={shot.src}
-                      alt={shot.alt}
-                      fill
-                      className="object-cover object-center"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <figcaption className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">
-                    {shot.caption}
-                  </figcaption>
-                </figure>
-              ))}
             </div>
 
             {/* Thank you */}
@@ -455,24 +436,7 @@ export default function ProgrammingPage() {
                     Special thanks to <strong>Julie Costello</strong> (board advisor),
                     whose due diligence and partnership made the stage possible, and{' '}
                     <strong>Ahmed Klink</strong> (board trustee), who designed and built
-                    the Bitcoin Arts Park booth. Board: Dion Wilson, Avi Burra, Cheryl
-                    McGinnis, Ahmed Klink, Kyle Shirkness. Advisors: Julie Costello,
-                    Buttercup Roberts, Kyle Knight, Camas Logue, Valerie Love, Kenneth
-                    Burris.
-                  </p>
-                </div>
-                <div>
-                  <div className="text-xs font-semibold uppercase tracking-wide text-foreground">
-                    With gratitude (from our public thanks)
-                  </div>
-                  <p className="mt-2 text-foreground">
-                    Shipwreck Sean · Ainsley Costello · Lady RedHorns · CA Danner ·
-                    Lindey Magee · Asanoha · Short North Stage · Timechain Art Magazine ·
-                    Alana Mediavilla · Bitcoin Film Fest · Avi Burra · Liberty
-                    International · Nadia Vaeh · Kyle Huber · Kyle Knight · Kenneth
-                    Burris · Proof of Paint · Proof of Ink · Susan Koch · IndeeHub ·
-                    Lady Block Jane · Paul Keating — and everyone who helped Bitcoin for
-                    the Arts show up at Midwest.
+                    the Bitcoin Arts Park booth.
                   </p>
                 </div>
               </div>
