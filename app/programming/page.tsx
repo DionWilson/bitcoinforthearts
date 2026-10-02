@@ -363,7 +363,7 @@ export default function ProgrammingPage() {
                     Susan Koch (A13MW) · Paul Keating (Hummingbird /{' '}
                     <em>The Bitcoin Jungle Story</em>) · Kyle Huber and My First Bitcoin (
                     <em>Bigger Than Bitcoin</em>) · Liberty International (
-                    <em>Solution to Poverty</em>)
+                    <em>Solution to Poverty</em>) · Bitcoin Film Fest
                   </p>
                 </div>
                 <div>
@@ -379,9 +379,9 @@ export default function ProgrammingPage() {
                     Partners + companies
                   </div>
                   <p className="mt-2 text-foreground">
-                    Midwest Bitcoin Summit · IndeeHub · Proof of Print · Bitcoin Film
-                    Fest · and every filmmaker and crew whose work screened on our
-                    cinema loop
+                    Midwest Bitcoin Summit · IndeeHub · Proof of Paint · Proof of Ink ·
+                    Bitcoin Film Fest · Liberty International · Lady Block Jane · and
+                    every filmmaker and crew whose work screened on our cinema loop
                   </p>
                 </div>
                 <div>
@@ -390,8 +390,8 @@ export default function ProgrammingPage() {
                   </div>
                   <p className="mt-2 text-foreground">
                     <em>Does Bitcoin Need Art to Last?</em> — Moderator Dr. Michael J.
-                    Kelly. Panelists Dion Wilson, Kenneth Burris, Kyle Knight, and
-                    Ainsley Costello.
+                    Kelly. Panelists Dion Wilson, Kenneth Burris (KB Studio NYC), Kyle
+                    Knight, and Ainsley Costello.
                   </p>
                 </div>
                 <div>
@@ -406,6 +406,20 @@ export default function ProgrammingPage() {
                     McGinnis, Ahmed Klink, Kyle Shirkness. Advisors: Julie Costello,
                     Buttercup Roberts, Kyle Knight, Camas Logue, Valerie Love, Kenneth
                     Burris.
+                  </p>
+                </div>
+                <div>
+                  <div className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                    With gratitude (from our public thanks)
+                  </div>
+                  <p className="mt-2 text-foreground">
+                    Shipwreck Sean · Ainsley Costello · Lady RedHorns · CA Danner ·
+                    Lindey Magee · Asanoha · Short North Stage · Timechain Art Magazine ·
+                    Alana Mediavilla · Bitcoin Film Fest · Avi Burra · Liberty
+                    International · Nadia Vaeh · Kyle Huber · Kyle Knight · Kenneth
+                    Burris · Proof of Paint · Proof of Ink · Susan Koch · IndeeHub ·
+                    Lady Block Jane · Paul Keating — and everyone who helped Bitcoin for
+                    the Arts show up at Midwest.
                   </p>
                 </div>
               </div>
