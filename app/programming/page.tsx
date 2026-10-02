@@ -57,6 +57,29 @@ const midwestGallery = [
   },
 ] as const;
 
+function MidwestCredit({
+  href,
+  children,
+}: {
+  href?: string;
+  children: React.ReactNode;
+}) {
+  const className = 'font-semibold text-foreground underline-offset-2';
+  if (!href) {
+    return <strong className={className}>{children}</strong>;
+  }
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${className} underline hover:text-accent`}
+    >
+      {children}
+    </a>
+  );
+}
+
 export default function ProgrammingPage() {
   const programCards = [
     {
@@ -220,26 +243,75 @@ export default function ProgrammingPage() {
               <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
                 At the Midwest Bitcoin Summit we programmed a full cultural
                 footprint on the Expo floor. We showcased{' '}
-                <strong className="text-foreground">Ainsley Costello</strong>,{' '}
-                <strong className="text-foreground">Rock &apos;n&apos; Roll Andy Breakheart</strong>,{' '}
-                <strong className="text-foreground">Short North Stage</strong>,{' '}
-                <strong className="text-foreground">Shipwreck Sean</strong>,{' '}
-                <strong className="text-foreground">Lady RedHorns</strong>,{' '}
-                <strong className="text-foreground">CA Danner</strong>,{' '}
-                <strong className="text-foreground">Asanoha</strong> / Timechain Art Magazine,{' '}
-                <strong className="text-foreground">Nadia Vaeh</strong>,{' '}
-                <strong className="text-foreground">Jason R. Johnston</strong>,{' '}
-                <strong className="text-foreground">Alana Mediavilla</strong>,{' '}
-                <strong className="text-foreground">Avi Burra</strong>,{' '}
-                <strong className="text-foreground">Susan Koch</strong> (A13MW),{' '}
-                <strong className="text-foreground">Paul Keating</strong>,{' '}
-                <strong className="text-foreground">Kyle Huber</strong> and{' '}
-                <strong className="text-foreground">My First Bitcoin</strong>,{' '}
-                <strong className="text-foreground">Liberty International</strong>, and{' '}
-                <strong className="text-foreground">Lindey Magee</strong> — stage,
-                gallery, cinema, books, and peer-to-peer energy in one room. Midwest
-                donated the space; after they saw what we were building, they
-                donated more. That partnership model is what we want to grow.
+                <MidwestCredit href="https://x.com/ainsleymusic07">
+                  Ainsley Costello
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit>Rock &apos;n&apos; Roll Andy Breakheart</MidwestCredit>,{' '}
+                <MidwestCredit href="https://x.com/ShortNorthStage">
+                  Short North Stage
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/artbyshipwreck">
+                  Shipwreck Sean
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/LRedhorns">
+                  Lady RedHorns
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/cityalley21">
+                  CA Danner
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/asanoha_gold">
+                  Asanoha
+                </MidwestCredit>
+                {' / '}
+                <MidwestCredit href="https://x.com/TimechainArtMag">
+                  Timechain Art Magazine
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/NadiaVaeh">
+                  Nadia Vaeh
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit>Jason R. Johnston</MidwestCredit>,{' '}
+                <MidwestCredit href="https://x.com/AlanaMediavilla">
+                  Alana Mediavilla
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/avi_burra">
+                  Avi Burra
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/enrichedbycode">
+                  Susan Koch
+                </MidwestCredit>{' '}
+                (A13MW),{' '}
+                <MidwestCredit href="https://x.com/thepaulosophy">
+                  Paul Keating
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/thekylehuber">
+                  Kyle Huber
+                </MidwestCredit>{' '}
+                and{' '}
+                <MidwestCredit href="https://x.com/MyfirstBitcoin_">
+                  My First Bitcoin
+                </MidwestCredit>
+                ,{' '}
+                <MidwestCredit href="https://x.com/Liberty_ISIL">
+                  Liberty International
+                </MidwestCredit>
+                , and{' '}
+                <MidwestCredit href="https://x.com/lindeymagee">
+                  Lindey Magee
+                </MidwestCredit>{' '}
+                — stage, gallery, cinema, books, and peer-to-peer energy in one
+                room. Midwest donated the space; after they saw what we were
+                building, they donated more. That partnership model is what we
+                want to grow.
               </p>
             </div>
 
