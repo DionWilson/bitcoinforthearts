@@ -25,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/grants/faq',
     '/grants/apply',
     '/programming',
-    '/about/governance',
     '/about/governance/grant-settlements',
     '/education',
     '/education/open',
