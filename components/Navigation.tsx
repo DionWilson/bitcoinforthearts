@@ -56,6 +56,7 @@ export default function Navigation() {
         label: 'Grants',
         href: '/grants',
         children: [
+          { label: 'Grant Awards', href: '/grants/awards' },
           { label: 'Guidelines', href: '/grants/guidelines' },
           { label: 'FAQ', href: '/grants/faq' },
         ],
@@ -73,6 +74,7 @@ export default function Navigation() {
         label: 'Programs',
         href: '/programming',
         children: [
+          { label: 'Bitcoin Arts Park (Midwest)', href: '/programming#bitcoin-arts-park' },
           { label: 'Education', href: '/education' },
           { label: 'Events', href: '/events' },
         ],

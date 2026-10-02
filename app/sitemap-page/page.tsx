@@ -35,6 +35,7 @@ const sections: SitemapSection[] = [
     heading: "Grants",
     links: [
       { href: "/grants", label: "Grants Overview" },
+      { href: "/grants/awards", label: "Grant Awards" },
       { href: "/grants/guidelines", label: "Grant Guidelines" },
       { href: "/grants/faq", label: "Grant FAQ" },
       { href: "/grants/apply", label: "Apply for a Grant" },
@@ -42,7 +43,10 @@ const sections: SitemapSection[] = [
   },
   {
     heading: "Programming",
-    links: [{ href: "/programming", label: "Programming" }],
+    links: [
+      { href: "/programming", label: "Programming" },
+      { href: "/programming#bitcoin-arts-park", label: "Bitcoin Arts Park (Midwest)" },
+    ],
   },
   {
     heading: "Education",

@@ -79,27 +79,43 @@ export default function GrantsPage() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              href="/donate"
+              href="/grants/awards"
               className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
             >
+              See grant awards
+            </Link>
+            <Link
+              href="/donate"
+              className="inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+            >
               Fund a grant
+            </Link>
+            <Link
+              href="/grants/apply"
+              className="inline-flex items-center justify-center rounded-md border border-border bg-surface px-6 py-3 text-sm font-semibold transition-colors hover:bg-background"
+            >
+              Apply
             </Link>
           </div>
         </div>
 
         <div className="mt-10 max-w-3xl">
-        <div className="max-w-3xl">
           <div className="rounded-2xl border border-accent/40 bg-surface/80 p-5">
             <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-              Temporary notice
+              Recent awards
             </div>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              We’re collecting applications now, but we won’t begin processing grant
-              applications until{' '}
-              <span className="font-semibold text-foreground">Q3 2026</span>.
+              We publish who we fund, why, and — when settled — the Bitcoin
+              transaction ID. See{' '}
+              <Link
+                href="/grants/awards"
+                className="font-semibold text-foreground underline underline-offset-2"
+              >
+                Grant Awards
+              </Link>{' '}
+              for Ainsley Costello, Aksana Zasinets, and more.
             </p>
           </div>
-        </div>
         </div>
 
         {/* Swipeable carousel (mobile + desktop) */}
