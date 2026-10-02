@@ -46,7 +46,7 @@ const sections: SitemapSection[] = [
     heading: "Programming",
     links: [
       { href: "/programming", label: "Programming" },
-      { href: "/programming#bitcoin-arts-park", label: "Bitcoin Arts Park (Midwest)" },
+      { href: "/programming#cultural-events", label: "Cultural Events" },
     ],
   },
   {

@@ -75,7 +75,7 @@ export default function Navigation() {
         label: 'Programs',
         href: '/programming',
         children: [
-          { label: 'Bitcoin Arts Park (Midwest)', href: '/programming#bitcoin-arts-park' },
+          { label: 'Cultural Events', href: '/programming#cultural-events' },
           { label: 'Education', href: '/education' },
           { label: 'Events', href: '/events' },
         ],
