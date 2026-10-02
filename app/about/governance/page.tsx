@@ -121,7 +121,23 @@ export default function GovernancePage() {
               </p>
             </div>
 
-            <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+            <div className="mt-6 rounded-2xl border border-accent/40 bg-background p-5">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Grant settlements
+              </div>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Public ledger of micro-grant payments — Lightning or on-chain —
+                including transaction IDs when settled on-chain.
+              </p>
+              <Link
+                href="/about/governance/grant-settlements"
+                className="mt-4 inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+              >
+                View grant settlements ledger
+              </Link>
+            </div>
+
+            <div className="mt-8 text-xs font-semibold uppercase tracking-wide text-muted">
               Brief overview of governance for Bitcoin For The Arts, Inc.
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">

@@ -23,6 +23,7 @@ const sections: SitemapSection[] = [
       { href: "/about", label: "About Us" },
       { href: "/about/reason-for-formation", label: "Reason for Formation" },
       { href: "/about/governance", label: "Governance" },
+      { href: "/about/governance/grant-settlements", label: "Grant Settlements" },
       { href: "/about/leadership", label: "Leadership" },
       { href: "/about/leadership/dion-wilson", label: "Dion Wilson" },
       { href: "/about/leadership/avi-burra", label: "Avi Burra" },

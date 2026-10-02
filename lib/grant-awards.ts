@@ -10,7 +10,7 @@ export type GrantAward = {
   /** Optional sats / BTC string for display when known, e.g. "0.03 BTC" */
   amountBtcLabel?: string;
   status: GrantAwardStatus;
-  awardedOn: string; // ISO date or display month
+  awardedOn: string;
   location?: string;
   why: string;
   whatTheyAreDoing: string;
@@ -18,9 +18,6 @@ export type GrantAward = {
   links: { label: string; href: string }[];
   imageSrc: string;
   imageAlt: string;
-  /** On-chain settlement — leave empty until confirmed */
-  txid?: string;
-  paymentNote?: string;
 };
 
 export const GRANT_AWARDS: GrantAward[] = [
@@ -46,9 +43,6 @@ export const GRANT_AWARDS: GrantAward[] = [
     ],
     imageSrc: '/ainsley-band-mbs.jpg',
     imageAlt: 'Ainsley Costello performing with her band at Bitcoin Arts Park, Midwest Bitcoin Summit',
-    // Paste settlement txid when ready for public transparency
-    txid: '',
-    paymentNote: 'Paid in Bitcoin for Midwest Bitcoin Arts Park performance and artist support.',
   },
   {
     id: 'aksana-zasinets-embroidery-2026',
@@ -73,8 +67,6 @@ export const GRANT_AWARDS: GrantAward[] = [
     ],
     imageSrc: '/zasinets-bullcoin.jpg',
     imageAlt: 'Bullcoin embroidery by Aksana Zasinets (5Ksana)',
-    txid: '',
-    paymentNote: 'Paid in Bitcoin for Embroidery for Freedom.',
   },
   {
     id: 'christopher-arcella-bitcoin-executor-2026',
@@ -90,21 +82,15 @@ export const GRANT_AWARDS: GrantAward[] = [
     whatTheyAreDoing:
       'The film is in late post-production (work-in-progress ~110 minutes). Funds support theatrical tour planning, marketing (including Nostr/X and printed posters), and Bitcoin-capable ticketing. BFTA will receive clear credit in the end titles reflecting the level of support.',
     impactForDonors:
-      'Film is how Bitcoin culture reaches people who do not already live in the conference hall. This award backs a feature that treats the story — and the peer-to-peer ethos — as art worth screening in NYC, LA, Austin, Nashville, and beyond.',
+      'Film is how Bitcoin culture reaches people who do not live in the conference hall. This award backs a feature that treats the story — and the peer-to-peer ethos — as art worth screening in NYC, LA, Austin, Nashville, and beyond.',
     links: [
       { label: 'The Bitcoin Executor', href: 'https://thebitcoinexecutor.com' },
       { label: 'Donate', href: '/donate' },
     ],
     imageSrc: '/bitcoin gallery.jpg',
     imageAlt: 'Bitcoin-aligned cinema and cultural programming',
-    paymentNote:
-      'Approved at $1,000. Awaiting signed agreement, tax form, and payout confirmation before settlement.',
   },
 ];
-
-export function mempoolUrl(txid: string): string {
-  return `https://mempool.space/tx/${txid}`;
-}
 
 export function formatUsd(amount: number): string {
   return new Intl.NumberFormat('en-US', {

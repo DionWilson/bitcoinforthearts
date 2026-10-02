@@ -4,21 +4,20 @@ import Link from 'next/link';
 import {
   GRANT_AWARDS,
   formatUsd,
-  mempoolUrl,
   type GrantAward,
 } from '@/lib/grant-awards';
 
 export const metadata: Metadata = {
   title: 'Grant Awards',
   description:
-    'Artists awarded Bitcoin micro-grants by Bitcoin for the Arts — projects, reasons, and on-chain payment transparency.',
+    'Artists awarded Bitcoin micro-grants by Bitcoin for the Arts — projects, reasons, and what they are building.',
 };
 
 function StatusBadge({ status }: { status: GrantAward['status'] }) {
   if (status === 'paid') {
     return (
       <span className="inline-flex items-center rounded-full border border-accent/50 bg-accent/15 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-foreground">
-        Paid in Bitcoin
+        Awarded
       </span>
     );
   }
@@ -93,35 +92,6 @@ function AwardBlock({ award }: { award: GrantAward }) {
             </div>
           </div>
 
-          <div className="mt-6 rounded-lg border border-border bg-surface/70 p-4">
-            <div className="text-xs font-semibold uppercase tracking-wide text-foreground">
-              On-chain transparency
-            </div>
-            {award.txid ? (
-              <p className="mt-2 break-all font-mono text-xs leading-relaxed text-muted sm:text-sm">
-                TXID:{' '}
-                <a
-                  href={mempoolUrl(award.txid)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-foreground underline underline-offset-2"
-                >
-                  {award.txid}
-                </a>
-              </p>
-            ) : (
-              <p className="mt-2 text-sm leading-relaxed text-muted">
-                {award.status === 'paid'
-                  ? 'Settlement transaction ID will be published here once confirmed for public posting.'
-                  : award.paymentNote ??
-                    'Payment publishes here after paperwork and Bitcoin settlement.'}
-              </p>
-            )}
-            {award.txid && award.paymentNote ? (
-              <p className="mt-2 text-sm text-muted">{award.paymentNote}</p>
-            ) : null}
-          </div>
-
           {award.links.length > 0 ? (
             <div className="mt-5 flex flex-wrap gap-3">
               {award.links.map((link) => (
@@ -158,10 +128,9 @@ export default function GrantAwardsPage() {
             Artists we have awarded.
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-            Bitcoin for the Arts pays working artists in Bitcoin. This page shows
-            who we funded, why, what they are building, and — when settlement is
-            public — the on-chain transaction ID. That layer of transparency is
-            something fiat grant systems rarely offer donors.
+            Bitcoin for the Arts funds working artists in Bitcoin. This page is
+            about who we support, why, and what they are building. Payment rails
+            and transaction records live on our governance settlements ledger.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -171,10 +140,10 @@ export default function GrantAwardsPage() {
               Fund the next grant
             </Link>
             <Link
-              href="/grants/apply"
+              href="/about/governance/grant-settlements"
               className="inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
             >
-              Apply for a grant
+              Grant settlements ledger
             </Link>
             <Link
               href="/programming"
@@ -190,7 +159,7 @@ export default function GrantAwardsPage() {
             id="paid-awards"
             className="text-xs font-semibold uppercase tracking-wide text-muted"
           >
-            Settled awards
+            Awarded
           </h2>
           <div className="mt-8 space-y-16">
             {paid.map((award) => (
@@ -208,8 +177,14 @@ export default function GrantAwardsPage() {
               Approved · awaiting paperwork
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-              These awards are approved by BFTA. Payment posts here after the
-              signed agreement, tax form, and payout address are complete.
+              These awards are approved by BFTA. Settlement posts on the{' '}
+              <Link
+                href="/about/governance/grant-settlements"
+                className="font-semibold text-foreground underline underline-offset-2"
+              >
+                grant settlements ledger
+              </Link>{' '}
+              after paperwork is complete.
             </p>
             <div className="mt-8 space-y-16">
               {pending.map((award) => (
@@ -225,7 +200,7 @@ export default function GrantAwardsPage() {
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
             We run cultural programming — like Bitcoin Arts Park at the Midwest
-            Bitcoin Summit — and we settle artist support on Bitcoin. If you fund
+            Bitcoin Summit — and we settle artist support in Bitcoin. If you fund
             arts, education, or financial inclusion, partner with us to expand
             micro-grants and bring this footprint to more rooms.
           </p>
@@ -237,10 +212,10 @@ export default function GrantAwardsPage() {
               Talk to us about funding
             </a>
             <Link
-              href="/transparency"
+              href="/about/governance/grant-settlements"
               className="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-semibold transition-colors hover:bg-surface"
             >
-              Transparency
+              View settlements ledger
             </Link>
           </div>
         </div>

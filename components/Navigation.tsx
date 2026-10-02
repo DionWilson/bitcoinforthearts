@@ -39,6 +39,7 @@ export default function Navigation() {
           { label: 'Reason for Formation', href: '/about/reason-for-formation' },
           { label: 'Leadership', href: '/about/leadership' },
           { label: 'Governance', href: '/about/governance' },
+          { label: 'Grant Settlements', href: '/about/governance/grant-settlements' },
         ],
       },
       {
