@@ -62,7 +62,7 @@ export default function ProgrammingPage() {
     {
       title: 'Cultural events',
       description:
-        'Live footprints that put working artists in front of Bitcoin audiences — stage, cinema, gallery, and peer-to-peer patronage in one room. Midwest Bitcoin Summit 2026 was our first public cultural event of this kind.',
+        'Bring culture to Bitcoin trade shows — stage, cinema, gallery, and peer-to-peer patronage in one room — on the way to our own sound money art expo. Midwest Bitcoin Summit 2026 was the first public footprint.',
       imageSrc: '/bitcoin-art-park-photo.jpg',
       imageAlt: 'Bitcoin Arts Park booth at the Midwest Bitcoin Summit',
       imageClassName: 'object-cover object-center',
@@ -197,10 +197,11 @@ export default function ProgrammingPage() {
               Culture on a Bitcoin standard — in public.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-              Our cultural events put working artists, film, live performance, and
-              peer-to-peer patronage in rooms where Bitcoiners already gather —
-              and invite artists who have not found Bitcoin yet to see sound money
-              in practice.
+              We bring culture onto Bitcoin trade-show floors — stage, cinema,
+              gallery, and peer-to-peer patronage in rooms where Bitcoiners already
+              gather — and invite artists who have not found Bitcoin yet to see
+              sound money in practice. Midwest is the proof of concept. The
+              destination is our own sound money art expo.
             </p>
           </div>
 
@@ -262,6 +263,12 @@ export default function ProgrammingPage() {
                   and time preference without waiting for a broken institutional
                   stack to notice you.
                 </p>
+                <p>
+                  <strong className="text-foreground">Where this is going:</strong>{' '}
+                  keep planting culture at Bitcoin trade shows — then build our own
+                  sound money art expo, where artists and Bitcoiners meet on a
+                  peer-to-peer standard from the first booth to the last set.
+                </p>
               </div>
 
               <div className="lg:col-span-5 space-y-3">
@@ -285,6 +292,14 @@ export default function ProgrammingPage() {
                   >
                     See grant awards from this work
                   </Link>
+                  <a
+                    href="https://youtu.be/JRxt9FS7zAg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold transition-colors hover:bg-surface"
+                  >
+                    Watch the full booth walkthrough
+                  </a>
                   <Link
                     href="/midwest/schedule"
                     className="inline-flex items-center justify-center rounded-md border border-border bg-background px-5 py-3 text-sm font-semibold transition-colors hover:bg-surface"
@@ -299,6 +314,44 @@ export default function ProgrammingPage() {
                   </a>
                 </div>
               </div>
+            </div>
+
+            {/* Full booth walkthrough */}
+            <div className="mt-14 max-w-4xl">
+              <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                Bitcoin Arts Park · full booth
+              </div>
+              <h4 className="mt-3 text-xl font-semibold tracking-tight sm:text-2xl">
+                Walk the Expo footprint
+              </h4>
+              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
+                A walkthrough of the full Bitcoin Arts Park booth at Midwest —
+                the cultural room we build inside Bitcoin trade shows, and the
+                model we intend to grow into a sound money art expo of our own.
+              </p>
+              <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-surface/80">
+                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/JRxt9FS7zAg"
+                    title="Bitcoin Arts Park full booth walkthrough at Midwest Bitcoin Summit"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+              </div>
+              <p className="mt-3 text-sm text-muted">
+                Watch on{' '}
+                <a
+                  href="https://youtu.be/JRxt9FS7zAg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-foreground underline underline-offset-4"
+                >
+                  YouTube
+                </a>
+                .
+              </p>
             </div>
 
             <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
