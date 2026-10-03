@@ -70,7 +70,7 @@ the statements. Personal meals, transit, and subscriptions are omitted here.
 | **Live raffle total** | **$309.43** | |
 | General donation | $90.00 | One Lightning gift during the summit. Not raffle. |
 | **Receipts against production** | **$399.43** | Raffle plus the $90 gift. |
-| Contributed funds | $1,000.00 | Transferred into Bitcoin For The Arts, Inc. checking on Sep 30, from a deposit held outside that account. Not sponsorship, not raffle, not event revenue. |
+| Contributed funds | $3,000.00 | Deposited into the Bitcoin For The Arts, Inc. checking account: $2,000 on Sep 11 and $1,000 on Sep 30. Not sponsorship, not raffle, not event revenue. |
 | Cash sponsors | not in this packet | |
 | In-kind | Expo space donated by the summit. Phantom Power equipment donated. | No dollar value assigned. |
 | Auction net to BFTA | open | Lot hammer prices and artist splits are not in this packet. |
@@ -78,8 +78,6 @@ the statements. Personal meals, transit, and subscriptions are omitted here.
 
 Production cost after raffle and the general gift: **$24,113.42**.
 Contributed funds are not subtracted from that figure.
-
-A $2,000 check deposit on September 11 appears on the Mercury checking export. It is not part of the $1,000 above and it is not event revenue. It needs a label before it is counted as money given to the organization.
 
 ## 4b. Organization costs that are not the summit
 
