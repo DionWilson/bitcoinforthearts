@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { FEATURED_PROJECTS } from '@/lib/featured-projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bitcoinforthearts.org';
@@ -29,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education',
     '/education/open',
     '/artists',
+    ...FEATURED_PROJECTS.map((project) => `/artists/${project.slug}`),
     '/events',
     '/research',
     '/research/state-of-arts-funding-2026',

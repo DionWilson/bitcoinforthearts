@@ -7,6 +7,7 @@ import {
   getZapriteDonationLink,
   getZapriteFixedDonationOptions,
 } from '@/lib/zaprite-donation';
+import { getFeaturedProject } from '@/lib/featured-projects';
 
 export const metadata: Metadata = {
   title: 'Donate',
@@ -17,7 +18,12 @@ export const metadata: Metadata = {
 export default function DonatePage({
   searchParams,
 }: {
-  searchParams?: { amount?: string; thanks?: string; orderId?: string };
+  searchParams?: {
+    amount?: string;
+    thanks?: string;
+    orderId?: string;
+    designation?: string;
+  };
 }) {
   const orderId = searchParams?.orderId?.trim();
   if (searchParams?.thanks === '1' || orderId) {
@@ -31,6 +37,9 @@ export default function DonatePage({
   const ein = process.env.NEXT_PUBLIC_BFTA_EIN?.trim();
   const zapriteUrl = getZapriteDonationLink();
   const fixedAmounts = getZapriteFixedDonationOptions();
+  const designation = searchParams?.designation
+    ? getFeaturedProject(searchParams.designation)
+    : undefined;
 
   return (
     <main className="bg-background">
@@ -56,6 +65,23 @@ export default function DonatePage({
             Your donation helps fund artist micro-grants, workshops, residencies, and
             productions — and supports a long-term Bitcoin reserve.
           </p>
+          {designation ? (
+            <div className="mt-6 rounded-2xl border border-accent/40 bg-accent/10 p-5">
+              <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+                Designated program
+              </div>
+              <p className="mt-2 text-base font-semibold text-foreground">
+                {designation.name} — {designation.projectTitle}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                You are giving to Bitcoin For The Arts, Inc. with this gift
+                designated for {designation.projectTitle}. Put that project name
+                in your checkout note or memo so we can restrict the funds.
+                General gifts, without a designation, support the grantmaking
+                program as a whole.
+              </p>
+            </div>
+          ) : null}
           <div className="mt-5 rounded-2xl border border-border bg-surface/80 p-4 text-sm text-muted">
             Bitcoin For The Arts, Inc. is a 501(c)(3) tax-exempt nonprofit. Donations
             may be tax-deductible as allowed by law.
