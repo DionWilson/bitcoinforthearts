@@ -207,7 +207,7 @@ export default function ProgrammingPage() {
         {/* Cultural events */}
         <section
           id="cultural-events"
-          className="mt-20 scroll-mt-28 border-t border-border pt-14"
+          className="mt-20 scroll-mt-32 border-t border-border pt-14"
           aria-labelledby="cultural-events-heading"
         >
           <div className="max-w-3xl">

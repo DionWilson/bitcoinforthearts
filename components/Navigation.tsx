@@ -24,6 +24,29 @@ type NavItem = {
   children?: NavItem[];
 };
 
+function pathWithoutHash(href: string) {
+  const i = href.indexOf('#');
+  return i === -1 ? href : href.slice(0, i);
+}
+
+function hashFromHref(href: string) {
+  const i = href.indexOf('#');
+  return i === -1 ? '' : href.slice(i);
+}
+
+function isPathMatch(pathname: string, href: string) {
+  const path = pathWithoutHash(href);
+  if (!path) return false;
+  return pathname === path || pathname.startsWith(`${path}/`);
+}
+
+function scrollToHrefHash(href: string) {
+  const hash = hashFromHref(href);
+  if (!hash) return;
+  const el = document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (el) el.scrollIntoView();
+}
+
 export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -243,15 +266,24 @@ export default function Navigation() {
                 >
                   <div className="min-w-52 rounded-md border border-border bg-background text-foreground shadow-lg p-1">
                     {item.children?.map((child) => {
-                      const isChildActive =
-                        pathname === child.href ||
-                        pathname.startsWith(`${child.href}/`);
+                      const isChildActive = isPathMatch(pathname, child.href);
+                      const childHash = hashFromHref(child.href);
+                      const childPath = pathWithoutHash(child.href);
 
                       return (
                         <Link
                           key={child.href}
                           href={child.href}
-                          onClick={() => setOpenDesktopDropdown(null)}
+                          onClick={(e) => {
+                            setOpenDesktopDropdown(null);
+                            // Same-page hash links need an explicit scroll; Next
+                            // often won't fire hashchange for App Router Links.
+                            if (childHash && pathname === childPath) {
+                              e.preventDefault();
+                              window.history.pushState(null, '', child.href);
+                              scrollToHrefHash(child.href);
+                            }
+                          }}
                           className={[
                             'block rounded-md px-3 py-2 text-sm font-semibold transition-colors',
                             isChildActive ? 'bg-surface' : 'hover:bg-surface',
@@ -276,9 +308,7 @@ export default function Navigation() {
               const isCta = item.variant === 'cta';
               const hasChildren = Boolean(item.children?.length);
               const isChildActive = Boolean(
-                item.children?.some(
-                  (c) => pathname === c.href || pathname.startsWith(`${c.href}/`),
-                ),
+                item.children?.some((c) => isPathMatch(pathname, c.href)),
               );
               const isActiveBase =
                 item.href === '/'
@@ -332,15 +362,21 @@ export default function Navigation() {
                   {hasChildren && isExpanded ? (
                     <div className="mt-1 ml-3 flex flex-col gap-1 border-l border-black/15 pl-3">
                       {item.children!.map((child) => {
-                        const isChildActive =
-                          pathname === child.href || pathname.startsWith(`${child.href}/`);
+                        const isChildActive = isPathMatch(pathname, child.href);
+                        const childHash = hashFromHref(child.href);
+                        const childPath = pathWithoutHash(child.href);
                         return (
                           <Link
                             key={child.href}
                             href={child.href}
-                            onClick={() => {
+                            onClick={(e) => {
                               setIsOpen(false);
                               setOpenMobileSection(null);
+                              if (childHash && pathname === childPath) {
+                                e.preventDefault();
+                                window.history.pushState(null, '', child.href);
+                                scrollToHrefHash(child.href);
+                              }
                             }}
                             className={[
                               'rounded-md px-3 py-2 text-sm font-medium transition-colors',
