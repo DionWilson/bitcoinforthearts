@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMemo, useState } from 'react';
+import { scrollToIdBelowHeader } from '@/components/ScrollToTop';
 // BFTA 2026 brand bug. The nav bar is the lime brand surface, but we render
 // the cream-field bug as a small "branded sticker" — same pattern as the
 // newsletter card and the social icon tiles in the footer, so the chrome
@@ -43,8 +44,37 @@ function isPathMatch(pathname: string, href: string) {
 function scrollToHrefHash(href: string) {
   const hash = hashFromHref(href);
   if (!hash) return;
-  const el = document.getElementById(decodeURIComponent(hash.slice(1)));
-  if (el) el.scrollIntoView();
+  const id = decodeURIComponent(hash.slice(1));
+  const run = () => scrollToIdBelowHeader(id);
+  if (run()) return;
+  requestAnimationFrame(() => {
+    if (run()) return;
+    window.setTimeout(run, 50);
+    window.setTimeout(run, 150);
+    window.setTimeout(run, 300);
+  });
+}
+
+function onHashNavClick(
+  e: { preventDefault: () => void },
+  href: string,
+  pathname: string,
+) {
+  const hash = hashFromHref(href);
+  if (!hash) return;
+
+  const path = pathWithoutHash(href);
+  // Same page: take over scroll completely.
+  if (pathname === path) {
+    e.preventDefault();
+    window.history.pushState(null, '', href);
+    scrollToHrefHash(href);
+    return;
+  }
+
+  // Cross-page: let Next route, but disable its default scroll-to-top
+  // (via scroll={false} on the Link) and land below the sticky header.
+  scrollToHrefHash(href);
 }
 
 export default function Navigation() {
@@ -268,21 +298,15 @@ export default function Navigation() {
                     {item.children?.map((child) => {
                       const isChildActive = isPathMatch(pathname, child.href);
                       const childHash = hashFromHref(child.href);
-                      const childPath = pathWithoutHash(child.href);
 
                       return (
                         <Link
                           key={child.href}
                           href={child.href}
+                          scroll={!childHash}
                           onClick={(e) => {
                             setOpenDesktopDropdown(null);
-                            // Same-page hash links need an explicit scroll; Next
-                            // often won't fire hashchange for App Router Links.
-                            if (childHash && pathname === childPath) {
-                              e.preventDefault();
-                              window.history.pushState(null, '', child.href);
-                              scrollToHrefHash(child.href);
-                            }
+                            onHashNavClick(e, child.href, pathname);
                           }}
                           className={[
                             'block rounded-md px-3 py-2 text-sm font-semibold transition-colors',
@@ -364,19 +388,15 @@ export default function Navigation() {
                       {item.children!.map((child) => {
                         const isChildActive = isPathMatch(pathname, child.href);
                         const childHash = hashFromHref(child.href);
-                        const childPath = pathWithoutHash(child.href);
                         return (
                           <Link
                             key={child.href}
                             href={child.href}
+                            scroll={!childHash}
                             onClick={(e) => {
                               setIsOpen(false);
                               setOpenMobileSection(null);
-                              if (childHash && pathname === childPath) {
-                                e.preventDefault();
-                                window.history.pushState(null, '', child.href);
-                                scrollToHrefHash(child.href);
-                              }
+                              onHashNavClick(e, child.href, pathname);
                             }}
                             className={[
                               'rounded-md px-3 py-2 text-sm font-medium transition-colors',
