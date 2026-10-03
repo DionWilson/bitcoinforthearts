@@ -6,9 +6,9 @@ import {
 } from '@/lib/midwest-auction-lots';
 
 export const metadata: Metadata = {
-  title: 'Silent Auction | Bitcoin Arts Park · Midwest Bitcoin Summit',
+  title: 'Silent Auction Archive | Bitcoin Arts Park · Midwest',
   description:
-    'Peer-to-peer silent auction lots at Bitcoin Arts Park during the Midwest Bitcoin Summit. Place an advance bid online now; pick up in person in Columbus. Proceeds support Bitcoin for the Arts per each lot’s terms.',
+    'Read-only archive of peer-to-peer silent auction lots from Bitcoin Arts Park at the Midwest Bitcoin Summit. Advance bidding is closed.',
 };
 
 export default function MidwestAuctionIndexPage() {
@@ -16,17 +16,24 @@ export default function MidwestAuctionIndexPage() {
     <main className="min-h-screen bg-[#FFFAF0] text-black">
       <section className="border-b border-black/10 bg-black px-6 py-10 text-[#FFFAF0] sm:px-10">
         <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-[#B3FF48]">
-          Bitcoin Arts Park · Midwest Bitcoin Summit
+          Archive · Bitcoin Arts Park · Midwest Bitcoin Summit
         </p>
         <h1 className="mt-3 max-w-3xl text-4xl font-light uppercase tracking-tight sm:text-5xl">
           Peer-to-Peer Silent Auction
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#FFFAF0]/90">
-          Donated works and editions. Place a binding advance bid online now;
-          the high advance bid seeds the paper sheet on the Expo floor. Winner
-          must pick up in person at Bitcoin Arts Park in Columbus (no shipping).
-          Proceeds support Bitcoin for the Arts per each lot’s posted split.
+          This auction is closed. Lot pages remain online as a read-only record
+          for artists, patrons, and settlement. For the public Midwest story, see
+          Cultural Events.
         </p>
+        <div className="mt-6">
+          <Link
+            href="/programming#midwest-2026"
+            className="inline-block border border-[#FFFAF0]/40 px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em] text-[#FFFAF0]"
+          >
+            Cultural Events record →
+          </Link>
+        </div>
       </section>
 
       <section className="mx-auto max-w-5xl px-6 py-12 sm:px-10">
@@ -86,20 +93,11 @@ export default function MidwestAuctionIndexPage() {
         </ul>
 
         <p className="mt-10 text-sm text-black/60">
-          Staff print pack: each lot’s bid sheet is two pages (rules + rows). Need
-          more signup lines? Print extras from{' '}
-          <Link
-            href="/midwest/auction/bid-sheet-extra"
-            className="font-medium text-black underline underline-offset-2"
-          >
-            /midwest/auction/bid-sheet-extra
-          </Link>
-          . Ops notes: <code className="text-black">docs/midwest-2026/auction/CLIPBOARD-AND-PAYMENT.md</code>.
-        </p>
-        <p className="mt-4 text-sm text-black/60">
-          To add another donated lot, add an entry in{' '}
-          <code className="text-black">lib/midwest-auction-lots.ts</code> — each
-          lot automatically gets a detail page and printable bid sheet.
+          Print packs and bid sheets remain available for settlement reference.
+          Ops notes live in{' '}
+          <code className="text-black">docs/midwest-2026/auction/</code>. Board
+          expense checklist:{' '}
+          <code className="text-black">docs/midwest-2026/BOARD-EXPENSE-REVIEW.md</code>.
         </p>
       </section>
     </main>

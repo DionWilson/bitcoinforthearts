@@ -269,10 +269,10 @@ export default async function ArtistDirectoryPage() {
                 Apply for a Grant →
               </Link>
               <Link
-                href="/midwest"
+                href="/programming#midwest-2026"
                 className="inline-flex min-h-11 items-center justify-center rounded-md border border-foreground/20 bg-background px-5 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-surface"
               >
-                BFTA at Midwest →
+                Cultural Events →
               </Link>
             </div>
           </div>

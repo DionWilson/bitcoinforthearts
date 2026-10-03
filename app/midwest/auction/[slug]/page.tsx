@@ -388,10 +388,10 @@ export default async function AuctionLotPage({ params }: Props) {
               All lots →
             </Link>
             <Link
-              href="/midwest"
+              href="/programming#midwest-2026"
               className="inline-block border border-black px-5 py-3 text-[12px] font-medium uppercase tracking-[0.14em]"
             >
-              Midwest hub →
+              Cultural Events →
             </Link>
           </div>
 
