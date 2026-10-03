@@ -3,18 +3,31 @@
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 
-const HEADER_GAP_PX = 16;
+const HEADER_GAP_PX = 20;
 
-/** Scroll so `id` sits just below the sticky site header. */
+/**
+ * Scroll so the *visible* cultural-events block clears the sticky header.
+ * Prefer the section heading if present; otherwise the hash target.
+ */
 export function scrollToIdBelowHeader(id: string) {
-  const el = document.getElementById(id);
+  const heading =
+    id === 'cultural-events'
+      ? document.getElementById('cultural-events-heading')
+      : null;
+  const el = heading ?? document.getElementById(id);
   if (!el) return false;
 
   const header = document.querySelector('header');
   const headerH =
     header instanceof HTMLElement ? header.getBoundingClientRect().height : 80;
+  // For the cultural-events heading, also clear the small eyebrow above it.
+  const extra = heading ? 36 : 0;
   const top =
-    el.getBoundingClientRect().top + window.scrollY - headerH - HEADER_GAP_PX;
+    el.getBoundingClientRect().top +
+    window.scrollY -
+    headerH -
+    HEADER_GAP_PX -
+    extra;
   window.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
   return true;
 }
@@ -24,12 +37,14 @@ function scrollForHash(hash: string) {
   if (!id) return;
 
   const run = () => scrollToIdBelowHeader(id);
-  // Client nav can mount the target a beat late — retry briefly.
+  // Client nav + browser hash scroll can fight us; keep correcting briefly.
   requestAnimationFrame(() => {
-    if (run()) return;
+    run();
     window.setTimeout(run, 50);
     window.setTimeout(run, 150);
     window.setTimeout(run, 300);
+    window.setTimeout(run, 500);
+    window.setTimeout(run, 800);
   });
 }
 

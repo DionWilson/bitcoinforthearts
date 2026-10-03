@@ -206,10 +206,19 @@ export default function ProgrammingPage() {
 
         {/* Cultural events */}
         <section
-          id="cultural-events"
-          className="mt-20 scroll-mt-32 border-t border-border pt-14"
+          className="relative mt-20 border-t border-border pt-14"
           aria-labelledby="cultural-events-heading"
         >
+          {/*
+            Hash target sits above the visible section so browser/Next hash
+            scrolling (which ignores sticky headers) still leaves the eyebrow
+            and heading clear of the lime nav.
+          */}
+          <div
+            id="cultural-events"
+            className="pointer-events-none absolute left-0 top-0 h-0 w-0 -translate-y-28"
+            aria-hidden="true"
+          />
           <div className="max-w-3xl">
             <div className="text-xs font-semibold uppercase tracking-wide text-accent">
               Cultural events
