@@ -85,7 +85,7 @@ export default function ProgrammingPage() {
     {
       title: 'Cultural events',
       description:
-        'Bring culture to Bitcoin trade shows — stage, cinema, gallery, and peer-to-peer patronage in one room — on the way to our own sound money art expo. Midwest Bitcoin Summit 2026 was the first public footprint.',
+        'Art showcases and cultural events on a sound money standard — featuring artists who share those ideals, and inviting new creators in. Midwest 2026 was the first public footprint.',
       imageSrc: '/bitcoin-art-park-photo.jpg',
       imageAlt: 'Bitcoin Arts Park booth at the Midwest Bitcoin Summit',
       imageClassName: 'object-cover object-center',
@@ -147,11 +147,11 @@ export default function ProgrammingPage() {
             Programming that puts artists and Bitcoin in the same room.
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-            We build cultural events, workshops, and showcases so Bitcoiners
-            experience art on a peer-to-peer standard — and so artists who have
+            We build cultural events, workshops, and showcases so artists and
+            Bitcoiners meet on a peer-to-peer standard — and so creators who have
             not found Bitcoin yet can see how sound money protects creative time,
-            ownership, and durable value. We start on trade-show floors. We are
-            building toward a sound money art expo of our own.
+            ownership, and durable value. We produce that culture in public, and we
+            are building toward a sound money art expo of our own.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -227,14 +227,16 @@ export default function ProgrammingPage() {
               id="cultural-events-heading"
               className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl"
             >
-              Culture on a Bitcoin standard — in public.
+              Art showcases on a sound money standard.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted sm:text-lg">
-              We bring culture onto Bitcoin trade-show floors — stage, cinema,
-              gallery, and peer-to-peer patronage in rooms where Bitcoiners already
-              gather — and invite artists who have not found Bitcoin yet to see
-              sound money in practice. Midwest is the proof of concept. The
-              destination is our own sound money art expo.
+              We produce cultural events and art showcases that run on sound money
+              standards — stage, cinema, gallery, and peer-to-peer patronage —
+              featuring artists who believe in those ideals, and inviting creators
+              who have not found Bitcoin yet to see it in practice. That work
+              happens in rooms Bitcoiners already fill, and in cultural spaces we
+              build ourselves. Midwest was the first public footprint. Ahead: more
+              showcases, and a sound money art expo of our own.
             </p>
           </div>
 
@@ -347,9 +349,10 @@ export default function ProgrammingPage() {
                 </p>
                 <p>
                   <strong className="text-foreground">Where this is going:</strong>{' '}
-                  keep planting culture at Bitcoin trade shows — then build our own
-                  sound money art expo, where artists and Bitcoiners meet on a
-                  peer-to-peer standard from the first booth to the last set.
+                  keep producing cultural events and art showcases on a sound money
+                  standard — then build our own sound money art expo, where artists
+                  who share those ideals meet audiences on a peer-to-peer footing
+                  from the first booth to the last set.
                 </p>
               </div>
 
@@ -419,8 +422,9 @@ export default function ProgrammingPage() {
               </h4>
               <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted sm:text-base">
                 A walkthrough of the full Bitcoin Arts Park booth at Midwest —
-                the cultural room we build inside Bitcoin trade shows, and the
-                model we intend to grow into a sound money art expo of our own.
+                one public footprint of the cultural room we produce for artists
+                on a sound money standard, and a model we intend to grow into
+                showcases and a sound money art expo of our own.
               </p>
               <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-surface/80">
                 <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
