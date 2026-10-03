@@ -11,8 +11,10 @@ the website archive holds context, not the full ledger.
 
 ## 1. Artist grants and stipends
 
-Grants sit outside the production total below. Ainsley’s grant paid her for the
-summit. Aksana’s and Christopher’s grants are other work.
+Grants are the mission. They are not a cost of producing the summit, including
+the grant awarded there. Ainsley’s $2,500 was presented at Bitcoin Arts Park
+and is recorded here as grantmaking. Aksana’s and Christopher’s grants are
+other work. None of the three are inside the production total.
 
 | Item | Where to look | Amount / status | Notes |
 | --- | --- | --- | --- |
@@ -57,6 +59,9 @@ fees are not in this total.
 | Print | Summit print work, paid Oct 3 | $145.80 | Ohio State Uniprint. Card payment, confirmation 1002005648. Not on the card statements in this packet. |
 | Event insurance | One-time policy for the summit, before the organization policy | $311.00 | KK Insurance, Capital One, Aug 13 |
 | **Production total** | | **$24,512.85** | |
+
+Artist grants are not in this total. Subtracting Ainsley’s $2,500 would count
+the same grant twice. The summit cost stays $24,512.85.
 
 U.S. Bank card 7449 has only the two charges above. No gas charges were in
 the statements. Personal meals, transit, and subscriptions are omitted here.
