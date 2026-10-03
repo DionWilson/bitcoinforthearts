@@ -53,13 +53,17 @@ export default async function FeaturedProjectPage({ params }: Props) {
 
         <div className="mt-8 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-7">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-surface">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-white">
               <Image
                 src={project.imageSrc}
                 alt={project.imageAlt}
                 fill
                 priority
-                className="object-cover object-center"
+                className={
+                  project.imageFit === 'contain'
+                    ? 'object-contain object-center p-8'
+                    : 'object-cover object-center'
+                }
                 sizes="(max-width: 1024px) 100vw, 58vw"
               />
             </div>
@@ -90,6 +94,31 @@ export default async function FeaturedProjectPage({ params }: Props) {
                   The work
                 </h2>
                 <p className="mt-3">{project.theWork}</p>
+                {project.stations?.length ? (
+                  <ol className="mt-6 space-y-3">
+                    {project.stations.map((station, index) => (
+                      <li key={station.title} className="flex gap-3">
+                        <span className="w-6 shrink-0 font-semibold text-foreground">
+                          {index + 1}
+                        </span>
+                        <span>
+                          <span className="font-semibold text-foreground">
+                            {station.title}.
+                          </span>{' '}
+                          {station.lesson}
+                        </span>
+                      </li>
+                    ))}
+                  </ol>
+                ) : null}
+                {project.stations?.length ? (
+                  <p className="mt-4 text-sm">
+                    These twenty-one lines are the plan. A station is real when
+                    the community pins a place people already use, with a photo
+                    and the name of the person who must say yes. An empty line
+                    stays empty until then.
+                  </p>
+                ) : null}
               </section>
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-wide text-foreground">

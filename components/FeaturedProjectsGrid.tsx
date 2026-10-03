@@ -29,12 +29,16 @@ function ProjectCard({ project }: { project: FeaturedProject }) {
       href={`/artists/${project.slug}`}
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-background transition-colors hover:border-accent/60"
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-white">
         <Image
           src={project.imageSrc}
           alt={project.imageAlt}
           fill
-          className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+          className={
+            project.imageFit === 'contain'
+              ? 'object-contain object-center p-6'
+              : 'object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]'
+          }
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>

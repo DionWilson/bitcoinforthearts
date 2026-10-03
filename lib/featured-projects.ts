@@ -45,6 +45,10 @@ export type FeaturedProject = {
   directSupport: DirectSupportLink[];
   /** Shown when a peer-to-peer payment address is not published yet. */
   directPaymentNote?: string;
+  /** Square logos should sit inside the frame instead of being cropped. */
+  imageFit?: 'cover' | 'contain';
+  /** Planned or confirmed stations. Label unconfirmed trails in the copy. */
+  stations?: { title: string; lesson: string }[];
 };
 
 export const FEATURED_KIND_LABEL: Record<FeaturedKind, string> = {
@@ -144,6 +148,73 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     ],
     directPaymentNote:
       'A confirmed Bitcoin or Lightning address will be published here when the project clears it for this page. Until then, use the film site or give through Bitcoin for the Arts and designate The Bitcoin Executor.',
+  },
+  {
+    slug: 'visima-21',
+    kind: 'community',
+    name: 'Machakos Bitcoin Academy',
+    alsoKnownAs: 'with Vincent',
+    projectTitle: 'Visima 21',
+    location: 'Machakos, Kenya',
+    cardSummary:
+      'A long-term trail of twenty-one painted stations on real wells and community walls, built with a Bitcoin academy that already teaches self-custody on the ground.',
+    imageSrc: '/featured/machakos-academy-profile.jpg',
+    imageAlt: 'Machakos Academy mark: an orange map of Kenya with a Bitcoin symbol',
+    imageFit: 'contain',
+    relationship: 'highlighted',
+    relationshipLabel: 'BFTA long-term project · first stage opening',
+    alignment:
+      'Machakos Bitcoin Academy already teaches what Bitcoin is, why money inflates, how to hold your own keys, and how Lightning payments work. Their public line is Educate. Empower. Elevate. They onboard neighbors and merchants, including businesses such as Machaa Furniture Mart, and they raise peer to peer on their own Geyser campaign. Visima 21 — visima is the Swahili word for wells — puts that same lesson on the walls people already use. Drawing water is human action. A well is capital. The other stations carry scarce means, saved work, and trade that does not leak.',
+    theWork:
+      'Bitcoin for the Arts is building Visima 21 with Vincent, who leads the academy, as a monument that should still be readable in ten years. Twenty-one stations, each a real resource the community depends on, each painted by artists he chooses and signs larger than any logo. The loop stays walkable in a day, on foot or one boda. It is not stretched across the county. Survey first, permission second, drawings third, paint last. Funding moves in stages, when a station is finished, photographed, and accepted. Their Geyser campaign stays theirs. That rail keeps funding classes and merchant onboarding. A gift through Bitcoin for the Arts is the United States door: a designated gift to a 501(c)(3), receipted, restricted to this trail, with paint and painter paid in sats on Lightning to the painter.',
+    whySupport:
+      'The US public benefit is the record. The walls stay in Machakos. The lesson travels: water, work, savings, and trade, documented so American donors, artists, and students can study a circular economy instead of only hearing about one. Bitcoiners who already travel between communities get a trail they can finish in a day. The neighbors watch their own record go up, with the artist’s name larger than the funder’s mark. That dignity is the point. Exposure follows it. The first stage opens when Vincent sends five painters he trusts, three sites he already has permission to paint, a local paint list with prices in shillings, and the name of the person who must approve a borehole or a market wall.',
+    whatFundingUnlocks: [
+      'Alkali-resistant primer, exterior masonry paint, and sealer that can survive sun and rain',
+      'Payment in sats to the painter of each finished station',
+      'A trailhead map, a 21-stamp passport, and a US-facing record of the work',
+      'A repaint, years from now, by the next crew — part of the project, not a failure',
+    ],
+    directSupport: [
+      {
+        label: 'Their Geyser campaign',
+        href: 'https://geyser.fund/project/machakosbitcoinacademy',
+      },
+      { label: 'Machakos Bitcoin Academy on X', href: 'https://x.com/BitcoinMachakos' },
+      {
+        label: 'Machakos Bitcoin Academy on Nostr',
+        href: 'https://njump.me/npub1puzsezulssrkgmy3yl89w26x0hwvtug6ks95phr568shclg0x87qzc9pvt',
+      },
+      {
+        label: 'Email the academy',
+        href: 'mailto:machakosbitcoinacademy@gmail.com',
+      },
+    ],
+    directPaymentNote:
+      'Give to their Geyser campaign if you want to fund the academy’s classes and merchant work directly. Each painted station will carry that artist’s Lightning QR once the trail is underway. A single on-chain address is on their own flyer; we will publish a confirmed address here only after they clear the exact string for this page. A designated gift below is a gift to Bitcoin For The Arts, Inc. for Visima 21.',
+    stations: [
+      { title: 'Academy tank or trailhead well', lesson: 'Custody. The map lives here.' },
+      { title: 'A concrete community well', lesson: 'Drawing water is the action.' },
+      { title: 'A school borehole', lesson: 'Yield meant for people who are not here yet.' },
+      { title: 'A market borehole', lesson: 'Trade stops without water.' },
+      { title: 'A sand dam', lesson: 'Rain that would have run off, caught and kept.' },
+      { title: 'An earth dam or pan', lesson: 'The reservoir.' },
+      { title: 'A cattle trough', lesson: 'Livestock was the old savings account.' },
+      { title: 'A posho mill', lesson: 'Grain becomes meal only after work.' },
+      { title: 'A terraced shamba edge', lesson: 'Proof of work you can see in the soil.' },
+      { title: 'A solar pump', lesson: 'Energy in, water out.' },
+      { title: 'A fodder line by a dam', lesson: 'What the water made possible.' },
+      { title: 'A mwethya site', lesson: 'Consensus before the concrete sets.' },
+      { title: 'Mama mboga row', lesson: 'Peer to peer.' },
+      { title: 'The cereal shop or grain store', lesson: 'Low time preference with a roof.' },
+      { title: 'The livestock yard', lesson: 'Savings that used to walk.' },
+      { title: 'The boda stage', lesson: 'A finished ride is a settled payment.' },
+      { title: 'A fundi stall', lesson: 'Time stored in the object.' },
+      { title: 'The school wall', lesson: 'Education is the foundation.' },
+      { title: 'The dispensary tank', lesson: 'Water as health, not a luxury.' },
+      { title: 'A sign already rescued', lesson: 'One sentence, large enough for a boda.' },
+      { title: 'The completion wall at the academy', lesson: 'The passport closes here.' },
+    ],
   },
 ];
 

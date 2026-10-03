@@ -64,6 +64,7 @@ const sections: SitemapSection[] = [
       { href: "/artists/ainsley-costello", label: "Ainsley Costello" },
       { href: "/artists/aksana-zasinets", label: "Aksana Zasinets" },
       { href: "/artists/the-bitcoin-executor", label: "The Bitcoin Executor" },
+      { href: "/artists/visima-21", label: "Visima 21 · Machakos Bitcoin Academy" },
       { href: "/artists/why-bitcoin", label: "Why Bitcoin?" },
     ],
   },
