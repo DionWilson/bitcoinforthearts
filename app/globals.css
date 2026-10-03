@@ -79,7 +79,7 @@
 
 html {
   /* Keep in-page anchors clear of the sticky site header. */
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 7rem;
 }
 
 body {

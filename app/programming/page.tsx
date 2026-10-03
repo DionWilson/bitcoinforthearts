@@ -216,7 +216,7 @@ export default function ProgrammingPage() {
           */}
           <div
             id="cultural-events"
-            className="pointer-events-none absolute left-0 top-0 h-0 w-0 -translate-y-28"
+            className="pointer-events-none absolute left-0 top-0 h-0 w-0 -translate-y-32"
             aria-hidden="true"
           />
           <div className="max-w-3xl">
