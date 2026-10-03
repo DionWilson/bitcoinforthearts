@@ -54,8 +54,9 @@ fees are not in this total.
 | Lodging | Drury, Columbus. Director’s room, booked Aug 9 | $1,209.51 | Expedia, Capital One |
 | Lodging | Drury, Columbus. Steven’s room, Aug 8 | $1,104.44 | Drury Columbus Convention Center, Chase 7196 |
 | Cinema | Kinema charge for a Dirty Coin rental that was not used, Sep 11 | $100.00 | Capital One. The film was shown another way. |
+| Print | Summit print work, paid Oct 3 | $145.80 | Ohio State Uniprint. Card payment, confirmation 1002005648. Not on the card statements in this packet. |
 | Event insurance | One-time policy for the summit, before the organization policy | $311.00 | KK Insurance, Capital One, Aug 13 |
-| **Production total** | | **$24,367.05** | |
+| **Production total** | | **$24,512.85** | |
 
 U.S. Bank card 7449 has only the two charges above. No gas charges were in
 the statements. Personal meals, transit, and subscriptions are omitted here.
@@ -75,7 +76,7 @@ the statements. Personal meals, transit, and subscriptions are omitted here.
 | Auction net to BFTA | open | Lot hammer prices and artist splits are not in this packet. |
 | Merch sales | not in this packet | Proof of Ink above is the cost of the goods. |
 
-Production cost after raffle and the general gift: **$23,967.62**.
+Production cost after raffle and the general gift: **$24,113.42**.
 Contributed funds are not subtracted from that figure.
 
 ## 4b. Organization costs that are not the summit
@@ -100,7 +101,7 @@ usage charges and before anyone’s time.
 - [x] Aksana is paid. On-chain transaction ID is on the settlements page.
 - [ ] Christopher’s $1,000 is approved and unpaid until the agreement, tax form, and payout are done.
 - [ ] Auction lot settlements with artists (share splits and no-sale donations) are still open. Raffle cash and Zaprite are recorded above.
-- [ ] Approve this production total, $24,367.05, for the board minutes.
+- [ ] Approve this production total, $24,512.85, for the board minutes.
 - [ ] Assign a dollar value to donated expo space and Phantom Power gear, if the board wants in-kind on the public record.
 
 ## Archive pointers
