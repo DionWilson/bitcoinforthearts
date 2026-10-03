@@ -16,7 +16,7 @@ summit. Aksana’s and Christopher’s grants are other work.
 
 | Item | Where to look | Amount / status | Notes |
 | --- | --- | --- | --- |
-| Ainsley Costello micro-grant | `/grants/awards`, `/about/governance/grant-settlements` | $2,500 paid | Lightning, September 30, 2026, 0.02970070 BTC. No on-chain transaction ID. |
+| Ainsley Costello micro-grant | `/grants/awards`, `/about/governance/grant-settlements` | $2,500 paid | Lightning, September 30, 2026, 0.02970070 BTC. Strike reference `1b7a7fea-6eaf-4c16-8d0d-12a5cfdb0661`. No on-chain transaction ID. |
 | Aksana Zasinets | Grant awards / settlements | $400 paid | On-chain. TXID `94309cbe3ec8cb2076d8688bc75e21ab8be7f3f36ff0069790705a8d5aeac0aa` |
 | Christopher Arcella | Grant awards / settlements | $1,000 approved | Paperwork still open. Not paid. |
 | Other performer / speaker fees | Contracts, invoices | none in this packet | Short North Stage actors were covered by the microphone rental in section 3, not by a separate fee. |
@@ -97,7 +97,7 @@ usage charges and before anyone’s time.
 
 ## 5. Decisions for Tuesday
 
-- [x] Ainsley is paid. Lightning, no on-chain transaction ID.
+- [x] Ainsley is paid. Lightning, Strike reference `1b7a7fea-6eaf-4c16-8d0d-12a5cfdb0661`. No on-chain transaction ID.
 - [x] Aksana is paid. On-chain transaction ID is on the settlements page.
 - [ ] Christopher’s $1,000 is approved and unpaid until the agreement, tax form, and payout are done.
 - [ ] Auction lot settlements with artists (share splits and no-sale donations) are still open. Raffle cash and Zaprite are recorded above.

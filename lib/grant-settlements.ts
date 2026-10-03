@@ -25,7 +25,7 @@ export const GRANT_SETTLEMENTS: GrantSettlement[] = [
     awardedOn: '2026-09',
     rail: 'lightning',
     lightningNote:
-      'Settled September 30, 2026 over Lightning, 0.02970070 BTC, to the artist’s Lightning wallet. No on-chain transaction ID.',
+      'Settled September 30, 2026 over Lightning, 0.02970070 BTC, to the artist’s Lightning wallet. Strike reference 1b7a7fea-6eaf-4c16-8d0d-12a5cfdb0661. No on-chain transaction ID.',
   },
   {
     id: 'aksana-zasinets-embroidery-2026',
