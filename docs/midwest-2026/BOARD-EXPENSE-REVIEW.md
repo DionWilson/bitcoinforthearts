@@ -35,7 +35,7 @@ Source: `docs/midwest-2026/auction/README.md`, consignments, bid sheets.
 | LOT-04 Timechain Mag Genesis | Timechain / Asanoha | | | | |
 | LOT-05 Bitcoin Keeper | Lady RedHorns | | | | |
 | LOT-06 Temptation of Bitcoin Angel | Lady RedHorns | | | | |
-| Sean live raffle / gallery sales | Shipwreck Sean | Raffle receipts $309.43 | See section 4 | Artist share still open | |
+| Sean live raffle / gallery sales | Shipwreck Sean | Raffle receipts $277.43 | See section 4 | Artist share still open | |
 
 Payment ops notes: `docs/midwest-2026/auction/CLIPBOARD-AND-PAYMENT.md`
 
@@ -60,8 +60,8 @@ fees are not in this total.
 | Event insurance | One-time policy for the summit, before the organization policy | $311.00 | KK Insurance, Capital One, Aug 13 |
 | **Production total** | | **$24,512.85** | |
 
-Artist grants are not in this total. Subtracting Ainsley’s $2,500 would count
-the same grant twice. The summit cost stays $24,512.85.
+Artist grants are not in this total. Ainsley’s $2,500 was awarded at the
+summit and stays in the grant section above. The summit cost stays $24,512.85.
 
 U.S. Bank card 7449 has only the two charges above. No gas charges were in
 the statements. Personal meals, transit, and subscriptions are omitted here.
@@ -70,18 +70,19 @@ the statements. Personal meals, transit, and subscriptions are omitted here.
 
 | Source | Amount / value | Notes |
 | --- | --- | --- |
-| Live raffle, Zaprite | $164.43 | Sep 23–24 card and Lightning payments at the summit. Includes $32 in gifts from the director. |
+| Live raffle, Zaprite | $132.43 | Sep 23–24 payments from attendees. |
 | Live raffle, cash | $145.00 | Counted at the booth. |
-| **Live raffle total** | **$309.43** | |
+| **Live raffle total** | **$277.43** | |
 | General donation | $90.00 | One Lightning gift during the summit. Not raffle. |
-| **Receipts against production** | **$399.43** | Raffle plus the $90 gift. |
+| **Receipts against production** | **$367.43** | Raffle plus the $90 gift. |
+| Zaprite tests | $33.00 | Not receipts. $1 on Sep 15, when the checkout was first turned on. $32 at the summit ($11 and $21) to test the connection and run a demo. |
 | Contributed funds | $3,000.00 | Deposited into the Bitcoin For The Arts, Inc. checking account: $2,000 on Sep 11 and $1,000 on Sep 30. Not sponsorship, not raffle, not event revenue. |
 | Cash sponsors | not in this packet | |
 | In-kind | Expo space donated by the summit. Phantom Power equipment donated. | No dollar value assigned. |
 | Auction net to BFTA | open | Lot hammer prices and artist splits are not in this packet. |
 | Merch sales | not in this packet | Proof of Ink above is the cost of the goods. |
 
-Production cost after raffle and the general gift: **$24,113.42**.
+Production cost after raffle and the general gift: **$24,145.42**.
 Contributed funds are not subtracted from that figure.
 
 ## 4b. Organization costs that are not the summit
