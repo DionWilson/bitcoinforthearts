@@ -39,6 +39,11 @@ export type FeaturedProject = {
   alignment: string;
   /** The long-term work itself. */
   theWork: string;
+  /**
+   * Time and energy inside the work. Bitcoin is the tool that keeps that
+   * time on the maker's side.
+   */
+  time: string;
   /** Why patrons are being asked now. */
   whySupport: string;
   whatFundingUnlocks: string[];
@@ -75,6 +80,8 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
       'Ainsley is one of the clearest younger voices putting Bitcoin inside a mainstream music career. She does not treat sound money as a theme bolted onto a set. She gets paid in it, talks about it in public, and uses the stage to show artists who have not found Bitcoin yet what a peer-to-peer career can look like.',
     theWork:
       'The long project is the career: writing, a band, touring, and a public practice of getting paid without waiting on a broken institutional stack. Bitcoin for the Arts awarded a micro-grant around Bitcoin Arts Park at the Midwest Bitcoin Summit — Expo Stage, culture panel, and a grant presentation. That weekend was one chapter. The work that still needs patrons is everything after it: the next room, the next record, the cost of showing up as a working band.',
+    time:
+      'A song is not a take. She writes it, records it, hears it back, cuts it, and sings it again until it is right. That is one song. An album is that same endurance multiplied across a body of work, then rehearsed with a band until the room can hold it. The hours are the standard. Bitcoin is the tool that keeps those hours on her side: savings that hold while the next pass is still wrong, and payment that does not leak while the record is still being made.',
     whySupport:
       'One grant proves the model. A career needs a longer clock — rehearsal, travel, lodging, and the unglamorous costs of keeping a band in front of people. Patrons can back Ainsley directly as those rails are published, or fund the next chapter through Bitcoin for the Arts.',
     whatFundingUnlocks: [
@@ -106,6 +113,8 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
       'Aksana has practiced Bitcoin physical art since 2017. The needle is the argument: sovereignty, independence, and long time preference, made by hand. That is the same standard Bitcoin for the Arts exists to fund — culture that cannot be rushed, rented, or faked.',
     theWork:
       'Embroidery for Freedom is a long craft practice, not a one-off object. She is building the workspace detailed textile work requires, stitching a dedicated piece for Bitcoin for the Arts, and sharing process with audiences who will never stand in a conference hall. A BFTA micro-grant supports that chapter. The practice itself — years of tailoring discipline turned toward Bitcoin — is what still needs patrons.',
+    time:
+      'Embroidery is hours inside a single inch. A design has to be drawn, then stitched, then judged, then pulled out and stitched again. The creativity is real. So is the endurance. Detailed work cannot be rushed without becoming a cheaper object. Bitcoin is the tool that lets that time stay hers: value that holds while the needle is still moving, so the standard of the piece can stay high.',
     whySupport:
       'Slow work is expensive in time. Materials, a proper workspace, and the hours inside a single piece do not fit a weekend budget. Supporting Aksana keeps a physical Bitcoin art practice alive and in public.',
     whatFundingUnlocks: [
@@ -136,6 +145,8 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
       'The Bitcoin Executor is a narrative feature made outside Hollywood, funded by Bitcoiners, aimed at people who will never sit through a technical talk. Bitcoin for the Arts treats film as adoption infrastructure: a story someone can sit with, not a pitch deck.',
     theWork:
       'The film is in late post-production, a work-in-progress of about 110 minutes. What remains is the part audiences actually meet: a theatrical plan, marketing, posters, and ticketing that can settle on Bitcoin. BFTA’s approved micro-grant is one stake in that finish. The project still needs patrons who want the film in rooms — New York, Los Angeles, Austin, Nashville, and beyond.',
+    time:
+      'A feature is a stack of passes. Picture, sound, color, the cut that is wrong, the cut that is closer. Late post-production is where the time hides, and then the film still has to be carried into a room and seen. Bitcoin is the tool for the months between almost and right: savings that do not expire while the work is still being finished.',
     whySupport:
       'A finished cut is not a released film. Screening, print, and a real campaign are how this story reaches people who do not already live in Bitcoin. That is the funding gap.',
     whatFundingUnlocks: [
@@ -167,6 +178,8 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
       'Machakos Bitcoin Academy already teaches what Bitcoin is, why money inflates, how to hold your own keys, and how Lightning payments work. Their public line is Educate. Empower. Elevate. They onboard neighbors and merchants, including businesses such as Machaa Furniture Mart, and they raise peer to peer on their own Geyser campaign. Visima 21 — visima is the Swahili word for wells — puts that same lesson on the walls people already use. Drawing water is human action. A well is capital. The other stations carry scarce means, saved work, and trade that does not leak.',
     theWork:
       'Bitcoin for the Arts is building Visima 21 with Vincent, who leads the academy, as a monument that should still be readable in ten years. Twenty-one stations, each a real resource the community depends on, each painted by artists he chooses and signs larger than any logo. The loop stays walkable in a day, on foot or one boda. It is not stretched across the county. Survey first, permission second, drawings third, paint last. Funding moves in stages, when a station is finished, photographed, and accepted. Their Geyser campaign stays theirs. That rail keeps funding classes and merchant onboarding. A gift through Bitcoin for the Arts is the United States door: a designated gift to a 501(c)(3), receipted, restricted to this trail, with paint and painter paid in sats on Lightning to the painter.',
+    time:
+      'A wall that holds in the sun is not a weekend mural. Each station takes a survey, a permission, a drawing, then paint, then the judgment of whether it is good enough to seal onto a well people use every day. Twenty-one of those, done slowly, is the work. Years later the sun wins and the next crew repaints. Bitcoin is the tool for that clock: the painter is paid for the time the wall actually takes, and the savings hold until the next station is ready.',
     whySupport:
       'The US public benefit is the record. The walls stay in Machakos. The lesson travels: water, work, savings, and trade, documented so American donors, artists, and students can study a circular economy instead of only hearing about one. Bitcoiners who already travel between communities get a trail they can finish in a day. The neighbors watch their own record go up, with the artist’s name larger than the funder’s mark. That dignity is the point. Exposure follows it. The first stage opens when Vincent sends five painters he trusts, three sites he already has permission to paint, a local paint list with prices in shillings, and the name of the person who must approve a borehole or a market wall.',
     whatFundingUnlocks: [

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 const principles = [
   {
-    title: 'We choose the long clock',
-    body: 'Not a single weekend. Careers, crafts, films, communities, and institutions that need years, not a news cycle.',
+    title: 'Time is the work',
+    body: 'A song, a stitch, a cut, a wall. High standards take energy and passes. Bitcoin is the tool that keeps that time on the maker’s side.',
   },
   {
     title: 'We make the work public',

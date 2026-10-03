@@ -122,6 +122,15 @@ export default async function FeaturedProjectPage({ params }: Props) {
               </section>
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                  Why long-term funding
+                </h2>
+                <p className="mt-3 text-base font-medium text-foreground sm:text-lg">
+                  Bitcoin puts time on the maker’s side.
+                </p>
+                <p className="mt-3">{project.time}</p>
+              </section>
+              <section>
+                <h2 className="text-xs font-semibold uppercase tracking-wide text-foreground">
                   Why it belongs here
                 </h2>
                 <p className="mt-3">{project.alignment}</p>
