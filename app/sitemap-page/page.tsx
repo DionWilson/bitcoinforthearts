@@ -23,6 +23,7 @@ const sections: SitemapSection[] = [
       { href: "/about", label: "About Us" },
       { href: "/about/reason-for-formation", label: "Reason for Formation" },
       { href: "/about/governance", label: "Governance" },
+      { href: "/about/governance/grant-settlements", label: "Grant Settlements" },
       { href: "/about/leadership", label: "Leadership" },
       { href: "/about/leadership/dion-wilson", label: "Dion Wilson" },
       { href: "/about/leadership/avi-burra", label: "Avi Burra" },
@@ -35,6 +36,7 @@ const sections: SitemapSection[] = [
     heading: "Grants",
     links: [
       { href: "/grants", label: "Grants Overview" },
+      { href: "/grants/awards", label: "Grant Awards" },
       { href: "/grants/guidelines", label: "Grant Guidelines" },
       { href: "/grants/faq", label: "Grant FAQ" },
       { href: "/grants/apply", label: "Apply for a Grant" },
@@ -42,7 +44,10 @@ const sections: SitemapSection[] = [
   },
   {
     heading: "Programming",
-    links: [{ href: "/programming", label: "Programming" }],
+    links: [
+      { href: "/programming", label: "Programming" },
+      { href: "/programming#cultural-events", label: "Cultural Events" },
+    ],
   },
   {
     heading: "Education",

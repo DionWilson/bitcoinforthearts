@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useMemo, useState } from 'react';
+import { scrollToIdBelowHeader } from '@/components/ScrollToTop';
 // BFTA 2026 brand bug. The nav bar is the lime brand surface, but we render
 // the cream-field bug as a small "branded sticker" — same pattern as the
 // newsletter card and the social icon tiles in the footer, so the chrome
@@ -24,6 +25,58 @@ type NavItem = {
   children?: NavItem[];
 };
 
+function pathWithoutHash(href: string) {
+  const i = href.indexOf('#');
+  return i === -1 ? href : href.slice(0, i);
+}
+
+function hashFromHref(href: string) {
+  const i = href.indexOf('#');
+  return i === -1 ? '' : href.slice(i);
+}
+
+function isPathMatch(pathname: string, href: string) {
+  const path = pathWithoutHash(href);
+  if (!path) return false;
+  return pathname === path || pathname.startsWith(`${path}/`);
+}
+
+function scrollToHrefHash(href: string) {
+  const hash = hashFromHref(href);
+  if (!hash) return;
+  const id = decodeURIComponent(hash.slice(1));
+  const run = () => scrollToIdBelowHeader(id);
+  if (run()) return;
+  requestAnimationFrame(() => {
+    if (run()) return;
+    window.setTimeout(run, 50);
+    window.setTimeout(run, 150);
+    window.setTimeout(run, 300);
+  });
+}
+
+function onHashNavClick(
+  e: { preventDefault: () => void },
+  href: string,
+  pathname: string,
+) {
+  const hash = hashFromHref(href);
+  if (!hash) return;
+
+  const path = pathWithoutHash(href);
+  // Same page: take over scroll completely.
+  if (pathname === path) {
+    e.preventDefault();
+    window.history.pushState(null, '', href);
+    scrollToHrefHash(href);
+    return;
+  }
+
+  // Cross-page: let Next route, but disable its default scroll-to-top
+  // (via scroll={false} on the Link) and land below the sticky header.
+  scrollToHrefHash(href);
+}
+
 export default function Navigation() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +92,7 @@ export default function Navigation() {
           { label: 'Reason for Formation', href: '/about/reason-for-formation' },
           { label: 'Leadership', href: '/about/leadership' },
           { label: 'Governance', href: '/about/governance' },
+          { label: 'Grant Settlements', href: '/about/governance/grant-settlements' },
         ],
       },
       {
@@ -56,6 +110,7 @@ export default function Navigation() {
         label: 'Grants',
         href: '/grants',
         children: [
+          { label: 'Grant Awards', href: '/grants/awards' },
           { label: 'Guidelines', href: '/grants/guidelines' },
           { label: 'FAQ', href: '/grants/faq' },
         ],
@@ -73,6 +128,7 @@ export default function Navigation() {
         label: 'Programs',
         href: '/programming',
         children: [
+          { label: 'Cultural Events', href: '/programming#cultural-events' },
           { label: 'Education', href: '/education' },
           { label: 'Events', href: '/events' },
         ],
@@ -240,15 +296,18 @@ export default function Navigation() {
                 >
                   <div className="min-w-52 rounded-md border border-border bg-background text-foreground shadow-lg p-1">
                     {item.children?.map((child) => {
-                      const isChildActive =
-                        pathname === child.href ||
-                        pathname.startsWith(`${child.href}/`);
+                      const isChildActive = isPathMatch(pathname, child.href);
+                      const childHash = hashFromHref(child.href);
 
                       return (
                         <Link
                           key={child.href}
                           href={child.href}
-                          onClick={() => setOpenDesktopDropdown(null)}
+                          scroll={!childHash}
+                          onClick={(e) => {
+                            setOpenDesktopDropdown(null);
+                            onHashNavClick(e, child.href, pathname);
+                          }}
                           className={[
                             'block rounded-md px-3 py-2 text-sm font-semibold transition-colors',
                             isChildActive ? 'bg-surface' : 'hover:bg-surface',
@@ -273,9 +332,7 @@ export default function Navigation() {
               const isCta = item.variant === 'cta';
               const hasChildren = Boolean(item.children?.length);
               const isChildActive = Boolean(
-                item.children?.some(
-                  (c) => pathname === c.href || pathname.startsWith(`${c.href}/`),
-                ),
+                item.children?.some((c) => isPathMatch(pathname, c.href)),
               );
               const isActiveBase =
                 item.href === '/'
@@ -329,15 +386,17 @@ export default function Navigation() {
                   {hasChildren && isExpanded ? (
                     <div className="mt-1 ml-3 flex flex-col gap-1 border-l border-black/15 pl-3">
                       {item.children!.map((child) => {
-                        const isChildActive =
-                          pathname === child.href || pathname.startsWith(`${child.href}/`);
+                        const isChildActive = isPathMatch(pathname, child.href);
+                        const childHash = hashFromHref(child.href);
                         return (
                           <Link
                             key={child.href}
                             href={child.href}
-                            onClick={() => {
+                            scroll={!childHash}
+                            onClick={(e) => {
                               setIsOpen(false);
                               setOpenMobileSection(null);
+                              onHashNavClick(e, child.href, pathname);
                             }}
                             className={[
                               'rounded-md px-3 py-2 text-sm font-medium transition-colors',
