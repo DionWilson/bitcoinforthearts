@@ -54,6 +54,15 @@ export type FeaturedProject = {
   imageFit?: 'cover' | 'contain';
   /** Planned or confirmed stations. Label unconfirmed trails in the copy. */
   stations?: { title: string; lesson: string }[];
+  /** A proposed year of funding, with amounts a patron can read. */
+  budget?: {
+    title: string;
+    intro: string;
+    lines: { label: string; detail: string; amount: string }[];
+    totalLabel: string;
+    totalAmount: string;
+    note: string;
+  };
 };
 
 export const FEATURED_KIND_LABEL: Record<FeaturedKind, string> = {
@@ -64,6 +73,86 @@ export const FEATURED_KIND_LABEL: Record<FeaturedKind, string> = {
 };
 
 export const FEATURED_PROJECTS: FeaturedProject[] = [
+  {
+    slug: 'shipwreck-sean',
+    kind: 'artist',
+    name: 'Shipwreck Sean',
+    projectTitle: 'One year of rooms',
+    location: 'Maryland',
+    cardSummary:
+      'A one-year proposal: eight Bitcoin exhibitions, new work made in the room, and the salary, supplies, and shipping that make the year possible.',
+    imageSrc: '/sean-live-painting-mbs.jpg',
+    imageAlt:
+      'Shipwreck Sean live painting at Bitcoin Arts Park during the Midwest Bitcoin Summit',
+    relationship: 'highlighted',
+    relationshipLabel: 'Proposal · one-year tour',
+    alignment:
+      'He is living proof of work. The phrase is the craft and the chain: hours you can see in the object, and a culture that respects the hours. Bitcoin for the Arts exists to put that kind of maker in public. At Bitcoin Arts Park he carried finished paintings into the room and then made another one while people watched. A year on the road is that proof, repeated in rooms that will hang it.',
+    theWork:
+      'Shipwreck Sean has spent more than sixteen years at the craft. He paints, he tattoos, and he made Bitsby, a character who carries Bitcoin the way a folk figure carries a story. The proposal is one year of the practice he showed in Columbus. Eight Bitcoin conferences and summits. He arrives with paintings, makes new work on site, and sells it peer to peer. Four of the rooms are in the United States. Four are abroad. The dates get chosen with him.',
+    time:
+      'A painting is a stack of decisions. He draws it, paints it, steps back, and stays with it until it is the picture he will sign. Doing that in a conference hall, with the clock of the event running, is the same standard as the studio. A year of rooms is that standard kept up between cities. Bitcoin is the tool that holds his pay and his materials steady while the next crate is still on a truck.',
+    whySupport:
+      'A weekend shows what he can do. A year is a salary, supplies, crates, and the cost of being in the room long enough to sell. The budget below is what Bitcoin for the Arts would fund.',
+    whatFundingUnlocks: [
+      'A salary for twelve months of making, traveling, and selling',
+      'Materials for the studio and for work made live in the room',
+      'Crates and freight for eight exhibitions',
+      'Airfare, lodging, meals, and ground transport',
+    ],
+    budget: {
+      title: 'One year, $100,000',
+      intro:
+        'Eight exhibitions in twelve months. Four in the United States, four abroad. Each trip is long enough to hang the work, paint in the room, and sell.',
+      lines: [
+        {
+          label: 'Artist salary',
+          detail: '$5,000 a month for twelve months. Pay for making the work, standing in the room, and selling it.',
+          amount: '$60,000',
+        },
+        {
+          label: 'Materials',
+          detail: '$500 a month. Canvas, paint, panels, and what a live painting uses up.',
+          amount: '$6,000',
+        },
+        {
+          label: 'Shipping and logistics',
+          detail: 'Four shipments in the United States at $1,000. Four international shipments at $2,500, crate and insurance included.',
+          amount: '$14,000',
+        },
+        {
+          label: 'Airfare',
+          detail: 'Four domestic trips at $500. Four international trips at $1,300.',
+          amount: '$7,200',
+        },
+        {
+          label: 'Lodging',
+          detail: 'Four nights at $200 on each United States trip. Five nights at $200 on each trip abroad.',
+          amount: '$7,200',
+        },
+        {
+          label: 'Meals',
+          detail: '$500 set aside for food on each of the eight trips.',
+          amount: '$4,000',
+        },
+        {
+          label: 'Ground transport',
+          detail: '$200 on each trip, to and from the room.',
+          amount: '$1,600',
+        },
+      ],
+      totalLabel: 'One year',
+      totalAmount: '$100,000',
+      note: 'Paintings he sells on the road remain his. This budget is the cost of the year that gets him and the work into the room.',
+    },
+    directSupport: [
+      { label: 'shipwrecksean.com', href: 'https://shipwrecksean.com' },
+      { label: 'bitsby.co', href: 'https://www.bitsby.co' },
+      { label: 'X @artbyshipwreck', href: 'https://x.com/artbyshipwreck' },
+    ],
+    directPaymentNote:
+      'A confirmed Bitcoin or Lightning address will be published here when Sean clears it for this page. Until then, use his site or give through Bitcoin for the Arts and designate this year.',
+  },
   {
     slug: 'ainsley-costello',
     kind: 'artist',
