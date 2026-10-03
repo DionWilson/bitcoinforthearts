@@ -74,10 +74,10 @@ export default function DonateThankYouPage({
 
         <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Link
-            href="/midwest"
+            href="/programming#midwest-2026"
             className="inline-flex min-h-12 items-center justify-center rounded-xl bg-black px-6 py-3 text-sm font-semibold uppercase tracking-wide text-[#B3FF48]"
           >
-            Bitcoin Arts Park →
+            Cultural Events →
           </Link>
           <Link
             href="/stories"

@@ -8,13 +8,13 @@ import {
 } from '@/lib/midwest-arts-park-schedule';
 
 export const metadata: Metadata = {
-  title: 'Schedule | Bitcoin Arts Park · Midwest Bitcoin Summit',
+  title: 'Schedule Archive | Bitcoin Arts Park · Midwest',
   description:
-    'Hour-by-hour Bitcoin Arts Park schedule for the Midwest Bitcoin Summit, September 23–24, 2026 in Columbus. Cinema, Expo Stage performances, film pitches, silent auction, and raffle.',
+    'Archived hour-by-hour Bitcoin Arts Park schedule from the Midwest Bitcoin Summit, September 23–24, 2026 in Columbus.',
   openGraph: {
-    title: 'Bitcoin Arts Park Schedule · Midwest Bitcoin Summit',
+    title: 'Bitcoin Arts Park Schedule Archive · Midwest Bitcoin Summit',
     description:
-      'Two-day run-of-show for Bitcoin for the Arts at the Midwest Bitcoin Summit. Columbus, Sept 23–24, 2026.',
+      'Archived two-day run-of-show for Bitcoin for the Arts at the Midwest Bitcoin Summit. Columbus, Sept 23–24, 2026.',
     type: 'website',
   },
 };
@@ -62,15 +62,15 @@ export default function MidwestSchedulePage() {
     <main className="min-h-screen bg-[#FFFAF0] text-black">
       <section className="border-b border-black/10 bg-black px-6 py-10 text-[#FFFAF0] sm:px-10">
         <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-[#B3FF48]">
-          {MIDWEST_SCHEDULE_META.eventName} · {MIDWEST_SCHEDULE_META.summitName}
+          Archive · {MIDWEST_SCHEDULE_META.eventName} · {MIDWEST_SCHEDULE_META.summitName}
         </p>
         <h1 className="mt-3 max-w-3xl text-4xl font-light uppercase tracking-tight sm:text-5xl">
           Two-day schedule
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#FFFAF0]/90">
           Greater Columbus Convention Center · September 23–24, 2026 ·{' '}
-          {MIDWEST_SCHEDULE_META.hours}. Cinema, Expo Stage, film pitches, gallery,
-          and the Living Room — programmed by Bitcoin for the Arts.
+          {MIDWEST_SCHEDULE_META.hours}. Archived run-of-show for Cinema, Expo
+          Stage, film pitches, gallery, and the Living Room.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
@@ -80,16 +80,16 @@ export default function MidwestSchedulePage() {
             Download printable PDF →
           </a>
           <Link
-            href="/midwest"
+            href="/programming#midwest-2026"
             className="inline-block border border-[#FFFAF0]/40 px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em] text-[#FFFAF0]"
           >
-            Bitcoin Arts Park home →
+            Cultural Events record →
           </Link>
           <Link
             href="/midwest/auction"
             className="inline-block border border-[#FFFAF0]/40 px-4 py-2.5 text-[12px] font-medium uppercase tracking-[0.14em] text-[#FFFAF0]"
           >
-            Silent auction →
+            Auction archive →
           </Link>
         </div>
       </section>

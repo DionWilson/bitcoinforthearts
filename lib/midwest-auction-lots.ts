@@ -141,7 +141,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
   {
     slug: 'transfer-of-light',
@@ -167,7 +167,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
   {
     slug: 'bitcoin-keeper',
@@ -193,7 +193,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
   {
     slug: 'temptation-of-bitcoin-angel',
@@ -219,7 +219,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
   {
     slug: 'hodl-on',
@@ -258,7 +258,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
   {
     slug: 'timechain-magazine-genesis',
@@ -308,7 +308,7 @@ export const midwestAuctionLots: AuctionLot[] = [
     eventName: EVENT.eventName,
     eventLocation: EVENT.eventLocation,
     eventDates: EVENT.eventDates,
-    status: 'open',
+    status: 'closed',
   },
 ];
 
