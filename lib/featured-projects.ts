@@ -157,10 +157,10 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     slug: 'ainsley-costello',
     kind: 'artist',
     name: 'Ainsley Costello',
-    projectTitle: 'A career on a sound money standard',
+    projectTitle: 'The next record',
     location: 'Nashville',
     cardSummary:
-      'A working pop-rock artist building a public career on Bitcoin — stage, band, and peer-to-peer payment — past a single show.',
+      'Ten songs with her band in Nashville. A $40,000 record: her time, the players, a working room, and a mix she can release.',
     imageSrc: '/ainsley-band-mbs.jpg',
     imageAlt: 'Ainsley Costello performing with her band',
     relationship: 'awarded',
@@ -168,16 +168,62 @@ export const FEATURED_PROJECTS: FeaturedProject[] = [
     alignment:
       'Ainsley is one of the clearest younger voices putting Bitcoin inside a mainstream music career. She does not treat sound money as a theme bolted onto a set. She gets paid in it, talks about it in public, and uses the stage to show artists who have not found Bitcoin yet what a peer-to-peer career can look like.',
     theWork:
-      'The long project is the career: writing, a band, touring, and a public practice of getting paid without waiting on a broken institutional stack. Bitcoin for the Arts awarded a micro-grant around Bitcoin Arts Park at the Midwest Bitcoin Summit — Expo Stage, culture panel, and a grant presentation. That weekend was one chapter. The work that still needs patrons is everything after it: the next room, the next record, the cost of showing up as a working band.',
+      'The record is ten songs with the band she already plays with. She writes them, rehearses them, and tracks them in a Nashville room with an engineer in the day rate. A producer stays on the songs. A mixer and a mastering engineer finish them. Bitcoin for the Arts already awarded a micro-grant around Bitcoin Arts Park at the Midwest Bitcoin Summit: Expo Stage, culture panel, and a grant presentation. That grant was one weekend. This budget is the next record.',
     time:
       'A song is not a take. She writes it, records it, hears it back, cuts it, and sings it again until it is right. That is one song. An album is that same endurance multiplied across a body of work, then rehearsed with a band until the room can hold it. The hours are the standard. Bitcoin is the tool that keeps those hours on her side: savings that hold while the next pass is still wrong, and payment that does not leak while the record is still being made.',
     whySupport:
-      'One grant proves the model. A career needs a longer clock — rehearsal, travel, lodging, and the unglamorous costs of keeping a band in front of people. Patrons can back Ainsley directly as those rails are published, or fund the next chapter through Bitcoin for the Arts.',
+      'A weekend shows the band. A record is four months of writing and the invoices Nashville actually charges. The budget below is what Bitcoin for the Arts would fund.',
     whatFundingUnlocks: [
-      'Band, travel, and the real cost of live performance',
-      'Time to write and record without a fiat grant cycle',
-      'More public rooms where artists meet Bitcoiners',
+      'Four months to write, rehearse, and sing the ten songs',
+      'Pay for the three players in her band across ten sessions',
+      'Twelve days in a mid-range Nashville room, engineer included',
+      'A producer, a mix, a master, and a cover',
     ],
+    budget: {
+      title: 'One album, $40,000',
+      intro:
+        'Ten songs with her band. Twelve days in a working Nashville room. The studio lines use 2026 independent rates. The first line is her time.',
+      lines: [
+        {
+          label: 'Writing and recording time',
+          detail: '$3,000 a month for four months. Pay for writing the songs, rehearsing them, and staying in the room until the vocals are right.',
+          amount: '$12,000',
+        },
+        {
+          label: 'Band',
+          detail: 'Three players at $200 a session, ten sessions. Her band, paid for the record.',
+          amount: '$6,000',
+        },
+        {
+          label: 'Studio and engineer',
+          detail: 'Twelve days at $500. The engineer is in the day rate. Mid-range Nashville room.',
+          amount: '$6,000',
+        },
+        {
+          label: 'Producer',
+          detail: '$800 a song for ten songs. A working Nashville producer.',
+          amount: '$8,000',
+        },
+        {
+          label: 'Mixing',
+          detail: '$500 a song.',
+          amount: '$5,000',
+        },
+        {
+          label: 'Mastering',
+          detail: '$150 a song.',
+          amount: '$1,500',
+        },
+        {
+          label: 'Cover and photographs',
+          detail: 'One photo day and the cover.',
+          amount: '$1,500',
+        },
+      ],
+      totalLabel: 'One album',
+      totalAmount: '$40,000',
+      note: 'The songs stay hers. The $2,500 Midwest grant is already awarded and is not inside this number. This is the cost of the next record.',
+    },
     directSupport: [
       { label: 'Ainsley on X', href: 'https://x.com/ainsleymusic07' },
       { label: 'Share Your Bitcoin Journey', href: '/stories' },

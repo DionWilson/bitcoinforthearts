@@ -152,7 +152,7 @@ export default async function FeaturedProjectPage({ params }: Props) {
               {project.budget ? (
                 <section>
                   <h2 className="text-xs font-semibold uppercase tracking-wide text-foreground">
-                    What one year costs
+                    What it costs
                   </h2>
                   <p className="mt-3 text-base font-medium text-foreground sm:text-lg">
                     {project.budget.title}
