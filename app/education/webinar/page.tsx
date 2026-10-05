@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import EducationWorkshopInterestForm from '@/components/EducationWorkshopInterestForm';
 
 export const metadata: Metadata = {
   title: 'Webinars — Bitcoin for the Arts',
@@ -226,6 +227,21 @@ export default function EducationWebinarPage() {
             published under our open license (CC&nbsp;BY&nbsp;4.0).
           </p>
         </div>
+
+        <section id="signup" className="mt-10 max-w-xl scroll-mt-28 rounded-3xl border border-border bg-surface/90 p-6 sm:p-8">
+          <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+            Live sessions
+          </div>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl">
+            Sign up for the webinars.
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+            These lessons are the class. Sign up and we will email you when the next live session is set. The presentations below stay open while you wait.
+          </p>
+          <div className="mt-5">
+            <EducationWorkshopInterestForm variant="webinar" />
+          </div>
+        </section>
 
         {/* ═══════════════════════════════════════════════════════════
             LEVEL 1 — FOUNDATIONS

@@ -167,6 +167,8 @@ export async function POST(req: NextRequest) {
     const email = requireString(body, 'email', 'Email').slice(0, 300);
     const discipline = String(body.discipline ?? '').trim().slice(0, 200);
     const interests = String(body.interests ?? '').trim().slice(0, 2000);
+    const programRaw = String(body.program ?? '').trim().slice(0, 40);
+    const program = programRaw === 'webinar' ? 'webinar' : 'workshop';
 
     const now = new Date();
     const db = await getMongoDb();
@@ -174,6 +176,7 @@ export async function POST(req: NextRequest) {
       createdAt: now,
       name,
       email,
+      program,
       discipline: discipline || null,
       interests: interests || null,
       meta: {
@@ -182,9 +185,13 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    const subject = `Education interest: ${name}`.slice(0, 200);
+    const subject = (
+      program === 'webinar' ? `Webinar signup: ${name}` : `Education interest: ${name}`
+    ).slice(0, 200);
     const text = [
-      'New education/workshop interest submitted via bitcoinforthearts.org',
+      program === 'webinar'
+        ? 'New artist webinar signup via bitcoinforthearts.org/education/webinar'
+        : 'New education/workshop interest submitted via bitcoinforthearts.org',
       '',
       `Name: ${name}`,
       `Email: ${email}`,
