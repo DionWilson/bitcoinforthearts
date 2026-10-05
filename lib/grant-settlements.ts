@@ -25,7 +25,7 @@ export const GRANT_SETTLEMENTS: GrantSettlement[] = [
     awardedOn: '2026-09',
     rail: 'lightning',
     lightningNote:
-      'Settled over Lightning to the artist’s Lightning address (no on-chain transaction ID).',
+      'Settled September 30, 2026 over Lightning, 0.02970070 BTC, to the artist’s Lightning wallet. Strike reference 1b7a7fea-6eaf-4c16-8d0d-12a5cfdb0661. No on-chain transaction ID.',
   },
   {
     id: 'aksana-zasinets-embroidery-2026',
@@ -34,9 +34,7 @@ export const GRANT_SETTLEMENTS: GrantSettlement[] = [
     amountUsd: 400,
     awardedOn: '2026-10',
     rail: 'onchain',
-    // Paste txid when ready to publish
-    txid: '',
-    statusNote: 'On-chain settlement — transaction ID will appear here when published.',
+    txid: '94309cbe3ec8cb2076d8688bc75e21ab8be7f3f36ff0069790705a8d5aeac0aa',
   },
   {
     id: 'christopher-arcella-bitcoin-executor-2026',
