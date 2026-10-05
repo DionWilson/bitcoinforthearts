@@ -149,6 +149,42 @@ export default async function FeaturedProjectPage({ params }: Props) {
                   ))}
                 </ul>
               </section>
+              {project.budget ? (
+                <section>
+                  <h2 className="text-xs font-semibold uppercase tracking-wide text-foreground">
+                    What it costs
+                  </h2>
+                  <p className="mt-3 text-base font-medium text-foreground sm:text-lg">
+                    {project.budget.title}
+                  </p>
+                  <p className="mt-3">{project.budget.intro}</p>
+                  <div className="mt-5 overflow-hidden rounded-xl border border-border">
+                    {project.budget.lines.map((line) => (
+                      <div
+                        key={line.label}
+                        className="grid grid-cols-1 gap-1 border-b border-border px-4 py-3 sm:grid-cols-[1fr_auto] sm:gap-6"
+                      >
+                        <div>
+                          <div className="font-semibold text-foreground">{line.label}</div>
+                          <p className="mt-1 text-sm leading-relaxed">{line.detail}</p>
+                        </div>
+                        <div className="font-semibold text-foreground sm:text-right">
+                          {line.amount}
+                        </div>
+                      </div>
+                    ))}
+                    <div className="flex items-baseline justify-between bg-surface px-4 py-3">
+                      <div className="font-semibold text-foreground">
+                        {project.budget.totalLabel}
+                      </div>
+                      <div className="text-lg font-semibold text-foreground">
+                        {project.budget.totalAmount}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="mt-4">{project.budget.note}</p>
+                </section>
+              ) : null}
             </div>
           </div>
 
