@@ -17,7 +17,11 @@ function getErrorMessage(err: unknown) {
   return '';
 }
 
-export default function EducationWorkshopInterestForm() {
+export default function EducationWorkshopInterestForm({
+  variant = 'workshop',
+}: {
+  variant?: 'workshop' | 'webinar';
+}) {
   const [state, setState] = useState<State>({ status: 'idle' });
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -67,9 +71,13 @@ export default function EducationWorkshopInterestForm() {
   if (state.status === 'success') {
     return (
       <div className="rounded-xl border border-border bg-background p-4 text-sm">
-        <div className="font-semibold">You’re on the list.</div>
+        <div className="font-semibold">
+          {variant === 'webinar' ? 'You’re signed up.' : 'You’re on the list.'}
+        </div>
         <div className="mt-1 text-xs text-muted">
-          We’ll email you when workshops open and share early resources.
+          {variant === 'webinar'
+            ? 'We’ll email you when the next live session is set. The lessons on this page are open now.'
+            : 'We’ll email you when workshops open and share early resources.'}
         </div>
         <button
           type="button"
@@ -84,6 +92,7 @@ export default function EducationWorkshopInterestForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-3">
+      <input type="hidden" name="program" value={variant} />
       <div className="hidden" aria-hidden="true">
         <label>
           Company
@@ -131,7 +140,11 @@ export default function EducationWorkshopInterestForm() {
           name="interests"
           rows={4}
           className="mt-2 w-full rounded-md border border-border bg-background px-3 py-2 text-sm"
-          placeholder="Wallet basics, receiving BTC, Lightning, pricing work in sats, Ordinals…"
+          placeholder={
+            variant === 'webinar'
+              ? 'What money is, custody, getting paid, pricing work in sats…'
+              : 'Wallet basics, receiving BTC, Lightning, pricing work in sats…'
+          }
         />
       </label>
 
@@ -149,7 +162,11 @@ export default function EducationWorkshopInterestForm() {
           state.status === 'submitting' ? 'opacity-70 cursor-wait' : '',
         ].join(' ')}
       >
-        {state.status === 'submitting' ? 'Submitting…' : 'Join the workshop waitlist'}
+        {state.status === 'submitting'
+          ? 'Submitting…'
+          : variant === 'webinar'
+            ? 'Sign up for the webinars'
+            : 'Join the workshop waitlist'}
       </button>
     </form>
   );
