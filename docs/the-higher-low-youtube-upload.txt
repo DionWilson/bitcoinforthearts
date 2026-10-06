@@ -1,4 +1,4 @@
-YOUTUBE UPLOAD DETAILS — Share Your Bitcoin Journey: Episode 17
+YOUTUBE UPLOAD DETAILS - Share Your Bitcoin Journey: Episode 17
 
 UPLOAD STATUS: Draft. Confirm episode number before publishing. Thumbnail not yet in repo.
 
@@ -108,7 +108,7 @@ Share Your Bitcoin Journey
 
 --- LinkedIn ---
 
-NEW EPISODE: Share Your Bitcoin Journey — The Higher Low, the Finnish Bitcoin musician behind Acoustic Pleb Rock
+NEW EPISODE: Share Your Bitcoin Journey - The Higher Low, the Finnish Bitcoin musician behind Acoustic Pleb Rock
 
 Rami Korhonen has fronted the punk band Fumble since the nineties. In 2021 he started a one-person project with one rule: short songs about what Bitcoin can do, without ever using the word Bitcoin.
 
@@ -123,7 +123,7 @@ Watch: [LINK]
 
 --- X (Post 1) ---
 
-NEW: Share Your Bitcoin Journey — Episode 17
+NEW: Share Your Bitcoin Journey - Episode 17
 
 @thehigherlow is Rami Korhonen. Fumble singer since the 90s. In 2021 he started Acoustic Pleb Rock: songs about Bitcoin that never say the word.
 
@@ -132,7 +132,7 @@ Node To Freedom. 11 countries solo. Full-band Freedom In the Digital Age.
 Watch: [LINK]
 
 
---- X (Post 2 — thread) ---
+--- X (Post 2, thread) ---
 
 "He wants a person at a campfire to like the song before they know what a sat is."
 
@@ -141,7 +141,7 @@ The Higher Low rule: write about Bitcoin's power, ban the word, pass the campfir
 Bitcoin For The Arts exists for artists like this.
 
 
---- X (Post 3 — thread) ---
+--- X (Post 3, thread) ---
 
 "Bitcoin, Nostr, and open-source tools can make the future bright, and music is how I try to hurry it."
 
@@ -152,7 +152,7 @@ Bitcoin For The Arts exists for artists like this.
 
 New episode of Share Your Bitcoin Journey just dropped.
 
-The Higher Low — Rami Korhonen, Finnish punk singer turned Bitcoin troubadour — on writing short punchy songs about freedom that never say the word Bitcoin, touring eleven countries with one guitar, writing Freedom Engine in El Zonte, and cutting the full-band Freedom In the Digital Age with his Fumble friends.
+The Higher Low, Rami Korhonen, Finnish punk singer turned Bitcoin troubadour, on writing short punchy songs about freedom that never say the word Bitcoin, touring eleven countries with one guitar, writing Freedom Engine in El Zonte, and cutting the full-band Freedom In the Digital Age with his Fumble friends.
 
 One voice and one guitar. Campfire first, rabbit hole second.
 
