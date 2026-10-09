@@ -1,0 +1,118 @@
+Share Your Bitcoin Journey: Episode 18 - Fzero
+Interview Questions
+
+TITLE
+Share Your Bitcoin Journey: Episode 18 – Fzero: Stories That Make You Build
+
+TITLE BACKUPS
+- Share Your Bitcoin Journey: Episode 18 – Fzero: An Alien Learns Bitcoin
+- Share Your Bitcoin Journey: Episode 18 – Fzero: From a Nostr Drawing to a World
+- Share Your Bitcoin Journey: Episode 18 – Fzero: Node Runner, Ninefold, and the Signal
+
+Guest: Fzero, fzero@nostr.lol
+Runtime: 45 minutes to 1 hour
+Format: Early show. Ethan Turer and Joe Martin opener, same as James Kintore.
+
+Format note (Dion only): Hold the name until "welcome to the show, Fzero."
+Two beats per question. One short premise and one short question. If an answer
+runs long, do not add a follow-up. Move to the next number so the episode stays
+inside the hour. Cold open: the first few seconds of $BLEEP, Episode 1, The
+Signal, then the welcome.
+
+
+HOST INTRO (spoken on camera before Q1)
+
+  Welcome to another episode of Share Your Bitcoin Journey presented by
+  Bitcoin for the Arts. I am Dion Wilson, the founder and executive director
+  for Bitcoin for the Arts, a 501(c)(3) nonprofit empowering artists with
+  Bitcoin grants, education, and sovereign funding tools.
+
+  Today, we have the pleasure of speaking with a husband, a node runner, a
+  designer and illustrator, an event producer, and an open source enthusiast.
+  He is co-founder of Ninefold, a studio that builds worlds: stories, products,
+  and experiences people want to join.
+
+  One of those worlds is a retro sci-fi animated series about an extraterrestrial
+  trying to understand humanity through Bitcoin. Another is a collaboration with
+  Timechain Art Magazine that treats Bitcoin as frequency. It moved from Nostr
+  onto a wall in Denver, and into a pin you can hold. In 2024 a drawing of his
+  was tattooed on a friend's leg at Nostriga. In 2025 that drawing became a
+  Bitcoin pin.
+
+  In this conversation, he shares his personal journey from maker to node runner
+  to studio founder, why a story can teach proof of work better than a lecture,
+  and what it means to sell culture peer to peer in sats. His story is handmade,
+  open, and built to travel from a screen to a wall to a pin.
+
+  Without further ado, welcome to the show, Fzero.
+
+
+Background research (for your prep, not the show):
+- Public name Fzero. NIP-05 fzero@nostr.lol. Joined Nostr July 8, 2024.
+- npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+- Lightning fzero@getalby.com. Shop https://www.takemysats.com/fzero
+- Bio: Husband, Node Runner, Co-founder Ninefold, Designer, Illustrator,
+  Event Producer, and open source enthusiast. Site https://9fold.co
+- Ninefold, with Ivy Lumi, announced at Origin Seoul. Tagline: Stories That
+  Make You Build. Eight worlds, including $BLEEP, Life with Bitcoin, Zaza,
+  and Tynka.
+- $BLEEP: biweekly retro sci-fi series. An extraterrestrial observer tries to
+  understand humanity through Bitcoin. Under that: signal, consciousness, the
+  internet. Inspired by Nostr. Season 1. Episode 1 is The Signal. He has said
+  a child could learn proof of work from an alien watching miners. Built in
+  the open, with other Nostr people appearing in later episodes.
+- GENESIS 113: collaboration with Timechain Art Magazine. "Bitcoin as frequency,
+  a tower of light and consciousness rising from entropy into clarity." Pin
+  collaboration with Modeotec. Shown at The Space, Denver, with Scarce City,
+  through June 2026. Pins at BTC Prague, then TakeMySats and Plebeian Market.
+- 2024: alien drawing tattooed on a friend's leg at Nostriga. 2025: that
+  drawing became a Bitcoin pin.
+- Do not invent a legal name. Call him Fzero unless he offers another name
+  after the welcome.
+
+
+QUESTIONS
+
+1. Fzero, welcome to Share Your Bitcoin Journey. Before Ninefold, before the series, before the pins, there was a person making pictures. Where does that story actually begin for you?
+
+2. You call yourself a designer and an illustrator. What were you making before Bitcoin, and who taught you to look that closely?
+
+3. Most makers can name the piece where they thought, this is the work. What was that piece for you?
+
+4. You run a node. When did Bitcoin stop being an idea you liked and become a machine in the house?
+
+5. Was there a specific moment, a person, or a bill you could not pay that made it obvious?
+
+6. You joined Nostr on July 8, 2024. What was broken about the old internet for a working artist?
+
+7. What did Nostr give you in that first month that a gallery or a social feed never had?
+
+8. You sell work for sats, including on TakeMySats. What changed in how you price a piece once the payment was peer to peer?
+
+9. Your bio says open source enthusiast. Where has building in public made the work better?
+
+10. At Nostriga in 2024, an alien you drew was tattooed on a friend's leg. What did you feel when a picture left the screen and went onto skin?
+
+11. In 2025 that same drawing became a Bitcoin pin. What did the metal teach you that the drawing had not?
+
+12. GENESIS 113 is your collaboration with Timechain Art Magazine. You described Bitcoin as frequency, a tower of light rising out of noise. What did you want someone to feel standing in front of it?
+
+13. That work hung at The Space in Denver with Scarce City through June 2026. What changes when a Nostr image has to survive a real room?
+
+14. You brought the GENESIS 113 pins to BTC Prague, then to Plebeian Market. Who is that object for: the collector, or the person who just wants to carry the signal?
+
+15. The animated series follows an extraterrestrial trying to understand humanity through Bitcoin. Under that, you have said it is about signal, consciousness, and the internet. Who is the show actually for?
+
+16. You have said a child could learn proof of work from an alien watching miners. Why does a story teach that faster than a lecture?
+
+17. You are making the series in the open, and other people from Nostr appear in later episodes. What do you hand a collaborator, and what do you refuse to hand over?
+
+18. You and Ivy Lumi announced Ninefold at Origin Seoul. Eight worlds, including the series, Life with Bitcoin, Zaza, and Tynka. What is the studio for, in one sentence?
+
+19. The studio line is "stories that make you build." What does that ask of the person watching?
+
+20. You also produce events. What does a Bitcoin room owe the artist who shows up to work in it?
+
+21. Five years from now, the studio, the series, the objects, and you. Where do you want to be, and where does Bitcoin sit in that picture?
+
+22. Last question. We ask every guest this. If a $500 to $2,000 Bitcoin micro-grant from Bitcoin for the Arts landed in your wallet tomorrow, what would it unlock for you as a creator?
