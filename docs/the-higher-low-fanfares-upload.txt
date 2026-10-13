@@ -1,5 +1,6 @@
 FANFARES UPLOAD (Publish Podcast): Share Your Bitcoin Journey, Episode 17
 Guest: The Higher Low (Rami Korhonen)
+Fanfares listing: https://fanfares.io/s/mmJB72 (live, 21 sats)
 Release plan: exclusive on Fanfares for 21 sats for one week, then free on YouTube and RSS.
 See docs/podcast/sybj-v4v-exclusive-release-playbook.md.
 
@@ -97,7 +98,7 @@ New Share Your Bitcoin Journey, Ep 17: The Higher Low. Songs about Bitcoin that 
 21 sats on Fanfares this week. Free next week.
 
 Value for value.
-[FANFARES EPISODE LINK]
+https://fanfares.io/s/mmJB72
 
 Settings: like 0, repost 50, quote 100, reply 21, new follow 50. Budget 10,000 sats plus 20 percent fee (12,000 total). NIP-05 required. 7 days.
 
@@ -106,7 +107,7 @@ MIDWEEK NOTE (normal post, not a campaign)
 The Higher Low saves every sat his music earns. One day, he says, it pays for the next album.
 
 Hear his story on Share Your Bitcoin Journey Ep 17. 21 sats on Fanfares this week.
-[FANFARES EPISODE LINK]
+https://fanfares.io/s/mmJB72
 
 DAY 8 NOTE (after YouTube and RSS release)
 
