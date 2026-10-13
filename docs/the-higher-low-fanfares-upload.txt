@@ -1,0 +1,118 @@
+FANFARES UPLOAD (Publish Podcast): Share Your Bitcoin Journey, Episode 17
+Guest: The Higher Low (Rami Korhonen)
+Fanfares listing: https://fanfares.io/s/mmJB72 (live, 21 sats)
+Release plan: exclusive on Fanfares for 21 sats for one week, then free on YouTube and RSS.
+See docs/podcast/sybj-v4v-exclusive-release-playbook.md.
+
+Description below is written from the recorded transcript, not the pre-show prep.
+Names checked against docs/the-higher-low-interview-questions.txt.
+
+SECRET AUDIO FILES *
+- Upload the final edited episode audio (the YouTube master's audio, with any intro clips).
+- Suggested filename: SYBJ-EP17-The-Higher-Low.mp3
+
+PREVIEW AUDIO (optional, but do it for this release)
+- 60 to 90 seconds, public and unencrypted. It is the free taste that makes people pay.
+- Best choices, in order:
+  1. Riga: Knut Svanholm jumps on the drums mid-song at Baltic Honeybadger and slows Freedom Engine down for good.
+  2. "Two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
+  3. The micro-grant answer: "even with $500 I could do five songs."
+- Suggested filename: SYBJ-EP17-Preview-90sec.mp3
+
+PODCAST ARTWORK (optional, but do it)
+- 1400x1400. Same layout as Ep 11 to 13: photo of Rami with guitar centered on BFTA orange, bottom bar with Share Your Bitcoin Journey / EP 17 lockup.
+
+EPISODE TITLE *
+The Higher Low: Songs About Bitcoin That Never Say Bitcoin
+
+PODCAST
+Share Your Bitcoin Journey
+
+SEASON
+1
+
+EPISODE
+17
+
+GENRES (comma-separated)
+Music, Arts, Bitcoin, Culture, Interviews
+
+TAGS *
+First tag is required. Paste all, comma separated.
+Bitcoin, The Higher Low, Rami Korhonen, Fumble, acoustic pleb rock, Bitcoin music, punk rock, Finland, Node To Freedom, Freedom In the Digital Age, Freedom Engine, El Zonte, Baltic Honeybadger, Knut Svanholm, value for value, V4V, Geyser, DIY music, Share Your Bitcoin Journey, Bitcoin For The Arts
+
+ADDITIONAL METADATA
+Field name: guest          Value: The Higher Low (Rami Korhonen)
+Field name: host           Value: Dion Wilson
+Field name: exclusive      Value: Fanfares exclusive for one week, then free on YouTube and RSS
+Field name: website        Value: https://www.thehigherlow.co
+
+RSS FEED (optional)
+https://media.rss.com/share-your-bitcoin-journey/feed.xml
+
+DESCRIPTION (paste into Fanfares Description)
+
+Rami Korhonen has sung in the Finnish melodic punk band Fumble since the early nineties. One of their songs opens an episode of Law & Order: Special Victims Unit. A few years ago, on long business trips in the Middle East, he picked up a guitar he found in a rented apartment and started writing songs about Bitcoin, with one rule: the songs never say the word. He calls it acoustic pleb rock. The project is The Higher Low.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson sits down with Rami to trace the whole road: seeing the Ramones in Helsinki at sixteen, thirty years of DIY punk, recording twelve songs in one four-hour session over a Christmas break, the Bitcoin Beats invitation that turned them into the album Node To Freedom, and opening Bitcoin conference stages with one voice and one guitar.
+
+He explains why his songs carry more than one meaning, what the name The Higher Low really means, the campfire test every song has to pass, and why he misses the freedom-tech spirit of Bitcoin's early culture. He tells the story of Knut Svanholm jumping on the drums at Baltic Honeybadger in Riga, writing Freedom Engine in El Zonte, handing his acoustic songs to Jesperi Mommo and the band for Freedom In the Digital Age, and crowdfunding the vinyl on Geyser.
+
+His sats from music are never spent. "One day it's going to be enough to do another album."
+
+This episode is a one-week Fanfares exclusive. Your 21 sats go straight to Bitcoin For The Arts to fund artists. Next week it goes free on YouTube and RSS.
+
+IN THIS EPISODE:
+Seeing the Ramones at sixteen and starting Fumble. Walk Alone in 1992, the break, and the 2006 comeback. The Law & Order: SVU song. Two people and a dog: playing every show like a festival. A guitar in a rented apartment and writing LFG on the spot. Twelve songs in one four-hour session. Bitcoin Beats, Boston, and Node To Freedom. Why the songs never say Bitcoin. What a higher low really means. Finding Bitcoin in 2017 and The Bitcoin Standard in 2020. The music pyramid, the fiat pyramid, and value for value. The campfire test. One guitar, nothing to hide behind. Opening the room at Bitcoin conferences. Knut Svanholm on drums in Riga. Freedom Engine in El Zonte. Handing the songs to the band. BTChel launch and the Geyser vinyl. Saving every sat for the next album. The next five years. What a $500 to $2,000 micro-grant would unlock.
+
+FIND THE HIGHER LOW:
+Website https://www.thehigherlow.co
+Fountain https://fountain.fm/album/rWSoiYiNOhMmQd4AqmOT
+Spotify https://open.spotify.com/artist/0rqMu9KHHUWw3TQbyaoWGq
+Substack https://thehigherlow.substack.com/
+X https://x.com/thehigherlow
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
+https://www.bitcoinforthearts.org
+Grants https://www.bitcoinforthearts.org/grants/apply
+Donate https://www.bitcoinforthearts.org/donate
+X https://x.com/Bitcoinfta
+Nostr https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+PRICE IN SATS
+21
+
+PAYMENT SPLIT
+npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw, 100 percent
+Optional: add Rami's npub with a share. It needs his npub; ask him first.
+
+REFERRALS
+50 percent. A listener who shares their referral link earns about 10 sats per sale they bring in. Keep it on for the exclusive week: it pays people to share, on top of the AQSTR campaign.
+
+AQSTR CAMPAIGN POST (Create New Post, campaign URL on)
+Point it at this episode's Fanfares link. Stays under about 220 characters so the campaign link fits in 280.
+
+New Share Your Bitcoin Journey, Ep 17: The Higher Low. Songs about Bitcoin that never say Bitcoin.
+
+21 sats on Fanfares this week. Free next week.
+
+Value for value.
+https://fanfares.io/s/mmJB72
+
+Settings: like 0, repost 50, quote 100, reply 21, new follow 50. Budget 10,000 sats plus 20 percent fee (12,000 total). NIP-05 required. 7 days.
+
+MIDWEEK NOTE (normal post, not a campaign)
+
+The Higher Low saves every sat his music earns. One day, he says, it pays for the next album.
+
+Hear his story on Share Your Bitcoin Journey Ep 17. 21 sats on Fanfares this week.
+https://fanfares.io/s/mmJB72
+
+DAY 8 NOTE (after YouTube and RSS release)
+
+Share Your Bitcoin Journey Ep 17 with The Higher Low is now free on YouTube and RSS.
+
+Thank you to everyone who paid 21 sats for the exclusive week. You proved the rails work.
+
+[YOUTUBE LINK]
