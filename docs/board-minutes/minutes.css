@@ -1,0 +1,73 @@
+@page { size: Letter; margin: 0.7in 0.75in 0.8in; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #fff; }
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #111;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.masthead {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  border-bottom: 3px solid #FF4F14; padding-bottom: 10px; margin-bottom: 18px;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand img { width: 34px; height: 34px; }
+.brand .name { font-weight: 700; font-size: 11pt; letter-spacing: 0.5px; text-transform: uppercase; }
+.brand .sub { font-size: 8.5pt; color: #555; }
+.doctype { text-align: right; font-size: 8.5pt; color: #555; text-transform: uppercase; letter-spacing: 1px; }
+.doctype strong { display: block; color: #111; font-size: 9.5pt; }
+
+.kicker { color: #FF4F14; font-size: 8.5pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 4px; }
+h1 { font-size: 19pt; line-height: 1.15; margin: 0 0 14px; font-weight: 600; letter-spacing: -0.2px; }
+
+table.meta { width: 100%; border-collapse: collapse; margin: 0 0 16px; font-size: 9.5pt; }
+table.meta td { padding: 4px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+table.meta td.k { width: 1.55in; color: #555; font-weight: 600; text-transform: uppercase; font-size: 8pt; letter-spacing: 0.8px; }
+
+h2 {
+  font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700;
+  margin: 18px 0 6px; padding-bottom: 4px; border-bottom: 1px solid #ddd;
+  break-after: avoid;
+}
+h2 .n { color: #FF4F14; margin-right: 6px; }
+p { margin: 0 0 7px; }
+ul { margin: 0 0 8px; padding-left: 18px; }
+li { margin: 0 0 3px; }
+
+table.att { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 4px 0 8px; }
+table.att th { text-align: left; background: #FFF1EA; color: #B8380C; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.8px; padding: 5px 8px; }
+table.att td { padding: 4px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+table.att td.s { width: 0.9in; font-weight: 600; }
+
+.motion {
+  border-left: 3px solid #FF4F14; background: #FFF8F4; padding: 8px 12px; margin: 6px 0 10px;
+  break-inside: avoid; font-size: 10pt;
+}
+.motion .lbl { font-size: 7.5pt; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: #B8380C; }
+.motion .row { margin-top: 2px; }
+.motion .row b { display: inline-block; min-width: 0.75in; }
+
+table.fig { border-collapse: collapse; font-size: 9.5pt; margin: 4px 0 10px; width: 100%; }
+table.fig td { padding: 4px 8px; border-bottom: 1px solid #eee; }
+table.fig td.a { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; width: 1.6in; }
+
+table.actions { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin: 4px 0 8px; }
+table.actions th { text-align: left; background: #111; color: #fff; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.8px; padding: 5px 8px; }
+table.actions td { padding: 5px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+table.actions td.o { width: 1.7in; }
+
+.cert { margin-top: 22px; border-top: 2px solid #111; padding-top: 10px; break-inside: avoid; }
+.cert p.lead { font-size: 9.5pt; color: #333; }
+.sigs { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 14px; }
+.sig { flex: 1 1 2.6in; font-size: 9pt; }
+.sig .line { border-bottom: 1px solid #111; height: 26px; margin-bottom: 4px; font-style: italic; font-size: 10pt; display: flex; align-items: flex-end; }
+.sig .who { font-weight: 600; }
+.sig .role { color: #555; }
+
+.foot { margin-top: 18px; font-size: 8pt; color: #777; border-top: 1px solid #eee; padding-top: 6px; }
+
+mark.confirm { background: #FFF36B; padding: 0 3px; font-weight: 600; }

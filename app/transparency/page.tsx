@@ -15,19 +15,29 @@ type DocLink = {
 
 const minutes: DocLink[] = [
   {
-    title: 'Board Meeting Minutes — Incorporation Meeting (Q4 2025)',
-    subtitle: 'Official minutes from the incorporation meeting.',
+    title: 'Board Meeting Minutes: Organizational Meeting (Q4 2025)',
+    subtitle: 'Held November 16, 2025. Bylaws, officers, banking, and IRS filings.',
     href: '/BFTA-Incorp-Minutes-Q4-2025.pdf',
   },
   {
-    title: 'Board Meeting Minutes — Q1 2026',
-    subtitle: 'Official minutes from the Q1 2026 board meeting.',
+    title: 'Board Meeting Minutes: Q1 2026',
+    subtitle: 'Held February 3, 2026. Quarterly meeting of the Board of Directors.',
     href: '/BFTA-Minutes-Q1-2026.pdf',
   },
   {
-    title: 'Board Meeting Minutes — Q2 2026',
-    subtitle: 'Official minutes from the Q2 2026 board meeting.',
+    title: 'Board Meeting Minutes: Q2 2026',
+    subtitle: 'Held April 7, 2026. Quarterly meeting of the Board of Directors.',
     href: '/BFTA-Minutes-Q2-2026.pdf',
+  },
+  {
+    title: 'Board Meeting Minutes: Q3 2026',
+    subtitle: 'Held July 7, 2026. Quarterly meeting of the Board of Directors.',
+    href: '/BFTA-Minutes-Q3-2026.pdf',
+  },
+  {
+    title: 'Board Meeting Minutes: Q4 2026',
+    subtitle: 'Held October 6, 2026. Midwest Bitcoin Summit results and grant awards.',
+    href: '/BFTA-Minutes-Q4-2026.pdf',
   },
 ];
 
