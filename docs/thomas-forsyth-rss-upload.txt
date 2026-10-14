@@ -102,9 +102,30 @@ The 3000x3000 cover already loaded in rss.com is fine. Repo web version: public/
 
 === CHAPTERS ===
 
-The transcript has no timestamps, so chapter times are not included. Pull them
-from YouTube's auto-captions or the editing timeline if you want chapters.
-Closing chapter URL: https://www.thomasforsyth.co.uk
+From the episode VTT. Titles under 45 characters.
+rss.com PAID ads can shift these times; turn PAID off for this episode for exact chapters.
+
+00:00:00 Cold open
+00:00:54 Welcome Thomas Forsyth
+00:02:46 Building dens that got out of hand
+00:04:00 Working across every material
+00:06:32 Graduating into the 2008 crash
+00:09:03 Letting the market shape the work
+00:15:44 What a general handychap is
+00:18:12 The Glastonbury build that broke him
+00:24:56 Paper Iron Man to a moving K-2SO
+00:28:41 Art Night London on an art budget
+00:30:57 Running a solo creative consultancy
+00:33:33 Three times finding Bitcoin
+00:42:40 Finding Nostr: Damus to Primal
+00:49:07 First Lightning payment, first zaps
+00:51:47 AI, 3D printing, and new tools
+00:59:30 Sound money and sound craft
+01:02:37 The London maker scene
+01:06:47 Advice for a fiat-paid maker
+01:10:13 Next: a sculpture series returns
+01:11:47 Find Tom on Nostr  -> https://www.thomasforsyth.co.uk
+01:13:42 The micro-grant question  -> https://www.bitcoinforthearts.org/grants/apply
 
 
 === NOTES BEFORE PUBLISHING ===
