@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bitcoin for the Arts: Artist Education Proposal 2027</title>
+<style>
+@page { size: Letter; margin: 0; }
+
+:root {
+  --cream: #FFFAF0;
+  --orange: #FF4F14;
+  --lime: #B3FF48;
+  --black: #111111;
+  --muted: #5b5750;
+  --rule: #e6dcc8;
+  --tint: #fff1e6;
+}
+
+* { box-sizing: border-box; }
+
+html { background: #1a1917; }
+
+body {
+  margin: 0;
+  padding: 24px 0;
+  background: #1a1917;
+  color: var(--black);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.toolbar {
+  max-width: 8.5in;
+  margin: 0 auto 16px;
+  padding: 10px 16px;
+  background: var(--black);
+  color: var(--cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--orange);
+}
+.toolbar a, .toolbar button {
+  background: var(--orange);
+  color: var(--cream);
+  border: 0;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 9pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.toolbar a.back {
+  background: transparent;
+  color: var(--lime);
+  padding-left: 0;
+}
+
+.page {
+  position: relative;
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto 24px;
+  padding: 0.5in 0.6in 0.75in;
+  overflow: hidden;
+  background: var(--cream);
+  break-after: page;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+.page:last-child { break-after: auto; }
+
+@media print {
+  html, body { background: var(--cream); padding: 0; }
+  .toolbar { display: none; }
+  .page { margin: 0; height: 11in; box-shadow: none; }
+}
+
+@media (max-width: 860px) {
+  body { padding: 0; background: var(--cream); }
+  .toolbar { max-width: 100%; margin-bottom: 0; }
+  .page {
+    width: 100%;
+    min-height: auto;
+    margin: 0;
+    padding: 28px 20px 56px;
+    box-shadow: none;
+    border-bottom: 2px solid var(--rule);
+  }
+  .stats, .timeline { grid-template-columns: 1fr 1fr; }
+  .two { grid-template-columns: 1fr; }
+}
+
+.stripe {
+  position: absolute;
+  left: 0; right: 0;
+  height: 6px;
+  background: var(--orange);
+  border-bottom: 3px solid var(--lime);
+}
+.stripe.top { top: 0; }
+.stripe.bottom { bottom: 0; border-bottom: 0; border-top: 3px solid var(--lime); }
+
+.footer {
+  position: absolute;
+  bottom: 0.32in;
+  left: 0.6in; right: 0.6in;
+  display: flex;
+  justify-content: space-between;
+  font-size: 7pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.footer .site { color: var(--orange); font-weight: 700; }
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0 12px;
+  border-bottom: 1.5px solid #ffc7ad;
+  margin-bottom: 16px;
+}
+.brand { display: flex; align-items: center; gap: 10px; }
+.brand img { width: 34px; height: 34px; display: block; }
+.brand .name { font-weight: 700; font-size: 9pt; letter-spacing: 0.04em; text-transform: uppercase; }
+.brand .sub { font-size: 7.5pt; color: var(--muted); }
+.doc-label { text-align: right; }
+.doc-label .t { font-weight: 700; font-size: 8.5pt; letter-spacing: 0.04em; text-transform: uppercase; }
+.doc-label .s { font-size: 7.5pt; color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase; }
+
+.kicker {
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 8pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 21pt;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.lede { font-size: 11pt; color: #3d3a35; margin: 0 0 10px; }
+
+.meta { font-size: 7.8pt; color: var(--muted); margin: 0 0 14px; line-height: 1.6; }
+.meta b { color: var(--black); letter-spacing: 0.04em; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 0 0 16px; }
+.stat {
+  background: var(--tint);
+  border-left: 3px solid var(--orange);
+  padding: 8px 10px;
+}
+.stat .l { font-size: 6.8pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.stat .v { font-size: 14pt; font-weight: 700; margin: 2px 0 1px; }
+.stat .n { font-size: 7pt; color: var(--muted); }
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 16px 0 7px;
+  break-after: avoid;
+}
+h2::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); flex: none; }
+h2::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+p { margin: 0 0 7px; }
+
+table { width: 100%; border-collapse: collapse; margin: 4px 0 6px; break-inside: avoid; }
+th {
+  text-align: left;
+  font-size: 7.5pt;
+  font-weight: 700;
+  color: var(--orange);
+  background: var(--tint);
+  padding: 6px 8px;
+  border-bottom: 1.5px solid #ffb48f;
+}
+td { padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th.amt, td.amt { text-align: right; white-space: nowrap; }
+td.line { font-weight: 600; white-space: nowrap; }
+td .d { color: var(--muted); font-size: 8.4pt; }
+tr.sub td { padding-top: 2px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
+tr.total td { font-weight: 700; background: var(--tint); border-top: 1.5px solid #8c8478; border-bottom: 0; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 4px 0 8px; break-inside: avoid; }
+.q { border-top: 3px solid var(--black); padding-top: 6px; font-size: 8.4pt; }
+.q b { display: block; color: var(--orange); font-size: 7.5pt; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
+
+.callout {
+  background: var(--black);
+  color: var(--cream);
+  padding: 10px 14px;
+  margin: 10px 0 8px;
+  break-inside: avoid;
+}
+.callout b { color: var(--lime); letter-spacing: 0.06em; text-transform: uppercase; font-size: 7.5pt; display: block; margin-bottom: 3px; }
+
+.contact { font-size: 7.8pt; color: var(--muted); margin-top: 12px; }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <a class="back" href="/education">&larr; Back to Education</a>
+  <div style="display:flex; gap:10px; align-items:center;">
+    <button type="button" onclick="window.print()">Print / Save PDF</button>
+    <a href="/donate">Fund this Program &rarr;</a>
+  </div>
+</div>
+
+<div class="page">
+<div class="stripe top"></div>
+<div class="stripe bottom"></div>
+<div class="footer"><span>Bitcoin for the Arts, Inc.</span><span class="site">bitcoinforthearts.org</span><span>Artist Education 2027</span></div>
+
+<div class="masthead">
+  <div class="brand">
+    <img src="/brand-kit/square-bugs/square-orange.png" alt="Bitcoin for the Arts" />
+    <div><div class="name">Bitcoin for the Arts</div><div class="sub">501(c)(3) · EIN 41-2642260</div></div>
+  </div>
+  <div class="doc-label"><div class="t">Artist Education</div><div class="s">Program year 2027</div></div>
+</div>
+
+<p class="kicker">Education · 2027</p>
+<h1>Every attendee leaves holding bitcoin. Then we train the next teacher.</h1>
+<p class="lede">Our eight-session curriculum on sound money and Bitcoin for artists is already free on our website. In 2027 we turn it into a program that grows beyond one teacher: a facilitator guide, a recorded course, live webinars, classrooms in two cities, and four new facilitators trained to teach it in their own communities.</p>
+<p class="meta">
+  <b>ORGANIZATION</b> Bitcoin for the Arts, Inc. · EIN 41-2642260 · bitcoinforthearts.org<br/>
+  <b>CONTACT</b> Dion Wilson, Executive Director · dionwilson@bitcoinforthearts.org<br/>
+  <b>REQUEST</b> $10,560 for January 1 to December 31, 2027. Teachers and facilitators paid in bitcoin.
+</p>
+
+<div class="stats">
+  <div class="stat"><div class="l">Sessions</div><div class="v">8</div><div class="n">Recorded, free to reuse</div></div>
+  <div class="stat"><div class="l">Live and in person</div><div class="v">6</div><div class="n">4 webinars, 2 classrooms</div></div>
+  <div class="stat"><div class="l">New facilitators</div><div class="v">4</div><div class="n">Trained and paid to teach</div></div>
+  <div class="stat"><div class="l">Request</div><div class="v">$10,560</div><div class="n">Program year 2027</div></div>
+</div>
+
+<h2>The curriculum</h2>
+<p>What Is Money? · Bitcoin for Artists: Unlocking New Creative Freedom · Bitcoin in Practice for Artists · Protecting Your Bitcoin: Security and Self-Custody · Sound Money, Better Art · Bitcoin and the Creator Economy, in three sessions: the incentive, building your audience, and the tools, platforms, and payments that let an artist get paid directly. The last session teaches the value-for-value tools we use for our own releases, such as Fanfares and Nostr.</p>
+<p>Education is practical: sound-money economics, self-custody, receiving, and sending. Open to working artists and to anyone who wants a clear foundation in sound money. The curriculum stays free to reuse.</p>
+
+<h2>Who teaches it</h2>
+<div class="two">
+  <div>
+    <p><b>Dion Wilson, lead instructor.</b> Founder and Executive Director of Bitcoin for the Arts. Sixteen years as a principal dancer, and a teacher who has mentored more than 10,000 students at schools and conservatories across the United States and abroad.</p>
+  </div>
+  <div>
+    <p><b>Co-facilitators &amp; educator cohort.</b> Working artists and educators building the facilitator model from our live webinars and teaching sessions in their own communities.</p>
+  </div>
+</div>
+
+<h2>Already in public</h2>
+<p>The full eight-session curriculum is on bitcoinforthearts.org, with live webinar and classroom registration. Seventeen artist stories are on YouTube and in the podcast feed. In 2026 we funded Ainsley Costello, Aksana Zasinets, and Christopher Arcella.</p>
+
+</div>
+
+<div class="page">
+<div class="stripe top"></div>
+<div class="stripe bottom"></div>
+<div class="footer"><span>Bitcoin for the Arts, Inc.</span><span class="site">bitcoinforthearts.org</span><span>Artist Education 2027</span></div>
+<h2>How the money is used</h2>
+<table>
+  <tr><th>Line</th><th>What it pays for</th><th class="amt">Amount</th></tr>
+  <tr><td class="line">Facilitator guide</td><td>The eight sessions rebuilt as a teaching kit: session plans and timings, slides, handouts, wallet walkthroughs, and a checklist any facilitator can follow. Published free.<br/><span class="d">Curriculum design and writing fee, paid in bitcoin</span></td><td class="amt">$2,000</td></tr>
+  <tr><td class="line">Recorded course</td><td>All eight sessions recorded, edited, captioned, and published free on our website and YouTube.<br/><span class="d">8 sessions at $200 each</span></td><td class="amt">$1,600</td></tr>
+  <tr><td class="line">Live webinars</td><td>Four live online sessions, one each quarter, with time for questions and a live wallet setup.<br/><span class="d">4 sessions at $300: teacher fee and platform</span></td><td class="amt">$1,200</td></tr>
+  <tr><td class="line">Classroom, New York</td><td>An in-person classroom presentation in New York.<br/><span class="d">Room, printed materials, and two teachers</span></td><td class="amt">$1,300</td></tr>
+  <tr><td class="line">Classroom, second city</td><td>An in-person classroom in a second partner city.<br/><span class="d">Room, printed materials, two teachers, and travel for one</span></td><td class="amt">$1,700</td></tr>
+  <tr><td class="line">First sats</td><td>Every in-person attendee receives a small amount of bitcoin into a wallet they set up in class, so they leave having received bitcoin, not just heard about it.<br/><span class="d">About 60 attendees at $10 each</span></td><td class="amt">$600</td></tr>
+  <tr><td class="line">Facilitator cohort</td><td>Four artists trained with the guide, each paid to teach their first session in their own community.<br/><span class="d">4 facilitators at $300 each, paid in bitcoin</span></td><td class="amt">$1,200</td></tr>
+  <tr><td class="line">Administration</td><td>10% for scheduling, bookkeeping, and reporting</td><td class="amt">$960</td></tr>
+  <tr class="total"><td>Request</td><td>January 1 to December 31, 2027</td><td class="amt">$10,560</td></tr>
+</table>
+
+<h2>The year</h2>
+<div class="timeline">
+  <div class="q"><b>Q1</b>Facilitator guide written. Eight sessions recorded and published. First live webinar.</div>
+  <div class="q"><b>Q2</b>New York classroom. Second live webinar. Facilitator applications open.</div>
+  <div class="q"><b>Q3</b>Second-city classroom. Third live webinar. Four facilitators trained.</div>
+  <div class="q"><b>Q4</b>Each facilitator teaches a first session. Fourth live webinar. Year report.</div>
+</div>
+
+<div class="callout"><b>Done means</b>The facilitator guide and all eight recordings are public and free. Four webinar dates and two classroom dates, each with a headcount. A count of attendees who received their first bitcoin. Four facilitators, named, with the date and place of each first session.</div>
+
+<h2>What we report</h2>
+<p>Each date and its attendance, first-sats count, recordings published, facilitators trained and where they taught, and a short financial note each quarter. If a line is not finished, we say so.</p>
+
+<p class="contact">Dion Wilson, Executive Director · dionwilson@bitcoinforthearts.org · education@bitcoinforthearts.org</p>
+</div>
+</body>
+</html>
