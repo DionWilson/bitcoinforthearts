@@ -119,13 +119,19 @@ https://fanfares.io/s/rIgKok
 AQSTR settings, same as Episode 17: like 0, repost 50, quote 100, reply 21, new follow 50. Budget 10,000 sats plus 20 percent fee (12,000 total). NIP-05 required. 7 days.
 
 X POST
-210 characters. Fzero has no personal X account. @go9fold is the studio.
+Two posts, one thread. The first tells an X reader what Fanfares is and why we use it. The second is the episode. Fzero has no personal X account. @go9fold is the studio.
 
-NEW: Share Your Bitcoin Journey, Ep 18
+1/
+Fanfares lets a listener pay sats to unlock an episode. Those sats go to the people who made it, not an ad network.
 
-Fzero (@go9fold). The artist creates first. Then you serve the artist.
+We use it for one week before YouTube. The artist gets paid first. Then the episode is free for everyone.
 
-21 sats this week. 11 to @Bitcoinfta, 10 to Fzero. YouTube next week.
+2/
+This week: Share Your Bitcoin Journey, Ep 18, with Fzero (@go9fold).
+
+The artist creates first. Then you serve the artist.
+
+21 sats. 11 to @Bitcoinfta, 10 to Fzero.
 https://fanfares.io/s/rIgKok
 
 YOUTUBE
