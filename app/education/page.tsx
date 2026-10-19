@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import EducationWorkshopInterestForm from '@/components/EducationWorkshopInterestForm';
+import ClassSignupSection from '@/components/ClassSignupSection';
 
 export const metadata: Metadata = {
   title: 'Education',
@@ -84,15 +84,19 @@ export default function EducationPage() {
             .
           </div>
 
+          <div className="mt-10">
+            <ClassSignupSection source="Education Page" layout="card" />
+          </div>
+
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12">
             <section className="lg:col-span-7 space-y-6">
               <div className="rounded-3xl border border-border bg-surface/80 p-8 shadow-sm">
                 <h2 className="text-2xl font-semibold tracking-tight">
-                  Upcoming workshops (coming soon)
+                  More workshops after the fall classes
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-muted">
-                  We’ll post dates here as soon as workshops are scheduled. For now, join the waitlist and tell us
-                  what you want to learn. Later we may use Luma for event registration.
+                  After the four fall classes, these hands-on workshops come next. Sign up for the classes above and
+                  tell us what you want to learn; we’ll use your answers to schedule them.
                 </p>
 
                 <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -213,13 +217,25 @@ export default function EducationPage() {
             <aside className="lg:col-span-5 space-y-4">
               <div className="rounded-2xl border border-border bg-surface p-6">
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted">
-                  Workshop waitlist
+                  Fall 2026 classes
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  Join the list so we can notify you when workshops launch (and prioritize topics).
+                  Four one-hour classes on sound money, starting Monday, November 9. Online, plus one session in
+                  person in New York.
                 </p>
-                <div className="mt-4">
-                  <EducationWorkshopInterestForm />
+                <div className="mt-4 flex flex-col gap-3">
+                  <a
+                    href="#class-signup"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+                  >
+                    Reserve your seat
+                  </a>
+                  <a
+                    href="/proposals/bfta-2027-education-proposal.html"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-5 py-2 text-sm font-semibold transition-colors hover:opacity-90"
+                  >
+                    Read the 2027 education proposal
+                  </a>
                 </div>
                 <div className="mt-4 text-xs text-muted">
                   Prefer email?{' '}

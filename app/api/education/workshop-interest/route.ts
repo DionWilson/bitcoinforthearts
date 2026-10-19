@@ -3,6 +3,13 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import { getMongoDb } from '@/lib/mongodb';
 import { sendResendEmail } from '@/lib/resend';
+import {
+  ALL_SESSIONS_OPTION,
+  BACKGROUND_OPTIONS,
+  FORMAT_OPTIONS,
+  SESSION_OPTIONS,
+  SOURCE_OPTIONS,
+} from '@/lib/education-classes';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -124,6 +131,44 @@ async function sendEducationEmail(args: { subject: string; text: string; replyTo
   return { ok: true as const, skipped: false as const, to };
 }
 
+function pickOption<T extends string>(value: unknown, options: readonly T[], fallback: T): T {
+  const v = String(value ?? '').trim();
+  return (options as readonly string[]).includes(v) ? (v as T) : fallback;
+}
+
+async function writeToAirtable(fields: Record<string, unknown>) {
+  const pat = getEnv('AIRTABLE_PAT');
+  const baseId = getEnv('AIRTABLE_BASE_ID');
+  if (!pat || !baseId) {
+    return { ok: false as const, skipped: true, error: 'missing_airtable_config' };
+  }
+
+  const tableName = getEnv('AIRTABLE_EDUCATION_SIGNUPS_TABLE') ?? 'Education Signups';
+  const apiBase = getEnv('AIRTABLE_API_URL') ?? 'https://api.airtable.com';
+  const url = `${apiBase}/v0/${baseId}/${encodeURIComponent(tableName)}`;
+
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${pat}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ records: [{ fields }], typecast: true }),
+    });
+    if (!res.ok) {
+      const body = await res.text().catch(() => '');
+      console.error('[education] airtable write failed', res.status, body.slice(0, 500));
+      return { ok: false as const, skipped: false, error: `airtable_http_${res.status}: ${body.slice(0, 500)}` };
+    }
+    return { ok: true as const, skipped: false, error: null };
+  } catch (err) {
+    console.error('[education] airtable write failed', err);
+    return {
+      ok: false as const,
+      skipped: false,
+      error: err instanceof Error ? err.message : 'airtable_unknown_error',
+    };
+  }
+}
+
 function getFallbackEducationToEmail() {
   return (
     getEnv('EDU_FALLBACK_TO_EMAIL') ??
@@ -165,39 +210,85 @@ export async function POST(req: NextRequest) {
   try {
     const name = requireString(body, 'name', 'Name').slice(0, 200);
     const email = requireString(body, 'email', 'Email').slice(0, 300);
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      throw new Error('Please enter a valid email address.');
+    }
     const discipline = String(body.discipline ?? '').trim().slice(0, 200);
     const interests = String(body.interests ?? '').trim().slice(0, 2000);
-    const programRaw = String(body.program ?? '').trim().slice(0, 40);
-    const program = programRaw === 'webinar' ? 'webinar' : 'workshop';
+    const format = pickOption(body.format, FORMAT_OPTIONS, FORMAT_OPTIONS[0]);
+    const background = pickOption(body.background, BACKGROUND_OPTIONS, 'Other');
+    const source = pickOption(body.source, SOURCE_OPTIONS, 'Webinar Page');
+    const rawSessions = Array.isArray(body.sessions) ? body.sessions.map(String) : [];
+    let sessions = rawSessions.filter((s) => SESSION_OPTIONS.includes(s));
+    if (sessions.length === 0 || sessions.includes(ALL_SESSIONS_OPTION)) {
+      sessions = [ALL_SESSIONS_OPTION];
+    }
+    const inPerson = format !== 'Online Webinar';
 
     const now = new Date();
-    const db = await getMongoDb();
-    const insertRes = await db.collection('educationInterest').insertOne({
+    const record = {
       createdAt: now,
       name,
       email,
-      program,
+      program: 'class-fall-2026',
+      format,
+      background,
+      sessions,
+      source,
       discipline: discipline || null,
       interests: interests || null,
       meta: {
         ip,
         userAgent: req.headers.get('user-agent') ?? null,
       },
+    };
+
+    let db: Awaited<ReturnType<typeof getMongoDb>> | null = null;
+    let insertedId: unknown = null;
+    try {
+      db = await getMongoDb();
+      const insertRes = await db.collection('educationInterest').insertOne(record);
+      insertedId = insertRes.insertedId;
+    } catch (err) {
+      console.error('[education] mongo insert failed', err);
+    }
+
+    const airtableResult = await writeToAirtable({
+      Name: name,
+      Email: email,
+      'Format Preference': format,
+      Background: background,
+      'Discipline or Role': discipline || undefined,
+      'Sessions Selected': sessions,
+      'Questions or Topics': interests || undefined,
+      'Source Page': source,
+      Status: 'Registered',
     });
 
-    const subject = (
-      program === 'webinar' ? `Webinar signup: ${name}` : `Education interest: ${name}`
-    ).slice(0, 200);
+    if (!insertedId && !airtableResult.ok) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: 'We could not save your signup right now.',
+        },
+        { status: 503 },
+      );
+    }
+
+    const subject = `Class signup: ${name}${inPerson ? ' (In-Person NYC)' : ''}`.slice(0, 200);
     const text = [
-      program === 'webinar'
-        ? 'New artist webinar signup via bitcoinforthearts.org/education/webinar'
-        : 'New education/workshop interest submitted via bitcoinforthearts.org',
+      `New Fall 2026 class signup via the ${source} on bitcoinforthearts.org`,
       '',
       `Name: ${name}`,
       `Email: ${email}`,
-      discipline ? `Discipline: ${discipline}` : 'Discipline: (blank)',
-      interests ? `Interests:\n${interests}` : 'Interests: (blank)',
+      `Format: ${format}`,
+      `Background: ${background}`,
+      `Classes: ${sessions.join('; ')}`,
+      discipline ? `Discipline or role: ${discipline}` : 'Discipline or role: (blank)',
+      interests ? `Questions or topics:\n${interests}` : 'Questions or topics: (blank)',
       '',
+      `Saved to Airtable: ${airtableResult.ok ? 'yes' : `no (${airtableResult.error})`}`,
+      `Saved to database: ${insertedId ? 'yes' : 'no'}`,
       `IP: ${ip}`,
     ].join('\n');
 
@@ -294,10 +385,12 @@ export async function POST(req: NextRequest) {
     }
 
     try {
+      if (!db || !insertedId) throw new Error('no_mongo_record');
       await db.collection('educationInterest').updateOne(
-        { _id: insertRes.insertedId },
+        { _id: insertedId },
         {
           $set: {
+            airtable: { ok: airtableResult.ok, error: airtableResult.error ?? null },
             emailNotification: {
               ok: emailResult.ok,
               skipped: Boolean(emailResult.skipped),
@@ -316,6 +409,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         ok: true,
+        airtable: airtableResult.ok,
         emailed: emailResult.ok,
         emailTo: emailResult.to ?? null,
         emailSkipped: Boolean(emailResult.skipped),
@@ -358,6 +452,7 @@ export async function GET() {
       ok: true,
       configured: {
         mongo: mongoOk,
+        airtable: Boolean(getEnv('AIRTABLE_PAT')) && Boolean(getEnv('AIRTABLE_BASE_ID')),
         email:
           (Boolean(resendApiKey) && Boolean(fromEmail)) ||
           (Boolean(smtpUser) && Boolean(smtpPass) && Boolean(fromEmail)),
