@@ -71,6 +71,8 @@ Fountain https://fountain.fm/album/rWSoiYiNOhMmQd4AqmOT
 Spotify https://open.spotify.com/artist/0rqMu9KHHUWw3TQbyaoWGq
 Substack https://thehigherlow.substack.com/
 X https://x.com/thehigherlow
+Instagram https://www.instagram.com/the_higher_low
+Nostr npub1jp9s6r7fpuz0q09w7t9q0j3lmvd97gqzqzgps88gu870gulh24xs9xal58
 
 ABOUT BITCOIN FOR THE ARTS:
 501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
@@ -85,7 +87,7 @@ PRICE IN SATS
 
 PAYMENT SPLIT
 npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw, 100 percent
-Optional: add Rami's npub with a share. It needs his npub; ask him first.
+Optional: add Rami's npub with a share. His npub is npub1jp9s6r7fpuz0q09w7t9q0j3lmvd97gqzqzgps88gu870gulh24xs9xal58. Ask him before changing the 100 percent split.
 
 REFERRALS
 50 percent. A listener who shares their referral link earns about 10 sats per sale they bring in. Keep it on for the exclusive week: it pays people to share, on top of the AQSTR campaign.
@@ -115,4 +117,4 @@ Share Your Bitcoin Journey Ep 17 with The Higher Low is now free on YouTube and 
 
 Thank you to everyone who paid 21 sats for the exclusive week. You proved the rails work.
 
-[YOUTUBE LINK]
+https://youtu.be/e1rInzZNtkk
