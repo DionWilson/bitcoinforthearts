@@ -1,61 +1,72 @@
 YOUTUBE UPLOAD DETAILS - Share Your Bitcoin Journey: Episode 17
 
-UPLOAD STATUS: Draft. Confirm episode number before publishing. Thumbnail not yet in repo.
+UPLOAD STATUS: Ready to paste. Video is live at https://youtu.be/e1rInzZNtkk
+Chapters are taken from the released cut. Cold open runs to about 1:28.
+
 
 === TITLE ===
 
-Share Your Bitcoin Journey: Episode 17 – The Higher Low: Acoustic Pleb Rock Without Saying Bitcoin
+Share Your Bitcoin Journey: Episode 17 – The Higher Low: Songs About Bitcoin That Never Say Bitcoin
 
 
 === TITLE (BACKUP OPTIONS) ===
 
+- Share Your Bitcoin Journey: Episode 17 – The Higher Low: Acoustic Pleb Rock
 - Share Your Bitcoin Journey: Episode 17 – The Higher Low: From Fumble to Freedom In the Digital Age
-- Share Your Bitcoin Journey: Episode 17 – The Higher Low: Songs About Bitcoin That Never Say Bitcoin
-- Share Your Bitcoin Journey: Episode 17 – Rami Korhonen on Punk Rock, El Zonte, and the Full-Band Record
+- Share Your Bitcoin Journey: Episode 17 – Rami Korhonen on Punk Rock, El Zonte, and One Guitar
 
 
 === DESCRIPTION ===
 
-In this episode, Bitcoin For The Arts founder Dion Wilson sits down with The Higher Low, the Finnish Bitcoin musician also known as Rami Korhonen, the singer of the melodic punk rock band Fumble since the nineties, and the one-person do-it-yourself project he calls Acoustic Pleb Rock.
+Rami Korhonen has sung in the Finnish melodic punk band Fumble since the early nineties. One of their songs opens an episode of Law & Order: Special Victims Unit. On long business trips he found a guitar in a rented apartment and started writing songs about Bitcoin, with one rule: the songs never say the word. He calls it acoustic pleb rock. The project is The Higher Low.
 
-Rami noticed Bitcoin in 2017 and fell all the way in a few years later. On the weekends of long business trips in 2021 he started writing short, punchy songs about what Bitcoin can do in the world, with one rule: the songs never use the word Bitcoin. He recorded the first batch over Christmas 2021, released LFG in January 2022, and released the debut album Node To Freedom in February 2023.
+In this episode, Bitcoin For The Arts founder Dion Wilson sits down with Rami for the whole road. Seeing the Ramones in Helsinki at sixteen. Thirty years of DIY punk, including the nights with two people and a dog. Twelve songs recorded in one four-hour session. The Bitcoin Beats invitation that turned them into the album Node To Freedom. Opening Bitcoin conference stages with one voice and one guitar.
 
-Since then he has taken one voice and one electro-acoustic guitar onto Bitcoin stages from Amsterdam to Hodlween in Charlotte to Satoshi Rockamoto in Riga to a Thailand afterparty, finished an eleven-country solo tour in 2023 to 2024, and released the full-band second album Freedom In the Digital Age in August 2025 with a launch show at BTChel Helsinki. Freedom Engine, one of the songs, was written in El Zonte, El Salvador. He crowdfunded the vinyl in bitcoin on Geyser.
+He explains why a song has to work for someone who has never heard of Bitcoin, what the name The Higher Low means, and why he misses the freedom-tech years before the treasury companies. He tells the story of Knut Svanholm jumping on the drums at Baltic Honeybadger in Riga and slowing Freedom Engine down for good, writing that song in El Zonte, handing the acoustic songs to Jesperi Mommo and the band, and crowdfunding the vinyl for Freedom In the Digital Age on Geyser.
 
-This is the full story: Fumble and what punk taught him, why the songs refuse the word, what the road taught him about plebs and campfires, why Bitcoin is punk rock, and what changed when he handed the new record to Mikko Salo, Henkka Huhtanen, and Jesperi Mommo. His stated aim is simple: a campfire fan should like the song before they know what a sat is, and a pleb should smile.
+He does not spend the sats his music earns. "One day it's going to be enough to do another album."
+
+Watch: https://youtu.be/e1rInzZNtkk
 
 IN THIS EPISODE:
-- Growing up into Fumble: Finnish punk singer since the nineties
-- Noticing Bitcoin in 2017 and falling all the way in years later
-- Business-trip weekends in 2021 and the solo idea that finally landed
-- Christmas break 2021, LFG in January 2022, Node To Freedom in February 2023
-- The rule: short songs about Bitcoin that never say the word
-- Acoustic Pleb Rock: one voice, one guitar, and the campfire test
-- In Our Minds and the Bitcoin Beats X Spaces guest spot in early 2023
-- Bitcoin Is Punk Rock: no boss, DIY, and where the comparison breaks
-- Starting grassroots like free and open-source software
-- Amsterdam, Charlotte, Riga, Thailand, and the eleven-country solo tour
-- Jamming with Knut Svanholm
-- Freedom Engine, written in El Zonte in 2024
-- Freedom In the Digital Age: the Fumble friends, the Helsinki sessions, the BTChel full-band launch on August 15 2025
-- Crowdfunding the vinyl on Geyser in bitcoin
-- Bitcoin, Nostr, and open-source tools, and what a song does that tools cannot
-- What a $500 to $2,000 Bitcoin micro-grant from BFTA would unlock next
+- Seeing the Ramones in Helsinki at sixteen and starting Fumble
+- Walk Alone in 1992, the 1994 break, and the 2006 comeback
+- A Fumble song on Law & Order: Special Victims Unit
+- Playing a coffee shop like a festival: two people and a dog
+- Why playing live is the best part of the work
+- New York, San Francisco, and the solo songs that became Fumble songs
+- A guitar in a rented apartment, and writing LFG on the spot
+- Twelve songs in one four-hour session
+- In Our Minds, Bitcoin Beats, Boston, and Node To Freedom
+- The ABBA wordplay behind the album title
+- Buying bitcoin in 2017, reading The Bitcoin Standard in 2020, and never looking back
+- The music pyramid, the fiat pyramid, and value for value
+- Why Bitcoin For The Arts exists
+- Songs that never say the word, and what a higher low means
+- The freedom-tech years, from 2017 to about 2021
+- How a song earns its place, and the ones that arrive in three minutes
+- One voice, one guitar, and nothing to hide behind
+- Opening a room that is already talking about Bitcoin
+- Knut Svanholm on drums in Riga, 2024
+- Handing the core songs to the band and letting Jesperi Mommo arrange them
+- Freedom Engine, written in El Zonte on the way to the 2024 halving party
+- The August 15, 2025 launch at BTChel Helsinki, and the Geyser vinyl
+- Saving every sat for the next album
+- Fewer shows, better shows, and twenty minutes with a guitar
+- What a $500 to $2,000 Bitcoin micro-grant would unlock
 
-ABOUT THE HIGHER LOW:
-Rami Korhonen, recording as The Higher Low. Finnish singer of melodic punk rock band Fumble since the nineties. Solo project started 2021. Debut album Node To Freedom (Feb 2023). Second album Freedom In the Digital Age (Aug 2025, Walkalone Records), 10 tracks, full-band sound, produced / mixed / mastered by Jesperi Mommo, drums Mikko Salo, bass Henkka Huhtanen. Freedom Engine written in El Zonte, El Salvador. Vinyl crowdfunded on Geyser. Author of the Higher Low Substack on Bitcoin, macroeconomics, and DIY punk rock.
-
+FIND THE HIGHER LOW:
 Website: https://www.thehigherlow.co
 Music: https://www.thehigherlow.co/about/
-Wavlake: search The Higher Low on Wavlake
-YouTube: search The Higher Low
 Spotify: https://open.spotify.com/artist/0rqMu9KHHUWw3TQbyaoWGq
+Fountain: https://fountain.fm/album/rWSoiYiNOhMmQd4AqmOT
 Substack: https://thehigherlow.substack.com/
 X: https://x.com/thehigherlow
-Fountain album page: https://fountain.fm/album/rWSoiYiNOhMmQd4AqmOT
+Instagram: https://www.instagram.com/the_higher_low
+Nostr: https://primal.net/p/npub1jp9s6r7fpuz0q09w7t9q0j3lmvd97gqzqzgps88gu870gulh24xs9xal58
 
 ABOUT BITCOIN FOR THE ARTS:
-Bitcoin For The Arts, Inc. is a 501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. We are the first nonprofit paying artists exclusively in Bitcoin.
+Bitcoin For The Arts, Inc. is a 501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools. The first nonprofit paying artists exclusively in Bitcoin.
 
 Website: https://www.bitcoinforthearts.org
 Donate: https://www.bitcoinforthearts.org/donate
@@ -66,32 +77,54 @@ Substack: https://substack.com/@bitcoinforthearts
 X: https://x.com/Bitcoinfta
 Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
 
-CHAPTERS (adjust timestamps after editing):
-0:00 - Introduction
-0:00 - Fumble and the Finnish punk start
-0:00 - Finding Bitcoin in 2017 and going down the hole
-0:00 - The 2021 weekends, Christmas recordings, and LFG
-0:00 - Node To Freedom and the no-word rule
-0:00 - Acoustic Pleb Rock and the campfire test
-0:00 - Bitcoin Is Punk Rock
-0:00 - The road: Amsterdam, Charlotte, Riga, Thailand, eleven countries
-0:00 - El Zonte and Freedom Engine
-0:00 - Freedom In the Digital Age and the BTChel full-band launch
-0:00 - Geyser vinyl and getting paid in bitcoin
-0:00 - The $500 to $2,000 micro-grant question
-0:00 - Closing
+0:00 Cold open
+1:28 Welcome
+3:39 The Ramones and Fumble
+5:16 The comeback and a TV song
+6:20 Two people and a dog
+7:59 The guitar in the apartment
+9:53 Twelve songs in four hours
+11:06 Node To Freedom
+12:14 The Bitcoin Standard
+14:07 Value for value
+17:37 Songs that never say Bitcoin
+20:30 The campfire test
+22:43 One guitar
+24:37 Opening the room
+26:44 Knut Svanholm in Riga
+28:22 The full band
+29:40 Freedom Engine in El Zonte
+30:29 Sats for the next album
+31:50 Five years out
+33:49 What $500 would unlock
+35:07 Close
 
 
 === TAGS ===
 
-Bitcoin,Bitcoin for the Arts,The Higher Low,Rami Korhonen,Dion Wilson,Share Your Bitcoin Journey,Acoustic Pleb Rock,Fumble,Node To Freedom,Freedom In the Digital Age,Freedom Engine,El Zonte,Bitcoin music,Finland punk,DIY music,Bitcoin podcast,sound money,Nostr,value for value,Wavlake,Geyser,open source,nonprofit,501c3,artist grants,Bitcoin micro grants,sovereign renaissance,orange pill,low time preference
+Bitcoin,Bitcoin For The Arts,The Higher Low,Rami Korhonen,Dion Wilson,Share Your Bitcoin Journey,Acoustic Pleb Rock,Fumble,Node To Freedom,Freedom In the Digital Age,Freedom Engine,El Zonte,Bitcoin music,Finland,punk rock,DIY music,Bitcoin podcast,sound money,Nostr,value for value,Wavlake,Geyser,Knut Svanholm,Baltic Honeybadger,nonprofit,501c3,artist grants,Bitcoin micro grants
 
 
-=== THUMBNAIL TEXT IDEAS ===
+=== PINNED COMMENT ===
 
-Option 1: "Songs About Bitcoin. Never Says Bitcoin." (photo of Rami with guitar)
-Option 2: "Finnish Punk Singer Finds Bitcoin" (split image: Fumble years / Higher Low live)
-Option 3: "Acoustic Pleb Rock" (live shot + orange bar)
+The Higher Low is Rami Korhonen, singer of Fumble and the one-person project he calls acoustic pleb rock.
+
+Website: https://www.thehigherlow.co
+X: https://x.com/thehigherlow
+Instagram: https://www.instagram.com/the_higher_low
+Nostr: npub1jp9s6r7fpuz0q09w7t9q0j3lmvd97gqzqzgps88gu870gulh24xs9xal58
+Node To Freedom and Freedom In the Digital Age: https://fountain.fm/album/rWSoiYiNOhMmQd4AqmOT
+
+Bitcoin For The Arts funds working artists in bitcoin.
+Apply: https://www.bitcoinforthearts.org/grants/apply
+Donate: https://www.bitcoinforthearts.org/donate
+
+
+=== THUMBNAIL TEXT ===
+
+Option 1: "Songs About Bitcoin. Never Says Bitcoin."
+Option 2: "Acoustic Pleb Rock"
+Option 3: "Two People and a Dog"
 
 
 === CATEGORY ===
@@ -104,73 +137,106 @@ Nonprofits & Activism (or Education)
 Share Your Bitcoin Journey
 
 
+=== END SCREEN ===
+
+Last 20 seconds: Bitcoin For The Arts channel, the Share Your Bitcoin Journey playlist, and https://www.bitcoinforthearts.org/grants/apply
+
+
 === SOCIAL POSTS ===
 
 --- LinkedIn ---
 
-NEW EPISODE: Share Your Bitcoin Journey - The Higher Low, the Finnish Bitcoin musician behind Acoustic Pleb Rock
+NEW EPISODE: Share Your Bitcoin Journey, Episode 17, with The Higher Low.
 
-Rami Korhonen has fronted the punk band Fumble since the nineties. In 2021 he started a one-person project with one rule: short songs about what Bitcoin can do, without ever using the word Bitcoin.
+"Even if there's two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
 
-Debut album Node To Freedom (2023). Eleven-country solo tour. Full-band second album Freedom In the Digital Age (2025), launched at BTChel Helsinki, vinyl crowdfunded on Geyser.
+Rami Korhonen has fronted the Finnish punk band Fumble since the nineties. One of their songs opens an episode of Law & Order: SVU. His solo project is The Higher Low. The songs are about what Bitcoin can do, and they never use the word. He calls it acoustic pleb rock.
 
-We talk punk, DIY, El Zonte, and why a campfire fan should like the song first.
+A good song arrives in three minutes. The room can be almost empty. Early in 2020 he read The Bitcoin Standard, and that was it.
 
-Watch: [LINK]
+Watch: https://youtu.be/e1rInzZNtkk
 
 #BitcoinForTheArts #Bitcoin #Music #PunkRock #DIY #SoundMoney #Nonprofit
 
 
---- X (Post 1) ---
+--- Facebook ---
 
-NEW: Share Your Bitcoin Journey - Episode 17
+NEW EPISODE. Share Your Bitcoin Journey, Episode 17.
 
-@thehigherlow is Rami Korhonen. Fumble singer since the 90s. In 2021 he started Acoustic Pleb Rock: songs about Bitcoin that never say the word.
+The Higher Low. Rami Korhonen.
 
-Node To Freedom. 11 countries solo. Full-band Freedom In the Digital Age.
+"Even if there's two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
 
-Watch: [LINK]
+Rami has sung in the Finnish punk band Fumble since the early nineties. One of their songs opens an episode of Law & Order: SVU. His solo project is acoustic pleb rock: songs about what Bitcoin can do that never use the word.
+
+In the opening he says three things. A good song arrives in three minutes. The room can be two people and a dog, and they still play it like a festival. Early in 2020 he read The Bitcoin Standard, and he never looked back.
+
+Watch Episode 17: https://youtu.be/e1rInzZNtkk
+
+The Higher Low: https://www.thehigherlow.co
+
+#BitcoinForTheArts #Bitcoin #ShareYourBitcoinJourney #TheHigherLow #PunkRock #SoundMoney
 
 
---- X (Post 2, thread) ---
+--- X ---
 
-"He wants a person at a campfire to like the song before they know what a sat is."
+NEW: Share Your Bitcoin Journey, Episode 17.
 
-The Higher Low rule: write about Bitcoin's power, ban the word, pass the campfire test.
+@thehigherlow is Rami Korhonen. Fumble singer since the 90s. Songs about Bitcoin that never say the word.
 
-Bitcoin For The Arts exists for artists like this.
+One guitar. Node To Freedom. Freedom Engine, written in El Zonte.
+
+Watch: https://youtu.be/e1rInzZNtkk
 
 
---- X (Post 3, thread) ---
+--- X, second post ---
 
-"Bitcoin, Nostr, and open-source tools can make the future bright, and music is how I try to hurry it."
+"Two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
 
-@thehigherlow on punk, DIY, and Freedom Engine, written in El Zonte.
+The Higher Low on Share Your Bitcoin Journey.
+
+https://youtu.be/e1rInzZNtkk
+
+
+--- X, third post ---
+
+He does not spend the sats his music earns.
+
+"One day it's going to be enough to do another album."
+
+@thehigherlow on Episode 17.
+
+https://youtu.be/e1rInzZNtkk
 
 
 --- Nostr ---
 
-New episode of Share Your Bitcoin Journey just dropped.
+Share Your Bitcoin Journey, Episode 17, is on YouTube.
 
-The Higher Low, Rami Korhonen, Finnish punk singer turned Bitcoin troubadour, on writing short punchy songs about freedom that never say the word Bitcoin, touring eleven countries with one guitar, writing Freedom Engine in El Zonte, and cutting the full-band Freedom In the Digital Age with his Fumble friends.
+The Higher Low, Rami Korhonen. Finnish punk singer. Songs about freedom that never say the word Bitcoin. One voice, one guitar, twelve songs in four hours, Freedom Engine written in El Zonte, and every sat saved for the next album.
 
-One voice and one guitar. Campfire first, rabbit hole second.
-
-Watch: [LINK]
+Watch: https://youtu.be/e1rInzZNtkk
 
 #Bitcoin #Nostr #BitcoinForTheArts #BFTA #Music #ValueForValue #V4V #SoundMoney #PlebRock
 
 
+--- Instagram ---
+
+Episode 17 of Share Your Bitcoin Journey is up.
+
+The Higher Low. @the_higher_low. Songs about Bitcoin that never say Bitcoin. One guitar, a punk band that started after the Ramones in Helsinki, and a rule that the song has to work before anyone knows what a sat is.
+
+Link in bio, or search Share Your Bitcoin Journey Episode 17.
+
+https://youtu.be/e1rInzZNtkk
+
+
 --- Substack ---
 
-Subject: He Writes Songs About Bitcoin and Never Says the Word
+Substack Note, with the opening clip attached (0:00 to about 1:28). Not the article.
 
-New episode of Share Your Bitcoin Journey is live. This one travels.
+Opening of Share Your Bitcoin Journey, Episode 17. The Higher Low.
 
-The Higher Low is Rami Korhonen from Finland. Punk singer since the nineties. In 2021 he started Acoustic Pleb Rock in the cracks of business trips, recorded over Christmas, and put out LFG. Then Node To Freedom. Then the road: Amsterdam, Charlotte, Riga, Thailand, eleven countries.
+"Even if there's two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
 
-Now the full-band Freedom In the Digital Age, launched at BTChel Helsinki, vinyl funded on Geyser.
-
-Watch: [LINK]
-
-Read more at bitcoinforthearts.org/stories (coming soon)
+Full episode: https://youtu.be/e1rInzZNtkk
