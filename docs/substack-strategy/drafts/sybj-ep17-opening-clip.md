@@ -1,12 +1,22 @@
-# Two People and a Dog
+# Episode 17 opening clip
 
-*The opening of Share Your Bitcoin Journey, Episode 17. Songs that arrive in three minutes, a coffee shop with a dog in it, and the morning The Bitcoin Standard ended the search.*
+**Post this as a Substack Note, with the clip attached.** The cold open runs from 0:00 to just before the welcome, about ninety seconds: https://youtu.be/e1rInzZNtkk
 
-**Bitcoin for the Arts · Substack · post with the opening clip**
-
-Upload the cold open under the title, before the body. It runs from 0:00 to just before the welcome, about ninety seconds: https://youtu.be/e1rInzZNtkk
+The longer writeup below is an article. Do not post it with this clip.
 
 ---
+
+## NOTE
+
+Opening of Share Your Bitcoin Journey, Episode 17. The Higher Low.
+
+"Even if there's two people and a dog at a coffee shop, we still play like it's a thousand people at a rock festival."
+
+Full episode: https://youtu.be/e1rInzZNtkk
+
+---
+
+## ARTICLE (later)
 
 ## TITLE
 
