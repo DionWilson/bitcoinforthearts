@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import ClassSignupSection from '@/components/ClassSignupSection';
 
 // BFTA 2026 brand assets — all live in public/brand-kit/, see
 // public/brand-kit/README.md for the full directory.
@@ -218,6 +219,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ClassSignupSection source="Homepage" />
 
       <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-6xl px-6 py-14">
