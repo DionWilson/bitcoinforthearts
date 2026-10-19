@@ -38,11 +38,11 @@ TAGS *
 Bitcoin, Fzero, Ninefold, BLEEP, Bitcoin art, GENESIS 113, Timechain Art Magazine, Modeotec, Nostr, Take My Sats, value for value, V4V, proof of work, Ivy Lumi, Share Your Bitcoin Journey, Bitcoin For The Arts
 
 ADDITIONAL METADATA
-Field name: guest          Value: Fzero
-Field name: host           Value: Dion Wilson
-Field name: exclusive      Value: Fanfares this week, full video on YouTube next week
-Field name: website        Value: https://9fold.co
-Field name: series         Value: https://9fold.co/worlds/bleep
+Add these four. The publish preview does not show them. They stay on the listing as guest, host, and links. Do not add an "exclusive" field. The description already says this week is paid and next week is on YouTube, and a tag would still say exclusive after that.
+Field name: guest       Value: Fzero
+Field name: host        Value: Dion Wilson
+Field name: website     Value: https://9fold.co
+Field name: series      Value: https://9fold.co/worlds/bleep
 
 RSS FEED (optional)
 Leave blank for the exclusive week. Add the show feed next week with the YouTube release:
