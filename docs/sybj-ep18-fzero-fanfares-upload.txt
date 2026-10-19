@@ -104,13 +104,19 @@ Leave referrals on.
 ARTWORK
 1400x1400. Same layout as the recent episodes: Fzero, or the $BLEEP alien, centered on BFTA orange, with a bottom bar that reads Share Your Bitcoin Journey / EP 18.
 
-NOSTR POST (this week, while it is paid)
+NOSTR POST (AQSTR campaign, this week)
+Listing: https://fanfares.io/s/rIgKok
+206 characters with the link, under the 220-character campaign limit.
+If the campaign toggle adds the link on its own, delete the URL line so it is not posted twice.
 
 New Share Your Bitcoin Journey, Ep 18: Fzero. The artist creates first. Then you serve the artist.
 
-Node runner, Ninefold, $BLEEP, and GENESIS 113. 21 sats on Fanfares this week. Full video on YouTube next week.
+21 sats this week. 11 to Bitcoin For The Arts, 10 to Fzero.
 
 Value for value.
+https://fanfares.io/s/rIgKok
+
+AQSTR settings, same as Episode 17: like 0, repost 50, quote 100, reply 21, new follow 50. Budget 10,000 sats plus 20 percent fee (12,000 total). NIP-05 required. 7 days.
 
 YOUTUBE
 Hold the YouTube upload until next week. Use this same description there, and swap the last paragraph so it says the episode is free on YouTube after a week on Fanfares.
