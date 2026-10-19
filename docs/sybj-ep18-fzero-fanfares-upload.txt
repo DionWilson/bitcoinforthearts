@@ -1,0 +1,106 @@
+FANFARES UPLOAD (Publish Podcast): Share Your Bitcoin Journey, Episode 18
+Guest: Fzero
+Release plan: Fanfares only this week. Full video on YouTube next week.
+Audio already on the publish screen: SYBJ-EP18-Fzero-Full.MP3 (45:39)
+Written from the recorded WEBVTT, not the pre-show questions.
+Names checked against docs/fzero-ep18-interview-questions.txt and his public pages.
+On the recording he corrected one prep line: GENESIS 113 is his painting, then featured by Timechain Art Magazine. It is not a piece they made together.
+
+PRICE: the publish screen is set to 2 sats. Change it to 21 before you publish, same as Episode 17. At 2 sats the referral pays 1 sat. At 21 sats and 50 percent, a referrer earns about 10 sats.
+
+PREVIEW: do not keep 12:34 to 13:04. That slice is Dion, mid-sentence, on fiat and health.
+Use this instead. One continuous answer from Fzero, inside the 15 to 30 second window.
+  Start: 10:16
+  Length: 28s
+  Plays: 10:16 to 10:44
+  He says time is the currency you cannot count, the stroke killed a big part of his ego, and that is why he pursued Bitcoin.
+Backup, if you want the thesis instead of the biography:
+  Start: 0:00
+  Length: 23s
+  "The artist is creating first, then you are supposed to serve the artist."
+
+EPISODE TITLE *
+Fzero: The Artist Creates First
+
+PODCAST
+Share Your Bitcoin Journey
+
+SEASON
+1
+
+EPISODE
+18
+
+GENRES (comma-separated)
+Arts, Bitcoin, Culture, Interviews, Design
+
+TAGS *
+Bitcoin, Fzero, Ninefold, BLEEP, Bitcoin art, GENESIS 113, Timechain Art Magazine, Modeotec, Nostr, Take My Sats, value for value, V4V, proof of work, Ivy Lumi, Share Your Bitcoin Journey, Bitcoin For The Arts
+
+ADDITIONAL METADATA
+Field name: guest          Value: Fzero
+Field name: host           Value: Dion Wilson
+Field name: exclusive      Value: Fanfares this week, full video on YouTube next week
+Field name: website        Value: https://9fold.co
+Field name: series         Value: https://9fold.co/worlds/bleep
+
+RSS FEED (optional)
+Leave blank for the exclusive week. Add the show feed next week with the YouTube release:
+https://media.rss.com/share-your-bitcoin-journey/feed.xml
+
+DESCRIPTION (paste into Fanfares Description)
+
+Fzero is a designer, illustrator, node runner, and co-founder of Ninefold, the studio he runs with Ivy Lumi. Their line is "stories that make you build." He started by copying manga as a kid. He studied economics, finance, and marketing, then opened stores and ran the floor for big fashion brands. The work looked like a career. It did not feel like one. On December 25, still under 30 and home with his family, he had a stroke. He already knew Bitcoin. He had been stacking sats for years. The scare settled the question. Time is the currency you cannot count, and he wanted to leave something that helps people after he is gone.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson talks with Fzero about the moment Bitcoin stopped being an idea and became a node in the house, about getting banned from X and staying on Nostr, and about pricing work once the payment is peer to peer. His GENESIS 113 pins are 21,000 sats. The shop is Take My Sats. He describes the first drawing that sent people to the Bitcoin white paper, the day a friend wore his alien as a tattoo at Nostriga, and GENESIS 113, the painting that treats Bitcoin as frequency: a tower of light rising out of noise. He made the painting. Timechain Art Magazine is featuring it in Edition One. It hung at The Space in Denver. The pins, made with Modeotec, went to BTC Prague and then to Plebeian Market.
+
+He also tells the story of $BLEEP, the retro sci-fi series about an extraterrestrial trying to understand humanity through Bitcoin. The character is him, with the awkwardness left in. Season 1 is wrapped. Season 2 arrives in 2027. And he is plain about rooms and galleries. The artist creates first. Everyone else is there to serve the artist. The profit comes from serving them well.
+
+This episode is on Fanfares this week. Your 21 sats go straight to Bitcoin For The Arts to fund artists. Next week the full video is free on YouTube.
+
+IN THIS EPISODE:
+Drawing manga as a kid, then leaving it for economics and retail. Opening shops, running the floor, and feeling the art go missing. Tattooing as the way back. A skull, a dollar sign, and a QR code that opens the white paper. Why the details matter, and what gets lost when two people use the same word for different things. A European bank account that would not move the money. Running a node. The stroke on December 25. Time as the currency. COVID, cold storage, and who a stack is actually for. How a fiat job reaches the body, not just the bills. Joining Nostr and X in the same stretch, then losing the X account. Why Nostr stayed. Pricing pins at 21,000 sats. Take My Sats. Low time preference and the Mona Lisa on a donkey. Building in public. Why a middleman slows the work down. The alien tattoo at Nostriga, and the trust of drawing on skin. GENESIS 113: his painting, then Timechain Art Magazine Edition One, The Space in Denver, and a thank you to Asanoha. The Modeotec PCB pins, a run of 42, at BTC Prague and Plebeian Market. Who $BLEEP is for. Why a story teaches proof of work faster than a lecture. Kids' rooms in El Salvador and Las Vegas. Ninefold with Ivy Lumi, announced at Origin Seoul. Eight worlds, including $BLEEP, Life with Bitcoin, Zaza, and Tynka. Stories around the fire. What a gallery owes an artist. "What can I do for Bitcoin?" Season 2 of $BLEEP in 2027. What a $500 to $2,000 micro-grant would unlock.
+
+FIND FZERO:
+Ninefold https://9fold.co
+$BLEEP https://9fold.co/worlds/bleep
+Series on X https://x.com/bleepsignal
+Studio on X https://x.com/go9fold
+Nostr npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+NIP-05 fzero@nostr.lol
+Shop https://www.takemysats.com/fzero
+GENESIS 113 https://genesis113.carrd.co
+Timechain Art Magazine https://timechainartmagazine.com/artist/fzero
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
+https://www.bitcoinforthearts.org
+Grants https://www.bitcoinforthearts.org/grants/apply
+Donate https://www.bitcoinforthearts.org/donate
+X https://x.com/Bitcoinfta
+Nostr https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+PRICE IN SATS
+21
+
+PAYMENT SPLIT
+npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw, 100 percent
+Fzero's npub, if you decide to share the sale with him: npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+Ask him before you change the 100 percent split. Episode 17 stayed with Bitcoin For The Arts.
+
+REFERRALS
+50 percent. Leave referrals on.
+
+ARTWORK
+1400x1400. Same layout as the recent episodes: Fzero, or the $BLEEP alien, centered on BFTA orange, with a bottom bar that reads Share Your Bitcoin Journey / EP 18.
+
+NOSTR POST (this week, while it is paid)
+
+New Share Your Bitcoin Journey, Ep 18: Fzero. The artist creates first. Then you serve the artist.
+
+Node runner, Ninefold, $BLEEP, and GENESIS 113. 21 sats on Fanfares this week. Full video on YouTube next week.
+
+Value for value.
+
+YOUTUBE
+Hold the YouTube upload until next week. Use this same description there, and swap the last paragraph so it says the episode is free on YouTube after a week on Fanfares.
