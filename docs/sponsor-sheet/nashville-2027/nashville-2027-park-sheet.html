@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Bitcoin for the Arts Park Nashville 2027 · Sponsor and Vendor Sheet</title>
+<style>
+  @page { size: Letter; margin: 0; }
+  :root {
+    --black: #000000;
+    --orange: #ff4f14;
+    --neon: #b3ff48;
+    --cream: #fffaf0;
+    --muted: #4a4a4a;
+    --rule: #e3ddd0;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--cream);
+    color: var(--black);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 8.5in;
+    height: 11in;
+    position: relative;
+    overflow: hidden;
+    background: var(--cream);
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .pad { padding: 0.55in 0.6in 0 0.6in; }
+
+  .topbar {
+    background: var(--black);
+    color: var(--cream);
+    padding: 0.28in 0.6in;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topbar img { height: 0.5in; display: block; }
+  .topbar .tag {
+    font-size: 8pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--neon);
+    font-weight: 600;
+  }
+
+  .eyebrow {
+    font-size: 8.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 44pt;
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+  }
+  h1 .accent { color: var(--orange); font-weight: 500; }
+  h2 {
+    margin: 0 0 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 22pt;
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+  }
+  h3 {
+    margin: 0 0 6px;
+    font-size: 11.5pt;
+    font-weight: 700;
+  }
+  p { margin: 0 0 9px; font-size: 10.5pt; line-height: 1.5; }
+  .lede { font-size: 12.5pt; line-height: 1.5; margin-top: 16px; }
+
+  .hero {
+    width: 100%;
+    height: 3.9in;
+    object-fit: cover;
+    display: block;
+    margin-top: 0.3in;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 2px solid var(--black);
+    margin-top: 0.28in;
+  }
+  .facts div {
+    padding: 12px 12px 0 0;
+  }
+  .facts dt {
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .facts dd {
+    margin: 0;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    font-weight: 500;
+  }
+
+  .neonbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--black);
+    color: var(--neon);
+    padding: 0.26in 0.6in;
+    font-size: 10.5pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  .neonbar span.cream { color: var(--cream); font-weight: 400; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0.32in; }
+
+  .block {
+    border-top: 2px solid var(--black);
+    padding-top: 10px;
+    margin-bottom: 0.2in;
+  }
+  .day {
+    display: grid;
+    grid-template-columns: 1.15in 1fr;
+    border-bottom: 1px solid var(--rule);
+    padding: 9px 0;
+  }
+  .day .when {
+    font-size: 8pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    padding-top: 2px;
+  }
+  .day .what { font-size: 10.5pt; line-height: 1.4; }
+  .day .what strong { display: block; font-size: 11pt; }
+
+  ul.clean { margin: 0; padding-left: 16px; }
+  ul.clean li { font-size: 10.5pt; line-height: 1.45; margin: 0 0 5px; }
+
+  .photos {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr 1fr;
+    gap: 8px;
+    margin: 10px 0 8px;
+  }
+  .photos img {
+    width: 100%;
+    height: 1.75in;
+    object-fit: cover;
+    display: block;
+  }
+  .caption {
+    font-size: 8pt;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--orange);
+    padding: 13px 15px 10px;
+    break-inside: avoid;
+  }
+  .card .num {
+    font-size: 8pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .card p { font-size: 10pt; margin-bottom: 6px; }
+  .card .fine { font-size: 8.5pt; color: var(--muted); margin: 0; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .card.wide { grid-column: span 2; border-top-color: var(--black); }
+
+  .callout {
+    background: var(--black);
+    color: var(--cream);
+    padding: 16px 20px;
+    margin-top: 14px;
+  }
+  .callout .eyebrow { color: var(--neon); }
+  .callout p { color: var(--cream); margin: 0; }
+
+  .steps { counter-reset: s; margin: 0; padding: 0; list-style: none; }
+  .steps li {
+    counter-increment: s;
+    position: relative;
+    padding: 0 0 9px 34px;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+  .steps li::before {
+    content: counter(s, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 9pt;
+    font-weight: 700;
+    color: var(--orange);
+    letter-spacing: 0.08em;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 6px;
+  }
+  .contact > div {
+    background: #ffffff;
+    border: 1px solid var(--rule);
+    padding: 12px 14px;
+  }
+  .contact .role {
+    font-size: 7.5pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .contact .name { font-size: 11.5pt; font-weight: 700; }
+  .contact .line { font-size: 9.5pt; color: var(--muted); line-height: 1.45; }
+
+  .footer {
+    position: absolute;
+    left: 0.6in;
+    right: 0.6in;
+    bottom: 0.32in;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 · COVER -->
+<section class="page">
+  <div class="topbar">
+    <img src="../../../public/brand-kit/derived/main-cream-transparent-800.png" alt="Bitcoin for the Arts" />
+    <div class="tag">Sponsor and vendor sheet · Preliminary</div>
+  </div>
+  <div class="pad">
+    <div class="eyebrow">Bitcoin Conference week · Nashville</div>
+    <h1>Bitcoin for the Arts Park <span class="accent">Nashville 2027</span></h1>
+    <p class="lede">Two stages. A market row. A distillery, two kitchens, and a private green room. A day and a half of music, theatre, film, and talks, across the street from the Bitcoin Conference, built to bring Nashville artists and new audiences into sound money.</p>
+  </div>
+  <img class="hero" src="../../../public/bitcoin-arts-park-side1-full.jpg" alt="Bitcoin Arts Park at the Midwest Bitcoin Summit" />
+  <div class="pad" style="padding-top:0;">
+    <dl class="facts">
+      <div><dt>Dates</dt><dd>July 14 to 15, 2027</dd></div>
+      <div><dt>Venue</dt><dd>6th and Peabody<br/>OSD Distilling · YeeHaw Brewing</dd></div>
+      <div><dt>Location</dt><dd>Directly across from Music City Center</dd></div>
+      <div><dt>Space</dt><dd>30,000 sq ft campus<br/>Indoor and outdoor stages</dd></div>
+    </dl>
+  </div>
+  <div class="neonbar">
+    <span>Interest list now open</span>
+    <span class="cream">Presented by Bitcoin For The Arts, Inc. · 501(c)(3)</span>
+  </div>
+</section>
+
+<!-- PAGE 2 · THE EVENT -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">The event</div>
+    <h2>A day and a half before the doors open</h2>
+    <p>Bitcoin for the Arts Park bridges the Bitcoin Golf Championship on July 14 and the opening of general admission at the Bitcoin Conference on July 16. The venue partner, 6th and Peabody, is donating the use of the space. A professional stage and an in-house production team let us present artists at a level Nashville will notice.</p>
+
+    <div class="two-col" style="margin-top:14px;">
+      <div>
+        <div class="block">
+          <h3>Run of show</h3>
+          <div class="day">
+            <div class="when">Tue · July 14</div>
+            <div class="what"><strong>Late afternoon to 11 PM</strong>After the golf tournament. Opening night on both stages.</div>
+          </div>
+          <div class="day">
+            <div class="when">Wed · July 15</div>
+            <div class="what"><strong>11 AM to 11 PM</strong>Industry day. Full program, market row open all day.</div>
+          </div>
+          <div class="day">
+            <div class="when">Thu · July 16</div>
+            <div class="what"><strong>Conference opens</strong>General admission at Music City Center, across the street.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="block">
+          <h3>On the campus</h3>
+          <ul class="clean">
+            <li><strong>Two stages</strong>, one inside and one outside: music, theatre, film, presentations, spoken word.</li>
+            <li><strong>Market row</strong> of an estimated 20 to 30 10x10 tents for Bitcoin, Nostr, and arts organizations.</li>
+            <li><strong>Two food options and a distillery</strong> for dinners, tastings, and signature drinks.</li>
+            <li><strong>A separate outbuilding</strong> with its own private bar, for a VIP green room.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" style="margin-top:4px;">
+      <h3>Who is in the room</h3>
+      <p>Nashville musicians and the local music industry. People who are new to Bitcoin. The Bitcoin and Nostr community arriving for conference week. The program is built for newcomers first, with the Bitcoin community showing that it works.</p>
+    </div>
+
+    <div class="block">
+      <h3>We have done this before</h3>
+      <p>In September 2026 we opened Bitcoin Arts Park at the Midwest Bitcoin Summit in Columbus. Nashville’s Ainsley Costello played a full set with her band. Rock ’n’ Roll Andy Breakheart played the Expo Stage. Short North Stage brought <em>Sweeney Todd</em> with youth performers. Shipwreck Sean painted live over two days. Filmmakers pitched, a cinema slate ran both days, and a silent auction and live-painting raffle raised money for artists.</p>
+      <div class="photos">
+        <img src="../../../public/ainsley-band-mbs.jpg" alt="Ainsley Costello and band at Bitcoin Arts Park" />
+        <img src="../../../public/sean-live-painting-mbs.jpg" alt="Shipwreck Sean painting live" />
+        <img src="../../../public/short-north-mbs.jpg" alt="Short North Stage at Bitcoin Arts Park" />
+      </div>
+      <div class="caption">Bitcoin Arts Park, Midwest Bitcoin Summit, Columbus, September 23 to 24, 2026.</div>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin for the Arts Park · Nashville 2027</span><span>Preliminary · October 2026</span></div>
+</section>
+
+<!-- PAGE 3 · WAYS IN -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Ways to take part</div>
+    <h2>Bring your project to Nashville</h2>
+    <p>Spaces are not mapped yet and pricing is not set. This sheet is an interest check. Tell us what you want to do and we will come back with a site map, pricing, and terms once they are confirmed with the venue. Vendor space will cost a fraction of conference exhibitor rates, and every dollar goes to Bitcoin For The Arts to pay the artists who come to Nashville.</p>
+
+    <div class="cards" style="margin-top:14px;">
+      <div class="card">
+        <div class="num">01 · Vendors</div>
+        <h3>Market row tent</h3>
+        <p>A 10x10 space in the market row to sell, demo, and meet people on the two days before the conference opens.</p>
+        <p class="fine">An estimated 20 to 30 tents. Placement, power, and internet confirmed with the site map.</p>
+      </div>
+      <div class="card">
+        <div class="num">02 · Experiences</div>
+        <h3>Host a tasting or a dinner</h3>
+        <p>Work with OSD Distilling and the on-site kitchens on a hosted dinner, a tasting flight, a signature drink, or a signature bottle. Ticketed or invite-only.</p>
+        <p class="fine">All food and bar service is run by the venue.</p>
+      </div>
+      <div class="card">
+        <div class="num">03 · VIP</div>
+        <h3>Host the green room</h3>
+        <p>A separate outbuilding with its own private bar. Host the room where artists, sponsors, and guests meet, under your name.</p>
+        <p class="fine">One host. Format agreed with the venue and production team.</p>
+      </div>
+      <div class="card">
+        <div class="num">04 · Stage</div>
+        <h3>Sponsor a stage or an artist</h3>
+        <p>Sponsor a stage block or a headline act. Or cover one artist’s pay and travel to Nashville. The credit reads: [Artist] presented by [your company].</p>
+        <p class="fine">Every artist on the bill is paid.</p>
+      </div>
+      <div class="card wide">
+        <div class="num" style="color:var(--black);">05 · In kind</div>
+        <h3>Gear, lodging, travel, print, media, crew</h3>
+        <p>Support that is not cash still moves artists into the room. In-kind gifts are logged and credited the same way as cash support.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="eyebrow">Recognition</div>
+      <p>Sponsors and vendors are credited on the Park map and event page, thanked from the stage, and listed in the BFTA newsletter and our public transparency report. Final recognition is set in each agreement.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin for the Arts Park · Nashville 2027</span><span>Preliminary · October 2026</span></div>
+</section>
+
+<!-- PAGE 4 · WHY AND HOW -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Why it matters</div>
+    <h2>Artists get paid. In sound money.</h2>
+    <p>Bitcoin For The Arts, Inc. is a New York 501(c)(3) nonprofit and the first nonprofit paying artists exclusively in Bitcoin, through micro-grants, education, and live programming. We follow a published rule for every dollar: 55 percent to artist grants, 30 percent to programs, 10 percent to operations, 5 percent to a long-term Bitcoin reserve.</p>
+    <p>Money raised at the Park pays the artists who perform. We do not ask artists to play for free, and we do not pay some and not others.</p>
+
+    <div class="two-col" style="margin-top:16px;">
+      <div class="block">
+        <h3>What happens next</h3>
+        <ol class="steps">
+          <li>You reply with your interest. No commitment.</li>
+          <li>We share the site map and pricing once they are set with the venue.</li>
+          <li>We agree on placement, recognition, and terms in writing.</li>
+          <li>The lineup is announced once it is confirmed.</li>
+        </ol>
+      </div>
+      <div class="block">
+        <h3>Reply with</h3>
+        <ul class="clean">
+          <li>Company or project, and a contact</li>
+          <li>Which way in: tent, experience, green room, stage or artist, in kind</li>
+          <li>July 14, July 15, or both</li>
+          <li>What you would sell, show, or host</li>
+          <li>Power, internet, or other needs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="block">
+      <h3>Who runs it</h3>
+      <p><strong>Presented by</strong> Bitcoin For The Arts, Inc. All sponsor and vendor agreements are made with Bitcoin For The Arts, Inc.<br/>
+      <strong>Production lead</strong> Phantom Power Music, volunteer production partner, with Epoch.<br/>
+      <strong>Venue partner</strong> 6th and Peabody, home of OSD Distilling Company and YeeHaw Brewing.</p>
+    </div>
+
+    <div class="contact">
+      <div>
+        <div class="role">Sponsors and vendors</div>
+        <div class="name">Dion Wilson</div>
+        <div class="line">Founder and Executive Director, Bitcoin For The Arts, Inc.<br/>dionwilson@bitcoinforthearts.org</div>
+      </div>
+      <div>
+        <div class="role">Production and venue</div>
+        <div class="name">Julie Costello</div>
+        <div class="line">Production Lead, Phantom Power Music<br/>julie@phantompowermusic.io</div>
+      </div>
+    </div>
+
+    <p style="margin-top:14px; font-size:9pt; color:var(--muted);">Bitcoin For The Arts, Inc. · 501(c)(3) · EIN 41-2642260 · bitcoinforthearts.org · Pay in bitcoin, Lightning, or card.</p>
+  </div>
+  <div class="neonbar">
+    <span>Nashville · July 14 to 15, 2027</span>
+    <span class="cream">bitcoinforthearts.org</span>
+  </div>
+</section>
+
+</body>
+</html>
