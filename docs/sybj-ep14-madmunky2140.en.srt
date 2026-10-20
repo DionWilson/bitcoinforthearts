@@ -1,0 +1,2235 @@
+1
+00:00:00,000 --> 00:00:12,000
+Welcome to Share Your Bitcoin Journey,
+presented by Bitcoin For The Arts.
+
+2
+00:00:12,000 --> 00:00:24,000
+I'm Dion Wilson, the founder and executive
+director of Bitcoin For the Arts, a 501[c]3 nonprofit supporting artists with Bitcoin grants, education, and sovereign funding tools.
+
+3
+00:00:24,000 --> 00:00:36,000
+Today, we have the pleasure of speaking
+with Mad Monkey, woodworker, creator, privacy advocate, and one of the founding voices of the 2140 movement.
+
+4
+00:00:36,000 --> 00:00:48,000
+He builds physical Bitcoin art out of oak,
+epoxy, and hard wax oil, sells it on a Bitcoin standard, and carries cyberpunk values into art, music, and culture through the 2140 collective.
+
+5
+00:00:48,000 --> 00:01:00,000
+His work includes Manifesto, 2140 pieces
+like Nakamoto cy- Cipher Board, Bitcoin
+
+6
+00:01:00,000 --> 00:01:12,000
+coffee tables, and limited editions like
+Mini Nakamoto.
+
+7
+00:01:12,000 --> 00:01:24,000
+Beyond the objects, he builds the
+platforms and educational space for people to practice free market and sell money culture in real life on Nostra, on Wave Lake, and through 2140.
+
+8
+00:01:24,000 --> 00:01:36,000
+In this conversation, he shares his
+journey from maker to Bitcoiner, why wood and resin are the right materials for a money that cannot be printed, what privacy has to do with artistic freedom, and what it looks like to sell culture peer-to-peer on a Bitcoin standard.
+
+9
+00:01:36,000 --> 00:01:48,000
+His story is craft-heavy,
+conviction-heavy, and built for anyone who believes the cypherpunk ethos belongs in the gallery as much as it belongs in the protocol.
+
+10
+00:01:48,000 --> 00:02:00,000
+Without further ado, welcome to the show,
+Mad Monkey.
+
+11
+00:02:00,000 --> 00:02:12,000
+Pleasure on my side, brother. Pleasure on
+my side. Happy to be here, and yeah, all is what you said is true. Everything is verifiable, like, you know.
+
+12
+00:02:12,000 --> 00:02:24,000
+Mad Monkey- And therefore, yeah. Welcome
+to Share Your Bitcoin Journey. So- Lovely one ... before 2140, before the manifesto pieces, before people knew the name, there was a maker.
+
+13
+00:02:24,000 --> 00:02:36,000
+Where does that story actually begin for
+you? Uh, oh, it's like, uh, sometimes I'm thinking about this where all this, uh, actually happened.
+
+14
+00:02:36,000 --> 00:02:48,000
+But I think, uh, the main thing when I
+just, uh, realize... I think the, my beginning of journey was the moment when COVID came because COVID, it was very specific time.
+
+15
+00:02:48,000 --> 00:03:00,000
+And as like a father and as like a man, I
+just realized that I have to do something, yeah, for, for my kids, for my people because I realized that, uh, we are in
+
+16
+00:03:00,000 --> 00:03:10,000
+a big trouble, yeah? We are in a big
+trouble. And I think, uh, my journey starts exactly when... I remember that day.
+
+17
+00:03:10,000 --> 00:03:20,000
+That was, I think, 12 of April '21, when
+was the moment when my mindset, mindsets start changing. I, I haven't got time for the things about the noise.
+
+18
+00:03:20,000 --> 00:03:30,000
+You know, I was busy man working a lot. So
+people haven't got time, and I was there, like, you know.
+
+19
+00:03:30,000 --> 00:03:40,000
+And Fiat system didn't allows me, it
+didn't gave me the time to, like, question stuff and generally, like, making me busy all the time.
+
+20
+00:03:40,000 --> 00:03:50,000
+So you haven't got time for overthinking
+stuff, yeah?
+
+21
+00:03:50,000 --> 00:04:00,000
+So the moment for me was, I think, 12th
+April because that was, I remember, Friday, and that was the day when the Google and, Google and Apple Uh, together they said that they wanna working on the tracking application, yeah, for the COVID people and stuff.
+
+22
+00:04:00,000 --> 00:04:10,000
+And then I realized that these own us.
+Like, these guys know everything. Those guys that they fighting e- between each other on the market, they cooperating now.
+
+23
+00:04:10,000 --> 00:04:20,000
+So centralized power of the knowledge and
+data when data...
+
+24
+00:04:20,000 --> 00:04:30,000
+in the time when data is digital and data
+is owned by big, big, big corporations, um, gave me the question: what, uh, what is going on here?
+
+25
+00:04:30,000 --> 00:04:40,000
+Like, what, where I am this, in this
+place? What I'm voluntarily giving him, th- them with my consent and, uh, how powerful they are where I am in this position.
+
+26
+00:04:40,000 --> 00:04:50,000
+So I think this moment from the pers-
+perspective of privacy, uh, was my moment when I start, uh, I start realizing that something I have to do, so I have to start re-educate myself.
+
+27
+00:04:50,000 --> 00:05:00,000
+And this privacy aspect was, I think,
+first because Bitcoin came later on, uh, in the case, uh, that I
+
+28
+00:05:00,000 --> 00:05:10,000
+realized that is a powerful tool, uh, for
+us that, uh, we can start fighting back for the stuff that we don't wanna give them, like, you know? And, and I was right.
+
+29
+00:05:10,000 --> 00:05:20,000
+Like, you know, I was right in this
+because the way I see, for example, my five last years, what kind of progresses like a man I did was like a progresses like a friend and general person for myself to finding myself.
+
+30
+00:05:20,000 --> 00:05:30,000
+Uh, and I feel blessed, brother. You know?
+
+31
+00:05:30,000 --> 00:05:40,000
+I feel blessed, uh, to find out the truth,
+which, uh, Bitcoin and this mindset allows me, you know, to realize what's going on around the world and how we can fix, yeah.
+
+32
+00:05:40,000 --> 00:05:50,000
+Starting from ourself and then fix the
+rest, like, you know? Wood making is a, requires a lot of patience and- Yeah uh, grain, time, finish pieces that outlast the buyer.
+
+33
+00:05:50,000 --> 00:06:00,000
+What pulled
+
+34
+00:06:00,000 --> 00:06:10,000
+you into wood specifically, and what does
+it mean to work with your hands as an artist?
+
+35
+00:06:10,000 --> 00:06:20,000
+Uh, I think the most important thing that
+if we as like a artist push ourself, giving our proof of work, yeah, like proper, proper work, you as like a man.
+
+36
+00:06:20,000 --> 00:06:30,000
+This is also proof of human, you know,
+that this is not creation of something by AI or different robots or something. We are just humans. Everyone is different.
+
+37
+00:06:30,000 --> 00:06:40,000
+Everyone can create anything that he want.
+It's up to where he is with everything.
+
+38
+00:06:40,000 --> 00:06:50,000
+And, uh, putting my work, which creating
+the stuff, giving me opportunity to give my stamp time, like, you know, s- stamp in the way that I create something in a particular time.
+
+39
+00:06:50,000 --> 00:07:00,000
+I can leave for others. I can provoke
+others for the critical thinking. I can send my
+
+40
+00:07:00,000 --> 00:07:10,000
+own personal signal, and which I actually
+start using in the wood because my Bitcoin art starts, uh, a little bit, uh, later. Because I'm the woodworker I... That's my passion.
+
+41
+00:07:10,000 --> 00:07:20,000
+I just, I actually learn everything here
+watching YouTube videos, all the craft and testing to the limit.
+
+42
+00:07:20,000 --> 00:07:30,000
+Like, you know, when you learn something
+you have to test it, so you have to make a mistakes, and I was good in the mistakes because mistakes, uh, create the moment that I...
+
+43
+00:07:30,000 --> 00:07:40,000
+My craft is very, I'm very specific, like,
+you know, I'm try to, I using my balls to create the something To give the signal, yeah?
+
+44
+00:07:40,000 --> 00:07:50,000
+And the wood, uh, was because I start to
+doing the coffee tables during the, during the COVID period.
+
+45
+00:07:50,000 --> 00:08:00,000
+Because as like a chef, I lost the job
+because I didn't wear the mask properly, so, uh, Fiat system avoid me. I, I just, like, I was doing my
+
+46
+00:08:00,000 --> 00:08:09,000
+stuff, yeah, and they just smash me up, so
+I start doing my stuff, uh, to learn the craft about the woodworking.
+
+47
+00:08:09,000 --> 00:08:17,000
+Coffee tables was the way, and then I
+realized that I can use the art and music, because I'm deejaying too.
+
+48
+00:08:17,000 --> 00:08:26,000
+I can use art and music to send the
+signal, and my signal is very simple. We have to wake up, you know? Because COVID period show me up that, um, people still sleeping.
+
+49
+00:08:26,000 --> 00:08:34,000
+People don't use the critical thinking.
+People doing the mass decisions, which I not agree with, and I don't wanna be in the position that somebody will be making my decisions.
+
+50
+00:08:34,000 --> 00:08:43,000
+So I using wood to send my signal, and I
+touching the topics. I use the kind of, uh, stencil technique, uh, flyer technique, uh, and I putting stencils on wood.
+
+51
+00:08:43,000 --> 00:08:51,000
+So I keep it in the time. Wood can survive
+many, many years, for the long period, so my signal will be there.
+
+52
+00:08:51,000 --> 00:09:00,000
+So anything what I printed on the wood as
+like a stencil, I can send the signal using,
+
+53
+00:09:00,000 --> 00:09:10,000
+um, using pictures, building the story,
+and I try to say the story. That's why it's Manifesto 2140 about. I will say later probably.
+
+54
+00:09:10,000 --> 00:09:20,000
+And yeah, uh, wood and techniques which I
+know and my skill set allows me to send my signal, and my signal is to wake up the people For listeners meeting you for the first time, what is the work today?
+
+55
+00:09:20,000 --> 00:09:30,000
+Sculpture, functional objects, music,
+education? How would you describe what you're actually doing now?
+
+56
+00:09:30,000 --> 00:09:40,000
+Well, this is a easy, easy question and
+hard question because I doing a lot of, lot of stuff now at the moment.
+
+57
+00:09:40,000 --> 00:09:50,000
+Uh, to be honest, sometimes I don't know
+where to start because last three months are absolutely crazy and absolutely blessed time in my life. Uh, because I move out from London.
+
+58
+00:09:50,000 --> 00:10:00,000
+I'm living now in Prague, and, uh, I get
+a, I, uh, I was invited to the project to help the guy build
+
+59
+00:10:00,000 --> 00:10:10,000
+his dream.
+
+60
+00:10:10,000 --> 00:10:20,000
+On the same time, I realized that with my
+team we can build another stuff, uh, which is absolutely beautifully connected with everything what me and my team, we are doing.
+
+61
+00:10:20,000 --> 00:10:30,000
+Myself, uh, myself, uh, with the
+woodworking, uh, I finish my piece Manifesto No. 6, but I didn't make a content around it. Uh, it's a dollar collapse piece.
+
+62
+00:10:30,000 --> 00:10:40,000
+This is the newest manifesto, which I was
+doing on the beginning of the year Uh, when I'm, uh, using wood which I cut myself, uh, in my home eight years ago with my father, and on this piece I sit on it, and on this piece I create a sculpture kind of, and a dollar sign, which is telling the story how the dollar is collapsing and destroying the world.
+
+63
+00:10:40,000 --> 00:10:50,000
+And now, uh, at the moment I'm not because
+I haven't got my workshop with me kind of, and I'm kind of in the new place.
+
+64
+00:10:50,000 --> 00:11:00,000
+I'm building, uh, the community in Prague
+based on Monero and Bitcoin and
+
+65
+00:11:00,000 --> 00:11:08,000
+Nostr. So we put... We wanna create the
+educational platforms.
+
+66
+00:11:08,000 --> 00:11:15,000
+We wanna help cyberpunks to find the
+solutions, and everything is, uh, connecting, uh, exactly just now, like, you know?
+
+67
+00:11:15,000 --> 00:11:22,000
+And I tell you, like, about what I'm doing
+now, I can sit down with you now for the next week, and we will not end it up, because there is a lot of, a lot of projects.
+
+68
+00:11:22,000 --> 00:11:30,000
+And now, for example, I also concentrating
+on cheffing, on cooking and testing grounds, because I've got a few ideas about this as, like, a professional chef.
+
+69
+00:11:30,000 --> 00:11:38,000
+So woodworking now, I just stop it just
+because the workshop is not with me. I'm looking for my place to create the space.
+
+70
+00:11:38,000 --> 00:11:45,000
+But I think my work now at the moment is
+bas- basically building the community.
+
+71
+00:11:45,000 --> 00:11:52,000
+Building community, connecting people,
+building the citadel based on proper standard, Bitcoin standard, Monero standard, and, uh, and Nostr.
+
+72
+00:11:52,000 --> 00:12:00,000
+Uh, those very three important things, uh,
+in
+
+73
+00:12:00,000 --> 00:12:10,000
+my opinion, and tools, that, that finally
+we find out them, and we are ready, yeah, to take over. We are ready to build, uh, spaces for our people, you know?
+
+74
+00:12:10,000 --> 00:12:20,000
+Because people need spaces, yeah. Yeah.
+Artists, musicians, you name it. Everyone will need the help, you know? Because fiat system governments will not help you.
+
+75
+00:12:20,000 --> 00:12:30,000
+You know, they will not help us, you know?
+So my work at the moment is creation of the spaces, yeah, and feeding the people Mad Monkey, I- ...
+
+76
+00:12:30,000 --> 00:12:40,000
+feel your Bitcoin ethos 100% to the 10th
+power. Yeah, man. This is exactly why we are having this conversation today. Yeah, man.
+
+77
+00:12:40,000 --> 00:12:50,000
+This is exactly why I am building Bitcoin
+for the Arts, because we have this understanding that Bitcoin is something that we need to build our own community, our own space. Okay.
+
+78
+00:12:50,000 --> 00:13:00,000
+And we
+
+79
+00:13:00,000 --> 00:13:12,000
+need artists such as yourself, who have
+stories to tell, who have messages that can resonate with the community, to allow them to know that there is a sound money system that gives the people back their sovereignty and their freedom and their artistic expression.
+
+80
+00:13:12,000 --> 00:13:24,000
+Yeah. And this is exactly why we are
+doing- Yeah ... what we are doing. We agree, exactly. This is lovely. Yeah, man. Yeah, yeah, yeah.
+
+81
+00:13:24,000 --> 00:13:36,000
+You know, like, I've got many, many
+discussions around when I was traveling with the gypsies, uh, in UK, uh, doing different stuff, and, uh, we've got a lot of conversation with my very, very good friend about the activism, about, uh, stuff.
+
+82
+00:13:36,000 --> 00:13:48,000
+Because, for example, my friend was not
+into Bitcoin, and for him was completely new stuff, but he's, like, stuck in the fiat system and this.
+
+83
+00:13:48,000 --> 00:14:00,000
+Like, and when he's busy, he don't
+understand everything. Because it's like, you know, Bitcoin journey is like, it's not... It's a process, yeah?
+
+84
+00:14:00,000 --> 00:14:10,000
+Same like privacy. Everything is a
+process. Like, I'm not the smartest guy in the world. I'm just learning every day something new about this. And, and this is journey, brother.
+
+85
+00:14:10,000 --> 00:14:20,000
+It's like I d- I found, uh, many, many
+solutions. I know that we can build many, many solutions.
+
+86
+00:14:20,000 --> 00:14:30,000
+I haven't got answers for everything, but
+I think, uh, now is the time for the artists, regarding to the Bitcoin for Arts, that now artists are, can play very important role in our society, yeah.
+
+87
+00:14:30,000 --> 00:14:40,000
+Because we, as like a artist, through the
+music, through the art, and through the whatever you do arty, you can n- you can spread the message.
+
+88
+00:14:40,000 --> 00:14:50,000
+And message is important because people
+living in a comfort zone, yeah. This is the biggest cancer of our society, that people live in a comfort zone.
+
+89
+00:14:50,000 --> 00:15:00,000
+Comfort's not allowed you to critical
+think. You thinking about the Netflix subscription. You're thinking about how to send your kids to the school instead of spending the
+
+90
+00:15:00,000 --> 00:15:12,000
+time with them. And because you haven't
+got time for this, you working, like, 24/7 your ass off, and you haven't got time to even think about the arts. Yeah.
+
+91
+00:15:12,000 --> 00:15:24,000
+So artists can use their talents to spread
+the word, to, to give the opportunity that not only beauty is important, but also power.
+
+92
+00:15:24,000 --> 00:15:36,000
+Because- This is, that's, that's my point
+which I find out this year. Through the art and music, nobody can stop me.
+
+93
+00:15:36,000 --> 00:15:48,000
+I can say whatever I want, anywhere I
+want, and to anyone I want, you know? And absolutely nobody can stop. They have to kill me to stop me. Mm. Yeah.
+
+94
+00:15:48,000 --> 00:16:00,000
+Most makers can name the piece where they
+first felt, "This is what I'm doing." What was that piece for you? I think my personal one, um, from my stuff, uh,
+
+95
+00:16:00,000 --> 00:16:10,000
+I think the manifesto number two, uh,
+which was created, uh, after... During Oc- like, not during, just after Du- uh, October 7, uh, the Palestinian piece.
+
+96
+00:16:10,000 --> 00:16:20,000
+And I think that was the most important
+thing because I realized how powerful tools are there, like, you know?
+
+97
+00:16:20,000 --> 00:16:30,000
+And that was my time when, uh, I met the
+people from the Bitcoin for Palestine, uh, and I was supporting their mission because they were feeding the kids using Bitcoin donations in Palestine during the October 7.
+
+98
+00:16:30,000 --> 00:16:40,000
+And, you know, there's... They collect
+just in Bitcoin donations two and a half million dollars in Bitcoin.
+
+99
+00:16:40,000 --> 00:16:50,000
+And we're talking about UK, bro, like
+worldwide stuff, but the thing is like two and a half million dollars in Bitcoin just in donation for the food for the kids.
+
+100
+00:16:50,000 --> 00:17:00,000
+They were feeding the kids in Gaza, bro.
+Same time our government sending the bombs there, you know? So
+
+101
+00:17:00,000 --> 00:17:09,000
+it's showing where we are now with this,
+like, you know? And we can, good people, good people, kind people can help each other, you know? This is what I'm...
+
+102
+00:17:09,000 --> 00:17:17,000
+That's my another thing that I believe
+that mindset and kindness, uh, are us.
+
+103
+00:17:17,000 --> 00:17:26,000
+Our kindness and our mindset, uh, if we
+change it, if spreading the word just like a artist, spreading the art through the artist, we can teach people the thing that kindness and worrying about someone is very important.
+
+104
+00:17:26,000 --> 00:17:34,000
+Because with this mindset, we can stop the
+war. I'm not saying that Bitcoin can solve the war problem, but I believe that people mindset can solve it.
+
+105
+00:17:34,000 --> 00:17:43,000
+And when the people will be thinking about
+the others, so for example, I meet you, "Hey, how are you? How are... Are you hungry?
+
+106
+00:17:43,000 --> 00:17:51,000
+Do you need anything?" We will stop w-
+wars next day, bro. You know? People- How did- ... don't wanna fight people.
+
+107
+00:17:51,000 --> 00:18:00,000
+So that's why, like I say, like
+Palestinian piece was the most important for me because I realized that I can say
+
+108
+00:18:00,000 --> 00:18:12,000
+and talk in the time my concern about the
+future of our generations, you know? How did you first discover Bitcoin? Uh, I met, I just, uh, I met few people on the way.
+
+109
+00:18:12,000 --> 00:18:24,000
+Uh, I think the most important for me,
+like I knew Bitcoin earlier a bit, but I didn't study this, you know? I make the first mistake.
+
+110
+00:18:24,000 --> 00:18:36,000
+I was in the beginning ignoring that
+because I said, "Ah, it's..." Because I'm privacy guy, you know?
+
+111
+00:18:36,000 --> 00:18:48,000
+I, I, I, I feel that, uh, privacy is the
+most important, most important work that we have to do as like educators, as like a artist, to our people about the privacy and how to be, uh, participate in the new digital age, which is taking over at the moment.
+
+112
+00:18:48,000 --> 00:19:00,000
+Yeah. Privacy is very important to not
+feed the,
+
+113
+00:19:00,000 --> 00:19:09,000
+all these corporations that they founding
+the wars and they've got a business in this. Uh, we just have to protect ourselves.
+
+114
+00:19:09,000 --> 00:19:17,000
+So I'm privacy guy, so Bitcoin for me
+wasn't perfect because it was transparent and stuff.
+
+115
+00:19:17,000 --> 00:19:26,000
+But there was the moment, like three years
+ago when I start studying that properly, and it's, um, mind-blow me, like, because I just learn a lot of stuff.
+
+116
+00:19:26,000 --> 00:19:34,000
+Not only about the markets, not only about
+the history, but only also a lot, a lot about myself, you know? Mm.
+
+117
+00:19:34,000 --> 00:19:43,000
+It's changed me personally, like, you
+know, so, uh, I just realized that also helped me out to find my tribe, find my people, you know?
+
+118
+00:19:43,000 --> 00:19:51,000
+I w- I want now be around good people and
+the people that they understand the issues of the world, and they just using the tools and I'm fulfilled, you know?
+
+119
+00:19:51,000 --> 00:20:00,000
+I'm fulfilled as like a man, I'm fulfilled
+as like a friend, I'm fulfilled
+
+120
+00:20:00,000 --> 00:20:12,000
+as like a artist. I'm just executing my
+using my skills to bring the change and practice the change I want to see in the world. Precisely. That's exactly what you're doing.
+
+121
+00:20:12,000 --> 00:20:24,000
+You're not just- Yeah ... you're, I, I- I
+mean, it's clear you're not just holding Bitcoin, you're pricing art in it. You're building a collective around it. Yeah.
+
+122
+00:20:24,000 --> 00:20:36,000
+I- You're living the cyber- cypherpunks y-
+life. You're stacked out loud. So when did Bitcoin stop being a thesis and become that practice that you're talking about?
+
+123
+00:20:36,000 --> 00:20:48,000
+Uh, you know, the practice you can do
+yourself, yeah? Just start study Bitcoin. Once again, just start study Bitcoin. Start bringing the things and start thinking about this.
+
+124
+00:20:48,000 --> 00:21:00,000
+Start seeing what are the issues, because
+then, then you will see many, many issues. If you see the issues, you try to fix them. So you need the answers, and
+
+125
+00:21:00,000 --> 00:21:10,000
+Bitcoin give us a lot of answers. A lot.
+We are very early. Not for everything you will find the answer, but you have to start your process of changing because we are programmed.
+
+126
+00:21:10,000 --> 00:21:20,000
+We're living in the fake system, you know?
+Absolutely fake, you know? Everything is fake around us, you know? The money we working for, our time we spending.
+
+127
+00:21:20,000 --> 00:21:30,000
+We're not concentrating on the proper time
+and the quality w- of time with our families, with our tribe, with our people.
+
+128
+00:21:30,000 --> 00:21:40,000
+And Bitcoin, for example, my journey
+showed me up that being around the people that they got this mindset, we starting proper change, you know?
+
+129
+00:21:40,000 --> 00:21:50,000
+The problems, this fiat mentalistic
+problems are completely treated in a different way. We try to find the solutions and this practice, uh, you know, it's very hard, you know?
+
+130
+00:21:50,000 --> 00:22:00,000
+It's very hard because, uh, we are still
+early. Bitcoin is there, but living on the Bitcoin standard is very, very hard.
+
+131
+00:22:00,000 --> 00:22:09,000
+And it's like, uh, not everyone... You
+know, we are very, very early. So to create this world, we have to build it, yeah? We are, I think we are on the stage.
+
+132
+00:22:09,000 --> 00:22:17,000
+So to deliver the coders, delivering the
+code, uh, community builders, they building infrastructure for us, uh, with the community-wise. Yeah.
+
+133
+00:22:17,000 --> 00:22:26,000
+Developers bringing us technology that we
+can connect in a private way.
+
+134
+00:22:26,000 --> 00:22:34,000
+We can build the stuff on the Nostr free
+as like a permissionless doc- uh, protocols where nobody control you. You own your keys. You take responsibility and you own it, yeah?
+
+135
+00:22:34,000 --> 00:22:43,000
+You, you are there. You are proof of human
+then, you know?
+
+136
+00:22:43,000 --> 00:22:51,000
+So the thing is that, uh, I think for me,
+even not living Bitcoin standard because I still got the fiat mentalistic things to pay, like rent or this or that, so you have...
+
+137
+00:22:51,000 --> 00:23:00,000
+You are always, the system is catching
+your, you know? You can't... They don't wanna feed you up because people like you are dangerous.
+
+138
+00:23:00,000 --> 00:23:10,000
+Because you're proving the point how fake
+the system is, yeah?
+
+139
+00:23:10,000 --> 00:23:20,000
+So I think for me, just being and
+educating people around this, it's not all about the owning the Bitcoin only, you know.
+
+140
+00:23:20,000 --> 00:23:30,000
+Uh, like it's, it's, it's all about to
+bringing this possibility to understand and by practicing and educating people about this. And I'm not talking about the money.
+
+141
+00:23:30,000 --> 00:23:40,000
+I don't give a how much Bitcoin costs. It
+doesn't matter, man. It's million Bitcoins, uh, $1 million Bitcoin, $100,000, 20 thou... Doesn't matter.
+
+142
+00:23:40,000 --> 00:23:50,000
+It's absolutely no matter how much Bitcoin
+costs. What is matter is what you do with this, how you spend your money, how you voting with your wallet.
+
+143
+00:23:50,000 --> 00:24:00,000
+Because instead of stacking the sats, if
+you spend Bitcoin for something that is more worth it than stacking the sats, which number always go up, it means that it is worth it to you to spend it.
+
+144
+00:24:00,000 --> 00:24:10,000
+So this, you practice the change. This is
+how you build, like, content creators like me, for example, like, uh, practicing, participating in the Nostr thing.
+
+145
+00:24:10,000 --> 00:24:20,000
+People donate me the stuff, blah, blah,
+blah. So they supporting me. We can directly support the content creators. So directly we support the infrastructure that they're using.
+
+146
+00:24:20,000 --> 00:24:30,000
+So for example, Nostr. So instead of
+paying subscription on Google or Apple devices that they tracking you up, they checking your...
+
+147
+00:24:30,000 --> 00:24:40,000
+They scanning your photographs, they
+scanning everything. They know everything about you. They just supporting infrastructure that people like me sharing the content.
+
+148
+00:24:40,000 --> 00:24:50,000
+So we building this, yeah. People's
+putting the relays on the Nostr. People, uh, putting the servers, VPSs, uh, private way, coders building private communications.
+
+149
+00:24:50,000 --> 00:25:00,000
+People, uh, developers, uh, building,
+like, private storage, not cloud servers.
+
+150
+00:25:00,000 --> 00:25:12,000
+Like big changes coming, like, you know.
+
+151
+00:25:12,000 --> 00:25:24,000
+There is a lot of beautiful projects on
+Nostr, beautiful projects around the Nostr with the OS like Archipelago, which is very, very soon coming out, that we can be our own bank, we can be our own identity, and we don't need big, big platforms to connect with our people.
+
+152
+00:25:24,000 --> 00:25:36,000
+So we are free, you know?
+
+153
+00:25:36,000 --> 00:25:48,000
+This is how, yeah I really wanna take a
+moment for our listeners and viewers who are not familiar with Nostra, because this is, this is very important to what the message is we're trying to send and in everything you're saying right here, is that there's this decentralized platform that allows you to take control of your privacy and your freedom.
+
+154
+00:25:48,000 --> 00:26:00,000
+And man, like we- No. Okay. Oh, yeah.
+Yeah. Sorry, sorry, sorry. All right. Please. Please. Now it's- I... You, you said, y- you said
+
+155
+00:26:00,000 --> 00:26:09,000
+platform. This is not the platform. Okay.
+You're right. That's, that's the, that's the difference. That's the protocol level. So you- Exactly. Protocol. Good point ...
+
+156
+00:26:09,000 --> 00:26:17,000
+you, when you, when you're coming to the
+protocol, so you've got the keys, private and, uh, secret. Your public one, pu- public one is to share. This is your handle.
+
+157
+00:26:17,000 --> 00:26:26,000
+And secret keys, it's your login. So it's
+the same story like with the same ethos like the Bitcoin. So if you wanna get the access to your wallet, you need a 12 words phrase, yeah?
+
+158
+00:26:26,000 --> 00:26:34,000
+So this is your secret key, yeah? That's
+your private key, kind of. Uh, so same story as in Nostr. You got a private key, you protect this key because this key is login.
+
+159
+00:26:34,000 --> 00:26:43,000
+You don't give to Elon Musk your email.
+You don't give your number, which is doxxed completely.
+
+160
+00:26:43,000 --> 00:26:51,000
+They know your name, they know your
+everything, because by n- your number, they can find your history.
+
+161
+00:26:51,000 --> 00:27:00,000
+And soon, guys, like, we're going to a
+digital age when we will be not talking with the people. The AI will be doing
+
+162
+00:27:00,000 --> 00:27:10,000
+everything. AI will take, like, one minute
+to find you out everything what you are doing, even on the past social media a few years back.
+
+163
+00:27:10,000 --> 00:27:20,000
+If they know your name, know your address,
+they can tag you. They will not allowed you to come to United States. They will start banning you.
+
+164
+00:27:20,000 --> 00:27:30,000
+They will stop, and they will start
+telling you, you can stay in this Tesla because after your eye recognition, showing you that monkey is in your car so you can drive your car, and all this that they using this data, yeah, for.
+
+165
+00:27:30,000 --> 00:27:40,000
+They training everything. So the thing is
+that Nostr allowed you be... It's a permissionless protocol, yeah? So you own your keys, you protect your keys, and nobody can ban you.
+
+166
+00:27:40,000 --> 00:27:50,000
+So if you are loud about the Palestine,
+Elon Musk can't stop you because he don't own your keys. You own your keys.
+
+167
+00:27:50,000 --> 00:28:00,000
+You log into Nostr and you post whatever
+you want, and nobody can stop you. Nobody. Relays can ban you,
+
+168
+00:28:00,000 --> 00:28:10,000
+but you can still spread your message. You
+can use your own relays and spread your message with your people. So technology is there to communicate freely, yeah?
+
+169
+00:28:10,000 --> 00:28:20,000
+And, um, the most important thing is to
+take the responsibility for your own keys, yeah? You can't lose it. You've got, there is no email.
+
+170
+00:28:20,000 --> 00:28:30,000
+There is no provider that you, "Sorry,
+Elon Musk, I lost my email password. Can you give me your new password?" No, no. There is no question. It's permissionless.
+
+171
+00:28:30,000 --> 00:28:40,000
+Anyone can participate. It's connected
+with the Bitcoin standard. People can send the money between the accounts. It's like, uh, it's a, it's...
+
+172
+00:28:40,000 --> 00:28:50,000
+There is a lot of things around the Nostr.
+It's a protocol, so you can build the technology behind this. You can build the sharing platforms.
+
+173
+00:28:50,000 --> 00:29:00,000
+You can build the social layer on that.
+Whatever you name it. Uh, you can build whatever you want, and it's permissionless. Yeah? So that's beauty and power of, uh, the
+
+174
+00:29:00,000 --> 00:29:08,000
+thing. Yeah? But same time, we have to
+take the responsibility for that. Yeah? How we...
+
+175
+00:29:08,000 --> 00:29:15,000
+Like, like anarchy is beautiful, but with
+anarchy also there is coming responsibility for your actions. Yeah? Because people, they are bad actors. They can do stupid things. Yeah?
+
+176
+00:29:15,000 --> 00:29:22,000
+They can spam the network with the
+pornographic stuff, and they are allowed to do this. They can do this.
+
+177
+00:29:22,000 --> 00:29:30,000
+But if we wanna practice the good change,
+we have to build our stuff using exactly the same tools because they are permissionless. Nobody can ban us. Yeah?
+
+178
+00:29:30,000 --> 00:29:38,000
+So that's the, that's the story with the
+Nostr. And there is a lot of layers of that.
+
+179
+00:29:38,000 --> 00:29:45,000
+It's the technology infrastructure, uh,
+content creation structure, uh, uh, social network, communicators. Uh, oh, I can talk about this. Let's... Uh, I mind blow.
+
+180
+00:29:45,000 --> 00:29:52,000
+Do you like to- There's a, there's a Nost-
+There, there's a Nostr rabbit hole just like there's a Bitcoin rabbit hole of decentralized- Oh, absolutely. Yeah ...
+
+181
+00:29:52,000 --> 00:30:00,000
+protocols being built
+
+182
+00:30:00,000 --> 00:30:12,000
+for a freedom technology community. Yeah.
+And, uh, it's evolving and it's growing well. Yeah. You are one of the founding voices of the 2140 movement.
+
+183
+00:30:12,000 --> 00:30:24,000
+Art, music, money and cultural carrying
+the cypherpunk values. Tell us what is 2140. Uh, okay.
+
+184
+00:30:24,000 --> 00:30:36,000
+So General 2140 Movement is the movement
+on few guys which, uh, just like me, uh, they just wanna practice the change they want to see on the proper and honest standard, which is Bitcoin.
+
+185
+00:30:36,000 --> 00:30:48,000
+Uh, and, uh, we just technology geeks. We
+also a lot of different people from the different backgrounds like developers, uh, musicians, artists.
+
+186
+00:30:48,000 --> 00:31:00,000
+They just realize that we have to find our
+way to communicate each other, and we have to change the system which is, uh,
+
+187
+00:31:00,000 --> 00:31:09,000
+uh, working not well, like, you know, for
+us.
+
+188
+00:31:09,000 --> 00:31:17,000
+Because as like a artist, we are
+completely dependent on the fiat system, and 2140 Movement, uh, was creation of the people that, uh, we start...
+
+189
+00:31:17,000 --> 00:31:26,000
+We decide that we d- we have to build a
+community for us, ourselves.
+
+190
+00:31:26,000 --> 00:31:34,000
+Because I also was in the moment when I
+was traveling with my doggy somewhere in the mountains, I realized that, okay, I've got this, this, this, this, but I was missing one very important point.
+
+191
+00:31:34,000 --> 00:31:43,000
+I haven't got like-minded community which,
+which understand what I'm talking about. Because when I was talking with my normie friends, they think that I'm loco, eh?
+
+192
+00:31:43,000 --> 00:31:51,000
+They were thinking that, "Uh, Bitcoin,
+Monero. Monkey, what the are you talking about? Like, it's too much. Uh, Bitcoin is scam.
+
+193
+00:31:51,000 --> 00:32:00,000
+This is scam." It's all about the thing
+that I need... I realize that I have to build my tribe, you know? I have to help build my tribe. So
+
+194
+00:32:00,000 --> 00:32:15,000
+we start, uh, uh, with, uh, Nat and Anon,
+we start, uh, talking about this ethos, and around this ethos, we try to build new kind of new economy, new ways how we participate in associating with our skills and stuff.
+
+195
+00:32:15,000 --> 00:32:30,000
+So Noster, for example, allows me, and
+many, many other artists, I remember it was Bianca, I think the artist from... I think she was, yeah, from Argentina, I think.
+
+196
+00:32:30,000 --> 00:32:45,000
+She wrote it one, uh, regarding to Noster
+thing, she wrote it something like beautiful post like, "I'm on Noster like from last two years, and I sell more arts for few thousand, uh, dollars on the Noster than I did in my entire life- And she sold her art for Bitcoin, which completely increase in the value.
+
+197
+00:32:45,000 --> 00:33:00,000
+Yeah? So it's proving the point that there
+is the space for us. If
+
+198
+00:33:00,000 --> 00:33:12,000
+we can create it and we can use the proper
+tools, like Nostr and Bitcoin, we can find the place, parallel place to the fiat system and banking system which completely try to destroy you, yeah?
+
+199
+00:33:12,000 --> 00:33:24,000
+So 2140 movement, uh, is the movement of
+the people that we wanna creating the education platforms for the people.
+
+200
+00:33:24,000 --> 00:33:36,000
+We organizing the meetups, uh, 2140 art
+and music, uh, working on the, uh, kind of hip hop, uh, graffiti culture, uh, spreading the Bitcoin word.
+
+201
+00:33:36,000 --> 00:33:48,000
+So we connecting artists, we connecting
+developers, we connecting like-minded people to find this place that we can talk and brainstorming together many, many things, and work on the conferences, on satellite events, bringing food, music, everything we wanna change, and practice this in front of the people.
+
+202
+00:33:48,000 --> 00:34:00,000
+So it's
+
+203
+00:34:00,000 --> 00:34:10,000
+just collective of like-minded people that
+they were looking and they are hungry of change, you know?
+
+204
+00:34:10,000 --> 00:34:20,000
+Because they were struggling for many,
+many years, uh, without understanding what we wanna do, you know? And now we've got the tools. Yeah?
+
+205
+00:34:20,000 --> 00:34:30,000
+So community of the cyberpunks, you know?
+Like-minded people. Some of the people are privacy, uh, gangsters, other are, like, musicians, artists worldwide, you know?
+
+206
+00:34:30,000 --> 00:34:40,000
+This community is worldwide at the moment.
+We expanding. Because also what I find out, that it's very, very hard to find people around you, you know?
+
+207
+00:34:40,000 --> 00:34:50,000
+Because there is, uh, such a niche in that
+still, but just because internet is here and internet teach us how to communicate, and, uh, internet teach us how to communicate.
+
+208
+00:34:50,000 --> 00:35:00,000
+But Bitcoin and Nostr and Monero teaching
+us how to communicate freely. Yeah? And this is the sexiest part of it, yeah? Because we are spread around the world, you
+
+209
+00:35:00,000 --> 00:35:12,000
+know? But we can still, like... Where you
+are now, in, uh, New York? You are in New York, no? Mm-hmm. Yeah. Kisses from Prague, bro. How long time it take us to talk?
+
+210
+00:35:12,000 --> 00:35:24,000
+We didn't met each other before, but we
+communicated, yeah? And we know the same people, yeah? We are family, brother. This is the Bitcoin ethos. This is what I love.
+
+211
+00:35:24,000 --> 00:35:36,000
+This is truly- Welcome on the board.
+Welcome on the board. Yeah. Thank you. Exactly. So your manifesto 2140 work, Nakamoto, Strike Bitcoin Club, embedded ideology in oak and epoxy.
+
+212
+00:35:36,000 --> 00:35:48,000
+Mm-hmm. Why does Bitcoin need physical art
+and not just memes and PDFs? Because, uh, I'd like... Wooded epoxy can, can stay, like, for the long, long time.
+
+213
+00:35:48,000 --> 00:36:00,000
+Probably they will be still here on
+someone's walls even if Mad Monkey will gone, you know?
+
+214
+00:36:00,000 --> 00:36:15,000
+Even if we survived in 2140, maybe my, my
+art will be there for sure. If somebody will properly put it on the wall, it will be there.
+
+215
+00:36:15,000 --> 00:36:30,000
+I maybe n- I will not be there, probably
+no, but I want to put the tag on the time that, uh, during the kind of block or something, creation was done and, uh, telling the piece of the small story, like, you know?
+
+216
+00:36:30,000 --> 00:36:45,000
+So Manifesto 2140, just because
+inspiration of my good friend Anon from, uh, 2140 Collective, 2140 WTF.
+
+217
+00:36:45,000 --> 00:37:00,000
+Uh, this is our community which I built
+with, uh, my friend and, uh, now at the moment is a funny day because, uh, our, our page is not only page about the, you know, art and, uh, client, uh, about the artists and art and
+
+218
+00:37:00,000 --> 00:37:09,000
+music, but now we change as like a Nostr
+client. So if you go on the 2140.wtf, you can open your l- or you're opening actually Nostr client.
+
+219
+00:37:09,000 --> 00:37:17,000
+So you can start your adventure in the
+proper and fair system, yeah?
+
+220
+00:37:17,000 --> 00:37:26,000
+Then you can meet Bitcoin, then you can
+meet another people like you or me or another crazy guys that they talking stuff about the truth, and they just talking only true because they wanna change something.
+
+221
+00:37:26,000 --> 00:37:34,000
+They are crazy, you know? So yeah,
+everyone is welcome to test it. Um, we're still early, but yeah.
+
+222
+00:37:34,000 --> 00:37:43,000
+So my piece is 2140 because of the
+inspiration on my talks with Anon about the Bitcoin.
+
+223
+00:37:43,000 --> 00:37:51,000
+Teach me something beautiful that I fall
+in love in the honesty and the transparency of Bitcoin.
+
+224
+00:37:51,000 --> 00:38:00,000
+It's like a privacy, guys, because I
+believe that we need the privacy, but, uh, authority guys, if somebody need them, they should be, they should be transparent, you know?
+
+225
+00:38:00,000 --> 00:38:10,000
+Not me, because, uh, you don't have to
+know what I'm buying using my cash, money, money or whatever.
+
+226
+00:38:10,000 --> 00:38:20,000
+But those guys there, they should be
+accountable, and we can put them on the Bitcoin blockchain.
+
+227
+00:38:20,000 --> 00:38:30,000
+And I tell you something, if we put our
+governments on this kind of standard, yeah, the wars will finish tomorrow because there will be no agreement for the sending the money to buy the weapon, you know?
+
+228
+00:38:30,000 --> 00:38:40,000
+Everything will be transparent. We have to
+check them, you know?
+
+229
+00:38:40,000 --> 00:38:50,000
+So manifestos, uh, are my, my kind of
+personal signal, which are touching, which is starting, uh, issues which I see in the world, like, you know.
+
+230
+00:38:50,000 --> 00:39:00,000
+And I, funny enough, because I create six
+of them, when I create five of them, like year ago, and that was the moment I realized that my artwork talking about exactly same issues which I mixed, uh, the acapellas in one of the,
+
+231
+00:39:00,000 --> 00:39:12,000
+my remixes, which you can find on the You
+can find, um, on it, on the Wave Lake, under Mad Monkey.
+
+232
+00:39:12,000 --> 00:39:24,000
+And this was a remix I record many, many
+years ago, but I just, uh, mix it with the signal, and I mix the voices from the podcasts and which I saying issues.
+
+233
+00:39:24,000 --> 00:39:36,000
+And manifestos to- touching the problem,
+Nakamoto, for example, touching the Kind of cyberpunk ethos and free society, uh, cyberpunk manifesto things that first time in the human, uh, history we've got the tools that we can fight back, yeah?
+
+234
+00:39:36,000 --> 00:39:48,000
+And nobody can stop you. Another thing is
+that second manifesto also was about October 7, and it's showing up as that only good mindset can change the, and stop the war.
+
+235
+00:39:48,000 --> 00:40:00,000
+Manifesto number three was about the
+Julian Assange, but this artwork was sold on the Madeira conference when
+
+236
+00:40:00,000 --> 00:40:10,000
+the touch was about the freedom of speech.
+And Julian Assange, uh, three months later after this art was gone, uh, was freed, you know.
+
+237
+00:40:10,000 --> 00:40:20,000
+Manifesto number four is talking about an-
+that was printed in the Oakwood. Um, the stencil techniques, uh, was talking about the struggling to building the communities, like 2140.
+
+238
+00:40:20,000 --> 00:40:30,000
+How people don't understand how the
+programming, this matrix is eating us, and that we just have to fuck the banks, you know. This is the title of the, of the artwork, you know.
+
+239
+00:40:30,000 --> 00:40:40,000
+"Fuck the Banks". You know, banks, they
+don't own nothing, you know. Money in the banks are not your money, so they, it's pure scam, like, you know. It's a pure scam.
+
+240
+00:40:40,000 --> 00:40:50,000
+So, and this way they controlling us, you
+know. We, we don't want this. So, yeah.
+
+241
+00:40:50,000 --> 00:41:00,000
+And another manifesto was ma- manifesto
+number five, which was not wooden, but I've got for my friend, very good friend, the small printer.
+
+242
+00:41:00,000 --> 00:41:09,000
+It was a Pikachu printer, yeah. The small
+stuff that you can buy for 15 pounds, yeah. 15, one five pound.
+
+243
+00:41:09,000 --> 00:41:17,000
+And the thing is that I print, like, 400
+memes around the anarchistic movement, about the privacy, about Gaza, about the governments, about the Fed, about the everything.
+
+244
+00:41:17,000 --> 00:41:26,000
+And I named this artwork Meme Is Like A
+Weapon. So, because I believe that memes are absolutely beautiful weapon against the main narrative, you know.
+
+245
+00:41:26,000 --> 00:41:34,000
+I'm a fan of the memes, and love the dark
+humor about this.
+
+246
+00:41:34,000 --> 00:41:43,000
+And this is very powerful tool, especially
+in the social media, that you can provoke people for critical thinking, and you can show them different perspective in a funny, funny way.
+
+247
+00:41:43,000 --> 00:41:51,000
+So yeah, my manifesto 2140 is the
+manifesto about the issues of the world, and the way, like, we can change it. So I signaling where I see the issues.
+
+248
+00:41:51,000 --> 00:42:00,000
+And if there will be other bunch of people
+that they will see this, what I will try to say-
+
+249
+00:42:00,000 --> 00:42:09,000
+Maybe they will realize that we are not...
+I, I will... Maybe they will realize that there is not only monkey, there is another guys that they know the same.
+
+250
+00:42:09,000 --> 00:42:17,000
+So we are the, now we build a tribe, yeah?
+So we practice.
+
+251
+00:42:17,000 --> 00:42:26,000
+It's easier to practice this stuff because
+you can be very, very lonely on this journey because not a lot of people understand Bitcoin.
+
+252
+00:42:26,000 --> 00:42:34,000
+If you're talking to them of Bitcoin too
+long, they are like, "Oh, you are boring," or like, "I, I haven't got time for this crap," Yeah. Yes, I'm with you on that.
+
+253
+00:42:34,000 --> 00:42:43,000
+It's very hard to find- I, I, I- ... those
+Bitcoin-aligned friends that you can have a conversation with I, I broke my head on it, bro. I broke my head, you know?
+
+254
+00:42:43,000 --> 00:42:51,000
+But yeah, still doing this because it's
+fun, you know? It's, it's great fun on the way. Sound money and good craft share a principle, scarcity by intention, not by accident.
+
+255
+00:42:51,000 --> 00:43:00,000
+As someone who builds objects meant to
+last, does that parallel land for you?
+
+256
+00:43:00,000 --> 00:43:10,000
+Yeah. Yeah, like, uh, physical art, you
+know? Physical art. We have to leave the trace of our, of our, uh, creativity. That's the proof of... That's the proof, you know?
+
+257
+00:43:10,000 --> 00:43:20,000
+Because the thing is that, for example, I
+give you the i- idea now at the moment about the books, yeah? People don't realizing one important thing now.
+
+258
+00:43:20,000 --> 00:43:30,000
+Because those guys from the big, big
+companies, yeah, like, uh, publishing companies, you know what they doing? I just realized that la- last time. Somebody gave me the point.
+
+259
+00:43:30,000 --> 00:43:40,000
+Those buying books, and they scanning
+every single page, yeah? Because they training the AI with this, yeah? But what is going on?
+
+260
+00:43:40,000 --> 00:43:50,000
+When you, when you put the book under the
+scanning and you scan it, like proper, boom, boom, boom, like industrial scale, they destroying the books, bro. Mm. Do you understand?
+
+261
+00:43:50,000 --> 00:44:00,000
+They destroying, those AI companies, these
+guys that they feeding the AI, they buying
+
+262
+00:44:00,000 --> 00:44:09,000
+massively the books and then destroying
+them. What is coming after this? That means that all the books, they will be digital, yeah?
+
+263
+00:44:09,000 --> 00:44:17,000
+They will give you access to what they
+want, and they will give you access...
+
+264
+00:44:17,000 --> 00:44:26,000
+Not only they give you the access to is
+censored, but also because the stuff is digital now, they can fake it.
+
+265
+00:44:26,000 --> 00:44:34,000
+They will be teaching the history in the
+way that they want, not which is real and true. And this is the scariest part that people don't realize about AI. You know?
+
+266
+00:44:34,000 --> 00:44:43,000
+People are scared, "Oh, AI take my jobs."
+Bro, they destroying your history. They destroying your identity. Kids in, uh, kids in a few days, they...
+
+267
+00:44:43,000 --> 00:44:51,000
+few years, they will not knowing what's
+happened during the 9/11, bro. Hmm. They changing the history. Mm. They can.
+
+268
+00:44:51,000 --> 00:45:00,000
+They allowed themselves to change it,
+because if they destroy the books, they will destroy the source of our knowledge. Yeah?
+
+269
+00:45:00,000 --> 00:45:10,000
+Mm. Imagine that. Think about this, yeah?
+So that's why physical art is very important, and, uh, I love it in the Bitcoin space that a lot of people...
+
+270
+00:45:10,000 --> 00:45:20,000
+There is many, many artists that they
+doing shit, uh, physically, you know? Because this is proof of point that someone was there.
+
+271
+00:45:20,000 --> 00:45:30,000
+Like I said, I'm not really here, but
+maybe someone will find my piece and will say, "Okay, those guys, they saw the issues, yeah?
+
+272
+00:45:30,000 --> 00:45:40,000
+They were the guys that they tried to do
+something. Maybe they failed, maybe not, I don't know. But they tried." So, you know?
+
+273
+00:45:40,000 --> 00:45:50,000
+You make me, you make me think about the
+history of the first civilization of Kemet- Yeah ... Egypt, and, um- Yeah ... they literally put all of the writings on the walls.
+
+274
+00:45:50,000 --> 00:46:00,000
+All of the work is embedded into the
+walls, so- Yeah, man. Yeah ... it can never be destroyed or erased. Yeah, you have to explode, uh, all the mountains to destroy it,
+
+275
+00:46:00,000 --> 00:46:10,000
+you, those places, yeah? But if the stuff
+is digital, how long time it takes them? Bro. Mm.
+
+276
+00:46:10,000 --> 00:46:20,000
+They scan the book, they put the book
+digital, they change the narrative, and they send it, and they executing this as like, uh, this book now will be first thing that kids in United States will be learned, will be teached, you know?
+
+277
+00:46:20,000 --> 00:46:30,000
+So the thing is that, yeah, this is
+powerful, bro. This is propaganda on the high-end level. Orwell is laughing now. Orwell is sitting like, "I told you," you know?
+
+278
+00:46:30,000 --> 00:46:40,000
+This ve- is very dangerous. So art, art is
+very important, you know? That's why artists got absolutely the biggest duty now to do, you know? Now is the time for change.
+
+279
+00:46:40,000 --> 00:46:50,000
+We can send a signal, yeah? Because your
+art will be nothing and the society around you will be , yeah? With the society around you will be poor, will be destroyed.
+
+280
+00:46:50,000 --> 00:47:00,000
+You've got no access to the community,
+you've got no
+
+281
+00:47:00,000 --> 00:47:10,000
+access to the free money. They can, they
+can... They will go after you, yeah? That's why I'm loud about the Palestine, because after Palestine, UK is next, bro.
+
+282
+00:47:10,000 --> 00:47:20,000
+They testing all the surveillance system
+there. They, they bringing, uh, level of technocracy that people still sleeping, yeah?
+
+283
+00:47:20,000 --> 00:47:30,000
+That's why I think the people in our
+movement is very important, yeah?
+
+284
+00:47:30,000 --> 00:47:40,000
+You, you've made cipher boards, Nostra
+chopping boards, a Bitcoin coffee table- Mm-hmm objects that people actually live with. Yeah.
+
+285
+00:47:40,000 --> 00:47:50,000
+What's the idea of putting Bitcoin culture
+into everyday tools and furniture? Look, first of all, uh, agenda, my own agenda. Everyone got his own, so I putting the... I signaling.
+
+286
+00:47:50,000 --> 00:48:00,000
+I'm simply signaling, you know? Uh, cyber
+ports, uh, cyber ports are the boards which spreading the ethos of
+
+287
+00:48:00,000 --> 00:48:10,000
+cyber- uh, cyberpunk manifesto.
+
+288
+00:48:10,000 --> 00:48:20,000
+I think it's the most important manifesto
+nowadays, and this, like, manifesto wrote in three, three, three years ago by Eric Hughes in 1993, and he wrote many important quotes there.
+
+289
+00:48:20,000 --> 00:48:30,000
+And many know, many think he's that...
+That's funny part, you know? Because after three decades, just now, just now, you can imagine that those guys were right.
+
+290
+00:48:30,000 --> 00:48:40,000
+In 1993, they were right about that we
+need privacy because without the privacy, there will be no free society, you know?
+
+291
+00:48:40,000 --> 00:48:50,000
+And he wrote also another thing, that
+cyberpunks write the code, yeah?
+
+292
+00:48:50,000 --> 00:49:00,000
+So it means that people like my tribe and
+people that they coding, people that they putting in practice this, uh, putting in, putting in practice this ethos of cyberpunk,
+
+293
+00:49:00,000 --> 00:49:10,000
+it means that we are not here to protest,
+you know? Who is protesting? Slaves are protesting.
+
+294
+00:49:10,000 --> 00:49:20,000
+We wanna build, so we need the tools,
+permissionless tools that we build without any permission. I don't ask for permission.
+
+295
+00:49:20,000 --> 00:49:30,000
+I just build my shit for my people, for my
+close and for my tribe.
+
+296
+00:49:30,000 --> 00:49:40,000
+So a lot of artists still think that
+visibility requires giving up everything, like their real name, their location, being locked into one of those centralized platforms.
+
+297
+00:49:40,000 --> 00:49:50,000
+What do you tell a creator who is afraid
+of privacy and a pu- and, and having their public art practice that, can it coexist at the same time? Can you have- Mm-hmm ...
+
+298
+00:49:50,000 --> 00:50:00,000
+that privacy and still be able to, be able
+to display your art publicly? Because you've definitely chosen the private
+
+299
+00:50:00,000 --> 00:50:10,000
+side, so- Well, hardcore, hardcore side I,
+I... Relate that message for the artists who can't quite understand that. Okay.
+
+300
+00:50:10,000 --> 00:50:20,000
+So the thing is that, yes, if you're using
+centralized platforms, if you're using, like, Instagram for your art and stuff, I tell you something.
+
+301
+00:50:20,000 --> 00:50:30,000
+Probably if it's working for you, probably
+you can be very famous because you've got, uh, bots, very, a lot of bots, uh, followers. You monetizing somehow your stuff.
+
+302
+00:50:30,000 --> 00:50:40,000
+You are on the Instagram, you know? I give
+you another perspective.
+
+303
+00:50:40,000 --> 00:50:50,000
+For example, for time when I was living in
+London, yeah, when I met someone, there was no question about, "Hey, give me your number," or, "Where I can find you?" The first question was, "What is your A- age- AJ?
+
+304
+00:50:50,000 --> 00:51:00,000
+What is your Instagram account?" There is
+that question about my number, about how I can connect with you, or an email or something. No. "What is your Instagram?" Bro, I'm
+
+305
+00:51:00,000 --> 00:51:09,000
+not on the Instagram, you know? Uh,
+because Instagram is centra- Instagram is centralized, and this, this algorithm, they killing you, bro.
+
+306
+00:51:09,000 --> 00:51:17,000
+Algorithms are controlling your, anything
+you see.
+
+307
+00:51:17,000 --> 00:51:26,000
+Uh, so building for me anything on the
+platforms like, uh, Twitter or, like, uh, Instagram or Facebook is absolutely pointless thing.
+
+308
+00:51:26,000 --> 00:51:34,000
+Because I'm taking the part in, uh,
+sharing my data. They use my data and selling my data.
+
+309
+00:51:34,000 --> 00:51:43,000
+They use my content, and they training
+the, their AI about this, and anytime they can ban me.
+
+310
+00:51:43,000 --> 00:51:51,000
+So- Where is the point to be somewhere
+when I will be loud about something which is not going with the narrative, and they can just ban me like this and I can lose all my contacts, I can lose all my content which I was creating for the years?
+
+311
+00:51:51,000 --> 00:52:00,000
+No, that's, that's for me, that's
+
+312
+00:52:00,000 --> 00:52:10,000
+questionable thing. So what is the
+solution for that? Just don't go there. Just practice change you want to see.
+
+313
+00:52:10,000 --> 00:52:20,000
+That's why I encourage everyone to just
+start learning about the privacy, because soon... Your phone is a tracking device. Your phone is following you. Your phone is listening you.
+
+314
+00:52:20,000 --> 00:52:30,000
+Your phone is recording you when you're
+sleeping, bro. You know? So why you do this? Why you, why you not looking for the solutions? And the solutions are there.
+
+315
+00:52:30,000 --> 00:52:40,000
+So for example, like I know that it's not
+easy. I'm not a native, just because algorithms completely destroy my head.
+
+316
+00:52:40,000 --> 00:52:50,000
+Because I realize that just because
+topics, delicate topics about the banking system or Palestine or war I was touching, I re- I realized that I'm invisible for my friends.
+
+317
+00:52:50,000 --> 00:53:00,000
+My people don't see my content, bro. Even
+if I'm sharing my coffee tables, people don't see that because I'm shadow banned. Even
+
+318
+00:53:00,000 --> 00:53:10,000
+shadow banning algorithms couldn't find my
+account on the Twitter. Hmm. So I said, "I'm living in the illusion, bro. Like, you know. I'm done with this.
+
+319
+00:53:10,000 --> 00:53:20,000
+Th- I, I, like I, I, I've got, I've got
+the one thing. I've got a allergy for bullshit, you know? This is only my one thing.
+
+320
+00:53:20,000 --> 00:53:30,000
+So, um, I encourage everyone to learn
+about their privacy. I, I will say it's not easy, but try to get on that step as like a artist.
+
+321
+00:53:30,000 --> 00:53:40,000
+Try to connect with the Bitcoin, try to
+explore this. Because people that they exploring this now, they are a little bit s- just small step ahead all of the masses. You know?
+
+322
+00:53:40,000 --> 00:53:50,000
+Maybe, maybe, maybe you can sell your art
+for the fiat money or whatever, but now the question is to yourself, what you sacrifice to sell your soul? You know?
+
+323
+00:53:50,000 --> 00:54:00,000
+Okay, so you sell through 2140 WTF in
+
+324
+00:54:00,000 --> 00:54:10,000
+Bitcoin. Mm-hmm. What is it like running a
+peer-to-peer art practice on a Bitcoin standard? You, so you have your wins, but what would you say are the frictions?
+
+325
+00:54:10,000 --> 00:54:20,000
+So, uh, yes, selling the art is, uh, peer
+to peer. I will be honest with you, I'm not selling a lot of my arts.
+
+326
+00:54:20,000 --> 00:54:30,000
+I creating a lot, but a lot of arts I give
+as like a present, you know? I don't know, because like it's the way I'm just sometimes I'm meeting such a grateful people.
+
+327
+00:54:30,000 --> 00:54:40,000
+I really, really feel blessed about the
+people that they around me, and many times some, some of the pieces which are very, are very, very close to me, I giving to the people, like, you know?
+
+328
+00:54:40,000 --> 00:54:50,000
+And yeah. Ju- just like this, yeah.
+
+329
+00:54:50,000 --> 00:55:00,000
+Uh, I've got some pieces for sale and,
+yeah, peer to peer to market, like, you know, is, is, it's only way to work for the moment because I also have to mention, because
+
+330
+00:55:00,000 --> 00:55:09,000
+this is not top secret stuff, um- People
+at the moment with the price and stuff, sometimes people don't thinking that buying the art will stand better than keeping the Bitcoin itself.
+
+331
+00:55:09,000 --> 00:55:17,000
+That's a huge thing, you know? Uh, there
+is not much sale. I, I can see after the conferences, after artists, I talk with the artists, I know that there is not much sale, yeah.
+
+332
+00:55:17,000 --> 00:55:26,000
+You have to find your own niche. You have
+to find your own, like, kind of, uh, way how your art can be.
+
+333
+00:55:26,000 --> 00:55:34,000
+Because maybe your piece is too expensive
+or something, but the, your prints which are sending the signal maybe is a better way.
+
+334
+00:55:34,000 --> 00:55:43,000
+Because same time, you have to understand
+that people are traveling, that nobody will take your big piece with, with him, like, you know?
+
+335
+00:55:43,000 --> 00:55:51,000
+But it's very important to create
+physical.
+
+336
+00:55:51,000 --> 00:56:00,000
+It doesn't mean that because market
+conditions are not good, but maybe when the bull market will be there, things can skyrocket, you know? It's just because the
+
+337
+00:56:00,000 --> 00:56:10,000
+people protecting their wallets too, you
+know? They are... They see people now, it's not easy also sell their arts.
+
+338
+00:56:10,000 --> 00:56:20,000
+And I think even in the fiat system, just
+because if it's not the process of the laundry of money, which is usually in the big galleries, the pricing and stuff, it's, it's laundering of money, bro.
+
+339
+00:56:20,000 --> 00:56:30,000
+This is, this nothing like, nothing more.
+This fake , bro. They washing up the dirty money with the art, because it's a possibility to do this, yeah?
+
+340
+00:56:30,000 --> 00:56:40,000
+But also, the art itself, uh, have to be
+created, yeah? Have to be created.
+
+341
+00:56:40,000 --> 00:56:50,000
+We can stop it, but, uh, like I said,
+like, you know, if, if they not washing the money with this, selling the art is very, very hard. Why? Because people looking the wallets now.
+
+342
+00:56:50,000 --> 00:57:00,000
+It doesn't matter it's Bitcoin, Monero, or
+your packet, uh, fiat fake money, because you see what's going on around the
+
+343
+00:57:00,000 --> 00:57:09,000
+world, you know? In Europe, there is one
+war, proxy war in, uh, U- Ukraine.
+
+344
+00:57:09,000 --> 00:57:17,000
+World is very shaky now, so you know that
+you have to protect your money instead of thinking about the new coffee table or about the big beautiful picture on your wall.
+
+345
+00:57:17,000 --> 00:57:26,000
+Because you've got a family to feed, you
+have to think smart where you putting the money, yeah?
+
+346
+00:57:26,000 --> 00:57:34,000
+But there are collectors, there are
+collectors that the people, they appreciate the, uh, stuff.
+
+347
+00:57:34,000 --> 00:57:43,000
+Because I believe that people that they
+creating the Bitcoin art now, they leaving their own signature, and we have to do this. We have to leave our signature.
+
+348
+00:57:43,000 --> 00:57:51,000
+We have to leave our work, that we were
+noticed that, that something can happen. We can change it, and that's why artists are very important, you know, here.
+
+349
+00:57:51,000 --> 00:58:00,000
+We have to spread it, yeah? So this is...
+We're building history, guys, you know? Mm-hmm. Those pieces are the- fundament. We're building fundament of Bitcoin art now, you know?
+
+350
+00:58:00,000 --> 00:58:12,000
+Doesn't matter you doing the art with the
+NFTs, you doing physical art. The way we sending the signal, we noticing that there is a change, yeah?
+
+351
+00:58:12,000 --> 00:58:24,000
+There is something that can help us. We
+are artists- Future generation will be looking at us in the way that we didn't sin and do nothing and watching Netflix.
+
+352
+00:58:24,000 --> 00:58:36,000
+They were the guys that, that were doing
+the art, yeah? They were not programmed. Yeah This is why I say that Bitcoin is going to allow us to create the next renaissance in art.
+
+353
+00:58:36,000 --> 00:58:48,000
+We have now come to a place where we now
+have the tools, we have the sound money to create the world that we truly want to see.
+
+354
+00:58:48,000 --> 00:59:00,000
+And you have just literally said a
+mouthful about the system, and because of the fiat erosion, people are forced to put their dollars where they need them
+
+355
+00:59:00,000 --> 00:59:15,000
+and not where they want, which would be-
+Exactly ... in the world of art. Yeah.
+
+356
+00:59:15,000 --> 00:59:30,000
+And you, as a real artist, are creating
+your artwork because it is a message and a signal that you want to give to the world, because this is something that fulfills your heart and your soul, and it's a passion as opposed to a means to an end where you need a certain dollar amount in order to create- Yeah the world you want to see.
+
+357
+00:59:30,000 --> 00:59:45,000
+Yeah, exactly. This is what I've always
+said my entire career, is that I only work for the money because I need to survive.
+
+358
+00:59:45,000 --> 01:00:00,000
+But truly, as a dancer, I would have done
+every single show for free because it was my heart and it was my passion that made me want to do it. I just needed- Yeah
+
+359
+01:00:00,000 --> 01:00:10,000
+a, a, a place to sustain myself so that I
+could give my world and my love to the art. So- Exactly ... this is what Bitcoin is going to allow artists to do.
+
+360
+01:00:10,000 --> 01:00:20,000
+It is going to give us back our time so
+that we can create the world that we wanna see. Exactly. That's why, for example, it's so challenging now educating people.
+
+361
+01:00:20,000 --> 01:00:30,000
+Because nowadays, if you've got a family,
+you're working 12 hours a day, your wife is working 12 hours a day, your s- your kid is indoctrinated in the school, and you haven't got time to think about your passions, bro.
+
+362
+01:00:30,000 --> 01:00:40,000
+And people are sad, you know? People are
+living in the... participating this and it's like loophole.
+
+363
+01:00:40,000 --> 01:00:50,000
+Like, it's like you still constantly got
+less and less time, and you've got less and less money. And then struggle is happening. That's why a lot of artists are struggling.
+
+364
+01:00:50,000 --> 01:01:00,000
+Because to pay the rent and stuff, it
+doesn't matter it's
+
+365
+01:01:00,000 --> 01:01:08,000
+Bitcoin art or whatever. Artists are
+struggling. Creative people, to survive, they have to pay the bills. Electricity up, this up, food up. Everything is up.
+
+366
+01:01:08,000 --> 01:01:15,000
+Now you have to work your ass off to To
+just, uh, survive from one to one, yeah? So where is the space for the art? Where is the beauty of communication with others?
+
+367
+01:01:15,000 --> 01:01:22,000
+Where is the importance of quality time
+that we're spending each other with our close one, with our family?
+
+368
+01:01:22,000 --> 01:01:30,000
+Where is the time to share the food and
+make a most beautiful thing you can do with other person, just eat the meal?
+
+369
+01:01:30,000 --> 01:01:38,000
+People haven't got it, haven't got time to
+eat the dinner together.
+
+370
+01:01:38,000 --> 01:01:45,000
+The guy on the way from work getting the
+burger in the fish and chips shops or whatever, and like boom, boom, boom.
+
+371
+01:01:45,000 --> 01:01:52,000
+He haven't got time to cook the proper
+dinner and spend the time because kids this, boh, boh, boh, this. Oh, my boss wrote me that I have to do... Oh, we can change it, you know?
+
+372
+01:01:52,000 --> 01:02:00,000
+Mm-hmm. So
+
+373
+01:02:00,000 --> 01:02:15,000
+that's why, that's why I'm sending my
+signal through my art and music because I tell you something, being lonely and alone on the field is very hard That's why I start building community.
+
+374
+01:02:15,000 --> 01:02:30,000
+That's why at the moment I'm surrounded
+with my angels, you know? And I feel safe, you know? I feel safe, uh, and I, I'm... This is when you ask me what I'm doing now.
+
+375
+01:02:30,000 --> 01:02:45,000
+It's my kind of personal trip that I think
+I'm in a very good moment of my life in the way that I'm surrounded with my angels, and now I've got a feeling that now I can concentrate what is very important for me and can build , you know?
+
+376
+01:02:45,000 --> 01:03:00,000
+And many, many ideas which are coming.
+It's a collective of my people and stuff. Very soon, uh, we'll, we'll see the daylight and, uh, we will expand, you know? We will
+
+377
+01:03:00,000 --> 01:03:15,000
+expand because we've got the solutions,
+and I believe that me and my team, we will bring them, you know, to the people, and we open source it, and everyone then can share this with anyone, can add his own Legos to it and build fair, fair enough system for their communities somewhere else in the world and with the different issues, you know.
+
+378
+01:03:15,000 --> 01:03:30,000
+Everyone got a different issues on his
+land, so yeah. Yeah. That's all about the timing, you know?
+
+379
+01:03:30,000 --> 01:03:45,000
+Most of the Bitcoin culture is still
+skewed on tech and finance, so you're pushing it through the craft and culture.
+
+380
+01:03:45,000 --> 01:04:00,000
+What do the artists see from that seat
+that the industry misses? I see this, like, yeah, industry is missing still that, you know? Okay, so from, from
+
+381
+01:04:00,000 --> 01:04:12,000
+the perspective I notice, like when you go
+on the conferences, yeah, and this is, like, with my good, good friends from this community like, uh, uh, crew from Bitcoin Film Festival or, uh, for example, Bitfest in Manchester or other different satellite, uh, crews like which are organizing.
+
+382
+01:04:12,000 --> 01:04:24,000
+Those people that they doing these
+festivals, they also noticing, we talking about this from few years about these issues, that conferences are boring, yeah?
+
+383
+01:04:24,000 --> 01:04:36,000
+Because they are only guys in the suits,
+because Bitcoin is trendy.
+
+384
+01:04:36,000 --> 01:04:48,000
+For example, in Vegas conference 35,000
+people and a lot of people were, "Ah, Trump is talking about Bitcoin," which is scammers. Like scam, scam, scam, scam.
+
+385
+01:04:48,000 --> 01:05:00,000
+They talking because they try to sell you
+cheap. Talk is cheap. You know, when you're talking, it's very, very cheap to talk. Action is important, you know? What they
+
+386
+01:05:00,000 --> 01:05:10,000
+do? They do nothing. They don't wanna
+empower you. It's always fake.
+
+387
+01:05:10,000 --> 01:05:20,000
+So when it's noisy, guys with the suits
+are coming, they selling their own scam, they telling you that now they will be opening, connecting the banks with the Bitcoin, blah, blah, blah, which is opposites to the whole ethos, you know?
+
+388
+01:05:20,000 --> 01:05:30,000
+If the banks are take over the Bitcoin,
+they taking your stuff, what you should do. . That's why Bitcoin was created. No middleman.
+
+389
+01:05:30,000 --> 01:05:40,000
+We don't need the banks that they taking
+over Bitcoin.
+
+390
+01:05:40,000 --> 01:05:50,000
+That's why it's so important, and this is
+my huge issues which I find out, to teach people responsibility to take over, uh, their keys, take the responsibility for them, and understanding of power of 12 words.
+
+391
+01:05:50,000 --> 01:06:00,000
+Because this is what Bitcoin bringing you,
+to connect me and you directly. The person I want to talk. Because I want to talk with you, we're talking now.
+
+392
+01:06:00,000 --> 01:06:09,000
+I don't need a camera here in my room
+which is watching what I'm saying, with whom, and stuff, yeah? So this is Bitcoin bring us, yeah? Peer-to-peer communication.
+
+393
+01:06:09,000 --> 01:06:17,000
+So for example, for the artist, you don't
+need a special gallery to be presented.
+
+394
+01:06:17,000 --> 01:06:26,000
+You can build your own gallery with your
+tribe, and because of the power of internet, you can share it on the fair social media or whatever tools you use.
+
+395
+01:06:26,000 --> 01:06:34,000
+You can be loud, you know. You can find
+your niche and you can do it. You don't have to ask for the permission big galleries. So the power is there, you know?
+
+396
+01:06:34,000 --> 01:06:43,000
+You just have to discover. It's a process.
+Yeah, I know it's not easy, you know? It's not...
+
+397
+01:06:43,000 --> 01:06:51,000
+Because the amount of the knowledge you
+have to process it will make you if you try to take it in the one week. You will not understand in a week.
+
+398
+01:06:51,000 --> 01:07:00,000
+But it takes the years, so practice this,
+you know? As like a artist, as like a human, as like a
+
+399
+01:07:00,000 --> 01:07:10,000
+person that don't, don't wanna stuck in
+the fiat system which will not help you.
+
+400
+01:07:10,000 --> 01:07:20,000
+In the one moment, if the system will
+collapse, you will be standing in the line with the people that they waiting for the food, not for the art bro, we are very close, yeah Beyond the woodwork, you're on Wave, Lake, and Rumble.
+
+401
+01:07:20,000 --> 01:07:30,000
+Sound and video are a part of your
+practice. How do music and process documentation fit the same mission as the physical pieces? Uh, because sound, yeah, music is very important.
+
+402
+01:07:30,000 --> 01:07:40,000
+You know? People like the music and people
+listening the stuff. So audio and visual con- concept on my stuff is I just mixing different cultures.
+
+403
+01:07:40,000 --> 01:07:50,000
+I just mixing different techniques.
+Because why I'm doing, uh, audiovisual? Because by audio, I sending my signal, if you listen.
+
+404
+01:07:50,000 --> 01:08:00,000
+If you watching my video, I giving you
+presentation of my skills or the way I wanna introduce you to the topic, my visual arts
+
+405
+01:08:00,000 --> 01:08:15,000
+and stuff. So I using different techniques
+and I mixing everything together to send my signal. That's the thing, yeah. That's the thing. So, uh, it's like a DJ.
+
+406
+01:08:15,000 --> 01:08:30,000
+I can record, uh, I recording the
+mixtapes. Visual aspect is this, that for example, with some of them, I'm mixing and using, yeah, or memes or, uh, my pieces of art.
+
+407
+01:08:30,000 --> 01:08:45,000
+So I'm spreading my word. I spreading my
+mission. I spreading my skills. I spreading everything what I want to say to the people. So yeah.
+
+408
+01:08:45,000 --> 01:09:00,000
+So I also leaving the tag because, uh, I'm
+not sharing this on YouTube. I'm not sharing this on Twitter. I putting this on the centralized network, which
+
+409
+01:09:00,000 --> 01:09:12,000
+is Nestled, yeah? So it is always will be
+there. Like, you know? I can secure it more, do it like, yeah, like nobody can ban it. You know? My signal will be there.
+
+410
+01:09:12,000 --> 01:09:24,000
+They can change the books. They can
+destroy the books.
+
+411
+01:09:24,000 --> 01:09:36,000
+They can put them in the bin, and they can
+change narrative in anything what they scan, but they will not scan and change my narrative, because my narrative will be there, signed by me, signed with my secret key, which means that everyone who is watching my shit knows that Munky did it.
+
+412
+01:09:36,000 --> 01:09:48,000
+Yeah? That's the power of the
+permissionless protocols. Yeah. Five years from now, Mad Monkey, 2140, the work, where do you wanna be? How does Bitcoin sit inside that picture?
+
+413
+01:09:48,000 --> 01:10:00,000
+Uh, I've got a, I've got a answer for this
+actually because I got this answer during my last two years, uh, living in London and stuff.
+
+414
+01:10:00,000 --> 01:10:10,000
+And this is absolutely confirming
+everything what I'm doing in my life now Uh, I've got a very simple, simple thing when I see my... What I will be doing.
+
+415
+01:10:10,000 --> 01:10:20,000
+Always I will be doing something. I like
+doing things, you know? Whatever it's my cheffing, whatever it's my music, or whatever is, like woodworking.
+
+416
+01:10:20,000 --> 01:10:30,000
+To be honest, I don't know where I will
+be, you know?
+
+417
+01:10:30,000 --> 01:10:40,000
+To be honest, uh, like two months ago, if
+you ask me where I will be now and from where I will be talking, for example, with you, I will never, I will never...
+
+418
+01:10:40,000 --> 01:10:50,000
+I could never imagine that, you know? So I
+don't know where I will be, but I know what I want, you know? I want in a five years kind of timeframe, my personal thing, yeah?
+
+419
+01:10:50,000 --> 01:11:00,000
+Uh, I think it's like five years
+timeframe. Uh, because I know that we are very early. I know that a lot of things are coming. A lot of things will be also
+
+420
+01:11:00,000 --> 01:11:09,000
+built on Bitcoin and Nostr that will be
+more helpful to get this, uh, uh, goal faster maybe.
+
+421
+01:11:09,000 --> 01:11:17,000
+But all I want to do in a few years, I
+wanna give keys to my kids and to my close people, to my tribe, and to my very good friends.
+
+422
+01:11:17,000 --> 01:11:26,000
+I wanna give them the key to the world
+that is built by my, my people, but my cyberpunks, that they respect my privacy, they respect my values.
+
+423
+01:11:26,000 --> 01:11:34,000
+And these keys I will give to my close
+people to the world that is built by my people, by cyberpunks, but not the governments and pedophiles, you know?
+
+424
+01:11:34,000 --> 01:11:43,000
+And will be based on a completely
+different, uh, values like, you know, not fake, not like , you name it, like all this crap which is fake, you know?
+
+425
+01:11:43,000 --> 01:11:51,000
+This is what I'm saying and I wanna build
+this world with my people, you know? So... And I know that we will do it, you know? I'm very calm about this. I'm not stressing out.
+
+426
+01:11:51,000 --> 01:12:00,000
+We still got the time. We still got like
+one
+
+427
+01:12:00,000 --> 01:12:10,000
+billion seconds, you know, to, to create
+our projects, you know? So, like yeah. I don't know where I will be, you know? But I wanna drink the whiskey from the coconut, you know?
+
+428
+01:12:10,000 --> 01:12:20,000
+Sit down in a good place with my good
+people, share the food, drink the drink from the coconut, and enjoy my beautiful angels around me, you know?
+
+429
+01:12:20,000 --> 01:12:30,000
+The beautiful connections which I made
+just because I discovered the Bitcoin, and I... That's why I feel so blessed because it's not all about the money. It's not all about...
+
+430
+01:12:30,000 --> 01:12:40,000
+Like it's not all about that. It's all
+about your relations, your, your clothes, you know. This is what is building your real world, like, you know.
+
+431
+01:12:40,000 --> 01:12:50,000
+You can rush, you can go, you can, you- If
+you not pay attention for the important things, you losing, you know? Last question.
+
+432
+01:12:50,000 --> 01:13:00,000
+We ask every guest this on Share Your
+Bitcoin Journey. If a 500 to $2,000 Bitcoin micro grant from Bitcoin For The Arts landed in your
+
+433
+01:13:00,000 --> 01:13:10,000
+wallet tomorrow, what would it unlock for
+you as a creator? Uh, I don't know. I'm too, like, uh, I don't know because there is so many things I'm doing now, you know?
+
+434
+01:13:10,000 --> 01:13:20,000
+And like, anything, anything like, um,
+yeah, anything is a, like, process, like, you know.
+
+435
+01:13:20,000 --> 01:13:30,000
+But, uh, I think, uh, the main goal my, is
+like to continue my path, because this is my real passion, like, in the way with the music-wise.
+
+436
+01:13:30,000 --> 01:13:40,000
+So for example, like, 2140 Sessions, uh,
+my music video mixtapes. So, like, it's not much money on the end of the day, like, you know?
+
+437
+01:13:40,000 --> 01:13:50,000
+It's not like something that you can build
+whatever. Because for example, I'm missing the workshop now to do the works, but stuff.
+
+438
+01:13:50,000 --> 01:14:00,000
+But I think, uh, because this is who, uh,
+that's my small planning. I wanna do the con- kind of work more on the content creation and
+
+439
+01:14:00,000 --> 01:14:09,000
+video mixtapes and music and videos. So
+probably that was the, the fastest, is the most reasonable thing that I will concentrate on.
+
+440
+01:14:09,000 --> 01:14:17,000
+Maybe get some equipment, like cameras or
+something, to set up my stuff to make a better, uh, better production, like, you know, uh, with the content, like, you know.
+
+441
+01:14:17,000 --> 01:14:26,000
+So this what I think now, just because I
+haven't got space now for the woodworking.
+
+442
+01:14:26,000 --> 01:14:34,000
+Some pieces are waiting to finish, but I
+know that they will need the time, because this is, like, process, like, constantly.
+
+443
+01:14:34,000 --> 01:14:43,000
+I was doing second piece of the Julian
+Assange, for example, and they freed Julian during when the artwork got a concept.
+
+444
+01:14:43,000 --> 01:14:51,000
+So I have to change the concept because
+Julian is free now. So it's like, many, many things can happen on the way, you know?
+
+445
+01:14:51,000 --> 01:15:00,000
+Sometimes you, you could end it up
+earlier, but everything is a process, you know, to be a better man and better human and everything, you know, to experience the life properly, you
+
+446
+01:15:00,000 --> 01:15:02,000
+know? So, yeah. Thank you for joining us-
+So, yeah ... today, Mad Monkey. Oh, brother. Thank you. Pleasure, Dion. Thank you so much. Pleasure, pleasure.
+
+447
+01:15:02,000 --> 01:15:04,000
+Such a, such amazing, uh, amazing meetups.
+
+448
+01:15:04,000 --> 01:15:06,000
+It's, I'm grateful to talk with you,
+brother, and I hope so we will meet somewhere there in the space, you know, in the near future, like, you remember?
+
+449
+01:15:06,000 --> 01:15:08,000
+The doors here are open, so let's- Yeah
+... find me. If you come to Europe, always let us know, yeah? You know. Absolutely. Absolutely. Thank you for joining us today.
+
+450
+01:15:08,000 --> 01:15:10,000
+This has been another episode of Share
+Your Bitcoin Journey. Please do visit our website, bitcoinforthearts.org. We do need your support. Until next time.
