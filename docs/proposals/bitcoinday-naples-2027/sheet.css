@@ -187,7 +187,7 @@ ul.clean li { font-size: 10pt; line-height: 1.42; margin: 0 0 4px; }
   gap: 8px;
   margin: 8px 0 6px;
 }
-.photos img { width: 100%; height: 1.6in; object-fit: cover; display: block; }
+.photos img { width: 100%; height: var(--h, 1.6in); object-fit: cover; display: block; }
 .caption { font-size: 8pt; color: var(--muted); letter-spacing: 0.04em; }
 
 table.budget {
