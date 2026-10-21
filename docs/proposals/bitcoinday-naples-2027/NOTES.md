@@ -2,24 +2,21 @@
 
 For Dion. Not the document that goes to John.
 
-Event: BitcoinDay Naples, January 16, 2027. John Drew, john@bitcoinday.io. The 2027 page is still a draft, so the proposals say Naples, Florida, and do not lock a room number.
+Event: BitcoinDay Naples, January 16, 2027. John Drew, john@bitcoinday.io.
 
-Decision from the October 20 conversation with Kyle Knight:
+October 21 clarification:
 
-- Bitcoin For The Arts is the umbrella. John gets one proposal and, if he says yes, one agreement with BFTA.
-- CLCT curates the visual art and keeps its own name.
-- Ainsley Costello performs as an independent artist.
-- Kyle will not attend. The $2,100 he had discussed with John, for him to attend and bring the art, is off both budgets.
-- What remains of Kyle's work is curation, bringing artists in, and (on the $10,000 offer) getting the work shipped to Naples.
-- Dion sets the display table. Dion's travel and lodging are not in either budget. Kyle's travel and lodging are not in either budget.
+- Kyle Knight is a BFTA advisor. He is not paid from either offer, and he is not attending.
+- The old $2,100 for him to attend and bring the art stays off.
+- CLCT is paid one fee. That fee includes shipping, scheduling the artists, listing the auction on the CLCT site, and marketing the event.
+- Shipping is inside the CLCT fee. It is not its own line.
+- There is no separate stipend for the visual artists in this budget. If a work sells, that sale is outside the proposal.
+- After Ainsley and CLCT, the rest stays with Bitcoin For The Arts.
 
-The $2,100 was not moved into a new line under a different name. Curation is priced on its own. Shipping is priced on its own.
+$10,000: Ainsley $2,500. CLCT $3,500. BFTA $4,000.
 
-Two lines still need Kyle's quote before anyone is promised a figure:
+$5,000: Ainsley $2,500. CLCT $1,500, and that fee ships one work, not a group. BFTA $1,000.
 
-- The $2,000 shipping allowance on the $10,000 offer. If the carrier quote is lower, the difference is not spent on a new item. If it is higher, fewer works go, and the line holds.
-- How the $2,000 visual-artist pool splits, once he names the artists. Dion approves that split first.
+The two offers are alternatives. Dion's travel and lodging are in neither. The table comes out of the BFTA line.
 
-The $300 shipping line on the $5,000 offer is for one work that can travel as a parcel. A piece that needs a crate belongs on the $10,000 offer.
-
-Ainsley's $2,500 is the same number on both offers. It is paid to her and covers the performance and her own costs to be there. There is no second travel line for her, and no separate band line.
+Inside the $3,500 CLCT fee, about $2,000 is the practical ceiling for freight. If the carrier quote is higher, fewer works ship, and the fee does not grow. The $1,500 CLCT fee on the smaller offer is for a parcel, not a crate.
