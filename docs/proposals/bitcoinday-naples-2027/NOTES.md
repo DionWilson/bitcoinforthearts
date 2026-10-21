@@ -37,7 +37,7 @@ $5,000 detail:
 - CLCT $1,500: parcel shipping for one work $600, scheduling $300, listing $300, marketing $300.
 - BFTA $1,000: table and display $350, event insurance $300, Lightning demo $100, program coordination $250. No paid video and no grants pool at this level.
 
-To confirm before John sends them: BitcoinDay provides the room, sound, and stage. The January 15 Friday VIP party is on the 2027 schedule. Kyle Shirkness is on the panel.
+To confirm before John sends them: BitcoinDay provides the room, sound, and stage. The January 15 Friday VIP party is on the 2027 schedule. Kyle Shirkness can join the panel. He has not replied yet, so the sheets list him as to be confirmed. The panel is "Bitcoin Needs Art to Survive" with Dion and Ainsley, per Julie. There is no separate Ainsley talk.
 
 Render from this folder (each run needs its own profile, and Chrome may need `timeout` to exit):
 
