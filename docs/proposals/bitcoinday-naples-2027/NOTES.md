@@ -29,9 +29,9 @@ Event: BitcoinDay Naples, January 15 to 16, 2027. John Drew, john@bitcoinday.io.
   - Bitcoin For The Arts pays BitcoinDay the $7,500 under a written sponsorship agreement listing what we receive: main-stage panel and talk, gallery space, Friday performance slot, signage.
   - BitcoinDay pays $2,500 of it to Phantom Power Music for the production. Phantom Power Music pays Ainsley. Ainsley is not in the payment structure, and the proposal does not mention her pay.
   - The unrestricted $7,500 follows 55 / 30 / 10 / 5: artist grants $4,125 (five exhibiting grants at $500 plus $1,625 to the pool), programs $2,250 (photo and recap video $900, gallery display and signage $600, printed program and Lightning demo $400, insurance $350), operations $750, HODL Vault $375.
-- Backup: $5,000 gift to Bitcoin For The Arts, all at 55 / 30 / 10 / 5. No money to BitcoinDay and no band performance. Ainsley gives the TED-style talk and joins the panel. The gallery and the Bitcoin For The Arts table stay. Phantom Power Music has no role at this level.
-- The $10,000 proposal is retired.
-- John presents the $15,000 to Bruce first, then the $5,000 if needed. Julie asks Ainsley for the name of the New York angel investor as a second option.
+- Backup: the $10,000 proposal as presented to John on October 23 (`proposal-10000.html`, unchanged). Bitcoin For The Arts pays Phantom Power Music the $2,500 production fee from programs. Use it only if John reworks the ask after speaking with Bruce.
+- On hold: the $5,000 proposal (talk and panel only, no band, nothing to BitcoinDay). Ainsley has no fee at that level.
+- John presents the $15,000 to Bruce. The $10,000 is the fallback. Julie asks Ainsley for the name of the New York angel investor as a second option.
 - Art sales are unchanged: online auction through CLCT, two-thirds to the artist, one-third to CLCT, which donates a portion to Bitcoin For The Arts.
 - Membership: the Renaissance Guardian Circle includes the annual strategy call with the board and early review of grant applications. That is the "board access and advisory input" discussed. It is not a board seat or a vote.
 - Kyle Shirkness may join the panel if he confirms. He is not in the proposal yet.
