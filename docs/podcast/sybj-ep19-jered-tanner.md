@@ -1,6 +1,6 @@
 # Share Your Bitcoin Journey: Episode 19 - Jered Tanner (Eon Jred)
 
-**Guest:** Jered Tanner · artist and producer Eon Jred · actor · The Mysteries Gone (with his wife Andrea Jones, "Infiniti") · lead singer, Dust Mummies
+**Guest:** Jered Tanner · artist and producer Eon Jred · actor · filmmaker (crypto and meme coin film, in research) · The Mysteries Gone (with his wife Andrea Jones, "Infiniti") · lead singer, Dust Mummies
 **Handles:** TikTok @eonjredofficial · Facebook /jered.tanner.1 · themysteriesgone.com · Eon JRED on Spotify and Apple Music
 **Shared history:** Disney's The Lion King North American tour (Gazelle company). Jered was standby for Timon, Zazu, and Pumbaa (2008 to 2010). Dion was in the ensemble. Andrea was in the company too.
 **Episode goal:** The bridge episode into the Broadway, touring, and union artist community. Two friends who knew each other long before Bitcoin, who came into this space from different doors, and who agree the fiat system is broken money.
@@ -11,20 +11,34 @@ follow-up after he answers.
 
 ---
 
+## WHAT WE LEARNED IN THE PRE-MEETING (Dion only)
+
+- **His door in:** AMC and GameStop, then crypto. Dion's own exposure started in 2017.
+- **His film:** a project about crypto and meme coins, in the research phase. A short film first, to build interest in a feature. He may send a cut before taping.
+- **His coin experiment:** as film research, he launched several coins on Solana as a marketing experiment, starting with "Black Sheep Heretic." He watched a competing coin take off overnight.
+- **His own verdict on meme coins:** no real incentive to hold them; closer to gambling or multi-level marketing. He already sees the problem. This is the heart of the episode.
+- **His Bitcoin:** he used leverage in trading and converted profits into Bitcoin.
+- **His doubts:** Bitcoin feels "too late" at its price; trusting money created by an unknown Satoshi; quantum computing.
+- **Where we agreed:** Bitcoin as an alternative to government-controlled money; stablecoins have CEOs who can control them; wrapped stocks and ETFs mean holding an IOU instead of the asset; adoption grows fastest where currencies are failing; more education is needed.
+- **Next step from the meeting:** approach the taping in a way that brings Jered further onto the Bitcoin side.
+
 ## THE ARC (Dion only)
 
 1. **Friendship first.** The audience has to feel the history before they hear any Bitcoin. Union artists trust people, not pitches.
-2. **The broken money we both lived.** Per diems, contracts that end, pensions, Broadway shows closing while houses are full. Common ground before any disagreement.
-3. **Jered's door: crypto and his own coin.** Let him make his case fully and generously. He should feel heard, not ambushed.
-4. **The friendly challenge.** Ask the questions that let him (and the audience) arrive at the difference between Bitcoin and a coin on their own. Curiosity, not correction.
-5. **The admission.** Jered says, in his own words, that he does other things in crypto but understands Bitcoin's principles. That honesty is what makes the episode trustworthy to skeptical artists.
-6. **The rails.** Lightning, value for value, self-custody, and Bitcoin in retirement accounts. Your Equity pension story is the turning point.
+2. **The broken money we both lived.** Contracts that end, pensions, Broadway shows closing while houses are full, and the meme stock moment that made him distrust Wall Street.
+3. **The film and the coin experiment.** Let him tell it as a story. He made money out of nothing in minutes and watched what it did to people.
+4. **His verdict, in his own words.** He already said meme coins feel like gambling. Let the audience hear an artist who tried it reach that conclusion himself.
+5. **Why Bitcoin is different.** He chose to move his profits into Bitcoin. Ask why, then address his doubts: too late, Satoshi, energy.
+6. **Own it, don't rent it.** Stablecoins, wrapped stocks, and ETFs versus holding your own keys. This sets up your Equity pension story.
 7. **The bridge.** How the two of you bring your talented friends from the business into sound money.
 
 Tone guardrails:
 - Challenge the idea, never the person. He's a friend and he's on our show; the audience is watching how Bitcoiners treat someone who isn't one yet.
-- Let him win some points. Creativity, ownership, and building a community around your art are good instincts. The question is which rails they belong on.
-- Never call his projects scams on air. Ask who controls supply, who holds the risk, and who it serves. Let the answers speak.
+- His film is a gift to this episode. Treat him as an artist investigating crypto, not a speculator who needs correcting.
+- Never call specific coins or people scams on air. Don't name the competitor's coin. Ask Jered beforehand if he's comfortable naming Black Sheep Heretic.
+- No price predictions on air. Your $100 million view is fine off-mic; on air, talk about time and purchasing power instead.
+- Don't make leverage sound like a strategy. If it comes up, ask what it taught him, and move to why he chose Bitcoin.
+- Quantum is not a planned question. If he raises it, keep it short: the risk applies to banks too, and Bitcoin can upgrade, as it has since 2009.
 - Not financial advice. Say it once out loud when retirement accounts come up.
 - Disclosure: BFTA has a referral program with Unchained. If you name Unchained, say so on air.
 
@@ -47,15 +61,15 @@ Tone guardrails:
   alum, as The Mysteries Gone.
 
   Jered and I knew each other long before either of us had heard the word
-  Bitcoin. We came into this space through different doors. I came in
-  through Bitcoin and sound money. Jered came in through the wider crypto
-  world, with big ideas about artists owning their own economies. But we
-  landed on the same conclusion: the money system working artists depend on
-  is broken.
+  Bitcoin. We came into this space through different doors. Jered came in
+  through the meme stock moment and the wider crypto world, and he's now
+  making a film about meme coins, a project that had him launching coins of
+  his own to see how that world really works. But we landed on the same
+  conclusion: the money system working artists depend on is broken.
 
   In this conversation we talk about life on the road, what a career in
-  theater really pays, why artists are drawn to crypto, where Bitcoin is
-  different, and how two friends from the same company can bring our
+  theater really pays, what Jered learned making his own coins, why Bitcoin
+  is different, and how two friends from the same company can bring our
   community of brilliant, underpaid artists into sound money.
 
   Without further ado, welcome to the show, my friend Jered Tanner.
@@ -71,7 +85,6 @@ Tone guardrails:
 - TMG Productions, his production company with Andrea (2014 to present). LinkedIn now lists Saginaw, Michigan.
 - Eon Jred solo releases 2021 to 2023: *Quitcherbitchen*, *13 Moons*, *The Shift*, *Trust Fall Forward*, *Placebo Domingo* (has a track called "Open Source"), *May the 14th Be with You*.
 - Themes in his work: Law of Attraction, conscious creating, peace and love, spiritual self-improvement. Author of *Christ Through Cannabis: A Personal Journey of Discovery*. One-episode podcast *Digging in the Dirt with Eon Jred* (2020).
-- Crypto: no public coin launch found under his name or the band's. **Confirm before taping** what he's building or holding (his own token, memecoins, NFTs, a platform) so you describe it accurately on air.
 - Dion's proof point: rolled his dormant AEA pension into an Unchained multisig Roth IRA. "The only [decision] that made me feel like the work I'd already done as a performer was actually being preserved." (docs/unchained-meeting-prep-june-2026.md)
 
 Sensitivity: The Tokyo earthquake was life-changing for both of them. Ask only if he raises it, or offer it gently. Spirituality and cannabis are part of his public story; let him bring them in, and don't make them the episode.
@@ -107,72 +120,81 @@ you and Andrea handle the gaps between contracts?
 full, because costs keep rising faster than ticket revenue. When you see
 that, what do you think is really broken?
 
-7. You and I both reached the same conclusion from different directions:
-the fiat system isn't working for artists. When did that click for you?
+7. Your first door wasn't crypto. It was AMC and GameStop. What did the
+meme stock moment show you about who the financial system is built for?
 
 ---
 
-## JERED'S DOOR: CRYPTO AND HIS OWN COIN
+## THE FILM AND THE COIN EXPERIMENT
 
-8. You found the crypto world before you found Bitcoin. What pulled you in?
-Be honest: was it the technology, the community, or the chance to get rich?
+8. You're making a film about crypto and meme coins, starting with a short.
+What's the story you're trying to tell, and why does it need an artist to
+tell it?
 
-9. You've talked about having your own coin and your own ecosystem as an
-artist. Pitch it to me like I'm a producer. What's the vision?
+9. For your research, you launched your own coins on Solana, starting with
+Black Sheep Heretic. Walk us through it. How easy is it to create a coin
+out of nothing?
 
-10. I'll be the skeptic. Your coin needs buyers, and your fans are the
-buyers. If the price drops, who carries that loss: you or the people who
-love your music?
+10. You watched another coin go from nothing to a fortune overnight. What
+did that stir up in you, as an artist and as a person?
 
-11. With most coins, someone decides how many exist and can make more. With
-the dollar, that's the Fed. What's the difference between that and a coin
-an artist issues?
+11. You told me there's no real reason to hold a meme coin, that it feels
+closer to gambling or multi-level marketing. In that game, who wins, and
+who's left holding the bag?
 
-12. Have you seen a crypto project burn someone? An artist, a friend, a
-fan? What did it teach you?
+12. If you launched a coin as Eon Jred, your fans would be the buyers.
+Knowing what you know now, could you sell that to the people who love your
+music?
 
 ---
 
-## THE ADMISSION: WHERE BITCOIN IS DIFFERENT
+## WHERE BITCOIN IS DIFFERENT
 
-13. You're still exploring other things in crypto, and that's fine. Say
-it in your own words: what does Bitcoin have that no other coin can copy?
+13. When you made money trading, you moved profits into Bitcoin. Out of
+everything you could have held, why Bitcoin?
 
-14. Bitcoin has a fixed supply of 21 million and no CEO, no founder
-collecting a cut. Why do you think that matters so much to people like me?
+14. You can launch a coin in minutes. Bitcoin is mined with real energy, on
+a fixed schedule, with only 21 million ever. Having made coins yourself,
+how does that land differently now?
 
-15. One of your albums has a track called "Open Source." Bitcoin is open
+15. You raised a fair question: how do you trust money created by someone
+nobody knows? My take: Satoshi walked away, so there's no one to trust.
+Does that change it for you?
+
+16. A lot of artists feel they missed it at $100,000. But one bitcoin
+divides into 100 million sats. What would you say to the artist who thinks
+it's too late?
+
+17. One of your albums has a track called "Open Source." Bitcoin is open
 source money anyone can verify. Does that line up with how you see the
 world as an artist?
 
-16. Your music is about conscious creating: you build what you believe in.
-Bitcoin is proof of work: value comes from real energy spent. Is that the
-same idea in a different language?
+---
+
+## OWN IT, DON'T RENT IT
+
+18. Stablecoins have companies that can freeze them. Apps sell wrapped
+stocks without shareholder rights. ETFs hold bitcoin for you. What's the
+difference between owning something and holding an IOU?
+
+19. Everything you were testing with coins, fans backing you directly, a
+community around your work, already exists on Bitcoin: fans can stream
+your music and send sats, with no platform in between. Could that work
+for you?
+
+20. If you rebuilt the artist ecosystem you were imagining using only
+Bitcoin, no new coin, what would it look like? Build it for us right now,
+out loud.
 
 ---
 
-## THE CHALLENGE: BRING YOUR CREATIVITY TO BITCOIN
+## PENSIONS, IRAS, AND THE LONG GAME
 
-17. Everything you want from your own coin, fans supporting you directly,
-owning your work, your own community, already exists on Bitcoin rails.
-Have you looked at what artists are building there?
-
-18. Value for value: fans stream your music and send sats per minute, or
-zap you on Nostr, with no label or platform in between. Could that replace
-the token in your plan?
-
-19. If you rebuilt your whole ecosystem idea using only Bitcoin, no new
-coin, what would it look like? Build it for us right now, out loud.
-
----
-
-## THE RAILS: PENSIONS, IRAS, AND THE LONG GAME
-
-20. We both worked Equity contracts, so we both have pension money
+21. We both worked Equity contracts, so we both have pension money
 somewhere. Do you know where yours is, and what it's been doing since you
 left the tour?
 
-21. I'll tell you what I did. I rolled my Equity pension into a Bitcoin
+22. I'll tell you what I did. I rolled my Equity pension into a Bitcoin
 Roth IRA, with my own keys in a multisig vault. What's your first reaction
 when you hear that?
 
@@ -181,23 +203,20 @@ when you hear that?
 referral relationship with Unchained. I'm sharing what I did because nobody
 ever told us this was possible."]
 
-22. Most of our friends from the business don't know a dormant pension can
+23. Most of our friends from the business don't know a dormant pension can
 be moved at all. Why do you think nobody in that world talks about this?
 
 ---
 
 ## THE BRIDGE: OUR COMMUNITY
 
-23. Think about the people we toured with: wildly talented, working at the
+24. Think about the people we toured with: wildly talented, working at the
 highest level, and most of them have never been shown sound money. What
 would get them to listen?
 
-24. What would you tell a working Broadway or touring artist right now who
-thinks Bitcoin is a gamble, or is just for tech people?
-
-25. You and Andrea are two artists running one household. If you could
-sit down with a young couple in the business, what money advice would you
-give them now that you didn't get?
+25. You've seen the casino side of crypto up close. What would you tell a
+working Broadway or touring artist who thinks Bitcoin is just another
+gamble?
 
 ---
 
@@ -207,9 +226,9 @@ give them now that you didn't get?
 If a $500 to $2,000 Bitcoin micro-grant from Bitcoin for the Arts landed
 in your wallet tomorrow, what would it unlock for you as a creator?
 
-Optional on-air challenge (only if the conversation earns it): invite Jered to
-release his next Eon Jred or Mysteries Gone single on a value-for-value
-platform and report back on a future episode.
+Optional on-air invitation (only if the conversation earns it): offer to have
+Bitcoin for the Arts help with the Bitcoin chapter of his film, or invite him
+back when the short is finished.
 
 ---
 
@@ -219,13 +238,15 @@ Subject: Share Your Bitcoin Journey: questions for our episode
 
 Hey Jered,
 
-I'm so glad we're finally doing this. Here are the questions so you can look them over. Please don't prepare answers like a script. It's a conversation between two old friends from the company, and these are just the map.
+I really enjoyed our conversation. As promised, here are the questions so you can look them over. Please don't prepare answers like a script. It's a conversation between two old friends from the company, and these are just the map.
 
-We'll start with the tour and our history, then talk about what a career in theater actually pays, how you found crypto, and the vision for your own coin and ecosystem. I'm going to play skeptic on a few of those questions. That's on purpose, and it's all love. I want the audience to hear your real thinking, including where you agree with me on Bitcoin and where you don't.
+We'll start with the tour and our history, then talk about what a career in theater actually pays, how you came in through AMC and GameStop, and your film and the coins you launched for it. I'd love for you to tell that story the way you told it to me, including your honest take on meme coins. Then we'll get into why you moved your profits into Bitcoin, and the doubts you raised, like "is it too late?" and trusting Satoshi. A lot of artists have those same questions.
 
 We'll finish with something I really need your help with: how we get the brilliant people we've worked with in this business to understand sound money, and the options most of them don't know they have, like moving an old Equity pension.
 
-Before we tape, can you tell me a little about what you're building or holding in crypto right now? I want to describe it accurately.
+Two quick things before we tape:
+1. Are you comfortable naming Black Sheep Heretic on air?
+2. If you have a cut or any footage from the film ready, send it my way. I'd love to see it, and we can mention it on the show.
 
 If any question goes somewhere you'd rather not go on camera, just tell me and we'll move on. Give Andrea a big hug from me.
 
@@ -238,7 +259,7 @@ Dion
 
 ## PROMO / CLIP NOTES
 
-- Likely clips: Q1 (the "when did we meet" moment), Q10 or Q11 (the friendly challenge), Q13 (his admission in his own words), Q21 (Dion's pension story).
+- Likely clips: Q1 (the "when did we meet" moment), Q9 to Q11 (making a coin out of nothing, and his gambling verdict), Q13 (why he chose Bitcoin), Q22 (Dion's pension story).
 - Thumbnail idea: a tour-era photo of the two of you beside a current photo. Ask Jered and Andrea for one.
 - Distribution: share in Lion King alumni groups and Equity circles. Frame it as "two Lion King alums on money," not "Bitcoin podcast."
-- Follow-up content: a short "Can I roll over my Equity pension?" explainer from BFTA, linked in the show notes (education, not advice).
+- Follow-up content: a short "Can I roll over my Equity pension?" explainer from BFTA, linked in the show notes (education, not advice). Cross-promote Jered's film when it's out.
