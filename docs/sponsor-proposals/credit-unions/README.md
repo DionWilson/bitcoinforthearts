@@ -40,5 +40,5 @@ Run `python3 build.py` with no argument for the general version.
 ## Before sending
 
 - Check the 2027 dates on the activations slide against the current event calendar.
-- Confirm with Kyle Shirkness how he wants his title and Bitcoin Pivot shown on the last slide.
+- Kyle Shirkness's background (slide 3 and the last slide) reflects his LinkedIn as of October 2026. Update it if his role changes.
 - Keep the compliance slide. Credit union risk teams will look for it.
