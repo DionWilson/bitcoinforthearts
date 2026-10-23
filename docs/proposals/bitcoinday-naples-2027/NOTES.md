@@ -22,6 +22,20 @@ Event: BitcoinDay Naples, January 15 to 16, 2027. John Drew, john@bitcoinday.io.
 - The art is auctioned online through CLCT. When a work sells, two-thirds goes to the artist and one-third to CLCT, which donates a portion of its share to Bitcoin For The Arts. Dion will settle the amount with Kyle Knight. The proposal says "a portion" and gives no figure.
 - CLCT's role is the online auction only. Bitcoin For The Arts still curates.
 
+## October 23 meeting with John (Dion, Julie, John)
+
+- New primary ask: $15,000, structured as one BitcoinDay event sponsorship that includes Bitcoin For The Arts. `proposal-15000.html`.
+  - BitcoinDay $7,500: conference $5,000, plus $2,500 for Ainsley's travel, which BitcoinDay pays directly to Phantom Power Music. Routing it through BitcoinDay avoids Bitcoin For The Arts paying an advisor's company.
+  - Bitcoin For The Arts $7,500, at 55 / 30 / 10 / 5: artist grants $4,125 (five exhibiting grants at $500 plus $1,625 to the pool), programs $2,250 (photo and recap video $900, gallery display and signage $600, insurance $350, printed program and Lightning demo $400), operations $750, HODL Vault $375.
+  - Assumption to confirm with John: the $2,500 travel comes out of BitcoinDay's $7,500. If it is on top, the ask becomes $17,500.
+- John presents the $15,000 to Bruce first. If Bruce declines, John presents the $5,000 proposal. The $10,000 proposal is retired.
+- Julie asks Ainsley for the name of the New York angel investor as a second funding option.
+- Tax: a sponsor's payment to BitcoinDay is not a gift to a 501(c)(3). Bitcoin For The Arts receipts the $7,500 to whoever gives it to us, BitcoinDay or the sponsor directly. The proposal offers the direct option to a sponsor who wants a charitable receipt.
+- Membership: the Renaissance Guardian Circle includes the annual strategy call with the board and early review of grant applications. That is the "board access and advisory input" discussed. It is not a board seat or a vote.
+- Kyle Shirkness may join the panel if he confirms. He is not in the proposal yet.
+- Open item: the meeting summary says gallery proceeds split between the artists and Bitcoin For The Arts. The proposals still carry Julie's earlier CLCT version (one-third to CLCT, which donates a portion). Confirm which one stands.
+- The $5,000 backup still has Bitcoin For The Arts paying Phantom Power Music. If John routes that payment through BitcoinDay too, the $5,000 budget can go back to 55 / 30 / 10 / 5.
+
 ## Budgets
 
 $10,000 gift, 55 / 30 / 10 / 5: artist grants $5,500 (five exhibiting artist grants at $500, which include shipping, plus $3,000 to the Artist Grants Pool). Programs $3,000: production by Phantom Power Music $2,500, gallery display and signage $300, event insurance $200. Operations $1,000. HODL Vault $500. The photo and recap video line ($1,000) was cut to make room, and the sponsor benefit now promises photos only.
