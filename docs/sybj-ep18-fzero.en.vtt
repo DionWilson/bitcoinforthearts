@@ -1,0 +1,1933 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.380
+The artist is creating first, then you are supposed to serve the artist, help the artist.
+
+00:00:06.380 --> 00:00:11.520
+And your profit will be made because you serve them well.
+
+00:00:12.320 --> 00:00:20.320
+And we need to bring that selfless way of being around people back, because that's who we are.
+
+00:00:20.320 --> 00:00:23.120
+The oldest common ground we all have is stories.
+
+00:00:23.120 --> 00:00:31.000
+We are all humans and we all come from this storytelling place, sitting around the fire and some old man telling you the story.
+
+00:00:31.000 --> 00:00:34.000
+It doesn't matter if you're from here or there.
+
+00:00:34.000 --> 00:00:38.000
+All the civilizations across time have been doing this.
+
+00:00:38.000 --> 00:00:43.000
+And we talk to each other and share knowledge that way.
+
+00:00:43.000 --> 00:00:46.000
+More than sats, more than Bitcoin,
+
+00:00:46.000 --> 00:00:48.000
+the most important
+
+00:00:48.000 --> 00:00:51.000
+currency that we have is the time that we are given,
+
+00:00:51.000 --> 00:00:53.000
+and we don't know how much we have.
+
+00:00:53.000 --> 00:00:56.000
+So that's a very humbling experience to me.
+
+00:00:56.000 --> 00:00:59.000
+And that pretty much
+
+00:00:59.000 --> 00:01:02.000
+killed a big part of my ego.
+
+00:01:02.000 --> 00:01:08.000
+And I realized that you want to leave something that matters and that can help people once you're gone,
+
+00:01:08.000 --> 00:01:15.000
+right? So having a stroke and almost dying made me realize I should pursue Bitcoin, because I knew about Bitcoin at that point.
+
+00:01:18.000 --> 00:01:25.600
+Welcome to Share Your Bitcoin Journey, presented by Bitcoin For The Arts. I'm Dion Wilson, founder and executive director of Bitcoin For The Arts,
+
+00:01:25.600 --> 00:01:33.680
+a 501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
+
+00:01:33.680 --> 00:01:39.440
+Today we have the pleasure of speaking with a husband, a node runner, a designer,
+
+00:01:39.440 --> 00:01:49.000
+an illustrator, an event producer, and an open source enthusiast. He is co-founder of Ninefold, a studio that builds worlds,
+
+00:01:49.000 --> 00:01:54.000
+stories, products, and experiences people want to enjoy.
+
+00:01:54.000 --> 00:01:58.000
+One of those worlds is a retro sci-fi
+
+00:01:58.000 --> 00:02:06.320
+animated series about an extraterrestrial trying to understand humanity through Bitcoin.
+
+00:02:06.320 --> 00:02:12.280
+Another is a collaboration with Timechain Art Magazine that treats Bitcoin as
+
+00:02:12.280 --> 00:02:20.160
+frequency. It moved from Nostr onto a wall in Denver and into a pin you can hold.
+
+00:02:20.160 --> 00:02:27.440
+In 2024, a drawing of his was tattooed on a friend's leg at Nostriga.
+
+00:02:27.440 --> 00:02:32.280
+In 2025, that drawing became a Bitcoin pin.
+
+00:02:32.280 --> 00:02:38.800
+In this conversation, he shares his personal journey from maker to node runner to studio
+
+00:02:38.800 --> 00:02:40.120
+founder,
+
+00:02:40.120 --> 00:02:45.000
+why a story can teach proof of work better than a lecture,
+
+00:02:45.640 --> 00:02:49.120
+and what it means to sell culture peer to peer
+
+00:02:49.120 --> 00:02:50.280
+in sats.
+
+00:02:50.280 --> 00:02:53.120
+His story is handmade, open,
+
+00:02:53.120 --> 00:02:58.120
+and built to travel from a screen to a wall to a pin.
+
+00:02:58.520 --> 00:03:02.860
+Without further ado, welcome to the show, Fzero.
+
+00:03:04.000 --> 00:03:04.840
+Thank you, Dion.
+
+00:03:04.840 --> 00:03:06.240
+Thank you for this introduction.
+
+00:03:06.240 --> 00:03:08.640
+Happy to be here and thank you for having me.
+
+00:03:08.640 --> 00:03:12.000
+Fzero, welcome to Share Your Bitcoin Journey.
+
+00:03:12.000 --> 00:03:16.080
+Before Ninefold, before the series, before the pins,
+
+00:03:16.080 --> 00:03:18.880
+there was a person making pictures.
+
+00:03:18.880 --> 00:03:22.080
+Where did that story actually begin for you?
+
+00:03:23.200 --> 00:03:27.040
+I would say that I started drawing very young. When I was a kid, I was
+
+00:03:27.040 --> 00:03:33.680
+really into manga and Japanese animation in general, so that's why I started. I was really into
+
+00:03:33.680 --> 00:03:39.440
+the story and the way you can build images and make them go one after the other and then
+
+00:03:39.440 --> 00:03:45.280
+animate them and create something bigger, right? And then you have the song and the sound effects and
+
+00:03:45.280 --> 00:03:49.280
+everything coming in. So I was really fascinated by that, because I'm very visual to start with.
+
+00:03:50.160 --> 00:03:56.720
+And then growing up, I wasn't really pursuing art anymore. I was just at school and
+
+00:03:57.680 --> 00:04:04.800
+just being a kid trying to grow up. And eventually I ended up studying economics, finance,
+
+00:04:04.800 --> 00:04:06.360
+marketing.
+
+00:04:06.360 --> 00:04:08.480
+I went in full on.
+
+00:04:08.480 --> 00:04:10.080
+I went to a job.
+
+00:04:10.080 --> 00:04:13.720
+I worked for big retail fashion brands.
+
+00:04:13.720 --> 00:04:15.560
+I was opening shops for them.
+
+00:04:15.560 --> 00:04:18.480
+I ended up in daily operations as a store manager.
+
+00:04:18.480 --> 00:04:20.040
+So you deal with people.
+
+00:04:20.040 --> 00:04:21.720
+You deal with everything.
+
+00:04:21.720 --> 00:04:25.160
+And as I was doing this, my career was looking great,
+
+00:04:25.160 --> 00:04:27.580
+but I wasn't very inspired.
+
+00:04:29.040 --> 00:04:32.320
+So I remember the art part was missing,
+
+00:04:32.320 --> 00:04:34.280
+and that's where I started
+
+00:04:34.280 --> 00:04:37.080
+reconnecting with drawing and tattooing,
+
+00:04:37.080 --> 00:04:38.320
+which is my first love.
+
+00:04:39.680 --> 00:04:42.720
+You call yourself a designer and an illustrator.
+
+00:04:43.600 --> 00:04:47.120
+What were you making before Bitcoin, and who taught you to
+
+00:04:47.120 --> 00:04:54.160
+look that closely? So just like I said, retail fashion. If you want to handle the store, you have to
+
+00:04:54.160 --> 00:04:59.600
+be looking at every detail, because you cannot miss anything. You cannot have a box full of items
+
+00:04:59.600 --> 00:05:06.640
+left in the back, and then it's value sitting there. And you have to manage time and everyone. So you have to be
+
+00:05:06.640 --> 00:05:14.800
+very detail oriented and manage expectations. So that's how I came up with standards for myself,
+
+00:05:14.800 --> 00:05:19.920
+discipline for myself. So it starts with yourself, I believe. But once you've done that, then you can
+
+00:05:19.920 --> 00:05:29.680
+also apply it to your environment and make the environment better, and then also lead people to pay attention to those details that they don't even see, they don't even imagine
+
+00:05:29.680 --> 00:05:34.520
+they exist, right? So when I was doing this, I saw people opening their eyes and
+
+00:05:34.520 --> 00:05:39.040
+becoming more interested in the fiat context, right? And then I realized that maybe there
+
+00:05:39.040 --> 00:05:44.360
+is a way to do the same thing but have a better impact, and maybe share a story that is
+
+00:05:44.360 --> 00:05:45.680
+more connected to my values.
+
+00:05:46.880 --> 00:05:52.480
+So you try to put yourself in a position where you can make people really notice the details of
+
+00:05:52.480 --> 00:06:00.560
+the work? Yes, because I believe that everything is based on symbolism, and what we think we see is
+
+00:06:00.560 --> 00:06:07.720
+basically the big picture, or some big picture in general. And we don't really look closer, which
+
+00:06:07.720 --> 00:06:10.200
+leaves a lot of meaning on the table.
+
+00:06:10.200 --> 00:06:11.960
+And if we don't have the meaning,
+
+00:06:11.960 --> 00:06:13.400
+and we don't have the common ground,
+
+00:06:13.400 --> 00:06:17.120
+then we are not using the same words for the same reasons.
+
+00:06:17.120 --> 00:06:18.600
+And then when I'm saying a word to you,
+
+00:06:18.600 --> 00:06:20.480
+yeah, maybe you're understanding something,
+
+00:06:20.480 --> 00:06:22.840
+but I mean something else.
+
+00:06:22.840 --> 00:06:39.000
+So I really want to take the time to educate and explain the things I want to explain my way, and I want to meet you and hear what you think about it and just exchange ideas, and I believe that together we can come up with a better solution.
+
+00:06:39.000 --> 00:06:46.000
+Most makers can name the piece where they thought, this is the work.
+
+00:06:46.000 --> 00:06:49.000
+What was that piece for you?
+
+00:06:49.000 --> 00:06:54.000
+As I told you, I had just started thinking about quitting my job, my fiat job,
+
+00:06:54.000 --> 00:06:59.000
+and I was going back to drawing, and I was only doing black and white
+
+00:06:59.000 --> 00:07:03.000
+because of my background in tattooing, so I think in lines and contrast,
+
+00:07:03.000 --> 00:07:07.760
+because it's 2D and it's on the skin, right? So I remember my mom
+
+00:07:07.760 --> 00:07:14.000
+saying, okay, you don't use colors ever, and I'm your mom, I'd like to see some colors in your
+
+00:07:14.000 --> 00:07:19.760
+drawing. So as I was going back to drawing, I did this. I took it with me. This is the first
+
+00:07:19.760 --> 00:07:25.200
+piece I did with some colors, if we can say that. I don't know if you can see, it's blurred.
+
+00:07:25.200 --> 00:07:32.720
+Can I change the blurring thing? Anyway, I'll describe it. This is
+
+00:07:32.720 --> 00:07:40.560
+the skull of a cat, right? And there is a dollar symbol in it. Okay,
+
+00:07:40.560 --> 00:07:47.840
+you can see it here. Yeah, right here. And then you have the QR code here. Everything is
+
+00:07:47.840 --> 00:07:50.560
+done with a ballpoint pen, so it's all black and white.
+
+00:07:50.560 --> 00:07:54.240
+And then I added some gold things because I'm from hip hop culture.
+
+00:07:54.240 --> 00:07:57.120
+I like hip hop, so that was a little reference here.
+
+00:07:57.120 --> 00:08:01.360
+And basically, if you scan this, you end up on the white paper.
+
+00:08:01.360 --> 00:08:07.680
+Very nice. So that was just a way for me to push the white paper, because that's the
+
+00:08:07.680 --> 00:08:13.200
+starting point, I believe, if you're trying to understand Bitcoin. So I believe this piece is
+
+00:08:14.240 --> 00:08:19.680
+from the middle part, because I started, I think, gold to the black to the white, and you find that
+
+00:08:19.680 --> 00:08:27.480
+in my recent work as well. You run a node. When did Bitcoin stop being an idea you liked
+
+00:08:27.480 --> 00:08:33.680
+and become a machine in your house?
+
+00:08:33.680 --> 00:08:40.860
+From Europe, I would say that basically not being able to transfer my money the way I
+
+00:08:40.860 --> 00:08:51.120
+wanted to, and to use the money you have in the bank account where you want, the limitations, and just looking for practical solutions.
+
+00:08:51.120 --> 00:08:55.960
+I found Bitcoin along the way, and then you realize that running your node gives you
+
+00:08:55.960 --> 00:09:01.020
+a lot of options, and it's just about self-custody and sovereignty. And once you figure that out,
+
+00:09:01.020 --> 00:09:04.620
+then a lot of things become possible for yourself
+
+00:09:04.620 --> 00:09:08.400
+in terms of transferring money, basically.
+
+00:09:08.400 --> 00:09:12.680
+Was there a specific moment, or a person, or a bill you
+
+00:09:12.680 --> 00:09:16.520
+could not pay that made it obvious?
+
+00:09:16.520 --> 00:09:16.880
+Yeah.
+
+00:09:16.880 --> 00:09:23.160
+The turning point for me was really when I was at this fiat job,
+
+00:09:23.160 --> 00:09:27.480
+and every day in the store, on the floor, and making a lot of
+
+00:09:27.480 --> 00:09:33.280
+money for these brands, and I had a stroke on the 25th of December.
+
+00:09:33.280 --> 00:09:37.720
+So I was with my family and I'm having a stroke, and I'm less than 30 years
+
+00:09:37.720 --> 00:09:38.880
+old at this point, right?
+
+00:09:38.880 --> 00:09:41.800
+And then I'm like, okay, this is not right.
+
+00:09:41.800 --> 00:09:51.440
+And I cannot be doing this anymore. Because this time it was okay, I recovered, and it wasn't bad. But I don't want to be spending my life in a store with fake lights and then
+
+00:09:51.640 --> 00:09:52.640
+die, right?
+
+00:09:52.640 --> 00:09:57.600
+So that was really a wake-up call. And I know a lot of people I've talked to in the Bitcoin community,
+
+00:09:57.600 --> 00:10:01.600
+some of them had near-death experiences, and they just had this
+
+00:10:01.840 --> 00:10:03.840
+out-of-reality
+
+00:10:04.040 --> 00:10:15.000
+experience that made them think twice, and they just realized that, okay, maybe there is something else I can do, something better, something more aligned I can do with my life. Because more than
+
+00:10:15.000 --> 00:10:16.440
+sats, more than Bitcoin,
+
+00:10:16.440 --> 00:10:19.200
+the most important currency that we have
+
+00:10:19.200 --> 00:10:20.800
+is the time that we are given,
+
+00:10:20.800 --> 00:10:22.840
+and we don't know how much we have.
+
+00:10:22.840 --> 00:10:26.180
+So that's a very humbling experience for me.
+
+00:10:26.180 --> 00:10:31.180
+And that pretty much killed a big part of my ego,
+
+00:10:31.960 --> 00:10:34.920
+and I realized that you want to leave something that matters
+
+00:10:34.920 --> 00:10:37.200
+and that can help people once you're gone, right?
+
+00:10:37.200 --> 00:10:39.640
+So having a stroke and almost dying
+
+00:10:39.640 --> 00:10:41.720
+made me realize I should pursue Bitcoin,
+
+00:10:41.720 --> 00:10:44.120
+because I knew about Bitcoin at that point.
+
+00:10:44.120 --> 00:10:49.700
+And you're just stacking. I was basically DCAing away for almost
+
+00:10:50.600 --> 00:10:51.700
+five, eight years.
+
+00:10:52.000 --> 00:10:56.200
+So you work every day, you stack your 200 bucks, 20 bucks here and there.
+
+00:10:57.500 --> 00:11:01.500
+And then, yeah, if you don't get to enjoy that purchasing power,
+
+00:11:02.000 --> 00:11:07.680
+that energy that you stored, and you die, you basically did that for nothing, right?
+
+00:11:07.680 --> 00:11:08.880
+Even if you don't die, right?
+
+00:11:08.880 --> 00:11:10.680
+Let's talk about COVID and what happened, right?
+
+00:11:10.680 --> 00:11:13.760
+Like, you can basically just stack a lot of money,
+
+00:11:13.760 --> 00:11:15.120
+and then everybody goes away,
+
+00:11:15.120 --> 00:11:17.480
+and then you're left with regrets and questions
+
+00:11:17.480 --> 00:11:20.600
+and anger and all these emotions, right?
+
+00:11:20.600 --> 00:11:24.640
+And some people had this money waiting for their kids,
+
+00:11:24.640 --> 00:11:27.080
+and if you're a husband and you have a wife and
+
+00:11:27.760 --> 00:11:29.760
+responsibilities in general, right? So
+
+00:11:30.560 --> 00:11:34.320
+of course it comes with risk, but what is the other alternative?
+
+00:11:35.760 --> 00:11:40.480
+Staying in a fiat job and slowly dying, right? So that was my take here.
+
+00:11:41.880 --> 00:11:48.840
+You said some great things there, and I want to try and just unpack this for a moment, because
+
+00:11:48.840 --> 00:11:58.680
+I don't think, when we talk about the sound money principles of Bitcoin, that many people
+
+00:11:58.680 --> 00:12:07.360
+can relate how the fiat system does not only affect your ability to
+
+00:12:07.360 --> 00:12:12.800
+economize and pay your bills, but it trickles all the way
+
+00:12:12.800 --> 00:12:19.560
+down to your health and your wellness. And you were able to
+
+00:12:19.560 --> 00:12:28.620
+make the connection between being under 30 years old and having so much stress or pressure in
+
+00:12:28.620 --> 00:12:37.020
+your life due to your engagement in a broken system that was stealing your value.
+
+00:12:37.020 --> 00:12:47.000
+And that broken system resulted in you having a serious health scare at a young age.
+
+00:12:47.000 --> 00:12:58.000
+And you look at the cause of that issue as being how you go about taking care of yourself.
+
+00:12:58.000 --> 00:13:06.260
+Not like your food, not like your environment or where you're living, but literally the thing that you wake up
+
+00:13:06.260 --> 00:13:09.240
+and you go to work for, and how you store your value
+
+00:13:09.240 --> 00:13:11.180
+and your time and your energy.
+
+00:13:12.220 --> 00:13:17.220
+That system was literally taking your life in advance,
+
+00:13:18.340 --> 00:13:22.520
+and you realized it early enough to say, you know what?
+
+00:13:22.520 --> 00:13:25.840
+This is the problem. It's affecting not only
+
+00:13:25.840 --> 00:13:29.200
+my ability to preserve my value,
+
+00:13:29.200 --> 00:13:33.160
+but it's also just affecting my ability to just be here
+
+00:13:33.160 --> 00:13:35.560
+in my best capacity.
+
+00:13:35.560 --> 00:13:38.560
+And we've got to get to a point where we realize
+
+00:13:38.560 --> 00:13:43.160
+how this system is destroying not only your ability
+
+00:13:43.160 --> 00:13:47.320
+to pay your bills, but everything that you're associated with,
+
+00:13:47.320 --> 00:13:49.560
+everything about you.
+
+00:13:49.560 --> 00:13:51.440
+This is why I feel it's so important
+
+00:13:51.440 --> 00:13:52.720
+that we're doing what we're doing,
+
+00:13:52.720 --> 00:13:55.240
+and having these conversations, and having you
+
+00:13:55.240 --> 00:13:58.440
+and artists come on and explain these things,
+
+00:13:58.440 --> 00:14:01.920
+and how this fiat system is affecting your life.
+
+00:14:01.920 --> 00:14:03.560
+This is so important.
+
+00:14:03.560 --> 00:14:07.120
+And another step you took was you found your way to
+
+00:14:07.120 --> 00:14:18.000
+Nostr in 2024. What did you realize the old internet couldn't do for artists that made you
+
+00:14:18.000 --> 00:14:28.000
+want to come into a freedom tech protocol, to be able to communicate globally with people?
+
+00:14:29.360 --> 00:14:35.040
+The interesting story is that I joined Nostr and X for the first time at the same time. So around
+
+00:14:35.040 --> 00:14:40.560
+the same time, I was traveling around Europe for Bitcoin conferences, and I joined both because
+
+00:14:40.560 --> 00:14:44.640
+my friends were like, okay, you're starting to have some traction and you should be having
+
+00:14:44.640 --> 00:14:45.280
+socials.
+
+00:14:45.280 --> 00:14:48.560
+So I tried both. And simple as it is,
+
+00:14:48.560 --> 00:14:51.200
+I tried both and then I got banned
+
+00:14:51.200 --> 00:14:53.340
+after two months on X.
+
+00:14:54.800 --> 00:14:57.200
+So I tried, right?
+
+00:14:57.200 --> 00:14:59.400
+I'm not a big social media person.
+
+00:14:59.400 --> 00:15:02.600
+I try to do it when it comes to professional life
+
+00:15:02.600 --> 00:15:04.160
+and all, but when it comes to myself,
+
+00:15:04.160 --> 00:15:05.760
+I'm not very interested in that.
+
+00:15:11.120 --> 00:15:16.960
+So I do it for the right reason, in my opinion. It's time to do it. And then you get banned, and the reason was not explained. I received emails saying I'm shady and I'm just
+
+00:15:16.960 --> 00:15:27.160
+bad, right? So no way to get the account back or anything. And I believe the reason was that I had just created
+
+00:15:27.160 --> 00:15:28.000
+the account,
+
+00:15:28.000 --> 00:15:30.080
+and then I had a lot of famous people
+
+00:15:30.080 --> 00:15:31.440
+following me or whatever,
+
+00:15:31.440 --> 00:15:32.680
+and it looked shady, whatever.
+
+00:15:32.680 --> 00:15:34.760
+I didn't have a profile picture.
+
+00:15:34.760 --> 00:15:39.160
+And yeah, so it's more like the choices you make
+
+00:15:39.160 --> 00:15:41.040
+in your life, and taking care of yourself,
+
+00:15:41.040 --> 00:15:42.480
+and being in line with your values.
+
+00:15:42.480 --> 00:15:47.740
+But if you get deplatformed, they make the choice for you, basically.
+
+00:15:47.740 --> 00:15:49.280
+I didn't have to make the choice.
+
+00:15:49.280 --> 00:15:51.980
+And then I ended up with Nostr, and Nostr has
+
+00:15:51.980 --> 00:15:56.140
+been the perfect tool, because it's just not censored.
+
+00:15:56.140 --> 00:15:58.460
+And it's about freedom of expression.
+
+00:15:58.460 --> 00:16:03.940
+And if I could access my account, I would love to use X more, but I cannot.
+
+00:16:03.940 --> 00:16:04.380
+Right.
+
+00:16:04.380 --> 00:16:08.760
+So now we are back on X. Since we created the Ninefold studio,
+
+00:16:08.760 --> 00:16:10.720
+I also have an X account for BLEEP,
+
+00:16:10.720 --> 00:16:12.580
+my animated series,
+
+00:16:12.580 --> 00:16:14.800
+but I didn't create a new account for myself,
+
+00:16:14.800 --> 00:16:17.440
+because at this point, I don't want to have another account.
+
+00:16:17.440 --> 00:16:19.320
+We have too many accounts already,
+
+00:16:19.320 --> 00:16:21.640
+and Nostr is doing just great.
+
+00:16:21.640 --> 00:16:27.760
+So it's just the relay technology allowing you to be censorship resistant.
+
+00:16:28.880 --> 00:16:34.480
+And that is so important. That is very important. This is what the decentralized
+
+00:16:34.480 --> 00:16:44.240
+sovereignty tools are giving you: the ability to not be censored, to be in charge of your own work.
+
+00:16:50.300 --> 00:16:52.220
+And this is so important as centralization becomes more and more regulated.
+
+00:16:56.700 --> 00:16:57.700
+You sell work for sats, including on one website, Take My Sats.
+
+00:17:03.780 --> 00:17:04.740
+What changed in how you price a piece once the payment became peer to peer?
+
+00:17:07.360 --> 00:17:13.840
+It becomes more about the value and less about the price tag. I think I had to work on pricing my work. I think it's a thing
+
+00:17:13.840 --> 00:17:18.520
+artists go through in general, because you have this piece in your head and you think it's
+
+00:17:18.520 --> 00:17:23.680
+great, or it's not good enough. And it's hard to price, right? The value is subjective.
+
+00:17:23.680 --> 00:17:27.560
+So for the pins, I just went for 21k sats,
+
+00:17:27.560 --> 00:17:30.120
+because I think it's just relevant,
+
+00:17:30.120 --> 00:17:31.200
+and it makes sense now.
+
+00:17:31.200 --> 00:17:32.800
+It's potentially going to change,
+
+00:17:32.800 --> 00:17:36.680
+but most importantly, I am in uncharted territory here,
+
+00:17:36.680 --> 00:17:38.560
+and I get lost every day.
+
+00:17:38.560 --> 00:17:41.280
+I look at the new tech and the new things
+
+00:17:41.280 --> 00:17:44.800
+that are being built by people, by agents, even by themselves.
+
+00:17:44.800 --> 00:17:48.240
+And it's amazing, everything that is being built today,
+
+00:17:48.240 --> 00:17:51.160
+every day, and you have new tools every day
+
+00:17:51.160 --> 00:17:53.720
+coming out, every single day,
+
+00:17:53.720 --> 00:17:55.480
+and it's hard to keep up.
+
+00:17:55.480 --> 00:18:00.280
+But I think there is asymmetrical risk in doing this,
+
+00:18:00.280 --> 00:18:02.080
+and it's positioning for the long term,
+
+00:18:02.080 --> 00:18:03.960
+low time preference once again.
+
+00:18:03.960 --> 00:18:08.420
+So Take My Sats is just a direct consequence
+
+00:18:08.420 --> 00:18:11.400
+of the relay technology that we discussed.
+
+00:18:11.400 --> 00:18:14.000
+So people realize that on top of relays,
+
+00:18:14.000 --> 00:18:17.060
+you can not only share information,
+
+00:18:17.060 --> 00:18:19.440
+but you can also do a lot of things.
+
+00:18:19.440 --> 00:18:21.840
+And so Nostr is being more and more developed
+
+00:18:21.840 --> 00:18:24.560
+as an ecosystem in which you can plug yourself in
+
+00:18:24.560 --> 00:18:31.760
+with your keys, and that's very interesting. So Take My Sats is just a shop, and everything is working, and
+
+00:18:32.400 --> 00:18:38.320
+that's the most important, right? So the pricing part, to get back to this, I believe that
+
+00:18:39.440 --> 00:18:47.760
+I put my price where it's high, because the low time preference is telling me that I'll be here for a while,
+
+00:18:47.760 --> 00:18:53.760
+I hope so. And if not, people will have the luxury to price my art in the future, looking back.
+
+00:18:53.760 --> 00:19:00.400
+And I believe that if you take a very nice artwork from Michelangelo or Da Vinci, not comparing
+
+00:19:00.400 --> 00:19:07.540
+myself to them, but I believe it was Da Vinci traveling from Italy to France on a donkey with the Mona Lisa
+
+00:19:07.540 --> 00:19:11.840
+strapped on the back. Right. So now it's priceless. And if
+
+00:19:11.840 --> 00:19:14.720
+you asked him at the time, can you trade me that for food,
+
+00:19:14.720 --> 00:19:18.520
+maybe he would have traded it for food. Right. So I'm not worried
+
+00:19:18.520 --> 00:19:21.920
+about the pricing. It's really about the value. And if I can
+
+00:19:21.920 --> 00:19:25.920
+bring a smile and make people think at all, and if
+
+00:19:25.920 --> 00:19:30.120
+in the future my art is worth more, it's good for the person who owns it at that point.
+
+00:19:30.120 --> 00:19:35.720
+And that's the whole point: to preserve the value and have it go up, always higher.
+
+00:19:35.720 --> 00:19:38.520
+That's the type of artwork we want to build.
+
+00:19:38.520 --> 00:19:42.480
+But to create those pieces of art, you need to back it with the community, you need to back
+
+00:19:42.480 --> 00:19:44.520
+it with your personality.
+
+00:19:44.520 --> 00:19:49.600
+You cannot just make an art piece and not take a position and not say anything.
+
+00:19:49.600 --> 00:19:52.560
+You cannot, in my opinion. If you have to express something,
+
+00:19:52.560 --> 00:19:56.160
+better if it's personal and if it's your vision of the world.
+
+00:19:56.160 --> 00:20:00.480
+I'm interested in what's going on with you, Dion, when I'm talking to you.
+
+00:20:00.480 --> 00:20:03.280
+I'm not interested in you if you're able to copy this or that, right?
+
+00:20:03.920 --> 00:20:08.040
+So the value, if it's backed by yourself
+
+00:20:08.040 --> 00:20:10.480
+and you do the proof of work with low time preference,
+
+00:20:10.480 --> 00:20:11.920
+it will compound over time.
+
+00:20:11.920 --> 00:20:15.160
+And with time, we see what works, what doesn't.
+
+00:20:15.160 --> 00:20:20.160
+And so I believe that Bitcoin needs to be
+
+00:20:21.360 --> 00:20:23.360
+backed by real life assets.
+
+00:20:24.800 --> 00:20:29.080
+And those real life assets need to be in service of the community, and used by the community,
+
+00:20:29.080 --> 00:20:30.600
+and owned by the community.
+
+00:20:30.600 --> 00:20:32.080
+Same with the whole thing too,
+
+00:20:32.080 --> 00:20:33.080
+right?
+
+00:20:33.080 --> 00:20:36.680
+Including Nostr, including Bitcoin, and all the different tools and technologies we
+
+00:20:36.680 --> 00:20:39.160
+have.
+
+00:20:39.160 --> 00:20:44.240
+Your bio says open source enthusiast.
+
+00:20:44.240 --> 00:20:49.040
+Has building in public made the work better?
+
+00:20:52.200 --> 00:20:54.400
+I think it does. It just does.
+
+00:20:54.400 --> 00:20:57.360
+Because scrutiny keeps you on your toes
+
+00:20:57.360 --> 00:21:00.320
+and gives you feedback, more or less positive.
+
+00:21:00.320 --> 00:21:02.280
+But if you don't build in public,
+
+00:21:02.280 --> 00:21:07.540
+it's easy to get caught up in a loop, or in echo chambers, and we see that a lot with AI now.
+
+00:21:07.940 --> 00:21:14.040
+Nowadays you see a lot of people just vibe coding and coming up with things, and they have zero users.
+
+00:21:14.340 --> 00:21:18.040
+I'm not saying they will never have users. I'm just saying, what is the point?
+
+00:21:18.040 --> 00:21:24.080
+Are you just exploring creation here, and you want to come up with something that you build? In that case, that's great.
+
+00:21:24.400 --> 00:21:28.120
+But then, is it a commercial product, right?
+
+00:21:28.120 --> 00:21:29.760
+What are you trying to achieve?
+
+00:21:29.760 --> 00:21:32.440
+So in my opinion,
+
+00:21:33.680 --> 00:21:35.000
+we need to...
+
+00:21:38.200 --> 00:21:40.000
+I'm not sure. Can you come again?
+
+00:21:40.000 --> 00:21:41.240
+(laughs)
+
+00:21:41.240 --> 00:21:42.720
+Yes.
+
+00:21:42.720 --> 00:21:50.000
+We just want to know the difference between building in that open source space and building
+
+00:21:50.000 --> 00:21:57.600
+for some centralized authority that has now put themselves in between you and the audience.
+
+00:21:57.600 --> 00:22:00.720
+Yeah, that's a more precise question. That's different.
+
+00:22:00.720 --> 00:22:11.200
+If you don't have a middleman, then you come back to more value, you come back to more direct ecosystems. And the faster knowledge and value travel through Bitcoin and apps, the faster it
+
+00:22:11.200 --> 00:22:16.880
+travels, and that speed is going to tell you how well your economy is doing and how well the market
+
+00:22:16.880 --> 00:22:23.520
+is doing. If the money is stuck somewhere, and I know that HODLing is very important for
+
+00:22:23.520 --> 00:22:29.560
+Bitcoiners, but if the sats are just sitting somewhere and never spent,
+
+00:22:29.560 --> 00:22:30.880
+you have a problem.
+
+00:22:30.880 --> 00:22:34.920
+So we need to accelerate the velocity of money,
+
+00:22:34.920 --> 00:22:37.480
+of knowledge, of everything, and open source everything.
+
+00:22:37.480 --> 00:22:39.760
+Because if it's open source, it's decentralized,
+
+00:22:39.760 --> 00:22:42.840
+so it's more efficient. There is nothing centralized
+
+00:22:42.840 --> 00:22:50.160
+that is more efficient than something that is decentralized. The way the Tokyo subway was made, have you heard this story?
+
+00:22:50.160 --> 00:22:57.280
+Scientists in charge of planning were developing the subway, and they're like, okay,
+
+00:22:57.280 --> 00:23:02.960
+it's a very big cosmopolitan city. How do we do that? And they took some cells and
+
+00:23:02.960 --> 00:23:07.760
+bacteria and viruses and they put them in the lab, and
+
+00:23:07.760 --> 00:23:14.640
+then the way those bacteria developed was the most efficient. So basically they put some food
+
+00:23:14.640 --> 00:23:19.440
+where the stations should be, because this is the map of the city, and then they let the bacteria
+
+00:23:19.440 --> 00:23:28.800
+just connect them. And they reproduced that map that the bacteria made on the city, and that's why the Tokyo
+
+00:23:28.800 --> 00:23:33.200
+subway is very efficient, even for the size of the city.
+
+00:23:33.200 --> 00:23:34.200
+Interesting.
+
+00:23:34.200 --> 00:23:35.800
+Yes, very interesting, right?
+
+00:23:35.800 --> 00:23:36.800
+Wow.
+
+00:23:36.800 --> 00:23:37.800
+Exactly.
+
+00:23:37.800 --> 00:23:39.720
+And God is decentralized, right?
+
+00:23:39.720 --> 00:23:41.640
+So everything is decentralized.
+
+00:23:41.640 --> 00:23:42.640
+You are decentralized.
+
+00:23:42.640 --> 00:23:43.640
+We are decentralized.
+
+00:23:43.640 --> 00:23:44.640
+Air is decentralized.
+
+00:23:44.640 --> 00:23:50.000
+Water is decentralized. So putting a centralized label on anything is not going to make it centralized.
+
+00:23:50.000 --> 00:23:59.000
+At Nostriga in 2024, the alien character that you drew was tattooed on a friend's leg.
+
+00:23:59.000 --> 00:24:05.840
+What did it feel like when a picture left the screen and went onto skin?
+
+00:24:10.960 --> 00:24:15.280
+I'm always very grateful when I get to tattoo somebody, because I'm still learning. I will not pretend I'm a tattoo artist, because I've never worked in a shop and I've never apprenticed.
+
+00:24:16.080 --> 00:24:24.240
+But it's a lot of gratefulness. People trust you with something that they will have on their
+
+00:24:24.240 --> 00:24:26.240
+body forever. That's a lot of trust.
+
+00:24:26.240 --> 00:24:34.480
+And it's a living medium. You're not drawing on a canvas, right? The skin is
+
+00:24:34.480 --> 00:24:42.960
+different depending on the person, depending on the body part. And so it's a very intimate moment,
+
+00:24:42.960 --> 00:24:46.180
+always. And that moment was a full moment of trust.
+
+00:24:46.180 --> 00:24:49.860
+As I said, my friend just wanted to support me, and he already had the tools.
+
+00:24:49.860 --> 00:24:54.500
+And so, yeah, grateful. But that's mostly what I feel like when these events and moments
+
+00:24:54.500 --> 00:24:59.620
+happen at conferences, because it's just full of love and community sharing good vibes,
+
+00:24:59.620 --> 00:25:00.620
+right?
+
+00:25:00.620 --> 00:25:02.860
+So very grateful.
+
+00:25:02.860 --> 00:25:10.080
+GENESIS 113 is your collaboration with Timechain Art Magazine. You describe Bitcoin as
+
+00:25:10.080 --> 00:25:17.840
+frequency, a tower of light rising out of noise. What did you want someone to feel standing in
+
+00:25:17.840 --> 00:25:24.880
+front of it? Now, just to correct one thing, it's not a collaboration with Timechain Art Magazine.
+
+00:25:24.880 --> 00:25:30.160
+Actually, I did the piece, and then it's about to be featured in Timechain Art Magazine,
+
+00:25:30.160 --> 00:25:36.080
+Edition One, coming soon. So shout out Asanoha for letting me share my art
+
+00:25:36.080 --> 00:25:42.240
+in the Genesis Edition. And it's been in Denver, at The Space, for a while now. We've
+
+00:25:42.240 --> 00:25:46.880
+been sharing the piece. So if you want to see it live, you can go there and see how you feel in front of it.
+
+00:25:47.520 --> 00:25:50.200
+But I really wanted to do something that
+
+00:25:51.440 --> 00:25:52.560
+makes people curious.
+
+00:25:52.560 --> 00:25:54.320
+As I said, I'm really about education.
+
+00:25:54.320 --> 00:25:57.960
+I want to make people think. I don't want to put any ideas in your head.
+
+00:25:57.960 --> 00:26:00.120
+So that's why my design is quite simple.
+
+00:26:00.520 --> 00:26:03.200
+But I'm trying to shock with something, right?
+
+00:26:03.200 --> 00:26:06.000
+So there is the white and black contrast that, once again,
+
+00:26:06.000 --> 00:26:09.200
+you can interpret, when it comes to symbolism, in many ways.
+
+00:26:09.200 --> 00:26:12.200
+The eye, the all-seeing eye, that can be seen as many things
+
+00:26:12.200 --> 00:26:15.600
+depending on history, time, civilization.
+
+00:26:15.600 --> 00:26:18.600
+And the Bitcoin logo that is, on purpose,
+
+00:26:18.600 --> 00:26:21.200
+put there big and bold, because I want people,
+
+00:26:21.200 --> 00:26:22.200
+if they are Bitcoiners,
+
+00:26:22.200 --> 00:26:24.960
+maybe they will interpret it depending on what they know.
+
+00:26:24.960 --> 00:26:28.400
+But I'm also more and more targeting no-coiners,
+
+00:26:28.400 --> 00:26:31.400
+and what we call shitcoiners,
+
+00:26:31.400 --> 00:26:33.420
+because I think there are many ways
+
+00:26:33.420 --> 00:26:35.960
+you can do crypto, sure, whatever.
+
+00:26:35.960 --> 00:26:38.040
+But eventually, if you want to be serious about it,
+
+00:26:38.040 --> 00:26:39.360
+there is only Bitcoin, right?
+
+00:26:39.360 --> 00:26:44.360
+So, yeah, I would say go think about it yourself.
+
+00:26:47.200 --> 00:26:49.720
+What do I want you to feel? Actually, I want you to feel something,
+
+00:26:49.720 --> 00:26:54.160
+because I think we are so alienated and traumatized.
+
+00:26:54.160 --> 00:26:57.960
+So if you can just have 20 seconds of meditation
+
+00:26:57.960 --> 00:27:00.240
+or self-reflection in front of a piece of mine,
+
+00:27:00.240 --> 00:27:02.120
+or anybody else's, that would be great.
+
+00:27:04.200 --> 00:27:08.520
+You brought the GENESIS 113 pins to BTC Prague,
+
+00:27:08.520 --> 00:27:14.820
+then to Plebeian Market. Who was that object for: the collector, or the person who just
+
+00:27:14.820 --> 00:27:20.140
+wants to carry the signal? So, always for the people. I do this for the
+
+00:27:20.140 --> 00:27:25.000
+plebs. So of course I want more and more people to wear these pins,
+
+00:27:25.000 --> 00:27:27.320
+so that they can recognize each other.
+
+00:27:27.320 --> 00:27:30.240
+But that pin was a collaboration
+
+00:27:30.240 --> 00:27:32.960
+with Modeotec Art, an OG Bitcoin artist.
+
+00:27:32.960 --> 00:27:36.240
+So after he saw the painting, he contacted me
+
+00:27:36.240 --> 00:27:38.600
+and was basically saying, yo, I like your style.
+
+00:27:38.600 --> 00:27:42.800
+That's somebody I met in real life back in 2024 in Europe.
+
+00:27:42.800 --> 00:27:46.480
+So we were just discussing the design and the painting, and I was sharing
+
+00:27:46.480 --> 00:27:52.000
+with him the video, because there is a music video coming with the art piece. And so he was like,
+
+00:27:52.000 --> 00:27:58.240
+oh, let's do a pin, because he's working with PCB art. And I modified the design, I created a
+
+00:27:58.240 --> 00:28:09.920
+new file for him, and then he did that beautiful PCB art pin. That is a limited edition, I believe it has 42 pieces.
+
+00:28:09.920 --> 00:28:13.520
+So yeah, it launched at BTC Prague.
+
+00:28:13.520 --> 00:28:17.200
+If you don't know his work, you should definitely check it out.
+
+00:28:17.200 --> 00:28:20.000
+And the quality of these pins is amazing.
+
+00:28:20.000 --> 00:28:23.320
+So that's more a little piece of art than anything.
+
+00:28:23.320 --> 00:28:26.240
+And of course, the collection aspect of it,
+
+00:28:26.240 --> 00:28:27.640
+as we mentioned earlier,
+
+00:28:27.640 --> 00:28:30.120
+we want to build on top of everything that we are doing.
+
+00:28:30.120 --> 00:28:33.000
+So we've got low time preference in mind.
+
+00:28:33.000 --> 00:28:36.120
+So as we go, each piece is going to build on top
+
+00:28:36.120 --> 00:28:38.240
+of the others. The worlds are going to communicate
+
+00:28:38.240 --> 00:28:39.960
+and connect with each other.
+
+00:28:39.960 --> 00:28:42.920
+So expect collectibles, and more and more
+
+00:28:42.920 --> 00:28:44.680
+value compounding, right?
+
+00:28:45.920 --> 00:28:47.360
+Yes, we love Modeotec.
+
+00:28:47.400 --> 00:28:51.920
+I love how you're connecting with all of these artists that are doing some great things
+
+00:28:51.920 --> 00:28:53.000
+in the Bitcoin space.
+
+00:28:53.000 --> 00:28:54.840
+This is really awesome.
+
+00:28:54.840 --> 00:28:57.080
+I can't wait to see what else you guys are making.
+
+00:28:57.760 --> 00:28:58.360
+Thank you.
+
+00:28:58.360 --> 00:29:07.840
+The animated series follows an extraterrestrial trying to understand humanity through Bitcoin. I will say this is probably
+
+00:29:07.840 --> 00:29:14.800
+my favorite of your work. You have said that it's about the signal, consciousness,
+
+00:29:14.800 --> 00:29:24.800
+and the internet. Who is the show actually for? Everybody. And I would say it started, I did this for
+
+00:29:24.800 --> 00:29:27.280
+me, because I'm
+
+00:29:27.280 --> 00:29:32.000
+very interested in symbolism and language, and I'm a little bit autistic, so I had a hard
+
+00:29:32.000 --> 00:29:37.760
+time communicating with people in my life, because of the words lost in translation,
+
+00:29:37.760 --> 00:29:50.400
+meaning lost in translation, and being very visual. So I did it for myself, and as a way to leave a trace of the way I've been
+
+00:29:50.400 --> 00:29:56.520
+experiencing those conferences and the community in general. So that's basically,
+
+00:29:56.520 --> 00:30:02.720
+not that the alien is me, but I gave him a few traits that are me, like the awkwardness
+
+00:30:02.720 --> 00:30:05.200
+sometimes, and "I don't know what I'm doing here,"
+
+00:30:05.200 --> 00:30:12.320
+right? So I think it's for everyone. It's for everyone. Consciousness is for everyone. And the alien is just
+
+00:30:12.320 --> 00:30:17.600
+asking you the question, like, where is Bitcoin coming from? Where are we coming from? If an alien
+
+00:30:17.600 --> 00:30:23.680
+coming from outside of planet Earth, as consciousness, is able to interact with Bitcoin and understand
+
+00:30:23.680 --> 00:30:25.320
+Bitcoin, maybe even better
+
+00:30:25.320 --> 00:30:29.580
+than we do, what does it say about us? What does it say about Bitcoin? And just wonder
+
+00:30:29.580 --> 00:30:35.280
+about these things. And then you can also do specific episodes to bring attention to
+
+00:30:35.280 --> 00:30:41.360
+one topic or the other. So it's just fun so far, and I'm glad that you are enjoying it.
+
+00:30:41.360 --> 00:30:43.360
+Thank you.
+
+00:30:43.360 --> 00:30:46.720
+You've also said children could learn proof of work
+
+00:30:46.720 --> 00:30:52.480
+from an alien watching miners. What does the story teach
+
+00:30:52.480 --> 00:30:59.040
+that a lecture may not teach? I've organized kids' zones in the past, in El Salvador,
+
+00:30:59.040 --> 00:31:04.120
+in Vegas. So you just run this space for kids and you try to do activities, and
+
+00:31:04.120 --> 00:31:09.080
+the best way people, and especially kids, learn is through compassion and participation, right?
+
+00:31:09.080 --> 00:31:14.840
+First, in the case of my animated series, you make them participate, because when we are watching a show,
+
+00:31:14.840 --> 00:31:18.880
+we are basically living through the main character's eyes.
+
+00:31:18.880 --> 00:31:22.560
+And whatever the character is going through, through compassion, you're feeling it too.
+
+00:31:22.560 --> 00:31:25.040
+So I think having
+
+00:31:25.040 --> 00:31:30.080
+relatable characters, more and more, in stories, we are more and more
+
+00:31:30.080 --> 00:31:35.120
+digging into the main character vibe, and character building and world
+
+00:31:35.120 --> 00:31:40.320
+building, when it comes to animation and films. And so if you have a really good
+
+00:31:40.320 --> 00:31:45.280
+character, you can take over the world, just like Mickey, right? Everybody can
+
+00:31:45.280 --> 00:31:50.000
+relate to it, and then it doesn't matter if he has a little logo on his forehead.
+
+00:31:50.000 --> 00:31:54.960
+The alien is the catchy part, and then you figure out he has a Bitcoin logo, maybe,
+
+00:31:54.960 --> 00:32:00.560
+if you realize it, and then, what is this on his forehead? So it's really about,
+
+00:32:00.560 --> 00:32:04.880
+I'm very straightforward like that. So when I see a problem, I always ask myself, is it a problem?
+
+00:32:04.880 --> 00:32:11.600
+Is it an easy problem, or can I just walk around it? And with a nice little alien
+
+00:32:11.600 --> 00:32:15.920
+and animation, I can bypass the fact that people sometimes are scared of me because of my tattoos.
+
+00:32:15.920 --> 00:32:22.320
+So yeah, I'm just finding ways to navigate. And the most important part is I want to relate.
+
+00:32:22.880 --> 00:32:25.520
+I'm full of compassion. I want people to connect to that part
+
+00:32:25.520 --> 00:32:29.040
+of themselves, their humanness, and I want them to connect with people, because we need
+
+00:32:29.040 --> 00:32:35.680
+community, we need each other, just to heal from the trauma and all the fiat things that
+
+00:32:35.680 --> 00:32:42.240
+happened to us, and that we actually gave our consent to. Not blaming anybody, but you have to save
+
+00:32:42.240 --> 00:32:45.040
+yourself, and you can only save yourself. And first and foremost,
+
+00:32:45.040 --> 00:32:50.320
+that's what you should be doing. So if a little alien can be inspiring you to do so,
+
+00:32:50.320 --> 00:32:57.600
+or whatever else, I'm fine with it. You and Ivy Lumi announced Ninefold at Origin Seoul.
+
+00:32:58.400 --> 00:33:06.640
+Eight worlds, including the series, Life with Bitcoin, Zaza, Tynka. What is the studio for, in one sentence?
+
+00:33:10.960 --> 00:33:16.880
+The line is "stories that make you build." So that's what we do, but I would say that our
+
+00:33:16.880 --> 00:33:26.520
+goal is to bridge. Bridge worlds, communities, continents, anything, because we are so separated from ourselves,
+
+00:33:26.520 --> 00:33:29.040
+as I just mentioned, but also from each other.
+
+00:33:29.040 --> 00:33:32.560
+And so, the ability that, instead of focusing
+
+00:33:32.560 --> 00:33:34.760
+on what makes us different from each other,
+
+00:33:34.760 --> 00:33:37.560
+skin color, tattoos or not, and all these things,
+
+00:33:37.560 --> 00:33:40.120
+we can just focus on the common ground.
+
+00:33:40.120 --> 00:33:42.760
+And the common ground can be with Bitcoin,
+
+00:33:42.760 --> 00:33:46.400
+once we realize that, okay, you do art, I do
+
+00:33:46.400 --> 00:33:50.560
+art too. Then maybe we can do a podcast, just like we're doing now, and talk about this,
+
+00:33:50.560 --> 00:33:55.280
+even if we don't have much context about each other. We just had a quick call
+
+00:33:55.280 --> 00:34:00.560
+to connect. But I could be focusing on something else, like, I don't know him, where is he coming
+
+00:34:00.560 --> 00:34:06.760
+from? And it's just a matter of perspective. And so I'm really about bridging, and I think that's what
+
+00:34:06.760 --> 00:34:10.000
+we are trying to portray with our different worlds.
+
+00:34:10.000 --> 00:34:13.520
+And it's designed so that it can grow.
+
+00:34:13.520 --> 00:34:15.920
+The way that the website has been designed by Zaziz
+
+00:34:15.920 --> 00:34:18.360
+is so that if tomorrow you tell me,
+
+00:34:18.360 --> 00:34:20.880
+depending on what you want, you want to join Ninefold,
+
+00:34:20.880 --> 00:34:23.200
+you tell me, I tell Zaziz, we change the website,
+
+00:34:23.200 --> 00:34:24.240
+and you join it.
+
+00:34:24.240 --> 00:34:48.840
+So it's not a contract. It's about you joining and participating in the effort and the proof of work. It comes from the experience that both Ivy Lumi and I have had in the Bitcoin industry. She's more from event production in Bitcoin.
+
+00:34:48.840 --> 00:34:51.680
+And she was seeing all these artists, like me
+
+00:34:51.680 --> 00:34:53.760
+and my friends, just not selling.
+
+00:34:53.760 --> 00:34:55.240
+And I realized the same thing.
+
+00:34:55.240 --> 00:34:57.080
+And I wanted to have my friends sell more
+
+00:34:57.080 --> 00:34:58.440
+and represent themselves.
+
+00:34:58.440 --> 00:35:00.520
+And we realized that, yes,
+
+00:35:00.520 --> 00:35:03.960
+Bitcoin is about no middleman and peer to peer.
+
+00:35:03.960 --> 00:35:08.080
+But people can be middlemen for their friends
+
+00:35:08.080 --> 00:35:10.960
+and help them. It's just a matter of intention
+
+00:35:10.960 --> 00:35:11.800
+and how you do that.
+
+00:35:11.800 --> 00:35:15.960
+If I'm trying to set you up and take 50% of your profit,
+
+00:35:15.960 --> 00:35:16.800
+it's not cool.
+
+00:35:16.800 --> 00:35:18.320
+But if I'm actually helping you,
+
+00:35:18.320 --> 00:35:19.560
+and then you're giving value back,
+
+00:35:19.560 --> 00:35:23.280
+and we can negotiate ways to pay each other value for value,
+
+00:35:23.280 --> 00:35:25.440
+and we can bring the product and the
+
+00:35:25.440 --> 00:35:29.680
+experience to life, because that's the point. We want to get analog with it. We want
+
+00:35:29.680 --> 00:35:34.560
+to have real life experiences. Once you have these experiences, once the cash flow is coming,
+
+00:35:34.560 --> 00:35:38.560
+you can always find ways to make everybody happy. I believe it's about making
+
+00:35:38.560 --> 00:35:43.680
+the cake bigger, and we should stop the predatory behavior that we have learned in the
+
+00:35:43.680 --> 00:35:44.680
+fiat system.
+
+00:35:48.240 --> 00:35:55.600
+That's great, what you just said. There are a lot of tools that are now being built for us to do just what you mentioned,
+
+00:35:55.600 --> 00:36:03.040
+about others being able to help artists in a way where it's not about them,
+
+00:36:03.040 --> 00:36:06.880
+but it's about helping put those artists in a position
+
+00:36:06.880 --> 00:36:10.000
+where they can create their own value.
+
+00:36:10.000 --> 00:36:12.920
+And one of those tools that Bitcoin For The Arts
+
+00:36:12.920 --> 00:36:16.560
+is partnering with is Fanfares.
+
+00:36:16.560 --> 00:36:19.520
+And it does precisely what you just said.
+
+00:36:19.520 --> 00:36:24.200
+It allows creators to receive direct value.
+
+00:36:24.200 --> 00:36:27.440
+And then if you are a supporter or a friend
+
+00:36:27.440 --> 00:36:32.800
+of those creators, you can share their content and receive a portion of the
+
+00:36:32.800 --> 00:36:38.480
+value for sharing, while also promoting that creator and allowing them to
+
+00:36:38.480 --> 00:36:44.160
+receive more value. So these are the things that are now being built and are
+
+00:36:44.160 --> 00:36:45.200
+coming our way.
+
+00:36:45.200 --> 00:36:51.600
+So there is so much to look forward to, and opportunities, in this decentralized space.
+
+00:36:51.600 --> 00:36:56.400
+The studio line: stories that make you build.
+
+00:36:56.400 --> 00:37:01.400
+What does that ask of a person watching?
+
+00:37:01.400 --> 00:37:02.200
+I get it.
+
+00:37:02.200 --> 00:37:07.280
+It's almost like you're inviting people to open their minds
+
+00:37:07.280 --> 00:37:13.480
+and be inspired to collaborate and build in a space that gives them the opportunity to
+
+00:37:13.480 --> 00:37:15.960
+do that. Is that what we're doing here with this?
+
+00:37:15.960 --> 00:37:21.620
+Yeah, basically. I think we were mentioning the common ground, right? And the oldest common
+
+00:37:21.620 --> 00:37:28.320
+ground we all have is stories. We are all humans and we all come from this storytelling place,
+
+00:37:28.320 --> 00:37:31.520
+sitting around the fire and some old man telling you the story.
+
+00:37:31.520 --> 00:37:34.560
+It doesn't matter if you're from here or there.
+
+00:37:34.560 --> 00:37:37.920
+All the civilizations across time have been doing this.
+
+00:37:37.920 --> 00:37:44.560
+And we talk to each other and share knowledge that way.
+
+00:37:44.560 --> 00:37:47.000
+And the story is more than just the words.
+
+00:37:47.000 --> 00:37:52.000
+It's the personal interpretation of the people who actually lived it.
+
+00:37:52.000 --> 00:37:57.000
+So there is also a little bit of their experience and emotions and fear,
+
+00:37:57.000 --> 00:38:00.000
+but we also feel that through compassion, as I mentioned earlier, right?
+
+00:38:00.000 --> 00:38:03.000
+So when you're doing that, you're listening to that old man,
+
+00:38:03.000 --> 00:38:05.520
+and these things that happened
+
+00:38:05.520 --> 00:38:12.560
+60 years ago, right? You were there too. Through him, you were there. You don't have to live through
+
+00:38:12.560 --> 00:38:17.680
+Nazi Germany to know that it happened. Because in Europe, I have had people in my family telling me
+
+00:38:18.320 --> 00:38:26.960
+what it was like to be under Nazi occupation, right? So you can either dismiss it and say, all right, it was a long time ago,
+
+00:38:26.960 --> 00:38:31.760
+and it's done and it's gone forever. Or you can be like, okay, this is something that happened once,
+
+00:38:31.760 --> 00:38:37.440
+and history tends to repeat itself. So what can I learn from it? How can I grow from it? And as an
+
+00:38:37.440 --> 00:38:44.000
+individual, in the new context that we are in, of course, we are not in the 50s anymore. But what is
+
+00:38:44.000 --> 00:38:45.720
+the new context, and what can I do?
+
+00:38:45.720 --> 00:38:48.440
+And how can I outgrow myself?
+
+00:38:48.440 --> 00:38:50.800
+How can I be better, for the reasons we mentioned?
+
+00:38:50.800 --> 00:38:53.920
+For everybody, it says, the minimum thing you can do
+
+00:38:53.920 --> 00:38:57.120
+is respect, at the minimum, the people that are around you.
+
+00:38:57.120 --> 00:38:59.040
+You want to be taking a shower.
+
+00:38:59.040 --> 00:39:01.040
+You want to be presenting yourself.
+
+00:39:01.040 --> 00:39:04.120
+It's okay to be coming up short
+
+00:39:04.120 --> 00:39:05.520
+and not be all of it,
+
+00:39:05.520 --> 00:39:10.320
+whatever you think you are. But the story is what matters, because the story you're repeating
+
+00:39:10.320 --> 00:39:14.000
+to yourself in your head is your reality. So that's where I'm coming from.
+
+00:39:15.600 --> 00:39:24.720
+You also produce events. What does a Bitcoin room owe the artist who shows up to work in it?
+
+00:39:24.720 --> 00:39:27.200
+And I need to know this, really,
+
+00:39:27.200 --> 00:39:32.800
+personally, as well as an arts organization, because we want to position ourselves
+
+00:39:32.800 --> 00:39:37.200
+where we're showcasing these artists, and we want to make sure that these
+
+00:39:37.200 --> 00:39:43.120
+artists are getting what they deserve, or feel that they're in a position in that
+
+00:39:43.120 --> 00:39:46.000
+room to be treated the way they deserve.
+
+00:39:47.000 --> 00:39:53.000
+It starts with respect, right? When it comes to galleries or anything in life, respect is respect.
+
+00:39:53.000 --> 00:39:58.000
+If you don't respect me, we're going to have a hard time talking. And it goes both ways, right?
+
+00:39:58.000 --> 00:40:06.320
+So the fiat way of doing art galleries is just the art galleries making money, because it's a fiat game and it's profit
+
+00:40:06.320 --> 00:40:08.200
+and whatever.
+
+00:40:08.200 --> 00:40:12.120
+And so the artist needs the gallery to sell.
+
+00:40:14.840 --> 00:40:18.200
+But the power dynamics are reversed,
+
+00:40:18.200 --> 00:40:20.920
+because the art gallery needs the artist more
+
+00:40:20.920 --> 00:40:22.000
+than the other way around.
+
+00:40:22.000 --> 00:40:24.000
+If you have an art gallery and no artist,
+
+00:40:24.000 --> 00:40:25.840
+you have white walls at best.
+
+00:40:26.880 --> 00:40:29.480
+And you still need a painter to paint your walls white.
+
+00:40:29.480 --> 00:40:33.520
+So once again, we can be sitting in offices.
+
+00:40:33.520 --> 00:40:36.360
+And as I said, I come from finance,
+
+00:40:36.360 --> 00:40:37.440
+economics, marketing.
+
+00:40:37.440 --> 00:40:39.280
+I was supposed to be working an office job
+
+00:40:39.280 --> 00:40:43.160
+and give orders and make way more money
+
+00:40:43.160 --> 00:40:45.000
+than I have made, right?
+
+00:40:45.080 --> 00:40:46.720
+But that wasn't for me.
+
+00:40:46.720 --> 00:40:51.400
+And I think we should realize, sooner or later,
+
+00:40:51.400 --> 00:40:54.280
+that creativity is the real power.
+
+00:40:55.580 --> 00:40:59.280
+And then as the artist, being able to create something out
+
+00:40:59.280 --> 00:41:03.720
+of yourself and put it into the world,
+
+00:41:03.720 --> 00:41:05.120
+you have more power than the gallery.
+
+00:41:05.120 --> 00:41:07.680
+The gallery comes downstream. You're upstream.
+
+00:41:07.680 --> 00:41:11.520
+I think it's about coming back to common sense,
+
+00:41:11.520 --> 00:41:14.560
+and not putting emotions or
+
+00:41:14.560 --> 00:41:18.240
+greed into the process of all this. And just,
+
+00:41:18.240 --> 00:41:21.480
+what does common sense tell you right now?
+
+00:41:21.480 --> 00:41:23.800
+The artist is creating first,
+
+00:41:23.800 --> 00:41:31.800
+then you are supposed to serve the artist, help the artist, and your profit will be made because you serve them well.
+
+00:41:32.760 --> 00:41:39.800
+And we need to bring that selfless way of being around people back, because that's who we are.
+
+00:41:40.520 --> 00:41:45.000
+If I do my best, every day, my best to make Bitcoin For The Arts great,
+
+00:41:45.000 --> 00:41:49.000
+and you, every day you wake up and you're like, okay, I'm going to do my best for you,
+
+00:41:49.000 --> 00:41:53.000
+I think of you, you think of me, more than we think about ourselves,
+
+00:41:53.000 --> 00:41:57.000
+you'll be surprised at the type of dynamics you can create, and the type of products,
+
+00:41:57.000 --> 00:42:00.000
+and the type of things that can happen if you do that.
+
+00:42:00.000 --> 00:42:04.000
+It's once again the story, and the perspective you have on
+
+00:42:04.000 --> 00:42:06.500
+life. And if you come from fear, then you will be
+
+00:42:08.000 --> 00:42:11.660
+separating yourself from people, and from opportunities as well.
+
+00:42:13.600 --> 00:42:18.600
+Five years from now: the studio, the series, the objects, and you.
+
+00:42:19.120 --> 00:42:23.380
+Where do you want to be, and where does Bitcoin sit inside that picture?
+
+00:42:24.360 --> 00:42:27.680
+If you had asked me two or three years ago
+
+00:42:27.680 --> 00:42:35.040
+where I would be, I wouldn't have said where I am now. So, very fast moving environment. And as we said,
+
+00:42:35.040 --> 00:42:40.480
+every day is changing, and I have no idea where I will be in five years, or where we will be. But I know
+
+00:42:40.480 --> 00:42:46.340
+that I've become more and more selfless and working for Bitcoin.
+
+00:42:47.720 --> 00:42:50.520
+And I work for Bitcoin.
+
+00:42:50.520 --> 00:42:55.080
+Bitcoin has the ethos, as the protocol, right?
+
+00:42:55.080 --> 00:42:58.720
+So what can I do for Bitcoin?
+
+00:42:58.720 --> 00:43:00.200
+That's what I ask myself.
+
+00:43:00.200 --> 00:43:03.560
+And then if you do that, you're sorted,
+
+00:43:03.560 --> 00:43:04.960
+you're totally sorted.
+
+00:43:04.960 --> 00:43:10.560
+Yeah, there's nothing else you should be worrying about, other than how much can you give? How much can you give,
+
+00:43:10.560 --> 00:43:15.920
+and can you give more? And how can you make that sustainable for yourself, and balance it? And then
+
+00:43:15.920 --> 00:43:22.560
+you have it. Just stay there, and don't worry, just be healthy, keep building. It's a fine balance, a fine
+
+00:43:22.560 --> 00:43:25.480
+line, between having low time preference and being
+
+00:43:25.480 --> 00:43:29.160
+disciplined enough to show up every day and do proof of work, right?
+
+00:43:29.160 --> 00:43:35.800
+So if you just do that, efforts compound every day, and in five years we'll see, right?
+
+00:43:35.800 --> 00:43:37.760
+I love that, man.
+
+00:43:37.760 --> 00:43:40.560
+What can you do for Bitcoin?
+
+00:43:40.560 --> 00:43:47.200
+That's a completely different mindset than being inside the traditional system.
+
+00:43:47.200 --> 00:43:54.800
+And this is what we are doing. It's pushing these stories out so people can understand
+
+00:43:54.800 --> 00:44:01.400
+that Bitcoin ethos. So you are doing some great work for Bitcoin just by sharing your
+
+00:44:01.400 --> 00:44:09.600
+story. Last question, we ask every guest this. If a $500 to $2,000
+
+00:44:09.600 --> 00:44:14.960
+Bitcoin micro-grant from Bitcoin For The Arts landed in your wallet tomorrow, what would
+
+00:44:14.960 --> 00:44:22.160
+it unlock for you as a creator? We are building worlds, and we will keep building worlds.
+
+00:44:22.160 --> 00:44:25.120
+I like to work with constraints.
+
+00:44:25.120 --> 00:44:29.840
+So if I get some money from Bitcoin For The Arts,
+
+00:44:29.840 --> 00:44:31.880
+I will keep creating, and I will just make sure
+
+00:44:31.880 --> 00:44:35.160
+that I maximize the use of that money
+
+00:44:35.160 --> 00:44:38.720
+and have the biggest impact I can, to involve more people
+
+00:44:38.720 --> 00:44:42.960
+in the loop and create more community-based activities,
+
+00:44:42.960 --> 00:44:45.440
+experiences, merch, just like everything
+
+00:44:45.440 --> 00:44:47.440
+we've been building so far with Ninefold.
+
+00:44:47.440 --> 00:44:49.640
+But if I have to be precise about it,
+
+00:44:49.640 --> 00:44:53.000
+BLEEP: Signal is over now for the first season.
+
+00:44:53.000 --> 00:44:55.600
+So we just ended, wrapped up nicely.
+
+00:44:55.600 --> 00:44:57.560
+It's been very well received.
+
+00:44:57.560 --> 00:45:01.840
+Working on season two, that will be coming out in 2027.
+
+00:45:01.840 --> 00:45:08.000
+And I cannot share now, but it will premiere at some event, and I'm building
+
+00:45:08.000 --> 00:45:13.000
+around this premiere. And so if I had some money from you, I would probably maximize everything
+
+00:45:13.000 --> 00:45:18.720
+to push that next step for BLEEP, and that will come with nice merch that is already going
+
+00:45:18.720 --> 00:45:22.240
+on, and a nice premiere for everybody to enjoy.
+
+00:45:22.240 --> 00:45:26.000
+Fzero, thank you for being here with us today.
+
+00:45:26.000 --> 00:45:28.840
+Thank you to our audience and listeners.
+
+00:45:28.840 --> 00:45:30.120
+Bitcoin For The Arts.
+
+00:45:30.120 --> 00:45:31.880
+Please do visit our website.
+
+00:45:31.880 --> 00:45:35.160
+We do need your support. bitcoinforthearts.org.
+
+00:45:35.160 --> 00:45:36.480
+Until next time.
