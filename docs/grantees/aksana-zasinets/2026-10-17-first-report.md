@@ -20,7 +20,7 @@ The chair invoice is addressed to Aliaksandr Zasinets at Belgradzka 8, mieszkani
 
 ## What we say in public
 
-Issue 31 (Monday, October 26, 2026) says the stands are up, a piece is on the hoop, and the rest of the grant buys thread and materials and sends the finished work to the United States. It does not name the chair or give the equipment split.
+Issue 31 (Monday, October 26, 2026) says the stands are up, a piece is on the hoop, and the rest of the grant buys thread and materials and sends the finished work to the United States. It does not name the chair or give the equipment split. It explains why the grant matters: low time preference and sound money, and why slow handwork is worth funding.
 
 ## Still open
 
