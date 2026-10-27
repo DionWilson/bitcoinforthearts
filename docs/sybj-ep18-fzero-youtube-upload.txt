@@ -1,0 +1,342 @@
+YOUTUBE UPLOAD DETAILS - Share Your Bitcoin Journey: Episode 18
+
+UPLOAD STATUS: Ready to paste. Video: https://youtu.be/uCW-3qOJdVo
+Chapters and captions are taken from the released cut's WEBVTT. Cold open runs to about 1:18.
+Captions file: docs/sybj-ep18-fzero.en.vtt (names and mishearings corrected; see CAPTIONS below).
+Fzero has no personal X account. Tag the studio, @go9fold, and the series, @bleepsignal.
+
+
+=== TITLE ===
+
+Share Your Bitcoin Journey: Episode 18 – Fzero: The Artist Creates First
+
+
+=== TITLE (BACKUP OPTIONS) ===
+
+- Share Your Bitcoin Journey: Episode 18 – Fzero: Stories That Make You Build
+- Share Your Bitcoin Journey: Episode 18 – Fzero: An Alien Learns Bitcoin
+- Share Your Bitcoin Journey: Episode 18 – Fzero: Time Is the Currency
+
+
+=== DESCRIPTION ===
+
+Fzero is a designer, illustrator, node runner, and co-founder of Ninefold, the studio he runs with Ivy Lumi. Their line is "stories that make you build." He started by copying manga as a kid. He studied economics, finance, and marketing, then opened stores and ran the floor for big fashion brands. The work looked like a career. It did not feel like one. On December 25, still under 30 and home with his family, he had a stroke. He already knew Bitcoin. He had been stacking sats for years. The scare settled the question. Time is the currency you cannot count, and he wanted to leave something that helps people after he is gone.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson talks with Fzero about the moment Bitcoin stopped being an idea and became a node in the house, about getting banned from X and staying on Nostr, and about pricing work once the payment is peer to peer. His GENESIS 113 pins are 21,000 sats on Take My Sats. He describes the first drawing that sent people to the Bitcoin white paper, the day a friend wore his alien as a tattoo at Nostriga, and GENESIS 113, the painting that treats Bitcoin as frequency: a tower of light rising out of noise. He made the painting. Timechain Art Magazine is featuring it in Edition One. It hung at The Space in Denver. The pins, made with Modeotec, went to BTC Prague and then to Plebeian Market.
+
+He also tells the story of $BLEEP, the retro sci-fi series about an extraterrestrial trying to understand humanity through Bitcoin. The character is him, with the awkwardness left in. Season 1 is wrapped. Season 2 arrives in 2027. And he is plain about rooms and galleries. The artist creates first. Everyone else is there to serve the artist. The profit comes from serving them well.
+
+This episode ran first on Fanfares, where 21 sats unlocked it and the sats went to Fzero and Bitcoin For The Arts. It is now free here.
+
+Watch: https://youtu.be/uCW-3qOJdVo
+
+IN THIS EPISODE:
+- Drawing manga as a kid, then leaving it for economics and retail
+- Opening shops, running the floor, and feeling the art go missing
+- Tattooing as the way back
+- A skull, a dollar sign, and a QR code that opens the white paper
+- Why the details matter, and what gets lost when two people use the same word differently
+- A European bank account that would not move the money, and running a node
+- The stroke on December 25, and time as the currency
+- How a fiat job reaches the body, not just the bills
+- Joining Nostr and X at the same time, then losing the X account
+- Pricing pins at 21,000 sats, and Take My Sats
+- Low time preference and the Mona Lisa on a donkey
+- Building in public, and why a middleman slows the work down
+- The Tokyo subway story
+- The alien tattoo at Nostriga, and the trust of drawing on skin
+- GENESIS 113: his painting, Timechain Art Magazine Edition One, and The Space in Denver
+- The Modeotec PCB pins, a run of 42, at BTC Prague and Plebeian Market
+- Who $BLEEP is for
+- Why a story teaches proof of work better than a lecture
+- Kids' zones in El Salvador and Las Vegas
+- Ninefold with Ivy Lumi, announced at Origin Seoul
+- Stories around the fire
+- What a gallery owes an artist
+- "What can I do for Bitcoin?"
+- Season 2 of $BLEEP in 2027, and what a $500 to $2,000 micro-grant would unlock
+
+FIND FZERO:
+Ninefold: https://9fold.co
+$BLEEP: https://9fold.co/worlds/bleep
+$BLEEP on X: https://x.com/bleepsignal
+Ninefold on X: https://x.com/go9fold
+Nostr: npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+Shop: https://www.takemysats.com/fzero
+GENESIS 113: https://genesis113.carrd.co
+Timechain Art Magazine: https://timechainartmagazine.com/artist/fzero
+
+ABOUT BITCOIN FOR THE ARTS:
+Bitcoin For The Arts, Inc. is a 501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools. The first nonprofit paying artists exclusively in Bitcoin.
+
+Website: https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Join the Sovereign Circle: https://www.bitcoinforthearts.org/donate/monthly
+Stories: https://www.bitcoinforthearts.org/stories
+Apply for a grant: https://www.bitcoinforthearts.org/grants/apply
+Substack: https://substack.com/@bitcoinforthearts
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+0:00 Cold open
+1:18 Welcome
+3:08 Manga, economics, and retail
+4:39 Learning to see the details
+6:39 The QR code to the white paper
+8:27 Running a node
+9:08 The stroke on December 25
+11:41 How fiat reaches your health
+14:03 Nostr, X, and getting banned
+16:56 Pricing in sats
+18:53 The Mona Lisa on a donkey
+20:39 Building in public
+21:42 Middlemen and the Tokyo subway
+23:50 The alien tattoo at Nostriga
+25:02 GENESIS 113
+27:04 The pins: Modeotec and BTC Prague
+28:58 Who $BLEEP is for
+30:43 A story versus a lecture
+32:50 Ninefold
+36:51 Stories that make you build
+39:15 What a room owes the artist
+42:13 Five years out
+44:09 What a micro-grant would unlock
+45:22 Close
+
+
+=== TAGS ===
+
+Bitcoin,Bitcoin For The Arts,Fzero,Ninefold,BLEEP,Ivy Lumi,Dion Wilson,Share Your Bitcoin Journey,GENESIS 113,Timechain Art Magazine,Modeotec,Take My Sats,Plebeian Market,BTC Prague,Nostriga,Nostr,Bitcoin art,Bitcoin animation,node runner,proof of work,low time preference,value for value,V4V,Fanfares,Bitcoin podcast,sound money,nonprofit,501c3,artist grants,Bitcoin micro grants
+
+
+=== PINNED COMMENT ===
+
+Fzero is a designer, illustrator, and co-founder of Ninefold, the studio behind $BLEEP.
+
+Ninefold: https://9fold.co
+$BLEEP: https://9fold.co/worlds/bleep
+Shop (in sats): https://www.takemysats.com/fzero
+GENESIS 113: https://genesis113.carrd.co
+Nostr: npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+
+Bitcoin For The Arts funds working artists in bitcoin.
+Apply: https://www.bitcoinforthearts.org/grants/apply
+Donate: https://www.bitcoinforthearts.org/donate
+
+
+=== THUMBNAIL TEXT ===
+
+Option 1: "The Artist Creates First"
+Option 2: "An Alien Learns Bitcoin"
+Option 3: "Time Is the Currency"
+
+
+=== CATEGORY ===
+
+Nonprofits & Activism (or Education)
+
+
+=== PLAYLIST ===
+
+Share Your Bitcoin Journey
+
+
+=== END SCREEN ===
+
+Last 20 seconds: Bitcoin For The Arts channel, the Share Your Bitcoin Journey playlist, and https://www.bitcoinforthearts.org/grants/apply
+
+
+=== CAPTIONS ===
+
+YouTube Studio > Subtitles > English > Upload file > With timing > docs/sybj-ep18-fzero.en.vtt
+Also upload the same file to the RSS.com episode as the transcript.
+
+Fixed throughout: Fzero (was "F-Zero", "AvZero"), Dion (was "John", "Deanne"), Ninefold (was "9-4", "Nightfold"), Nostr and Nostriga (was "Nostra", "No Strega", "North Star"), BLEEP (was "Gleep", "blip"), Take My Sats, Timechain Art Magazine, Asanoha, Modeotec, Plebeian Market, BTC Prague, Origin Seoul, Life with Bitcoin, Tynka, Bitcoin For The Arts (was "Big corn for the yacht"), low time preference (was "a lot of time for friends"), sats (was "stats", "sets").
+
+Listen and confirm before uploading. These were guesses from context:
+- 34:24 to 34:49. The auto transcript repeated "you tell me I tell you" for about 25 seconds. I replaced it with one sentence joining the two ends. If he says more there, add it.
+- "fiat job" (9:16, 11:35) and "the fiat way of doing art galleries" (39:58). The transcript said "chat job" and "chat game." It could be a swear word. Change it if so.
+- 11:08 "Let's talk about COVID." The transcript said "cold-cold."
+- 34:13 "designed by Zaziz." Check the name of whoever built the Ninefold site.
+- 41:45 "I'm going to do my best for you." The transcript said "have naive for the naive."
+- 28:09 "It launched at BTC Prague." The transcript said "it's all left you at BTC Prague."
+
+
+=== SOCIAL POSTS ===
+
+--- LinkedIn ---
+
+NEW EPISODE: Share Your Bitcoin Journey, Episode 18, with Fzero.
+
+"The artist is creating first. Then you are supposed to serve the artist. And your profit will be made because you serve them well."
+
+Fzero ran stores for big fashion brands. On December 25, under 30, he had a stroke. He had been stacking sats for years. That day settled it: time is the currency you cannot count. Today he co-runs Ninefold, a studio that builds worlds, including $BLEEP, an animated series about an alien trying to understand humanity through Bitcoin.
+
+We talk about pricing art once the payment is peer to peer, building in public, and what a gallery owes the artist who walks in.
+
+Watch: https://youtu.be/uCW-3qOJdVo
+
+#BitcoinForTheArts #Bitcoin #Art #Animation #Design #SoundMoney #Nonprofit
+
+
+--- Facebook ---
+
+NEW EPISODE. Share Your Bitcoin Journey, Episode 18.
+
+Fzero. Designer, illustrator, node runner, co-founder of Ninefold.
+
+"The artist is creating first. Then you are supposed to serve the artist."
+
+He opened stores for big fashion brands until a stroke on Christmas Day, before he turned 30, changed his mind about how to spend his time. Now he makes $BLEEP, an animated series about an alien learning Bitcoin, and GENESIS 113, a painting that treats Bitcoin as frequency.
+
+Watch Episode 18: https://youtu.be/uCW-3qOJdVo
+
+Ninefold: https://9fold.co
+
+#BitcoinForTheArts #Bitcoin #ShareYourBitcoinJourney #Ninefold #BitcoinArt #SoundMoney
+
+
+--- X ---
+
+NEW: Share Your Bitcoin Journey, Episode 18.
+
+Fzero, co-founder of @go9fold and creator of @bleepsignal.
+
+A stroke at under 30. A node in the house. An alien learning Bitcoin.
+
+"The artist is creating first. Then you are supposed to serve the artist."
+
+Watch: https://youtu.be/uCW-3qOJdVo
+
+
+--- X, second post ---
+
+"More than sats, more than Bitcoin, the most important currency that we have is the time that we are given. And we don't know how much we have."
+
+Fzero on Share Your Bitcoin Journey.
+
+https://youtu.be/uCW-3qOJdVo
+
+
+--- X, third post ---
+
+"If you have an art gallery and no artist, you have white walls at best."
+
+Fzero (@go9fold) on what a room owes the artist. Episode 18.
+
+https://youtu.be/uCW-3qOJdVo
+
+
+--- Nostr ---
+
+Share Your Bitcoin Journey, Episode 18, is on YouTube.
+
+Fzero, co-founder of Ninefold and creator of $BLEEP. Retail manager, then a stroke at under 30, then a node in the house. GENESIS 113, pins at 21,000 sats on Take My Sats, an alien tattoo at Nostriga, and why the artist creates first.
+
+nostr:npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+
+Watch: https://youtu.be/uCW-3qOJdVo
+
+#Bitcoin #Nostr #BitcoinForTheArts #BFTA #Art #ValueForValue #V4V #BLEEP
+
+
+--- Instagram ---
+
+Episode 18 of Share Your Bitcoin Journey is up.
+
+Fzero. Designer, illustrator, co-founder of Ninefold. A stroke at under 30 taught him that time is the only currency you cannot count. Now he builds worlds, including $BLEEP, an animated alien trying to understand humanity through Bitcoin.
+
+Link in bio, or search Share Your Bitcoin Journey Episode 18.
+
+https://youtu.be/uCW-3qOJdVo
+
+
+=== CLIP: through the character's eyes (31:09 to 31:50) ===
+
+Cut: https://youtu.be/uCW-3qOJdVo?t=1869
+Start 31:09. End on "just like Mickey" at about 31:50.
+Optional four more seconds, to 31:54: "The alien is the catchy part, and then you figure out he has a Bitcoin logo on his forehead."
+
+--- X, clip ---
+
+"When we are watching a show, we are basically living through the main character's eyes."
+
+Fzero (@go9fold) on why a character teaches what a lecture cannot. @bleepsignal.
+
+Share Your Bitcoin Journey, Ep 18.
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+
+--- X, clip, second post ---
+
+"If you have a really good character, you can take over the world, just like Mickey."
+
+Fzero on $BLEEP. Episode 18.
+
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+
+--- Facebook, clip ---
+
+"When we are watching a show, we are basically living through the main character's eyes. And whatever the character is going through, through compassion, you're feeling it too."
+
+Fzero, co-founder of Ninefold, on his animated series $BLEEP. A good character can carry a world. Just like Mickey. The alien is the way in. The Bitcoin idea rides along.
+
+Share Your Bitcoin Journey, Episode 18. Clip at 31:09.
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+#BitcoinForTheArts #Bitcoin #ShareYourBitcoinJourney #Ninefold #Animation
+
+
+--- LinkedIn, clip ---
+
+"If you have a really good character, you can take over the world, just like Mickey."
+
+Fzero builds $BLEEP, an animated series about an alien trying to understand humanity through Bitcoin. In this clip he says a story works because you live through the main character's eyes. Whatever that character goes through, compassion makes you feel it too. That is how a kid learns proof of work without a lecture.
+
+Share Your Bitcoin Journey, Episode 18. Clip at 31:09.
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+#BitcoinForTheArts #Bitcoin #Animation #Storytelling #Education
+
+
+--- Instagram, clip ---
+
+"We are basically living through the main character's eyes."
+
+Fzero on $BLEEP. A good character can take over the world, just like Mickey. The alien gets you in. Then you notice the mark on his forehead.
+
+Episode 18. Link in bio.
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+
+--- Nostr, clip ---
+
+"When we are watching a show, we are basically living through the main character's eyes. And whatever the character is going through, through compassion, you're feeling it too."
+
+Fzero on $BLEEP. A good character can take over the world, just like Mickey.
+
+nostr:npub1ynfk3s2qaend2knwq7hry2qdxglxxvch03jksjc7stk4ancq6vtshlf3np
+
+Share Your Bitcoin Journey, Ep 18. 31:09.
+https://youtu.be/uCW-3qOJdVo?t=1869
+
+#Bitcoin #Nostr #BitcoinForTheArts #BLEEP #V4V
+
+
+--- Substack ---
+
+Substack Note, with the opening clip attached (0:00 to about 1:15). Not the article.
+
+Opening of Share Your Bitcoin Journey, Episode 18. Fzero.
+
+"The artist is creating first, then you are supposed to serve the artist, help the artist. And your profit will be made because you serve them well."
+
+Full episode: https://youtu.be/uCW-3qOJdVo
+
+
+=== AFTER UPLOAD ===
+
+- Fanfares: add the show RSS feed to the Episode 18 listing now that the exclusive week is over: https://media.rss.com/share-your-bitcoin-journey/feed.xml
+- RSS.com: upload docs/sybj-ep18-fzero.en.vtt as the transcript.
+- Send Fzero the link so @go9fold and @bleepsignal can repost.
