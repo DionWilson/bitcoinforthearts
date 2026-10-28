@@ -194,7 +194,7 @@ export default function EducationWorkshopInterestForm({
               />
               <span>
                 {c.number}. {c.title}{' '}
-                <span className="text-muted">({c.date})</span>
+                <span className="text-muted">({c.date}, {c.time})</span>
               </span>
             </label>
           ))}
