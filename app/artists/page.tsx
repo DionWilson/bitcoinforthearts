@@ -77,6 +77,33 @@ export default function ArtistsPage() {
           ))}
         </div>
 
+        <section className="mt-14 rounded-2xl border border-border bg-foreground px-6 py-8 text-background sm:px-8 sm:py-10">
+          <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-12">
+            <div className="lg:col-span-8">
+              <div className="text-xs font-semibold uppercase tracking-wide text-accent">
+                Artist Directory
+              </div>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
+                Join the private roster.
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed opacity-85 sm:text-base">
+                Working artists can sign up for the BFTA Artist Directory. It is
+                opt-in and private. Your contact information is never published.
+                Only the count of artists is public. Sign up to be counted and
+                to request introductions to other artists through us.
+              </p>
+            </div>
+            <div className="lg:col-span-4">
+              <Link
+                href="/artists/directory"
+                className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+              >
+                Sign up for the directory
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section id="dossiers" className="mt-16 scroll-mt-28">
           <div className="max-w-2xl">
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
