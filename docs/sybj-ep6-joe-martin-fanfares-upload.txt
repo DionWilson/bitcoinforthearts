@@ -1,0 +1,120 @@
+FANFARES UPLOAD (Publish Podcast): Share Your Bitcoin Journey, Episode 6
+Guest: Joe Martin
+Audio already on the publish screen: SYBJ-EP6-Joe-Martin.MP3 (56:21)
+The full video is already public: https://youtu.be/MXUgrViBCaI
+Say that in the description. This is a catalog episode, not a first-week exclusive.
+Names checked against the June 1, 2026 newsletter and his public Nostr profile.
+
+PRICE AND SPLIT
+Price: 21 sats. The 2 on the screen is the empty default. Change it.
+Payment split: 11 sats to Bitcoin For The Arts, 10 sats to Joe Martin.
+Referral: 2 sats to the listener who brings the buyer. That 2 comes out of the 21 when a referral link is used. A direct purchase, with no referral, pays 11 and 10.
+
+PREVIEW: do not keep 3:14 to 3:44. That slice is Joe on piano lessons at age five.
+Use the open. One continuous stretch, inside the 15 to 30 second window.
+  Start: 0:00
+  Length: 30s
+  Plays: 0:00 to 0:30
+  He says the song comes first, then that the first RSS release made about $100 in a week, more than Spotify.
+
+EPISODE TITLE *
+Joe Martin: It's All About the Song
+
+PODCAST
+Share Your Bitcoin Journey
+
+SEASON
+1
+
+EPISODE
+6
+
+GENRES (comma-separated)
+Arts, Music, Bitcoin, Interviews, Culture
+
+TAGS *
+Bitcoin, Joe Martin, Alone in Valentine, Americana, country, songwriter, Isle of Man, Nostr, value for value, V4V, Fountain, Wavlake, sound money, Share Your Bitcoin Journey, Bitcoin For The Arts
+
+ADDITIONAL METADATA
+Field name: guest       Value: Joe Martin
+Field name: host        Value: Dion Wilson
+Field name: website     Value: https://www.joemartinmusic.com
+Field name: album       Value: Alone in Valentine
+
+RSS FEED (optional)
+The episode is already public, so this can go in:
+https://media.rss.com/share-your-bitcoin-journey/feed.xml
+
+DESCRIPTION (paste into Fanfares Description)
+
+Joe Martin is a singer-songwriter and a 21st century troubadour. The song comes first. He grew up in the UK, learned piano as a child, picked up his father's guitar as a teenager, and has spent a decade writing Americana and country, with trips to Nashville along the way. He is based on the Isle of Man. He is fully independent. He sells merch for sats.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson talks with Joe about Alone in Valentine, the album he made on purpose without AI. He recorded it in Nashville with Cal Campbell, son of Glen Campbell, and Cornelius Webb, son of Jimmy Webb. The title comes from Valentine, a town in West Texas, and he went there to shoot the artwork himself. It took nearly two years and most of his savings. He wanted a record that could outlive him.
+
+He also tells the practical part. The first song he put on RSS made about $100 in a week, more than that song had made him on Spotify. A zap is the moment it clicks. Listeners are still catching up to the artists, and artists are still waiting for the listeners. His advice to a younger songwriter is plain: get on Nostr, put the music on RSS, and make it easy for someone to send sats. Save what arrives. That is low time preference. It means choosing the work that lasts over the post that has to perform this week.
+
+Sound money is the other half. Inflation makes a real album more expensive while streaming pays less. AI makes a cheap song easy. Joe's answer is the human one. A machine has not lived the life the song comes from. People still want to stand in a room and hear it.
+
+The full video is already free on YouTube: https://youtu.be/MXUgrViBCaI
+This copy on Fanfares is how a listener pays the people who made it. 21 sats unlocks the audio. 11 sats go to Bitcoin For The Arts and 10 sats go to Joe Martin.
+
+IN THIS EPISODE:
+A songwriter before a brand. The song has to stand even if someone else sings it. Nothing left to take away. Why he left the UK for the Isle of Man, and how he packs a year of shows into spring and autumn. The first zap: about $100 in a week on RSS, against years of Spotify. Why explaining Bitcoin all day loses, and letting someone send sats wins. The chicken and egg between artists and listeners. Alone in Valentine, made without AI, recorded in Nashville, shot in Valentine, Texas. Labels as banks, and the artist in debt before one record sells. Studio costs up, streaming revenue down, small rooms struggling. Suno finishing a song in the room, and why a lived life still cannot be copied. Vinyl, a lyric sheet, and a record you can hold. A room of 30 listeners over a room of a thousand who are waiting for someone else. Who the album is for. What he would tell a younger songwriter. Sats as a cleaner signal than a playlist. Proof of work in a craft. A second live album planned for spring 2027. What a $500 to $2,000 micro-grant would unlock: the marketing budget the sessions used up.
+
+FIND JOE MARTIN:
+Website https://www.joemartinmusic.com
+Merch for sats https://tinyurl.com/joemartinmusic
+Nostr npub19r9qrxmckj2vyk5a5ttyt966s5qu06vmzyczuh97wj8wtyluktxqymeukr
+Lightning joe@nostrich.org
+US vinyl: Grimey's in Nashville. Shipping a record from the Isle of Man costs more than the record.
+Listen where you can send sats back: Fountain and Wavlake.
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
+https://www.bitcoinforthearts.org
+Grants https://www.bitcoinforthearts.org/grants/apply
+Donate https://www.bitcoinforthearts.org/donate
+X https://x.com/Bitcoinfta
+Nostr https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+PRICE IN SATS
+21
+
+PAYMENT SPLIT
+Two rows. The sats must add up to 21. Add Joe as a second row. Right now the screen is sending 100 percent to Bitcoin For The Arts because the price is still 2.
+Bitcoin For The Arts
+npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+11 sats
+
+Joe Martin
+npub19r9qrxmckj2vyk5a5ttyt966s5qu06vmzyczuh97wj8wtyluktxqymeukr
+10 sats
+
+REFERRALS
+Set the referral so the screen says referrers are paid 2 sats.
+2 is about 10 percent of 21. If the field wants a percent, enter 10. If it wants sats, enter 2.
+Leave referrals on. The 1 on the screen is 50 percent only because the price is still 2.
+
+ARTWORK
+1400x1400. The Episode 6 image is already on the site at https://www.bitcoinforthearts.org/SYBJ-EP6-JoeMartin.JPG
+That file is the YouTube thumbnail, so crop it square before you upload it. Joe centered, bottom bar reading Share Your Bitcoin Journey / EP 6.
+
+NOSTR POST
+The song comes first. Joe Martin on making Alone in Valentine without AI, and why the first zap beat years of Spotify.
+
+Share Your Bitcoin Journey, Episode 6. 21 sats. 11 to Bitcoin For The Arts, 10 to Joe.
+
+nostr:npub19r9qrxmckj2vyk5a5ttyt966s5qu06vmzyczuh97wj8wtyluktxqymeukr
+
+Value for value.
+[Fanfares link once it publishes]
+
+X POST
+Share Your Bitcoin Journey, Episode 6, with Joe Martin.
+
+The song comes first. His album Alone in Valentine was made on purpose without AI. The first song he put on RSS made about $100 in a week. Spotify had not come close.
+
+21 sats. 11 to @Bitcoinfta, 10 to Joe.
+[Fanfares link once it publishes]
+
+Full video, already free: https://youtu.be/MXUgrViBCaI
