@@ -220,7 +220,7 @@ export default function EducationPage() {
                   Fall 2026 classes
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
-                  Four one-hour classes on sound money, starting Monday, November 9. Online, plus one session in
+                  Four one-hour classes on sound money, starting Monday, November 9, at 7:00 PM Eastern. Every class is on a Monday at 7:00 PM. Online, plus one session in
                   person in New York.
                 </p>
                 <div className="mt-4 flex flex-col gap-3">

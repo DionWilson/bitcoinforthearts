@@ -32,14 +32,14 @@ export default function ClassSignupSection({
               <span className="text-lg font-semibold text-accent">{c.number}</span>
               <span>
                 <span className="block text-sm font-semibold">{c.title}</span>
-                <span className="block text-xs text-muted">{c.date}</span>
+                <span className="block text-xs text-muted">{c.date} · {c.time}</span>
               </span>
             </li>
           ))}
         </ol>
 
         <p className="mt-4 text-xs leading-relaxed text-muted">
-          Live online webinars with time for questions. One session also meets in person in New
+          Live online webinars, every class on a Monday at 7:00 PM Eastern, with time for questions. One session also meets in person in New
           York; the address goes to everyone registered as soon as the room is set.
         </p>
         <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs font-semibold">
