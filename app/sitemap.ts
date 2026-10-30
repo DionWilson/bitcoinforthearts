@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/education',
     '/education/open',
     '/artists',
+    '/artists/directory',
     ...FEATURED_PROJECTS.map((project) => `/artists/${project.slug}`),
     '/events',
     '/research',

@@ -61,6 +61,7 @@ const sections: SitemapSection[] = [
     heading: "Artists",
     links: [
       { href: "/artists", label: "Featured Projects" },
+      { href: "/artists/directory", label: "Artist Directory" },
       { href: "/artists/ainsley-costello", label: "Ainsley Costello" },
       { href: "/artists/aksana-zasinets", label: "Aksana Zasinets" },
       { href: "/artists/the-bitcoin-executor", label: "The Bitcoin Executor" },

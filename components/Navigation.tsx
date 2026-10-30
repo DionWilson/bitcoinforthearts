@@ -100,6 +100,7 @@ export default function Navigation() {
         href: '/artists',
         children: [
           { label: 'Featured Projects', href: '/artists' },
+          { label: 'Artist Directory', href: '/artists/directory' },
           { label: 'Stories', href: '/stories' },
           { label: 'Artist Hub', href: '/artist-hub' },
           { label: 'Why Bitcoin', href: '/artists/why-bitcoin' },
