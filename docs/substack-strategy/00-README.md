@@ -42,4 +42,4 @@ By the time Art + Zap Weekend happens in September:
 
 - Going viral. Not the goal. A focused 500-person Substack of Bitcoin + arts decision-makers is worth more than a 50,000-person Substack of strangers.
 - Publishing for the sake of publishing. Every post should advance one of: newsjacking + commentary, mission storytelling, Art + Zap awareness, or community building.
-- Replacing the Beehiiv newsletter. Substack is for longform editorial commentary; Beehiiv stays for direct community updates, donation asks, and operational news. The two complement, they don't compete.
+- Replacing the Zeffy newsletter. Substack is for longform editorial commentary. Zeffy is the newsletter: community updates, donation asks, and operational news. Beehiiv was retired in October 2026. The two that remain complement each other. They don't compete.
