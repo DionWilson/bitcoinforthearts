@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -10,16 +10,43 @@ import AutoDonatePopup from "@/components/AutoDonatePopup";
 import CookieBanner from "@/components/CookieBanner";
 import ConsentAnalytics from "@/components/ConsentAnalytics";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
+// Local files, not next/font/google. Google sometimes returns an
+// extensionless font URL that makes the Turbopack build fail.
+const roboto = localFont({
+  src: [
+    {
+      path: "../node_modules/@fontsource/roboto/files/roboto-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/roboto/files/roboto-latin-500-normal.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/roboto/files/roboto-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
   variable: "--font-roboto",
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700"],
+const playfair = localFont({
+  src: [
+    {
+      path: "../node_modules/@fontsource/playfair-display/files/playfair-display-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../node_modules/@fontsource/playfair-display/files/playfair-display-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   display: "swap",
   variable: "--font-playfair",
 });
