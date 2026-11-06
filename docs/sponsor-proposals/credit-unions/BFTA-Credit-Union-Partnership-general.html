@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Bitcoin For The Arts × Your Credit Union · Partnership Proposal</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  :root { --black:#000; --orange:#ff4f14; --neon:#b3ff48; --cream:#fffaf0; --muted:#4a4a4a; --rule:#e3ddd0; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--cream); color:var(--black);
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .slide { width:13.333in; height:7.5in; position:relative; overflow:hidden; background:var(--cream);
+    page-break-after:always; break-after:page; padding:0.7in 0.8in 0 0.8in; }
+  .slide:last-child { page-break-after:auto; break-after:auto; }
+  .slide.dark { background:var(--black); color:var(--cream); }
+  .eyebrow { font-size:12pt; letter-spacing:0.18em; text-transform:uppercase; color:var(--orange); font-weight:700; margin:0 0 14px; }
+  .why .row { margin-bottom:12px; }
+  .why .lede { font-size:17pt; }
+  .dark .eyebrow { color:var(--neon); }
+  h1 { margin:0; font-weight:300; text-transform:uppercase; font-size:46pt; line-height:0.98; letter-spacing:-0.01em; }
+  h1 .accent { color:var(--orange); font-weight:500; }
+  h2 { margin:0 0 20px; font-weight:300; text-transform:uppercase; font-size:36pt; line-height:1.03; }
+  h3 { margin:0 0 8px; font-size:18pt; font-weight:700; }
+  p { margin:0 0 12px; font-size:16pt; line-height:1.45; }
+  .lede { font-size:18pt; line-height:1.42; max-width:11.2in; }
+  .muted { color:var(--muted); }
+  .dark .muted { color:#cfc9bd; }
+  .footer { position:absolute; left:0.75in; right:0.75in; bottom:0.32in; display:flex; justify-content:space-between;
+    font-size:9.5pt; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); border-top:1px solid var(--rule); padding-top:8px; }
+  .dark .footer { color:#9a958b; border-top-color:#333; }
+
+  .cover { display:grid; grid-template-columns: 4.6in 1fr; padding:0; }
+  .cover .left { background:var(--black); display:flex; flex-direction:column; justify-content:center; align-items:center; gap:0.45in; padding:0.6in; }
+  .cover .left img.bfta { width:3.3in; }
+  .cover .left img.cu { max-width:2.8in; max-height:1.2in; background:var(--cream); padding:10px 14px; }
+  .cover .right { padding:1.2in 0.8in 0 0.8in; position:relative; }
+  .cover .neonbar { position:absolute; left:0; right:0; bottom:0; background:var(--black); color:var(--neon);
+    padding:0.3in 0.8in; font-size:13pt; letter-spacing:0.08em; text-transform:uppercase; font-weight:600; }
+
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:0.35in; }
+  .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:0.3in; }
+  .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:0.22in; }
+  .grid4 .card p { font-size:13.5pt; }
+  .card { background:#fff; border:1px solid var(--rule); border-top:5px solid var(--orange); padding:22px 24px 18px; }
+  .card.black { border-top-color:var(--black); }
+  .card .num { font-size:11pt; letter-spacing:0.16em; text-transform:uppercase; color:var(--orange); font-weight:700; margin-bottom:10px; }
+  .card p { font-size:14.5pt; line-height:1.42; margin-bottom:6px; }
+  .card .fine { font-size:10pt; color:var(--muted); margin:0; }
+  .dark .card { background:#111; border-color:#2a2a2a; border-top-color:var(--orange); }
+  .dark .card p { color:var(--cream); }
+  .tier { background:var(--black); color:var(--cream); padding:26px 28px; }
+  .tier .price { font-size:26pt; font-weight:300; color:var(--neon); margin:4px 0 10px; }
+  .tier p { color:var(--cream); font-size:14.5pt; line-height:1.42; }
+  .tier .tag { font-size:11pt; letter-spacing:0.16em; text-transform:uppercase; color:var(--orange); font-weight:700; }
+  .check { display:inline-block; background:var(--neon); color:var(--black); font-size:10pt; font-weight:700; letter-spacing:0.1em;
+    text-transform:uppercase; padding:4px 10px; margin:0 0 12px; }
+  .check.partial { background:var(--rule); }
+  .photos { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:10px; margin-top:12px; }
+  .photos img { width:100%; height:3.6in; object-fit:cover; display:block; }
+  .caption { font-size:11pt; color:var(--muted); margin-top:6px; letter-spacing:0.04em; }
+  .row { display:grid; grid-template-columns:0.7in 1fr; gap:12px; margin-bottom:24px; }
+  .row .n { font-size:28pt; font-weight:300; color:var(--orange); line-height:1; }
+  .row p { font-size:15pt; margin:0; }
+  ul.clean { margin:0; padding-left:20px; }
+  ul.clean li { font-size:16pt; line-height:1.45; margin-bottom:14px; }
+  .contact { background:#fff; border:1px solid var(--rule); padding:24px 26px; }
+  .contact .role { font-size:11pt; letter-spacing:0.14em; text-transform:uppercase; color:var(--orange); font-weight:700; margin-bottom:6px; }
+  .contact .name { font-size:20pt; font-weight:700; }
+  .contact .line { font-size:14pt; color:var(--muted); line-height:1.5; }
+</style>
+</head>
+<body>
+
+<!-- 1 · COVER -->
+<section class="slide cover">
+  <div class="left">
+    <img class="bfta" src="../../../public/brand-kit/derived/main-cream-transparent-800.png" alt="Bitcoin For The Arts" />
+    
+  </div>
+  <div class="right">
+    <div class="eyebrow">Partnership proposal · October 2026</div>
+    <h1>Bitcoin For<br/>The Arts<br/><span class="accent">× Your Credit Union</span></h1>
+    <p class="lede" style="margin-top:22px;">A proposed multi-year founding partnership to bring sound money education, artist grants, and live culture to the members and communities your credit union serves.</p>
+    <p class="muted" style="font-size:14pt;">Prepared for credit union leadership and community giving teams</p>
+    <div class="neonbar">People helping people, with sound money</div>
+  </div>
+</section>
+
+<!-- 2 · THE OPPORTUNITY -->
+<section class="slide">
+  <div class="eyebrow">The opportunity</div>
+  <h2>Members are asking about bitcoin.<br/>Who will they learn it from?</h2>
+  <p class="lede">More members hold bitcoin or are curious about it every year. When their credit union isn't part of that conversation, they learn from exchanges, apps, and social media, and the relationship moves with them. A credit union that teaches sound money plainly and responsibly becomes the trusted place members turn to.</p>
+  <div class="grid3" style="margin-top:22px;">
+    <div class="card">
+      <div class="num">01 · Who we serve</div>
+      <h3>Independent working artists</h3>
+      <p>Freelancers, small-business owners, and creative entrepreneurs with irregular income, chronically underserved by traditional arts funding and by retail banking.</p>
+    </div>
+    <div class="card">
+      <div class="num">02 · What they need</div>
+      <h3>Real financial education</h3>
+      <p>How money works, how to manage income that comes in bursts, how to protect savings, and how new payment rails like bitcoin and Lightning work.</p>
+    </div>
+    <div class="card">
+      <div class="num">03 · Why a credit union</div>
+      <h3>Shared values</h3>
+      <p>Member-owned, community-first, and built to serve people the big institutions overlook. That is the same community Bitcoin For The Arts was built to serve.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 3 · WHY NOW -->
+<section class="slide dark why">
+  <div class="eyebrow">Why now</div>
+  <h2>Bridging credit unions into the<br/>sound money ecosystem</h2>
+  <div class="grid2" style="margin-top:10px;">
+    <div>
+      <p class="lede" style="color:var(--cream);">Credit unions don't need to become bitcoin companies to lead here. They need members who understand what bitcoin is, how to stay safe, and how it fits beside their savings, credit, and retirement planning. That understanding is what Bitcoin For The Arts teaches.</p>
+      <p class="muted" style="font-size:13.5pt;">The NCUA has confirmed that federally insured credit unions may work with third-party providers of digital asset services, within applicable law and with sound risk management (Letter to Credit Unions 21-CU-16). Education is the first, lowest-risk step.</p>
+    </div>
+    <div>
+      <div class="row"><div class="n">01</div><p><strong>Education first.</strong> Members learn the fundamentals from a 501(c)(3), with no products sold and no investment advice.</p></div>
+      <div class="row"><div class="n">02</div><p><strong>Trust stays home.</strong> The credit union is the name on the classroom, not an exchange.</p></div>
+      <div class="row"><div class="n">03</div><p><strong>A younger, entrepreneurial audience.</strong> Creative freelancers are the members most credit unions want and rarely reach.</p></div>
+      <div class="row"><div class="n">04</div><p><strong>Ready when you are.</strong> If the credit union later explores digital asset services, its members already have the foundation.</p></div>
+    </div>
+  </div>
+  <p class="muted" style="font-size:12.5pt; border-top:1px solid #333; padding-top:10px; margin:6px 0 0; max-width:none;"><strong style="color:var(--neon);">Credit union expertise on our board.</strong> Kyle Shirkness spent 19+ years in credit unions, most recently as Director of Operational Excellence and Innovation at Citadel Credit Union, and presented "Bitcoin: The Credit Union Infrastructure Upgrade" at EDGE 2026.</p>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 4 · ALIGNMENT -->
+<section class="slide">
+  <div class="eyebrow">Alignment with your community giving program</div>
+  <h2>Where Bitcoin For The Arts meets<br/>credit union community giving</h2>
+  <p>Most credit union giving programs focus on the same four areas. Bitcoin For The Arts directly serves three, each with outcomes you can report.</p>
+  <div class="grid4" style="margin-top:16px;">
+    <div class="card">
+      <span class="check">Direct</span>
+      <h3>Financial literacy</h3>
+      <p>Live classes on how money works, saving, security, and new payment rails, built for people with irregular income.</p>
+    </div>
+    <div class="card">
+      <span class="check">Direct</span>
+      <h3>Education</h3>
+      <p>The Share Your Bitcoin Journey podcast, artist Stories, our Substack, and open-source class materials, reaching a national audience.</p>
+    </div>
+    <div class="card">
+      <span class="check">Direct</span>
+      <h3>Community and economic development</h3>
+      <p>Micro-grants paid directly to working artists, and live cultural programs that bring paid work and audiences to local communities.</p>
+    </div>
+    <div class="card black">
+      <span class="check partial">Indirect</span>
+      <h3>Health and wellness</h3>
+      <p>Not a primary program. Financial stability is a foundation of personal wellbeing, and our classes address financial stress directly.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 5 · ABOUT BFTA -->
+<section class="slide">
+  <div class="eyebrow">About us</div>
+  <h2>Bitcoin For The Arts</h2>
+  <p class="lede">A New York 501(c)(3) nonprofit and the first nonprofit paying artists exclusively in bitcoin, through micro-grants, sound money education, and live programming.</p>
+  <div class="grid4" style="margin-top:14px;">
+    <div class="card"><div class="num">Grants</div><p>Micro-grants for creation costs, production, studio time, and travel, paid in bitcoin directly to the artist.</p></div>
+    <div class="card"><div class="num">Education</div><p>Live sound money classes for artists and the public, plus free webinars and guides at bitcoinforthearts.org.</p></div>
+    <div class="card"><div class="num">Media</div><p>The Share Your Bitcoin Journey podcast on Apple, Spotify, and YouTube, artist Stories, and our Substack.</p></div>
+    <div class="card"><div class="num">Live programs</div><p>Bitcoin Arts Park and artist programming at national bitcoin events, with every artist on the bill paid.</p></div>
+  </div>
+  <div class="grid2" style="margin-top:18px;">
+    <div class="tier">
+      <div class="tag">Every dollar, by rule</div>
+      <p style="font-size:16pt; margin-top:10px;">55% to artist grants · 30% to programs · 10% to operations · 5% to the HODL Vault, our long-term bitcoin reserve.</p>
+    </div>
+    <div class="tier">
+      <div class="tag">Radical transparency</div>
+      <p style="font-size:16pt; margin-top:10px;">Board minutes, governance policies, and financial records are published at bitcoinforthearts.org/transparency.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 6 · TRACK RECORD -->
+<section class="slide">
+  <div class="eyebrow">Track record</div>
+  <h2>Bitcoin Arts Park, Columbus</h2>
+  <p>In September 2026 we opened Bitcoin Arts Park at the Midwest Bitcoin Summit: live music, theatre with youth performers, live painting, a cinema slate, and a silent auction for artists. Every artist on the bill was paid.</p>
+  <div class="photos">
+    <img src="../../../public/ainsley-band-mbs.jpg" alt="Ainsley Costello and band at Bitcoin Arts Park" />
+    <img src="../../../public/sean-live-painting-mbs.jpg" alt="Shipwreck Sean painting live" />
+    <img src="../../../public/short-north-mbs.jpg" alt="Short North Stage at Bitcoin Arts Park" />
+  </div>
+  <div class="caption">Bitcoin Arts Park, Midwest Bitcoin Summit, Columbus, Ohio, September 23 to 24, 2026.</div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 7 · 2027 ACTIVATIONS -->
+<section class="slide">
+  <div class="eyebrow">Flagship activations · 2027</div>
+  <h2>Where your name shows up</h2>
+  <div class="grid3" style="margin-top:12px;">
+    <div class="card">
+      <div class="num">January 15 to 16 · Naples, Florida</div>
+      <h3>BitcoinDay Naples</h3>
+      <p>Arts programming, a main-stage panel, and an artist talk with a live Lightning payment, before about 200 investors, builders, and capital allocators.</p>
+    </div>
+    <div class="card">
+      <div class="num">July 14 to 15 · Nashville, Tennessee</div>
+      <h3>Bitcoin For The Arts Park Nashville</h3>
+      <p>Two stages and a market row across from the Bitcoin Conference, during one of the largest bitcoin gatherings in the country.</p>
+    </div>
+    <div class="card">
+      <div class="num">Year-round · Online and in person</div>
+      <h3>Sound money classes</h3>
+      <p>Our class series, live online for a national audience, with in-person sessions that can be hosted in your branches or community spaces.</p>
+    </div>
+  </div>
+  <div class="tier" style="margin-top:20px;">
+    <div class="tag">Presenting sponsor recognition</div>
+    <p style="font-size:16pt; margin-top:10px;">Stage screens · Signage across the Park · Livestream credit where the event streams · Printed programs · The produced recap video · Recognition in our newsletter, Substack, and podcast</p>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 8 · ARCHITECTURE -->
+<section class="slide">
+  <div class="eyebrow">Partnership architecture</div>
+  <h2>Three tiers, one partnership</h2>
+  <p>Every tier renews annually and produces outcomes you can report in your annual community impact disclosure. All amounts are per year. Choose the tier that fits your 2027 budget and priorities.</p>
+  <div class="grid3" style="margin-top:20px;">
+    <div class="tier">
+      <div class="tag">Tier 1 · Anchor partner</div>
+      <div class="price">$50,000 to $100,000</div>
+      <p>Presenting sponsor of Bitcoin Arts Park, a named artist grant fund, a co-hosted workshop series, and a member offer for artists.</p>
+    </div>
+    <div class="tier">
+      <div class="tag">Tier 2 · Program sponsor</div>
+      <div class="price">$15,000 to $25,000</div>
+      <p>Name-sponsor one flagship program: Bitcoin Arts Park at one event, the artist Stories and podcast suite, or the class series.</p>
+    </div>
+    <div class="tier">
+      <div class="tag">Tier 3 · Community engagement</div>
+      <div class="price">$5,000 to $15,000</div>
+      <p>A local workshop cohort, regional artist grants, or an employee mentor program, with volunteer hours from your team.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 9 · TIER 1 -->
+<section class="slide">
+  <div class="eyebrow">Tier 1 · $50,000 to $100,000 per year</div>
+  <h2>Anchor partner</h2>
+  <p>For a credit union that wants to lead this partnership, with the most visibility, measurable community impact, and a direct line to a new generation of members.</p>
+  <div class="grid2" style="margin-top:14px; gap:0.3in 0.4in;">
+    <div class="row"><div class="n">01</div><p><strong>Presenting sponsor, Bitcoin Arts Park.</strong> Named presenting sponsorship at Bitcoin For The Arts Park Nashville, July 2027, with full on-site and digital recognition.</p></div>
+    <div class="row"><div class="n">02</div><p><strong>A Sovereign Artist Fund in your name.</strong> A named grant track awarding $500 to $2,000 micro-grants to working artists, a directly reportable outcome with named recipients.</p></div>
+    <div class="row"><div class="n">03</div><p><strong>Artist Financial Wellness and Sound Money workshops.</strong> Quarterly sessions co-hosted with your financial professionals, who cover budgeting, credit, and savings while we cover how money works and how bitcoin works. In person in your service area and streamed nationally.</p></div>
+    <div class="row"><div class="n">04</div><p><strong>A member offer for artists.</strong> Your credit union can extend a membership offer to artists in our community. We share it as a resource in our programs. Artists opt in themselves, and we never share their information.</p></div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 10 · TIERS 2 AND 3 -->
+<section class="slide">
+  <div class="eyebrow">Tiers 2 and 3</div>
+  <h2>Program and community tiers</h2>
+  <div class="grid2" style="margin-top:12px;">
+    <div class="card">
+      <div class="num">Tier 2 · $15,000 to $25,000 / year</div>
+      <h3>Program sponsor: choose one</h3>
+      <ul class="clean">
+        <li><strong>Bitcoin Arts Park</strong> at one event, with on-site presenting credit, digital recognition, and recap video placement.</li>
+        <li><strong>Artist Stories</strong>: the podcast, written profiles, and Substack, with credit on every episode and publication.</li>
+        <li><strong>Sound money class series</strong>, with co-hosting rights and your professionals featured as experts.</li>
+      </ul>
+    </div>
+    <div class="card black">
+      <div class="num" style="color:var(--black);">Tier 3 · $5,000 to $15,000 / year, plus volunteers</div>
+      <h3>Community engagement: choose one</h3>
+      <ul class="clean">
+        <li><strong>Local workshop cohort</strong>: one class series in your service area, co-led with your staff.</li>
+        <li><strong>Regional artist grants</strong>: named grants for artists in your field of membership, reportable per recipient.</li>
+        <li><strong>Employee mentor program</strong>: your professionals paired with artists for financial mentorship.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 11 · THE RETURN -->
+<section class="slide">
+  <div class="eyebrow">The return</div>
+  <h2>What you receive at every tier</h2>
+  <div class="grid3" style="margin-top:14px;">
+    <div class="card"><div class="num">Reportable impact</div><p>Direct alignment with financial literacy, education, and community and economic development, ready for your annual impact report.</p></div>
+    <div class="card"><div class="num">Measurable outcomes</div><p>Artists served, classes delivered, grants awarded, and attendance, reported back to you in writing after each program.</p></div>
+    <div class="card"><div class="num">Visibility</div><p>Your name in front of national bitcoin audiences at Bitcoin Arts Park, and in our classes, podcast, newsletter, and Substack.</p></div>
+    <div class="card"><div class="num">A new generation of members</div><p>Young, entrepreneurial creatives that traditional credit union marketing rarely reaches, meeting you through education first.</p></div>
+    <div class="card"><div class="num">Leadership</div><p>Among the first credit unions to partner with a bitcoin-native arts nonprofit, with a story no other institution in your market can tell.</p></div>
+    <div class="card"><div class="num">A founding seat</div><p>As a founding partner, you help shape the program's structure, schedule, and curriculum with our leadership.</p></div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 12 · SAFEGUARDS -->
+<section class="slide">
+  <div class="eyebrow">Built for compliance</div>
+  <h2>How we protect your brand</h2>
+  <p class="lede">We know a credit union's compliance and risk teams will review any bitcoin partnership. These terms are built into every tier.</p>
+  <div class="grid2" style="margin-top:14px;">
+    <ul class="clean">
+      <li><strong>Education, not advice.</strong> Our classes are financial education. We give no investment advice and sell no products.</li>
+      <li><strong>No product endorsements.</strong> We recognize sponsors by name and logo. We don't promote rates, products, or comparisons.</li>
+      <li><strong>Your review.</strong> Co-branded materials and co-hosted class content are shared with your team in advance.</li>
+    </ul>
+    <ul class="clean">
+      <li><strong>Artist privacy.</strong> We never sell or share artist or member data. Any member offer is opt-in by the artist.</li>
+      <li><strong>Full transparency.</strong> Public board minutes, governance policies, and financial records, plus a written impact report for each sponsor.</li>
+      <li><strong>Charitable gift.</strong> Sponsorships are gifts to a 501(c)(3) and are receipted with the value of any benefits stated.</li>
+    </ul>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts × Your Credit Union</span><span>October 2026</span></div>
+</section>
+
+<!-- 13 · NEXT STEPS -->
+<section class="slide">
+  <div class="eyebrow">Next steps</div>
+  <h2>The ask</h2>
+  <p class="lede">We invite your credit union to enter a multi-year founding partnership with Bitcoin For The Arts, at the tier that best fits your 2027 community giving budget and priorities. We'd welcome the chance to present to your leadership and community giving team at a time that suits you.</p>
+  <div class="grid3" style="margin-top:20px;">
+    <div class="contact">
+      <div class="role">Contact</div>
+      <div class="name">Dion Wilson</div>
+      <div class="line">Founder and Executive Director<br/>Bitcoin For The Arts, Inc.<br/>dionwilson@bitcoinforthearts.org</div>
+    </div>
+    <div class="contact">
+      <div class="role">Credit union partnerships</div>
+      <div class="name">Kyle Shirkness, CBE</div>
+      <div class="line">Board Member, Bitcoin For The Arts<br/>Senior Partner, The Bitcoin Pivot<br/>19+ years in credit unions<br/>kyle.shirkness@bitcoinforthearts.org</div>
+    </div>
+    <div class="contact">
+      <div class="role">Legal standing</div>
+      <div class="name">501(c)(3) nonprofit</div>
+      <div class="line">Bitcoin For The Arts, Inc., New York<br/>EIN 41-2642260<br/>bitcoinforthearts.org/transparency</div>
+    </div>
+  </div>
+  <div class="footer"><span>Bitcoin For The Arts, Inc. · 501(c)(3) · EIN 41-2642260</span><span>bitcoinforthearts.org</span></div>
+</section>
+
+</body>
+</html>
