@@ -1,0 +1,90 @@
+FANFARES UPLOAD — Share Your Bitcoin Journey: Episode 13
+Guest: Anik Malcolm — Depicting Bitcoin: Anik Malcolm and The Whole Entire Universe
+Audio to use: YouTube version https://youtu.be/Uq8f4HcZYQg (has intro clips + outro animation audio)
+RSS version S1 E13 (01:02:35) does NOT have the intro clips. Do not upload the RSS audio here.
+
+SECRET AUDIO FILES *
+- Upload the audio ripped from the YouTube version, not the RSS feed MP3.
+- Suggested filename: SYBJ-EP13-Anik-Malcolm-YouTube-Audio.mp3
+- How to get it: YouTube Studio > Content > Episode 13 > Download MP3, or export audio from the CapCut YouTube master. Then Choose Files in Fanfares.
+- This is the version with the cold-open intro clips and the closing 5-minute animation walkthrough of The Whole Entire Universe, included with permission. The newsletter says do not skip the outro.
+
+PREVIEW AUDIO (optional but recommended)
+- Upload a 60 to 90 second public AAC preview. Fanfares publishes this unencrypted.
+- Suggested preview: the 21 million beads math moment (276 x 276 x 276 cube, 4,096 squares per face, halving 64 / 32 / 16 / 8 / 4 / 2, only works cleanly at 21 million) OR the gallery meeting that felt like the fiat system sitting across the table.
+- Suggested filename: SYBJ-EP13-Preview-90sec.mp3
+
+PODCAST ARTWORK (optional but do it)
+- Fanfares wants 1400x1400. The YouTube thumbnail is landscape.
+- Source: https://www.bitcoinforthearts.org/Ep13AnikMalcolm.JPG
+- Make a 1400x1400 square the same way as Ep 11 and Ep 12: center the photo on BFTA orange, bottom orange bar with Share Your Bitcoin Journey / EP 13 lockup.
+- Upload JPG or PNG or WebP as Cover Art.
+
+EPISODE TITLE *
+Depicting Bitcoin: Anik Malcolm and The Whole Entire Universe
+
+PODCAST
+Share Your Bitcoin Journey
+
+SEASON
+1
+
+EPISODE
+13
+
+GENRES (comma-separated)
+Arts, Visual Arts, Bitcoin, Culture, Education
+
+TAGS *
+First tag is required. Paste all, comma separated.
+Bitcoin, Depicting Bitcoin, Anik Malcolm, The Whole Entire Universe, fine art, oil painting, 21 million, classical training, sound money, Bitcoin art, art patronage, Lugano, Roatan, fatherhood, craft, Share Your Bitcoin Journey, Bitcoin For The Arts
+
+ADDITIONAL METADATA / RSS FEED (optional)
+Show feed: https://media.rss.com/share-your-bitcoin-journey/feed.xml
+Episode RSS page: https://rss.com/podcasts/share-your-bitcoin-journey/3099432/
+YouTube version (this audio): https://youtu.be/Uq8f4HcZYQg
+
+DESCRIPTION (paste into Fanfares Description)
+
+Classically trained in London, disillusioned with the arts establishment in Reykjavik, and now living with his wife and children in the mountains of central Italy, Anik Malcolm is producing some of the most rigorous fine art anywhere in the Bitcoin space today.
+
+His practice carries a two-word tagline: Depicting Bitcoin. His most consequential work is a monumental oil painting titled The Whole Entire Universe, which debuted at Bitcoin 2026 in Las Vegas after more than 900 hours of labor. Twenty-one million beads. A cube of 276 by 276 by 276. Each face yields exactly 4,096 squares. The halving pattern appears in the image itself, and it only works cleanly at 21 million.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson sits down with Anik to go back to the beginning: classical training, the gallery-world moment that broke the spell, the move to Italy, how Bitcoin became not just a subject but the subject of his entire practice, collecting and exhibiting outside the museum circuit in places like Lugano and Roatan, fatherhood inside a sound-money household, and what a renaissance in serious craft looks like when it happens outside MoMA.
+
+This Fanfares edition uses the YouTube version audio with intro clips and the closing animation walkthrough. The RSS audio version does not have the intro.
+
+IN THIS EPISODE:
+Knowing he would spend his life making things since childhood. Classical fine art training in London and pattern recognition. Disillusionment in London and Reykjavik. The gallery meeting that felt like fiat across the table. Moving to central Italy. How Bitcoin clicked after selling a Reykjavik flat. Folding an identity into Depicting Bitcoin. The Whole Entire Universe math and Las Vegas debut. Patronage geography: Lugano, Las Vegas, planned Roatan sculpture. Artistic household and kids. Next five to ten years. What a BFTA micro-grant would unlock for a sculpture version.
+
+FIND ANIK:
+Website https://anikmalcolm.com
+X: Anik Malcolm
+Nostr: Anik Malcolm
+YouTube https://youtu.be/Uq8f4HcZYQg
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin micro-grants, workshops, and education. The first nonprofit paying artists exclusively in Bitcoin.
+https://www.bitcoinforthearts.org
+Grants https://www.bitcoinforthearts.org/grants/apply
+Donate https://www.bitcoinforthearts.org/donate
+X https://x.com/Bitcoinfta
+Nostr https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+PRICE IN SATS
+2
+
+PAYMENT SPLIT (same as Ep 10 and 11)
+npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw — 2 sats — 100 percent
+Bitcoin For The Arts keeps 100 percent. No guest split was set for this episode.
+
+REFERRALS
+50 percent. Leave at 1 sat to referrer. At a 2 sat price that splits 1 sat BFTA / 1 sat referrer, same as your Ep 10 and Ep 11 setup. Do not disable referrals.
+
+PODCAST PREVIEW CHECK
+Title: Depicting Bitcoin: Anik Malcolm and The Whole Entire Universe
+Podcast: Share Your Bitcoin Journey
+Season 1, Episode 13
+Price: 2 sats
+Secret Audio: YouTube-version MP3 selected
+Cover: 1400x1400 square selected
