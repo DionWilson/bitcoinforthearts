@@ -1,0 +1,135 @@
+RSS.COM UPLOAD DETAILS. Share Your Bitcoin Journey: Episode 7
+
+Guest: Thomas Forsyth (designer, maker, engineer; North East London)
+YouTube: https://youtu.be/ZepNitUDItg
+Runtime: 1:16:29
+Source: plain-text transcript (no timestamps). Name auto-transcribed as "Forsype";
+correct spelling Thomas Forsyth, per https://www.thomasforsyth.co.uk/about/
+
+
+=== EPISODE TITLE ===
+
+Thomas Forsyth: The General Handychap's Path to Sound Money
+
+
+=== EPISODE TITLE (BACKUP OPTIONS) ===
+
+- Sound Money, Sound Craft: London Maker Thomas Forsyth
+- Thomas Forsyth: Three Times Finding Bitcoin Before It Clicked
+- From Paper Iron Man to Nostr: Maker Thomas Forsyth
+
+
+=== EPISODE TYPE ===
+
+Full
+
+
+=== SEASON / EPISODE NUMBER ===
+
+Season 1, Episode 7
+(rss.com shows "Last episode: 13". Type 7 manually. This fills the gap in the feed.)
+
+
+=== EXPLICIT ===
+
+No
+
+
+=== AI CONTENT ===
+
+No. Human interview, human-produced.
+
+
+=== EPISODE NOTES (paste into Episode Notes, under 4000 characters) ===
+
+London designer, maker, and engineer Thomas Forsyth works across more materials than most makers touch in a career: wood, metal, ceramic, plastic, paper, electronics, 3D printing, laser cutting, and CNC. His work has been made for the Saatchi Gallery, Glastonbury Festival, Nissan, Honda, Greenpeace, Cadbury, Lush, Ogilvy, and the Wall Street Journal, plus a life-size paper K-2SO with a moving head for Silicon Valley Comic Con.
+
+In this episode, Bitcoin For The Arts founder Dion Wilson sits down with Tom to talk about why he stopped trying to put a label on what he does, and let the work people needed decide it for him. He calls himself a general handychap, and he means it: the gallery commission and the shelf on someone's wall both count.
+
+Tom tells the story of a Glastonbury build where everything that could go wrong did, and what sixteen-hour days in the mud taught him about working smart instead of long. He explains the secret he and paper artist Owen Gildersleeve kept from the Comic Con organizers until the reveal, and why an art event brief is a different kind of creative problem than a brand job.
+
+Then the rabbit hole. Bitcoin showed up three times before it clicked: a bar in Finsbury Park, a quiet January spent teaching himself about money, and years of watching it do what people said it would do. He describes his first Lightning payment in a family restaurant in South London, and why Nostr is the first social media he has ever enjoyed. "Your thoughts became zaps, and those zaps became food in your belly."
+
+He also gives a maker's view on AI, from someone who watched 3D printing go from hype to useful tool, and on the link between sound money and sound craft: reality tests your work, and it humbles you.
+
+IN THIS EPISODE:
+- Building dens as a kid, and how it "got totally out of hand"
+- Why he stopped trying to define what he does
+- Graduating into the 2008 crash and learning to freelance
+- What a general handychap is, and why ego has no place in it
+- The Glastonbury build that almost broke him
+- Paper Iron Man, then K-2SO with a secretly animated head
+- Signage for Art Night London on an art-event budget
+- Running a solo creative consultancy with a network, not a payroll
+- Three times discovering Bitcoin before it clicked
+- Learning money and finance during a quiet January
+- From Damus to Primal: owning your profile with a private key
+- First Lightning payment, and getting zapped by strangers
+- 3D printing, AI, and using new tools without losing the work
+- Sound money and sound craft: proof of work in the physical world
+- The London maker scene and the people he admires
+- Advice for a freelance maker with no bitcoin: passion, low time preference, and learning what money is
+- A sculpture series of melting objects, and what a micro-grant would unlock
+
+FIND THOMAS FORSYTH:
+Website: https://www.thomasforsyth.co.uk
+Nostr: Thomas Forsyth on Primal
+
+ABOUT BITCOIN FOR THE ARTS:
+501(c)(3) nonprofit empowering artists with Bitcoin grants, education, and sovereign funding tools.
+https://www.bitcoinforthearts.org
+Donate: https://www.bitcoinforthearts.org/donate
+Grants: https://www.bitcoinforthearts.org/grants/apply
+X: https://x.com/Bitcoinfta
+Nostr: https://primal.net/p/npub15rnn220qfdyhpgv9apjt38nadc0dzj8a7zpcrd2q4spq5apvvt2suswnaw
+
+
+=== EPISODE KEYWORDS ===
+
+Bitcoin, Thomas Forsyth, maker, designer, London, 3D printing, Nostr, Primal, Lightning, sound money, proof of work, Share Your Bitcoin Journey, Bitcoin For The Arts
+
+
+=== EPISODE LOCATION (Podcasting 2.0) ===
+
+What place this episode is about: London, United Kingdom
+Where this episode is made: New York, NY (Dion's recording location; leave blank if unsure)
+
+
+=== COVER ART ===
+
+The 3000x3000 cover already loaded in rss.com is fine. Repo web version: public/SYBJ-web-EP7-Thomas-.png
+
+
+=== CHAPTERS ===
+
+From the episode VTT. Titles under 45 characters.
+rss.com PAID ads can shift these times; turn PAID off for this episode for exact chapters.
+
+00:00:00 Cold open
+00:00:54 Welcome Thomas Forsyth
+00:02:46 Building dens that got out of hand
+00:04:00 Working across every material
+00:06:32 Graduating into the 2008 crash
+00:09:03 Letting the market shape the work
+00:15:44 What a general handychap is
+00:18:12 The Glastonbury build that broke him
+00:24:56 Paper Iron Man to a moving K-2SO
+00:28:41 Art Night London on an art budget
+00:30:57 Running a solo creative consultancy
+00:33:33 Three times finding Bitcoin
+00:42:40 Finding Nostr: Damus to Primal
+00:49:07 First Lightning payment, first zaps
+00:51:47 AI, 3D printing, and new tools
+00:59:30 Sound money and sound craft
+01:02:37 The London maker scene
+01:06:47 Advice for a fiat-paid maker
+01:10:13 Next: a sculpture series returns
+01:11:47 Find Tom on Nostr  -> https://www.thomasforsyth.co.uk
+01:13:42 The micro-grant question  -> https://www.bitcoinforthearts.org/grants/apply
+
+
+=== NOTES BEFORE PUBLISHING ===
+
+- Ask Tom for his npub so the Nostr line can be a direct link.
+- Value 4 Value split: only with his Lightning address. His site says he welcomes bitcoin payments for services.
+- "Ky Labs" (a London mechatronics studio he mentions) is left out: spelling unconfirmed.
