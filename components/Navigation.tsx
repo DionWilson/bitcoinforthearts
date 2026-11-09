@@ -132,6 +132,7 @@ export default function Navigation() {
         children: [
           { label: 'Cultural Events', href: '/programming#cultural-events' },
           { label: 'Education', href: '/education' },
+          { label: 'Facilitators', href: '/education/facilitators' },
           { label: 'Events', href: '/events' },
         ],
       },

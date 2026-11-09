@@ -55,6 +55,7 @@ const sections: SitemapSection[] = [
       { href: "/education", label: "Education Overview" },
       { href: "/education/open", label: "Open Curriculum" },
       { href: "/education/webinar", label: "Webinar" },
+      { href: "/education/facilitators", label: "Facilitators" },
     ],
   },
   {
