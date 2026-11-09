@@ -180,6 +180,28 @@ export default function EducationPage() {
 
               <div className="rounded-2xl border border-border bg-background p-6">
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted">
+                  Facilitators
+                </div>
+                <h2 className="mt-2 text-xl font-semibold tracking-tight">
+                  Taught in their own voice.
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  Facilitators record the sound money classes for their own
+                  communities. Monika Bravo is the first. The roster grows from
+                  here.
+                </p>
+                <div className="mt-4">
+                  <Link
+                    href="/education/facilitators"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md bg-accent px-5 py-2 text-sm font-semibold text-accent-fg transition-colors hover:opacity-90"
+                  >
+                    Meet the facilitators
+                  </Link>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-background p-6">
+                <div className="text-xs font-semibold uppercase tracking-wide text-muted">
                   Webinars
                 </div>
                 <h2 className="mt-2 text-xl font-semibold tracking-tight">
@@ -254,6 +276,12 @@ export default function EducationPage() {
                   Related
                 </div>
                 <div className="mt-3 flex flex-col gap-3">
+                  <Link
+                    href="/education/facilitators"
+                    className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-surface px-5 py-2 text-sm font-semibold transition-colors hover:opacity-90"
+                  >
+                    Facilitators
+                  </Link>
                   <Link
                     href="/programming"
                     className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-surface px-5 py-2 text-sm font-semibold transition-colors hover:opacity-90"

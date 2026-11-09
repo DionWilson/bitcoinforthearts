@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about/governance/grant-settlements',
     '/education',
     '/education/open',
+    '/education/facilitators',
     '/artists',
     '/artists/directory',
     ...FEATURED_PROJECTS.map((project) => `/artists/${project.slug}`),
