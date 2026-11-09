@@ -40,7 +40,7 @@ export const facilitators: Facilitator[] = [
     links: [
       { label: 'Studio of Endless Ideas', href: 'https://studioofendlessideas.com' },
       { label: 'I AM OPtimist', href: 'https://www.monikabravo.blog' },
-      { label: 'X @bravomonika', href: 'https://x.com/bravomonika' },
+      { label: 'Substack', href: 'https://substack.com/profile/7388133-monika-bravo' },
     ],
   },
 ];
