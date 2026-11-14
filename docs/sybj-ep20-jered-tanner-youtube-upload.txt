@@ -155,7 +155,47 @@ Share Your Bitcoin Journey
 
 === END SCREEN ===
 
-Last 20 seconds: Bitcoin For The Arts channel, the Share Your Bitcoin Journey playlist, and https://www.bitcoinforthearts.org/grants/apply
+Start at 1:08:30, on the thank-you. That sits inside the last 20 seconds and leaves the micro-grant answer clear.
+
+If Episode 18 or Episode 19 already has an end screen, use Import from video, then keep this layout:
+
+1. Playlist: Share Your Bitcoin Journey
+2. Subscribe
+3. Link: https://www.bitcoinforthearts.org/grants/apply
+
+If Link is not offered, the channel site is not associated yet. Use a video element instead and pick Episode 4, Benjamin Ella (https://youtu.be/8FadoHhvxwY).
+
+
+=== CARDS ===
+
+Three cards. All of them end before the end screen. Link cards only work for bitcoinforthearts.org. Do not card Unchained, Bandcamp, or a coin.
+
+1. At 0:10:19, when Dion asks what the money looked like.
+   Type: Video
+   Video: Share Your Bitcoin Journey, Episode 4, Benjamin Ella (https://youtu.be/8FadoHhvxwY)
+   Teaser: Another performer
+
+2. At 0:32:10, on "You did not miss the boat."
+   Type: Link
+   URL: https://www.bitcoinforthearts.org/education
+   Teaser: Learn the basics
+
+3. At 0:51:05, on "Artists feel it first."
+   Type: Link
+   URL: https://www.bitcoinforthearts.org/grants/apply
+   Teaser: Apply for a grant
+
+Keep each teaser under 30 characters.
+
+
+=== QUIZ ===
+
+Skip it. The cards and the end screen already give the next step.
+
+
+=== SUBTITLES ===
+
+Add English. Let YouTube generate them. Do not upload the raw WEBVTT. Then fix the names in the list under CAPTIONS.
 
 
 === CAPTIONS ===
