@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "BFTA Sans";
+  src: url("fonts/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "BFTA Sans";
+  src: url("fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "BFTA Sans";
+  src: url("fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+body {
+  font-family: "BFTA Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #FFFAF0;
+}
+
+.orange {
+  background: #FF4F14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.title-band {
+  background: #000000;
+  flex: 0 0 auto;
+}
+
+.kicker {
+  margin: 0;
+  color: #FFFAF0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+h1 {
+  margin: 0;
+  color: #B3FF48;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: -0.015em;
+}
+
+.session {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFAF0;
+}
+
+.name {
+  margin: 0;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.when {
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+
+.clock {
+  margin: 0;
+  color: #FF4F14;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1;
+}
+
+.blurb {
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.35;
+  max-width: 18em;
+}
+
+.footer {
+  background: #000000;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.qr {
+  display: block;
+  background: #FFFAF0;
+  flex: 0 0 auto;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.reserve {
+  margin: 0;
+  color: #B3FF48;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.url {
+  margin: 0;
+  color: #FFFAF0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.meta {
+  margin: 0;
+  color: #FFFAF0;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.neon-bar {
+  height: 8px;
+  background: #B3FF48;
+  flex: 0 0 auto;
+}
+
+.square {
+  width: 1080px;
+  height: 1080px;
+}
+
+.square .orange { height: 300px; }
+.square .logo { width: 300px; }
+.square .title-band { padding: 28px 56px 26px; }
+.square .kicker { font-size: 20px; margin-bottom: 12px; }
+.square h1 { font-size: 78px; }
+.square .session { padding: 0 56px; }
+.square .name { font-size: 52px; margin-bottom: 22px; }
+.square .when { font-size: 32px; margin-bottom: 12px; }
+.square .clock { font-size: 28px; margin-bottom: 22px; }
+.square .blurb { font-size: 26px; }
+.square .footer { gap: 28px; padding: 22px 56px 18px; }
+.square .qr { width: 148px; height: 148px; }
+.square .reserve { font-size: 22px; margin-bottom: 8px; }
+.square .url { font-size: 24px; margin-bottom: 8px; }
+.square .meta { font-size: 20px; }
+
+.portrait {
+  width: 1080px;
+  height: 1350px;
+}
+
+.portrait .orange { height: 380px; }
+.portrait .logo { width: 360px; }
+.portrait .title-band { padding: 40px 64px 36px; }
+.portrait .kicker { font-size: 24px; margin-bottom: 16px; }
+.portrait h1 { font-size: 96px; }
+.portrait .session { padding: 0 64px; }
+.portrait .name { font-size: 64px; margin-bottom: 28px; }
+.portrait .when { font-size: 40px; margin-bottom: 16px; }
+.portrait .clock { font-size: 34px; margin-bottom: 28px; }
+.portrait .blurb { font-size: 32px; max-width: 22em; }
+.portrait .footer { gap: 36px; padding: 32px 64px 28px; }
+.portrait .qr { width: 188px; height: 188px; }
+.portrait .reserve { font-size: 28px; margin-bottom: 12px; }
+.portrait .url { font-size: 30px; margin-bottom: 12px; }
+.portrait .meta { font-size: 26px; }
