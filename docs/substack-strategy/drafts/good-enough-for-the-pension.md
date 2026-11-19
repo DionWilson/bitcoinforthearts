@@ -66,7 +66,7 @@ Comptroller DiNapoli's own office describes his role this way: "As the sole trus
 
 Most large pensions are run by boards. New York's is run by one person. That is not a criticism. It is the structure, and it means there is one name attached to what the fund owns.
 
-Fairness matters here, because the honest version of this story is stronger than the angry one.
+Fairness matters here, because the honest version is stronger than the angry one.
 
 The fund's written investment policy says its internally managed stocks use "passive management strategies" meant to "approximate closely the returns and exposure of the broad market indices." In plain language, the fund buys the whole market in proportion, the way an index fund does. It does not usually pick individual stocks.
 
@@ -136,7 +136,7 @@ That is the circular economy this organization exists to build. An artist prices
 
 A New York artist who keeps their Bitcoin in Cash App cannot receive that Lightning payment in Cash App. A New York painter with a Square reader at a weekend market cannot switch on Square Bitcoin. The tools are built, licensed in New York, and switched off for New Yorkers by the company, under rules set in Albany.
 
-There is good news, and it is the most useful paragraph in this article. **You do not need a license to hold your own Bitcoin or to accept it for your own work.** The BitLicense applies to businesses that hold or move Bitcoin for other people. A New York artist who uses a self-custody Lightning wallet, one where you hold your own keys, can receive sats for a print tonight. The restriction falls on the companies that would do it for you, which means it falls hardest on the people least comfortable doing it themselves.
+Now the good news. **You do not need a license to hold your own Bitcoin or to accept it for your own work.** The BitLicense applies to businesses that hold or move Bitcoin for other people. A New York artist who uses a self-custody Lightning wallet, one where you hold your own keys, can receive sats for a print tonight. The restriction falls on the companies that would do it for you, which means it falls hardest on the people least comfortable doing it themselves.
 
 ## The governor, the moratorium, and the mayor
 
@@ -148,7 +148,7 @@ The moratorium was narrow. It did not ban owning, trading, or mining Bitcoin, an
 
 One of the Assembly members listed as a cosponsor of that moratorium bill, A7389C, was Zohran Mamdani, now mayor of New York City.
 
-The mayor has no power over the BitLicense. Financial regulation comes from Albany and Washington. It would be unfair to blame him for DFS rules, and this article does not. But his record on Bitcoin is public, and it is consistent. In 2023, as an Assembly member, he supported Attorney General James's crypto consumer protection bill, saying, "When crypto companies collapse, it isn't the rich who suffer, it's small investors who disproportionately come from low-income and communities of color." In January 2026, he said he holds no crypto and would not buy the memecoin his predecessor had promoted.
+The mayor has no power over the BitLicense. Financial regulation comes from Albany and Washington. DFS rules are not his to answer for. But his record on Bitcoin is public, and it is consistent. In 2023, as an Assembly member, he supported Attorney General James's crypto consumer protection bill, saying, "When crypto companies collapse, it isn't the rich who suffer, it's small investors who disproportionately come from low-income and communities of color." In January 2026, he said he holds no crypto and would not buy the memecoin his predecessor had promoted.
 
 That concern for small investors is real, and the losses are real. The FBI counted 318 complaints of cryptocurrency kiosk fraud in New York State, totaling $5,777,640 in losses, figures cited in a 2026 New York City Council resolution. Scams exist. Collapses like FTX happened. Bitcoin for the Arts has no interest in pretending otherwise.
 
@@ -156,7 +156,7 @@ But protecting small people and keeping small people out are different things. F
 
 ## The comptroller already found the cracks
 
-One more record belongs in this article, and it comes from the comptroller himself.
+The sharpest finding on the BitLicense came from the comptroller himself.
 
 In January 2024, Comptroller DiNapoli's auditors reviewed how DFS runs the BitLicense. They found "limited assurance that DFS is adequately performing its oversight responsibilities related to the application for and supervision of virtual currency licenses in the state, creating the risk that licenses could be granted to" applicants who should not get them. At the time, DFS supervised 21 virtual currency licensees holding more than $175 billion in assets.
 
@@ -194,7 +194,7 @@ New Yorkers do not need a different set of rules than the pension fund. They nee
 
 Stay curious, stay steady, and keep creating.
 
-*This article is for educational purposes only and is not financial, investment, legal, or tax advice. Bitcoin for the Arts is a nonpartisan 501(c)(3) nonprofit. We do not support or oppose any candidate for public office. We report public officials' official actions so artists can understand the systems that shape their money.*
+*For educational purposes only. This is not financial, investment, legal, or tax advice. Bitcoin for the Arts is a nonpartisan 501(c)(3) nonprofit. We do not support or oppose any candidate for public office. We report public officials' official actions so artists can understand the systems that shape their money.*
 
 ## END OF BODY
 
@@ -275,7 +275,7 @@ You can buy the paper. What New York makes harder is using Bitcoin as money. Cas
   - The post tied Mayor Mamdani to the BitLicense. The mayor has no authority over DFS. The article says that plainly and uses his actual record instead (cosponsor of the 2022 moratorium bill, 2023 statement, January 2026 statement).
   - "Quietly buy" was softened. The holding is disclosed in a public SEC filing. The article says nobody announced it, which is true.
   - The post implied a deliberate purchase. The fund's policy is passive indexing for internally managed stocks, and the filing gives no reason for the added shares. The article says so and makes that the stronger point: the market priced Bitcoin in, and the trustee has not carved it out.
-- **Strongest new fact:** Attorney General James's April 2025 letter to Congress ("uniquely unsuitable for retirement savings," "no intrinsic value") set against the state pension's $89M in Bitcoin-linked stocks. Her letter targeted retirement accounts like 401(k)s, not the defined-benefit pension. The article states that distinction so critics cannot.
+- **Strongest new fact:** Attorney General James's April 2025 letter to Congress ("uniquely unsuitable for retirement savings," "no intrinsic value") set against the state pension's $89M in Bitcoin-linked stocks. Her request was about "retirement accounts," and the state pension is a defined-benefit plan. The body states that distinction so critics cannot.
 - **Second strongest:** DiNapoli's own 2024 audit of the BitLicense ("limited assurance") and the 2026 follow-up (three of six recommendations only partially implemented).
 - **Share-count history:** Strategy split 10-for-1 in August 2024. Pre-split share counts (for example 9,353 at June 30, 2024) are not comparable to later counts. The article only compares 2022 to post-split figures in words, not as a growth multiple.
 - **Prices:** Strategy closed Sept 30, 2026 near $153.09 and Nov 17, 2026 at $96.50 (Bitcoin Magazine, crypto.news). Re-check the current price on the day of publishing and update the "about 37 percent lower" line only if you add a new date.
@@ -284,5 +284,6 @@ You can buy the paper. What New York makes harder is using Bitcoin as money. Cas
 - **Optional:** Request comment from the comptroller's press office and the DFS press office (contacts on osc.ny.gov and dfs.ny.gov) with the specific questions in the "What New Yorkers can do" list. Add any response, or "did not respond by publication," above the sources.
 - No em dashes and no en dashes anywhere in the piece (BFTA house style; see `../06-house-style.md`).
 - Voice is Bitcoin for the Arts as an organization, not first person.
+- The body never refers to itself ("in this article," "this piece does not"). State the point directly.
 - Suggested tags: new-york, bitcoin, pensions, bitlicense, lightning, artists, sound-money, public-records.
 - Suggested cover: the Strategy line from the 13F, cropped and enlarged, on black. No coins, no rockets.
