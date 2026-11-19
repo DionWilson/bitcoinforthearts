@@ -286,4 +286,4 @@ You can buy the paper. What New York makes harder is using Bitcoin as money. Cas
 - Voice is Bitcoin for the Arts as an organization, not first person.
 - The body never refers to itself ("in this article," "this piece does not"). State the point directly.
 - Suggested tags: new-york, bitcoin, pensions, bitlicense, lightning, artists, sound-money, public-records.
-- Suggested cover: the Strategy line from the 13F, cropped and enlarged, on black. No coins, no rockets.
+- Cover: `public/substack-cover-good-enough-for-the-pension.jpg` (2912x1632, 16:9). The Strategy line from the 13F with 352,850 and SOLE highlighted, the headline, and the Cash App disclosure. Editable source: `docs/substack-strategy/covers/good-enough-for-the-pension-cover.html`. No coins, no rockets.
