@@ -1,8 +1,8 @@
-# Who Takes Down the Lights
+# No Crew, No Show
 
 *Broadway's stagehands and wardrobe crews are working without a contract, and a strike is authorized for the busiest weeks of the year. The fight is over money. Every side at the table is losing to the same thing, and almost nobody in the room is naming it.*
 
-**Bitcoin for the Arts · Substack draft · Nov 21, 2026**  
+**Bitcoin for the Arts · Published on Substack Nov 21, 2026:** https://bitcoinforthearts.substack.com/p/no-crew-no-show    
 **Pillar:** Newsjacking the arts labor crisis + sound money for every department of a production  
 **Estimated read:** 11-13 minutes  
 **News hook:** IATSE Local One and Local 764 negotiations with The Broadway League, November 2026
@@ -11,11 +11,11 @@
 
 ## TITLE
 
-Who Takes Down the Lights
+No Crew, No Show
 
 ## SUBTITLE
 
-Broadway's stagehands have authorized a strike for the holiday season. The wardrobe crew votes Sunday. Both are fighting over money, and every side at the table is losing to the same thing.
+Broadway's stagehands and wardrobe crews are fighting for their value. So is everyone else at the table, and they are all losing to the same thing.
 
 ---
 
