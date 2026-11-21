@@ -97,22 +97,47 @@ Bitcoin for the Arts founder Dion Wilson learned that from both sides of the sta
 
 As a dance student at SUNY Purchase, Dion spent one semester not performing at all. He worked the technical side of the school's spring concert instead, and learned to operate the lighting board. He sat where the cues get called and watched what it takes to make a dancer's entrance look effortless. It gave him an appreciation of the production side of theater that no amount of time on stage could have.
 
-Years later, as a dancer with the Alvin Ailey American Dance Theater, Dion was out with an injury. During that time, the Ailey stagehands let him work alongside them and help set up one of the productions. He had spent his career knowing what it felt like when the curtain went up at prime time on a Saturday night. He had never known what it was like to take down the lights at the end of that night. He learned it from his IATSE brothers and sisters.
+Years later, as a dancer with the Alvin Ailey American Dance Theater, Dion was out with an injury. During that time, the Ailey stagehands let him work alongside them on one of the productions, from the load-in to the load-out. He had spent his career knowing what it felt like when the curtain went up at prime time on a Saturday night. He had never known what it took to hang those lights before anyone arrived, or what it was like to take them down at the end of the night after everyone had gone home. He learned both from his IATSE brothers and sisters.
 
-That is the half of every show the audience never sees. Hours before the house opens, and hours after it empties, the crew is there. They work rigorous, around-the-clock schedules so the production happens on time, every time. And now they are in the same position artists have been in for years: fighting to hold on to the value of their work inside a system that quietly takes a little of it every year.
+That is the half of every show the audience never sees, and it has two ends.
+
+The load-in is where a production is born. An empty stage, a loading dock, and trucks full of steel, cable, scenery, and fixtures. Before a single dancer warms up, the crew hangs and focuses every light, flies every piece, runs every line of cable, builds the deck, and tests every cue until the show can run the same way every night. Every artist who has ever had a perfect entrance owes it to a load-in they never saw.
+
+The load-out is where a production ends. The last bow is taken, the audience goes home, and the crew takes the whole thing apart, safely and fast, often through the night, so the theater is ready for whatever comes next.
+
+Between the two, the crew is there hours before the house opens and hours after it empties. They work rigorous, around-the-clock schedules so the production happens on time, every time. And now they are in the same position artists have been in for years: fighting to hold on to the value of their work inside a system that quietly takes a little of it every year.
 
 ## Why crews may understand Bitcoin faster than anyone
 
 Bitcoin for the Arts teaches artists Bitcoin and sound money principles. It is time to bring that education to every department that makes a production go live: stagehands, wardrobe, hair and makeup, sound, props, scenic artists.
 
-There is a good reason to think the crews will get it fast. Many of the ideas behind Bitcoin are things they already work with every night.
+There are two reasons to think the crews will get it fast. The first is technical. Many of the ideas behind how Bitcoin works are things they already handle every night.
 
 - **A cue list.** A lighting console runs a show from a list of cues, executed in order, the same way every night. Everyone on headset knows where the show is. Bitcoin's ledger is a list of transactions in blocks, in order, that anyone can check. Nobody can quietly rewrite cue 47 after the show has run.
 - **The tracking backup.** On a big show, a second console runs in parallel, tracking every move of the first, so that if one fails the show does not stop. Bitcoin works with thousands of copies of the ledger, held independently around the world. There is no single console to unplug.
 - **The counterweight.** A fly system works because weight on the arbor balances the load on the pipe. Add scenery, add weight. Bitcoin has its own balance, the difficulty adjustment, which keeps new blocks coming roughly every ten minutes no matter how much computing power joins or leaves the network.
-- **The load-out.** You cannot fake a load-out. The trucks are full or they are not. Bitcoin's security works the same way. It is called proof of work, and it rests on real energy spent, which cannot be counterfeited.
+- **The load-in and the load-out.** You cannot fake either one. The rig is hung and focused or it is not. The trucks are loaded or they are not. Bitcoin's security works the same way. It is called proof of work, and it rests on real energy spent, which cannot be counterfeited.
 
-And the most important idea is the simplest. There will only ever be 21 million bitcoin. No board, no government, and no producer can print more. A unit of savings that cannot be diluted is the one thing missing from every negotiating table described above.
+## The second reason: a moral standard
+
+The second reason matters more, and Dion learned it working beside the Ailey crew.
+
+IATSE is not only a set of workplace rules. On the deck and on the fly rail, it is a brotherhood and sisterhood: people who respect each other, look out for each other, and appreciate each other's work. On a load-in, nobody cuts corners on a rigging point, because someone else is standing under it. Nobody takes credit for a brother's hours. Everyone works to the same standard, because the show and the people in it depend on it. A fair day's pay for a fair day's work is not a slogan to them. It is a code.
+
+That code is what sound money is about.
+
+Sound money is money that keeps its value because no one can create more of it at will. There will only ever be 21 million bitcoin. No board, no government, and no producer can print more. That simple rule carries a moral standard with it:
+
+- **Work is honored.** The value of an hour of labor is not quietly diluted by someone who did not do the work.
+- **Saving is rewarded.** A crew member who puts money away is not punished for it, year after year, by a unit that loses value.
+- **The measure is honest.** Everyone measures with the same ruler, and nobody can change its length in the middle of the job.
+- **The long term wins.** When money holds its value, people can plan beyond the next contract, the next season, the next three years.
+
+Inflation breaks every one of those. It takes a little of everyone's work, from people who never agreed to give it, and it turns every negotiation into a fight over who loses the least. A union built on respect for each other's labor already knows that is wrong. Sound money gives that instinct a name.
+
+Bring that standard into how productions are made, and the conversation changes. A production built on honest money can be honest about what everyone's work is worth: the dancer, the dresser, the electrician, and the producer who raised the money.
+
+A unit of savings that cannot be diluted is the one thing missing from every negotiating table, from Broadway to Boston to Sacramento.
 
 To be clear about what this is and is not: Bitcoin does not settle this contract. It does not pay this month's rent or replace a pension or a health fund. Its price is volatile, and anyone who holds it has to be ready for that. What it offers is an education in how money works, a savings tool outside the dollar for anyone who chooses it, and a way to understand why every contract feels harder than the last one.
 
@@ -126,7 +151,7 @@ Bitcoin for the Arts hopes Local One, Local 764, and the League reach a fair agr
 
 **An open invitation:** Bitcoin for the Arts will bring a free sound money and Bitcoin class to any IATSE local, crew room, wardrobe department, or hair and makeup team that asks. No sales pitch. No product. Just the same education we give artists, built for the people who make the show go up and come down. Start at [bitcoinforthearts.org/education](https://www.bitcoinforthearts.org/education).
 
-To every stagehand, dresser, and technician reading this: thank you for taking down the lights.
+To every stagehand, dresser, and technician reading this: thank you for hanging the lights, and for taking them down.
 
 Stay curious, stay steady, and keep creating.
 
@@ -185,14 +210,17 @@ Broadway's stagehands authorized a strike. Wardrobe votes Sunday. The producers 
 A 3% raise with 3.7% inflation is a pay cut. Nurses in Boston, state workers in California, stagehands on Broadway: every table is fighting the same thing, and nobody is naming it.
 
 **Option C:**
-Our founder learned what it takes to make a show from both sides of the curtain: the lighting board at SUNY Purchase, and a load-out with the Ailey crew while he was out injured. Without stagehands, there is no show.
+Our founder learned what it takes to make a show from both sides of the curtain: the lighting board at SUNY Purchase, and a load-in and load-out with the Ailey crew while he was out injured. Without stagehands, there is no show.
+
+**Option D:**
+IATSE is more than workplace rules. It is a brotherhood and sisterhood built on respect for each other's labor. That is the moral core of sound money too: no one gets to quietly dilute the value of someone else's work.
 
 ---
 
 ## EDITORIAL NOTES
 
 - **Update before publishing.** Talks resume Nov 23-24, and Local 764 votes Nov 22. If there is a deal or a strike, update the opening, the "Status of talks" line, and the hope for a fair agreement near the end. The core argument holds either way.
-- **Dion to confirm:** the Purchase spring concert detail (year, venue if he wants it) and which Ailey production and venue the stagehand load-out was. The body keeps both general until confirmed.
+- Dion's two production stories (Purchase lighting board, Ailey load-in and load-out) stay general on purpose. No year, production, or venue needed.
 - **The $2,100 example** is an illustration based on the 2024 Category A base minimum ($2,099.75) from a secondary source. Local One's actual rates and the League's actual offer are not public. Keep the word "close to," or replace with a confirmed figure.
 - **Fairness.** The League has not commented. The body presents its pressures (recoupment, costs, musical attendance) from published reporting, not as BFTA's guess. Keep it that way. The piece is pro-worker and pro-production, and it does not claim to know the contract terms.
 - **501(c)(3).** Commenting on a labor dispute is allowed. The piece takes no position on specific contract terms, does not urge a strike or a settlement on particular terms, and offers education to all parties.
